@@ -1,6 +1,5 @@
 import { appendFile, readFile, writeFile } from "fs/promises";
 import { createHash } from "crypto";
-import { Readable } from "node:stream";
 import { finished } from "node:stream/promises";
 import { Client } from "basic-ftp";
 import cliProgress from "cli-progress";
@@ -11,10 +10,13 @@ const SpecNameRegex = /(.+)\.spec$/;
 export default async function getHashesFromSourcesJSON(
   path: string,
   output: string,
+  opts?: { startFrom?: string },
 ) {
-  await writeFile(output, "Source Package,Protocol,URL,SHA256,Error\n", {
-    flag: "w",
-  });
+  if (!opts?.startFrom) {
+    await writeFile(output, "Source Package,Protocol,URL,SHA256,Error\n", {
+      flag: "w",
+    });
+  }
 
   const sourcesJSON: Record<string, { error?: string; sources: string[] }> =
     JSON.parse((await readFile(path)).toString());
@@ -29,6 +31,7 @@ export default async function getHashesFromSourcesJSON(
   const mainBar = progress.create(Object.keys(sourcesJSON).length, 0);
   const subBar = progress.create(0, 0);
 
+  let readyToProcess = !opts?.startFrom;
   for (const spec in sourcesJSON) {
     // Get source package name
     const specNameMatches = spec.match(SpecNameRegex);
@@ -40,6 +43,13 @@ export default async function getHashesFromSourcesJSON(
     mainBar.increment(1, { filename: specName });
     subBar.setTotal(sourcesJSON[spec].sources.length);
     subBar.update(0);
+
+    if (specName === opts?.startFrom) {
+      readyToProcess = true;
+    }
+    if (!readyToProcess) {
+      continue;
+    }
 
     // Get hash of files in sources
     for (const rawURL of sourcesJSON[spec].sources) {
@@ -75,14 +85,18 @@ export default async function getHashesFromSourcesJSON(
         } catch (e) {
           await appendFile(
             output,
-            `${specName},${url.protocol},${rawURL},,${e}\n`,
+            `${specName},${url.protocol},${rawURL},,${e}`.replaceAll("\n", "") +
+              "\n",
           );
         }
       } catch {
         subBar.increment(1);
       }
     }
+
+    subBar.stop();
   }
 
+  mainBar.stop();
   return;
 }

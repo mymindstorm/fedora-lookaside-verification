@@ -105,6 +105,8 @@ export default async function getSourcesJSONFromSpecs(
     progress.increment(1);
   }
 
+  progress.stop();
+
   // TODO: make dirs needed for output
   await writeFile(outputPath, JSON.stringify(records, null, 2), { flag: "w" });
 }
