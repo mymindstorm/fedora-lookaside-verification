@@ -9,5 +9,12 @@ export default tseslint.config(
   ...tseslint.configs.stylistic,
   {
     ignores: ["dist/"],
+    extends: [
+      {
+        rules: {
+          "@typescript-eslint/no-unused-vars": "warn",
+        },
+      },
+    ],
   },
 );
