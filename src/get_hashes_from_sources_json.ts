@@ -4,6 +4,7 @@ import { Readable } from "node:stream";
 import { finished } from "node:stream/promises";
 import { Client } from "basic-ftp";
 import cliProgress from "cli-progress";
+import axios from "axios";
 
 const SpecNameRegex = /(.+)\.spec$/;
 
@@ -52,24 +53,10 @@ export default async function getHashesFromSourcesJSON(
           const sha256 = createHash("sha256");
 
           if (url.protocol === "http:" || url.protocol === "https:") {
-            const res = await fetch(url, {
-              headers: {
-                Accept: "*/*", // gitlab will give you a 406 w/o this
-              },
-            });
-            const resBody = res.body;
-            if (!res.ok) {
-              throw new Error(
-                `Response status code ${res.status} ${res.statusText}. Body: ${(await res.text()).substring(0, 100).replaceAll("\n", "")}`,
-              );
-            }
-
-            if (resBody === null) {
-              throw new Error("Response body null!");
-            }
+            const res = await axios.get(url.href, { responseType: "stream" });
 
             // WEIRDNESS: If you do this in one line (like in get_sources_json_from_specs.ts), node just exits without any errors
-            const resStream = Readable.fromWeb(resBody);
+            const resStream = res.data;
             resStream.pipe(sha256);
             await finished(resStream);
           } else if (url.protocol === "ftp:") {
