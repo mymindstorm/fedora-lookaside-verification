@@ -59,6 +59,8 @@ export default async function getSourcesJSONFromSpecs(
     cliProgress.Presets.shades_classic,
   );
   progress.start(files.length, 1);
+
+  // TODO: this is so slow! parallelize?
   for (const file of files) {
     try {
       const spectool = await execFile("spectool", ["-l", file], {
@@ -103,5 +105,6 @@ export default async function getSourcesJSONFromSpecs(
     progress.increment(1);
   }
 
+  // TODO: make dirs needed for output
   await writeFile(outputPath, JSON.stringify(records, null, 2), { flag: "w" });
 }

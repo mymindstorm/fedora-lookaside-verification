@@ -1,6 +1,6 @@
 import { version, name } from "../package.json";
 import { Command } from "commander";
-import getSourcesJSONFromSpecs from "./hash_json_from_specs";
+import getSourcesJSONFromSpecs from "./get_sources_json_from_specs";
 
 const program = new Command();
 program.name(name);
