@@ -58,7 +58,7 @@ export default async function getSourcesJSONFromSpecs(
     {},
     cliProgress.Presets.shades_classic,
   );
-  progress.start(files.length, 1);
+  progress.start(files.length, 0);
 
   // TODO: this is so slow! parallelize?
   for (const file of files) {

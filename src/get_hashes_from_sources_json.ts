@@ -3,6 +3,7 @@ import { createHash } from "crypto";
 import { Readable } from "node:stream";
 import { finished } from "node:stream/promises";
 import { Client } from "basic-ftp";
+import cliProgress from "cli-progress";
 
 const SpecNameRegex = /(.+)\.spec$/;
 
@@ -17,29 +18,50 @@ export default async function getHashesFromSourcesJSON(
   const sourcesJSON: Record<string, { error?: string; sources: string[] }> =
     JSON.parse((await readFile(path)).toString());
 
+  console.log("Retrieving source files...");
+  const progress = new cliProgress.MultiBar(
+    {
+      format: " {bar} | {filename} | {value}/{total}",
+    },
+    cliProgress.Presets.shades_classic,
+  );
+  const mainBar = progress.create(Object.keys(sourcesJSON).length, 0);
+  const subBar = progress.create(0, 0);
+
   for (const spec in sourcesJSON) {
     // Get source package name
     const specNameMatches = spec.match(SpecNameRegex);
     if (specNameMatches === null) {
-      console.warn(`${spec} unable to be split into source package name!`);
+      console.error(`${spec} unable to be split into source package name!`);
       continue;
     }
     const specName = specNameMatches[1];
+    mainBar.increment(1, { filename: specName });
+    subBar.setTotal(sourcesJSON[spec].sources.length);
+    subBar.update(0);
 
     // Get hash of files in sources
     for (const rawURL of sourcesJSON[spec].sources) {
       try {
         const url = new URL(rawURL);
+        const pathSplit = url.pathname.split("/");
+        const fileName = pathSplit[pathSplit.length - 1];
+        subBar.increment(1, { filename: fileName });
 
         try {
-          console.log(rawURL);
           const sha256 = createHash("sha256");
 
           if (url.protocol === "http:" || url.protocol === "https:") {
-            const res = await fetch(url);
+            const res = await fetch(url, {
+              headers: {
+                Accept: "*/*", // gitlab will give you a 406 w/o this
+              },
+            });
             const resBody = res.body;
             if (!res.ok) {
-              throw new Error("Response bad status code");
+              throw new Error(
+                `Response status code ${res.status} ${res.statusText}. Body: ${(await res.text()).substring(0, 100).replaceAll("\n", "")}`,
+              );
             }
 
             if (resBody === null) {
@@ -70,7 +92,7 @@ export default async function getHashesFromSourcesJSON(
           );
         }
       } catch {
-        // no-op. we don't process anything with an invalid url
+        subBar.increment(1);
       }
     }
   }
