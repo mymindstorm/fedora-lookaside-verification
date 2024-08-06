@@ -7,7 +7,6 @@ import axios from "axios";
 import parse from "parse-apache-directory-index";
 
 const SpecNameRegex = /(.+)\.spec$/;
-const HrefRegex = /^.+<a href="(.+)">.+<\/a>.+$/gm;
 
 export default async function getHashesFromLookaside(
   path: string,
