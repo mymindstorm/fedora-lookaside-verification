@@ -3,6 +3,8 @@ import { createHash } from "crypto";
 import { finished } from "node:stream/promises";
 import cliProgress from "cli-progress";
 import axios from "axios";
+// @ts-expect-error no typings
+import parse from "parse-apache-directory-index";
 
 const SpecNameRegex = /(.+)\.spec$/;
 const HrefRegex = /^.+<a href="(.+)">.+<\/a>.+$/gm;
@@ -48,47 +50,64 @@ export default async function getHashesFromLookaside(
         subBar.increment(1, { filename: fileName });
 
         try {
-          const sha256 = createHash("sha256");
-
           // Don't ask...
-          let fileUrl = "";
-          let nextUrl = `https://src.fedoraproject.org/repo/pkgs/${specName}/${fileName}/`;
-          while (!fileUrl) {
-            let foundMatch = false;
-            const res = await axios.get(nextUrl, { responseType: "text" });
-            const rootDirMatches = (res.data as string).matchAll(HrefRegex);
-            for (const match of rootDirMatches) {
-              const matchStr = match[1];
-              if (!matchStr.startsWith("/") && !matchStr.startsWith("?")) {
-                if (matchStr.endsWith("/")) {
-                  nextUrl += matchStr;
-                } else {
-                  fileUrl = nextUrl + matchStr;
-                }
+          let topLevel = true;
+          const fileUrls: string[] = [];
+          const scanUrls: string[] = [
+            `https://src.fedoraproject.org/repo/pkgs/${specName}/${fileName}/`,
+          ];
+          while (scanUrls.length) {
+            const scanUrl = scanUrls.pop();
+            if (!scanUrl) {
+              console.error(
+                "scan url undefined for " + specName + " file " + fileName,
+              );
+              continue;
+            }
 
-                foundMatch = true;
+            const res = await axios.get(scanUrl, { responseType: "text" });
+            const dirIndex = parse(res.data);
+
+            for (const file of dirIndex.files) {
+              if (
+                file.type === "directory" &&
+                (file.name.startsWith("sha") ||
+                  file.name === "md5/" ||
+                  !topLevel)
+              ) {
+                scanUrls.push(`https://src.fedoraproject.org${file.path}`);
+                topLevel = false;
+              } else if (file.type === "file") {
+                fileUrls.push(`https://src.fedoraproject.org${file.path}`);
               }
             }
+          }
 
-            if (!foundMatch) {
-              throw new Error("Could not traverse lookaside cache!");
+          if (!fileUrls.length) {
+            throw new Error("Could not find file URL(s) in lookaside cache!");
+          }
+
+          while (fileUrls.length) {
+            const sha256 = createHash("sha256");
+            const fileUrl = fileUrls.pop();
+            if (!fileUrl) {
+              console.error(
+                "file url undefined for " + specName + " file " + fileName,
+              );
+              continue;
             }
+
+            const res = await axios.get(fileUrl, { responseType: "stream" });
+            // WEIRDNESS: If you do this in one line (like in get_sources_json_from_specs.ts), node just exits without any errors
+            const resStream = res.data;
+            resStream.pipe(sha256);
+            await finished(resStream);
+
+            await appendFile(
+              output,
+              `${specName},${fileUrl},${sha256.digest("hex")},\n`,
+            );
           }
-
-          if (!fileUrl) {
-            throw new Error("Could not find file URL in lookaside cache!");
-          }
-
-          const res = await axios.get(fileUrl, { responseType: "stream" });
-          // WEIRDNESS: If you do this in one line (like in get_sources_json_from_specs.ts), node just exits without any errors
-          const resStream = res.data;
-          resStream.pipe(sha256);
-          await finished(resStream);
-
-          await appendFile(
-            output,
-            `${specName},${fileUrl},${sha256.digest("hex")},\n`,
-          );
         } catch (e) {
           await appendFile(
             output,

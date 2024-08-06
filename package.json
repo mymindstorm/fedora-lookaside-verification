@@ -27,6 +27,7 @@
     "commander": "^12.1.0",
     "lzma-native": "^8.0.6",
     "ora": "^8.0.1",
+    "parse-apache-directory-index": "^4.0.0",
     "tar-fs": "^3.0.6",
     "tmp-promise": "^3.0.3"
   }
