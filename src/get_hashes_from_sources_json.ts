@@ -4,18 +4,28 @@ import { finished } from "node:stream/promises";
 import { Client } from "basic-ftp";
 import cliProgress from "cli-progress";
 import axios from "axios";
+import https from "node:https";
 
 const SpecNameRegex = /(.+)\.spec$/;
+const agent = new https.Agent({
+  rejectUnauthorized: false,
+});
 
 export default async function getHashesFromSourcesJSON(
   path: string,
   output: string,
-  opts?: { startFrom?: string },
+  opts?: { startFrom?: string; retryPackages?: string },
 ) {
   if (!opts?.startFrom) {
     await writeFile(output, "Source Package,Protocol,URL,SHA256,Error\n", {
       flag: "w",
     });
+  }
+
+  let retryPkgs: string[] = [];
+  if (opts?.retryPackages) {
+    const retryContent = await readFile(opts.retryPackages);
+    retryPkgs = retryContent.toString().split("\n");
   }
 
   const sourcesJSON: Record<string, { error?: string; sources: string[] }> =
@@ -44,6 +54,10 @@ export default async function getHashesFromSourcesJSON(
     subBar.setTotal(sourcesJSON[spec].sources.length);
     subBar.update(0);
 
+    if (retryPkgs.length !== 0 && !retryPkgs.includes(specName)) {
+      continue;
+    }
+
     if (specName === opts?.startFrom) {
       readyToProcess = true;
     }
@@ -63,7 +77,10 @@ export default async function getHashesFromSourcesJSON(
           const sha256 = createHash("sha256");
 
           if (url.protocol === "http:" || url.protocol === "https:") {
-            const res = await axios.get(url.href, { responseType: "stream" });
+            const res = await axios.get(url.href, {
+              responseType: "stream",
+              httpsAgent: agent,
+            });
 
             // WEIRDNESS: If you do this in one line (like in get_sources_json_from_specs.ts), node just exits without any errors
             const resStream = res.data;
@@ -98,5 +115,6 @@ export default async function getHashesFromSourcesJSON(
   }
 
   mainBar.stop();
+  progress.stop();
   return;
 }
