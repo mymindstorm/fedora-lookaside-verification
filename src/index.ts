@@ -77,4 +77,26 @@ program
     },
   );
 
+// program
+//   .command("merge-hash-csvs")
+//   .description(
+//     "Merge CSV files containing hashes. Use combine-hash-csvs to compare lookaside and orginal source hashes. If one entry has two different hashes in different files, both are included. Othersie only one hash or error message is chosen.",
+//   )
+//   .argument("<path-to-csvs...>", "Paths to CSV files to merge.")
+//   .option(
+//     "-o, --output-csv <path>",
+//     "Path to output CSV. Existing files will be overwritten, missing directories must exist or it will error out.",
+//     "hashes-merged.csv",
+//   )
+//   .action(
+//     async (
+//       paths: string[],
+//       options: {
+//         outputCsv: string;
+//       },
+//     ) => {
+//       await mergeHashes(paths, options.outputCsv);
+//     },
+//   );
+
 program.parse(process.argv);

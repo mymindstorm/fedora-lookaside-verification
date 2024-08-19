@@ -80,6 +80,9 @@ export default async function getHashesFromSourcesJSON(
             const res = await axios.get(url.href, {
               responseType: "stream",
               httpsAgent: agent,
+              headers: {
+                Accept: "application/octet-stream,*/*",
+              },
             });
 
             // WEIRDNESS: If you do this in one line (like in get_sources_json_from_specs.ts), node just exits without any errors
