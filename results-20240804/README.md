@@ -8,5 +8,6 @@ Results may be non-deterministic. `spectool` relies your local system having the
 | `sources-from-specs-corrected.json` | Manual correction of `sources-from-specs-original.json` to fix `download.kde.org` URLs. |
 | `hashes-source.csv` | Hashes of remote files listed in `sources-from-specs-original.json` |
 | `hashes-lookaside.csv` | Hashes of Fedora's cached copy of remote files listed in `sources-from-specs-original.json` |
+| `mismatching_source0_archives.csv` | Files where there was a hash mismatch, was Source0, and had extension in ["crate", "tar.gz", "tgz", "zip", "tar.xz", "tar.bz2"]. |
 
 A notebook analyzing and merging the data is available [here](https://app.hex.tech/ce95f2e2-5039-4b96-810b-cd4c222f45fa/app/e0d5de4e-4960-48f7-9ef4-a942657b4fe6/latest).

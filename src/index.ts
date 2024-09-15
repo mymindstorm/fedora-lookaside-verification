@@ -3,6 +3,7 @@ import { Command } from "commander";
 import getSourcesJSONFromSpecs from "./get_sources_json_from_specs";
 import getHashesFromSourcesJSON from "./get_hashes_from_sources_json";
 import getHashesFromLookaside from "./get_hashes_from_lookaside";
+import genDiff from "./gen_diff";
 
 const program = new Command();
 program.name(name);
@@ -77,26 +78,26 @@ program
     },
   );
 
-// program
-//   .command("merge-hash-csvs")
-//   .description(
-//     "Merge CSV files containing hashes. Use combine-hash-csvs to compare lookaside and orginal source hashes. If one entry has two different hashes in different files, both are included. Othersie only one hash or error message is chosen.",
-//   )
-//   .argument("<path-to-csvs...>", "Paths to CSV files to merge.")
-//   .option(
-//     "-o, --output-csv <path>",
-//     "Path to output CSV. Existing files will be overwritten, missing directories must exist or it will error out.",
-//     "hashes-merged.csv",
-//   )
-//   .action(
-//     async (
-//       paths: string[],
-//       options: {
-//         outputCsv: string;
-//       },
-//     ) => {
-//       await mergeHashes(paths, options.outputCsv);
-//     },
-//   );
+program
+  .command("gen-diff")
+  .description(
+    "Generate a diff of the lookaside and original source archives from a csv of urls.",
+  )
+  .argument("<path-to-csv>", "Path csv file with files to compare")
+  .option(
+    "-o, --output-dir <path>",
+    "Path to output directory. Existing files will be overwritten, missing directories must exist or it will error out.",
+    "diffs",
+  )
+  .action(
+    async (
+      path: string,
+      options: {
+        outputDir: string;
+      },
+    ) => {
+      await genDiff(path, options.outputDir);
+    },
+  );
 
 program.parse(process.argv);
