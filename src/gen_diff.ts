@@ -24,7 +24,7 @@ export default async function genDiff(path: string, output: string) {
   input.shift();
 
   const tmpDir = await tmp.dir({
-    unsafeCleanup: false,
+    unsafeCleanup: true,
     prefix: "fedora-lookaside-verification-",
   });
 
@@ -62,43 +62,61 @@ Source URL      : ${sourceURL}\n\n`;
     ];
 
     // Download and extract both files
-    for (const urlInfo of urls) {
-      const url = new URL(urlInfo.url);
-      const writeStream = createWriteStream(urlInfo.tmpFilePath);
+    try {
+      for (const urlInfo of urls) {
+        const url = new URL(urlInfo.url);
+        const writeStream = createWriteStream(urlInfo.tmpFilePath);
 
-      // download file
-      if (url.protocol === "http:" || url.protocol === "https:") {
-        const res = await axios.get(url.href, {
-          responseType: "stream",
-          httpsAgent: agent,
-          headers: {
-            Accept: "application/octet-stream,*/*",
-          },
-        });
+        // download file
+        if (url.protocol === "http:" || url.protocol === "https:") {
+          const res = await axios.get(url.href, {
+            responseType: "stream",
+            httpsAgent: agent,
+            headers: {
+              Accept: "application/octet-stream,*/*",
+            },
+          });
 
-        res.data.pipe(writeStream);
-        await finished(res.data);
-      } else if (url.protocol === "ftp:") {
-        const client = new Client();
-        await client.access({
-          host: url.host,
+          res.data.pipe(writeStream);
+          await finished(res.data);
+        } else if (url.protocol === "ftp:") {
+          const client = new Client();
+          await client.access({
+            host: url.host,
+          });
+          await client.downloadTo(writeStream, url.pathname);
+        } else {
+          throw new Error("Unsupported protocol.");
+        }
+
+        // get file type
+        const file = await execFile("file", [urlInfo.tmpFilePath]);
+        comparisonReport += `${urlInfo.type} file type: ${file.stdout}`;
+
+        // extract file
+        await mkdir(urlInfo.extractPath);
+        await decompress(urlInfo.tmpFilePath, urlInfo.extractPath, {
+          filter: (file) => file.type !== "link",
         });
-        await client.downloadTo(writeStream, url.pathname);
-      } else {
-        throw new Error("Unsupported protocol.");
       }
-
-      // get file type
-      const file = await execFile("file", [urlInfo.tmpFilePath]);
-      comparisonReport += `${urlInfo.type} file type: ${file.stdout}\n`;
-
-      // extract file
-      await mkdir(urlInfo.extractPath);
-      await decompress(urlInfo.tmpFilePath, urlInfo.extractPath);
+    } catch (e) {
+      comparisonReport += `Could not fetch file! Error: ${e.toString()}`;
+      continue;
     }
 
     try {
-      await execFile("diff", ["-r", urls[0].extractPath, urls[1].extractPath]);
+      await execFile(
+        "diff",
+        [
+          // "-N",
+          "-r",
+          `source-${fileName}-extracted`,
+          `lookaside-${fileName}-extracted`,
+        ],
+        {
+          cwd: tmpDir.path,
+        },
+      );
 
       comparisonReport += `\n\nNo differences detected!`;
     } catch (e) {
