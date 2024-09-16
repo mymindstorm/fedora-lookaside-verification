@@ -1,0 +1,10 @@
+Source package : rust-diskonaut
+File name       : diskonaut-0.11.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-diskonaut/diskonaut-0.11.0.crate/sha512/eeb56e7b14d72541958cf328df688c5cfbf4984cce60aa42e3046e146a709d612544e5f97da3b29f2fc2e32fe56b4bbb5243c0aba347c0042e17897be5d4c91b/diskonaut-0.11.0.crate
+Source URL      : https://crates.io/api/v1/crates/diskonaut/0.11.0/download#/diskonaut-0.11.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-diskonaut-0.11.0.crate: gzip compressed data, was "diskonaut-0.11.0.crate", max compression, original size modulo 2^32 5668864
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-diskonaut-0.11.0.crate: POSIX tar archive
+
+
+No differences detected!

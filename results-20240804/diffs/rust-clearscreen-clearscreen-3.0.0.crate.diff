@@ -1,0 +1,10 @@
+Source package : rust-clearscreen
+File name       : clearscreen-3.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-clearscreen/clearscreen-3.0.0.crate/sha512/2b5338a7944b44fdb40a79e87aa8cdb8ff3e47b9e4d8ebb757b1b3fb10f8b066183abd79f5ae634e7e9464377a33711694796bb5d52dec0201f863119923af65/clearscreen-3.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/clearscreen/3.0.0/download#/clearscreen-3.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-clearscreen-3.0.0.crate: gzip compressed data, was "clearscreen-3.0.0.crate", max compression, original size modulo 2^32 279552
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-clearscreen-3.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-szip
+File name       : szip-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-szip/szip-1.0.0.crate/sha512/702dccfd9c2acecc235e00a2515963ed946fc034d9c26866f1b5481667ef74499831d66f1cfab2ae5047b5b9bd1373b7160823c6441e254f4920eff9bf6b7e31/szip-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/szip/1.0.0/download#/szip-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-szip-1.0.0.crate: gzip compressed data, was "szip-1.0.0.crate", max compression, original size modulo 2^32 22528
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-szip-1.0.0.crate: POSIX tar archive
+
+
+No differences detected!

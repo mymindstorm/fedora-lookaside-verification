@@ -1,0 +1,10 @@
+Source package : rust-futures-time
+File name       : futures-time-3.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-futures-time/futures-time-3.0.0.crate/sha512/d097004db4caee0d81e3ee3faeaa2e419ba2df0de072a616de6d31cbb1eeea002da6f122a67a08a4eb6b0e4985710af02bd8979939ce3c0ffba5ae712a122e12/futures-time-3.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/futures-time/3.0.0/download#/futures-time-3.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-futures-time-3.0.0.crate: gzip compressed data, was "futures-time-3.0.0.crate", max compression, original size modulo 2^32 121344
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-futures-time-3.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

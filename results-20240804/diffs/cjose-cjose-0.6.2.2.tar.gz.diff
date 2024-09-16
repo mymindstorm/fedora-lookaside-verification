@@ -1,0 +1,29 @@
+Source package : cjose
+File name       : cjose-0.6.2.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/cjose/cjose-0.6.2.2.tar.gz/sha512/71a087709816f0aac060a7c5f037068e981366b1809f6ee32e39eaded02ad8be061b0e2fa5093515a8acec10c7f4aca232281004426221b4b7e5edbd203eb49c/cjose-0.6.2.2.tar.gz
+Source URL      : https://github.com/OpenIDC/cjose/releases/download/v0.6.2.2/cjose-0.6.2.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cjose-0.6.2.2.tar.gz: gzip compressed data, last modified: Wed Jul 12 09:04:42 2023, max compression, from Unix, original size modulo 2^32 2242560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cjose-0.6.2.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2283520
+
+
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2: .clang-format
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2: CONTRIBUTING.md
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2: .github
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2: .gitignore
+Only in source-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/include/cjose: version.h
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2: lib
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/centos: build.sh
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/centos: centos-6.x86_64.dockerfile
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/centos: centos-7.x86_64.dockerfile
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/centos: cjose.spec
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/centos: fedora-24.x86_64.dockerfile
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/centos: prepare.sh
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/debian: build.sh
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/debian: debian
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/debian: debian-jessie.armhf.dockerfile
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/debian: debian-jessie.x86_64.dockerfile
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/debian: debian-wheezy.x86_64.dockerfile
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/debian: prepare.sh
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/debian: ubuntu-trusty.x86_64.dockerfile
+Only in lookaside-cjose-0.6.2.2.tar.gz-extracted/cjose-0.6.2.2/platform/debian: ubuntu-xenial.x86_64.dockerfile

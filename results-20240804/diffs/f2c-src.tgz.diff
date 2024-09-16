@@ -1,0 +1,1412 @@
+Source package : f2c
+File name       : src.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/f2c/src.tgz/sha512/5befcea9b5d8f6a109ffbd472706ba55a649d75ed33bc7bde87ac6c7da36502b3c5e6caeb0d53d920d041ae2f8e2ab1ffc0e698c11f1ef7f6de599504741bc72/src.tgz
+Source URL      : http://www.netlib.org/f2c/src.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-src.tgz: gzip compressed data, last modified: Sun May  5 04:19:47 2024, from Unix, original size modulo 2^32 931840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-src.tgz: gzip compressed data, last modified: Wed Sep 16 22:59:21 2020, from Unix, original size modulo 2^32 1003520
+
+
+Only in lookaside-src.tgz-extracted/src: changes
+diff -r source-src.tgz-extracted/src/defs.h lookaside-src.tgz-extracted/src/defs.h
+369,374d368
+<  typedef union
+< 	{
+< 	int ijunk;
+< 	struct Intrpacked bits;
+< 	} Packed;
+< 
+diff -r source-src.tgz-extracted/src/expr.c lookaside-src.tgz-extracted/src/expr.c
+1060d1059
+< 	Packed k;
+1063c1062
+< 	int nargs;
+---
+> 	int k, nargs;
+1078,1079c1077,1079
+< 			if(np->vtype!=TYSUBR && (k.ijunk = intrfunct(np->fvarname))
+< 				&& (zflag || k.bits.f4 || dcomplex_seen))
+---
+> 			if(np->vtype!=TYSUBR && (k = intrfunct(np->fvarname))
+> 				&& (zflag || !(*(struct Intrpacked *)&k).f4
+> 					|| dcomplex_seen))
+1082c1082
+< 				np->vardesc.varno = k.ijunk;
+---
+> 				np->vardesc.varno = k;
+diff -r source-src.tgz-extracted/src/f2c.1 lookaside-src.tgz-extracted/src/f2c.1
+30,33d29
+< 	  -I8  Assume 8-byte integer and logical, 4-byte REAL, 8-byte
+< 	       double precison and complex, and 16-byte double complex
+< 	       variables.  Appropriate changes to f2c.h may be needed.
+< 
+38,39c34,36
+< 	       option).	 Options -I2, -I4  and -I8 have precedence, so,
+< 	       e.g., a directory named 2 should	be specified by	-I./2 .
+---
+> 	       option).	 Options -I2 and -I4 have precedence, so,
+> 	       e.g., a directory named 2 should	be specified by	-I./2
+> 	       .
+60c57
+<      Page 1					     (printed 1/23/24)
+---
+>      Page 1					     (printed 6/21/02)
+77,78d73
+< 	  -cf  Do not report the current .f file except in error messages.
+< 
+119c114
+<      Page 2					     (printed 1/23/24)
+---
+>      Page 2					     (printed 6/21/02)
+176c171
+<      Page 3					     (printed 1/23/24)
+---
+>      Page 3					     (printed 6/21/02)
+226c221
+<      Page 4					     (printed 1/23/24)
+---
+>      Page 4					     (printed 6/21/02)
+diff -r source-src.tgz-extracted/src/f2c.1t lookaside-src.tgz-extracted/src/f2c.1t
+78,82d77
+< .B -I8
+< Assume 8-byte integer and logical, 4-byte REAL, 8-byte double precison
+< and complex, and 16-byte double complex variables.  Appropriate changes
+< to f2c.h may be needed.
+< .TP
+87c82
+< \f(CW-I2\fP, \f(CW-I4\fP, and \f(CW-I8\fP
+---
+> \f(CW-I2\fP and \f(CW-I4\fP
+137,139d131
+< .TP
+< .B -cf
+< Do not report the current \f(CW.f\fP file except in error messages.
+diff -r source-src.tgz-extracted/src/f2c.h lookaside-src.tgz-extracted/src/f2c.h
+10,11c10,11
+< typedef int integer;
+< typedef unsigned int uinteger;
+---
+> typedef long int integer;
+> typedef unsigned long int uinteger;
+18c18
+< typedef int logical;
+---
+> typedef long int logical;
+22,24c22,24
+< #if 1 /*ifdef INTEGER_STAR_8*/	/* Adjust for integer*8. */
+< typedef long longint;		/* system-dependent; long long on some systems */
+< typedef unsigned long ulongint;	/* system-dependent; long long on some systems */
+---
+> #ifdef INTEGER_STAR_8	/* Adjust for integer*8. */
+> typedef long long longint;		/* system-dependent */
+> typedef unsigned long long ulongint;	/* system-dependent */
+45,47c45,47
+< typedef int flag;
+< typedef int ftnlen;
+< typedef int ftnint;
+---
+> typedef long int flag;
+> typedef long int ftnlen;
+> typedef long int ftnint;
+140c140
+< /*typedef int Long;*/	/* No longer used; formerly in Namelist */
+---
+> /*typedef long int Long;*/	/* No longer used; formerly in Namelist */
+diff -r source-src.tgz-extracted/src/format.c lookaside-src.tgz-extracted/src/format.c
+83c83
+< extern int gflag, sharp_line, trapuv, uselonglong;
+---
+> extern int gflag, sharp_line, trapuv;
+445,448c445,446
+< 		addrp->user.kludge.dfill[0] = litp->litval.litdval[0];
+< 		addrp->user.kludge.dfill[1] = litp->litval.litdval[1];
+< 		/* was *((union Constant *) &(addrp->user)) =
+< 			*((union Constant *) &(litp->litval)); */
+---
+> 		*((union Constant *) &(addrp->user)) =
+> 			*((union Constant *) &(litp->litval));
+2129,2130d2126
+< 	    if (t == TYREAL && uselonglong)
+< 		t = eqv->eqvtype = TYLONG;
+diff -r source-src.tgz-extracted/src/formatdata.c lookaside-src.tgz-extracted/src/formatdata.c
+37d36
+<  extern int uselonglong;
+1116,1117d1114
+< 	if (uselonglong && k == TYREAL)
+< 		k = TYLONG;
+diff -r source-src.tgz-extracted/src/gram.c lookaside-src.tgz-extracted/src/gram.c
+102c102
+< /* #line	125	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	125	"/n/bopp/v5/dmg/f2c/gram.in" */
+109d108
+< static int lasttype;
+148c147
+< /* #line	173	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	172	"/n/bopp/v5/dmg/f2c/gram.in" */
+686a686,688
+> extern	int	fprint(int, char*, ...);
+> extern	int	sprint(char*, char*, ...);
+> 
+692c694
+< 	if(yyc > 0 && yyc <= (int)(sizeof(yytoknames)/sizeof(yytoknames[0])))
+---
+> 	if(yyc > 0 && yyc <= sizeof(yytoknames)/sizeof(yytoknames[0]))
+704c706
+< 	if(yys >= 0 && yys < (int)(sizeof(yystates)/sizeof(yystates[0])))
+---
+> 	if(yys >= 0 && yys < sizeof(yystates)/sizeof(yystates[0]))
+723c725
+< 	if(yychar < (long)(sizeof(yytok1)/sizeof(yytok1[0]))) {
+---
+> 	if(yychar < sizeof(yytok1)/sizeof(yytok1[0])) {
+728c730
+< 		if(yychar < YYPRIVATE+(long)(sizeof(yytok2)/sizeof(yytok2[0]))) {
+---
+> 		if(yychar < YYPRIVATE+sizeof(yytok2)/sizeof(yytok2[0])) {
+751,754d752
+< typedef struct { YYSTYPE yyv; int yys; } YYSTACK;
+< static YYSTACK yys0[YYMAXDEPTH];
+< static YYSTACK *yys = yys0, *yysend = &yys0[YYMAXDEPTH];
+< 
+758c756,760
+< 	YYSTACK *yyp, *yypt;
+---
+> 	struct
+> 	{
+> 		YYSTYPE	yyv;
+> 		int	yys;
+> 	} yys[YYMAXDEPTH], *yyp, *yypt;
+764,767d765
+< #ifdef Use_Malloc
+< 	YYSTACK *yysnew;
+< 	size_t yyslen, yyslen2;
+< #endif
+802,818c800,802
+< 	if(yyp >= yysend) {
+< #ifdef Use_Malloc
+< 		yyslen = yysend - yys;
+< 		yyslen2 = 2*yyslen;
+< 		if (yyslen2 < 2048)
+< 			yyslen2 = 2048;
+< 		yysnew = (YYSTACK*)Malloc(yyslen2*sizeof(YYSTACK));
+< 		memcpy(yysnew, yys, yyslen*sizeof(YYSTACK));
+< 		if (yys != yys0)
+< 			free(yys);
+< 		yys = yysnew;
+< 		yysend = &yysnew[yyslen2];
+< 		yyp = yys + yyslen;
+< #else	
+< 		yyerror("yacc stack overflow");
+< 		goto ret1;
+< #endif
+---
+> 	if(yyp >= &yys[YYMAXDEPTH]) { 
+> 		yyerror("yacc stack overflow"); 
+> 		goto ret1; 
+925c909
+< /* #line	221	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	220	"/n/bopp/v5/dmg/f2c/gram.in" */
+931c915
+< /* #line	227	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	226	"/n/bopp/v5/dmg/f2c/gram.in" */
+952c936
+< /* #line	247	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	246	"/n/bopp/v5/dmg/f2c/gram.in" */
+961c945
+< /* #line	255	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	254	"/n/bopp/v5/dmg/f2c/gram.in" */
+968c952
+< /* #line	261	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	260	"/n/bopp/v5/dmg/f2c/gram.in" */
+975c959
+< /* #line	267	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	266	"/n/bopp/v5/dmg/f2c/gram.in" */
+979c963
+< /* #line	272	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	271	"/n/bopp/v5/dmg/f2c/gram.in" */
+1006c990
+< /* #line	300	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	299	"/n/bopp/v5/dmg/f2c/gram.in" */
+1009c993
+< /* #line	302	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	301	"/n/bopp/v5/dmg/f2c/gram.in" */
+1014c998
+< /* #line	306	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	305	"/n/bopp/v5/dmg/f2c/gram.in" */
+1018c1002
+< /* #line	309	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	308	"/n/bopp/v5/dmg/f2c/gram.in" */
+1021c1005
+< /* #line	311	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	310	"/n/bopp/v5/dmg/f2c/gram.in" */
+1024c1008
+< /* #line	313	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	312	"/n/bopp/v5/dmg/f2c/gram.in" */
+1027c1011
+< /* #line	315	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	314	"/n/bopp/v5/dmg/f2c/gram.in" */
+1034c1018
+< /* #line	323	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	322	"/n/bopp/v5/dmg/f2c/gram.in" */
+1037c1021
+< /* #line	327	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	326	"/n/bopp/v5/dmg/f2c/gram.in" */
+1040c1024
+< /* #line	331	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	330	"/n/bopp/v5/dmg/f2c/gram.in" */
+1043c1027
+< /* #line	334	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	333	"/n/bopp/v5/dmg/f2c/gram.in" */
+1046c1030
+< /* #line	352	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	351	"/n/bopp/v5/dmg/f2c/gram.in" */
+1049c1033
+< /* #line	354	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	353	"/n/bopp/v5/dmg/f2c/gram.in" */
+1053c1037
+< /* #line	357	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	356	"/n/bopp/v5/dmg/f2c/gram.in" */
+1056c1040
+< /* #line	361	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	360	"/n/bopp/v5/dmg/f2c/gram.in" */
+1059c1043
+< /* #line	363	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	362	"/n/bopp/v5/dmg/f2c/gram.in" */
+1062c1046
+< /* #line	367	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	366	"/n/bopp/v5/dmg/f2c/gram.in" */
+1068c1052
+< /* #line	372	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	371	"/n/bopp/v5/dmg/f2c/gram.in" */
+1081c1065
+< /* #line	388	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	387	"/n/bopp/v5/dmg/f2c/gram.in" */
+1089c1073
+< /* #line	404	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	403	"/n/bopp/v5/dmg/f2c/gram.in" */
+1093c1077
+< /* #line	407	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	406	"/n/bopp/v5/dmg/f2c/gram.in" */
+1096c1080
+< /* #line	409	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	408	"/n/bopp/v5/dmg/f2c/gram.in" */
+1099c1083
+< /* #line	411	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	410	"/n/bopp/v5/dmg/f2c/gram.in" */
+1102c1086
+< /* #line	415	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	414	"/n/bopp/v5/dmg/f2c/gram.in" */
+1107c1091
+< /* #line	419	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	418	"/n/bopp/v5/dmg/f2c/gram.in" */
+1112c1096
+< /* #line	423	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	422	"/n/bopp/v5/dmg/f2c/gram.in" */
+1119c1103
+< /* #line	430	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	429	"/n/bopp/v5/dmg/f2c/gram.in" */
+1122c1106
+< /* #line	433	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	432	"/n/bopp/v5/dmg/f2c/gram.in" */
+1125c1109
+< /* #line	437	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	436	"/n/bopp/v5/dmg/f2c/gram.in" */
+1130,1131c1114,1115
+< /* #line	442	"/home/dmg/h/f2c/gram.in" */
+< { yyval.ival = lasttype = TYLONG; } break;
+---
+> /* #line	441	"/n/bopp/v5/dmg/f2c/gram.in" */
+> { yyval.ival = TYLONG; } break;
+1133,1134c1117,1118
+< /* #line	443	"/home/dmg/h/f2c/gram.in" */
+< { yyval.ival = lasttype = tyreal; } break;
+---
+> /* #line	442	"/n/bopp/v5/dmg/f2c/gram.in" */
+> { yyval.ival = tyreal; } break;
+1136,1137c1120,1121
+< /* #line	444	"/home/dmg/h/f2c/gram.in" */
+< { ++complex_seen; yyval.ival = lasttype = tycomplex; } break;
+---
+> /* #line	443	"/n/bopp/v5/dmg/f2c/gram.in" */
+> { ++complex_seen; yyval.ival = tycomplex; } break;
+1139,1140c1123,1124
+< /* #line	445	"/home/dmg/h/f2c/gram.in" */
+< { yyval.ival = lasttype = TYDREAL; } break;
+---
+> /* #line	444	"/n/bopp/v5/dmg/f2c/gram.in" */
+> { yyval.ival = TYDREAL; } break;
+1142,1143c1126,1127
+< /* #line	446	"/home/dmg/h/f2c/gram.in" */
+< { ++dcomplex_seen; NOEXT("DOUBLE COMPLEX statement"); yyval.ival = lasttype = TYDCOMPLEX; } break;
+---
+> /* #line	445	"/n/bopp/v5/dmg/f2c/gram.in" */
+> { ++dcomplex_seen; NOEXT("DOUBLE COMPLEX statement"); yyval.ival = TYDCOMPLEX; } break;
+1145,1146c1129,1130
+< /* #line	447	"/home/dmg/h/f2c/gram.in" */
+< { yyval.ival = lasttype = TYLOGICAL; } break;
+---
+> /* #line	446	"/n/bopp/v5/dmg/f2c/gram.in" */
+> { yyval.ival = TYLOGICAL; } break;
+1148,1149c1132,1133
+< /* #line	448	"/home/dmg/h/f2c/gram.in" */
+< { NO66("CHARACTER statement"); yyval.ival = lasttype = TYCHAR; } break;
+---
+> /* #line	447	"/n/bopp/v5/dmg/f2c/gram.in" */
+> { NO66("CHARACTER statement"); yyval.ival = TYCHAR; } break;
+1151c1135
+< /* #line	449	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	448	"/n/bopp/v5/dmg/f2c/gram.in" */
+1154c1138
+< /* #line	450	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	449	"/n/bopp/v5/dmg/f2c/gram.in" */
+1157c1141
+< /* #line	451	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	450	"/n/bopp/v5/dmg/f2c/gram.in" */
+1160c1144
+< /* #line	452	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	451	"/n/bopp/v5/dmg/f2c/gram.in" */
+1163c1147
+< /* #line	453	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	452	"/n/bopp/v5/dmg/f2c/gram.in" */
+1166c1150
+< /* #line	457	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	456	"/n/bopp/v5/dmg/f2c/gram.in" */
+1169c1153
+< /* #line	459	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	458	"/n/bopp/v5/dmg/f2c/gram.in" */
+1186,1187c1170
+< 				case 4: yyval.lval = lasttype == TYREAL ? typesize[TYREAL] : typesize[TYLONG];
+< 					break;
+---
+> 				case 4: yyval.lval = typesize[TYLONG];	break;
+1197c1180
+< /* #line	486	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	484	"/n/bopp/v5/dmg/f2c/gram.in" */
+1200c1183
+< /* #line	490	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	488	"/n/bopp/v5/dmg/f2c/gram.in" */
+1203c1186
+< /* #line	492	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	490	"/n/bopp/v5/dmg/f2c/gram.in" */
+1206c1189
+< /* #line	494	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	492	"/n/bopp/v5/dmg/f2c/gram.in" */
+1209c1192
+< /* #line	496	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	494	"/n/bopp/v5/dmg/f2c/gram.in" */
+1212c1195
+< /* #line	500	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	498	"/n/bopp/v5/dmg/f2c/gram.in" */
+1215c1198
+< /* #line	502	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	500	"/n/bopp/v5/dmg/f2c/gram.in" */
+1218c1201
+< /* #line	506	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	504	"/n/bopp/v5/dmg/f2c/gram.in" */
+1221c1204
+< /* #line	508	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	506	"/n/bopp/v5/dmg/f2c/gram.in" */
+1224c1207
+< /* #line	512	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	510	"/n/bopp/v5/dmg/f2c/gram.in" */
+1227c1210
+< /* #line	514	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	512	"/n/bopp/v5/dmg/f2c/gram.in" */
+1230c1213
+< /* #line	522	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	520	"/n/bopp/v5/dmg/f2c/gram.in" */
+1242c1225
+< /* #line	535	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	533	"/n/bopp/v5/dmg/f2c/gram.in" */
+1247c1230
+< /* #line	539	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	537	"/n/bopp/v5/dmg/f2c/gram.in" */
+1253c1236
+< /* #line	550	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	548	"/n/bopp/v5/dmg/f2c/gram.in" */
+1267c1250
+< /* #line	565	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	563	"/n/bopp/v5/dmg/f2c/gram.in" */
+1275c1258
+< /* #line	573	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	571	"/n/bopp/v5/dmg/f2c/gram.in" */
+1278c1261
+< /* #line	575	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	573	"/n/bopp/v5/dmg/f2c/gram.in" */
+1281c1264
+< /* #line	577	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	575	"/n/bopp/v5/dmg/f2c/gram.in" */
+1284c1267
+< /* #line	582	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	580	"/n/bopp/v5/dmg/f2c/gram.in" */
+1287c1270
+< /* #line	584	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	582	"/n/bopp/v5/dmg/f2c/gram.in" */
+1290c1273
+< /* #line	589	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	587	"/n/bopp/v5/dmg/f2c/gram.in" */
+1296c1279
+< /* #line	601	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	599	"/n/bopp/v5/dmg/f2c/gram.in" */
+1304c1287
+< /* #line	615	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	613	"/n/bopp/v5/dmg/f2c/gram.in" */
+1310c1293
+< /* #line	622	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	620	"/n/bopp/v5/dmg/f2c/gram.in" */
+1313c1296
+< /* #line	626	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	624	"/n/bopp/v5/dmg/f2c/gram.in" */
+1347c1330
+< /* #line	659	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	657	"/n/bopp/v5/dmg/f2c/gram.in" */
+1362c1345
+< /* #line	675	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	673	"/n/bopp/v5/dmg/f2c/gram.in" */
+1369c1352
+< /* #line	681	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	679	"/n/bopp/v5/dmg/f2c/gram.in" */
+1372c1355
+< /* #line	685	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	683	"/n/bopp/v5/dmg/f2c/gram.in" */
+1375c1358
+< /* #line	689	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	687	"/n/bopp/v5/dmg/f2c/gram.in" */
+1378c1361
+< /* #line	694	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	692	"/n/bopp/v5/dmg/f2c/gram.in" */
+1389c1372
+< /* #line	704	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	702	"/n/bopp/v5/dmg/f2c/gram.in" */
+1400c1383
+< /* #line	716	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	714	"/n/bopp/v5/dmg/f2c/gram.in" */
+1403c1386
+< /* #line	721	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	719	"/n/bopp/v5/dmg/f2c/gram.in" */
+1406c1389
+< /* #line	723	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	721	"/n/bopp/v5/dmg/f2c/gram.in" */
+1409c1392
+< /* #line	727	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	725	"/n/bopp/v5/dmg/f2c/gram.in" */
+1412c1395
+< /* #line	731	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	729	"/n/bopp/v5/dmg/f2c/gram.in" */
+1415c1398
+< /* #line	737	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	735	"/n/bopp/v5/dmg/f2c/gram.in" */
+1420c1403
+< /* #line	742	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	740	"/n/bopp/v5/dmg/f2c/gram.in" */
+1423c1406
+< /* #line	751	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	749	"/n/bopp/v5/dmg/f2c/gram.in" */
+1426c1409
+< /* #line	753	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	751	"/n/bopp/v5/dmg/f2c/gram.in" */
+1429c1412
+< /* #line	757	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	755	"/n/bopp/v5/dmg/f2c/gram.in" */
+1438c1421
+< /* #line	771	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	769	"/n/bopp/v5/dmg/f2c/gram.in" */
+1451c1434
+< /* #line	785	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	783	"/n/bopp/v5/dmg/f2c/gram.in" */
+1454c1437
+< /* #line	787	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	785	"/n/bopp/v5/dmg/f2c/gram.in" */
+1457c1440
+< /* #line	791	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	789	"/n/bopp/v5/dmg/f2c/gram.in" */
+1479c1462
+< /* #line	813	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	811	"/n/bopp/v5/dmg/f2c/gram.in" */
+1482c1465
+< /* #line	815	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	813	"/n/bopp/v5/dmg/f2c/gram.in" */
+1485c1468
+< /* #line	819	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	817	"/n/bopp/v5/dmg/f2c/gram.in" */
+1488c1471
+< /* #line	821	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	819	"/n/bopp/v5/dmg/f2c/gram.in" */
+1491c1474
+< /* #line	826	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	824	"/n/bopp/v5/dmg/f2c/gram.in" */
+1495c1478
+< /* #line	834	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	832	"/n/bopp/v5/dmg/f2c/gram.in" */
+1498c1481
+< /* #line	836	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	834	"/n/bopp/v5/dmg/f2c/gram.in" */
+1501c1484
+< /* #line	838	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	836	"/n/bopp/v5/dmg/f2c/gram.in" */
+1504c1487
+< /* #line	840	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	838	"/n/bopp/v5/dmg/f2c/gram.in" */
+1507c1490
+< /* #line	842	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	840	"/n/bopp/v5/dmg/f2c/gram.in" */
+1517c1500
+< /* #line	851	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	849	"/n/bopp/v5/dmg/f2c/gram.in" */
+1520c1503
+< /* #line	853	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	851	"/n/bopp/v5/dmg/f2c/gram.in" */
+1524c1507
+< /* #line	856	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	854	"/n/bopp/v5/dmg/f2c/gram.in" */
+1528c1511
+< /* #line	859	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	857	"/n/bopp/v5/dmg/f2c/gram.in" */
+1531c1514
+< /* #line	861	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	859	"/n/bopp/v5/dmg/f2c/gram.in" */
+1534c1517
+< /* #line	863	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	861	"/n/bopp/v5/dmg/f2c/gram.in" */
+1537c1520
+< /* #line	865	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	863	"/n/bopp/v5/dmg/f2c/gram.in" */
+1541c1524
+< /* #line	869	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	867	"/n/bopp/v5/dmg/f2c/gram.in" */
+1544c1527
+< /* #line	870	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	868	"/n/bopp/v5/dmg/f2c/gram.in" */
+1547c1530
+< /* #line	873	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	871	"/n/bopp/v5/dmg/f2c/gram.in" */
+1550c1533
+< /* #line	874	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	872	"/n/bopp/v5/dmg/f2c/gram.in" */
+1553c1536
+< /* #line	875	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	873	"/n/bopp/v5/dmg/f2c/gram.in" */
+1556c1539
+< /* #line	876	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	874	"/n/bopp/v5/dmg/f2c/gram.in" */
+1559c1542
+< /* #line	877	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	875	"/n/bopp/v5/dmg/f2c/gram.in" */
+1562c1545
+< /* #line	878	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	876	"/n/bopp/v5/dmg/f2c/gram.in" */
+1565c1548
+< /* #line	882	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	880	"/n/bopp/v5/dmg/f2c/gram.in" */
+1568c1551
+< /* #line	884	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	882	"/n/bopp/v5/dmg/f2c/gram.in" */
+1572c1555
+< /* #line	887	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	885	"/n/bopp/v5/dmg/f2c/gram.in" */
+1575c1558
+< /* #line	889	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	887	"/n/bopp/v5/dmg/f2c/gram.in" */
+1579c1562
+< /* #line	894	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	892	"/n/bopp/v5/dmg/f2c/gram.in" */
+1582c1565
+< /* #line	898	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	896	"/n/bopp/v5/dmg/f2c/gram.in" */
+1585c1568
+< /* #line	903	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	901	"/n/bopp/v5/dmg/f2c/gram.in" */
+1591c1574
+< /* #line	910	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	908	"/n/bopp/v5/dmg/f2c/gram.in" */
+1594c1577
+< /* #line	911	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	909	"/n/bopp/v5/dmg/f2c/gram.in" */
+1597c1580
+< /* #line	912	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	910	"/n/bopp/v5/dmg/f2c/gram.in" */
+1600c1583
+< /* #line	913	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	911	"/n/bopp/v5/dmg/f2c/gram.in" */
+1603c1586
+< /* #line	914	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	912	"/n/bopp/v5/dmg/f2c/gram.in" */
+1606c1589
+< /* #line	915	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	913	"/n/bopp/v5/dmg/f2c/gram.in" */
+1609c1592
+< /* #line	920	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	918	"/n/bopp/v5/dmg/f2c/gram.in" */
+1612c1595
+< /* #line	924	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	922	"/n/bopp/v5/dmg/f2c/gram.in" */
+1616c1599
+< /* #line	927	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	925	"/n/bopp/v5/dmg/f2c/gram.in" */
+1620c1603
+< /* #line	930	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	928	"/n/bopp/v5/dmg/f2c/gram.in" */
+1624c1607
+< /* #line	936	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	934	"/n/bopp/v5/dmg/f2c/gram.in" */
+1627c1610
+< /* #line	942	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	940	"/n/bopp/v5/dmg/f2c/gram.in" */
+1630c1613
+< /* #line	944	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	942	"/n/bopp/v5/dmg/f2c/gram.in" */
+1633c1616
+< /* #line	946	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	944	"/n/bopp/v5/dmg/f2c/gram.in" */
+1636c1619
+< /* #line	948	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	946	"/n/bopp/v5/dmg/f2c/gram.in" */
+1639c1622
+< /* #line	950	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	948	"/n/bopp/v5/dmg/f2c/gram.in" */
+1645c1628
+< /* #line	955	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	953	"/n/bopp/v5/dmg/f2c/gram.in" */
+1649c1632
+< /* #line	960	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	958	"/n/bopp/v5/dmg/f2c/gram.in" */
+1657c1640
+< /* #line	967	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	965	"/n/bopp/v5/dmg/f2c/gram.in" */
+1663c1646
+< /* #line	972	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	970	"/n/bopp/v5/dmg/f2c/gram.in" */
+1666c1649
+< /* #line	974	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	972	"/n/bopp/v5/dmg/f2c/gram.in" */
+1669c1652
+< /* #line	976	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	974	"/n/bopp/v5/dmg/f2c/gram.in" */
+1672c1655
+< /* #line	977	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	975	"/n/bopp/v5/dmg/f2c/gram.in" */
+1675c1658
+< /* #line	979	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	977	"/n/bopp/v5/dmg/f2c/gram.in" */
+1678c1661
+< /* #line	981	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	979	"/n/bopp/v5/dmg/f2c/gram.in" */
+1681c1664
+< /* #line	985	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	983	"/n/bopp/v5/dmg/f2c/gram.in" */
+1684c1667
+< /* #line	989	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	987	"/n/bopp/v5/dmg/f2c/gram.in" */
+1687c1670
+< /* #line	993	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	991	"/n/bopp/v5/dmg/f2c/gram.in" */
+1690c1673
+< /* #line	994	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	992	"/n/bopp/v5/dmg/f2c/gram.in" */
+1693c1676
+< /* #line	998	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	996	"/n/bopp/v5/dmg/f2c/gram.in" */
+1696c1679
+< /* #line	1000	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	998	"/n/bopp/v5/dmg/f2c/gram.in" */
+1699c1682
+< /* #line	1004	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1002	"/n/bopp/v5/dmg/f2c/gram.in" */
+1702c1685
+< /* #line	1006	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1004	"/n/bopp/v5/dmg/f2c/gram.in" */
+1705c1688
+< /* #line	1008	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1006	"/n/bopp/v5/dmg/f2c/gram.in" */
+1708c1691
+< /* #line	1010	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1008	"/n/bopp/v5/dmg/f2c/gram.in" */
+1711c1694
+< /* #line	1012	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1010	"/n/bopp/v5/dmg/f2c/gram.in" */
+1718c1701
+< /* #line	1018	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1016	"/n/bopp/v5/dmg/f2c/gram.in" */
+1721c1704
+< /* #line	1020	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1018	"/n/bopp/v5/dmg/f2c/gram.in" */
+1724c1707
+< /* #line	1024	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1022	"/n/bopp/v5/dmg/f2c/gram.in" */
+1727c1710
+< /* #line	1028	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1026	"/n/bopp/v5/dmg/f2c/gram.in" */
+1735c1718
+< /* #line	1037	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1035	"/n/bopp/v5/dmg/f2c/gram.in" */
+1738c1721
+< /* #line	1039	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1037	"/n/bopp/v5/dmg/f2c/gram.in" */
+1741c1724
+< /* #line	1041	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1039	"/n/bopp/v5/dmg/f2c/gram.in" */
+1744c1727
+< /* #line	1043	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1041	"/n/bopp/v5/dmg/f2c/gram.in" */
+1751c1734
+< /* #line	1055	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1053	"/n/bopp/v5/dmg/f2c/gram.in" */
+1754c1737
+< /* #line	1059	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1057	"/n/bopp/v5/dmg/f2c/gram.in" */
+1757c1740
+< /* #line	1061	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1059	"/n/bopp/v5/dmg/f2c/gram.in" */
+1760c1743
+< /* #line	1066	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1064	"/n/bopp/v5/dmg/f2c/gram.in" */
+1763c1746
+< /* #line	1070	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1068	"/n/bopp/v5/dmg/f2c/gram.in" */
+1766c1749
+< /* #line	1072	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1070	"/n/bopp/v5/dmg/f2c/gram.in" */
+1769c1752
+< /* #line	1076	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1074	"/n/bopp/v5/dmg/f2c/gram.in" */
+1772c1755
+< /* #line	1078	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1076	"/n/bopp/v5/dmg/f2c/gram.in" */
+1775c1758
+< /* #line	1082	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1080	"/n/bopp/v5/dmg/f2c/gram.in" */
+1787c1770
+< /* #line	1095	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1093	"/n/bopp/v5/dmg/f2c/gram.in" */
+1790c1773
+< /* #line	1099	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1097	"/n/bopp/v5/dmg/f2c/gram.in" */
+1793c1776
+< /* #line	1104	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1102	"/n/bopp/v5/dmg/f2c/gram.in" */
+1796c1779
+< /* #line	1109	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1107	"/n/bopp/v5/dmg/f2c/gram.in" */
+1799c1782
+< /* #line	1111	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1109	"/n/bopp/v5/dmg/f2c/gram.in" */
+1802c1785
+< /* #line	1113	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1111	"/n/bopp/v5/dmg/f2c/gram.in" */
+1805c1788
+< /* #line	1116	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1114	"/n/bopp/v5/dmg/f2c/gram.in" */
+1808c1791
+< /* #line	1118	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1116	"/n/bopp/v5/dmg/f2c/gram.in" */
+1811c1794
+< /* #line	1120	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1118	"/n/bopp/v5/dmg/f2c/gram.in" */
+1814c1797
+< /* #line	1122	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1120	"/n/bopp/v5/dmg/f2c/gram.in" */
+1817c1800
+< /* #line	1124	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1122	"/n/bopp/v5/dmg/f2c/gram.in" */
+1820c1803
+< /* #line	1126	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1124	"/n/bopp/v5/dmg/f2c/gram.in" */
+1823c1806
+< /* #line	1128	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1126	"/n/bopp/v5/dmg/f2c/gram.in" */
+1826c1809
+< /* #line	1130	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1128	"/n/bopp/v5/dmg/f2c/gram.in" */
+1829c1812
+< /* #line	1132	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1130	"/n/bopp/v5/dmg/f2c/gram.in" */
+1832c1815
+< /* #line	1134	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1132	"/n/bopp/v5/dmg/f2c/gram.in" */
+1835c1818
+< /* #line	1141	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1139	"/n/bopp/v5/dmg/f2c/gram.in" */
+1838c1821
+< /* #line	1143	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1141	"/n/bopp/v5/dmg/f2c/gram.in" */
+1841c1824
+< /* #line	1145	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1143	"/n/bopp/v5/dmg/f2c/gram.in" */
+1844c1827
+< /* #line	1152	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1150	"/n/bopp/v5/dmg/f2c/gram.in" */
+1847c1830
+< /* #line	1154	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1152	"/n/bopp/v5/dmg/f2c/gram.in" */
+1850c1833
+< /* #line	1156	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1154	"/n/bopp/v5/dmg/f2c/gram.in" */
+1853c1836
+< /* #line	1160	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1158	"/n/bopp/v5/dmg/f2c/gram.in" */
+1860c1843
+< /* #line	1166	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1164	"/n/bopp/v5/dmg/f2c/gram.in" */
+1867c1850
+< /* #line	1174	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1172	"/n/bopp/v5/dmg/f2c/gram.in" */
+1873c1856
+< /* #line	1179	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1177	"/n/bopp/v5/dmg/f2c/gram.in" */
+1876c1859
+< /* #line	1187	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1185	"/n/bopp/v5/dmg/f2c/gram.in" */
+1879c1862
+< /* #line	1189	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1187	"/n/bopp/v5/dmg/f2c/gram.in" */
+1882c1865
+< /* #line	1191	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1189	"/n/bopp/v5/dmg/f2c/gram.in" */
+1885c1868
+< /* #line	1193	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1191	"/n/bopp/v5/dmg/f2c/gram.in" */
+1888c1871
+< /* #line	1195	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1193	"/n/bopp/v5/dmg/f2c/gram.in" */
+1891c1874
+< /* #line	1197	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1195	"/n/bopp/v5/dmg/f2c/gram.in" */
+1894c1877
+< /* #line	1201	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1199	"/n/bopp/v5/dmg/f2c/gram.in" */
+1897c1880
+< /* #line	1205	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1203	"/n/bopp/v5/dmg/f2c/gram.in" */
+1900c1883
+< /* #line	1209	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1207	"/n/bopp/v5/dmg/f2c/gram.in" */
+1903c1886
+< /* #line	1213	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1211	"/n/bopp/v5/dmg/f2c/gram.in" */
+1911c1894
+< /* #line	1220	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1218	"/n/bopp/v5/dmg/f2c/gram.in" */
+1919c1902
+< /* #line	1229	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1227	"/n/bopp/v5/dmg/f2c/gram.in" */
+1922c1905
+< /* #line	1231	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1229	"/n/bopp/v5/dmg/f2c/gram.in" */
+1925c1908
+< /* #line	1235	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1233	"/n/bopp/v5/dmg/f2c/gram.in" */
+1928c1911
+< /* #line	1237	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1235	"/n/bopp/v5/dmg/f2c/gram.in" */
+1931c1914
+< /* #line	1241	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1239	"/n/bopp/v5/dmg/f2c/gram.in" */
+1934c1917
+< /* #line	1243	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1241	"/n/bopp/v5/dmg/f2c/gram.in" */
+1937c1920
+< /* #line	1248	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1246	"/n/bopp/v5/dmg/f2c/gram.in" */
+1940c1923
+< /* #line	1250	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1248	"/n/bopp/v5/dmg/f2c/gram.in" */
+1943c1926
+< /* #line	1252	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1250	"/n/bopp/v5/dmg/f2c/gram.in" */
+1946c1929
+< /* #line	1254	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1252	"/n/bopp/v5/dmg/f2c/gram.in" */
+1949c1932
+< /* #line	1256	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1254	"/n/bopp/v5/dmg/f2c/gram.in" */
+1952c1935
+< /* #line	1258	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1256	"/n/bopp/v5/dmg/f2c/gram.in" */
+1955c1938
+< /* #line	1262	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1260	"/n/bopp/v5/dmg/f2c/gram.in" */
+1958c1941
+< /* #line	1264	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1262	"/n/bopp/v5/dmg/f2c/gram.in" */
+1961c1944
+< /* #line	1266	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1264	"/n/bopp/v5/dmg/f2c/gram.in" */
+1964c1947
+< /* #line	1268	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1266	"/n/bopp/v5/dmg/f2c/gram.in" */
+1967c1950
+< /* #line	1270	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1268	"/n/bopp/v5/dmg/f2c/gram.in" */
+1970c1953
+< /* #line	1274	"/home/dmg/h/f2c/gram.in" */
+---
+> /* #line	1272	"/n/bopp/v5/dmg/f2c/gram.in" */
+diff -r source-src.tgz-extracted/src/gram.dcl lookaside-src.tgz-extracted/src/gram.dcl
+48,54c48,54
+< typename:    SINTEGER	{ $$ = lasttype = TYLONG; }
+< 	| SREAL		{ $$ = lasttype = tyreal; }
+< 	| SCOMPLEX	{ ++complex_seen; $$ = lasttype = tycomplex; }
+< 	| SDOUBLE	{ $$ = lasttype = TYDREAL; }
+< 	| SDCOMPLEX	{ ++dcomplex_seen; NOEXT("DOUBLE COMPLEX statement"); $$ = lasttype = TYDCOMPLEX; }
+< 	| SLOGICAL	{ $$ = lasttype = TYLOGICAL; }
+< 	| SCHARACTER	{ NO66("CHARACTER statement"); $$ = lasttype = TYCHAR; }
+---
+> typename:    SINTEGER	{ $$ = TYLONG; }
+> 	| SREAL		{ $$ = tyreal; }
+> 	| SCOMPLEX	{ ++complex_seen; $$ = tycomplex; }
+> 	| SDOUBLE	{ $$ = TYDREAL; }
+> 	| SDCOMPLEX	{ ++dcomplex_seen; NOEXT("DOUBLE COMPLEX statement"); $$ = TYDCOMPLEX; }
+> 	| SLOGICAL	{ $$ = TYLOGICAL; }
+> 	| SCHARACTER	{ NO66("CHARACTER statement"); $$ = TYCHAR; }
+81,82c81
+< 				case 4: $$ = lasttype == TYREAL ? typesize[TYREAL] : typesize[TYLONG];
+< 					break;
+---
+> 				case 4: $$ = typesize[TYLONG];	break;
+diff -r source-src.tgz-extracted/src/gram.head lookaside-src.tgz-extracted/src/gram.head
+31d30
+< static int lasttype;
+diff -r source-src.tgz-extracted/src/intr.c lookaside-src.tgz-extracted/src/intr.c
+26a27,32
+> union
+> 	{
+> 	int ijunk;
+> 	struct Intrpacked bits;
+> 	} packed;
+> 
+608d613
+< 	Packed packed;
+931d935
+< 	Packed packed;
+970d973
+< 	Packed packed;
+diff -r source-src.tgz-extracted/src/main.c lookaside-src.tgz-extracted/src/main.c
+79d78
+< int uselonglong = NO;		/* YES => tyint = TYLONG; adjust typesizes for 64-bit ints */
+108d106
+< int wantfname = YES;
+176,177d173
+<     f2c_entry ("I8", P_NO_ARGS, P_INT, &uselonglong, YES),
+<     f2c_entry ("cf", P_NO_ARGS, P_INT, &wantfname, NO),
+248,268c244
+< 
+<     if (uselonglong) {
+< 	if (useshortints)
+< 		err("Can't use -I8 with -I2");
+< 	if (uselongints)
+< 		err("Can't use -I8 with -I4");
+< 	if (!tyioint)
+< 		err("Can't use -I8 with -i2");
+< 	if (chars_per_wd)
+< 		err("Can't use -I8 with -W");
+< 	typesize[TYADDR] = typesize[TYLONG] = typesize[TYDREAL] = typesize[TYCOMPLEX] = typesize[TYLOGICAL] = 8;
+< 	typesize[TYSHORT] = typesize[TYREAL] = typesize[TYLOGICAL2] = 4;
+< 	typesize[TYQUAD] = typesize[TYDCOMPLEX] = 16;
+< 	typesize[TYCILIST] = 40;
+< 	typesize[TYICILIST] = 48;
+< 	typesize[TYOLIST] = 72;
+< 	typesize[TYCLLIST] = 24;
+< 	typesize[TYALIST] = 16;
+< 	typesize[TYINLIST] = 208;
+< 	}
+<     else if (chars_per_wd > 0) {
+---
+>     if (chars_per_wd > 0) {
+495c471
+< 		  && (s[3] || s[2] != '2' && s[2] != '4' && s[2] != '8'))
+---
+> 		  && (s[3] || s[2] != '2' && s[2] != '4'))
+672,675c648,649
+< 		if (wantfname) {
+< 			fprintf(diagfile, "%s:\n", file_name);
+< 			fflush(diagfile);
+< 			}
+---
+> 		fprintf(diagfile, "%s:\n", file_name);
+> 		fflush(diagfile);
+Only in lookaside-src.tgz-extracted/src: mkfile.plan9
+diff -r source-src.tgz-extracted/src/proc.c lookaside-src.tgz-extracted/src/proc.c
+56d55
+<  extern int uselonglong, wantfname;
+464,471c463,466
+< 	if (wantfname) {
+< 		fprintf(diagfile, "   %s", (Class==CLMAIN ? "MAIN" : "BLOCK DATA") );
+< 		if(progname) {
+< 			fprintf(diagfile, " %s", progname->fextname);
+< 			procname = progname->cextname;
+< 			}
+< 		fprintf(diagfile, ":\n");
+< 		fflush(diagfile);
+---
+> 	fprintf(diagfile, "   %s", (Class==CLMAIN ? "MAIN" : "BLOCK DATA") );
+> 	if(progname) {
+> 		fprintf(diagfile, " %s", progname->fextname);
+> 		procname = progname->cextname;
+472a468,469
+> 	fprintf(diagfile, ":\n");
+> 	fflush(diagfile);
+534c531
+< 	else if (wantfname)
+---
+> 	else
+536,539c533,534
+< 	if (wantfname) {
+< 		fprintf(diagfile, "   %s:\n", entry->fextname);
+< 		fflush(diagfile);
+< 		}
+---
+> 	fprintf(diagfile, "   %s:\n", entry->fextname);
+> 	fflush(diagfile);
+1583,1584d1577
+< 			case 8: if (uselonglong)
+< 					return tylog;
+1627c1620
+< 	Packed k;
+---
+> 	int k;
+1629,1630c1622,1623
+< 	if(k.ijunk = intrfunct(v->fvarname)) {
+< 		if (k.bits.f4)
+---
+> 	if(k = intrfunct(v->fvarname)) {
+> 		if ((*(struct Intrpacked *)&k).f4)
+1635c1628
+< 		v->vardesc.varno = k.ijunk;
+---
+> 		v->vardesc.varno = k;
+1708c1701
+< 	    ckalloc( sizeof(struct Dimblock) + 2*sizeof(expptr)*(nd-1) );
+---
+> 	    ckalloc( sizeof(int) + (3+2*nd)*sizeof(expptr) );
+diff -r source-src.tgz-extracted/src/README lookaside-src.tgz-extracted/src/README
+73c73
+< (ANSI or ISO) C environment, e.g., do not provide stdlib.h .  If yours
+---
+> (ANSI or ISO) C environment, e.g. do not provide stdlib.h .  If yours
+178,189d177
+< 
+< Fortran 77 assumes variables of type INTEGER and REAL occupy the same
+< storage and that a DOUBLE PRECISION or COMPLEX variable occupies twice
+< this storage.  The types in f2c.h need to reflect these assumptions,
+< at least when EQUIVALENCE is involved.  As of 2021, most modern C and
+< C++ compilers make "int" a four-byte type, i.e., (in C notation)
+< sizeof(int) == 4.  Some make sizeof(long) == 4, others make
+< sizeof(long) == 8.  (With the compiler originally used for f2c,
+< sizeof(int) == 2 and sizeof(long) == 4.)  For compilers having
+< sizeof(int) == 4 and sizeof(long) == 8, in f2c.h it suffices to change
+< "long int" to "int" and is safe to change "#ifdef INTEGER_STAR_8" to
+< "#if 1".
+diff -r source-src.tgz-extracted/src/sysdep.c lookaside-src.tgz-extracted/src/sysdep.c
+23,25d22
+< #ifdef _WIN32
+< #include <windows.h>	/* for GetVolumeInformation */
+< #endif
+58a56
+> #include <windows.h>	/* for GetVolumeInformation */
+107,109c105
+< #ifdef MSDOS
+< extern int rmdir(const char*);
+< #else
+---
+> #ifndef MSDOS
+Only in lookaside-src.tgz-extracted/src: tokdefs.h
+diff -r source-src.tgz-extracted/src/version.c lookaside-src.tgz-extracted/src/version.c
+1,2c1,2
+< char F2C_version[] = "20240504";
+< char xxxvers[] = "\n@(#) FORTRAN 77 to C Translator, VERSION 20240504\n";
+---
+> char F2C_version[] = "20200916";
+> char xxxvers[] = "\n@(#) FORTRAN 77 to C Translator, VERSION 20200916\n";
+diff -r source-src.tgz-extracted/src/xsum0.out lookaside-src.tgz-extracted/src/xsum0.out
+2c2
+< README	f92ed640	8656
+---
+> README	f11dd32a	7973
+6c6
+< defs.h	f1324ea7	34590
+---
+> defs.h	e48cebb	34523
+10,14c10,14
+< expr.c	14bdc5da	72270
+< f2c.1	69261bd	7791
+< f2c.1t	1e96145e	7845
+< f2c.h	1821c855	4706
+< format.c	177017a3	60177
+---
+> expr.c	6bfe005	72276
+> f2c.1	b0441b2	7532
+> f2c.1t	bf1f87	7574
+> f2c.h	e770b7d8	4688
+> format.c	f00da069	59974
+16c16
+< formatdata.c	13bf4a7a	29060
+---
+> formatdata.c	1f0f56eb	28988
+18,19c18,19
+< gram.c	ff367120	64093
+< gram.dcl	1971778e	8585
+---
+> gram.c	3794117	64242
+> gram.dcl	e38579ff	8463
+22c22
+< gram.head	e35e29e8	7383
+---
+> gram.head	e6bbfeab	7362
+25c25
+< intr.c	ecab41aa	25006
+---
+> intr.c	1ebf37ee	25016
+30c30
+< main.c	468e0c	21769
+---
+> main.c	e23f7b59	20898
+49c49
+< proc.c	b4c8a9b	39337
+---
+> proc.c	e6d47490	39179
+52c52
+< sysdep.c	eef0a794	15934
+---
+> sysdep.c	f34bbeb6	15877
+58,59c58,59
+< version.c	e5ab1294	107
+< xsum.c	e52f7b45	6655
+---
+> version.c	f5590e6a	107
+> xsum.c	e05654a7	6653
+diff -r source-src.tgz-extracted/src/xsum.c lookaside-src.tgz-extracted/src/xsum.c
+234c234
+< 		while((s = *++argv));
+---
+> 		while(s = *++argv);

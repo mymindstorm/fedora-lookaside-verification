@@ -1,0 +1,10 @@
+Source package : rust-dtoa
+File name       : dtoa-1.0.9.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-dtoa/dtoa-1.0.9.crate/sha512/996814e68f67c77d68a0e3195241f7034575453401370a1842c94232a35aa41c832f788720ee68947662ae0e8c7595df736810a2b392871f57e6ccb47f55a4b9/dtoa-1.0.9.crate
+Source URL      : https://crates.io/api/v1/crates/dtoa/1.0.9/download#/dtoa-1.0.9.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dtoa-1.0.9.crate: gzip compressed data, was "dtoa-1.0.9.crate", max compression, original size modulo 2^32 69632
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dtoa-1.0.9.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

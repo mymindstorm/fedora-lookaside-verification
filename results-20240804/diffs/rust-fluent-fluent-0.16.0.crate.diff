@@ -1,0 +1,10 @@
+Source package : rust-fluent
+File name       : fluent-0.16.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-fluent/fluent-0.16.0.crate/sha512/b38bc79635f843e1bbf2abbeba9ac99fd5c3b702cd1699f1424e7ceeba07a548cd3846b4886b9472c7f5bff52dde652acb8a17760c677c5246a235e0f02ff418/fluent-0.16.0.crate
+Source URL      : https://crates.io/api/v1/crates/fluent/0.16.0/download#/fluent-0.16.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-fluent-0.16.0.crate: gzip compressed data, was "fluent-0.16.0.crate", max compression, original size modulo 2^32 29696
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-fluent-0.16.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

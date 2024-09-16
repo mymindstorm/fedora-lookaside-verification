@@ -1,0 +1,11 @@
+Source package : libxdg-basedir
+File name       : libxdg-basedir-1.2.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/libxdg-basedir/libxdg-basedir-1.2.0.tar.gz/md5/027aaf1495f6ffa4b5a563b511d5d3f3/libxdg-basedir-1.2.0.tar.gz
+Source URL      : https://github.com/devnev/libxdg-basedir/archive/libxdg-basedir-1.2.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libxdg-basedir-1.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 163840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libxdg-basedir-1.2.0.tar.gz: gzip compressed data, last modified: Sun Jan 22 01:29:30 2012, max compression, from Unix, original size modulo 2^32 1474560
+
+
+Only in lookaside-libxdg-basedir-1.2.0.tar.gz-extracted: libxdg-basedir-1.2.0
+Only in source-libxdg-basedir-1.2.0.tar.gz-extracted: libxdg-basedir-libxdg-basedir-1.2.0

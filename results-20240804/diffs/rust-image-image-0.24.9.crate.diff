@@ -1,0 +1,10 @@
+Source package : rust-image
+File name       : image-0.24.9.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-image/image-0.24.9.crate/sha512/3f858efceeed54e21543eee065ca6008f40c568e1ece1016b38040eff5625c9fb6de77c7e950c08c9e82b9fcbd4c4ec2f8c4c1157ed5d232bc8e35b4850420d2/image-0.24.9.crate
+Source URL      : https://crates.io/api/v1/crates/image/0.24.9/download#/image-0.24.9.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-image-0.24.9.crate: gzip compressed data, was "image-0.24.9.crate", max compression, original size modulo 2^32 13611520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-image-0.24.9.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

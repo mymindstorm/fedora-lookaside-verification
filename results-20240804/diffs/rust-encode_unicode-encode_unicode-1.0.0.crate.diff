@@ -1,0 +1,10 @@
+Source package : rust-encode_unicode
+File name       : encode_unicode-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-encode_unicode/encode_unicode-1.0.0.crate/sha512/c9a21d48ba9d50750789cb6fbe32afd903c583c9ef05a9741007dcdf64b1344735f71dd882ad71ab9e5f96f8839578ca53bca14d13d57b9e27b8cce2cd507359/encode_unicode-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/encode_unicode/1.0.0/download#/encode_unicode-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-encode_unicode-1.0.0.crate: gzip compressed data, was "encode_unicode-1.0.0.crate", max compression, original size modulo 2^32 254464
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-encode_unicode-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-console0.13
+File name       : console-0.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-console0.13/console-0.13.0.crate/sha512/b687031ebfec1ee705c47e147239b602ffc147eec021ce7c9a4f400db7e3e0b1cf124b4c1664f9ffd1f3719f13a5d65c67bb15146bf42dccc5733373bd10b20c/console-0.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/console/0.13.0/download#/console-0.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-console-0.13.0.crate: gzip compressed data, was "console-0.13.0.crate", max compression, original size modulo 2^32 111616
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-console-0.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

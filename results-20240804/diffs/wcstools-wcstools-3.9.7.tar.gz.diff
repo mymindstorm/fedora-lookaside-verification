@@ -1,0 +1,735 @@
+Source package : wcstools
+File name       : wcstools-3.9.7.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/wcstools/wcstools-3.9.7.tar.gz/sha512/a785b87eb8715e6408b463b42f521eaa7b22096346b83b7e76dc068954dd299ef892ac990326b46fef349d9581416dc34d7b1df0fcf41096a4f2c8bf2ed2677b/wcstools-3.9.7.tar.gz
+Source URL      : http://tdc-www.harvard.edu/software/wcstools/wcstools-3.9.7.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-wcstools-3.9.7.tar.gz: gzip compressed data, was "wcstools-3.9.7.tar", last modified: Thu Aug 11 18:14:57 2022, from Unix, original size modulo 2^32 13854720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-wcstools-3.9.7.tar.gz: gzip compressed data, was "wcstools-3.9.7.tar", last modified: Tue Apr 26 21:18:03 2022, from Unix, original size modulo 2^32 13824000
+
+
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/addpix.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/addpix.c
+37c37
+< static char *RevMsg = "ADDPIX WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "ADDPIX WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/bincat.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/bincat.c
+51c51
+< static char *RevMsg = "BINCAT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "BINCAT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/catrot.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/catrot.c
+49c49
+< static char *RevMsg = "IMROT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMROT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/char2sp.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/char2sp.c
+42c42
+< static char *RevMsg = "CHAR2SP WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "CHAR2SP WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/conpix.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/conpix.c
+55c55
+< static char *RevMsg = "CONPIX WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "CONPIX WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/cphead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/cphead.c
+44c44
+< static char *RevMsg = "CPHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "CPHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/delhead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/delhead.c
+56c56
+< static char *RevMsg = "DELHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "DELHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/delwcs.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/delwcs.c
+41c41
+< static char *RevMsg = "DELWCS WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "DELWCS WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/edhead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/edhead.c
+42c42
+< static char *RevMsg = "EDHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "EDHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/filedir.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/filedir.c
+35c35
+< static char *RevMsg = "FILEDIR WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "FILEDIR WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/fixhead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/fixhead.c
+42c42
+< static char *RevMsg = "FIXHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "FIXHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/fixpix.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/fixpix.c
+50c50
+< static char *RevMsg = "FIXPIX WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "FIXPIX WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/getcol.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/getcol.c
+40c40
+< static char *RevMsg = "GETCOL WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "GETCOL WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/getdate.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/getdate.c
+70c70
+< static char *RevMsg = "GETDATE WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "GETDATE WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7: getfits.zip
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/getftab.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/getftab.c
+43c43
+< static char *RevMsg = "GETFTAB WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "GETFTAB WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/gethead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/gethead.c
+50c50
+< static char *RevMsg = "GETHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "GETHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/getpix.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/getpix.c
+2c2
+<  * June 17, 2022
+---
+>  * March 17, 2021
+44c44
+< static char *RevMsg = "GETPIX WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "GETPIX WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+766c766,770
+<     if (ndec > -1)  {
+---
+>     else if (ndec == 0) {
+> 	sprintf (pform, "%%d");
+> 	intout = 1;
+> 	}
+>     else if (ndec > 0)  {
+771c775
+< 	strcpy (pform, "%d");
+---
+> 	strcpy (pform, "%%d");
+775c779
+< 	strcpy (pform, "%.2f");
+---
+> 	strcpy (pform, "%%.2f");
+1406,1407d1409
+<  *
+<  * Jun 17 2022	Fix bugs with formatting floating point data
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/gettab.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/gettab.c
+43c43
+< static char *RevMsg = "GETTAB WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "GETTAB WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/gsc2cat.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/gsc2cat.c
+40c40
+< static char *RevMsg = "GSC2CAT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "GSC2CAT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/htmlsp.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/htmlsp.c
+34c34
+< static char *RevMsg = "HTMLSP WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "HTMLSP WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/i2f.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/i2f.c
+37c37
+< static char *RevMsg = "I2F WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "I2F WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7: imcat0.c
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imcat.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imcat.c
+67c67
+< static char *RevMsg = "IMCAT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMCAT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imextract.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imextract.c
+40c40
+< static char *RevMsg = "IMEXTRACT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMEXTRACT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imfill.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imfill.c
+66c66
+< static char *RevMsg = "IMFILL WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMFILL WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imhead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imhead.c
+42c42
+< static char *RevMsg = "IMHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/immatch.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/immatch.c
+44c44
+< static char *RevMsg = "WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imresize.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imresize.c
+65c65
+< static char *RevMsg = "IMRESIZE WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMRESIZE WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imrot.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imrot.c
+41c41
+< static char *RevMsg = "IMROT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMROT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imsize.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imsize.c
+47c47
+< static char *RevMsg = "IMSIZE WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMSIZE WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imsmooth.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imsmooth.c
+58c58
+< static char *RevMsg = "IMSMOOTH WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMSMOOTH WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imstack.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imstack.c
+40c40
+< static char *RevMsg = "IMSTACK WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMSTACK WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imstar.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imstar.c
+44c44
+< static char *RevMsg = "IMSTAR WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMSTAR WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imwcs.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/imwcs.c
+43c43
+< static char *RevMsg = "IMWCS WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "IMWCS WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isdate.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isdate.c
+31c31
+< static char *RevMsg = "ISDATE WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "ISDATE WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isfile.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isfile.c
+31c31
+< static char *RevMsg = "ISFILE WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "ISFILE WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isfits.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isfits.c
+31c31
+< static char *RevMsg = "ISFITS WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "ISFITS WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isimlist.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isimlist.c
+31c31
+< static char *RevMsg = "ISIMLIST WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "ISIMLIST WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isnum.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isnum.c
+31c31
+< static char *RevMsg = "ISNUM WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "ISNUM WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isrange.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/isrange.c
+30c30
+< static char *RevMsg = "ISRANGE WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "ISRANGE WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/keyhead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/keyhead.c
+53c53
+< static char *RevMsg = "KEYHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "KEYHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: ang2str.c
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: files
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: fileutil0.c
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: fileutil1.c
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/fileutil.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/fileutil.c
+2c2
+<  * July 11, 2022
+---
+>  * February 2, 2022
+76,79d75
+<  * Subroutine:	getokeni4 (tokens, itok, itoken)
+<  *		Get specified integer token from tokenized string
+<  * Subroutine:	getokenr8 (tokens, itok, dtoken)
+<  *		Get specified double token from tokenized string
+96c92
+<  ** Values from ASCII keyword = value NL-terminated string in parameter string
+---
+>  ** Values from any ASCII keyword = value string in a file
+109,115d104
+<  * Subroutine:	aputi4 (string, keyword, ival)
+<  *		Set [keyword]=[int value] in a string
+<  * Subroutine:	aputnr8 (string, keyword, ndec, dval)
+<  *		Set [keyword]=[double value] with ndec decimal places in a string
+<  * Subroutine:	aputs (string, keyword, value)
+<  *		Replace or add at end a keyword=value line in a string
+<  *
+931,973d919
+< /* GETOKENI4 -- get specified int token from tokenized string */
+< 
+< int
+< getokeni4 (tokens, itok, itoken)
+< 
+< struct Tokens *tokens;	/* Token structure returned */
+< int	itok;		/* token sequence number of token
+< 			 * if <0, get whole string after token -itok
+< 			 * if =0, get whole string */
+< int	*itoken;	/* int token (returned) */
+< {
+<     int maxchars = 32;	/* Maximum length of token */
+<     char token[32];	/* Token returned */
+<     int ltok;		/* length of token string (returned) */
+< 
+<     ltok = getoken (tokens, itok, token, maxchars);
+<     *itoken = atoi (token);
+<     return (ltok);
+< }
+< 
+< 
+< /* GETOKENR8 -- get specified double token from tokenized string */
+< 
+< int
+< getokenr8 (tokens, itok, dtoken)
+< 
+< struct Tokens *tokens;	/* Token structure returned */
+< int	itok;		/* token sequence number of token
+< 			 * if <0, get whole string after token -itok
+< 			 * if =0, get whole string */
+< double	*dtoken;	/* int token (returned) */
+< {
+<     int maxchars = 32;	/* Maximum length of token */
+<     char token[32];	/* Token returned */
+<     int ltok;		/* length of token string (returned) */
+< 
+<     ltok = getoken (tokens, itok, token, maxchars);
+<     *dtoken = atof (token);
+<     return (ltok);
+< }
+< 
+< 
+< 
+1602,1837d1547
+< /* APUTI4 -- Replace or add [keyword]=[int value] to ASCII string returning
+<  *	     the string, which may be resized */
+< 
+< char *
+< aputi4 (string, keyword, ival)
+< 
+< char *string;	/* Character string containing <keyword>=<value> info */
+< char *keyword;	/* Keyword of the parameter to be set or reset
+< 		 * If it occurs anywhere in string with an = or : after
+< 		 * it, it will be replaced in place. If it is now, it
+< 		 * will be placed at the start of a new line at the
+< 		 * end of the string. */
+< int ival;	/* 32-bit integer number */
+< {
+<     char value[32]; /* Parameter value as a null-terminated `character string */
+< 
+<     /* Translate value from binary to ASCII */
+<     sprintf (value, "%d", ival);
+< 
+<     aputs (string, keyword, value);
+< 
+<     return (string);
+< }
+< 
+< 
+< /* APUTNR8 -- Put [keyword]=[double value] with ndec decimal places into
+<  * 	      ASCII string returning the string, which may be resized */
+< 
+< char *
+< aputnr8 (string, keyword, ndec, dval)
+< 
+< char *string;	/* Character string containing <keyword>=<value> info */
+< char *keyword;	/* Keyword of the parameter to be set or reset
+< 		 * If it occurs anywhere in string with an = or : after
+< 		 * it, it will be replaced in place. If it is now, it
+< 		 * will be placed at the start of a new line at the
+< 		 * end of the string. */
+< int ndec;	/* Number of decimal places to print */
+< 		/* (-sig. digits of floating point value if negative) */
+< double dval;	/* 64-bit floating point number */
+< {
+<     char value[32];	/* Parameter value as a null-terminated `character string */
+<     char format[8];	/* Floating point format */
+<     int i, lval;
+< 
+<     /* Translate value from binary to ASCII */
+<     if (ndec < 0) {
+<         sprintf (format, "%%.%dg", -ndec);
+<         sprintf (value, format, dval);
+<         }
+<     else {
+<         sprintf (format, "%%.%df", ndec);
+<         sprintf (value, format, dval);
+<         }
+< 
+<     aputs (string, keyword, value);
+< 
+<     return (string);
+< }
+< 
+< /* APUTS -- Put [keyword]=[value] into ASCII string
+<  *          returning the string, which may be resized */
+< 
+< char *
+< aputs (string, keyword, value)
+< 
+< char *string;	/* Character string containing <keyword>=<value> info */
+< char *keyword;	/* Keyword of the parameter to be set or reset
+< 		 * If it occurs anywhere in string with an = or : after
+< 		 * it, it will be replaced in place. If it is now, it
+< 		 * will be placed at the start of a new line at the
+< 		 * end of the string. */
+< char *value;	/* Parameter value as a null-terminated `character string */
+< {
+<     char tstr[SZ_PATHNAME];
+<     char *newstring;
+<     char *pval, *str, *pkey, *pv, *cstr;
+<     char cquot, slf[2], squot[2], dquot[2];
+<     char *lastval, *rval, *brack1, *brack2, *lastring, *iquot, *ival;
+<     char cend, *lineend;
+<     int i, lkey;
+<     int lstr, lstring, lval, lnew, islash, ispace;
+<     int ntok, ltok;
+<     struct Tokens valtok;
+< 
+<     char ceos = (char) 0;
+<     char clf = (char) 10;
+<     int	ilf = 10;
+<     char ccr = (char) 13;
+<     char cspace = (char) 32;
+<     char csquot = (char) 39;
+<     char cdquot = (char) 34;
+< 
+<     slf[0] = clf;
+<     slf[2] = ceos;
+<     squot[0] = csquot;
+<     squot[1] = ceos;
+<     dquot[0] = cdquot;
+<     dquot[1] = ceos;
+<     lastring = string + strlen (string);
+< 
+< /* Find length of variable name */
+<     lkey = strlen (keyword);
+< 
+< /* Check for the existence of the keyword in the string */
+<     pval = NULL;
+<     str = string;
+<     lstring = strlen (str);
+<     while (pval == NULL) {
+< 	pkey = strcsrch (str, keyword);
+< 
+< /* If it has been found, check for = or : and preceding characters */
+< 
+< /* Must be at start of file or after control character or space */
+< 	if (pkey != string && *(pkey-1) > 32) {
+< 	    str = pkey;
+< 	    pval = NULL;
+< 	    }
+< 
+< /* Must have "=" or ":" as next nonspace character */
+< 	else {
+< 	    pv = pkey + lkey;
+< 	    while (*pv == cspace || *pv == ceos) pv++;
+< 	    if (*pv != '=' && *pv != ':' && *pv != 10 && *pv != 'f') {
+< 		str = pkey;
+< 		pval = NULL;
+< 		}
+< 
+< /* If found, bump pointer past keyword, operator, and spaces */
+< 	    else {
+< 		pval = pv + 1;
+< 		while (*pval == '=' || *pval == ' ') pval++;
+< 		break;
+< 		}
+< 	    }
+< 	str = str + lkey;
+< 	if (str > lastring) 
+< 	    break;
+< 	}
+< 
+< /* If keyword has not been found, add it to the end of the string */
+<     if (pkey == NULL) {
+< 
+< /* Find the end of information in the string */
+< 	lval = strlen (keyword) + 4 + strlen (value);
+< 	if (*value != csquot && *value != cdquot &&
+< 	    (strchr (value, islash) || strchr (value, ispace))) {
+< 	    lval = lval + 2;
+< 	    cquot = csquot;
+< 	    }
+< 	else
+< 	    cquot = ceos;
+< 
+< /* Make new entry */
+< 	strcpy (tstr, keyword);
+< 	strcat (tstr, " = ");
+< 	if (cquot)
+< 	    strcat (tstr, squot);
+< 	strcat (tstr, value);
+< 	if (cquot)
+< 	    strcat (tstr, squot);
+< 	 
+< 	cstr = lastring;
+< 	while ( *cstr == ceos || *cstr == cspace)
+< 	    cstr--;
+< 	lstr = strlen (str);
+< 
+< /* If there is room, add new [keyword]=[value] at end of parameter string */
+< 	if (lval < (lastring - cstr)) {
+< 	    if (*cstr != clf)
+< 		strcat (string, slf);
+< 	    strcat (string, tstr);
+< 	    strcat (string, slf);
+< 	    return (string);
+< 	    }
+< 
+< /* If there is no room, reallocate parameter string and
+<  * append new [keyword]=[value] string */
+< 	else {
+< 	    lnew = lstring + (5 * lval);
+< 	    if ((newstring = (char *) calloc (lnew, sizeof (char)))) {
+< 		if (*cstr != clf)
+< 		    strcat (newstring, slf);
+< 		strcat (newstring, tstr);
+< 		strcat (newstring, slf);
+< 		return (newstring);
+< 		}
+< 
+< /* If reallocation was unsuccessful, return a null pointer */
+< 	    else {
+< 		return (NULL);	
+< 		}
+< 	    }
+< 	}
+< 
+< /* Parse value */
+< 
+< /* Drop leading spaces */
+<     while (*pval == ' ') pval++;
+< 
+< /* Change end of line to EOS */
+<     cend = ceos;
+<     if ((lineend = strchr (pval, ilf))) {
+< 	cend = *lineend;
+< 	*lineend = ceos;
+< 	}
+<     else if ((lineend = strchr (pval, ccr))) {
+< 	cend = *lineend;
+< 	*lineend = ceos;
+< 	}
+<     else if ((lineend = strchr (pval, ceos))) {
+< 	cend = *lineend;
+< 	}
+< 
+< /* Parse string */
+<     ntok = setoken (&valtok, pval, "");
+< 
+< /* Extract appropriate token */
+<     ltok = getoken (&valtok, 1, value, lval);
+< 
+< /* Change underscores to blanks
+<     for (ival = pval; ival < value+ltok; ival++) {
+< 	if (*ival == '_') {
+< 	    *ival = ' ';
+< 	    }
+< 	}
+< 
+< /* Fix input string */
+<     if (lineend) {
+< 	*lineend = cend;
+< 	}
+< 
+<     return (string);
+< }
+< 
+< 
+2045,2046d1754
+<  * Jun 24 2022	Add aputnr8() and aputi4() to convert numbers to strings
+<  * Jul 11 2022	Add getokeni4() and getokenr8() to convert strings to numbers
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/fitsfile.h lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/fitsfile.h
+2c2
+<  *** July 26, 2022
+---
+>  *** February 2, 2022
+471c471
+< 	struct Tokens *tokens, /* Token structure */
+---
+> 	struct Tokens *tokens, /* Token structure returned */
+475c475
+< 	char *token,	/* Token (returned) */
+---
+> 	char *token,	/* token (returned) */
+477,488d476
+<     int getokeni4(	/* Get specified integer token from tokenized string */
+< 	struct Tokens *tokens, /* Token structure */
+< 	int itok,	/* Token sequence number of token
+< 			 * if <0, get whole string after token -itok
+< 			 * if =0, get whole string */
+< 	int *token);	/* Token (returned) */
+<     int getokenr8(	/* Get specified double token from tokenized string */
+< 	struct Tokens *tokens, /* Token structure */
+< 	int itok,	/* token sequence number of token
+< 			 * if <0, get whole string after token -itok
+< 			 * if =0, get whole string */
+< 	double *token);	/* Token (returned) */
+521,524d508
+<     char *aputs(	/* Set [keyword] = [value] in string returning new string */
+< 	char *string,	/* character string containing <keyword>= <value> */
+< 	char *keyword,	/* character string containing the name of the keyword */
+< 	char *value);	/* String (returned) */
+1146,1147d1129
+< extern int getokeni4();	/* Get specified integer token from tokenized string */
+< extern int getokenr8();	/* Get specified double token from tokenized string */
+1155d1136
+< char *aputs();	/* Set [keyword] = [value] in string returning new string */
+1422,1423d1402
+<  * Feb  4 2022	Add aputs() to set keyword=value in string
+<  * Jul 26 2022	Add getokeni4() and getokenr8()
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: healpix.diff
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: healpix.doc
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/hget.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/hget.c
+31d30
+<  * 		All hget*() except hgetc() calls return 1 if found, else 0
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/hput.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/hput.c
+141d140
+< 			/* (-sig. digits if negative) */
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: New
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/NEWS lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/NEWS
+3,4c3
+< Version 3.9.7 (August 11, 2022)
+< Modifications used by the new RVTools package:
+---
+> Version 3.9.7 (February 1, 2022)
+6,7c5,6
+< fileutil.c: Add agetw() to get first space-less word from keyword=value string (2022-02-01)
+< fileutil.c: Add agetl() to get a line from a multi-line ASCII file (2022-02-01)
+---
+> fileutil.c: Add agetw() to get first space-less word from keyword=value string 
+> fileutil.c: Add agetl() to get a line from a multi-line ASCII file
+12,17d10
+< fileutil.h: Add aput*() parameter value setting subroutines (2022-06-24)
+< fileutil.c: Add aputs(), aputnr8(), and aputi4() to add or replace a parameter value
+< 	    in an unstructured parameter file (2022-06-24)
+< fileutil.h: Add getoken*() value extraction subroutines (2022-07-11)
+< fileutil.c: Add getokeni4() to extract integer value from a token string (2022-07-11)
+< fileutil.c: Add getokenr8() to extract floating point value from a token string (2022-07-11)
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/Old: ang2str.c
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/Old: fileutil0.c
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/Old: fileutil1.c
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/Old: range.c
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/Old: range.h
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/Old: str2ang.c
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/Old: str2dcpp.c
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs/Old: str2dsun.c
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: range.c
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: range.h
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: str2ang.c
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: str2dcpp.c
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: str2dsun.c
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/libwcs: xx.fits
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/matchcat.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/matchcat.c
+39c39
+< static char *RevMsg = "MATCHCAT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "MATCHCAT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/New: getfits.c
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/New: getfits.zip
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/newfits.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/newfits.c
+50c50
+< static char *RevMsg = "NEWFITS WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "NEWFITS WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/NEWS lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/NEWS
+3c3
+< Version 3.9.7 (August 11, 2022)
+---
+> Version 3.9.7 (April 26, 2022)
+10d9
+< getpix: Fix bugs when formatting floating point data (2022-06-17)
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7: Old
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/Readme lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/Readme
+38c38
+< Version 3.9.7 (August 11, 2022)
+---
+> Version 3.9.7 (April 26, 2022)
+66,71d65
+< fileutil.h: Add aput*() parameter value setting subroutines (2022-06-24)
+< fileutil.c: Add aputs(), aputnr8(), and aputi4() to add or replace a parameter value
+<             in an unstructured parameter file (2022-06-24)
+< fileutil.h: Add getoken*() value extraction subroutines (2022-07-11)
+< fileutil.c: Add getokeni4() to extract integer value from a token string (2022-07-11)
+< fileutil.c: Add getokenr8() to extract floating point value from a token string (2022-07-11)
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/remap.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/remap.c
+52c52
+< static char *RevMsg = "REMAP WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "REMAP WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/revup.sed lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/revup.sed
+1c1
+< 1,$s/3\.9\.7, 17 June 2022/3\.9\.7, 11 August 2022/
+---
+> 1,$s/3\.9\.7, 10 February 2021/3\.9\.7, 26 April 2022/
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/scat.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/scat.c
+36c36
+< static char *RevMsg = "SCAT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SCAT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/sethead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/sethead.c
+69c69
+< static char *RevMsg = "SETHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SETHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/setpix.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/setpix.c
+51c51
+< static char *RevMsg = "SETPIX WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SETPIX WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/simpos.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/simpos.c
+17c17
+< static char *RevMsg = "SIMPOS 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SIMPOS 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/simposx.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/simposx.c
+15c15
+< static char *RevMsg = "SIMPOS 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SIMPOS 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/sky2xy.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/sky2xy.c
+39c39
+< static char *RevMsg = "SKY2XY WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SKY2XY WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/skycoor.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/skycoor.c
+54c54
+< static char *RevMsg = "SKYCOOR WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SKYCOOR WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/sp2char.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/sp2char.c
+43c43
+< static char *RevMsg = "SP2CHAR WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SP2CHAR WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/subpix.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/subpix.c
+41c41
+< static char *RevMsg = "SUBPIX WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SUBPIX WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/sumpix.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/sumpix.c
+42c42
+< static char *RevMsg = "SUMPIX WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "SUMPIX WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/testrot.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/testrot.c
+27c27
+< static char *RevMsg = "TESTROT WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "TESTROT WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/wcshead.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/wcshead.c
+50c50
+< static char *RevMsg = "WCSHEAD WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "WCSHEAD WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7: wcstools-3.9.7.tar
+Only in source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7: wcstools.test
+Only in lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7: xy2sky1.c
+diff -r source-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/xy2sky.c lookaside-wcstools-3.9.7.tar.gz-extracted/wcstools-3.9.7/xy2sky.c
+52c52
+< static char *RevMsg = "XY2SKY WCSTools 3.9.7, 11 August 2022, Jessica Mink (jmink@cfa.harvard.edu)";
+---
+> static char *RevMsg = "XY2SKY WCSTools 3.9.7, 26 April 2022, Jessica Mink (jmink@cfa.harvard.edu)";

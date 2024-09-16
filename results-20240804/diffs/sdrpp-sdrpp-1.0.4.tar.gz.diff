@@ -1,0 +1,11 @@
+Source package : sdrpp
+File name       : sdrpp-1.0.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sdrpp/sdrpp-1.0.4.tar.gz/sha512/6cea1b96ff29c25a6dc2ddc519bce92262c553e1dd3db27501cf15544bc2fb202f1c8f129a05fc14399a3a482e1e2058ac04cecb19f9ed5aa73a8db2cced6188/sdrpp-1.0.4.tar.gz
+Source URL      : https://github.com/AlexandreRouma/SDRPlusPlus/archive/f539cfad329859ffd0d99e1ae03dd06da35aadf7/sdrpp-1.0.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sdrpp-1.0.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 10352640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sdrpp-1.0.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1268408554 gzip compressed data, reserved method, ASCII, has CRC, was "\373\264i\310\356\300\232\001\302\232C\240\345H\203\336\354\362.\250h\344\011@\231\305\033\225\005\273<\311\224\3359\255\206\3178\311c,\257\346\275\366\365ta\307\373\265S\351\316\235\307AQT\272Z@^o\026\267\361\030\347e", original size modulo 2^32 1268408554
+
+
+Only in lookaside-sdrpp-1.0.4.tar.gz-extracted: SDRPlusPlus-1.0.4
+Only in source-sdrpp-1.0.4.tar.gz-extracted: SDRPlusPlus-f539cfad329859ffd0d99e1ae03dd06da35aadf7

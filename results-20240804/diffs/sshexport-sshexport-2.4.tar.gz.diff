@@ -1,0 +1,25 @@
+Source package : sshexport
+File name       : sshexport-2.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sshexport/sshexport-2.4.tar.gz/sha512/844c336034dbf74efdf17453cc28507358c717dbf08ecff18ce4dd982e0858a57ba4d47c22cf71eccc42309a80da738c9e79d6fb8237dad0e402b2606d305978/sshexport-2.4.tar.gz
+Source URL      : http://www.catb.org/~esr/sshexport/sshexport-2.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sshexport-2.4.tar.gz: POSIX tar archive (GNU)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sshexport-2.4.tar.gz: gzip compressed data, last modified: Mon Nov 28 13:15:48 2016, from Unix, original size modulo 2^32 112640
+
+
+diff -r source-sshexport-2.4.tar.gz-extracted/sshexport-2.4/sshexport lookaside-sshexport-2.4.tar.gz-extracted/sshexport-2.4/sshexport
+1c1
+< #!/usr/bin/env python3
+---
+> #!/usr/bin/env python
+125c125
+< __version__ = '2.5'
+---
+> __version__ = '2.3'
+2196,2199c2196
+< # The following sets edit modes for GNU EMACS
+< # Local Variables:
+< # mode:python
+< # End:
+---
+> # End

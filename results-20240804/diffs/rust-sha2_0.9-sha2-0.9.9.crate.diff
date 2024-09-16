@@ -1,0 +1,10 @@
+Source package : rust-sha2_0.9
+File name       : sha2-0.9.9.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-sha2_0.9/sha2-0.9.9.crate/sha512/bc267467089ed546edc1caaa7a00f3f769fd1d5deeb655c1968985d284bd32e4fcee4e721cf89c30e8c3cadd2f88ac557b91f90183cab112702c587f753e5877/sha2-0.9.9.crate
+Source URL      : https://crates.io/api/v1/crates/sha2/0.9.9/download#/sha2-0.9.9.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sha2-0.9.9.crate: gzip compressed data, was "sha2-0.9.9.crate", max compression, original size modulo 2^32 101888
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sha2-0.9.9.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

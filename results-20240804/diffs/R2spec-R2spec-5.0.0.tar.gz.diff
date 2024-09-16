@@ -1,0 +1,10 @@
+Source package : R2spec
+File name       : R2spec-5.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/R2spec/R2spec-5.0.0.tar.gz/sha512/500f356c69583ab91f88404e8d7acdad1446120bf2c98ef3cdaa653c70e447fdf22fb50875675bdf86ba14d30290276ac3ea688af6f2065c32a9fcfe9fcb0ea2/R2spec-5.0.0.tar.gz
+Source URL      : https://fedorahosted.org/releases/r/2/r2spec/R2spec-5.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-R2spec-5.0.0.tar.gz: HTML document, Unicode text, UTF-8 text, with very long lines (4106)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-R2spec-5.0.0.tar.gz: gzip compressed data, was "dist/R2spec-5.0.0.tar", last modified: Mon Sep  9 13:26:02 2019, max compression, original size modulo 2^32 153600
+
+
+Only in lookaside-R2spec-5.0.0.tar.gz-extracted: R2spec-5.0.0

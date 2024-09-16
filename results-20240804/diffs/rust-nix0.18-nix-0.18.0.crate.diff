@@ -1,0 +1,10 @@
+Source package : rust-nix0.18
+File name       : nix-0.18.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-nix0.18/nix-0.18.0.crate/sha512/b86660bfa2533fdfb945a3ef840c692b5d96108e3e73b76d6489b65039cde87ae04935d2f10878cab1ea38f039083aebf4ec9b2bb6ba66ee204be700e3e96581/nix-0.18.0.crate
+Source URL      : https://crates.io/api/v1/crates/nix/0.18.0/download#/nix-0.18.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-nix-0.18.0.crate: gzip compressed data, was "nix-0.18.0.crate", max compression, original size modulo 2^32 1139712
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-nix-0.18.0.crate: POSIX tar archive
+
+
+No differences detected!

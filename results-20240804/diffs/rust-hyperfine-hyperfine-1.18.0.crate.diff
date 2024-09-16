@@ -1,0 +1,10 @@
+Source package : rust-hyperfine
+File name       : hyperfine-1.18.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-hyperfine/hyperfine-1.18.0.crate/sha512/8193599cad9ebf51596461bcc3eadda788c1ac3e0e11cad731c8e2e337061fab48a9df0ad866faaa7ada5b819417109b1d1df50d14a8c7fd2e90d40385d7224b/hyperfine-1.18.0.crate
+Source URL      : https://crates.io/api/v1/crates/hyperfine/1.18.0/download#/hyperfine-1.18.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-hyperfine-1.18.0.crate: gzip compressed data, was "hyperfine-1.18.0.crate", max compression, original size modulo 2^32 467456
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-hyperfine-1.18.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

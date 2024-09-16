@@ -1,0 +1,11 @@
+Source package : yubihsm-connector
+File name       : yubihsm-connector-3.0.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/yubihsm-connector/yubihsm-connector-3.0.4.tar.gz/sha512/cdd56bb95061e5e45ecbbc2f46b4e669d2b2faa57b2b9484646161fc332ab7f46fd4c3825d0e075397f39634fad94870a646ca8f93368197da7dd379f000abf0/yubihsm-connector-3.0.4.tar.gz
+Source URL      : https://github.com/Yubico/yubihsm-connector/archive/3.0.4/yubihsm-connector-3.0.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-yubihsm-connector-3.0.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 337920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-yubihsm-connector-3.0.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 153600
+
+
+Only in source-yubihsm-connector-3.0.4.tar.gz-extracted/yubihsm-connector-3.0.4: .github
+Only in source-yubihsm-connector-3.0.4.tar.gz-extracted/yubihsm-connector-3.0.4: resources

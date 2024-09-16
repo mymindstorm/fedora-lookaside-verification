@@ -1,0 +1,11 @@
+Source package : rebloom
+File name       : rebloom-1.1.0-6f8f0f6.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rebloom/rebloom-1.1.0-6f8f0f6.tar.gz/sha512/25d556e66ca024bebdd4fc76473cf83c24bfea4f766b7d84f3d0bad161e4bf9ddce47f2b33341ab629843a4167c161866baa2fbeb739093c827ccabe1a7ddccb/rebloom-1.1.0-6f8f0f6.tar.gz
+Source URL      : https://github.com/goodform/rebloom/archive/6f8f0f68b678fe1964104c07ea1cd3ad7e6b145b/rebloom-1.1.0-6f8f0f6.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rebloom-1.1.0-6f8f0f6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 245760
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rebloom-1.1.0-6f8f0f6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 322586853 gzip compressed data, unknown method, ASCII, has CRC, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 322586853
+
+
+Only in lookaside-rebloom-1.1.0-6f8f0f6.tar.gz-extracted: rebloom-1.1.0
+Only in source-rebloom-1.1.0-6f8f0f6.tar.gz-extracted: rebloom-6f8f0f68b678fe1964104c07ea1cd3ad7e6b145b

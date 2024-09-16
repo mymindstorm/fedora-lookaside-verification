@@ -1,0 +1,11 @@
+Source package : photocollage
+File name       : photocollage-1.4.7.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/photocollage/photocollage-1.4.7.tar.gz/sha512/b1fcb4938830d17bc4926de86eb85b9acbb7c83482e74bcc0ce527e7049151b1a945d5219a195927c724dce206915735bfced215a0852a809a6233883cbce6c0/photocollage-1.4.7.tar.gz
+Source URL      : https://github.com/adrienverge/PhotoCollage/archive/v1.4.7/photocollage-1.4.7.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-photocollage-1.4.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 993280
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-photocollage-1.4.7.tar.gz: gzip compressed data, was "photocollage-1.4.7.tar", last modified: Tue Jun 11 06:08:19 2024, max compression, original size modulo 2^32 1802240
+
+
+Only in lookaside-photocollage-1.4.7.tar.gz-extracted: photocollage-1.4.7
+Only in source-photocollage-1.4.7.tar.gz-extracted: PhotoCollage-1.4.7

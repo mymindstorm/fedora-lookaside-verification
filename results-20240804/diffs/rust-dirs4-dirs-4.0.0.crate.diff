@@ -1,0 +1,10 @@
+Source package : rust-dirs4
+File name       : dirs-4.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-dirs4/dirs-4.0.0.crate/sha512/be582e5045f1916fb6b918c8e8c5907b4b663534025e4227ea4828e2aa9fe7fbcb3c48f1f0d08d163ba684aa4404076ac210e7f14766a09b9ed89a2825121b3b/dirs-4.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/dirs/4.0.0/download#/dirs-4.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dirs-4.0.0.crate: gzip compressed data, was "dirs-4.0.0.crate", max compression, original size modulo 2^32 1946755596
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dirs-4.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-wmidi
+File name       : wmidi-4.0.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-wmidi/wmidi-4.0.10.crate/sha512/b3ce5715dc319e3224df3edbd5649b6aaee26d01e0bbc099f304f1573cc344765d6372ee193056a77924ed771401daa6f22c720b82369b92f7e05024cf24b1e7/wmidi-4.0.10.crate
+Source URL      : https://crates.io/api/v1/crates/wmidi/4.0.10/download#/wmidi-4.0.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-wmidi-4.0.10.crate: gzip compressed data, was "wmidi-4.0.10.crate", max compression, original size modulo 2^32 102912
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-wmidi-4.0.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

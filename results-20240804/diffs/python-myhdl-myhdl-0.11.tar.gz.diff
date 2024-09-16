@@ -1,0 +1,103 @@
+Source package : python-myhdl
+File name       : myhdl-0.11.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-myhdl/myhdl-0.11.tar.gz/sha512/5b81b4e74998d9ee3246aa387ccf3ef42413bbc812087d005b8a77da277ef12371bcaf6d26ef9127b8c84a8450449d726a06cfe8fc533de5fb9a49e885e86a7b/myhdl-0.11.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/m/myhdl/myhdl-0.11.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-myhdl-0.11.tar.gz: gzip compressed data, was "dist/myhdl-0.11.tar", last modified: Fri May 31 22:26:37 2019, max compression, original size modulo 2^32 3563520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-myhdl-0.11.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2836480
+
+
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/cosimulation/icarus: myhdl.c.20030518
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/cosimulation/modelsim/test: cosim.do
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/cosimulation/modelsim-win/test: cosim.do
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/doc: build
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/doc: Makefile
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/doc: source
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/example/cookbook/dff: test_dff.jpg
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/example/cookbook/dffa: test_dffa.jpg
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/example/cookbook/latch: test_latch.jpg
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11: .github
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11: .gitignore
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11: .hgignore
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11: .hgtags
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11: .landscape.yaml
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl: experiments
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: array8sorter.vhd
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bench_converts.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bug_1740778.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bug_1835792.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bug_1835797.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bug_28.vhd
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bug_3529686.vhd
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bug_3577799.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bug_43.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: bug_boolconst.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: dut.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: gray_counter.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: gray_counter.vhd
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_117_1.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_117_2.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_117_3.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_117_3.vhd
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_133.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_134.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_13.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_18.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_98_1.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_98_2.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: issue_98_3.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: Logic.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: module.vhd
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: mpegChannel.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: pcie_legacyint_next_state_logic.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: pcie_legacyint_next_state_logic.vhd
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: pck_myhdl_010.vhd
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: SubFunction.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_bug_3577799.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_bug_43.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_bug_boolconst.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_gray_counter.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_117_1.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_117_2.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_117_3.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_122.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_134.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_13.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_18.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_98_1.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_98_2.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_issue_98_3.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_Logic.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_mpegChannel.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: tb_pcie_legacyint_next_state_logic.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: test_bench.v
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/bugs: test_issue_nnn.py
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/myhdl/test/core: setuptools-20.3.1.zip
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11: myhdl.egg-info
+Only in source-myhdl-0.11.tar.gz-extracted/myhdl-0.11: PKG-INFO
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11: pylintrc
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: cvcrun.sh
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: cvcstats.dat
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: jitrun.sh
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: jitstats.dat
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: pypyrun.sh
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: pypystats.dat
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: run.do
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: run_rand.sh
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: run.sh
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: stats.dat
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: testrun.sh
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts/benchmark: teststats.dat
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/scripts: ci.sh
+diff -r source-myhdl-0.11.tar.gz-extracted/myhdl-0.11/setup.cfg lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11/setup.cfg
+2,7c2
+< universal = 1
+< 
+< [egg_info]
+< tag_build = 
+< tag_date = 0
+< 
+---
+> universal=1
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11: tox.ini
+Only in lookaside-myhdl-0.11.tar.gz-extracted/myhdl-0.11: .travis.yml

@@ -1,0 +1,19 @@
+Source package : txt2regex
+File name       : txt2regex-0.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/txt2regex/txt2regex-0.9.tar.gz/sha512/9a4fb1ef18e3f0d2cc62227cf95dc6866eb3b3503769ba05d78d0d610469950c1c6eb2be8883f11efaf9ed15ff0f5e712d78c80a4f094ec0107a1eea54a28f3c/txt2regex-0.9.tar.gz
+Source URL      : https://github.com/aureliojargas/txt2regex/archive/v0.9/txt2regex-0.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-txt2regex-0.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 368640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-txt2regex-0.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 368640
+
+
+diff -r source-txt2regex-0.9.tar.gz-extracted/txt2regex-0.9/CONTRIBUTING.md lookaside-txt2regex-0.9.tar.gz-extracted/txt2regex-0.9/CONTRIBUTING.md
+57a58
+>   - Also update the date at the top to the release date
+70d70
+<   - Update the version number in `tests/cmdline.md`
+72d71
+<   - Update the man page date to the release date and regenerate it: `make doc`
+74,75d72
+<     - Remember to update the "compare" links at the top
+<   - Rerun the tests, just in case: `make check`

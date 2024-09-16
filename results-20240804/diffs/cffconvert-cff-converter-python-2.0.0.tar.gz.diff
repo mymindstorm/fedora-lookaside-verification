@@ -1,0 +1,11 @@
+Source package : cffconvert
+File name       : cff-converter-python-2.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/cffconvert/cff-converter-python-2.0.0.tar.gz/sha512/59a33af498a370390f2cfa78dc011d6488e7f71cb8d569213da74c7c61cfe641fffb6345f65d8b877287b4578fde238d93269c448dc19ddf5aaf0c9e314bf22b/cff-converter-python-2.0.0.tar.gz
+Source URL      : https://github.com/citation-file-format/cff-converter-python/archive/2.0.0/cff-converter-python-2.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cff-converter-python-2.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2426880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cff-converter-python-2.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2426880
+
+
+Only in source-cff-converter-python-2.0.0.tar.gz-extracted: cffconvert-2.0.0
+Only in lookaside-cff-converter-python-2.0.0.tar.gz-extracted: cff-converter-python-2.0.0

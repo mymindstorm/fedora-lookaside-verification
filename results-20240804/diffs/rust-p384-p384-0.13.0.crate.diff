@@ -1,0 +1,10 @@
+Source package : rust-p384
+File name       : p384-0.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-p384/p384-0.13.0.crate/sha512/e81451d336b2fd0c1dc3483f1e586b7d4059b3ee7cfc935edca6be1be02d23b1e380859a44d0a6cc6538fbdfbb22cc22b8d3aba11cf90c6fdfd0e8edecdfba17/p384-0.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/p384/0.13.0/download#/p384-0.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-p384-0.13.0.crate: gzip compressed data, was "p384-0.13.0.crate", max compression, original size modulo 2^32 1458688
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-p384-0.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

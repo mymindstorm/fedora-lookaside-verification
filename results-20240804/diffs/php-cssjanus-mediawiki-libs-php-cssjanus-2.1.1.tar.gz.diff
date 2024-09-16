@@ -1,0 +1,11 @@
+Source package : php-cssjanus
+File name       : mediawiki-libs-php-cssjanus-2.1.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-cssjanus/mediawiki-libs-php-cssjanus-2.1.1.tar.gz/sha512/1f9171e557bbfe09ce92a3a9a9cdff4e8d3b57f4a7f71d174cefa9f42771cf3e5f6d8d5c68787f6ff7f885de44154bc66d5fcd544dcaffd33e5b496f26d14881/mediawiki-libs-php-cssjanus-2.1.1.tar.gz
+Source URL      : https://github.com/wikimedia/mediawiki-libs-php-cssjanus/archive/v2.1.1.tar.gz#/mediawiki-libs-php-cssjanus-2.1.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-mediawiki-libs-php-cssjanus-2.1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1041419897 gzip compressed data, unknown method, has CRC, extra field, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 1041419897
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-mediawiki-libs-php-cssjanus-2.1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3835482432
+
+
+Only in lookaside-mediawiki-libs-php-cssjanus-2.1.1.tar.gz-extracted: mediawiki-libs-php-cssjanus-2.1.1
+Only in source-mediawiki-libs-php-cssjanus-2.1.1.tar.gz-extracted: php-cssjanus-2.1.1

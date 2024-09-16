@@ -1,0 +1,10 @@
+Source package : rust-sequoia-ipc
+File name       : sequoia-ipc-0.35.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-sequoia-ipc/sequoia-ipc-0.35.0.crate/sha512/020f48cdd20a2df79c6c8889d5d60822afc171f1dedd433ced725d124850b75ace5dc9dddee1534b5a7873791a4e0d6c1d3275e9de6cdf7ab4fbf55209357072/sequoia-ipc-0.35.0.crate
+Source URL      : https://crates.io/api/v1/crates/sequoia-ipc/0.35.0/download#/sequoia-ipc-0.35.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sequoia-ipc-0.35.0.crate: gzip compressed data, was "sequoia-ipc-0.35.0.crate", max compression, original size modulo 2^32 5368320
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sequoia-ipc-0.35.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

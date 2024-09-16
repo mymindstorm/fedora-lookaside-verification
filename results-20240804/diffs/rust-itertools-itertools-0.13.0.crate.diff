@@ -1,0 +1,10 @@
+Source package : rust-itertools
+File name       : itertools-0.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-itertools/itertools-0.13.0.crate/sha512/c6cb8f93a93b6ac1a2cbb3033e66fc81a39f83be773b734bea3311332b96bc71bbb518aae3e6b40cb537590c23de1ca4964361c336795c3985bde63232d410c4/itertools-0.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/itertools/0.13.0/download#/itertools-0.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-itertools-0.13.0.crate: gzip compressed data, was "itertools-0.13.0.crate", max compression, original size modulo 2^32 776704
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-itertools-0.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

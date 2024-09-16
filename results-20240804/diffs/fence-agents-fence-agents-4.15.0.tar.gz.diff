@@ -1,0 +1,10 @@
+Source package : fence-agents
+File name       : fence-agents-4.15.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/fence-agents/fence-agents-4.15.0.tar.gz/sha512/16871880b5d2286145608dd43ec8943b079238774de7539b0e86bbf1d9b2f1d4e3e17632bcb078b49aafbe9a4b2efab4c24196d9d0df9b318e26092465acd67b/fence-agents-4.15.0.tar.gz
+Source URL      : https://fedorahosted.org/releases/f/e/fence-agents/fence-agents-4.15.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-fence-agents-4.15.0.tar.gz: HTML document, Unicode text, UTF-8 text, with very long lines (4106)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-fence-agents-4.15.0.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 5396480
+
+
+Only in lookaside-fence-agents-4.15.0.tar.gz-extracted: fence-agents-4.15.0

@@ -1,0 +1,10 @@
+Source package : rust-uu_yes
+File name       : uu_yes-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uu_yes/uu_yes-0.0.27.crate/sha512/54004923284c675d6bce7ed3ddde9c4f51e81d92744cad2b52b92e68344c0969ca76a4febd60009480a57bd474c2d3bbaf472a48dc6cf92fdee500bdfcbfecfd/uu_yes-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uu_yes/0.0.27/download#/uu_yes-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uu_yes-0.0.27.crate: gzip compressed data, was "uu_yes-0.0.27.crate", max compression, original size modulo 2^32 32768
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uu_yes-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

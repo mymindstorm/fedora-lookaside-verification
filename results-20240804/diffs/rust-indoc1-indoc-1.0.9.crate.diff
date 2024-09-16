@@ -1,0 +1,10 @@
+Source package : rust-indoc1
+File name       : indoc-1.0.9.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-indoc1/indoc-1.0.9.crate/sha512/db8aef4a7bb606452dc8ed45aa29a255c7a135357a0bd586fb4429c5f56a1aa2ca9400d6fac39956aeb486a15d25cf5d1b9524967867f2c651d9d563e3e85be8/indoc-1.0.9.crate
+Source URL      : https://crates.io/api/v1/crates/indoc/1.0.9/download#/indoc-1.0.9.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-indoc-1.0.9.crate: gzip compressed data, was "indoc-1.0.9.crate", max compression, original size modulo 2^32 80384
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-indoc-1.0.9.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

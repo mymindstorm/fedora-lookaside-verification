@@ -1,0 +1,10 @@
+Source package : rust-histo
+File name       : histo-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-histo/histo-1.0.0.crate/sha512/4c38fe917efbfba05f24cefba0f3d1777ca5061f2332ad7b59d41985891b254e27cc9e9229109b663c4a2895c80a37e27f0e7116eb4a09496995b239e5da293b/histo-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/histo/1.0.0/download#/histo-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-histo-1.0.0.crate: gzip compressed data, was "histo-1.0.0.crate", max compression, original size modulo 2^32 51712
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-histo-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

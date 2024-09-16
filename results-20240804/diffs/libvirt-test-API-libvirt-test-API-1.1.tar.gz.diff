@@ -1,0 +1,43 @@
+Source package : libvirt-test-API
+File name       : libvirt-test-API-1.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/libvirt-test-API/libvirt-test-API-1.1.tar.gz/sha512/e2fffb42f9605a4ad9b464fe2e1a56dacbeab5799ca971883edebd5fe43b4d4f4c855ee74e7dbbb225898d8cd4fcef5ee7b23110ae38ad948c5c917b0c01ab5a/libvirt-test-API-1.1.tar.gz
+Source URL      : https://github.com/libvirt/libvirt-test-API/archive/v1.1.tar.gz#/libvirt-test-API-1.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libvirt-test-API-1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3799040
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libvirt-test-API-1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 9861120
+
+
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1: .git
+Only in source-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1: libvirt-test-api
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/libvirttestapi: __pycache__
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/libvirttestapi/repos/domain: __pycache__
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/libvirttestapi/repos: __pycache__
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/libvirttestapi/repos/test: __pycache__
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/libvirttestapi/src: __pycache__
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/libvirttestapi/utils: __pycache__
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1: libvirt-test-API
+Only in source-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1: libvirt-test-api.spec
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1: libvirt-test-API.spec
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1: log
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1: log.xml
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1: .pytest_cache
+Only in lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/selftests: __pycache__
+diff -r source-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/setup.py lookaside-libvirt-test-API-1.1.tar.gz-extracted/libvirt-test-API-1.1/setup.py
+33c33
+<         installed_location = ['usr', 'share', 'libvirt-test-api']
+---
+>         installed_location = ['usr', 'share', 'libvirt-test-API']
+63,64c63,64
+<     setup(name='libvirt-test-api',
+<           version=1.0,
+---
+>     setup(name='libvirt-test-API',
+>           version=1.1,
+68c68
+<           url='https://github.com/libvirt/libvirt-test-API',
+---
+>           url='https://gitlab.com/libvirt/libvirt-test-API',
+76c76
+<               'console_scripts': ['libvirt-test-api=libvirttestapi.main:main'],
+---
+>               'console_scripts': ['libvirt-test-API=libvirttestapi.main:main'],

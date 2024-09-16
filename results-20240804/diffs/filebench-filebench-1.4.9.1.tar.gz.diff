@@ -1,0 +1,11 @@
+Source package : filebench
+File name       : filebench-1.4.9.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/filebench/filebench-1.4.9.1.tar.gz/md5/e30a4feb78ce5e8224c7ec15fd337e42/filebench-1.4.9.1.tar.gz
+Source URL      : http://downloads.sourceforge.net/filebench/filebench-1.4.9.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-filebench-1.4.9.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 880640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-filebench-1.4.9.1.tar.gz: gzip compressed data, last modified: Tue Sep  6 17:22:28 2011, max compression, from Unix, original size modulo 2^32 1617920
+
+
+Only in lookaside-filebench-1.4.9.1.tar.gz-extracted: filebench-1.4.9.1
+Only in source-filebench-1.4.9.1.tar.gz-extracted: filebench-filebench-d294429

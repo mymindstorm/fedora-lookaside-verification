@@ -1,0 +1,11 @@
+Source package : php-manual-en
+File name       : php_manual_en.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-manual-en/php_manual_en.tar.gz/md5/4e68f842c559ffd9b7100c7cdfad4560/php_manual_en.tar.gz
+Source URL      : https://www.php.net/distributions/manual/php_manual_en.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-php_manual_en.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 87961600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-php_manual_en.tar.gz: gzip compressed data, last modified: Fri Feb 13 13:22:32 2009, from Unix, original size modulo 2^32 50022400
+
+
+Only in lookaside-php_manual_en.tar.gz-extracted: html
+Only in source-php_manual_en.tar.gz-extracted: php-chunked-xhtml

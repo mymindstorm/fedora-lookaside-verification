@@ -1,0 +1,11 @@
+Source package : academic-admin
+File name       : hugo-academic-cli-0.8.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/academic-admin/hugo-academic-cli-0.8.1.tar.gz/sha512/3900072e129e906d5b1bb619f78f9194fe5f4b60cc802a3d3a5b64f597b93b9ffb6c1fb8e596f1dec23f1d22025875af044ae5b06c287abb80a7c64f3e12d056/hugo-academic-cli-0.8.1.tar.gz
+Source URL      : https://github.com/wowchemy/hugo-academic-cli/archive/0.8.1/hugo-academic-cli-0.8.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-hugo-academic-cli-0.8.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 201944142 gzip compressed data, unknown method, extra field, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 201944142
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-hugo-academic-cli-0.8.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 102400
+
+
+Only in source-hugo-academic-cli-0.8.1.tar.gz-extracted: academic-file-converter-0.8.1
+Only in lookaside-hugo-academic-cli-0.8.1.tar.gz-extracted: hugo-academic-cli-0.8.1

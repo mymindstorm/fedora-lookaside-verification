@@ -1,0 +1,10 @@
+Source package : rust-async-net
+File name       : async-net-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-async-net/async-net-2.0.0.crate/sha512/e12163eb7fb526d434c257d82ad0bcc64d3a1fb868b899fc5666c1307f821654f7afff9bf5dd3ca6c8cceac31df29a5027542f6e5901c8801ce2a696ab737479/async-net-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/async-net/2.0.0/download#/async-net-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-async-net-2.0.0.crate: gzip compressed data, was "async-net-2.0.0.crate", max compression, original size modulo 2^32 107008
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-async-net-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

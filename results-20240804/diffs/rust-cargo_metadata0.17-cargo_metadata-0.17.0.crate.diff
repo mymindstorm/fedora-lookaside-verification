@@ -1,0 +1,10 @@
+Source package : rust-cargo_metadata0.17
+File name       : cargo_metadata-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cargo_metadata0.17/cargo_metadata-0.17.0.crate/sha512/2228ae25231fe752b1f61787464cb6a7219dc517f54097a800166b4778cbc5d514260dda5f79af51d303064c49a74ba799e20f4bf46c66210ead60253e62c4c7/cargo_metadata-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/cargo_metadata/0.17.0/download#/cargo_metadata-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cargo_metadata-0.17.0.crate: gzip compressed data, was "cargo_metadata-0.17.0.crate", max compression, original size modulo 2^32 101376
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cargo_metadata-0.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

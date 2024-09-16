@@ -1,0 +1,17 @@
+Source package : hstsparser
+File name       : hstsparser-1.2.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/hstsparser/hstsparser-1.2.0.tar.gz/sha512/8dc91ef6505d158aebcb7d40fcb36a7b6a66fd7ee71be88ac21452470d5f302c753a3d3c6d601982378a3c736a53ad7fb32b8aabb4837e7bae7a73732f8e7f19/hstsparser-1.2.0.tar.gz
+Source URL      : https://github.com/thebeanogamer/hstsparser/archive/1.2.0/hstsparser-1.2.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-hstsparser-1.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2470274721 gzip compressed data, unknown method, ASCII, has CRC, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 2470274721
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-hstsparser-1.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 348160
+
+
+Only in source-hstsparser-1.2.0.tar.gz-extracted/hstsparser-1.2.0: .copr
+Only in lookaside-hstsparser-1.2.0.tar.gz-extracted/hstsparser-1.2.0: .git
+Only in source-hstsparser-1.2.0.tar.gz-extracted/hstsparser-1.2.0: .github
+Only in source-hstsparser-1.2.0.tar.gz-extracted/hstsparser-1.2.0: .gitignore
+Only in source-hstsparser-1.2.0.tar.gz-extracted/hstsparser-1.2.0: hooks
+Only in source-hstsparser-1.2.0.tar.gz-extracted/hstsparser-1.2.0: Makefile
+Only in source-hstsparser-1.2.0.tar.gz-extracted/hstsparser-1.2.0: poetry.lock
+Only in source-hstsparser-1.2.0.tar.gz-extracted/hstsparser-1.2.0: tox.ini

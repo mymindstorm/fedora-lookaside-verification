@@ -1,0 +1,10 @@
+Source package : rust-ref-cast
+File name       : ref-cast-1.0.23.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ref-cast/ref-cast-1.0.23.crate/sha512/9120eebe9499d74bc4501f37c9a42eab2dd5f345b8587cef513dceca468267de2537fa9f0e0c5c5d63922151199571522f26869f87e27b774b4781fd2fe7e3c0/ref-cast-1.0.23.crate
+Source URL      : https://crates.io/api/v1/crates/ref-cast/1.0.23/download#/ref-cast-1.0.23.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ref-cast-1.0.23.crate: gzip compressed data, was "ref-cast-1.0.23.crate", max compression, original size modulo 2^32 75776
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ref-cast-1.0.23.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

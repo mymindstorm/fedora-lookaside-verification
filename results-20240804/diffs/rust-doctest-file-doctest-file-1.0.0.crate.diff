@@ -1,0 +1,10 @@
+Source package : rust-doctest-file
+File name       : doctest-file-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-doctest-file/doctest-file-1.0.0.crate/sha512/a02e3071c51a7cf9de9551c84054c3e7ded8823bfeef8ca5a9c7fa0c7e0c49a7221908039ab19541728e0591c5b8261227cde10ccaacde6857c00097f203f3ef/doctest-file-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/doctest-file/1.0.0/download#/doctest-file-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-doctest-file-1.0.0.crate: gzip compressed data, was "doctest-file-1.0.0.crate", max compression, original size modulo 2^32 116708622
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-doctest-file-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

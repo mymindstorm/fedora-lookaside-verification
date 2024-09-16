@@ -1,0 +1,10 @@
+Source package : rust-libdeflate-sys
+File name       : libdeflate-sys-1.20.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-libdeflate-sys/libdeflate-sys-1.20.0.crate/sha512/b56d38ae5eba51627b78260454d4b9b58a000e765f6516ee59159496a2041f543ad973b19bbb3e8db7afc0d41940783fc28ec2efd769aa37cde7ab93715f6403/libdeflate-sys-1.20.0.crate
+Source URL      : https://crates.io/api/v1/crates/libdeflate-sys/1.20.0/download#/libdeflate-sys-1.20.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libdeflate-sys-1.20.0.crate: gzip compressed data, was "libdeflate-sys-1.20.0.crate", max compression, original size modulo 2^32 851456
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libdeflate-sys-1.20.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

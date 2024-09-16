@@ -1,0 +1,11 @@
+Source package : clustershell
+File name       : ClusterShell-1.9.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/clustershell/ClusterShell-1.9.2.tar.gz/sha512/852c9dcbe333965fa853e4360da7305c448dc037348ede18c0417d763e68d4bafad0a60480fce421f1815a86dd0a20e07d32fd8828aa185e7e1b88ed292014fc/ClusterShell-1.9.2.tar.gz
+Source URL      : https://github.com/cea-hpc/clustershell/archive/v1.9.2/ClusterShell-1.9.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ClusterShell-1.9.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1072664655 gzip compressed data, reserved method, ASCII, has CRC, extra field, has comment, encrypted, original size modulo 2^32 1072664655
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ClusterShell-1.9.2.tar.gz: gzip compressed data, was "ClusterShell-1.9.2.tar", last modified: Fri Sep 29 21:27:58 2023, max compression, original size modulo 2^32 2068480
+
+
+Only in source-ClusterShell-1.9.2.tar.gz-extracted: clustershell-1.9.2
+Only in lookaside-ClusterShell-1.9.2.tar.gz-extracted: ClusterShell-1.9.2

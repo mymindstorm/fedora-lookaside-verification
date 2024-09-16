@@ -1,0 +1,19 @@
+Source package : python-cccolutils
+File name       : CCColUtils-1.5.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-cccolutils/CCColUtils-1.5.tar.gz/sha512/87ec35f8a70ae0e264039389cfad9e1cd8c3a08efbfbe89416977e76f7fb147a5ff82fb9443d6b9e1ab217364196435416630c62fedf3cbbf7033240656cc431/CCColUtils-1.5.tar.gz
+Source URL      : https://pagure.io/releases/cccolutils/CCColUtils-1.5.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-CCColUtils-1.5.tar.gz: gzip compressed data, was "dist/CCColUtils-1.5.tar", last modified: Thu Jun 11 09:48:54 2020, max compression, original size modulo 2^32 757067759
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-CCColUtils-1.5.tar.gz: gzip compressed data, was "dist/CCColUtils-1.5.tar", last modified: Mon Dec 12 18:35:05 2016, max compression, original size modulo 2^32 1095333330
+
+
+diff -r source-CCColUtils-1.5.tar.gz-extracted/CCColUtils-1.5/CCColUtils.egg-info/SOURCES.txt lookaside-CCColUtils-1.5.tar.gz-extracted/CCColUtils-1.5/CCColUtils.egg-info/SOURCES.txt
+3d2
+< README.rst
+diff -r source-CCColUtils-1.5.tar.gz-extracted/CCColUtils-1.5/MANIFEST.in lookaside-CCColUtils-1.5.tar.gz-extracted/CCColUtils-1.5/MANIFEST.in
+1d0
+< include README.rst
+Only in source-CCColUtils-1.5.tar.gz-extracted/CCColUtils-1.5: README.rst
+diff -r source-CCColUtils-1.5.tar.gz-extracted/CCColUtils-1.5/setup.cfg lookaside-CCColUtils-1.5.tar.gz-extracted/CCColUtils-1.5/setup.cfg
+3a4
+> tag_svn_revision = 0

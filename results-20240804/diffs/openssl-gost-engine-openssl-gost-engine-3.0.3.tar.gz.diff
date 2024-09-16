@@ -1,0 +1,15 @@
+Source package : openssl-gost-engine
+File name       : openssl-gost-engine-3.0.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/openssl-gost-engine/openssl-gost-engine-3.0.3.tar.gz/sha512/a873cab2cd2ed3fda95f5d061726111ebe145b1a4c5780815255f77914c64ec14da49ae5ba011def6b796d4867e0e3f18e79d5d224b960a38fb79500435e9fee/openssl-gost-engine-3.0.3.tar.gz
+Source URL      : https://github.com/gost-engine/engine/archive/v3.0.3/openssl-gost-engine-3.0.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-openssl-gost-engine-3.0.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 8089600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-openssl-gost-engine-3.0.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 8110080
+
+
+Only in lookaside-openssl-gost-engine-3.0.3.tar.gz-extracted/engine-3.0.3/libprov: CMakeLists.txt
+Only in lookaside-openssl-gost-engine-3.0.3.tar.gz-extracted/engine-3.0.3/libprov: err.c
+Only in lookaside-openssl-gost-engine-3.0.3.tar.gz-extracted/engine-3.0.3/libprov: .gitignore
+Only in lookaside-openssl-gost-engine-3.0.3.tar.gz-extracted/engine-3.0.3/libprov: include
+Only in lookaside-openssl-gost-engine-3.0.3.tar.gz-extracted/engine-3.0.3/libprov: LICENSE
+Only in lookaside-openssl-gost-engine-3.0.3.tar.gz-extracted/engine-3.0.3/libprov: README.md

@@ -1,0 +1,249 @@
+Source package : tidy
+File name       : tidy-html5-5.8.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/tidy/tidy-html5-5.8.0.tar.gz/sha512/22eb063ff6fc3f41a42b5ecba1dcac74dca99f6a2181f54c7ef41720aaaa31d3463d1c28837e7eb8fded3f7e43caf1e1649537aa5eb1ed1b206680cd39bbeba8/tidy-html5-5.8.0.tar.gz
+Source URL      : https://github.com/htacg/tidy-html5/archive/5.8.0.tar.gz#/tidy-html5-5.8.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tidy-html5-5.8.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 6246400
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tidy-html5-5.8.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 6225920
+
+
+diff -r source-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/build/cmake/.gitignore lookaside-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/build/cmake/.gitignore
+37d36
+< *.pkg
+Only in source-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/build: macos
+diff -r source-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/CMakeLists.txt lookaside-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/CMakeLists.txt
+596,597d595
+< # Everything Else
+< #   RPM required to build RPM's, and might not be installed by default.
+626,642c624,627
+< 
+< #------------------------------------------------------------------------
+< # Windows: it looks like only the LICENSE.txt file is used by Windows,
+< #   for either package type (.exe and .msi).
+< # Linux: none of the files are shown publicly by default when installing
+< #   from a .deb or .rpm.
+< # Mac: cannot show HTML; need RTF. CPACK_RESOURCE_FILE_WELCOME isn't
+< #   needed.
+< #------------------------------------------------------------------------
+< if (APPLE)
+<     set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/build/macos/Installer-License.rtf")
+<     set(CPACK_RESOURCE_FILE_README "${CMAKE_CURRENT_SOURCE_DIR}/build/macos/Installer-Introduction.rtf")
+< else ()
+<     set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/README/LICENSE.txt")
+<     set(CPACK_RESOURCE_FILE_README "${CMAKE_CURRENT_SOURCE_DIR}/README/README.html")
+<     set(CPACK_RESOURCE_FILE_WELCOME "${CMAKE_CURRENT_SOURCE_DIR}/README/README.html")
+< endif ()
+---
+> # use one compatible license file for all
+> set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/README/LICENSE.txt")
+> set(CPACK_RESOURCE_FILE_README "${CMAKE_CURRENT_SOURCE_DIR}/README/README.html")
+> set(CPACK_RESOURCE_FILE_WELCOME "${CMAKE_CURRENT_SOURCE_DIR}/README/README.html")
+649a635
+> #set(CPACK_DEBIAN_PACKAGE_DEPENDS "libc")
+651c637,639
+< set(CPACK_SOURCE_IGNORE_FILES "${PROJECT_SOURCE_DIR}/build" )
+---
+> set(CPACK_SOURCE_IGNORE_FILES
+>   "${PROJECT_SOURCE_DIR}/build"
+>   )
+658d645
+< set(CPACK_SOURCE_IGNORE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/test/;${CMAKE_CURRENT_SOURCE_DIR}/build/;${CMAKE_CURRENT_SOURCE_DIR}/.git/")
+659a647
+> set(CPACK_SOURCE_IGNORE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/test/;${CMAKE_CURRENT_SOURCE_DIR}/build/;${CMAKE_CURRENT_SOURCE_DIR}/.git/")
+661,676c649,650
+< #------------------------------------------------------------------------
+< # Package name configuration
+< #   The default is LIB_NAME-CPACK_PACKAGE_VERSION-CMAKE_SYSTEM_NAME,
+< #   but we want to include system name for Unixes, and correct the
+< #   system name on Apple targets.
+< #------------------------------------------------------------------------
+< if (UNIX AND NOT APPLE)
+<     set(CPACK_PACKAGE_FILE_NAME "${LIB_NAME}-${CPACK_PACKAGE_VERSION}-${CMAKE_SYSTEM_NAME}-${BITNESS}bit")
+< endif ()
+< if (APPLE AND NOT IOS)
+<     if (CMAKE_OSX_ARCHITECTURES)
+<         set(CPACK_PACKAGE_FILE_NAME "${LIB_NAME}-${CPACK_PACKAGE_VERSION}-macOS-${CMAKE_OSX_ARCHITECTURES}")
+<         string(REPLACE ";" "+" CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_FILE_NAME}")
+<     else ()
+<         set(CPACK_PACKAGE_FILE_NAME "${LIB_NAME}-${CPACK_PACKAGE_VERSION}-macOS-${BITNESS}bit")
+<     endif ()
+---
+> if (NOT WIN32 AND NOT APPLE)
+> set( CPACK_PACKAGE_FILE_NAME "${LIB_NAME}-${CPACK_PACKAGE_VERSION}-${BITNESS}bit" )
+678,681d651
+< if (IOS)
+<     set(CPACK_PACKAGE_FILE_NAME "${LIB_NAME}-${CPACK_PACKAGE_VERSION}-iOS-${BITNESS}bit")
+< endif ()
+< 
+683,685d652
+< #------------------------------------------------------------------------
+< # Build the Package
+< #------------------------------------------------------------------------
+687d653
+< 
+Only in lookaside-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/console: Info.plist
+Only in source-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/.github/workflows: api_test.yml
+diff -r source-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/.github/workflows/build_and_test.yml lookaside-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/.github/workflows/build_and_test.yml
+37,40d36
+<          ############################################################
+<          # Ubuntu latest is a normal build with nothing special that
+<          # really need be done.
+<          ############################################################
+42,44c38
+<            name: Standard
+<            cmake_command: "cmake ../.. -DCMAKE_BUILD_TYPE=Release"
+<            build_command: "cmake --build . --config Release"
+---
+>            flags: 
+48,50d41
+<          ############################################################
+<          # On macOS, we'll build both architectures.
+<          ############################################################
+52,54c43
+<            name: X86_64 & Arm64
+<            cmake_command: "cmake ../.. -DCMAKE_BUILD_TYPE=Release '-DCMAKE_OSX_ARCHITECTURES=x86_64;arm64'"
+<            build_command: "cmake --build . --config Release"
+---
+>            flags: "'-DCMAKE_OSX_ARCHITECTURES=x86_64;arm64'"
+58,61d46
+<          ############################################################
+<          # The standard Windows build is perfectly vanilla, and as
+<          # of now is using MSVC 19.
+<          ############################################################
+63,65c48
+<            name: MSVC
+<            cmake_command: "cmake ../.. -DCMAKE_BUILD_TYPE=Release"
+<            build_command: "cmake --build . --config Release"
+---
+>            flags: 
+69,74d51
+<          ############################################################
+<          # We'll also build using MinGW on Windows, because it's
+<          # always nice to support FOSS toolchains. While we could
+<          # do this another way, we'll use the windows-2016 runner
+<          # to distinguish it from the windows-latest runner.
+<          ############################################################
+76,95c53
+<            name: MinGW
+<            cmake_command: "cmake ../.. -DCMAKE_BUILD_TYPE=Release -G 'MinGW Makefiles'"
+<            build_command: "cmake --build . --config Release"
+<            vers_command: "./tidy --version"
+<            test_command: "ruby test.rb test"
+<          
+<          ############################################################
+<          # We'll also build using Cygwin on Windows, because even
+<          # Windows people sometimes dislike Windows. While we could
+<          # do this another way, we'll use the windows-2019 runner to
+<          # distinguish it from the windows-latest runner.
+<          # Note: only the `tidy` target will be built (without the
+<          # man page) for this runner, because xltproc has issues
+<          # loading files in the virtual environment. The man page
+<          # is tested and builds perfectly fine on real installs.
+<          ############################################################
+<          - os: windows-2019
+<            name: Cygwin
+<            cmake_command: "cmake ../.. -DCMAKE_BUILD_TYPE=Release"
+<            build_command: "cmake --build . --target tidy --config Release"
+---
+>            flags: "-G 'MinGW Makefiles'"
+100,103d57
+< 
+<     ############################################################
+<     # Checkput the repository.
+<     ############################################################
+106,108c60,62
+<     ############################################################
+<     # Install MinGW-w64 if needed for the current runner.
+<     ############################################################
+---
+> 
+>     # We'll use the windows-2016 instance to perform a MinGW build.
+>     # Of course, we only want to install if this is the correct target.
+114,127c68
+<     
+<     ############################################################
+<     # Install Cygwin if needed for the current runner.
+<     ############################################################
+<     - name: Install Cygwin
+<       if: ${{matrix.os == 'windows-2019'}}
+<       uses: egor-tensin/setup-cygwin@v3
+<       with:
+<         platform: x64
+<         packages: make gcc-core gcc-g++ cmake
+<     
+<     ############################################################
+<     # Cmake and Make the project.
+<     ############################################################
+---
+>      
+130,141c71,81
+<       run: |
+<         ${{matrix.cmake_command}}
+<         ${{matrix.build_command}}
+<    
+<     ############################################################
+<     # Windows MSVC is the only oddball here; why does it 
+<     # install the binary into a subfolder, unlike all of the
+<     # other builds? Let's make everything else easier by 
+<     # relocating it to the same spot as all the other build
+<     # locations.
+<     ############################################################
+<     - name: Move the MSVC exe to someplace sensible
+---
+>       run: cmake ../.. -DCMAKE_BUILD_TYPE=Release ${{matrix.flags}}
+>       
+>     - name: Make
+>       working-directory: ${{github.workspace}}/build/cmake
+>       run: cmake --build . --config Release
+>       
+>     # Windows MSVC is the only oddball here; why does it install the 
+>     # binary into a subfolder, unlike all of the other builds? Let's
+>     # make everything else easier by relocating it to the same spot
+>     # as all the other build locations.
+>     - name: Move the exe to someplace sensible
+143,144c83
+<       run: |
+<         move-item -path "${{github.workspace}}/build/cmake/Release/tidy.exe" -destination "${{github.workspace}}/build/cmake/"
+---
+>       run: move-item -path "${{github.workspace}}/build/cmake/Release/tidy.exe" -destination "${{github.workspace}}/build/cmake/"
+146,148d84
+<     ############################################################
+<     # Just so that a human can make a quick sanity check.
+<     ############################################################
+151,152c87
+<       run: |
+<         ${{matrix.vers_command}}
+---
+>       run: ${{matrix.vers_command}}
+154,158d88
+<     ############################################################
+<     # Install Ruby for running our regression tests. It's quite
+<     # nice that this package is generic enough to work on all
+<     # of the different runners.
+<     ############################################################
+164,166d93
+<     ############################################################
+<     # Ensure that dependencies are met.
+<     ############################################################
+169,170c96
+<       run: |
+<         bundle install      
+---
+>       run: bundle install      
+172,174d97
+<     ############################################################
+<     # Finally, check for regressions.
+<     ############################################################
+177,178c100,101
+<       run: |
+<         ${{matrix.test_command}}
+---
+>       run: ${{matrix.test_command}}
+> 
+Only in source-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/.github/workflows: publish_binaries.yml
+Only in source-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/include: module.modulemap
+diff -r source-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/src/forward.h lookaside-tidy-html5-5.8.0.tar.gz-extracted/tidy-html5-5.8.0/src/forward.h
+26c26
+< #if defined(_WIN32) || defined(__CYGWIN__)
+---
+> #ifdef _WIN32

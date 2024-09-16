@@ -1,0 +1,11 @@
+Source package : atinject
+File name       : 1.0.5.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/atinject/1.0.5.tar.gz/sha512/20db5898c99a232b9ccb8dd13600d67f729476f4e585ba2e0a721e408c3e72479cc6089663499e6da75cd1852075d7abc59df76156290f4307a343b760695e21/1.0.5.tar.gz
+Source URL      : https://github.com/eclipse-ee4j/injection-api/archive/1.0.5.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-1.0.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 71680
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-1.0.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 71680
+
+
+Only in source-1.0.5.tar.gz-extracted: inject-1.0.5
+Only in lookaside-1.0.5.tar.gz-extracted: injection-api-1.0.5

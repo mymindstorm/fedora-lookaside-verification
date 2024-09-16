@@ -1,0 +1,10 @@
+Source package : stfl
+File name       : stfl-0.22.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/stfl/stfl-0.22.tar.gz/md5/df4998f69fed15fabd702a25777f74ab/stfl-0.22.tar.gz
+Source URL      : http://www.clifford.at/stfl/stfl-0.22.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-stfl-0.22.tar.gz: HTML document, Unicode text, UTF-8 text, with very long lines (53351), with CRLF, LF line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-stfl-0.22.tar.gz: gzip compressed data, last modified: Mon Oct 24 06:30:59 2011, from Unix, original size modulo 2^32 235520
+
+
+Only in lookaside-stfl-0.22.tar.gz-extracted: stfl-0.22

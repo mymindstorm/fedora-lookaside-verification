@@ -1,0 +1,22 @@
+Source package : mhonarc
+File name       : MHonArc-2.6.24.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/mhonarc/MHonArc-2.6.24.tar.gz/sha512/bb3c4ee7c5dfd731513f1f7e4bcc92d0ae437975048c297812c93b3571fc560eb87ce60a929aa2fef0e2f1c9ad7a1ce3f3520d4724d3803f89c70e5869199b41/MHonArc-2.6.24.tar.gz
+Source URL      : https://cpan.metacpan.org/authors/id/L/LD/LDIDRY/MHonArc-2.6.24.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-MHonArc-2.6.24.tar.gz: gzip compressed data, was "MHonArc-2.6.24.tar", last modified: Mon Nov 16 14:21:43 2020, max compression, from Unix, original size modulo 2^32 8222720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-MHonArc-2.6.24.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 8232960
+
+
+Only in lookaside-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24/doc: pod2htmd.tmp
+Only in lookaside-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24/doc: pod2htmi.tmp
+Only in lookaside-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24: .gitignore
+Only in lookaside-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24: .gitlab-ci.yml
+diff -r source-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24/MANIFEST lookaside-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24/MANIFEST
+542,543d541
+< META.yml                                 Module YAML meta-data (added by MakeMaker)
+< META.json                                Module JSON meta-data (added by MakeMaker)
+Only in source-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24: META.json
+Only in source-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24: META.yml
+Only in lookaside-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24: .perltidyrc
+Only in lookaside-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24: .travis.yml
+Only in lookaside-MHonArc-2.6.24.tar.gz-extracted/MHonArc-2.6.24: xt

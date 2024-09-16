@@ -1,0 +1,15 @@
+Source package : hyphen-fr
+File name       : hyph-fr-v3.0.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/hyphen-fr/hyph-fr-v3.0.zip/sha512/ae36afad559343546616c31114061d2dea9283299bba4492d2d5103bea3d443879e19d76dd8fe96df53dccb982257d181aa6ecfd3ae957b4369f2a1e305ef9ec/hyph-fr-v3.0.zip
+Source URL      : http://www.dicollecte.org/download/fr/hyph-fr-v3.0.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-hyph-fr-v3.0.zip: HTML document, Unicode text, UTF-8 text, with very long lines (18058)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-hyph-fr-v3.0.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+
+
+Only in lookaside-hyph-fr-v3.0.zip-extracted: frhyph.tex
+Only in lookaside-hyph-fr-v3.0.zip-extracted: hyph_fr.dic
+Only in lookaside-hyph-fr-v3.0.zip-extracted: hyph_fr.iso8859-1.dic
+Only in lookaside-hyph-fr-v3.0.zip-extracted: hyph-fr.tex
+Only in lookaside-hyph-fr-v3.0.zip-extracted: README_hyph_fr-2.9.txt
+Only in lookaside-hyph-fr-v3.0.zip-extracted: README_hyph_fr-3.0.txt

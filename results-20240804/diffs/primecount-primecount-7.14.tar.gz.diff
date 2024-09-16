@@ -1,0 +1,10 @@
+Source package : primecount
+File name       : primecount-7.14.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/primecount/primecount-7.14.tar.gz/sha512/312d337a2e452b7353c90c96fcdc45b03f5457ba28ce746b548416bfc05e27cebb2a25368e0345e80db86a4d56e977c0b1408e326dfbc4ec258e3da14b5aca01/primecount-7.14.tar.gz
+Source URL      : https://github.com/kimwalisch/primecount//archive/v7.14/primecount-7.14.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-primecount-7.14.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2109440
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-primecount-7.14.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2109440
+
+
+No differences detected!

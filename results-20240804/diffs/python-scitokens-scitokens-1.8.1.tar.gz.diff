@@ -1,0 +1,27 @@
+Source package : python-scitokens
+File name       : scitokens-1.8.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-scitokens/scitokens-1.8.1.tar.gz/sha512/a8b53fe44c07a9d76401749bb77e98d08ff45bd48f66578bdbbb46b8446c3638ad133bbe35f050027e891e6d740dba8a997581f5c51a161d7147e836a94ad7fc/scitokens-1.8.1.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/s/scitokens/scitokens-1.8.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-scitokens-1.8.1.tar.gz: gzip compressed data, was "scitokens-1.8.1.tar", last modified: Wed Aug  9 14:17:25 2023, max compression, original size modulo 2^32 2554891475
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-scitokens-1.8.1.tar.gz: gzip compressed data, was "scitokens-1.8.1.tar", last modified: Wed Sep 13 15:19:23 2023, max compression, original size modulo 2^32 296960
+
+
+diff -r source-scitokens-1.8.1.tar.gz-extracted/scitokens-1.8.1/PKG-INFO lookaside-scitokens-1.8.1.tar.gz-extracted/scitokens-1.8.1/PKG-INFO
+26d25
+< Provides-Extra: docs
+27a27,31
+> Requires-Dist: cryptography
+> Requires-Dist: PyJWT>=1.6.1
+> Requires-Dist: requests
+> Provides-Extra: docs
+> Requires-Dist: Sphinx; extra == "docs"
+diff -r source-scitokens-1.8.1.tar.gz-extracted/scitokens-1.8.1/src/scitokens.egg-info/PKG-INFO lookaside-scitokens-1.8.1.tar.gz-extracted/scitokens-1.8.1/src/scitokens.egg-info/PKG-INFO
+26d25
+< Provides-Extra: docs
+27a27,31
+> Requires-Dist: cryptography
+> Requires-Dist: PyJWT>=1.6.1
+> Requires-Dist: requests
+> Provides-Extra: docs
+> Requires-Dist: Sphinx; extra == "docs"

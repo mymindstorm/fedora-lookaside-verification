@@ -1,0 +1,8 @@
+Source package : mac
+File name       : MAC_1018_SDK.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/mac/MAC_1018_SDK.zip/sha512/c0307ed3db0871156589b3e2737066f01420e634493a931f14e3705ab83d55f37ddff44c9278fc19b31cec784bbfe5b9e15a1ad08ac06822279d32ae91489248/MAC_1018_SDK.zip
+Source URL      : https://monkeysaudio.com/files/MAC_1018_SDK.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-MAC_1018_SDK.zip: HTML document, Unicode text, UTF-8 (with BOM) text, with CRLF, LF line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-MAC_1018_SDK.zip: Zip archive data, at least v2.0 to extract, compression method=store
+Could not fetch file! Error: Error: EISDIR: illegal operation on a directory, open '/tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-MAC_1018_SDK.zip-extracted/Source/Projects/VS2022/'

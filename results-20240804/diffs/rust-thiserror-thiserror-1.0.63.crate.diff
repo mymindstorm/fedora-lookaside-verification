@@ -1,0 +1,10 @@
+Source package : rust-thiserror
+File name       : thiserror-1.0.63.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-thiserror/thiserror-1.0.63.crate/sha512/d5c2360075947cc0fff3253b5532f03f3102d6c9ef52dfeb3b400771116937e466a62ce67ccdf91532bf096f4882322522349a727588fd87b932326c8e758753/thiserror-1.0.63.crate
+Source URL      : https://crates.io/api/v1/crates/thiserror/1.0.63/download#/thiserror-1.0.63.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-thiserror-1.0.63.crate: gzip compressed data, was "thiserror-1.0.63.crate", max compression, original size modulo 2^32 612665934
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-thiserror-1.0.63.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

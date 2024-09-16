@@ -1,0 +1,11 @@
+Source package : deepin-gir-generator
+File name       : go-gir-generator-2.2.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/deepin-gir-generator/go-gir-generator-2.2.0.tar.gz/sha512/bf860d3c0235c3f0e5f334c415d7b4942290d4ae920ccbc25d7a1e4695c4a28450770c5ed9cecd127eff9163f67c2286120e2cf6d3fd2fc3e154f3db494ca746/go-gir-generator-2.2.0.tar.gz
+Source URL      : https://github.com/linuxdeepin/go-gir-generator/archive/2.2.0/go-gir-generator-2.2.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-go-gir-generator-2.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 983040
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-go-gir-generator-2.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 983040
+
+
+Only in source-go-gir-generator-2.2.0.tar.gz-extracted: go-gir-2.2.0
+Only in lookaside-go-gir-generator-2.2.0.tar.gz-extracted: go-gir-generator-2.2.0

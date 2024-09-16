@@ -1,0 +1,10 @@
+Source package : rust-proc-macro2
+File name       : proc-macro2-1.0.86.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-proc-macro2/proc-macro2-1.0.86.crate/sha512/1cdb7e22a35ae231d880c9420784c9acf97bda2db258b3d34aae5061dc1858449defe19a49e12c6a4173906aa72a4115059ac2db0fc760205fd2ab8b5b414434/proc-macro2-1.0.86.crate
+Source URL      : https://crates.io/api/v1/crates/proc-macro2/1.0.86/download#/proc-macro2-1.0.86.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-proc-macro2-1.0.86.crate: gzip compressed data, was "proc-macro2-1.0.86.crate", max compression, original size modulo 2^32 245248
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-proc-macro2-1.0.86.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

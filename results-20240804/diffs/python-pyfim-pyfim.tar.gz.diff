@@ -1,0 +1,3035 @@
+Source package : python-pyfim
+File name       : pyfim.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-pyfim/pyfim.tar.gz/sha512/adce295c00a7983e8b532d1f6dfe09b78c33f9274f762661f0c471ceeae306e728cefb4471ee4806991df8ab71ee74b2daa3b0156c35e8324aa7620e3d3c0fab/pyfim.tar.gz
+Source URL      : http://www.borgelt.net/src/pyfim.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pyfim.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3358720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pyfim.tar.gz: gzip compressed data, last modified: Mon May 13 13:55:25 2019, from Unix, original size modulo 2^32 3348480
+
+
+diff -r source-pyfim.tar.gz-extracted/accretion/src/accretion.c lookaside-pyfim.tar.gz-extracted/accretion/src/accretion.c
+530c530
+<        : (accret->smax/100.0) *(double)w *(1+DBL_EPSILON);
+---
+>        : (accret->smax/100.0) *(double)w *(1-DBL_EPSILON);
+556,557c556
+<   XMSG(stderr, "[%"ISCNT_FMT" set(s)]",
+<        ISCOUT(isr_repcnt(accret->report)));
+---
+>   XMSG(stderr, "[%"SIZE_FMT" set(s)]", isr_repcnt(accret->report));
+diff -r source-pyfim.tar.gz-extracted/apriori/doc/apriori.html lookaside-pyfim.tar.gz-extracted/apriori/doc/apriori.html
+17c17
+<   font-size:   12pt;
+---
+>   font-size:   10pt;
+21c21
+<   font-size:   12pt;
+---
+>   font-size:   10pt;
+36c36
+< <p>Note: This documentation refers to Apriori version 6.31 (2022.11.22)
+---
+> <p>Note: This documentation refers to Apriori version 6.26
+79c79
+<     <li><a href="#confdiff">Absolute Confidence Difference to Prior</a></li>
+---
+>     <li><a href="#diff">Absolute Confidence Difference to Prior</a></li>
+81,82c81,82
+<     <li><a href="#liftdiff">Absolute Difference of Lift Value to 1</a></li>
+<     <li><a href="#liftquot">Difference of Lift Quotient to 1</a></li>
+---
+>     <li><a href="#ld21">Absolute Difference of Lift Value to 1</a></li>
+>     <li><a href="#quot">Difference of Lift Quotient to 1</a></li>
+86,93c86
+<     <li><a href="#imbalance">Imbalance Ratio</a></li>
+<     <li><a href="#kulczynski">Kulczynski Measure</a></li>
+<     <li><a href="#kulcdiff">Difference of Kulczynski Measure
+<         to &half;</a></li>
+<     <li><a href="#cprob">Conditional Probability Ratio</a></li>
+<     <li><a href="#importance">Importance
+<         (binary logarithm of conditional probability ratio)</a></li>
+<     <li><a href="#certainty">Certainty Factor</a></li>
+---
+>     <li><a href="#cert">Certainty Factor</a></li>
+95c88
+<     <li><a href="#chi2pval">p-Value Computed from (unnormalized)
+---
+>     <li><a href="#pval">p-Value Computed from
+102,103d94
+<     <li><a href="#infopval">p-value from
+<         G Statistic/Information Difference</a></li>
+219c210
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+284c275
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+371c362
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+395c386
+< <table summary="">
+---
+> <table>
+449c440
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+553c544
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+590c581
+< <table summary="">
+---
+> <table>
+596c587
+< <table summary="">
+---
+> <table>
+606c597
+< <table summary="">
+---
+> <table>
+641c632
+< <table summary="">
+---
+> <table>
+647c638
+< <table summary="">
+---
+> <table>
+656c647
+< <table summary="">
+---
+> <table>
+671c662
+< into its shopping cart, we first use the rule&nbsp;x&nbsp;&rarr;&nbsp;y
+---
+> into its shopping cart, we first use the rule&nbsp;x&nbsp;&rarr&nbsp;y
+684c675
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+779c770
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+823c814
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+904c895
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+920c911
+< <table border=1 cellpadding=2 cellspacing=0 summary="">
+---
+> <table border=1 cellpadding=2 cellspacing=0>
+947,948c938
+<     <td>use original definition of the support of a rule
+<         (body &amp; head)</td>
+---
+>     <td>use original definition of the support of a rule (body & head)</td>
+960c950
+<         <tt>o</tt>: rule support (original def.: body &amp; head)   (+)<br>
+---
+>         <tt>o</tt>: rule support (original def.: body & head)       (+)<br>
+969,973d958
+<         <tt>b</tt>: imbalance ratio                                 (+)<br>
+<         <tt>k</tt>: Kulczynski measure                              (+)<br>
+<         <tt>z</tt>: difference of Kulczynski measure to &half;      (+)<br>
+<         <tt>u</tt>: conditional probability ratio                   (+)<br>
+<         <tt>j</tt>: importance (binary log. of cond. prob. ratio)   (+)<br>
+1001a987
+>     <tt>s</tt>: split item set into equal size subsets</td>
+1101c1087
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1377c1363
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1450c1436
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1496c1482
+< <table border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table border=0 cellpadding=0 cellspacing=0>
+1529c1515
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1566c1552
+< <table border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table border=0 cellpadding=0 cellspacing=0>
+1615c1601
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1671c1657
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1792c1778
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1802c1788
+< <h4><a name="confdiff">Absolute Confidence Difference to Prior
+---
+> <h4><a name="diff">Absolute Confidence Difference to Prior
+1826c1812
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1855c1841
+< <table summary="">
+---
+> <table>
+1875c1861
+< times 100%).</p>
+---
+> times 100%).<p>
+1877c1863
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1887c1873
+< <h4><a name="liftdiff">Absolute Difference of Lift Value to 1
+---
+> <h4><a name="ld21">Absolute Difference of Lift Value to 1
+1922c1908
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1932c1918
+< <h4><a name="liftquot">Difference of Lift Quotient to 1
+---
+> <h4><a name="quot">Difference of Lift Quotient to 1
+1972c1958
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+1987,1988c1973,1974
+< R'&nbsp;=&nbsp;X&nbsp;&rarr;&nbsp;not&nbsp;Y.<!-- ' -->
+< That is, while the lift of the rule&nbsp;R is</p>
+---
+> R'&nbsp;=&nbsp;X&nbsp;&rarr;&nbsp;not&nbsp;Y. That is, while the
+> lift of the rule&nbsp;R is</p>
+1990c1976
+< <table summary="">
+---
+> <table>
+1998c1984
+< <table summary="">
+---
+> <table>
+2022c2008
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2038c2024
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2054c2040
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2064,2228c2050
+< <h4><a name="imbalance"></a>Imbalance Ratio (option <tt>-eb</tt>)</h4>
+< 
+< <p>The imbalance ratio compares the absolute support difference of
+< the antecedent and the consequent of the rule to the support of the
+< disjunction of their disjunction. Consider a rule
+< R&nbsp;=&nbsp;X&nbsp;&rarr;&nbsp;Y. Then the support of the disjunction
+< of X and Y can be computed as
+< supp(X)&nbsp;+&nbsp;supp(Y)&nbsp;&ndash;&nbsp;supp(X&nbsp;&cup;&nbsp;Y).
+< (Note that supp(X)&nbsp;+&nbsp;supp(Y) would double-count the
+< transactions that contain both X and Y, that is, the transactions
+< for which the rule is correct, and hence has to be diminished by
+< supp(X&nbsp;&cup;&nbsp;Y).) As a consequence, the imbalance ratio is
+< 
+< <table summary="">
+< <tr><td>IR(R)&nbsp;=&nbsp;</td>
+<     <td align="center">|supp(X)&nbsp;&ndash;&nbsp;supp(Y)|<br><hr>
+<     supp(X)&nbsp;+&nbsp;supp(Y)&nbsp;&ndash;&nbsp;supp(X&nbsp;&cup;&nbsp;Y)</td>
+< </tr>
+< </table>
+< 
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+< <tr><td style="width:95%" align="right">
+<         <a href="#top">back to the top</a></td>
+<     <td style="width:5px"></td>
+<     <td><a href="#top"><img src="up.gif" alt="top"></a></td></tr>
+< </table>
+< 
+< <!-- =============================================================== -->
+< <hr>
+< 
+< <h4><a name="kulczynski"></a>Kulczynski Measure
+<     (option <tt>-ek</tt>)</h4>
+< 
+< <p>The Kulczynski measure is the arithmetic mean of the confidence
+< values of a rule R&nbsp;=&nbsp;X&nbsp;&rarr;&nbsp;Y and its "inverse"
+< R'&nbsp;=&nbsp;Y&nbsp;&rarr;&nbsp;X<!-- ' -->, that is</p>
+< 
+< <table summary="">
+< <tr><td>Kulczynski(R)&nbsp;=&nbsp;</td>
+<     <td align="center">&half;&nbsp;(conf(X&nbsp;&rarr;&nbsp;Y)&nbsp;+&nbsp;conf(Y&nbsp;&rarr;&nbsp;X))</td>
+<     <td>&nbsp;=&nbsp;</td>
+<     <td align="center">&half;&nbsp;supp(X&nbsp;&cup;&nbsp;Y)</td>
+<     <td align="center">(1&nbsp;/&nbsp;supp(X)</td>
+<     <td align="center">&nbsp;+&nbsp;</td>
+<     <td align="center">1&nbsp;/&nbsp;supp(Y)).</td>
+< </tr>
+< </table>
+< 
+< <p>That is, for the Kulczynski measure to have a high value, it is
+< not sufficient that the rule R&nbsp;=&nbsp;X&nbsp;&rarr;&nbsp;Y has
+< a high confidence, so that Y can be inferred from X with high
+< confidence, but it must also be the case the X can be inferred from Y
+< with high confidence. This is the case if the two item sets X and Y
+< are strongly "correlated" in an intuitive sense: They often occur
+< together.</p>
+< 
+< <p>The Kulczynski measure can have values between 0 and 1, and the
+< value passed with the option <tt>-d</tt> is interpreted as a percentage,
+< that is, passing 100 means that the Kulczynski measure has to be 1
+< (perfect "correlation" of antecedent and consequent).</p>
+< 
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+< <tr><td style="width:95%" align="right">
+<         <a href="#top">back to the top</a></td>
+<     <td style="width:5px"></td>
+<     <td><a href="#top"><img src="up.gif" alt="top"></a></td></tr>
+< </table>
+< 
+< 
+< <!-- =============================================================== -->
+< <hr>
+< 
+< <h4><a name="kulcdiff"></a>Difference of Kulczynski Measure to &half;
+<     (option <tt>-ew</tt>)</h4>
+< 
+< <p>It is sometimes said that the relationship of two item sets X and Y
+< is the closer, the farther the Kulczynski measure is from &half;.
+< In order to capture that low values of the Kulczynski measure can
+< also indicate a relationship of X and Y (although this is rather a
+< "negative" correlation, as it indicates that X and Y occur rarely
+< together), the (absolute) difference of the Kulczynski measure to
+< &half; is provided as a separate measure as well. However, it is
+< multiplied by 2 in order to bring the range back to [0,1].</p>
+< 
+< <table summary="">
+< <tr><td>Kulczynski<sub>diff</sub>(R)&nbsp;=&nbsp;</td>
+<     <td align="center">2|Kulczynski(R)&nbsp;&ndash;&nbsp;&half;|</td>
+< </tr>
+< </table>
+< 
+< <p>The value passed with the option <tt>-d</tt> is interpreted as a
+< percentage, that is, passing 100 means that the doubled difference of
+< the Kulczynski measure to &half; has to be 1 (perfect positive or
+< negative "correlation" of antecedent and consequent).</p>
+< 
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+< <tr><td style="width:95%" align="right">
+<         <a href="#top">back to the top</a></td>
+<     <td style="width:5px"></td>
+<     <td><a href="#top"><img src="up.gif" alt="top"></a></td></tr>
+< </table>
+< 
+< <!-- =============================================================== -->
+< <hr>
+< 
+< <h4><a name="cprob"></a>Conditional Probability Ratio
+<     (option <tt>-eu</tt>)</h4>
+< 
+< <p>The conditional probability ratio compares the confidence values
+< (which can be interpreted as conditional probabilities) of a rule
+< R&nbsp;=&nbsp;X&nbsp;&rarr;&nbsp;Y and its "complement"
+< R'&nbsp;=&nbsp;&not;X&nbsp;&rarr;&nbsp;&not;Y<!-- ' -->
+< by computing their ratio (or quotient). That is
+< 
+< <table summary="">
+< <tr><td>CPR(R)&nbsp;=&nbsp;</td>
+<     <td align="center">supp(X&nbsp;&cup;&nbsp;Y)<br><hr>supp(X)</td>
+<     <td>&middot;</td>
+<     <td align="center">(supp(&emptyset;)&nbsp;&ndash;&nbsp;supp(X))<br><hr>
+<     (supp(Y)&nbsp;&ndash;&nbsp;supp(X&nbsp;&cup;&nbsp;Y))</td>
+<     <td>.</td>
+< </tr>
+< </table>
+< 
+< <p>Since it is a ratio of two confidence values, each of which is
+< between 0 and 1, the conditional probability ratio is between 0 and 1.
+< The value passed with the option <tt>-d</tt> is interpreted as a
+< percentage, that is, passing 100 means that the conditional probability
+< ratio has to be 1.</p>
+< 
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+< <tr><td style="width:95%" align="right">
+<         <a href="#top">back to the top</a></td>
+<     <td style="width:5px"></td>
+<     <td><a href="#top"><img src="up.gif" alt="top"></a></td></tr>
+< </table>
+< 
+< <!-- =============================================================== -->
+< <hr>
+< 
+< <h4><a name="importance"></a>Importance (option <tt>-ej</tt>)</h4>
+< 
+< <p>The Importance is the binary logarithm of the conditional probability
+< ratio (see preceding section).</p>
+< 
+< <table summary="">
+< <tr><td>Imp(R)&nbsp;=&nbsp;</td>
+<     <td align="center">log<sub>2</sub>(CPR(R)).</td>
+< </tr>
+< </table>
+< 
+< <p>Note that taking a logarithm of a value between 0 and 1 yields a
+< negative value.</p>
+< 
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+< <tr><td style="width:95%" align="right">
+<         <a href="#top">back to the top</a></td>
+<     <td style="width:5px"></td>
+<     <td><a href="#top"><img src="up.gif" alt="top"></a></td></tr>
+< </table>
+< 
+< <!-- =============================================================== -->
+< <hr>
+< 
+< <h4><a name="certainty"></a>Certainty Factor (option <tt>-ez</tt>)</h4>
+---
+> <h4><a name="cert"></a>Certainty Factor (option <tt>-ez</tt>)</h4>
+2239c2061
+< <table summary="">
+---
+> <table>
+2251c2073
+< <table summary="">
+---
+> <table>
+2268c2090
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2294c2116
+< <table summary="">
+---
+> <table>
+2302,2304c2124,2126
+< <p>where the first index of the n's<!--' --> refers to X and
+< the second to Y and n&nbsp;=&nbsp;|T| is the total number of
+< transactions in the database.</p>
+---
+> <p>where the first index of the n's refers to X and the second to Y
+> and n&nbsp;=&nbsp|T| is the total number of transactions in the
+> database.</p>
+2321c2143
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2331c2153
+< <h4><a name="chi2pval"></a>p-Value Computed from &chi;<sup>2</sup> Measure
+---
+> <h4><a name="pval"></a>p-Value Computed from &chi;<sup>2</sup> Measure
+2349c2171
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2360c2182
+<     Yates'<!-- ' --> Correction (option <tt>-ey</tt>)</h4>
+---
+>     Yates' Correction (option <tt>-ey</tt>)</h4>
+2371,2372c2193,2194
+< which is also known as Yates'<!-- ' --> correction for continuity.
+< Its intention is to prevent an overestimation of significance (that
+---
+> which is also known as Yates' correction for continuity. Its
+> intention is to prevent an overestimation of significance (that
+2379c2201
+< <table summary="">
+---
+> <table>
+2387,2389c2209,2211
+< <p>where the first index of the n's<!-- ' --> refers to X and
+< the second to Y and n&nbsp;=&nbsp;|T| is the total number of
+< transactions in the database.</p>
+---
+> <p>where the first index of the n's refers to X and the second to Y
+> and n&nbsp;=&nbsp|T| is the total number of transactions in the
+> database.</p>
+2407c2229
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2424c2246
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2484c2306
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2494c2316
+< <h4><a name="infopval">p-Value Computed from G-Statistic</a>
+---
+> <h4><a name="pgst">p-Value Computed from G-Statistic</a>
+2515c2337
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2525,2526c2347,2348
+< <h4><a name="fetprob"></a>Fisher's<!-- ' --> Exact Test;
+<     Table Probability (option <tt>-ef</tt>)</h4>
+---
+> <h4><a name="fetprob"></a>Fisher's Exact Test; Table Probability
+>     (option <tt>-ef</tt>)</h4>
+2529,2530c2351,2352
+< Fisher's<!-- ' --> exact test computes a p-value from a contingency
+< table. It is often used to measure the difference between a conjectured
+---
+> Fisher's exact test computes a p-value from a contingency table.
+> It is often used to measure the difference between a conjectured
+2540,2546c2362,2368
+< <p>In Fisher's<!-- ' --> exact test, the marginals of the contingency
+< table are fixed, that is, the support of the antecedent of the rule
+< (that is, supp(X)) and the support of the consequent of the rule
+< (that is, supp(Y)) as well as the total number of transactions,
+< are seen as fixed. Under this assumption, the distribution of the
+< numbers in the cells of the contingency table that respect the
+< marginals follows a hypergeometric distribution.</p>
+---
+> <p>In Fisher's exact test, the marginals of the contingency table are
+> fixed, that is, the support of the antecedent of the rule (that is,
+> supp(X)) and the support of the consequent of the rule (that is,
+> supp(Y)) as well as the total number of transactions, are seen as
+> fixed. Under this assumption, the distribution of the numbers in the
+> cells of the contingency table that respect the marginals follows
+> a hypergeometric distribution.</p>
+2548c2370
+< <p>Fisher's<!-- ' --> exact test is based on the probability of finding,
+---
+> <p>Fisher's exact test is based on the probability of finding,
+2554c2376
+< Fisher's<!-- ' --> exact test. The most common is to order the possible
+---
+> Fisher's exact test. The most common is to order the possible
+2568c2390
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2578,2579c2400,2401
+< <h4><a name="fetchi2"></a>Fisher's<!-- ' --> Exact Test;
+<     &chi;<sup>2</sup>-Measure (option <tt>-eh</tt>)</h4>
+---
+> <h4><a name="fetchi2"></a>Fisher's Exact Test; &chi;<sup>2</sup>-Measure
+>     (option <tt>-eh</tt>)</h4>
+2581c2403
+< <p>Analogous to <a href="#fetprob">Fisher's<!-- ' --> exact text
+---
+> <p>Analogous to <a href="#fetprob">Fisher's exact text
+2589c2411
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2599,2600c2421,2422
+< <h4><a name="fetinfo"></a>Fisher's<!-- ' --> Exact Test;
+<     Information Gain (option <tt>-em</tt>)</h4>
+---
+> <h4><a name="fetinfo"></a>Fisher's Exact Test; Information Gain
+>     (option <tt>-em</tt>)</h4>
+2602c2424
+< <p>Analogous to <a href="#fetprob">Fisher's<!-- ' --> exact text
+---
+> <p>Analogous to <a href="#fetprob">Fisher's exact text
+2606c2428
+< have an information gain that is no smaller than the information gain
+---
+> have an information gain that is no larger than the information gain
+2609c2431
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2619c2441
+< <h4><a name="fetsupp"></a>Fisher's<!-- ' --> Exact Test; Support
+---
+> <h4><a name="fetsupp"></a>Fisher's Exact Test; Support
+2622c2444
+< <p>Analogous to <a href="#fetprob">Fisher's<!-- ' --> exact text
+---
+> <p>Analogous to <a href="#fetprob">Fisher's exact text
+2632c2454
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2653c2475
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2672c2494
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2745c2567
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2795c2617
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2823c2645
+< <table cellpadding=0 cellspacing=0 summary="">
+---
+> <table cellpadding=0 cellspacing=0>
+2861c2683
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2940c2762
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2958c2780
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+2979c2801
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+3014c2836
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+3055c2877
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+3070c2892
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+3082c2904
+< <table border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table border=0 cellpadding=0 cellspacing=0>
+3091c2913
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+3197c3019
+< <table width="100%" border=0 cellpadding=0 cellspacing=0 summary="">
+---
+> <table width="100%" border=0 cellpadding=0 cellspacing=0>
+Binary files source-pyfim.tar.gz-extracted/apriori/doc/chi2.pdf and lookaside-pyfim.tar.gz-extracted/apriori/doc/chi2.pdf differ
+diff -r source-pyfim.tar.gz-extracted/apriori/doc/chi2.tex lookaside-pyfim.tar.gz-extracted/apriori/doc/chi2.tex
+20c20
+< sample cases in $\cal X$ that contain both the attribute values~$c_i$
+---
+> sample cases in $\cal X$, which contain both the attribute values~$c_i$
+39,41c39,41
+<            {\frac{N_{i.}N_{.j}}{N_{..}}} \\
+< & = & \sum_{i=1}^{n_C} \sum_{j=1}^{n_A}
+<       \frac{N_{..}^2 \left(\frac{N_{i.}}{N_{..}}
+---
+>            {\frac{N_{i.}N_{.j}}{N_{..}}}
+> ~~=~~ \sum_{i=1}^{n_C} \sum_{j=1}^{n_A}
+>       \frac{N_{..}^2 \left(\frac{N_{i.\phantom{j}}}{N_{..}}
+44,45c44,47
+<            {N_{..}\;       \frac{N_{i.}}{N_{..}}
+<                            \frac{N_{.j}}{N_{..}}}
+---
+>            {N_{..}\;       \frac{N_{i.\phantom{j}}}{N_{..}}
+>                            \frac{N_{.j}}{N_{..}}} \\
+> & = & N_{..} \sum_{i=1}^{n_C} \sum_{j=1}^{n_A}
+>       \frac{(p_{i.}\;p_{.j} - p_{ij})^2}{p_{i.}\;p_{.j}}
+47,54c49
+<       \frac{(p_{i.}\;p_{.j} - p_{ij})^2}{p_{i.}\;p_{.j}} \\
+< & = & \sum_{i=1}^{n_C} \sum_{j=1}^{n_A}
+<       \frac{\frac{1}{N_{..}^2} \left(N_{i.}N_{.j}
+<                               - N_{..}N_{ij}\right)^2}
+<            {N_{..}\;       \frac{N_{i.}}{N_{..}}
+<                            \frac{N_{.j}}{N_{..}}}
+< ~~=~~ \sum_{i=1}^{n_C} \sum_{j=1}^{n_A}
+<       \frac{(N_{i.}\;N_{.j} - N_{..}N_{ij})^2}{N_{..} N_{i.}\;N_{.j}}.
+---
+>       \frac{(N_{i.}\;N_{.j} - N_{..}N_{ij})^2}{N_{i.}\;N_{.j}}.
+diff -r source-pyfim.tar.gz-extracted/apriori/src/apriori.c lookaside-pyfim.tar.gz-extracted/apriori/src/apriori.c
+98,99d97
+<             2020.06.15 bug in evaluation of smax fixed (option -S#)
+<             2022.11.22 imbalance ratio and Kulczynski measure added
+150,151c148,149
+< #define VERSION     "version 6.31 (2022.11.22)        " \
+<                     "(c) 1996-2022   Christian Borgelt"
+---
+> #define VERSION     "version 6.28 (2019.03.31)        " \
+>                     "(c) 1996-2019   Christian Borgelt"
+402c400
+<        : (apriori->smax/100.0) *(double)w *(1+DBL_EPSILON);
+---
+>        : (apriori->smax/100.0) *(double)w *(1-DBL_EPSILON);
+546,547c544
+<   XMSG(stderr, "[%"ISCNT_FMT" %s(s)]",
+<                ISCOUT(isr_repcnt(apriori->report)),
+---
+>   XMSG(stderr, "[%"SIZE_FMT" %s(s)]", isr_repcnt(apriori->report),
+605c602,628
+<   re_help();
+---
+>   printf("  x   no measure (default)\n");
+>   printf("  o   rule support (original def.: body & head)       (+)\n");
+>   printf("  c   rule confidence                                 (+)\n");
+>   printf("  d   absolute confidence difference to prior         (+)\n");
+>   printf("  l   lift value (confidence divided by prior)        (+)\n");
+>   printf("  a   absolute difference of lift value to 1          (+)\n");
+>   printf("  q   difference of lift quotient to 1                (+)\n");
+>   printf("  v   conviction (inverse lift for negated head)      (+)\n");
+>   printf("  e   absolute difference of conviction to 1          (+)\n");
+>   printf("  r   difference of conviction quotient to 1          (+)\n");
+>   printf("  k   conditional probability ratio                   (+)\n");
+>   printf("  j   importance (binary log. of cond. prob. ratio)   (+)\n");
+>   printf("  z   certainty factor (relative confidence change)   (+)\n");
+>   printf("  n   normalized chi^2 measure                        (+)\n");
+>   printf("  p   p-value from (unnormalized) chi^2 measure       (-)\n");
+>   printf("  y   normalized chi^2 measure with Yates' correction (+)\n");
+>   printf("  t   p-value from Yates-corrected chi^2 measure      (-)\n");
+>   printf("  i   information difference to prior                 (+)\n");
+>   printf("  g   p-value from G statistic/information difference (-)\n");
+>   printf("  f   Fisher's exact test (table probability)         (-)\n");
+>   printf("  h   Fisher's exact test (chi^2 measure)             (-)\n");
+>   printf("  m   Fisher's exact test (information gain)          (-)\n");
+>   printf("  s   Fisher's exact test (support)                   (-)\n");
+>   printf("All measures for association rules are also applicable\n");
+>   printf("to item sets and are then aggregated over all possible\n");
+>   printf("association rules with a single item in the consequent.\n");
+>   printf("The aggregation mode can be set with the option -a#.\n");
+611,614d633
+<   printf("All measures for association rules are also applicable\n");
+<   printf("to item sets and are then aggregated over all possible\n");
+<   printf("association rules with a single item in the consequent.\n");
+<   printf("The aggregation mode can be set with the option -a#.\n");
+1017c1036
+<   int     eval     = 'x', e;    /* additional evaluation measure */
+---
+>   int     eval     = 'x';       /* additional evaluation measure */
+1216,1218c1235,1262
+<   e = (eval == 'b') ? APR_LDRATIO : re_getid(eval);
+<   if (e < 0) error(E_MEASURE, (char)eval);
+<   eval = e | eflgs;             /* translate measure, add flags */
+---
+>   switch (eval) {               /* check and translate measure */
+>     case 'x': eval = RE_NONE;                break;
+>     case 'o': eval = RE_SUPP;                break;
+>     case 'c': eval = RE_CONF;                break;
+>     case 'd': eval = RE_CONFDIFF;            break;
+>     case 'l': eval = RE_LIFT;                break;
+>     case 'a': eval = RE_LIFTDIFF;            break;
+>     case 'q': eval = RE_LIFTQUOT;            break;
+>     case 'v': eval = RE_CVCT;                break;
+>     case 'e': eval = RE_CVCTDIFF;            break;
+>     case 'r': eval = RE_CVCTQUOT;            break;
+>     case 'k': eval = RE_CPROB;               break;
+>     case 'j': eval = RE_IMPORT;              break;
+>     case 'z': eval = RE_CERT;                break;
+>     case 'n': eval = RE_CHI2;                break;
+>     case 'p': eval = RE_CHI2PVAL;            break;
+>     case 'y': eval = RE_YATES;               break;
+>     case 't': eval = RE_YATESPVAL;           break;
+>     case 'i': eval = RE_INFO;                break;
+>     case 'g': eval = RE_INFOPVAL;            break;
+>     case 'f': eval = RE_FETPROB;             break;
+>     case 'h': eval = RE_FETCHI2;             break;
+>     case 'm': eval = RE_FETINFO;             break;
+>     case 's': eval = RE_FETSUPP;             break;
+>     case 'b': eval = APR_LDRATIO;            break;
+>     default : error(E_MEASURE, (char)eval);  break;
+>   }  /* free: u w */            /* (get evaluation measure code) */
+>   eval |= eflgs;                /* add evaluation measure flags */
+1257c1301
+< 
+---
+>   
+diff -r source-pyfim.tar.gz-extracted/apriori/src/istree.c lookaside-pyfim.tar.gz-extracted/apriori/src/istree.c
+94d93
+<             2022.01.09 bug in function r4set() fixed (item appearances)
+116c115
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+119c118
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+1845,1847c1844,1846
+<     if (((app != APP_HEAD) && ist->hdonly)
+<     ||  !(app &  APP_HEAD))     /* check whether the current item */
+<       continue;                 /* can occur as a rule head */
+---
+>     if (!(app &  APP_HEAD)      /* get head item appearance indicator */
+>     ||  ((app != APP_HEAD) && ist->hdonly))
+>       continue;                 /* if rule is not allowed, skip it */
+1982c1981
+<   ITEM       i;                 /* buffer for item index */
+---
+>   ITEM       i;                 /* loop variable */
+2000c1999,2000
+<   item = ITEMAT(node, index);   /* get first head item */
+---
+>   item = (node->offset >= 0) ? node->offset +index
+>        : ((ITEM*)(node->cnts +node->size))[index];
+2015,2016c2015
+<     if (((app != APP_HEAD) && ISHDONLY(node))
+<     ||  !(app &  APP_HEAD))     /* check whether the current item */
+---
+>     if (!(app & APP_HEAD))      /* check whether the current item */
+2032,2033d2030
+<   if (app == APP_HEAD)          /* if item can only appear in head, */
+<     return 0;                   /* no other rules can be formed */
+diff -r source-pyfim.tar.gz-extracted/carpenter/src/carpenter.c lookaside-pyfim.tar.gz-extracted/carpenter/src/carpenter.c
+35d34
+<             2020.06.15 bug in evaluation of smax fixed (option -S#)
+91,92c90,91
+< #define VERSION     "version 3.22 (2020.06.15)        " \
+<                     "(c) 2010-2020   Christian Borgelt"
+---
+> #define VERSION     "version 3.21 (2017.06.13)        " \
+>                     "(c) 2010-2017   Christian Borgelt"
+750c749
+<        : (carp->smax/100.0) *(double)w *(1+DBL_EPSILON);
+---
+>        : (carp->smax/100.0) *(double)w *(1-DBL_EPSILON);
+804,805c803
+<   XMSG(stderr, "[%"ISCNT_FMT" set(s)]",
+<        ISCOUT(isr_repcnt(carp->report)));
+---
+>   XMSG(stderr, "[%"SIZE_FMT" set(s)]", isr_repcnt(carp->report));
+diff -r source-pyfim.tar.gz-extracted/eclat/src/eclat.c lookaside-pyfim.tar.gz-extracted/eclat/src/eclat.c
+94,95d93
+<             2020.06.15 bug in evaluation of smax fixed (option -S#)
+<             2022.11.22 imbalance ratio and Kulczynski measure added
+171,172c169,170
+< #define VERSION     "version 5.24 (2022.11.22)        " \
+<                     "(c) 2002-2022   Christian Borgelt"
+---
+> #define VERSION     "version 5.21 (2019.03.31)        " \
+>                     "(c) 2002-2019   Christian Borgelt"
+501,502c499
+<   if (k <= 0)                   /* if no items, at most empty set */
+<     return isr_report(eclat->report);
+---
+>   if (k <= 0) return isr_report(eclat->report);
+913,914c910
+<   if (k <= 0)                   /* if no items, at most empty set */
+<     return isr_report(eclat->report);
+---
+>   if (k <= 0) return isr_report(eclat->report);
+1200,1201c1196
+<   if (k <= 0)                   /* if no items, at most empty set */
+<     return isr_report(eclat->report);
+---
+>   if (k <= 0) return isr_report(eclat->report);
+1327,1328c1322
+<   if (k <= 0)                   /* if no items, at most empty set */
+<     return isr_report(eclat->report);
+---
+>   if (k <= 0) return isr_report(eclat->report);
+1360c1354
+<       *next[*s]++       = n;    /* sum the transaction weight and */
+---
+>       *next[*s]++      = n;     /* sum the transaction weight and */
+1462,1463c1456
+<   if (k <= 0)                   /* if no items, at most empty set */
+<     return isr_report(eclat->report);
+---
+>   if (k <= 0) return isr_report(eclat->report);
+1709,1710c1702
+<   if (k <= 0)                   /* if no items, at most empty set */
+<     return isr_report(eclat->report);
+---
+>   if (k <= 0) return isr_report(eclat->report);
+2100,2101c2092
+<   if (k <= 0)                   /* if no items, at most empty set */
+<     return isr_report(eclat->report);
+---
+>   if (k <= 0) return isr_report(eclat->report);
+2284,2285c2275
+<   if (k <= 0)                   /* if no items, at most empty set */
+<     return isr_report(eclat->report);
+---
+>   if (k <= 0) return isr_report(eclat->report);
+2687c2677
+<        : (eclat->smax/100.0) *(double)w *(1+DBL_EPSILON);
+---
+>        : (eclat->smax/100.0) *(double)w *(1-DBL_EPSILON);
+2725,2726c2715
+<     XMSG(stderr, "[%"ISCNT_FMT" set(s)]",
+<          ISCOUT(isr_repcnt(eclat->report)));
+---
+>     XMSG(stderr, "[%"SIZE_FMT" set(s)]", isr_repcnt(eclat->report));
+2766,2767c2755
+<     XMSG(stderr, "[%"ISCNT_FMT" %s(s)]",
+<                  ISCOUT(isr_repcnt(eclat->report)),
+---
+>     XMSG(stderr, "[%"SIZE_FMT" %s(s)]", isr_repcnt(eclat->report),
+2788c2776,2798
+<   re_help();
+---
+>   printf("  x   no measure (default)\n");
+>   printf("  o   rule support (original def.: body & head)       (+)\n");
+>   printf("  c   rule confidence                                 (+)\n");
+>   printf("  d   absolute confidence difference to prior         (+)\n");
+>   printf("  l   lift value (confidence divided by prior)        (+)\n");
+>   printf("  a   absolute difference of lift value to 1          (+)\n");
+>   printf("  q   difference of lift quotient to 1                (+)\n");
+>   printf("  v   conviction (inverse lift for negated head)      (+)\n");
+>   printf("  e   absolute difference of conviction to 1          (+)\n");
+>   printf("  r   difference of conviction quotient to 1          (+)\n");
+>   printf("  k   conditional probability ratio                   (+)\n");
+>   printf("  j   importance (binary log. of cond. prob. ratio)   (+)\n");
+>   printf("  z   certainty factor (relative confidence change)   (+)\n");
+>   printf("  n   normalized chi^2 measure                        (+)\n");
+>   printf("  p   p-value from (unnormalized) chi^2 measure       (-)\n");
+>   printf("  y   normalized chi^2 measure with Yates' correction (+)\n");
+>   printf("  t   p-value from Yates-corrected chi^2 measure      (-)\n");
+>   printf("  i   information difference to prior                 (+)\n");
+>   printf("  g   p-value from G statistic/information difference (-)\n");
+>   printf("  f   Fisher's exact test (table probability)         (-)\n");
+>   printf("  h   Fisher's exact test (chi^2 measure)             (-)\n");
+>   printf("  m   Fisher's exact test (information gain)          (-)\n");
+>   printf("  s   Fisher's exact test (support)                   (-)\n");
+2931c2941
+<   int     eval     = 'x', e;    /* additional evaluation measure */
+---
+>   int     eval     = 'x';       /* additional evaluation measure */
+3143,3145c3153,3180
+<   e = (eval == 'b') ? ECL_LDRATIO : re_getid(eval);
+<   if (e < 0) error(E_MEASURE, (char)eval);
+<   eval = e | eflgs;             /* translate measure, add flags */
+---
+>   switch (eval) {               /* check and translate measure */
+>     case 'x': eval = RE_NONE;                break;
+>     case 'o': eval = RE_SUPP;                break;
+>     case 'c': eval = RE_CONF;                break;
+>     case 'd': eval = RE_CONFDIFF;            break;
+>     case 'l': eval = RE_LIFT;                break;
+>     case 'a': eval = RE_LIFTDIFF;            break;
+>     case 'q': eval = RE_LIFTQUOT;            break;
+>     case 'v': eval = RE_CVCT;                break;
+>     case 'e': eval = RE_CVCTDIFF;            break;
+>     case 'r': eval = RE_CVCTQUOT;            break;
+>     case 'k': eval = RE_CPROB;               break;
+>     case 'j': eval = RE_IMPORT;              break;
+>     case 'z': eval = RE_CERT;                break;
+>     case 'n': eval = RE_CHI2;                break;
+>     case 'p': eval = RE_CHI2PVAL;            break;
+>     case 'y': eval = RE_YATES;               break;
+>     case 't': eval = RE_YATESPVAL;           break;
+>     case 'i': eval = RE_INFO;                break;
+>     case 'g': eval = RE_INFOPVAL;            break;
+>     case 'f': eval = RE_FETPROB;             break;
+>     case 'h': eval = RE_FETCHI2;             break;
+>     case 'm': eval = RE_FETINFO;             break;
+>     case 's': eval = RE_FETSUPP;             break;
+>     case 'b': eval = ECL_LDRATIO;            break;
+>     default : error(E_MEASURE, (char)eval);  break;
+>   }  /* free: u w */            /* (get evaluation measure code) */
+>   eval |= eflgs;                /* add evaluation measure flags */
+diff -r source-pyfim.tar.gz-extracted/fpgrowth/src/fpgrowth.c lookaside-pyfim.tar.gz-extracted/fpgrowth/src/fpgrowth.c
+69,70d68
+<             2020.06.15 bug in evaluation of smax fixed (option -S#)
+<             2022.11.22 imbalance ratio and Kulczynski measure added
+127,128c125,126
+< #define VERSION     "version 6.21 (2022.11.22)        " \
+<                     "(c) 2004-2022   Christian Borgelt"
+---
+> #define VERSION     "version 6.18 (2019.03.31)        " \
+>                     "(c) 2004-2019   Christian Borgelt"
+1997c1995
+<        : (fpg->smax/100.0) *(double)w *(1+DBL_EPSILON);
+---
+>        : (fpg->smax/100.0) *(double)w *(1-DBL_EPSILON);
+2035,2036c2033
+<     XMSG(stderr, "[%"ISCNT_FMT" set(s)]",
+<                  ISCOUT(isr_repcnt(fpg->report)));
+---
+>     XMSG(stderr, "[%"SIZE_FMT" set(s)]", isr_repcnt(fpg->report));
+2075,2076c2072
+<     XMSG(stderr, "[%"ISCNT_FMT" %s(s)]",
+<                  ISCOUT(isr_repcnt(fpg->report)),
+---
+>     XMSG(stderr, "[%"SIZE_FMT" %s(s)]", isr_repcnt(fpg->report),
+2097c2093,2115
+<   re_help();
+---
+>   printf("  x   no measure (default)\n");
+>   printf("  o   rule support (original def.: body & head)       (+)\n");
+>   printf("  c   rule confidence                                 (+)\n");
+>   printf("  d   absolute confidence difference to prior         (+)\n");
+>   printf("  l   lift value (confidence divided by prior)        (+)\n");
+>   printf("  a   absolute difference of lift value to 1          (+)\n");
+>   printf("  q   difference of lift quotient to 1                (+)\n");
+>   printf("  v   conviction (inverse lift for negated head)      (+)\n");
+>   printf("  e   absolute difference of conviction to 1          (+)\n");
+>   printf("  r   difference of conviction quotient to 1          (+)\n");
+>   printf("  k   conditional probability ratio                   (+)\n");
+>   printf("  j   importance (binary log. of cond. prob. ratio)   (+)\n");
+>   printf("  z   certainty factor (relative confidence change)   (+)\n");
+>   printf("  n   normalized chi^2 measure                        (+)\n");
+>   printf("  p   p-value from (unnormalized) chi^2 measure       (-)\n");
+>   printf("  y   normalized chi^2 measure with Yates' correction (+)\n");
+>   printf("  t   p-value from Yates-corrected chi^2 measure      (-)\n");
+>   printf("  i   information difference to prior                 (+)\n");
+>   printf("  g   p-value from G statistic/information difference (-)\n");
+>   printf("  f   Fisher's exact test (table probability)         (-)\n");
+>   printf("  h   Fisher's exact test (chi^2 measure)             (-)\n");
+>   printf("  m   Fisher's exact test (information gain)          (-)\n");
+>   printf("  s   Fisher's exact test (support)                   (-)\n");
+2236c2254
+<   int     eval     = 'x', e;    /* additional evaluation measure */
+---
+>   int     eval     = 'x';       /* additional evaluation measure */
+2436,2438c2454,2481
+<   e = (eval == 'b') ? FPG_LDRATIO : re_getid(eval);
+<   if (e < 0) error(E_MEASURE, (char)eval);
+<   eval = e | eflgs;             /* translate measure, add flags */
+---
+>   switch (eval) {               /* check and translate measure */
+>     case 'x': eval = RE_NONE;                break;
+>     case 'o': eval = RE_SUPP;                break;
+>     case 'c': eval = RE_CONF;                break;
+>     case 'd': eval = RE_CONFDIFF;            break;
+>     case 'l': eval = RE_LIFT;                break;
+>     case 'a': eval = RE_LIFTDIFF;            break;
+>     case 'q': eval = RE_LIFTQUOT;            break;
+>     case 'v': eval = RE_CVCT;                break;
+>     case 'e': eval = RE_CVCTDIFF;            break;
+>     case 'r': eval = RE_CVCTQUOT;            break;
+>     case 'k': eval = RE_CPROB;               break;
+>     case 'j': eval = RE_IMPORT;              break;
+>     case 'z': eval = RE_CERT;                break;
+>     case 'n': eval = RE_CHI2;                break;
+>     case 'p': eval = RE_CHI2PVAL;            break;
+>     case 'y': eval = RE_YATES;               break;
+>     case 't': eval = RE_YATESPVAL;           break;
+>     case 'i': eval = RE_INFO;                break;
+>     case 'g': eval = RE_INFOPVAL;            break;
+>     case 'f': eval = RE_FETPROB;             break;
+>     case 'h': eval = RE_FETCHI2;             break;
+>     case 'm': eval = RE_FETINFO;             break;
+>     case 's': eval = RE_FETSUPP;             break;
+>     case 'b': eval = FPG_LDRATIO;            break;
+>     default : error(E_MEASURE, (char)eval);  break;
+>   }  /* free: u w */            /* (get evaluation measure code) */
+>   eval |= eflgs;                /* add evaluation measure flags */
+diff -r source-pyfim.tar.gz-extracted/ista/src/ista.c lookaside-pyfim.tar.gz-extracted/ista/src/ista.c
+38d37
+<             2020.06.15 bug in evaluation of smax fixed (option -S#)
+96,97c95,96
+< #define VERSION     "version 4.22 (2020.06.15)        " \
+<                     "(c) 2009-2020   Christian Borgelt"
+---
+> #define VERSION     "version 4.21 (2017.06.13)        " \
+>                     "(c) 2009-2017   Christian Borgelt"
+324c323
+<        : (ista->smax/100.0) *(double)w *(1+DBL_EPSILON);
+---
+>        : (ista->smax/100.0) *(double)w *(1-DBL_EPSILON);
+439,440c438
+<   XMSG(stderr, "[%"ISCNT_FMT" set(s)]",
+<        ISCOUT(isr_repcnt(ista->report)));
+---
+>   XMSG(stderr, "[%"SIZE_FMT" set(s)]", isr_repcnt(ista->report));
+diff -r source-pyfim.tar.gz-extracted/math/src/gamma.c lookaside-pyfim.tar.gz-extracted/math/src/gamma.c
+31c31
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+176c176
+<   return sum;                   /* return the computed sum */
+---
+>   return sum;                   /* return the computed factor */
+181c181
+< P(a,x)      = \gamma(a,x)/\Gamma(a)
+---
+> P(a,x) =    \gamma(a,x)/\Gamma(a)
+diff -r source-pyfim.tar.gz-extracted/math/src/ruleval.c lookaside-pyfim.tar.gz-extracted/math/src/ruleval.c
+9d8
+<             2022.11.22 imbalance ratio and Kulczynski measure added
+21,22c20,21
+< #define INFINITY    (DBL_MAX+DBL_MAX)
+< #endif                          /* in case C99 is not supported */
+---
+> #define INFINITY     (DBL_MAX+DBL_MAX)
+> #endif                          /* MSC still does not support C99 */
+35,36d33
+<   int       chr;                /* indication character */
+<   char      *desc;              /* measure description */
+120a118
+> 
+130,154d127
+< double re_imbal (SUPP supp, SUPP body, SUPP head, SUPP base)
+< {                               /* --- imbalance ratio */
+<   double d = body +head -supp;  /* support of disjunction */
+<   if (d <= 0) return INFINITY;  /* avoid division by zero */
+<   return (double)abs(head -body) /d;
+< }  /* re_imbal() */
+< 
+< /*--------------------------------------------------------------------*/
+< 
+< double re_kulc (SUPP supp, SUPP body, SUPP head, SUPP base)
+< {                               /* --- Kulczynski measure */
+<   if ((body <= 0) || (head <= 0)) return INFINITY;
+<   return 0.5 *supp *(1.0/(double)body +1.0/(double)head);
+< }  /* re_kulc() */
+< 
+< /*--------------------------------------------------------------------*/
+< 
+< double re_kulcdiff (SUPP supp, SUPP body, SUPP head, SUPP base)
+< {                               /* --- diff. of Kulczynski m. to 0.5 */
+<   if ((body <= 0) || (head <= 0)) return INFINITY;
+<   return fabs(supp *(1.0/(double)body +1.0/(double)head) -1);
+< }  /* re_kulcdiff() */
+< 
+< /*--------------------------------------------------------------------*/
+< 
+436,487c409,431
+<   /* RE_NONE         0 */  { re_none,       0, 'x',
+<                     "no measure"                                      },
+<   /* RE_SUPP         1 */  { re_supp,      +1, 'o',
+<                     "rule support (original def.: body & head)"       },
+<   /* RE_CONF         2 */  { re_conf,      +1, 'c',
+<                     "rule confidence"                                 },
+<   /* RE_CONFDIFF     3 */  { re_confdiff,  +1, 'd',
+<                     "absolute confidence difference to prior"         },
+<   /* RE_LIFT         4 */  { re_lift,      +1, 'l',
+<                     "lift value (confidence divided by prior)"        },
+<   /* RE_LIFTDIFF     5 */  { re_liftdiff,  +1, 'a',
+<                     "absolute difference of lift value to 1"          },
+<   /* RE_LIFTQUOT     6 */  { re_liftquot,  +1, 'q',
+<                     "difference of lift quotient to 1"                },
+<   /* RE_CVCT         7 */  { re_cvct,      +1, 'v',
+<                     "conviction (inverse lift for negated head)"      },
+<   /* RE_CVCTDIFF     8 */  { re_cvctdiff,  +1, 'e',
+<                     "absolute difference of conviction to 1"          },
+<   /* RE_CVCTQUOT     9 */  { re_cvctquot,  +1, 'r',
+<                     "difference of conviction quotient to 1"          },
+<   /* RE_IMBAL       10 */  { re_imbal,     +1, 'b',
+<                     "imbalance ratio"                                 },
+<   /* RE_KULC        11 */  { re_kulc,      +1, 'k',
+<                     "Kulczynski measure"                              },
+<   /* RE_KULCDIFF    12 */  { re_kulcdiff,  +1, 'w',
+<                     "difference of Kulczynski measure to 0.5"         },
+<   /* RE_CPROB       13 */  { re_cprob,     +1, 'u',
+<                     "conditional probability ratio"                   },
+<   /* RE_IMPORT      14 */  { re_import,    +1, 'j',
+<                     "importance (binary log. of cond. prob. ratio)"   },
+<   /* RE_CERT        15 */  { re_cert,      +1, 'z',
+<                     "certainty factor (relative confidence change)"   },
+<   /* RE_CHI2        16 */  { re_chi2,      +1, 'n',
+<                     "normalized chi^2 measure"                        },
+<   /* RE_CHI2PVAL    17 */  { re_chi2pval,  -1, 'p',
+<                     "p-value from (unnormalized) chi^2 measure"       },
+<   /* RE_YATES       18 */  { re_yates,     +1, 'y',
+<                     "normalized chi^2 measure with Yates' correction" },
+<   /* RE_YATESPVAL   19 */  { re_yatespval, -1, 't',
+<                     "p-value from Yates-corrected chi^2 measure"      },
+<   /* RE_INFO        20 */  { re_info,      +1, 'i',
+<                     "information difference to prior"                 },
+<   /* RE_INFOPVAL    21 */  { re_infopval,  -1, 'g',
+<                     "p-value from G statistic/information difference" },
+<   /* RE_FETPROB     22 */  { re_fetprob,   -1, 'f',
+<                     "Fisher's exact test (table probability)"         },
+<   /* RE_FETCHI2     23 */  { re_fetchi2,   -1, 'h',
+<                     "Fisher's exact test (chi^2 measure)"             },
+<   /* RE_FETINFO     24 */  { re_fetinfo,   -1, 'm',
+<                     "Fisher's exact test (information gain)"          },
+<   /* RE_FETSUPP     25 */  { re_fetsupp,   -1, 's',
+<                     "Fisher's exact test (support)"                   },
+---
+>   /* RE_NONE       0 */  { re_none,       0 },
+>   /* RE_SUPP       1 */  { re_supp,      +1 },
+>   /* RE_CONF       2 */  { re_conf,      +1 },
+>   /* RE_CONFDIFF   3 */  { re_confdiff,  +1 },
+>   /* RE_LIFT       4 */  { re_lift,      +1 },
+>   /* RE_LIFTDIFF   5 */  { re_liftdiff,  +1 },
+>   /* RE_LIFTQUOT   6 */  { re_liftquot,  +1 },
+>   /* RE_CVCT       7 */  { re_cvct,      +1 },
+>   /* RE_CVCTDIFF   8 */  { re_cvctdiff,  +1 },
+>   /* RE_CVCTQUOT   9 */  { re_cvctquot,  +1 },
+>   /* RE_CPROB     10 */  { re_cprob,     +1 },
+>   /* RE_IMPORT    11 */  { re_import,    +1 },
+>   /* RE_CERT      12 */  { re_cert,      +1 },
+>   /* RE_CHI2      13 */  { re_chi2,      +1 },
+>   /* RE_CHI2PVAL  14 */  { re_chi2pval,  -1 },
+>   /* RE_YATES     15 */  { re_yates,     +1 },
+>   /* RE_YATESPVAL 16 */  { re_yatespval, -1 },
+>   /* RE_INFO      17 */  { re_info,      +1 },
+>   /* RE_INFOPVAL  18 */  { re_infopval,  -1 },
+>   /* RE_FETPROB   19 */  { re_fetprob,   -1 },
+>   /* RE_FETCHI2   20 */  { re_fetchi2,   -1 },
+>   /* RE_FETINFO   21 */  { re_fetinfo,   -1 },
+>   /* RE_FETSUPP   21 */  { re_fetsupp,   -1 },
+489,526d432
+< /* remaining characters: - */
+< 
+< static const int remap[] = {    /* --- character to identifier map */
+<   /*  0 a */  RE_LIFTDIFF,
+<   /*  1 b */  RE_IMBAL,
+<   /*  2 c */  RE_CONF,
+<   /*  3 d */  RE_CONFDIFF,
+<   /*  4 e */  RE_CVCTDIFF,
+<   /*  5 f */  RE_FETPROB,
+<   /*  6 g */  RE_INFOPVAL,
+<   /*  7 h */  RE_FETCHI2,
+<   /*  8 i */  RE_INFO,
+<   /*  9 j */  RE_IMPORT,
+<   /* 10 k */  RE_KULC,
+<   /* 11 l */  RE_LIFT,
+<   /* 12 m */  RE_FETINFO,
+<   /* 13 n */  RE_CHI2,
+<   /* 14 o */  RE_SUPP,
+<   /* 15 p */  RE_CHI2PVAL,
+<   /* 16 q */  RE_LIFTQUOT,
+<   /* 17 r */  RE_CVCTQUOT,
+<   /* 18 s */  RE_FETSUPP,
+<   /* 19 t */  RE_YATESPVAL,
+<   /* 20 u */  RE_CPROB,
+<   /* 21 v */  RE_CVCT,
+<   /* 22 w */  RE_KULCDIFF,
+<   /* 23 x */  RE_NONE,
+<   /* 24 y */  RE_YATES,
+<   /* 25 z */  RE_CERT,
+< };                              /* list of measure ids by character */
+< 
+< /*--------------------------------------------------------------------*/
+< 
+< int re_getid (int c)
+< {                               /* --- get function id from character */
+<   if ((c < 'a') || (c > 'z')) return -1;
+<   return remap[c -'a'];         /* get identifier from table */
+< }  /* re_getid() */
+543,555d448
+< 
+< /*--------------------------------------------------------------------*/
+< 
+< void re_help (void)
+< {                               /* --- print measure descriptions */
+<   int i;                        /* loop variable */
+<   for (i = 0; i < RE_FNCNT; i++) {
+<     printf("  %c   %-48s", reinfo[i].chr, reinfo[i].desc);
+<     if      (reinfo[i].dir > 0) printf("(+)");
+<     else if (reinfo[i].dir < 0) printf("(-)");
+<     printf("\n");               /* traverse evaluation measures */
+<   }                             /* and print their descriptions */
+< }  /* re_help() */
+diff -r source-pyfim.tar.gz-extracted/math/src/ruleval.h lookaside-pyfim.tar.gz-extracted/math/src/ruleval.h
+9d8
+<             2022.11.22 imbalance ratio and Kulczynski measure added
+19,51c18,45
+< #define RE_NONE          0      /* no measure / constant zero */
+< #define RE_SUPP          1      /* rule support (body and head) */
+< #define RE_CONFIDENCE    2      /* rule confidence */
+< #define RE_CONF          2      /* rule confidence */
+< #define RE_CONFDIFF      3      /* confidence diff. to prior */
+< #define RE_LIFT          4      /* lift value (conf./prior) */
+< #define RE_LIFTDIFF      5      /* difference of lift value    to 1 */
+< #define RE_LIFTQUOT      6      /* difference of lift quotient to 1 */
+< #define RE_CONVICTION    7      /* conviction */
+< #define RE_CVCT          7      /* conviction */
+< #define RE_CVCTDIFF      8      /* difference of conviction  to 1 */
+< #define RE_CVCTQUOT      9      /* difference of conv. quot. to 1 */
+< #define RE_IMBALANCE    10      /* imbalance ratio */
+< #define RE_IMBAL        10      /* imbalance ratio */
+< #define RE_KULCZYNSKI   11      /* Kulczynski measure */
+< #define RE_KULC         11      /* Kulczynski measure */
+< #define RE_KULCDIFF     12      /* difference of Kulczynski to 0.5 */
+< #define RE_CPROB        13      /* conditional probability ratio */
+< #define RE_IMPORTANCE   14      /* importance */
+< #define RE_IMPORT       14      /* importance */
+< #define RE_CERTAINTY    15      /* certainty factor */
+< #define RE_CERT         15      /* certainty factor */
+< #define RE_CHI2         16      /* normalized chi^2 measure */
+< #define RE_CHI2PVAL     17      /* p-value from chi^2 measure */
+< #define RE_YATES        18      /* normalized chi^2 measure (Yates) */
+< #define RE_YATESPVAL    19      /* p-value from chi^2 measure (Yates) */
+< #define RE_INFO         20      /* information diff. to prior */
+< #define RE_INFOPVAL     21      /* p-value from info diff. */
+< #define RE_FETPROB      22      /* Fisher's exact test (prob.) */
+< #define RE_FETCHI2      23      /* Fisher's exact test (chi^2) */
+< #define RE_FETINFO      24      /* Fisher's exact test (info.) */
+< #define RE_FETSUPP      25      /* Fisher's exact test (supp.) */
+< #define RE_FNCNT        26      /* number of evaluation functions */
+---
+> #define RE_NONE        0        /* no measure / constant zero */
+> #define RE_SUPP        1        /* rule support (body and head) */
+> #define RE_CONFIDENCE  2        /* rule confidence */
+> #define RE_CONF        2        /* rule confidence */
+> #define RE_CONFDIFF    3        /* confidence diff. to prior */
+> #define RE_LIFT        4        /* lift value (conf./prior) */
+> #define RE_LIFTDIFF    5        /* difference of lift value    to 1 */
+> #define RE_LIFTQUOT    6        /* difference of lift quotient to 1 */
+> #define RE_CONVICTION  7        /* conviction */
+> #define RE_CVCT        7        /* conviction */
+> #define RE_CVCTDIFF    8        /* difference of conviction  to 1 */
+> #define RE_CVCTQUOT    9        /* difference of conv. quot. to 1 */
+> #define RE_CPROB      10        /* conditional probability ratio */
+> #define RE_IMPORT     11        /* importance */
+> #define RE_IMPORTANCE 11        /* importance */
+> #define RE_CERTAINTY  12        /* certainty factor */
+> #define RE_CERT       12        /* certainty factor */
+> #define RE_CHI2       13        /* normalized chi^2 measure */
+> #define RE_CHI2PVAL   14        /* p-value from chi^2 measure */
+> #define RE_YATES      15        /* normalized chi^2 measure (Yates) */
+> #define RE_YATESPVAL  16        /* p-value from chi^2 measure (Yates) */
+> #define RE_INFO       17        /* information diff. to prior */
+> #define RE_INFOPVAL   18        /* p-value from info diff. */
+> #define RE_FETPROB    19        /* Fisher's exact test (prob.) */
+> #define RE_FETCHI2    20        /* Fisher's exact test (chi^2) */
+> #define RE_FETINFO    21        /* Fisher's exact test (info.) */
+> #define RE_FETSUPP    22        /* Fisher's exact test (supp.) */
+> #define RE_FNCNT      23        /* number of evaluation functions */
+56c50
+< typedef double RULEVALFN   (SUPP supp, SUPP body, SUPP head, SUPP base);
+---
+> typedef double RULEVALFN (SUPP supp, SUPP body, SUPP head, SUPP base);
+71,73d64
+< extern double re_imbal     (SUPP supp, SUPP body, SUPP head, SUPP base);
+< extern double re_kulc      (SUPP supp, SUPP body, SUPP head, SUPP base);
+< extern double re_kulcdiff  (SUPP supp, SUPP body, SUPP head, SUPP base);
+88d78
+< extern int        re_getid    (int c);
+91d80
+< extern void       re_help     (void);
+diff -r source-pyfim.tar.gz-extracted/pyfim/ex/testfim.py lookaside-pyfim.tar.gz-extracted/pyfim/ex/testfim.py
+1c1
+< #!/usr/bin/python3
+---
+> #!/usr/bin/python
+diff -r source-pyfim.tar.gz-extracted/pyfim/src/makefile lookaside-pyfim.tar.gz-extracted/pyfim/src/makefile
+15d14
+< #           2022.11.25 compilation for Python 2 removed
+32c31,32
+< PYINC    = -I/usr/include/python3.10
+---
+> PY2INC   = -I/usr/include/python2.7
+> PY3INC   = -I/usr/include/python3.6
+70c70,72
+<            accretion.o fpgpsp.o pyfim.o $(ADDOBJS)
+---
+>            accretion.o fpgpsp.o 
+> OBJS2    = $(OBJS) py2fim.o $(ADDOBJS)
+> OBJS3    = $(OBJS) py3fim.o $(ADDOBJS)
+77,78c79,86
+< fim.so:       $(OBJS) makefile
+< 	$(LD) $(LDFLAGS) $(LIBS) -shared $(OBJS) -o $@
+---
+> fim.so:       $(OBJS2) makefile
+> 	$(LD) $(LDFLAGS) -shared $(OBJS2) -o $@
+> 
+> py3:          fim3.so
+> 
+> fim3.so:      $(OBJS3) makefile
+> 	$(LD) $(LDFLAGS) -shared $(OBJS3) -o $@
+> 	mv fim3.so fim.so
+366,368c374,385
+< pyfim.o:      $(HDRS)
+< pyfim.o:      pyfim.c makefile
+< 	$(CC) $(CFLAGS) $(INCS) $(PYINC) -fno-strict-aliasing \
+---
+> py2fim.o:     $(HDRS)
+> py2fim.o:     pyfim.c makefile
+> 	$(CC) $(CFLAGS) $(INCS) $(PY2INC) -fno-strict-aliasing \
+>               pyfim.c -o $@
+> 
+> py2fim.d:     pyfim.c makefile
+> 	$(CC) -MM $(CFLAGS) $(INCS) $(PY2INC) -fno-strict-aliasing \
+>               pyfim.c > $@
+> 
+> py3fim.o:     $(HDRS)
+> py3fim.o:     pyfim.c makefile
+> 	$(CC) $(CFLAGS) $(INCS) $(PY3INC) -fno-strict-aliasing \
+371,372c388,389
+< pyfim.d:      pyfim.c makefile
+< 	$(CC) -MM $(CFLAGS) $(INCS) $(PYINC) -fno-strict-aliasing \
+---
+> py3fim.d:     pyfim.c makefile
+> 	$(CC) -MM $(CFLAGS) $(INCS) $(PY3INC) -fno-strict-aliasing \
+416c433
+< 	cp fim.so $(HOME)/lib
+---
+> 	mv fim.so $(HOME)/lib
+diff -r source-pyfim.tar.gz-extracted/pyfim/src/pyfim.c lookaside-pyfim.tar.gz-extracted/pyfim/src/pyfim.c
+56d55
+<             2022.11.22 imbalance ratio and Kulczynski measure added
+279,292c278,291
+<     if      (strcmp(s, "none")           == 0) s = "x";
+<     else if (strcmp(s, "X2")             == 0) s = "p";
+<     else if (strcmp(s, "chi2")           == 0) s = "p";
+<     else if (strcmp(s, "X2pval")         == 0) s = "p";
+<     else if (strcmp(s, "chi2pval")       == 0) s = "p";
+<     else if (strcmp(s, "yates")          == 0) s = "t";
+<     else if (strcmp(s, "yatespval")      == 0) s = "t";
+<     else if (strcmp(s, "info")           == 0) s = "g";
+<     else if (strcmp(s, "infopval")       == 0) s = "g";
+<     else if (strcmp(s, "fetprob")        == 0) s = "f";
+<     else if (strcmp(s, "fetchi2")        == 0) s = "h";
+<     else if (strcmp(s, "fetX2")          == 0) s = "h";
+<     else if (strcmp(s, "fetinfo")        == 0) s = "m";
+<     else if (strcmp(s, "fetsupp")        == 0) s = "s";
+---
+>     if      (strcmp(s, "none")      == 0) s = "x";
+>     else if (strcmp(s, "X2")        == 0) s = "p";
+>     else if (strcmp(s, "chi2")      == 0) s = "p";
+>     else if (strcmp(s, "X2pval")    == 0) s = "p";
+>     else if (strcmp(s, "chi2pval")  == 0) s = "p";
+>     else if (strcmp(s, "yates")     == 0) s = "t";
+>     else if (strcmp(s, "yatespval") == 0) s = "t";
+>     else if (strcmp(s, "info")      == 0) s = "g";
+>     else if (strcmp(s, "infopval")  == 0) s = "g";
+>     else if (strcmp(s, "fetprob")   == 0) s = "f";
+>     else if (strcmp(s, "fetchi2")   == 0) s = "h";
+>     else if (strcmp(s, "fetX2")     == 0) s = "h";
+>     else if (strcmp(s, "fetinfo")   == 0) s = "m";
+>     else if (strcmp(s, "fetsupp")   == 0) s = "s";
+332,333d330
+<   int id;                       /* measure code */
+< 
+349,354c346
+<     if (strcmp(s, "imbalance")  == 0) s = "b";
+<     if (strcmp(s, "imbal")      == 0) s = "b";
+<     if (strcmp(s, "kulczynski") == 0) s = "k";
+<     if (strcmp(s, "kulc")       == 0) s = "k";
+<     if (strcmp(s, "kulcdiff")   == 0) s = "w";
+<     if (strcmp(s, "cprob")      == 0) s = "u";
+---
+>     if (strcmp(s, "cprob")      == 0) s = "k";
+375,376c367,392
+<     id = re_getid((int)s[0]);   /* evaluate the measure code */
+<     if (id > 0) return id;      /* check for a valid code */
+---
+>     switch (s[0]) {             /* evaluate the measure code */
+>       case 'x': return RE_NONE;
+>       case 'o': return RE_SUPP;
+>       case 'c': return RE_CONF;
+>       case 'd': return RE_CONFDIFF;
+>       case 'l': return RE_LIFT;
+>       case 'a': return RE_LIFTDIFF;
+>       case 'q': return RE_LIFTQUOT;
+>       case 'v': return RE_CVCT;
+>       case 'e': return RE_CVCTDIFF;
+>       case 'r': return RE_CVCTQUOT;
+>       case 'k': return RE_CPROB;
+>       case 'j': return RE_IMPORT;
+>       case 'z': return RE_CERT;
+>       case 'n': return RE_CHI2;
+>       case 'p': return RE_CHI2PVAL;
+>       case 'y': return RE_YATES;
+>       case 't': return RE_YATESPVAL;
+>       case 'i': return RE_INFO;
+>       case 'g': return RE_INFOPVAL;
+>       case 'f': return RE_FETPROB;
+>       case 'h': return RE_FETCHI2;
+>       case 'm': return RE_FETINFO;
+>       case 's': return RE_FETSUPP;
+>       case 'b': return RE_FNCNT;
+>     }
+496c512
+< { if (a) { Py_DECREF(a); } if (b) { Py_DECREF(b); } }
+---
+> { if (a) Py_DECREF(a); if (b) Py_DECREF(b); }
+501,502c517
+< { if (a) { Py_DECREF(a); } if (b) { Py_DECREF(b); }
+<   if (c) { Py_DECREF(c); } }
+---
+> { if (a) Py_DECREF(a); if (b) Py_DECREF(b); if (c) Py_DECREF(c); }
+507,508c522,523
+< { if (a) { Py_DECREF(a); } if (b) { Py_DECREF(b); }
+<   if (c) { Py_DECREF(c); } if (d) { Py_DECREF(d); } }
+---
+> { if (a) Py_DECREF(a); if (b) Py_DECREF(b);
+>   if (c) Py_DECREF(c); if (d) Py_DECREF(d); }
+2545,2580d2559
+< #define P   "   (+)\n"
+< #define M   "   (-)\n"
+< #define EVALS \
+<   "        x     none       no measure / zero (default)\n"             \
+<   "        b     ldratio    binary logarithm of support quotient    "P \
+<   "        c     conf       rule confidence                         "P \
+<   "        d     confdiff   absolute confidence difference to prior "P \
+<   "        l     lift       lift value (confidence divided by prior)"P \
+<   "        a     liftdiff   absolute difference of lift value to 1  "P \
+<   "        q     liftquot   difference of lift quotient to 1        "P \
+<   "        v     cvct       conviction (inverse lift negated head)  "P \
+<   "        e     cvctdiff   absolute difference of conviction to 1  "P \
+<   "        r     cvctquot   difference of conviction quotient to 1  "P \
+<   "        b     imbal      imbalance ratio                         "P \
+<   "        k     kulc       Kulczynski measure                      "P \
+<   "        w     kulcdiff   difference of Kulczynski measure to 0.5 "P \
+<   "        u     cprob      conditional probability ratio           "P \
+<   "        j     import     importance (binary log. of prob. ratio) "P \
+<   "        z     cert       certainty factor (relative conf. change)"P \
+<   "        n     chi2       normalized chi^2 measure                "P \
+<   "        p     chi2pval   p-value f/ (unnormalized) chi^2 measure "M \
+<   "        y     yates      normalized chi^2 with Yates' correction "P \
+<   "        t     yatespval  p-value f/ Yates-corrected chi^2 measure"M \
+<   "        i     info       information difference to prior         "P \
+<   "        g     infopval   p-value f/ G statistic/info. difference "M \
+<   "        f     fetprob    Fisher's exact test (table probability) "M \
+<   "        h     fetchi2    Fisher's exact test (chi^2 measure)     "M \
+<   "        m     fetinfo    Fisher's exact test (mutual information)"M \
+<   "        s     fetsupp    Fisher's exact test (support)           "M \
+<   "        Measures marked with (+) must meet "                        \
+<            "or exceed the threshold,\n"                                \
+<   "        measures marked with (-) must not exceed the threshold\n"   \
+<   "        in order for the item set to be reported.\n"
+< 
+< /*--------------------------------------------------------------------*/
+< 
+2604,2605c2583
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+2611,2618c2589,2592
+<     "        E     value of item set evaluation measure "
+<                   "as a percentage\n"
+<     "        Q     support of the empty set "
+<                   "(total number of transactions)\n"
+<     "        (     combine values in a tuple "
+<                   "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                   "(must be first character)\n"
+---
+>     "        E     value of item set evaluation measure as a percentage\n"
+>     "        Q     support of the empty set (total number of transactions)\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+2623c2597,2622
+<     EVALS
+---
+>     "        x     none       no measure / zero (default)\n"
+>     "        b     ldratio    binary logarithm of support quotient       (+)\n"
+>     "        c     conf       rule confidence                            (+)\n"
+>     "        d     confdiff   absolute confidence difference to prior    (+)\n"
+>     "        l     lift       lift value (confidence divided by prior)   (+)\n"
+>     "        a     liftdiff   absolute difference of lift value to 1     (+)\n"
+>     "        q     liftquot   difference of lift quotient to 1           (+)\n"
+>     "        v     cvct       conviction (inverse lift for negated head) (+)\n"
+>     "        e     cvctdiff   absolute difference of conviction to 1     (+)\n"
+>     "        r     cvctquot   difference of conviction quotient to 1     (+)\n"
+>     "        k     cprob      conditional probability ratio              (+)\n"
+>     "        j     import     importance (binary log. of prob. ratio)    (+)\n"
+>     "        z     cert       certainty factor (relative conf. change)   (+)\n"
+>     "        n     chi2       normalized chi^2 measure                   (+)\n"
+>     "        p     chi2pval   p-value from (unnormalized) chi^2 measure  (-)\n"
+>     "        y     yates      normalized chi^2 with Yates' correction    (+)\n"
+>     "        t     yatespval  p-value from Yates-corrected chi^2 measure (-)\n"
+>     "        i     info       information difference to prior            (+)\n"
+>     "        g     infopval   p-value from G statistic/info. difference  (-)\n"
+>     "        f     fetprob    Fisher's exact test (table probability)    (-)\n"
+>     "        h     fetchi2    Fisher's exact test (chi^2 measure)        (-)\n"
+>     "        m     fetinfo    Fisher's exact test (mutual information)   (-)\n"
+>     "        s     fetsupp    Fisher's exact test (support)              (-)\n"
+>     "        Measures marked with (+) must meet or exceed the threshold,\n"
+>     "        measures marked with (-) must not exceed the threshold\n"
+>     "        in order for the item set to be reported.\n"
+2631,2632c2630
+<     "        Must be a list or tuple of (absolute) "
+<              "minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+2634,2641c2632,2635
+<     "returns a list of patterns (i.e. tuples with one "
+<              "or more elements),\n"
+<     "        each consisting of a tuple with "
+<              "a found frequent item set\n"
+<     "        and the values selected by 'report', "
+<              "which may be combined\n"
+<     "        into a tuple or list if report[0] is "
+<              "'(' or '[', respectively,\n"
+---
+>     "returns a list of patterns (i.e. tuples with one or more elements),\n"
+>     "        each consisting of a tuple with a found frequent item set\n"
+>     "        and the values selected by 'report', which may be combined\n"
+>     "        into a tuple or list if report[0] is '(' or '[', respectively,\n"
+2648,2649c2642
+<     "arules (tracts, supp=10, conf=80, "
+<              "zmin=1, zmax=None, report='aC',\n"
+---
+>     "arules (tracts, supp=10, conf=80, zmin=1, zmax=None, report='aC',\n"
+2666,2667c2659
+<     "zmax    maximum number of items per rule       "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per rule       (default: no limit)\n"
+2669,2670c2661
+<     "        a     absolute item set  support "
+<                    "(number of transactions)\n"
+---
+>     "        a     absolute item set  support (number of transactions)\n"
+2673,2674c2664
+<     "        b     absolute body set  support "
+<                    "(number of transactions)\n"
+---
+>     "        b     absolute body set  support (number of transactions)\n"
+2677,2678c2667
+<     "        h     absolute head item support "
+<                    "(number of transactions)\n"
+---
+>     "        h     absolute head item support (number of transactions)\n"
+2687,2692c2676,2678
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        Q     support of the empty set (total number of transactions)\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+2697c2683,2708
+<     EVALS
+---
+>     "        x     none       no measure / zero (default)\n"
+>     "        b     ldratio    binary logarithm of support quotient       (+)\n"
+>     "        c     conf       rule confidence                            (+)\n"
+>     "        d     confdiff   absolute confidence difference to prior    (+)\n"
+>     "        l     lift       lift value (confidence divided by prior)   (+)\n"
+>     "        a     liftdiff   absolute difference of lift value to 1     (+)\n"
+>     "        q     liftquot   difference of lift quotient to 1           (+)\n"
+>     "        v     cvct       conviction (inverse lift for negated head) (+)\n"
+>     "        e     cvctdiff   absolute difference of conviction to 1     (+)\n"
+>     "        r     cvctquot   difference of conviction quotient to 1     (+)\n"
+>     "        k     cprob      conditional probability ratio              (+)\n"
+>     "        j     import     importance (binary log. of prob. ratio)    (+)\n"
+>     "        z     cert       certainty factor (relative conf. change)   (+)\n"
+>     "        n     chi2       normalized chi^2 measure                   (+)\n"
+>     "        p     chi2pval   p-value from (unnormalized) chi^2 measure  (-)\n"
+>     "        y     yates      normalized chi^2 with Yates' correction    (+)\n"
+>     "        t     yatespval  p-value from Yates-corrected chi^2 measure (-)\n"
+>     "        i     info       information difference to prior            (+)\n"
+>     "        g     infopval   p-value from G statistic/info. difference  (-)\n"
+>     "        f     fetprob    Fisher's exact test (table probability)    (-)\n"
+>     "        h     fetchi2    Fisher's exact test (chi^2 measure)        (-)\n"
+>     "        m     fetinfo    Fisher's exact test (mutual information)   (-)\n"
+>     "        s     fetsupp    Fisher's exact test (support)              (-)\n"
+>     "        Measures marked with (+) must meet or exceed the threshold,\n"
+>     "        measures marked with (-) must not exceed the threshold\n"
+>     "        in order for the item set to be reported.\n"
+2702,2705c2713,2714
+<     "        with the key None referring to "
+<              "the default item appearance.\n"
+<     "        (If None does not occur as a key "
+<              "or no dictionary is given,\n"
+---
+>     "        with the key None referring to the default item appearance.\n"
+>     "        (If None does not occur as a key or no dictionary is given,\n"
+2720,2721c2729
+<     "        the parameter 'report', which may "
+<              "be combined into a tuple\n"
+---
+>     "        the parameter 'report', which may be combined into a tuple\n"
+2725,2728c2733,2734
+<     "apriori (tracts, target='s', supp=10, "
+<               "zmin=1, zmax=None, report='a',\n"
+<     "         eval='x', agg='x', thresh=10, "
+<               "prune=None, algo='b', mode='',\n"
+---
+>     "apriori (tracts, target='s', supp=10, zmin=1, zmax=None, report='a',\n"
+>     "         eval='x', agg='x', thresh=10, prune=None, algo='b', mode='',\n"
+2751,2752c2757
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+2754,2755c2759
+<     "        a     absolute item set support "
+<              "(number of transactions)\n"
+---
+>     "        a     absolute item set support (number of transactions)\n"
+2759,2764c2763,2765
+<     "        E     value of item set evaluation measure "
+<                    "as a percentage\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        E     value of item set evaluation measure as a percentage\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+2769,2770c2770
+<     "        b     absolute body set  support "
+<                    "(number of transactions)\n"
+---
+>     "        b     absolute body set  support (number of transactions)\n"
+2773,2774c2773
+<     "        h     absolute head item support "
+<                    "(number of transactions)\n"
+---
+>     "        h     absolute head item support (number of transactions)\n"
+2781,2782c2780
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+---
+>     "        Q     support of the empty set (total number of transactions)\n"
+2784c2782,2807
+<     EVALS
+---
+>     "        x     none       no measure / zero (default)\n"
+>     "        b     ldratio    binary logarithm of support quotient       (+)\n"
+>     "        c     conf       rule confidence                            (+)\n"
+>     "        d     confdiff   absolute confidence difference to prior    (+)\n"
+>     "        l     lift       lift value (confidence divided by prior)   (+)\n"
+>     "        a     liftdiff   absolute difference of lift value to 1     (+)\n"
+>     "        q     liftquot   difference of lift quotient to 1           (+)\n"
+>     "        v     cvct       conviction (inverse lift for negated head) (+)\n"
+>     "        e     cvctdiff   absolute difference of conviction to 1     (+)\n"
+>     "        r     cvctquot   difference of conviction quotient to 1     (+)\n"
+>     "        k     cprob      conditional probability ratio              (+)\n"
+>     "        j     import     importance (binary log. of prob. ratio)    (+)\n"
+>     "        z     cert       certainty factor (relative conf. change)   (+)\n"
+>     "        n     chi2       normalized chi^2 measure                   (+)\n"
+>     "        p     chi2pval   p-value from (unnormalized) chi^2 measure  (-)\n"
+>     "        y     yates      normalized chi^2 with Yates' correction    (+)\n"
+>     "        t     yatespval  p-value from Yates-corrected chi^2 measure (-)\n"
+>     "        i     info       information difference to prior            (+)\n"
+>     "        g     infopval   p-value from G statistic/info. difference  (-)\n"
+>     "        f     fetprob    Fisher's exact test (table probability)    (-)\n"
+>     "        h     fetchi2    Fisher's exact test (chi^2 measure)        (-)\n"
+>     "        m     fetinfo    Fisher's exact test (mutual information)   (-)\n"
+>     "        s     fetsupp    Fisher's exact test (support)              (-)\n"
+>     "        Measures marked with (+) must meet or exceed the threshold,\n"
+>     "        measures marked with (-) must not exceed the threshold\n"
+>     "        in order for the item set to be reported.\n"
+2791,2792c2814
+<     "prune   min. size for evaluation filtering     "
+<              "(default: no pruning)\n"
+---
+>     "prune   min. size for evaluation filtering     (default: no pruning)\n"
+2794,2797c2816,2817
+<     "        < 0   weak   forward filtering "
+<              "(one subset  must qualify)\n"
+<     "        > 0   strong forward filtering "
+<              "(all subsets must qualify)\n"
+---
+>     "        < 0   weak   forward filtering (one subset  must qualify)\n"
+>     "        > 0   strong forward filtering (all subsets must qualify)\n"
+2807,2808c2827
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+2811,2814c2830,2831
+<     "        with the key None referring "
+<              "to the default item appearance.\n"
+<     "        (If None does not occur as a key "
+<              "or no dictionary is given,\n"
+---
+>     "        with the key None referring to the default item appearance.\n"
+>     "        (If None does not occur as a key or no dictionary is given,\n"
+2829,2834c2846,2848
+<     "            a list of rules (i.e. tuples with two "
+<                  "or more elements),\n"
+<     "            each consisting of a head/consequent item, "
+<                  "a tuple with\n"
+<     "            a body/antecedent item set, "
+<                  "and the values selected by\n"
+---
+>     "            a list of rules (i.e. tuples with two or more elements),\n"
+>     "            each consisting of a head/consequent item, a tuple with\n"
+>     "            a body/antecedent item set, and the values selected by\n"
+2836,2837c2850
+<     "            tuple or a list if report[0] is "
+<                  "'(' or '[', respectively.\n"
+---
+>     "            tuple or a list if report[0] is '(' or '[', respectively.\n"
+2839,2846c2852,2855
+<     "            a list of patterns (i.e. tuples "
+<                  "with one or more elements),\n"
+<     "            each consisting of a tuple with "
+<                  "a found frequent item set\n"
+<     "            and the values selected by "
+<                  "the parameter 'report', which\n"
+<     "            may be combined into a tuple "
+<                  "or list if report[0] is '('\n"
+---
+>     "            a list of patterns (i.e. tuples with one or more elements),\n"
+>     "            each consisting of a tuple with a found frequent item set\n"
+>     "            and the values selected by the parameter 'report', which\n"
+>     "            may be combined into a tuple or list if report[0] is '('\n"
+2849,2856c2858,2861
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence support ranges, "
+<                "as a list\n"
+<     "          of triplets (size, min. support, max. support) "
+<                "or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+2859,2862c2864,2865
+<     "eclat (tracts, target='s', supp=10, "
+<             "zmin=1, zmax=None, report='a',\n"
+<     "       eval='x', agg='x', thresh=10, "
+<             "prune=None, algo='a', mode='',\n"
+---
+>     "eclat (tracts, target='s', supp=10, zmin=1, zmax=None, report='a',\n"
+>     "       eval='x', agg='x', thresh=10, prune=None, algo='a', mode='',\n"
+2885,2886c2888
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+2888,2889c2890
+<     "        a     absolute item set support "
+<              "(number of transactions)\n"
+---
+>     "        a     absolute item set support (number of transactions)\n"
+2893,2898c2894,2896
+<     "        E     value of item set evaluation measure "
+<                    "as a percentage\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        E     value of item set evaluation measure as a percentage\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+2903,2904c2901
+<     "        b     absolute body set  support "
+<                    "(number of transactions)\n"
+---
+>     "        b     absolute body set  support (number of transactions)\n"
+2907,2908c2904
+<     "        h     absolute head item support "
+<                    "(number of transactions)\n"
+---
+>     "        h     absolute head item support (number of transactions)\n"
+2915,2916c2911
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+---
+>     "        Q     support of the empty set (total number of transactions)\n"
+2918c2913,2938
+<     EVALS
+---
+>     "        x     none       no measure / zero (default)\n"
+>     "        b     ldratio    binary logarithm of support quotient       (+)\n"
+>     "        c     conf       rule confidence                            (+)\n"
+>     "        d     confdiff   absolute confidence difference to prior    (+)\n"
+>     "        l     lift       lift value (confidence divided by prior)   (+)\n"
+>     "        a     liftdiff   absolute difference of lift value to 1     (+)\n"
+>     "        q     liftquot   difference of lift quotient to 1           (+)\n"
+>     "        v     cvct       conviction (inverse lift for negated head) (+)\n"
+>     "        e     cvctdiff   absolute difference of conviction to 1     (+)\n"
+>     "        r     cvctquot   difference of conviction quotient to 1     (+)\n"
+>     "        k     cprob      conditional probability ratio              (+)\n"
+>     "        j     import     importance (binary log. of prob. ratio)    (+)\n"
+>     "        z     cert       certainty factor (relative conf. change)   (+)\n"
+>     "        n     chi2       normalized chi^2 measure                   (+)\n"
+>     "        p     chi2pval   p-value from (unnormalized) chi^2 measure  (-)\n"
+>     "        y     yates      normalized chi^2 with Yates' correction    (+)\n"
+>     "        t     yatespval  p-value from Yates-corrected chi^2 measure (-)\n"
+>     "        i     info       information difference to prior            (+)\n"
+>     "        g     infopval   p-value from G statistic/info. difference  (-)\n"
+>     "        f     fetprob    Fisher's exact test (table probability)    (-)\n"
+>     "        h     fetchi2    Fisher's exact test (chi^2 measure)        (-)\n"
+>     "        m     fetinfo    Fisher's exact test (mutual information)   (-)\n"
+>     "        s     fetsupp    Fisher's exact test (support)              (-)\n"
+>     "        Measures marked with (+) must meet or exceed the threshold,\n"
+>     "        measures marked with (-) must not exceed the threshold\n"
+>     "        in order for the item set to be reported.\n"
+2925,2926c2945
+<     "prune   min. size for evaluation filtering     "
+<              "(default: no pruning)\n"
+---
+>     "prune   min. size for evaluation filtering     (default: no pruning)\n"
+2928,2931c2947,2948
+<     "        < 0   weak   forward filtering "
+<                    "(one subset  must qualify)\n"
+<     "        > 0   strong forward filtering "
+<                    "(all subsets must qualify)\n"
+---
+>     "        < 0   weak   forward filtering (one subset  must qualify)\n"
+>     "        > 0   strong forward filtering (all subsets must qualify)\n"
+2933,2938c2950,2952
+<     "        a     auto       automatic choice "
+<                               "based on data properties\n"
+<     "        e     basic      transaction id lists intersection "
+<                               "(basic)\n"
+<     "        i     tids       transaction id lists intersection "
+<                               "(improved)\n"
+---
+>     "        a     auto       automatic choice based on data properties\n"
+>     "        e     basic      transaction id lists intersection (basic)\n"
+>     "        i     tids       transaction id lists intersection (improved)\n"
+2943,2946c2957,2958
+<     "        o     occdlv     occurrence deliver "
+<                               "from transaction lists\n"
+<     "        d     diff       transaction id difference sets "
+<                               "(diffsets)\n"
+---
+>     "        o     occdlv     occurrence deliver from transaction lists\n"
+>     "        d     diff       transaction id difference sets (diffsets)\n"
+2956,2957c2968
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+2960,2963c2971,2972
+<     "        with the key None referring "
+<              "to the default item appearance.\n"
+<     "        (If None does not occur as a key "
+<              "or no dictionary is given,\n"
+---
+>     "        with the key None referring to the default item appearance.\n"
+>     "        (If None does not occur as a key or no dictionary is given,\n"
+2978,2983c2987,2989
+<     "            a list of rules (i.e. tuples "
+<                  "with two or more elements),\n"
+<     "            each consisting of a head/consequent item, "
+<                  "a tuple with\n"
+<     "            a body/antecedent item set, "
+<                  "and the values selected by\n"
+---
+>     "            a list of rules (i.e. tuples with two or more elements),\n"
+>     "            each consisting of a head/consequent item, a tuple with\n"
+>     "            a body/antecedent item set, and the values selected by\n"
+2985,2986c2991
+<     "            tuple or a list if report[0] is "
+<                  "'(' or '[', respectively.\n"
+---
+>     "            tuple or a list if report[0] is '(' or '[', respectively.\n"
+2988,2995c2993,2996
+<     "            a list of patterns (i.e. tuples "
+<                  "with one or more elements),\n"
+<     "            each consisting of a tuple "
+<                  "with a found frequent item set\n"
+<     "            and the values selected "
+<                  "by the parameter 'report', which\n"
+<     "            may be combined into a tuple "
+<                  "or list if report[0] is '('\n"
+---
+>     "            a list of patterns (i.e. tuples with one or more elements),\n"
+>     "            each consisting of a tuple with a found frequent item set\n"
+>     "            and the values selected by the parameter 'report', which\n"
+>     "            may be combined into a tuple or list if report[0] is '('\n"
+2998,3005c2999,3002
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence "
+<                "support ranges, as a list\n"
+<     "          of triplets (size, min. support, max. support) "
+<                "or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+3008,3011c3005,3006
+<     "fpgrowth (tracts, target='s', supp=10, "
+<                "zmin=1, zmax=None, report='a',\n"
+<     "          eval='x', agg='x', thresh=10, "
+<                "prune=Nobe, algo='s', mode='',\n"
+---
+>     "fpgrowth (tracts, target='s', supp=10, zmin=1, zmax=None, report='a',\n"
+>     "          eval='x', agg='x', thresh=10, prune=Nobe, algo='s', mode='',\n"
+3034,3035c3029
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3037,3038c3031
+<     "        a     absolute item set support "
+<                    "(number of transactions)\n"
+---
+>     "        a     absolute item set support (number of transactions)\n"
+3042,3047c3035,3037
+<     "        E     value of item set evaluation measure "
+<                    "as a percentage\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        E     value of item set evaluation measure as a percentage\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+3052,3053c3042
+<     "        b     absolute body set  support "
+<                    "(number of transactions)\n"
+---
+>     "        b     absolute body set  support (number of transactions)\n"
+3056,3057c3045
+<     "        h     absolute head item support "
+<                    "(number of transactions)\n"
+---
+>     "        h     absolute head item support (number of transactions)\n"
+3064,3065c3052
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+---
+>     "        Q     support of the empty set (total number of transactions)\n"
+3067c3054,3079
+<     EVALS
+---
+>     "        x     none       no measure / zero (default)\n"
+>     "        b     ldratio    binary logarithm of support quotient       (+)\n"
+>     "        c     conf       rule confidence                            (+)\n"
+>     "        d     confdiff   absolute confidence difference to prior    (+)\n"
+>     "        l     lift       lift value (confidence divided by prior)   (+)\n"
+>     "        a     liftdiff   absolute difference of lift value to 1     (+)\n"
+>     "        q     liftquot   difference of lift quotient to 1           (+)\n"
+>     "        v     cvct       conviction (inverse lift for negated head) (+)\n"
+>     "        e     cvctdiff   absolute difference of conviction to 1     (+)\n"
+>     "        r     cvctquot   difference of conviction quotient to 1     (+)\n"
+>     "        k     cprob      conditional probability ratio              (+)\n"
+>     "        j     import     importance (binary log. of prob. ratio)    (+)\n"
+>     "        z     cert       certainty factor (relative conf. change)   (+)\n"
+>     "        n     chi2       normalized chi^2 measure                   (+)\n"
+>     "        p     chi2pval   p-value from (unnormalized) chi^2 measure  (-)\n"
+>     "        y     yates      normalized chi^2 with Yates' correction    (+)\n"
+>     "        t     yatespval  p-value from Yates-corrected chi^2 measure (-)\n"
+>     "        i     info       information difference to prior            (+)\n"
+>     "        g     infopval   p-value from G statistic/info. difference  (-)\n"
+>     "        f     fetprob    Fisher's exact test (table probability)    (-)\n"
+>     "        h     fetchi2    Fisher's exact test (chi^2 measure)        (-)\n"
+>     "        m     fetinfo    Fisher's exact test (mutual information)   (-)\n"
+>     "        s     fetsupp    Fisher's exact test (support)              (-)\n"
+>     "        Measures marked with (+) must meet or exceed the threshold,\n"
+>     "        measures marked with (-) must not exceed the threshold\n"
+>     "        in order for the item set to be reported.\n"
+3074,3075c3086
+<     "prune   min. size for evaluation filtering     "
+<              "(default: no pruning)\n"
+---
+>     "prune   min. size for evaluation filtering     (default: no pruning)\n"
+3077,3080c3088,3089
+<     "        < 0   weak   forward filtering "
+<                    "(one subset  must qualify)\n"
+<     "        > 0   strong forward filtering "
+<                    "(all subsets must qualify)\n"
+---
+>     "        < 0   weak   forward filtering (one subset  must qualify)\n"
+>     "        > 0   strong forward filtering (all subsets must qualify)\n"
+3082,3091c3091,3095
+<     "        s     simple     simple  tree nodes "
+<                    "(only link and parent)\n"
+<     "        c     complex    complex tree nodes "
+<                    "(children and siblings)\n"
+<     "        d     single     top-down processing "
+<                    "on a single prefix tree\n"
+<     "        t     topdown    top-down processing "
+<                    "of the prefix trees\n"
+<     "        Variant d does not support "
+<              "closed/maximal item set mining.\n"
+---
+>     "        s     simple     simple  tree nodes (only link and parent)\n"
+>     "        c     complex    complex tree nodes (children and siblings)\n"
+>     "        d     single     top-down processing on a single prefix tree\n"
+>     "        t     topdown    top-down processing of the prefix trees\n"
+>     "        Variant d does not support closed/maximal item set mining.\n"
+3100,3101c3104
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+3104,3107c3107,3108
+<     "        with the key None referring "
+<              "to the default item appearance.\n"
+<     "        (If None does not occur as a key "
+<              "or no dictionary is given,\n"
+---
+>     "        with the key None referring to the default item appearance.\n"
+>     "        (If None does not occur as a key or no dictionary is given,\n"
+3109,3110c3110
+<     "        This parameter is only used "
+<              "if the target type is rules.\n"
+---
+>     "        This parameter is only used if the target type is rules.\n"
+3123,3132c3123,3127
+<     "            a list of rules (i.e. tuples "
+<                  "with two or more elements),\n"
+<     "            each consisting of a head/consequent item, "
+<                  "a tuple with\n"
+<     "            a body/antecedent item set, "
+<                  "and the values selected by\n"
+<     "            the parameter 'report', "
+<                  "which may be combined into a\n"
+<     "            tuple or a list if report[0] is "
+<                  "'(' or '[', respectively.\n"
+---
+>     "            a list of rules (i.e. tuples with two or more elements),\n"
+>     "            each consisting of a head/consequent item, a tuple with\n"
+>     "            a body/antecedent item set, and the values selected by\n"
+>     "            the parameter 'report', which may be combined into a\n"
+>     "            tuple or a list if report[0] is '(' or '[', respectively.\n"
+3134,3141c3129,3132
+<     "            a list of patterns (i.e. tuples "
+<                  "with one or more elements),\n"
+<     "            each consisting of a tuple "
+<                  "with a found frequent item set\n"
+<     "            and the values selected "
+<                  "by the parameter 'report', which\n"
+<     "            may be combined into a tuple "
+<                  "or list if report[0] is '('\n"
+---
+>     "            a list of patterns (i.e. tuples with one or more elements),\n"
+>     "            each consisting of a tuple with a found frequent item set\n"
+>     "            and the values selected by the parameter 'report', which\n"
+>     "            may be combined into a tuple or list if report[0] is '('\n"
+3144,3151c3135,3138
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence "
+<                "support ranges, as a list\n"
+<     "          of triplets (size, min. support, "
+<                "max. support) or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+3154,3155c3141
+<     "sam (tracts, target='s', supp=10, "
+<           "zmin=1, zmax=None, report='a',\n"
+---
+>     "sam (tracts, target='s', supp=10, zmin=1, zmax=None, report='a',\n"
+3175,3176c3161
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3178,3179c3163
+<     "        a     absolute item set support "
+<              "(number of transactions)\n"
+---
+>     "        a     absolute item set support (number of transactions)\n"
+3183,3190c3167,3170
+<     "        E     value of item set evaluation measure "
+<                    "as a percentage\n"
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        E     value of item set evaluation measure as a percentage\n"
+>     "        Q     support of the empty set (total number of transactions)\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+3207,3208c3187
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+3211,3218c3190,3193
+<     "          a list of patterns "
+<                "(i.e. tuples with one or more elements),\n"
+<     "          each consisting of a tuple "
+<                "with a found frequent item set\n"
+<     "          and the values selected "
+<                "by the parameter 'report', which\n"
+<     "          may be combined into a tuple "
+<                "or list if report[0] is '('\n"
+---
+>     "          a list of patterns (i.e. tuples with one or more elements),\n"
+>     "          each consisting of a tuple with a found frequent item set\n"
+>     "          and the values selected by the parameter 'report', which\n"
+>     "          may be combined into a tuple or list if report[0] is '('\n"
+3221,3228c3196,3199
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence "
+<                "support ranges, as a list\n"
+<     "          of triplets (size, min. support, "
+<                "max. support) or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+3231,3232c3202
+<     "relim (tracts, target='s', supp=10, "
+<             "zmin=1, zmax=None, report='a',\n"
+---
+>     "relim (tracts, target='s', supp=10, zmin=1, zmax=None, report='a',\n"
+3252,3253c3222
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3259,3266c3228,3231
+<     "        E     value of item set evaluation measure "
+<                    "as a percentage\n"
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        E     value of item set evaluation measure as a percentage\n"
+>     "        Q     support of the empty set (total number of transactions)\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+3276,3277c3241
+<     "        (this parameter is essentially a placeholder "
+<              "for extensions)\n"
+---
+>     "        (this parameter is essentially a placeholder for extensions)\n"
+3282,3283c3246
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+3286,3293c3249,3252
+<     "          a list of patterns (i.e. tuples "
+<                "with one or more elements),\n"
+<     "          each consisting of a tuple "
+<                "with a found frequent item set\n"
+<     "          and the values selected "
+<                "by the parameter 'report', which\n"
+<     "          may be combined into a tuple "
+<                "or list if report[0] is '('\n"
+---
+>     "          a list of patterns (i.e. tuples with one or more elements),\n"
+>     "          each consisting of a tuple with a found frequent item set\n"
+>     "          and the values selected by the parameter 'report', which\n"
+>     "          may be combined into a tuple or list if report[0] is '('\n"
+3296,3303c3255,3258
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence "
+<                "support ranges, as a list\n"
+<     "          of triplets (size, min. support, "
+<                "max. support) or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+3306,3307c3261
+<     "carpenter (tracts, target='s', supp=10, "
+<                 "zmin=1, zmax=None, report='a',\n"
+---
+>     "carpenter (tracts, target='s', supp=10, zmin=1, zmax=None, report='a',\n"
+3326,3327c3280
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3329,3330c3282
+<     "        a     absolute item set support "
+<                    "(number of transactions)\n"
+---
+>     "        a     absolute item set support (number of transactions)\n"
+3334,3341c3286,3289
+<     "        E     value of item set evaluation measure "
+<                    "as a percentage\n"
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        E     value of item set evaluation measure as a percentage\n"
+>     "        Q     support of the empty set (total number of transactions)\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+3359,3360c3307
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+3363,3370c3310,3313
+<     "          a list of patterns (i.e. tuples "
+<                "with one or more elements),\n"
+<     "          each consisting of a tuple "
+<                "with a found frequent item set\n"
+<     "          and the values selected "
+<                "by the parameter 'report', which\n"
+<     "          may be combined into a tuple "
+<                "or list if report[0] is '('\n"
+---
+>     "          a list of patterns (i.e. tuples with one or more elements),\n"
+>     "          each consisting of a tuple with a found frequent item set\n"
+>     "          and the values selected by the parameter 'report', which\n"
+>     "          may be combined into a tuple or list if report[0] is '('\n"
+3373,3380c3316,3319
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence "
+<                "support ranges, as a list\n"
+<     "          of triplets (size, min. support, "
+<                "max. support) or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+3383,3384c3322
+<     "ista (tracts, target='s', supp=10, "
+<            "zmin=1, zmax=None, report='a',\n"
+---
+>     "ista (tracts, target='s', supp=10, zmin=1, zmax=None, report='a',\n"
+3403,3404c3341
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3406,3407c3343
+<     "        a     absolute item set support "
+<                    "(number of transactions)\n"
+---
+>     "        a     absolute item set support (number of transactions)\n"
+3411,3418c3347,3350
+<     "        E     value of item set evaluation measure "
+<                    "as a percentage\n"
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        E     value of item set evaluation measure as a percentage\n"
+>     "        Q     support of the empty set (total number of transactions)\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+3435,3436c3367
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+3439,3446c3370,3373
+<     "          a list of patterns (i.e. tuples "
+<                "with one or more elements),\n"
+<     "          each consisting of a tuple "
+<                "with a found frequent item set\n"
+<     "          and the values selected "
+<                "by the parameter 'report', which\n"
+<     "          may be combined into a tuple "
+<                "or list if report[0] is '('\n"
+---
+>     "          a list of patterns (i.e. tuples with one or more elements),\n"
+>     "          each consisting of a tuple with a found frequent item set\n"
+>     "          and the values selected by the parameter 'report', which\n"
+>     "          may be combined into a tuple or list if report[0] is '('\n"
+3449,3456c3376,3379
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence "
+<                "support ranges, as a list\n"
+<     "          of triplets (size, min. support, "
+<                "max. support) or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+3461,3462c3384
+<     "Find frequent item sets "
+<     "with an accretion-style apriori algorithm\n"
+---
+>     "Find frequent item sets with an accretion-style apriori algorithm\n"
+3477,3478c3399
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3480,3481c3401
+<     "        a     absolute item set support "
+<                    "(number of transactions)\n"
+---
+>     "        a     absolute item set support (number of transactions)\n"
+3486,3491c3406,3408
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        Q     support of the empty set (total number of transactions)\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+3507,3510c3424,3425
+<     "        < 0   weak   forward filtering "
+<                    "(one subset  must qualify)\n"
+<     "        > 0   strong forward filtering "
+<                    "(all subsets must qualify)\n"
+---
+>     "        < 0   weak   forward filtering (one subset  must qualify)\n"
+>     "        > 0   strong forward filtering (all subsets must qualify)\n"
+3514,3515c3429
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+3518,3525c3432,3435
+<     "          a list of patterns (i.e. tuples "
+<                "with one or more elements),\n"
+<     "          each consisting of a tuple "
+<                "with a found frequent item set\n"
+<     "          and the values selected "
+<                "by the parameter 'report', which\n"
+<     "          may be combined into a tuple "
+<                "or list if report[0] is '('\n"
+---
+>     "          a list of patterns (i.e. tuples with one or more elements),\n"
+>     "          each consisting of a tuple with a found frequent item set\n"
+>     "          and the values selected by the parameter 'report', which\n"
+>     "          may be combined into a tuple or list if report[0] is '('\n"
+3528,3535c3438,3441
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence "
+<                "support ranges, as a list\n"
+<     "          of triplets (size, min. support, "
+<                "max. support) or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+3554,3555c3460
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3557,3558c3462
+<     "        a     absolute item set support "
+<                    "(number of transactions)\n"
+---
+>     "        a     absolute item set support (number of transactions)\n"
+3563,3568c3467,3469
+<     "        Q     support of the empty set "
+<                    "(total number of transactions)\n"
+<     "        (     combine values in a tuple "
+<                    "(must be first character)\n"
+<     "        [     combine values in a list  "
+<                    "(must be first character)\n"
+---
+>     "        Q     support of the empty set (total number of transactions)\n"
+>     "        (     combine values in a tuple (must be first character)\n"
+>     "        [     combine values in a list  (must be first character)\n"
+3586,3587c3487
+<     "        Must be a list or tuple of "
+<              "(absolute) minimum support values\n"
+---
+>     "        Must be a list or tuple of (absolute) minimum support values\n"
+3590,3597c3490,3493
+<     "          a list of patterns (i.e. tuples "
+<                "with one or more elements),\n"
+<     "          each consisting of a tuple "
+<                "with a found frequent item set\n"
+<     "          and the values selected "
+<                "by the parameter 'report', which\n"
+<     "          may be combined into a tuple "
+<                "or list if report[0] is '('\n"
+---
+>     "          a list of patterns (i.e. tuples with one or more elements),\n"
+>     "          each consisting of a tuple with a found frequent item set\n"
+>     "          and the values selected by the parameter 'report', which\n"
+>     "          may be combined into a tuple or list if report[0] is '('\n"
+3600,3607c3496,3499
+<     "          a pattern spectrum as a dictionary "
+<                "mapping pattern sizes\n"
+<     "          to the corresponding occurrence "
+<                "support ranges, as a list\n"
+<     "          of triplets (size, min. support, "
+<                "max. support) or as three\n"
+<     "          columns for sizes and minimum "
+<                "and maximum support values\n"
+---
+>     "          a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "          to the corresponding occurrence support ranges, as a list\n"
+>     "          of triplets (size, min. support, max. support) or as three\n"
+>     "          columns for sizes and minimum and maximum support values\n"
+3629,3630c3521
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3632,3633c3523
+<     "        #    pattern spectrum as a dictionary "
+<                   "(size,supp) -> freq\n"
+---
+>     "        #    pattern spectrum as a dictionary (size,supp) -> freq\n"
+3647,3654c3537,3540
+<     "returns a pattern spectrum as a dictionary "
+<              "mapping pattern sizes\n"
+<     "        to the corresponding occurrence "
+<              "support ranges, as a list\n"
+<     "        of triplets (size, min. support, "
+<              "max. support) or as three\n"
+<     "        columns for sizes and minimum "
+<              "and maximum support values\n"
+---
+>     "returns a pattern spectrum as a dictionary mapping pattern sizes\n"
+>     "        to the corresponding occurrence support ranges, as a list\n"
+>     "        of triplets (size, min. support, max. support) or as three\n"
+>     "        columns for sizes and minimum and maximum support values\n"
+3680,3681c3566
+<     "zmax    maximum number of items per item set   "
+<              "(default: no limit)\n"
+---
+>     "zmax    maximum number of items per item set   (default: no limit)\n"
+3693,3696c3578,3579
+<     "        to the corresponding occurrence support ranges, "
+<              "as a list\n"
+<     "        of triplets (size, min. support, max. support) "
+<              "or as three\n"
+---
+>     "        to the corresponding occurrence support ranges, as a list\n"
+>     "        of triplets (size, min. support, max. support) or as three\n"
+3722,3725c3605,3606
+<     "        Otherwise each iterable element "
+<              "must be a pair, consisting\n"
+<     "        of a item set as an iterable of item "
+<              "and a support (number).\n"
+---
+>     "        Otherwise each iterable element must be a pair, consisting\n"
+>     "        of a item set as an iterable of item and a support (number).\n"
+3728,3731c3609,3610
+<     "        a pattern comparison function "
+<              "patcmp(zA, cA, zB, cB, border)\n"
+<     "border  detection border as a list "
+<              "of minimum support values per size\n"
+---
+>     "        a pattern comparison function patcmp(zA, cA, zB, cB, border)\n"
+>     "border  detection border as a list of minimum support values per size\n"
+3733,3738c3612,3614
+<     "returns a reduced set of patterns, either "
+<              "as a dictionary that maps\n"
+<     "        item sets to support values "
+<              "(if the input was a dictionary)\n"
+<     "        or as a list of patterns in the form "
+<              "in which they were\n"
+---
+>     "returns a reduced set of patterns, either as a dictionary that maps\n"
+>     "        item sets to support values (if the input was a dictionary)\n"
+>     "        or as a list of patterns in the form in which they were\n"
+3748,3750c3624,3625
+<   "Frequent Item Set Mining and " \
+<   "Association Rule Induction for Python\n" \
+<   "version 6.30 (2022.11.22)     (c) 2011-2022   Christian Borgelt"
+---
+>   "Frequent Item Set Mining and Association Rule Induction for Python\n" \
+>   "version 6.28 (2017.03.24)     (c) 2011-2017   Christian Borgelt"
+diff -r source-pyfim.tar.gz-extracted/pyfim/src/pyfim.mak lookaside-pyfim.tar.gz-extracted/pyfim/src/pyfim.mak
+13d12
+< #           2022.11.25 compilation for Python 2 removed
+15,16c14,18
+< !IFNDEF PYDIR
+< PYDIR    = "C:\Program Files\Python310"
+---
+> !IFNDEF PY2DIR
+> PY2DIR   = "C:\Program Files\Python27"
+> !ENDIF
+> !IFNDEF PY3DIR
+> PY3DIR   = "C:\Program Files\Python35"
+35c37,38
+< PYINC    = /I $(PYDIR)\include
+---
+> PY2INC   = /I $(PY2DIR)\include
+> PY3INC   = /I $(PY3DIR)\include
+43c46,47
+< LIBS     = /LIBPATH:$(PYDIR)\libs
+---
+> LIBS2    = /LIBPATH:$(PY2DIR)\libs
+> LIBS3    = /LIBPATH:$(PY3DIR)\libs
+63c67,69
+<            fpgpsp.obj pyfim.obj $(ADDOBJS)
+---
+>            fpgpsp.obj
+> OBJS2    = $(OBJS) py2fim.obj $(ADDOBJS)
+> OBJS3    = $(OBJS) py3fim.obj $(ADDOBJS)
+70,71c76,84
+< fim.pyd:     $(OBJS) pyfim.mak
+< 	$(LD) $(LDFLAGS) $(LIBS) $(OBJS) /out:$@ /IMPLIB:fim.lib
+---
+> fim.pyd:      $(OBJS2) pyfim.mak
+> 	$(LD) $(LDFLAGS) $(LIBS2) $(OBJS2) /out:$@ /IMPLIB:fim.lib
+> 
+> py3:          fim3.pyd
+> 
+> fim3.pyd:     $(OBJS3) pyfim.mak
+> 	$(LD) $(LDFLAGS) $(LIBS3) $(OBJS3) /out:$@ /IMPLIB:fim.lib
+> 	-@del fim.pyd
+> 	-@ren fim3.pyd fim.pyd
+307,309c320,326
+< pyfim.obj:    $(HDRS)
+< pyfim.obj:    pyfim.c pyfim.mak
+< 	$(CC) $(CFLAGS) $(INCS) $(PYINC) pyfim.c /Fo$@
+---
+> py2fim.obj:   $(HDRS)
+> py2fim.obj:   pyfim.c pyfim.mak
+> 	$(CC) $(CFLAGS) $(INCS) $(PY2INC) pyfim.c /Fo$@
+> 
+> py3fim.obj:   $(HDRS)
+> py3fim.obj:   pyfim.c pyfim.mak
+> 	$(CC) $(CFLAGS) $(INCS) $(PY3INC) pyfim.c /Fo$@
+diff -r source-pyfim.tar.gz-extracted/relim/src/relim.c lookaside-pyfim.tar.gz-extracted/relim/src/relim.c
+104c104
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+1313,1314c1313
+<   XMSG(stderr, "[%"ISCNT_FMT" set(s)]",
+<        ISCOUT(isr_repcnt(relim->report)));
+---
+>   XMSG(stderr, "[%"SIZE_FMT" set(s)]", isr_repcnt(relim->report));
+diff -r source-pyfim.tar.gz-extracted/sam/src/sam.c lookaside-pyfim.tar.gz-extracted/sam/src/sam.c
+92c92
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+1118c1118
+<             wgt = sam->tnorm(x->wgt, pen); /* comp. penalized weight */
+---
+>             wgt = sam->tnorm(x->wgt, pen); /* compute penalized weight */
+1395,1396c1395
+<   XMSG(stderr, "[%"ISCNT_FMT" set(s)]",
+<        ISCOUT(isr_repcnt(sam->report)));
+---
+>   XMSG(stderr, "[%"SIZE_FMT" set(s)]", isr_repcnt(sam->report));
+diff -r source-pyfim.tar.gz-extracted/setup_fim.py lookaside-pyfim.tar.gz-extracted/setup_fim.py
+1c1
+< #!/usr/bin/python3
+---
+> #!/usr/bin/python
+3,7c3,4
+< from setuptools import setup, Extension
+< from os         import remove
+< 
+< version='6.30'
+< description='Frequent Item Set Mining and Association Rule Induction for Python (2022.11.22)'
+---
+> from distutils.core import setup, Extension
+> from os             import remove
+114,116c111,113
+<       version=version,
+<       description=description,
+<       long_description=description,
+---
+>       version='6.28 (2017.03.24)',
+>       description='Frequent Item Set Mining and Association Rule Induction for Python',
+>       long_description='Frequent Item Set Mining and Association Rule Induction for Python',
+diff -r source-pyfim.tar.gz-extracted/setup.py lookaside-pyfim.tar.gz-extracted/setup.py
+1c1
+< #!/usr/bin/python3
+---
+> #!/usr/bin/python
+3,7c3,4
+< from setuptools import setup, Extension
+< from os         import remove
+< 
+< version='6.30'
+< description='Frequent Item Set Mining and Association Rule Induction for Python (2022.11.22)'
+---
+> from distutils.core import setup, Extension
+> from os             import remove
+114,116c111,113
+<       version=version,
+<       description=description,
+<       long_description=description,
+---
+>       version='6.28 (2017.03.24)',
+>       description='Frequent Item Set Mining and Association Rule Induction for Python',
+>       long_description='Frequent Item Set Mining and Association Rule Induction for Python',
+diff -r source-pyfim.tar.gz-extracted/tract/src/clomax.h lookaside-pyfim.tar.gz-extracted/tract/src/clomax.h
+26c26
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+76c76
+< #  endif                        /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+diff -r source-pyfim.tar.gz-extracted/tract/src/makefile lookaside-pyfim.tar.gz-extracted/tract/src/makefile
+27,29d26
+< #CC      = gcc -std=c11
+< #CFBASE  = -Wall -Wextra -Wno-unused-parameter -Wconversion \
+< #          -Wimplicit-fallthrough=0 -c $(ADDFLAGS)
+diff -r source-pyfim.tar.gz-extracted/tract/src/patspec.c lookaside-pyfim.tar.gz-extracted/tract/src/patspec.c
+46c46
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+851c851
+<   for (size = psp->minsize; size <= psp->max; size++) {
+---
+>   for (size = psp->minsize; size <= psp->maxsize; size++) {
+diff -r source-pyfim.tar.gz-extracted/tract/src/patspec.h lookaside-pyfim.tar.gz-extracted/tract/src/patspec.h
+81c81
+< #  endif                        /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+diff -r source-pyfim.tar.gz-extracted/tract/src/report.c lookaside-pyfim.tar.gz-extracted/tract/src/report.c
+101c101
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+695c695
+<   rep->stats   = (ISCNT*) calloc((size_t)(k+1),     sizeof(ISCNT));
+---
+>   rep->stats   = (size_t*)calloc((size_t)(k+1),     sizeof(size_t));
+998c998
+<     rep->zsets.zalloc = Z_NULL; /* clear allocation, free functions */
+---
+>     rep->zsets.zalloc = Z_NULL; /* clear allocation and free functions */
+1059c1059
+<     rep->ztids.zalloc = Z_NULL; /* clear allocation, free functions */
+---
+>     rep->ztids.zalloc = Z_NULL; /* clear allocation and free functions */
+1458c1458
+<   ISCNT  m, c;                  /* buffers for item set counting */
+---
+>   size_t m, c;                  /* buffers for item set counting */
+1516,1517c1516,1517
+<       c = (c *(ISCNT)(n-k+1))   /* compute n choose k */
+<         / (ISCNT)k;             /* for 1 <= k <= n */
+---
+>       c = (c *(size_t)(n-k+1))  /* compute n choose k */
+>         / (size_t)k;            /* for 1 <= k <= n */
+1521c1521
+<         if (rep->psp && (psp_incfrq(rep->psp, z, s, (size_t)c) < 0))
+---
+>         if (rep->psp && (psp_incfrq(rep->psp, z, s, c) < 0))
+1885c1885
+<   fprintf(out, "all: %"ISCNT_FMT"\n", ISCOUT(rep->repcnt));
+---
+>   fprintf(out, "all: %"SIZE_FMT"\n", rep->repcnt);
+1889,1890c1889
+<     fprintf(out, "%3"ITEM_FMT": %"ISCNT_FMT"\n",
+<             i, ISCOUT(rep->stats[i]));
+---
+>     fprintf(out, "%3"ITEM_FMT": %"SIZE_FMT"\n", i, rep->stats[i]);
+2205,2226d2203
+< 
+< /*--------------------------------------------------------------------*/
+< #ifdef __UINT128TOSTR__
+< 
+< const char* uint128tostr (unsigned __int128 x)
+< {                               /* --- format 128 bit unsigned integer*/
+<   static char buf[64];          /* buffer, result of formatting */
+<   char *s = buf +sizeof(buf);   /* to traverse the buffer */
+<   char  c;                      /* buffer for overwritten character */
+<   __int128 r;                   /* remainder of division */
+< 
+<   if (x == 0) return "0";       /* treat zeor specially */
+<   for (*--s = 0; x != 0; ) {    /* while not all numbers generated */
+<     r = x % 1000000000;         /* compute remainder and */
+<     x /=    1000000000;         /* quotient for next 9 digits */
+<     c = s[0]; sprintf(s -= 9, "%09d", (int)r); s[9] = c;
+<   }                             /* format the next 9 digits */
+<   while (*s == '0') s++;        /* remove leading zeros */
+<   return s;                     /* return the formatted number */
+< }  /* uint128tostr() */
+< 
+< #endif  /* __UINT128TOSTR__ */
+diff -r source-pyfim.tar.gz-extracted/tract/src/report.h lookaside-pyfim.tar.gz-extracted/tract/src/report.h
+122c122
+< #  endif                        /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+157,180d156
+< #ifndef ISCNT
+< #define ISCNT size_t            /* item set counters */
+< #endif
+< 
+< #define size_t      1           /* to check definition of ISCNT */
+< #define __int128    2           /* for certain types */
+< 
+< #if   ISCNT==size_t
+< #define ISCNT_FMT   SIZE_FMT
+< #define ISCOUT(x)   (x)
+< #elif ISCNT==__int128
+< #undef  __int128
+< #undef  ISCNT
+< #define ISCNT       unsigned __int128
+< #define ISCNT_FMT   "s"
+< #define ISCOUT(x)   uint128tostr(x)
+< #define __UINT128TOSTR__
+< extern const char* uint128tostr(unsigned __int128 x);
+< #else
+< #error "ISCNT must be either 'size_t' or '__int128'"
+< #endif
+< 
+< #undef size_t                   /* remove preprocessor definitions */
+< #undef __int128                 /* needed for the type checking */
+263,264c239,240
+<   ISCNT      repcnt;            /* number of reported item sets */
+<   ISCNT      *stats;            /* reported item sets per set size */
+---
+>   size_t     repcnt;            /* number of reported item sets */
+>   size_t     *stats;            /* reported item sets per set size */
+422,423c398,399
+< extern ISCNT     isr_repcnt   (ISREPORT *rep);
+< extern const ISCNT* isr_stats (ISREPORT *rep);
+---
+> extern size_t    isr_repcnt   (ISREPORT *rep);
+> extern const size_t* isr_stats(ISREPORT *rep);
+501c477
+< #define isr_stats(r)      ((const ISCNT*)(r)->stats)
+---
+> #define isr_stats(r)      ((const size_t*)(r)->stats)
+diff -r source-pyfim.tar.gz-extracted/tract/src/tract.c lookaside-pyfim.tar.gz-extracted/tract/src/tract.c
+93d92
+<             2022.01.09 appearance indicator 'x' added
+116c115
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+133,134c132,133
+< #define VERSION     "version 2.4 (2022.01.09)         " \
+<                     "(c) 2011-2022   Christian Borgelt"
+---
+> #define VERSION     "version 2.4 (2016.03.01)         " \
+>                     "(c) 2011-2016   Christian Borgelt"
+190c189
+<   "3:bh", "3:b&h",  "3:h&b",   "3:both", "3:x",
+---
+>   "3:bh", "3:b&h",  "3:h&b",   "3:both",
+385,386c384
+<   if ((mode & IB_OBJNAMES)      /* if general objects as names */
+<   ||  (mode & IB_INTNAMES)) {   /* or integer values as names */
+---
+>   if (mode & IB_OBJNAMES) {     /* if general objects as names, */
+440,441c438,439
+<   size = (base->mode & (IB_OBJNAMES|IB_INTNAMES))
+<        ? sizeof(const void*) : strlen((const char*)name)+1;
+---
+>   size = (base->mode & IB_OBJNAMES) ? sizeof(const void*)
+>        : strlen((const char*)name)+1;
+457d454
+<   const char *name;             /* item name (may be object) */
+460,465c457,459
+<   name = ib_name(base, item);   /* get the (raw) item name */
+<   if (!(base->mode & (IB_OBJNAMES|IB_INTNAMES)))
+<     return name;                /* if possible, return name directly */
+<   if (base->mode & IB_INTNAMES)
+<     snprintf(buf, sizeof(buf), "%d", *(int*)name);
+<   snprintf(buf, sizeof(buf), "%p", (void*)name);
+---
+>   if (!(base->mode & IB_OBJNAMES))
+>     return ib_name(base, item); /* if possible, return name directly */
+>   snprintf(buf, sizeof(buf), "%p", ib_name(base, item));
+489,490c483,484
+<     size = (base->mode & (IB_OBJNAMES|IB_INTNAMES))
+<          ? sizeof(const void*) : strlen((const char*)name)+1;
+---
+>     size = (base->mode & IB_OBJNAMES) ? sizeof(const void*)
+>          : strlen((const char*)name)+1;
+diff -r source-pyfim.tar.gz-extracted/tract/src/tract.h lookaside-pyfim.tar.gz-extracted/tract/src/tract.h
+198c198
+< #endif                          /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+248c248
+< #  endif                        /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+339c339
+< #  endif                        /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+414c414
+< #  endif                        /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+428d427
+< #define IB_INTNAMES 0x80        /* item names are integers */
+diff -r source-pyfim.tar.gz-extracted/util/src/arrays.c lookaside-pyfim.tar.gz-extracted/util/src/arrays.c
+35d34
+<             2021.04.03 weakness in qsort w.r.t. equal elements fixed
+47c46
+< #define TH_INSERT   2           /* threshold for insertion sort */
+---
+> #define TH_INSERT   16          /* threshold for insertion sort */
+174c173
+<   type   *l, *r, *e;            /* pointers to exchange positions */   \
+---
+>   type   *l, *r;                /* pointers to exchange positions */   \
+179c178
+<     l = a; r = e = a +n -1;     /* start at left and right boundary */ \
+---
+>     l = a; r = a +n -1;         /* start at left and right boundary */ \
+187,192c186,187
+<       if (l >= r) {             /* if at most one element left */      \
+<         if (l > r) break;       /* if no element, abort the loop */    \
+<         while ((l < e) && (*++l == p));                                \
+<         while ((r > a) && (*--r == p));                                \
+<         break;                  /* skip all array elements */          \
+<       }                         /* that are equal to the pivot */      \
+---
+>       if (l >= r) {             /* if at most one element left, */     \
+>         if (l <= r) { l++; r--; } break; }       /* abort the loop */  \
+518c513
+<   void   **l, **r, **e;         /* pointers to exchange positions */
+---
+>   void   **l, **r;              /* pointers to exchange positions */
+523c518
+<     l = a; r = e = a +n -1;     /* start at left and right boundary */
+---
+>     l = a; r = a +n -1;         /* start at left and right boundary */
+534,539c529,530
+<       if (l >= r) {             /* if at most one element left */
+<         if (l > r) break;       /* if no element, abort the loop */
+<         while ((l < e) && (cmp(*++l, p, data) == 0));
+<         while ((r > a) && (cmp(*--r, p, data) == 0));
+<         break;                  /* skip all array elements */
+<       }                         /* that are equal to the pivot */
+---
+>       if (l >= r) {             /* if at most one element left, */
+>         if (l <= r) { l++; r--; } break; }    /* abort the loop */
+545c536
+<       if (m >= TH_INSERT) {     /* but larger than the threshold, */
+---
+>       if (m >= TH_INSERT)       /* but larger than the threshold, */
+547d537
+<       }
+904c894
+<   char   *l, *r, *e, *x;        /* pointers to exchange positions */
+---
+>   char   *l, *r, *x;            /* pointers to exchange positions */
+909,910c899
+<     l = a;                      /* start at left */
+<     r = e = a +(n-1) *size;     /* and right boundary */
+---
+>     l = a; r = a +(n-1) *size;  /* start at left and right boundary */
+925,929c914,916
+<         if (l > r) break;       /* if no element, abort the loop */
+<         while ((l < e) && !cmp(p, (l += size), data));
+<         while ((r > a) && !cmp(p, (r -= size), data));
+<         break;                  /* skip all array elements */
+<       }                         /* that are equal to the pivot */
+---
+>         if (l <= r) { l += size; r -= size; }
+>         break;                  /* skip pivot and abort the loop */
+>       }                         /* otherwise exchange elements */
+931c918
+<     }                           /* otherwise exchange elements */
+---
+>     }
+1145c1132
+<   tidx   *l, *r, *e;            /* pointers to exchange positions */   \
+---
+>   tidx   *l, *r;                /* pointers to exchange positions */   \
+1151,1152c1138
+<     l = index;                  /* start at left */                    \
+<     r = e = index +n -1;        /* and right boundary */               \
+---
+>     l = index; r = index +n -1; /* start at left and right boundary */ \
+1162,1166c1148
+<         if (l > r) break;       /* if no element, abort the loop */    \
+<         while ((l < e)     && (array[*++l] == p));                     \
+<         while ((r > index) && (array[*--r] == p));                     \
+<         break;                  /* skip all array elements */          \
+<       }                         /* that are equal to the pivot */      \
+---
+>         if (l <= r) { l++; r--; } break; }    /* abort the loop */     \
+1465c1447
+<   tidx   *l, *r, *e;            /* pointers to exchange positions */   \
+---
+>   tidx   *l, *r;                /* pointers to exchange positions */   \
+1471,1472c1453
+<     l = index;                  /* start at left */                    \
+<     r = e = index +n -1;        /* and right boundary */               \
+---
+>     l = index; r = index +n -1; /* start at left and right boundary */ \
+1474,1475c1455,1456
+<       t = *l; *l = *r; *r = t;} /* arrange first and last element */   \
+<     p = array[index[n/2]];      /* compute median of 3 for pivot */    \
+---
+>       t = *l; *l = *r; *r = t;}/* arrange first and last element */    \
+>     p = array[index[n/2]];     /* compute median of 3 for pivot */     \
+1484,1488c1465
+<         if (l > r) break;       /* if no element, abort the loop */    \
+<         while ((l < e)     && !cmp(p, array[*++l], data));             \
+<         while ((r > index) && !cmp(p, array[*--r], data));             \
+<         break;                  /* skip all array elements */          \
+<       }                         /* that are equal to the pivot */      \
+---
+>         if (l <= r) { l++; r--; } break; }    /* abort the loop */     \
+1666c1643
+<   tidx   *l, *r, *e;            /* pointers to exchange positions */   \
+---
+>   tidx   *l, *r;                /* pointers to exchange positions */   \
+1671,1672c1648
+<     l = index;                  /* start at left */                    \
+<     r = e = index +n -1;        /* and right boundary */               \
+---
+>     l = index; r = index +n -1; /* start at left and right boundary */ \
+1684,1688c1660
+<         if (l > r) break;       /* if no element, abort the loop */    \
+<         while ((l < e)     && !cmp(t, *++l, data));                    \
+<         while ((r > index) && !cmp(t, *--r, data));                    \
+<         break;                  /* skip all array elements */          \
+<       }                         /* that are equal to the pivot */      \
+---
+>         if (l <= r) { l++; r--; } break; }    /* abort the loop */     \
+diff -r source-pyfim.tar.gz-extracted/util/src/makefile lookaside-pyfim.tar.gz-extracted/util/src/makefile
+44,46d43
+< sorttest:     sorttest.o arrays.o random.o makefile
+< 	$(LD) $(LDFLAGS) $(LIBS) sorttest.o arrays.o random.o -lm -o $@
+< 
+62,64d58
+< 
+< sorttest.o:   sorttest.c arrays.h random.h makefile
+< 	$(CC) $(CFLAGS) sorttest.c -o $@
+diff -r source-pyfim.tar.gz-extracted/util/src/random.c lookaside-pyfim.tar.gz-extracted/util/src/random.c
+32c32
+< #endif                          /* in case C99 is not supported */
+---
+> #endif                          /* MSC still does not support C99 */
+diff -r source-pyfim.tar.gz-extracted/util/src/symtab.h lookaside-pyfim.tar.gz-extracted/util/src/symtab.h
+75c75
+< #  endif                        /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+92c92
+< #  endif                        /* in case C99 is not supported */
+---
+> #  endif                        /* MSC still does not support C99 */
+Only in source-pyfim.tar.gz-extracted: vs2019.bat
+Only in source-pyfim.tar.gz-extracted: vs2022.bat

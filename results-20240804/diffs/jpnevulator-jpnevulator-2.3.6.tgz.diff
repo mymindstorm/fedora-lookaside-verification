@@ -1,0 +1,68 @@
+Source package : jpnevulator
+File name       : jpnevulator-2.3.6.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jpnevulator/jpnevulator-2.3.6.tgz/sha512/4c12d931151e7194cb57e1f5bd7169d155000544123aa91309296bd1dd34f11de6b3d3bad333a1263972b5a9085d8c662cedbcac89e90ff7a895a611c4b22093/jpnevulator-2.3.6.tgz
+Source URL      : http://jpnevulator.snarl.nl/download/jpnevulator-2.3.6.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-jpnevulator-2.3.6.tgz: gzip compressed data, from Unix, original size modulo 2^32 174080
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-jpnevulator-2.3.6.tgz: gzip compressed data, last modified: Sat May  9 18:36:10 2020, from Unix, original size modulo 2^32 163840
+
+
+diff -r source-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/Changelog lookaside-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/Changelog
+1,13d0
+< jpnevulator (2.3.6); urgency=low
+< 
+<   * Fix potential buffer overflow problem.
+<   * Added dependency on misc.h.
+<   * Fix spelling errors in manual page.
+<   * Clarify a bit more why a certain part of the code does exist to do nothing
+<     in certain cases.
+<   * Updated FAQ that more than one question is answered. Two, yes two
+<     questions answered. Crazy!! It is like that for a mighty long
+<     time already, but now the FAQ knows too. :)
+< 
+<  -- Freddy Spierenburg <freddy@snarl.nl>  Tue, 28 Jul 2020 12:39:34 +0200
+< 
+diff -r source-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/dependencies.in lookaside-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/dependencies.in
+18c18
+< misc.o: misc.c misc.h
+---
+> misc.o: misc.c
+diff -r source-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/FAQ lookaside-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/FAQ
+4,6c4,5
+< This is actually a quiet lousy FAQ with not many questions answered. But the
+< truth is that only one question is asked frequently. The first here in this
+< FAQ. Please read it, please, please, pretty please. :)
+---
+> This is actually a quiet lousy FAQ with only one question answered. But the
+> truth is that only one question is asked frequently.
+diff -r source-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/jpnevulator.1 lookaside-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/jpnevulator.1
+1c1
+< .TH JPNEVULATOR "1" "July 2020" "jpnevulator 2.3.6" "User Commands"
+---
+> .TH JPNEVULATOR "1" "May 2020" "jpnevulator 2.3.5" "User Commands"
+113c113
+< is considered to be part of a new package. The default is 100 milliseconds. Use
+---
+> is considered to be part of a new package. The default is 100 miliseconds. Use
+159c159
+< (see checksum and crc* options) the checksum will be crippled on purpose. Carefully
+---
+> (see checksum and crc* options) the checkum will be crippled on purpose. Carefully
+diff -r source-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/jpnevulator.c lookaside-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/jpnevulator.c
+455,458c455
+< 			 * another funny bullshit comment to give this all some kind of meaning.
+< 			 * I start to think it has to do something with the control option. I
+< 			 * don't think you want to write control information every time select
+< 			 * fails. But I could be wrong. It is too long ago. */
+---
+> 			 * another funny bullshit comment to give this all some kind of meaning. */
+diff -r source-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/jpnevulator.h lookaside-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/jpnevulator.h
+25c25
+< #define PROGRAM_VERSION "2.3.6"
+---
+> #define PROGRAM_VERSION "2.3.5"
+diff -r source-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/options.c lookaside-jpnevulator-2.3.6.tgz-extracted/jpnevulator-2.3.6/options.c
+340c340
+< 					"Copyright (C) 2006-2020 Freddy Spierenburg <freddy@snarl.nl>\n"
+---
+> 					"Copyright (C) 2006-2015 Freddy Spierenburg <freddy@snarl.nl>\n"

@@ -1,0 +1,11 @@
+Source package : jakarta-server-pages
+File name       : jsp-api-IMPL-2.3.6-RELEASE.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jakarta-server-pages/jsp-api-IMPL-2.3.6-RELEASE.tar.gz/sha512/3e1664b0f1722e4e6a0253cab76f6dfe23e92ba3088bd9bf3211b8801bb3d1fddac52bab81e5934b600fa63ebac50e30f823832ac7463957b69af491cbc0b0b7/jsp-api-IMPL-2.3.6-RELEASE.tar.gz
+Source URL      : https://github.com/eclipse-ee4j/jsp-api/archive/IMPL-2.3.6-RELEASE/jsp-api-IMPL-2.3.6-RELEASE.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-jsp-api-IMPL-2.3.6-RELEASE.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2406400
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-jsp-api-IMPL-2.3.6-RELEASE.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2406400
+
+
+Only in lookaside-jsp-api-IMPL-2.3.6-RELEASE.tar.gz-extracted: jsp-api-IMPL-2.3.6-RELEASE
+Only in source-jsp-api-IMPL-2.3.6-RELEASE.tar.gz-extracted: pages-IMPL-2.3.6-RELEASE

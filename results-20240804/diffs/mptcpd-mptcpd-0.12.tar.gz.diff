@@ -1,0 +1,55 @@
+Source package : mptcpd
+File name       : mptcpd-0.12.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/mptcpd/mptcpd-0.12.tar.gz/sha512/313ce6f3905192fc614d419d498bfd814632730a50e3119039f076b4cec32360424f237a18cfec8c80a52ea6555a6e21949669ccb85e3178bd83748a2de66f73/mptcpd-0.12.tar.gz
+Source URL      : https://github.com/multipath-tcp/mptcpd/archive/v0.12/mptcpd-0.12.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-mptcpd-0.12.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 901120
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-mptcpd-0.12.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 3174400
+
+
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: aclocal.m4
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: aminclude_static.am
+Only in source-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: bootstrap
+Only in source-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: .clang-format
+Only in source-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: CODE_OF_CONDUCT.md
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: compile
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: config.guess
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: config.sub
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: configure
+Only in source-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: CONTRIBUTING.md
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: depcomp
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/etc: Makefile.in
+Only in source-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: .github
+Only in source-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: .gitignore
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/include/linux: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/include: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/include/mptcpd: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/include/mptcpd/private: config.h
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/include/mptcpd/private: config.h.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: INSTALL
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: install-sh
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/lib: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: ltmain.sh
+Only in source-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/m4: .gitignore
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/m4: libtool.m4
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/m4: lt~obsolete.m4
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/m4: ltoptions.m4
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/m4: ltsugar.m4
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/m4: ltversion.m4
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/man: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: missing
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/plugins: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/plugins/path_managers: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: README
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/scripts: Makefile.in
+Only in source-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: SECURITY.md
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/src: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12: test-driver
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/tests/lib: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/tests: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/tests/plugins/bad: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/tests/plugins: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/tests/plugins/noop: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/tests/plugins/priority: Makefile.in
+Only in lookaside-mptcpd-0.12.tar.gz-extracted/mptcpd-0.12/tests/plugins/security: Makefile.in

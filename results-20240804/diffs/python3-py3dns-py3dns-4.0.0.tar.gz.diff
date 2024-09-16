@@ -1,0 +1,10 @@
+Source package : python3-py3dns
+File name       : py3dns-4.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python3-py3dns/py3dns-4.0.0.tar.gz/sha512/322f60b5ebb15c42716601fbc4447c8ca328b14ce619d4bb7eb951a2b1c09b7faf5ca5557593c7026d1c6483edff018e363215d7cb01a862345c21829bfe83b1/py3dns-4.0.0.tar.gz
+Source URL      : https://pypi.io/packages/source/p/py3dns/py3dns-4.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-py3dns-4.0.0.tar.gz: gzip compressed data, was "py3dns-4.0.0.tar", last modified: Sat Jul  1 21:13:47 2023, max compression, original size modulo 2^32 174080
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-py3dns-4.0.0.tar.gz: gzip compressed data, was "py3dns-4.0.0.tar", last modified: Sat Jul  1 21:07:30 2023, max compression, original size modulo 2^32 174080
+
+
+No differences detected!

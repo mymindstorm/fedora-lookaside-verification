@@ -1,0 +1,10 @@
+Source package : rust-target
+File name       : target-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-target/target-2.0.0.crate/sha512/08261b96ebf3e1b1634764b88f7971735b76de32a97181102e2d96a48f9cdb9f353957f45af050bb5c07329820f5af53bf11c1497ae3c6acb5f397a2e43681ab/target-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/target/2.0.0/download#/target-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-target-2.0.0.crate: gzip compressed data, was "target-2.0.0.crate", max compression, original size modulo 2^32 30720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-target-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

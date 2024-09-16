@@ -1,0 +1,18 @@
+Source package : ufdbGuard
+File name       : ufdbGuard-1.35.8.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ufdbGuard/ufdbGuard-1.35.8.tar.gz/sha512/bd10ad7821294aae2900c1a6d8cf4fd9305b636cbc361bebc497ec9b31e52f1addf5537ad8451d163425e958d9cc0150329e9b2c83d5123c7710e2c53dc9d892/ufdbGuard-1.35.8.tar.gz
+Source URL      : https://www.urlfilterdb.com/files/downloads/ufdbGuard-1.35.8.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ufdbGuard-1.35.8.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 8806400
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ufdbGuard-1.35.8.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 8806400
+
+
+diff -r source-ufdbGuard-1.35.8.tar.gz-extracted/ufdbGuard-1.35.8/src/mtserver/ufdbguardd.c lookaside-ufdbGuard-1.35.8.tar.gz-extracted/ufdbGuard-1.35.8/src/mtserver/ufdbguardd.c
+306c306
+<       fprintf( fp, "%ld\n", (long) ufdbGV.pid );
+---
+>       fprintf( fp, "%d\n", ufdbGV.pid );
+308c308
+<       ufdbLogMessage( "PID %ld written to %s", (long) ufdbGV.pid, fname );
+---
+>       ufdbLogMessage( "PID %d written to %s", ufdbGV.pid, fname );

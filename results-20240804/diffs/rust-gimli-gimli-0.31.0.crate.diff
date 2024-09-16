@@ -1,0 +1,10 @@
+Source package : rust-gimli
+File name       : gimli-0.31.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gimli/gimli-0.31.0.crate/sha512/65252d3061e5b0748c9481e7ace7850c9d640b16fdb64e9fd86dad300711f67ceb695ca5d3153ced91f88f3fc4712475721ed2300786155a2f5ed832fa992558/gimli-0.31.0.crate
+Source URL      : https://crates.io/api/v1/crates/gimli/0.31.0/download#/gimli-0.31.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gimli-0.31.0.crate: gzip compressed data, was "gimli-0.31.0.crate", max compression, original size modulo 2^32 1819648
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gimli-0.31.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

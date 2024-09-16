@@ -1,0 +1,10 @@
+Source package : rust-libcryptsetup-rs
+File name       : libcryptsetup-rs-0.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-libcryptsetup-rs/libcryptsetup-rs-0.10.0.crate/sha512/0416c69e89c0a6fe1a4f4385448674a8dc3c024c3470406398140ce9c3b97450a6c2b1ca73b4469ebbbfaef66095119749ba999d2c15ceef04e39d3e58fd2272/libcryptsetup-rs-0.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/libcryptsetup-rs/0.10.0/download#/libcryptsetup-rs-0.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libcryptsetup-rs-0.10.0.crate: gzip compressed data, was "libcryptsetup-rs-0.10.0.crate", max compression, original size modulo 2^32 274432
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libcryptsetup-rs-0.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-maybe-uninit
+File name       : maybe-uninit-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-maybe-uninit/maybe-uninit-2.0.0.crate/sha512/3006fc009c7c743d9147a4122e677cdeb2546f7bb46963b2f266839614eb906f9d763c161044fd0bf3f7b54124ac0734ac9ae7f7151b1a7a5f45cbc739976434/maybe-uninit-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/maybe-uninit/2.0.0/download#/maybe-uninit-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-maybe-uninit-2.0.0.crate: gzip compressed data, was "maybe-uninit-2.0.0.crate", max compression, original size modulo 2^32 49664
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-maybe-uninit-2.0.0.crate: POSIX tar archive
+
+
+No differences detected!

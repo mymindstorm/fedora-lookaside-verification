@@ -1,0 +1,10 @@
+Source package : rust-nu-plugin
+File name       : nu-plugin-0.91.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-nu-plugin/nu-plugin-0.91.0.crate/sha512/b951c8b0c709d91c6c207e5d7afd48a83e21a885cbc44489746f956ffd2613a3f87637d93cfeef9675c74ea28f61f75d885c66a18991e07c780f2b019276bf1c/nu-plugin-0.91.0.crate
+Source URL      : https://crates.io/api/v1/crates/nu-plugin/0.91.0/download#/nu-plugin-0.91.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-nu-plugin-0.91.0.crate: gzip compressed data, was "nu-plugin-0.91.0.crate", max compression, original size modulo 2^32 314368
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-nu-plugin-0.91.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

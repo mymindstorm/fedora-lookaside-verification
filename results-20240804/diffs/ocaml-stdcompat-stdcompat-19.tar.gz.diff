@@ -1,0 +1,177 @@
+Source package : ocaml-stdcompat
+File name       : stdcompat-19.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ocaml-stdcompat/stdcompat-19.tar.gz/sha512/66fec74a90e1133a8a174b233c0c5969b44831cc2555b6028e53478cd24646b68d363b60ffd4b4fbb1310ef7f481f2ff3b3fa5e20b0aec90e7d8dba819cdc718/stdcompat-19.tar.gz
+Source URL      : https://github.com/thierry-martinez/stdcompat/releases/download/v19/stdcompat-19.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-stdcompat-19.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4167680
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-stdcompat-19.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 1361920
+
+
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: aclocal.m4
+diff -r source-stdcompat-19.tar.gz-extracted/stdcompat-19/ChangeLog lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19/ChangeLog
+1c1
+< * Version 19, 2022-07-08
+---
+> * Version 19, 2022-06-15
+12,14c12
+<    https://github.com/thierry-martinez/stdcompat/pull/19
+<    with contribution from Kate,
+<    https://github.com/thierry-martinez/stdcompat/pull/21)
+---
+>    https://github.com/thierry-martinez/stdcompat/pull/19)
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: ci
+diff -r source-stdcompat-19.tar.gz-extracted/stdcompat-19/config.h.in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19/config.h.in
+33,35d32
+< /* Name of package */
+< #undef PACKAGE
+< 
+58,60d54
+< 
+< /* Version number of package */
+< #undef VERSION
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: Dockerfile
+diff -r source-stdcompat-19.tar.gz-extracted/stdcompat-19/dune lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19/dune
+4d3
+<  (wrapped false)
+122,126c121,122
+<  (targets
+<    configure
+<    install-sh
+<    Makefile.in)
+<  (mode promote)
+---
+>  (targets configure
+>           install-sh)
+339,340d334
+<   Makefile.in
+<   config.h.in
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: generate_interfaces.sh
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: .gitattributes
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: .gitignore
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: interface_generator
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: interfaces
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: Jenkinsfile
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: Makefile.config.in
+diff -r source-stdcompat-19.tar.gz-extracted/stdcompat-19/Makefile.in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19/Makefile.in
+410,412c410,411
+< 	$(srcdir)/stdcompat_tests.ml.in $(top_srcdir)/../../compile \
+< 	$(top_srcdir)/../../install-sh $(top_srcdir)/../../missing \
+< 	AUTHORS COPYING ChangeLog INSTALL NEWS README compile missing
+---
+> 	$(srcdir)/stdcompat_tests.ml.in AUTHORS COPYING ChangeLog \
+> 	INSTALL NEWS README compile install-sh missing
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: README.md
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__arg.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__arrayLabels.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__array.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__atomic.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__bool.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__buffer.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__bytesLabels.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__bytes.mli
+diff -r source-stdcompat-19.tar.gz-extracted/stdcompat-19/stdcompat__bytes.ml.in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19/stdcompat__bytes.ml.in
+325d324
+< @BEGIN_BEFORE_4_14_0@
+366d364
+< @END_BEFORE_4_14_0@
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__char.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__digest.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__either.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__ephemeron.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__filename.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__float.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__format.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__fun.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__hashtbl.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__in_channel.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__int32.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__int64.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__int.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__lazy.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__lexing.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__listLabels.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__list.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__map.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat.ml
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__moreLabels.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__nativeint.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__native.ml_byte
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__native.ml_native
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__option.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__out_channel.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__pervasives.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__printexc.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__printf.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__queue.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__random.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__result.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__seq.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__set.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__stack.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__stdlib.mli
+diff -r source-stdcompat-19.tar.gz-extracted/stdcompat-19/stdcompat__stdlib.ml.in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19/stdcompat__stdlib.ml.in
+1c1
+< @BEGIN_FROM_5_0_0@
+---
+> @BEGIN_FROM_4_14_0@
+3,4c3,4
+< @END_FROM_5_0_0@
+< @BEGIN_BEFORE_5_0_0@
+---
+> @END_FROM_4_14_0@
+> @BEGIN_BEFORE_4_14_0@
+150c150
+< @END_BEFORE_5_0_0@
+---
+> @END_BEFORE_4_14_0@
+diff -r source-stdcompat-19.tar.gz-extracted/stdcompat-19/stdcompat__stdlib_s.mli.in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19/stdcompat__stdlib_s.mli.in
+2c2
+< @BEGIN_FROM_5_0_0@
+---
+> @BEGIN_FROM_4_14_0@
+6,7c6,14
+< @END_FROM_5_0_0@
+< @BEGIN_BEFORE_5_0_0@
+---
+> 
+>   module Seq : sig
+>     include (module type of struct include Seq end)
+> 
+>     (* Temporary redefined here for compatibility with alpha releases. *)
+>     val fold_lefti : ('b -> int -> 'a -> 'b) -> 'b -> 'a t -> 'b
+>   end
+> @END_FROM_4_14_0@
+> @BEGIN_BEFORE_4_14_0@
+162,163d168
+<   module Unit : Stdcompat__unit_s.S
+< 
+165c170
+< @END_BEFORE_5_0_0@
+---
+> @END_BEFORE_4_14_0@
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__stringLabels.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__string.mli
+diff -r source-stdcompat-19.tar.gz-extracted/stdcompat-19/stdcompat__stubs.c.in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19/stdcompat__stubs.c.in
+4,19d3
+< @C_BEGIN_FROM_5_0_0@
+< void stdcompat_dummy_symbol()
+< {
+<   /* If the library is empty, then the following error message appears on macOS:
+<      ld: archive has no table of contents file './libtest_prog_stubs.a' for
+<      architecture arm64
+< 
+<      One solution is to execute `ranlib libtest_prog_stubs.a` after `ocamlmklib`
+<      and before `ocamlopt` use the library, but I don't know how to make dune
+<      execute the command.
+< 
+<      Another solution is to export a dummy symbol!
+<   */
+< }
+< @C_END_FROM_5_0_0@
+< 
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__sys.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat_tests.ml
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__uchar.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__unit.mli
+Only in lookaside-stdcompat-19.tar.gz-extracted/stdcompat-19: stdcompat__weak.mli
+Only in source-stdcompat-19.tar.gz-extracted/stdcompat-19: test_all_switches.sh

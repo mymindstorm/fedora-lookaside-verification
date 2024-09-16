@@ -1,0 +1,1337 @@
+Source package : avl
+File name       : avl3.36.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/avl/avl3.36.tgz/sha512/e39449d065568ca84f3d3db47ece140f192f18781d238fe83b3f38eca7e0b0caa5950506a131c3cb160938a6615aadc3b143e7caef50f235519316ca59a5ebd9/avl3.36.tgz
+Source URL      : http://web.mit.edu/drela/Public/web/avl/avl3.36.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-avl3.36.tgz: POSIX tar archive (GNU)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-avl3.36.tgz: gzip compressed data, last modified: Tue Feb  7 16:42:42 2017, from Unix, original size modulo 2^32 4311040
+
+
+diff -r source-avl3.36.tgz-extracted/Avl/avl_doc.txt lookaside-avl3.36.tgz-extracted/Avl/avl_doc.txt
+2c2
+< AVL  3.36 User Primer                               last update  12 Feb 17
+---
+> AVL  3.36 User Primer                               last update  24 Feb 15
+314d313
+<       CDCL
+482c481,482
+< for all the defining sections.  
+---
+> for all the defining sections.  The rotation is performed about
+> the spanwise axis projected onto the y-z plane.
+541,576d540
+< CDCL                         |  (keyword)
+< CL1 CD1  CL2 CD2  CL3 CD3    |  CD(CL) function parameters
+< 
+< 
+< The CDCL keyword placed in the SURFACE options specifies a simple
+< profile-drag CD(CL) function for all sections in this SURFACE.  
+< The function is parabolic between CL1..CL2 and 
+< CL2..CL3, with rapid increases in CD below CL1 and above CL3.
+< 
+< The CD-CL polar is based on a simple interpolation with four CL regions:
+<  1) negative stall region
+<  2) parabolic CD(CL) region between negative stall and the drag minimum
+<  3) parabolic CD(CL) region between the drag minimum and positive stall
+<  4) positive stall region
+< 
+<          CLpos,CDpos       <-  Region 4 (quadratic above CLpos)
+< CL |   pt3--------      
+<    |    /                     
+<    |   |                   <-  Region 3 (quadratic above CLcdmin)
+<    | pt2 CLcdmin,CDmin  
+<    |   |                
+<    |    \                  <-  Region 2 (quadratic below CLcdmin)
+<    |   pt1_________      
+<    |     CLneg,CDneg       <-  Region 1 (quadratic below CLneg)
+<    |                             
+<    -------------------------
+<                    CD
+< 
+< See the SUBROUTINE CDCL header (in cdcl.f) for more details.
+< 
+< The CD(CL) function is interpolated for stations in between
+< defining sections.  
+< 
+< 
+< *****
+< 
+615d578
+< NOTE!!
+666,670c629
+< If present, the optional X1 X2 parameters indicate that only the 
+< x/c range X1..X2 from the coordinates is to be assigned to the surface.
+< If the surface is a 20%-chord flap, for example, then X1 X2
+< would be 0.80 1.00.  This allows the camber shape to be easily 
+< assigned to any number of surfaces in piecewise manner.
+---
+> The optional X1 X2 parameters are used as in NACA.
+686,693c645
+< If present, the optional X1 X2 numerical parameters indicate that only 
+< the x/c range X1..X2 from the coordinates is to be assigned to the surface.
+< If the surface is a 20%-chord flap, for example, then X1 X2
+< would be 0.80 1.00.  This allows the camber shape to be easily 
+< assigned to any number of surfaces in piecewise manner.  
+< 
+< If omitted,  X1, X2  default to  0.0, 1.0, which indicates that the
+< entire airfoil is to be used to define the camber shape as usual.
+---
+> The optional X1 X2 parameters are used as in NACA.
+733a686
+> 
+904a858
+> 
+910,928d863
+< The CD-CL polar is based on a simple interpolation with four CL regions:
+<  1) negative stall region
+<  2) parabolic CD(CL) region between negative stall and the drag minimum
+<  3) parabolic CD(CL) region between the drag minimum and positive stall
+<  4) positive stall region
+< 
+<          CLpos,CDpos       <-  Region 4 (quadratic above CLpos)
+< CL |   pt3--------      
+<    |    /                     
+<    |   |                   <-  Region 3 (quadratic above CLcdmin)
+<    | pt2 CLcdmin,CDmin  
+<    |   |                
+<    |    \                  <-  Region 2 (quadratic below CLcdmin)
+<    |   pt1_________      
+<    |     CLneg,CDneg       <-  Region 1 (quadratic below CLneg)
+<    |                             
+<    -------------------------
+<                    CD
+< 
+931,932c866,867
+< must be used either for all sections or for none (unless the SURFACE
+< CDCL is specified).
+---
+> must be used either for all sections or for none.
+> 
+987,991c922
+< If present, the optional X1 X2 numerical parameters indicate that only 
+< the x/c range X1..X2 from the coordinates is to be assigned to the surface.
+< If the body is to be defined using only the 0-80% chord points, for example, 
+< then X1 X2 would be 0.0 0.80.  This allows the body shape to be truncated if
+< needed.  
+---
+> The optional X1 X2 parameters are used as in NACA.
+993,994d923
+< If omitted,  X1, X2  default to  0.0, 1.0, which indicates that the
+< entire "airfoil" is used to define the shape as usual.
+1042,1077d970
+< The tables below show the accuracy superiority of the cosine spacing 
+< over uniform spacing, at least for a simple wing planform.  With
+< cosine spacing, a much smaller number of vortex elements is needed
+< to reach the desired limiting answer to within a given tolerance.
+< Note also that the uniform spacing always tends to overpredict
+< the span efficiency, and its error decreases only linearly with 
+< the number of elements in each direction.
+< 
+< 
+< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+< Panel refinement study
+< Rectangular wing
+< 
+< 
+< # Cosine spacing in C and S
+< #
+< #1/Ni  Ni  Nj   CL       CDi        CLff     CDiff     e     e_error
+< #
+< 1      1   4   4.18875  0.05807  4.19383  0.05829   0.9605   +0.09 %
+< 0.5    2   8   4.20951  0.05872  4.21465  0.05893   0.9595   -0.01 %
+< 0.25   4   16  4.21151  0.05876  4.21665  0.05898   0.9596   -0.00 %
+< 0.125  8   32  4.21184  0.05835  4.21695  0.05899   0.9596    0.00 %
+< 
+< 
+< # Uniform spacing in C and S
+< #
+< #1/Ni  Ni  Nj   CL       CDi        CLff     CDiff     e     e_error
+< #
+< 1      1   4   4.45637  0.05797  4.46144  0.05819   1.0887  +13.45 %  
+< 0.5    2   8   4.35198  0.05894  4.35713  0.05917   1.0213   +6.43 %
+< 0.25   4   16  4.28694  0.05903  4.29211  0.05926   0.9896   +3.13 %
+< 0.125  8   32  4.25067  0.05895  4.25583  0.05917   0.9744   +1.54 %
+< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+< 
+< 
+< 
+1098,1099c991,992
+< for a surface with multiple sections, then AVL will fudge the spanwise 
+< distribution as needed to ensure that a point falls exactly
+---
+> for a surface with multiple sections, the spanwise distribution
+> will be fudged as needed to ensure that a point falls exactly
+1138,1139c1031,1032
+< The geometry axes used in the xxx.mass file are exactly the same
+< as those used in the xxx.avl file.
+---
+> The geometry axes used in the xxx.mass file are exactly the same as those used
+> in the xxx.avl file.
+1144,1146c1037,1038
+< A sample file for an RC glider is shown below.  Comment lines begin 
+< with a "#".  Everything after and including a "!" is ignored.  
+< Blank lines are ignored.
+---
+> A sample file for an RC glider is shown below.  Comment lines begin with a "#".
+> Everything after and including a "!" is ignored.  Blank lines are ignored.
+1987,1992d1878
+< Typing a command twice will apply the parameter value to all
+< operating points.  Examples:
+< 
+< BB  20       (set bank to 20 deg for all points)
+< MAMA  0.5    (set Mach number to 0.5 for all points)
+< 
+2180d2065
+<       MA Mach no.  =  0.000       
+2340a2226,2233
+> Normally, all hardcopy goes to the single multi-page plot.ps file.
+> Toggling the Individual PS file flag to T will place successive
+> hardcopy pages in an individual files, named
+> plot000.ps
+> plot001.ps
+> plot002.ps
+> etc.
+> These may then be used to create mode animation, etc.
+2342,2388c2235
+< Hardcopy
+< --------
+< All hardcopy goes to the plot.ps file, with each H command creating
+< a new page in the file.  If a hardcopy file is being created, 
+< then AVL should be exited using QUIT or Q at Top Level, otherwise 
+< the plot.ps file might not be properly terminated.
+< 
+< 
+< Animated GIF
+< ------------
+< An on-screen "movie" which can be seen in MODE can be captured as
+< an animated GIF.  This requires an image-processing software which can
+< convert a multi-page .ps file into the GIF.  One example is the
+< "convert" command in the ImageMagick software package.
+< An example command sequence which generates the GIF is listed below,
+< using the Boeing 737 case files b737.avl, b737.mass, b737.run .
+< 
+< 1) Create plot.ps with AVL:
+< 
+< % avl b737
+< MODE
+< N
+< X
+<   click on topmost Dutch-Roll root, roughly at (-0.3,1.9)
+<   use LRUD keys to rotate airplane for best view of Dutch Roll, 
+<     (e.g. Azim,Elev = -160,15)
+<   play mode by holding down > key, adjust scale with +/- keys as needed, 
+<     (reset time with 0 key)
+<   <space>
+< G
+< X
+<   click on same Dutch Roll root again
+<   play mode by holding down > key, for whatever length needed
+<   <space>
+< <Enter>
+< Q
+< 
+< 2) Edit plot.ps
+< Globally replace 
+<  "612    0 translate   90 rotate"
+< with
+<  "0 0 translate 0 rotate"
+< Write new file, e.g. plot2.ps or whatever
+< 
+< 3) Create animated GIF:
+< 
+< convert -delay 4 -page 720x500 -border 4x4 plot2.ps plot2.gif
+---
+> The other parameters and options are mostly self-explanatory.
+Only in source-avl3.36.tgz-extracted/Avl/bin: make-dev
+Only in lookaside-avl3.36.tgz-extracted/Avl/bin: Makefile
+Only in source-avl3.36.tgz-extracted/Avl/bin: Makefile.gfortran
+Only in lookaside-avl3.36.tgz-extracted/Avl/bin: Makefile_gfortran
+Only in source-avl3.36.tgz-extracted/Avl/bin: Makefile.ifort
+Only in lookaside-avl3.36.tgz-extracted/Avl/bin: Makefile_ifort
+Only in source-avl3.36.tgz-extracted/Avl/bin: Makefile.mingw
+Only in lookaside-avl3.36.tgz-extracted/Avl/bin: Makefile.NT
+Only in lookaside-avl3.36.tgz-extracted/Avl/eispack: Makefile
+Only in source-avl3.36.tgz-extracted/Avl/eispack: Makefile.gfortran
+Only in lookaside-avl3.36.tgz-extracted/Avl/eispack: Makefile_gfortran
+Only in source-avl3.36.tgz-extracted/Avl/eispack: Makefile.ifort
+Only in lookaside-avl3.36.tgz-extracted/Avl/eispack: Makefile_ifort
+Only in source-avl3.36.tgz-extracted/Avl/eispack: Makefile.mingw
+diff -r source-avl3.36.tgz-extracted/Avl/movie/README lookaside-avl3.36.tgz-extracted/Avl/movie/README
+16d15
+< X
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/colorstuff: ._rgb.c
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/colorstuff: ._rgbtbl.h
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/colorstuff: ._rgbtest.c
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/config.make lookaside-avl3.36.tgz-extracted/Avl/plotlib/config.make
+1,17d0
+< #======================================================#
+< # Makefile options for Xplot11 library                 #
+< #   With GNU gfortran and gcc compilers                #
+< #   Set up or select a set of compile                  #
+< #   options for your system                            # 
+< #                                                      #
+< #   Set PLTLIB to name of library                      #
+< #   Set DP for real precision                          #
+< #======================================================#
+< 
+< # Set library name (either libPlt.a or variant with compiler and precision)
+< #PLTLIB = libPlt.a
+< #PLTLIB = libPlt_gfortran.a
+< #PLTLIB = libPlt_gfortranSP.a
+< #PLTLIB = libPlt_gfortranDP.a
+< #PLTLIB = libPlt_gSP.a
+< PLTLIB = libPlt_gDP.a
+18a2,10
+> #=======================================#
+> # Makefile options for Xplot11 library  #
+> #   Set up or select a set of compile   #
+> #   options for your system             # 
+> #=======================================#
+> 
+> 
+> # Set library name 
+> PLTLIB = libPlt_gDP.a
+26,34d17
+< 
+< # Depending on your system and libraries you might specify an architecture flag
+< # to gcc/gfortran to give a compatible binary 32 bit or 64 bit 
+< # use -m32 for 32 bit binary, -m64 for 64 bit binary
+< MARCH =
+< #MARCH = -m64
+< 
+< # Fortran double precision (real) flag
+< DP =
+37,40c20,21
+< FFLAGS  = -O2 $(MARCH) $(DP)
+< CFLAGS  = -O2 $(MARCH) $(DEFINE)
+< CFLAGS0 = -O0 $(MARCH) $(DEFINE)
+< 
+---
+> FFLAGS  = -m64 -O2 $(DP)
+> CFLAGS  = -m64 -O2 $(DEFINE) -I/usr/X11/include
+44,45c25
+< WOBJ = Xwin2.o
+< WSRC = xwin11
+---
+> 
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: config.make.DP
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: config.make.gfortran
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/config.make.gfortranDP lookaside-avl3.36.tgz-extracted/Avl/plotlib/config.make.gfortranDP
+1,17d0
+< #======================================================#
+< # Makefile options for Xplot11 library                 #
+< #   With GNU gfortran and gcc compilers                #
+< #   Set up or select a set of compile                  #
+< #   options for your system                            # 
+< #                                                      #
+< #   Set PLTLIB to name of library                      #
+< #   Set DP for real precision                          #
+< #======================================================#
+< 
+< # Set library name (either libPlt.a or variant with compiler and precision)
+< #PLTLIB = libPlt.a
+< #PLTLIB = libPlt_gfortran.a
+< #PLTLIB = libPlt_gfortranSP.a
+< #PLTLIB = libPlt_gfortranDP.a
+< #PLTLIB = libPlt_gSP.a
+< PLTLIB = libPlt_gDP.a
+18a2,10
+> #=======================================#
+> # Makefile options for Xplot11 library  #
+> #   Set up or select a set of compile   #
+> #   options for your system             # 
+> #=======================================#
+> 
+> 
+> # Set library name 
+> PLTLIB = libPlt_gDP.a
+26,34d17
+< 
+< # Depending on your system and libraries you might specify an architecture flag
+< # to gcc/gfortran to give a compatible binary 32 bit or 64 bit 
+< # use -m32 for 32 bit binary, -m64 for 64 bit binary
+< MARCH =
+< #MARCH = -m64
+< 
+< # Fortran double precision (real) flag
+< DP =
+37,40c20,21
+< FFLAGS  = -O2 $(MARCH) $(DP)
+< CFLAGS  = -O2 $(MARCH) $(DEFINE)
+< CFLAGS0 = -O0 $(MARCH) $(DEFINE)
+< 
+---
+> FFLAGS  = -m64 -O2 $(DP)
+> CFLAGS  = -m64 -O2 $(DEFINE) -I/usr/X11/include
+44,45c25
+< WOBJ = Xwin2.o
+< WSRC = xwin11
+---
+> 
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: config.make.gfortranSP
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/config.make.ifort lookaside-avl3.36.tgz-extracted/Avl/plotlib/config.make.ifort
+1,9d0
+< #======================================================#
+< # Makefile options for Unix Xplot11 library            #
+< #   With Intel Fortran ifort and gcc compilers         #
+< #   Set up or select a set of compile                  #
+< #   options for your system                            # 
+< #                                                      #
+< #   Set PLTLIB to name of library                      #
+< #   Set DP for real precision                          #
+< #======================================================#
+11c2,9
+< # Set library name (either libPlt.a or variant with compiler and precision)
+---
+> #=======================================#
+> # Makefile options for Xplot11 library  #
+> #   Set up or select a set of compile   #
+> #   options for your system             # 
+> #=======================================#
+> 
+> 
+> # Set library name 
+13,15c11
+< #PLTLIB = libPlt_ifort.a
+< #PLTLIB = libPlt_ifortSP.a  
+< #PLTLIB = libPlt_ifortDP.a  ! use this for DP library if preferred
+---
+> #PLTLIB = libPltDP.a
+23,31d18
+< 
+< # Depending on your system and libraries you might specify an architecture flag
+< # to gcc/gfortran to give a compatible binary 32 bit or 64 bit 
+< # use -m32 for 32 bit binary, -m64 for 64 bit binary
+< MARCH =
+< #MARCH = -m64
+< 
+< # Double precision (real) flag
+< DP =
+34,37c21,22
+< FFLAGS  = -O2 $(DP)
+< CFLAGS  = -O2 $(MARCH) $(DEFINE)
+< CFLAGS0 = -O0 $(MARCH) $(DEFINE)
+< 
+---
+> FFLAGS  = -O3 $(DP)
+> CFLAGS  = -O3 $(DEFINE) -I/usr/X11/include
+40,42c25
+< LINKLIB = -L/usr/X11R6/lib -lX11
+< WOBJ = Xwin2.o
+< WSRC = xwin11
+---
+> LINKLIB = -L/usr/X11/lib -lX11
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: config.make.ifortDP
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: config.make.ifortQP
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: config.make.mingw
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: config.make.mingwDP
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: config.make.QP
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: config.make.SP
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: dev-make
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: .DS_Store
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: .emacs
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/examples: mousexy2.f
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/examples: mousexy.f
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/examples/Readme-examples lookaside-avl3.36.tgz-extracted/Avl/plotlib/examples/Readme-examples
+63,64d62
+< defmap.f     - displays the default colormap produced by CALL COLORMAPDEFAULT
+< 
+67,68c65
+< mousexy3.f   - test of interactive mouse plotting of spline input and 
+<                modification
+---
+> defmap.f     - displays the default colormap produced by CALL COLORMAPDEFAULT
+84,86c81
+< 
+< 
+< #sym/test.f   - display current vector fonts
+---
+> sym/test.f   - display current vector fonts
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: libPlt-mingw0.lib
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: libPlt-mingw.lib
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/Makefile lookaside-avl3.36.tgz-extracted/Avl/plotlib/Makefile
+25,29c25,30
+< #=======================================#
+< # Makefile for Xplot11 library          #
+< #  use or edit the config.make file to  #
+< #  set specific options for your system #
+< #=======================================#
+---
+> #================================#
+> # Makefile for Xplot11 library   #
+> #  edit the config.make file to  #
+> #  set specific options for your #
+> #  system                        #
+> #================================#
+31c32
+< # Point to your install directory (if you have one...)
+---
+> # Point to your install directory
+40,41c41,45
+< WOBJ = Xwin2.o
+< WSRC = xwin11
+---
+> 
+> ###========================================================
+> ###  Basic plot library object files
+> OBJ     = plt_base.o plt_font.o plt_util.o plt_color.o \
+>           set_subs.o gw_subs.o ps_subs.o Xwin2.o
+44a49
+> 
+47a53
+> 
+51a58,66
+> ###--------------------------------------------------------
+> ###  Uncomment for f77 compiler w/o AND() and RSHIFT/LSHIFT functions.
+> ###   This adds some functions to duplicate these using IAND and ISHFT
+> ###   which often appear in these offending fortran's libraries.
+> ###   The compilers that this has affected include:
+> ###      HPUX f77
+> ###      Absoft f77 on Linux
+> ###
+> #OBJMISC = util-ops.o
+54,67d68
+< help:	
+< 	@echo
+< 	@echo "Usage:"
+< 	@echo "  type: make <MACHINE>" 
+< 	@echo "   where <MACHINE> is one of the following:"
+< 	@echo "   gfortran - Linux/OSX/Cygwin using gcc toolset"
+< 	@echo "   ifort    - Linux/OSX with ifort/gcc"
+< 	@echo "   mingw    - Windows using MinGW"
+< 	@echo "   gfortranDP - Linux/OSX/Cygwin using gcc toolset, dbleprecision"
+< 	@echo "   ifortDP    - Linux/OSX with ifort/gcc, dblprecision"
+< 	@echo "   mingwDP    - Windows using MinGW, dblprecision"
+< 	@echo "   clean    - cleanup directory"
+< 	@exit
+< 
+70,87c71,91
+< gfortran:	
+< 		@cp ./config.make.gfortran	./config.make
+< 		@make -f Makefile.all lib
+< ifort:
+< 		@cp ./config.make.ifort		./config.make
+< 		@make -f Makefile.all lib
+< mingw:
+< 		@cp ./config.make.mingw		./config.make
+< 		@make -f Makefile.all lib
+< gfortranDP:	
+< 		cp ./config.make.gfortranDP	./config.make
+< 		make -f Makefile.all lib
+< ifortDP:
+< 		@cp ./config.make.ifortDP	./config.make
+< 		@make -f Makefile.all lib
+< mingwDP:
+< 		@cp ./config.make.mingwDP	./config.make
+< 		@make -f Makefile.all lib
+---
+> include ./config.make
+> 
+> 
+> ###-------------------------------------------------------------------------
+> ### Basic make targets - build library, test programs
+> 
+> $(PLTLIB):  $(OBJ) $(OBJOLD) $(OBJ3D) $(OBJMISC)
+> 	$(AR)     $(PLTLIB) $(OBJ) $(OBJOLD) $(OBJ3D) $(OBJMISC)
+> 	$(RANLIB) $(PLTLIB)
+> 
+> test:  $(PLTLIB)
+> 	(cd examples; make test)
+> 
+> 
+> ###-------------------------------------------------------------------------
+> ### Utility functions - install the library, clean the directory
+> 
+> install:  $(PLTLIB)
+> 	mv $(PLTLIB) $(INSTALLDIR)
+> 	$(RANLIB)   $(INSTALLDIR)/$(PLTLIB)
+> 
+89,91c93,141
+< 		@cp ./config.make.gfortran	./config.make
+< 		@make -f Makefile.all clean
+< 		@rm W32win3.o
+---
+> 	-/bin/rm $(OBJ) $(OBJOLD) $(OBJ3D) $(OBJMISC)
+> 	-/bin/rm $(PLTLIB)
+> 	-/bin/rm plot*.ps
+> 	(cd examples; make clean)
+> 
+> 
+> ###-------------------------------------------------------------------------
+> ### compile plot package routines
+> 
+> plt_base.o: plt_base.f pltlib.inc
+> 	$(FC) -c $(FFLAGS)  plt_base.f
+> 
+> plt_color.o: plt_color.f  pltlib.inc
+> 	$(FC) -c $(FFLAGS)  plt_color.f
+> 
+> plt_font.o: plt_font.f CHAR.INC SLAN.INC MATH.INC SYMB.INC
+> 	$(FC) -c $(FFLAGS)  plt_font.f
+> 
+> plt_util.o: plt_util.f
+> 	$(FC) -c $(FFLAGS)  plt_util.f
+> 
+> plt_3D.o: plt_3D.f
+> 	$(FC) -c $(FFLAGS)  plt_3D.f
+> 
+> plt_old.o: plt_old.f pltlib.inc
+> 	$(FC) -c $(FFLAGS)  plt_old.f
+> 
+> set_subs.o: set_subs.f  pltlib.inc
+> 	$(FC) -c $(FFLAGS)  set_subs.f
+> 
+> gw_subs.o: gw_subs.f  pltlib.inc
+> 	$(FC) -c $(FFLAGS)  gw_subs.f
+> 
+> ps_subs.o: ps_subs.f  pltlib.inc
+> 	$(FC) -c $(FFLAGS)  ps_subs.f
+> 
+> util-ops.o: util-ops.f 
+> 	$(FC) -c $(FFLAGS)  util-ops.f
+> 
+> Xwin.o: Xwin.c
+> 	$(CC) -c $(CFLAGS) Xwin.c
+> Xwin2.o: Xwin2.c
+> 	$(CC) -c $(CFLAGS) Xwin2.c
+> 
+> 
+> ### May need to specify these on a brain-dead make system
+> #.f.o:	$(FC) -c $(FFLAGS) $<
+> #.c.o:	$(CC) -c $(CFLAGS) $<
+> 
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: Makefile.all
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: Makefile.mingw
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/misc: ._Makefile.linux.shared
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/misc: ._makesplitlib
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/misc: ._README
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/misc: ._Readme.absoft
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: Notes
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: Notes-new
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/plt_base.f lookaside-avl3.36.tgz-extracted/Avl/plotlib/plt_base.f
+36c36
+< C     Version 4.48 11/13/17
+---
+> C     Version 4.46 11/28/01
+433a434,438
+> C
+>       if(n.GT.MaxPolyline) then
+>         write(*,*) '*** Error - too many polyline points'
+>         stop
+>       endif
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/plt_color.f lookaside-avl3.36.tgz-extracted/Avl/plotlib/plt_color.f
+152c152
+<         write(*,*)
+---
+>         if(LGW_OPEN) write(*,*)
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/pltlib.inc lookaside-avl3.36.tgz-extracted/Avl/plotlib/pltlib.inc
+30c30
+<       parameter (Nstore_max=100000,Ncolors_max=256,MaxPolyLine=501)
+---
+>       parameter (Nstore_max=100000,Ncolors_max=256,MaxPolyLine=1001)
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: Readme
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: README
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: Readme.colors
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: README.colors
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/version.inc lookaside-avl3.36.tgz-extracted/Avl/plotlib/version.inc
+1c1
+< C     Version 4.50  5 Oct 13
+---
+> C     Version 4.50  6 Mar 13
+Only in source-avl3.36.tgz-extracted/Avl/plotlib/win32: .DS_Store
+Only in source-avl3.36.tgz-extracted/Avl/plotlib/win32: make-dev
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: ._Makefile.NT
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: Makefile.NT
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: mousexy3.f
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: mousexy3win.exe
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: ._Readme-win32
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: Readme-win32
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: ._rgbtbl.h
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: W32win2.c
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: W32win2d.c
+diff -r source-avl3.36.tgz-extracted/Avl/plotlib/win32/W32win3.c lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32/W32win3.c
+77d76
+< *   gwxcursc   - gets graphics cursor position while mouse is pressed
+291c290
+< int      initthread, blockflag;
+---
+> int      initthread;
+324d322
+<     blockflag = 1;
+326,329c324
+<     if (event == NULL) {
+<       blockflag = 0;
+<       return;
+<     }
+---
+>     if (event == NULL) return;
+342d336
+<     blockflag = 0;
+350d343
+<     blockflag = 1;
+353d345
+<       blockflag = 0;
+366d357
+<     blockflag = 0;
+417c408
+<       //        printf("WM_PAINT\n"); 
+---
+> 	/* printf("WM_PAINT\n"); */
+432c423
+<       //	printf("WM_PALETTECHANGED\n");
+---
+> 	printf("WM_PALETTECHANGED\n");
+436d426
+<       //        printf("WM_ACTIVATE\n"); 
+869d858
+<     blockflag  = 0;
+1025,1027d1013
+<   while(blockflag) {
+<        Sleep(5);
+<  }
+1047,1050d1032
+<   while(blockflag) {
+<        Sleep(5);
+<  }
+< 
+1320,1322d1301
+<   while(blockflag) {
+<        Sleep(5);
+<  }
+1323a1303
+> 
+1326c1306
+<      //     printf("GWXCURS eat up event %d\n",type);
+---
+>      /*     printf("eat up event %d\n",type); */
+1328a1309
+> 
+1343a1325
+> 
+1349,1351d1330
+<    while(blockflag) {
+<        Sleep(5);
+<  }
+1355c1334
+<      //     printf("GWXCURSC eat up event %d\n",type); 
+---
+>      printf("GWXCURSC eat up event %d\n",type); 
+1378c1357
+<  
+---
+> 
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: W32win3d.c
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: W32win4.c
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: ._W32win.c~
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: W32win.c
+Only in source-avl3.36.tgz-extracted/Avl/plotlib/win32: W32windbg.c
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: W32win_pthread.c
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib/win32: ._Xdefs.h
+Only in source-avl3.36.tgz-extracted/Avl/plotlib: xwin11
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: Xwin1.c
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: Xwin2.c
+Only in lookaside-avl3.36.tgz-extracted/Avl/plotlib: Xwin.c
+diff -r source-avl3.36.tgz-extracted/Avl/README lookaside-avl3.36.tgz-extracted/Avl/README
+14,19c14,15
+<  % make (displays current make options for system (gfortran,ifort,mingw)
+<  % make (system)          (creates libPlt.a)
+< 
+<  Or if that does not work...
+<  % edit Makefile and config.make for your system (set compiler flags for your system)
+<  % make                   (creates libPlt.a)
+---
+>  % edit Makefile  (set compiler flags for your system)
+>  % make           (creates libPlt.a)
+25,28c21
+<  % make -f Makefile.xxx   (where xxx is gfortran, ifort or mingw)
+< 
+<  Or if that does not work...
+<  % edit Makefile.xxx  (set compiler flags for your system)
+---
+>  % edit Makefile  (set compiler flags for your system)
+30a24
+> 
+32,33d25
+<  % cd bin
+<  % make -f Makefile.xxx avl   (where xxx is gfortran, ifort or mingw)
+35,36c27,28
+<  Or if that does not work...
+<  % edit Makefile.xxx and save as Makefile  (set compiler flags for your system)
+---
+>  % cd bin
+>  % edit Makefile  (set compiler flags for your system)
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: [A
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: asond.run
+diff -r source-avl3.36.tgz-extracted/Avl/runs/b737.avl lookaside-avl3.36.tgz-extracted/Avl/runs/b737.avl
+19c19
+< 12           1.0     26         -1.1
+---
+> 8            1.0     20         -1.2
+116c116
+< 6            1.0     15         -1.1
+---
+> 5            1.0      9         -1.1
+156c156
+< 7            1.0      11          1.0
+---
+> 6            1.0      9           1.0
+189c189
+< 24           1.0 
+---
+> 20           1.0 
+233c233
+< 24           1.0 
+---
+> 20           1.0 
+275c275
+< 24           1.0 
+---
+> 20           1.0 
+314c314
+< 6            1.0      12          0.0
+---
+> 5            1.0      12          0.0
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: b737vt.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: b737vt.mass
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: b737vt.run
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: cos.txt
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: dffuse.dat
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: dfly.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: dfly.eig
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: dfly.mass
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: dflyp.mass
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: dfly.run
+diff -r source-avl3.36.tgz-extracted/Avl/runs/ellipg.avl lookaside-avl3.36.tgz-extracted/Avl/runs/ellipg.avl
+8,13c8,13
+< !IYsym   IZsym   Zsym
+<  1       0       0.
+< !Sref    Cref    Bref
+< 0.15708  0.07854  2.0
+< !Xref    Yref    Zref
+< 0.025    0.0      0.0
+---
+> !IYsym   IZsym     Zsym
+>  1       0         0.
+> !Sref    Cref      Bref
+> 0.314159 0.159155  2.0
+> !Xref    Yref      Zref
+> 0.025    0.0        0.0
+22c22
+< 1.0    1.0    1.0
+---
+> 2.0    1.0    1.0
+26a27,29
+> ANGLE
+> 1.0
+> 
+29c32
+< -0.1000   0.000  0.000   0.1000   0.    2         0.0  
+---
+> -0.1000   0.00   0.000   0.1000   0.    2         0.0  
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: fb.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: fin0.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: fin1.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: fin2.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: fin3.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: fin.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: foot.dat
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: gap.txt
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: grid.txt
+diff -r source-avl3.36.tgz-extracted/Avl/runs/h.avl lookaside-avl3.36.tgz-extracted/Avl/runs/h.avl
+4,5c4,5
+< 1.333 1.0   2.0       !   Sref   Cref   Bref   reference area, chord, span
+<  0.25 0.0   0.0       !   Xref   Yref   Zref   moment reference location (arb.)
+---
+> 0.8   0.4   2.0       !   Sref   Cref   Bref   reference area, chord, span
+>  0.   0.0   0.0       !   Xref   Yref   Zref   moment reference location (arb.)
+12c12
+< 16  1.0    24  -2.0  ! Nchord   Cspace   Nspan  Sspace
+---
+> 1   1.0    6   1.0  ! Nchord   Cspace   Nspan  Sspace
+14,15d13
+< YDUPLICATE
+< 0.0
+22c20
+<   0.66667  1.0  0.0
+---
+>   1.0  1.0  0.0
+30c28
+<      0.0          0.0        0.0         1.0         0.000 
+---
+>     0.0          -1.0        0.0         0.4         0.000  
+32,33c30,32
+< NACA
+< 2412
+---
+> #-----------------------------
+> SECTION
+>      0.0          0.0        0.0         0.4         0.000 
+35,41d33
+< CONTROL
+< LEflap   1.0  -0.3  0. 0. 0.  1
+< !#-----------------------------
+< !SECTION
+< !    0.0           0.65       1.0         1.0         0.000  
+< !CONTROL
+< !LEflap   1.0  -0.3  0. 0. 0.  1
+44,46c36,37
+<     0.0           1.0        1.0         1.0         0.000  
+< CONTROL
+< LEflap   1.0  -0.3  0. 0. 0.  1
+---
+>     0.0           1.0        0.0         0.4         0.000  
+> 
+Only in source-avl3.36.tgz-extracted/Avl/runs: hers.avl
+Only in source-avl3.36.tgz-extracted/Avl/runs: hers-gp10.avl
+Only in source-avl3.36.tgz-extracted/Avl/runs: hers-gp10-plt.pdf
+diff -r source-avl3.36.tgz-extracted/Avl/runs/hershey.avl lookaside-avl3.36.tgz-extracted/Avl/runs/hershey.avl
+4c4
+< 0.3   0.15  2.0       !   Sref   Cref   Bref   reference area, chord, span
+---
+> 0.04  0.2   2.0       !   Sref   Cref   Bref   reference area, chord, span
+12c12,13
+< 1   1.0    25  -2.0  ! Nchord   Cspace   Nspan  Sspace
+---
+> #8   0.0    32   0     ! Nchord   Cspace   Nspan  Sspace
+> 16  1.0     32  -2.0   ! Nchord   Cspace   Nspan  Sspace
+40c41
+<   -0.025          1.0        1.0         0.1         0.000  
+---
+>   -0.05           1.0        1.0         0.2        0.000  
+Only in source-avl3.36.tgz-extracted/Avl/runs: hers-zimg05.avl
+Only in source-avl3.36.tgz-extracted/Avl/runs: hers-zsym05.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: n0010.dat
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: sweep0.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: sweep1.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: sweep2.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: sweep.avl
+diff -r source-avl3.36.tgz-extracted/Avl/runs/sweeptest.avl lookaside-avl3.36.tgz-extracted/Avl/runs/sweeptest.avl
+22a23,25
+> YDUPLICATE
+> 0
+> 
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: taper.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: t.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: testcd.avl
+Only in source-avl3.36.tgz-extracted/Avl/runs: testcdcl-section.avl
+Only in source-avl3.36.tgz-extracted/Avl/runs: testcdcl_surface.avl
+Only in source-avl3.36.tgz-extracted/Avl/runs: ttest0cam.avl
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: uni.txt
+diff -r source-avl3.36.tgz-extracted/Avl/runs/vanilla.avl lookaside-avl3.36.tgz-extracted/Avl/runs/vanilla.avl
+16c16
+< 8            1.0       12         1.0
+---
+> 12           1.0       12         0.5
+35,37d34
+< CONTROL
+< aileron  -1.0   0.75    0.0 0.0 0.0  -1.0
+< 
+43c40
+< 0.2     5.0    1.0     0.6     0.0   0          0
+---
+> 0.10    2.5    0.5     0.8     0.0   0          0
+50a48,60
+> 
+> CONTROL
+> aileron  -1.0   0.75    0.0 0.0 0.0  -1.0
+> 
+> CLAF
+> 1.0
+> #-------------------------------------------------------------
+> SECTION
+> #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+> 0.2     5.0    1.0     0.6     0.0   0          0
+> 
+> AFILE
+> sd7037.dat
+Only in source-avl3.36.tgz-extracted/Avl/runs: vanilla.run
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: vanilla.run1
+Only in source-avl3.36.tgz-extracted/Avl/runs: w04.i
+Only in source-avl3.36.tgz-extracted/Avl/runs: w10.i
+Only in lookaside-avl3.36.tgz-extracted/Avl/runs: wclcd.dat
+Only in source-avl3.36.tgz-extracted/Avl/runs: w-clcde.txt
+diff -r source-avl3.36.tgz-extracted/Avl/session2.txt lookaside-avl3.36.tgz-extracted/Avl/session2.txt
+27c27
+< T          Trefftz-Plane plot  (note assymetric loading from yaw rate and sideslip)
+---
+> T          Trefftz-Plane plot  (note asymmetric loading from yaw rate and sideslip)
+diff -r source-avl3.36.tgz-extracted/Avl/src/aero.f lookaside-avl3.36.tgz-extracted/Avl/src/aero.f
+872d871
+< c        print *,"WROT ",WROT
+diff -r source-avl3.36.tgz-extracted/Avl/src/aic.f lookaside-avl3.36.tgz-extracted/Avl/src/aic.f
+81a82
+> 
+111,112d111
+< C...  Calculate the influence of the REAL vortex
+< 
+113a113,114
+> 
+> C...  Calculate the influence of the REAL vortex
+117a119,123
+> 
+> c            CALL VORVEL(X,Y,Z,LBOUND,
+> c     &           RV1(1,J),RV1(2,J),RV1(3,J),
+> c     &           RV2(1,J),RV2(2,J),RV2(3,J),
+> c     &           BETM,U,V,W)
+492c498
+<       DATA PI4INV  / 0.079577472 /
+---
+>       DATA PI4INV  / 0.079577471545947667884442 /
+575c581
+<       DATA PI4INV  / 0.079577472 /
+---
+>       DATA PI4INV  / 0.079577471545947667884442 /
+608c614,615
+< c        T = (AMAG+BMAG)*(1.0 - ADB/AB) / (AXBSQ + ALSQ*RCORE**2)
+---
+> 
+> c       T = (AMAG+BMAG)*(1.0 - ADB/AB) / (AXBSQ + ALSQ*RCORE**2)
+664c671
+<       DATA PI4INV  / 0.079577472 /
+---
+>       DATA PI4INV  / 0.079577471545947667884442 /
+Only in lookaside-avl3.36.tgz-extracted/Avl/src: ainput_3.35.f
+diff -r source-avl3.36.tgz-extracted/Avl/src/ainput.f lookaside-avl3.36.tgz-extracted/Avl/src/ainput.f
+42,43d41
+<       REAL XASEC(IBX,NWRK), SASEC(IBX,NWRK), TASEC(IBX,NWRK)
+<       REAL CLCDSRF(6)
+48a47,48
+> 
+>       REAL XASEC(IBX,NWRK), TASEC(IBX,NWRK), SASEC(IBX,NWRK)
+114,117d113
+< C---- clear surface polar data
+<       DO L=1, 6
+<         CLCDSRF(L) = 0.0
+<       END DO
+294,297d289
+< C---- clear surface polar data before starting new surface
+<         DO L=1, 6
+<           CLCDSRF(L) = 0.0
+<         END DO
+404,409c396,397
+<         IF(IYSYM.NE.0 .AND. YDUPL.EQ.0.0) THEN
+<          WRITE(*,*) 'ERROR: Redundant y-symmetry specifications...'
+<          WRITE(*,*) '       IYSYM /= 0'
+<          WRITE(*,*) '       YDUPLICATE  0.0'
+<          WRITE(*,*) 'Can use one or the other, but not both.'
+<          STOP
+---
+>         IF(IYSYM.NE.0) THEN
+>          WRITE(*,*)'** Warning: Y-duplicate AND Y-sym specified'
+449,450c437,438
+<       ELSEIF (KEYWD.EQ.'ANGL' .OR. KEYWD.EQ.'AINC') THEN
+< C------ read surface incidence angle change
+---
+>       ELSEIF (KEYWD.EQ.'ANGL') THEN
+> C------ read surface angle change
+453c441
+<          WRITE(*,*)    '** No active surface or body for added incid.'
+---
+>          WRITE(*,*)    '** No active surface or body for rotation'
+568c556
+< C    ...copy polar data from surface polar (if specified)
+---
+> C    ...no polar data
+570c558
+<           CLCDSEC(L,ISEC) = CLCDSRF(L)
+---
+>           CLCDSEC(L,ISEC) = 0.0
+609c597,598
+< C
+---
+> 
+> 
+837d825
+<            IB = IDQ2 + IDQ1 + 1
+863c851
+<         IF(ISURF.EQ.0 .AND. ISEC.EQ.0) THEN
+---
+>         IF(ISURF.EQ.0 .OR. ISEC.EQ.0) THEN
+865c853
+<          WRITE(*,*)    '** No active surface or section for this polar'
+---
+>          WRITE(*,*)    '** No active section for this polar'
+868,871d855
+< C
+< C------ if defining surface before sections store polar for surface
+<         IF(ISURF.NE.0 .AND. ISEC.EQ.0) THEN
+<          WRITE(*,*)    '** Polar data for surface (all sections)'
+883,916c867,869
+< C------ Trick: sum must be 6 so we can get the "other" index
+<          LMID = 6 - (LMIN+LMAX)
+<          CLCDSRF(1) = CLX(LMIN)
+<          CLCDSRF(2) = CDX(LMIN)
+<          CLCDSRF(3) = CLX(LMID)
+<          CLCDSRF(4) = CDX(LMID)
+<          CLCDSRF(5) = CLX(LMAX)
+<          CLCDSRF(6) = CDX(LMAX)
+<          WRITE(*,1700) CLX(LMIN),CDX(LMIN),
+<      &                 CLX(LMID),CDX(LMID),
+<      &                 CLX(LMAX),CDX(LMAX)
+<  1700    FORMAT('    Reading CD(CL) data for surface',
+<      &         /'     CLneg    = ',F8.3,'  CD@CLneg = ',F10.5,
+<      &         /'     CL@CDmin = ',F8.3,'  CDmin    = ',F10.5,
+<      &         /'     CLpos    = ',F8.3,'  CD@CLpos = ',F10.5)
+<          LVISC = .TRUE.
+< C
+< C------ define polar for the current active section
+<         ELSEIF(ISURF.NE.0 .AND. ISEC.NE.0) THEN
+< C
+<          CALL RDLINE(LUN,LINE,NLINE,ILINE)
+<          READ(LINE,*,ERR=990) CLX(1),CDX(1),CLX(2),CDX(2),CLX(3),CDX(3)
+< C
+<          LMAX = 1
+<          LMIN = 1
+<          DO L = 2, 3 
+<            IF(CLX(L).GT.CLX(LMAX)) LMAX = L
+<            IF(CLX(L).LT.CLX(LMIN)) LMIN = L
+<          END DO
+< C
+<          IF(ISEC.GT.1) THEN
+<           IF(CLCDSEC(4,ISEC-1).LE.0.0) THEN
+<            WRITE(*,*) '* AINPUT: previous section defined with no polar' 
+<           ENDIF
+---
+>         IF(ISEC.GT.1) THEN
+>          IF(CLCDSEC(4,ISEC-1).LE.0.0) THEN
+>           WRITE(*,*) '* AINPUT: previous section defined with no polar' 
+917a871
+>         ENDIF
+920,927c874,881
+<          LMID = 6 - (LMIN+LMAX)
+<          CLCDSEC(1,ISEC) = CLX(LMIN)
+<          CLCDSEC(2,ISEC) = CDX(LMIN)
+<          CLCDSEC(3,ISEC) = CLX(LMID)
+<          CLCDSEC(4,ISEC) = CDX(LMID)
+<          CLCDSEC(5,ISEC) = CLX(LMAX)
+<          CLCDSEC(6,ISEC) = CDX(LMAX)
+<          WRITE(*,1701) CLX(LMIN),CDX(LMIN),
+---
+>         LMID = 6 - (LMIN+LMAX)
+>         CLCDSEC(1,ISEC) = CLX(LMIN)
+>         CLCDSEC(2,ISEC) = CDX(LMIN)
+>         CLCDSEC(3,ISEC) = CLX(LMID)
+>         CLCDSEC(4,ISEC) = CDX(LMID)
+>         CLCDSEC(5,ISEC) = CLX(LMAX)
+>         CLCDSEC(6,ISEC) = CDX(LMAX)
+>         WRITE(*,1700) CLX(LMIN),CDX(LMIN),
+930c884
+<  1701    FORMAT('    Reading CD(CL) data for section',
+---
+>  1700   FORMAT('    Reading CD(CL) data for section',
+934,936c888
+<          LVISC = .TRUE.
+< C
+<         ENDIF
+---
+>         LVISC = .TRUE.
+1101d1052
+<       WRITE (*,2019) NCONTROL,NDESIGN
+1109,1115c1060,1063
+<      &       //1X,I4,' Bodies'
+<      &        /1X,I4,' Solid surfaces'
+<      &        /1X,I4,' Strips'
+<      &        /1X,I4,' Vortices')
+<  2019 FORMAT (/1X,I4,' Control variables'
+<      &        /1X,I4,' Design parameters')
+< 
+---
+>      &        /' Nbody =',I4,5X,
+>      &         ' Nsurf =',I4,5X,
+>      &         ' Nstrp =',I4,5X,
+>      &         ' Nvor  =',I4)
+diff -r source-avl3.36.tgz-extracted/Avl/src/amake.f lookaside-avl3.36.tgz-extracted/Avl/src/amake.f
+654,655c654
+<         WRITE(*,*) 'SDUPL: Surface array overflow. Increase NFMAX',
+<      &             ' currently ',NFMAX
+---
+>         WRITE(*,*) 'SDUPL: Surface array overflow. Increase NFMAX.'
+701,702c700
+<           WRITE(*,*) 'SDUPL: Strip array overflow. Increase NSMAX',
+<      &               ' currently ',NSMAX
+---
+>           WRITE(*,*) 'SDUPL: Strip array overflow. Increase NSMAX.'
+753,754c751
+<             WRITE(*,*) 'SDUPL: Vortex array overflow. Increase NVMAX',
+<      &                 ' currently ',NVMAX
+---
+>             WRITE(*,*) 'SDUPL: Vortex array overflow. Increase NVMAX.'
+808,809c805
+<         WRITE(*,*) 'BDUPL: Body array overflow. Increase NBMAX',
+<      &             ' currently ',NBMAX
+---
+>         WRITE(*,*) 'BDUPL: Body array overflow. Increase NBMAX.'
+diff -r source-avl3.36.tgz-extracted/Avl/src/amode.f lookaside-avl3.36.tgz-extracted/Avl/src/amode.f
+32,33c32,33
+<       CHARACTER*256 FNOUT, FNNEW, FNSYS, FNVB 
+<       CHARACTER*80 LINE, COMARG, PROMPT, RTNEW
+---
+>       CHARACTER*80 FNOUT, FNNEW, FNSYS
+>       CHARACTER*80 LINE, FNVB, COMARG, PROMPT, RTNEW
+diff -r source-avl3.36.tgz-extracted/Avl/src/aoper.f lookaside-avl3.36.tgz-extracted/Avl/src/aoper.f
+32,33c32,33
+<       CHARACTER*256 FNOUT, FNDER, FNNEW, FNVB
+<       CHARACTER*80 LINE, COMARG, CRUN, PROMPT, RTNEW
+---
+>       CHARACTER*80 FNOUT, FNDER, FNNEW
+>       CHARACTER*80 LINE, FNVB, COMARG, CRUN, PROMPT, RTNEW
+diff -r source-avl3.36.tgz-extracted/Avl/src/aoutput.f lookaside-avl3.36.tgz-extracted/Avl/src/aoutput.f
+495c495
+<       CHARACTER*256 FNAM
+---
+>       CHARACTER*80 FNAM
+diff -r source-avl3.36.tgz-extracted/Avl/src/asetup.f lookaside-avl3.36.tgz-extracted/Avl/src/asetup.f
+121a122
+> 
+diff -r source-avl3.36.tgz-extracted/Avl/src/atime.f lookaside-avl3.36.tgz-extracted/Avl/src/atime.f
+32,33c32,33
+<       CHARACTER*256 FNOUT, FNNEW, FNSYS, FNVB
+<       CHARACTER*80 LINE, COMARG, PROMPT, RTNEW
+---
+>       CHARACTER*80 FNOUT, FNNEW, FNSYS
+>       CHARACTER*80 LINE, FNVB, COMARG, PROMPT, RTNEW
+diff -r source-avl3.36.tgz-extracted/Avl/src/atpforc.f lookaside-avl3.36.tgz-extracted/Avl/src/atpforc.f
+100,101c100,101
+< ccc        ISURF = NSURFS(JC)
+< ccc        IF(LFLOAD(ISURF)) THEN   !Bug 6/13/14 HHY 
+---
+>         ISURF = NSURFS(JC)
+>         IF(LFLOAD(ISURF)) THEN
+117c117
+< ccc        ENDIF
+---
+>         ENDIF
+285,286d284
+<         DWWAKE(JC) = -(NY*VY + NZ*VZ)
+< C
+287a286
+>         DWWAKE(JC) = -(NY*VY + NZ*VZ)
+289,298c288,294
+<         ISURF = NSURFS(JC)
+<         IF(LFLOAD(ISURF)) THEN   
+< C-------add load from this strip only if it contributes to total load
+<          CLFF = CLFF + 2.0*GAMS(JC)*          DYT    /SREF
+<          CYFF = CYFF - 2.0*GAMS(JC)* DZT             /SREF
+<          CDFF = CDFF +     GAMS(JC)*(DZT*VY - DYT*VZ)/SREF
+<          DO N = 1, NUMAX
+<            CLFF_U(N) = CLFF_U(N) + 2.0*GAMS_U(JC,N)*DYT/SREF
+<            CYFF_U(N) = CYFF_U(N) - 2.0*GAMS_U(JC,N)*DZT/SREF
+<            CDFF_U(N) = CDFF_U(N)
+---
+>         CLFF = CLFF + 2.0*GAMS(JC)*          DYT    /SREF
+>         CYFF = CYFF - 2.0*GAMS(JC)* DZT             /SREF
+>         CDFF = CDFF +     GAMS(JC)*(DZT*VY - DYT*VZ)/SREF
+>         DO N = 1, NUMAX
+>           CLFF_U(N) = CLFF_U(N) + 2.0*GAMS_U(JC,N)*DYT/SREF
+>           CYFF_U(N) = CYFF_U(N) - 2.0*GAMS_U(JC,N)*DZT/SREF
+>           CDFF_U(N) = CDFF_U(N)
+301,305c297,301
+<          ENDDO
+<          DO N = 1, NCONTROL
+<            CLFF_D(N) = CLFF_D(N) + 2.0*GAMS_D(JC,N)*DYT/SREF
+<            CYFF_D(N) = CYFF_D(N) - 2.0*GAMS_D(JC,N)*DZT/SREF
+<            CDFF_D(N) = CDFF_D(N)
+---
+>         ENDDO
+>         DO N = 1, NCONTROL
+>           CLFF_D(N) = CLFF_D(N) + 2.0*GAMS_D(JC,N)*DYT/SREF
+>           CYFF_D(N) = CYFF_D(N) - 2.0*GAMS_D(JC,N)*DZT/SREF
+>           CDFF_D(N) = CDFF_D(N)
+308,312c304,308
+<          ENDDO
+<          DO N = 1, NDESIGN
+<            CLFF_G(N) = CLFF_G(N) + 2.0*GAMS_G(JC,N)*DYT/SREF
+<            CYFF_G(N) = CYFF_G(N) - 2.0*GAMS_G(JC,N)*DZT/SREF
+<            CDFF_G(N) = CDFF_G(N)
+---
+>         ENDDO
+>         DO N = 1, NDESIGN
+>           CLFF_G(N) = CLFF_G(N) + 2.0*GAMS_G(JC,N)*DYT/SREF
+>           CYFF_G(N) = CYFF_G(N) - 2.0*GAMS_G(JC,N)*DZT/SREF
+>           CDFF_G(N) = CDFF_G(N)
+315,316c311
+<          ENDDO
+<         ENDIF
+---
+>         ENDDO
+diff -r source-avl3.36.tgz-extracted/Avl/src/avl.f lookaside-avl3.36.tgz-extracted/Avl/src/avl.f
+29c29
+<       LOGICAL ERROR, LINPFILE
+---
+>       LOGICAL ERROR
+33c33
+<       CHARACTER*256 FNNEW
+---
+>       CHARACTER*80 FNNEW
+57,59d56
+< C---- Flag for having valid input data from file
+<       LINPFILE = .FALSE.
+< C
+86,88d82
+< C----- we have an input dataset to process
+<        LINPFILE = .TRUE.
+< C
+176c170
+<       IF(LINPFILE) CALL PLPARS
+---
+>       CALL PLPARS
+256d249
+<        LINPFILE = .FALSE.
+263,264c256
+< C----- we have an input dataset to process
+<        LINPFILE = .TRUE.
+---
+> C
+diff -r source-avl3.36.tgz-extracted/Avl/src/AVL.INC lookaside-avl3.36.tgz-extracted/Avl/src/AVL.INC
+23,24c23,24
+<      &           NSMAX=500, 
+<      &           NFMAX=100,
+---
+>      &           NSMAX=400, 
+>      &           NFMAX=30,
+55c55
+<       CHARACTER*256 FILDEF, FRNDEF, FMSDEF, FPRDEF, FEVDEF
+---
+>       CHARACTER*80 FILDEF, FRNDEF, FMSDEF, FPRDEF, FEVDEF
+diff -r source-avl3.36.tgz-extracted/Avl/src/dtest.f lookaside-avl3.36.tgz-extracted/Avl/src/dtest.f
+13c13
+<       CHARACTER*256 ARGP1, ARGP2
+---
+>       CHARACTER*80 ARGP1, ARGP2
+diff -r source-avl3.36.tgz-extracted/Avl/src/getvm.f lookaside-avl3.36.tgz-extracted/Avl/src/getvm.f
+28c28
+<       CHARACTER*256 FNAMVB
+---
+>       CHARACTER*72 FNAMVB
+Only in lookaside-avl3.36.tgz-extracted/Avl/src: spacer.f
+Only in lookaside-avl3.36.tgz-extracted/Avl/src: spacer.gp
+Only in lookaside-avl3.36.tgz-extracted/Avl/src: spacer.o
+Only in lookaside-avl3.36.tgz-extracted/Avl: tmp
+diff -r source-avl3.36.tgz-extracted/Avl/version_notes.txt lookaside-avl3.36.tgz-extracted/Avl/version_notes.txt
+483d482
+< 
+485,495c484
+< AVL 3.36   12 Feb 16                   HHY & MD
+< 
+< - Bug (found by Francesco Meschia) which blows up in call to PLPARS if no 
+<   file has been read on startup (how do we miss these things?).  Fix added 
+<   check for valid file read.
+< 
+< - Increased size of character buffers for filenames for use on Windows with
+<   long pathnames (Benjamin Muyl).  Also increased #surfaces to 100 and #strips
+<   to 500
+< 
+< - Increased the number of significant digits in printed CD values in aoutput.f
+---
+> AVL 3.36   3 Feb 17                    MD
+497,498c486,487
+< - Added alternative CLCD specification for SURFACE (was required for each
+<   SECTION). See avl_doc.txt for syntax.
+---
+> - Fixed bug in reading of partial-chord airfoil limits in NACA,AIRF,AFIL,BFIL
+>   keyword lines.  There's no effect on cases which don't have these limits.
+500,501c489
+< - Added instructions for creating an animated GIF from an eigenmode "movie".
+<   See bottom of avl_doc.txt 
+---
+> - Increased the number of significant digits in printed CD values.

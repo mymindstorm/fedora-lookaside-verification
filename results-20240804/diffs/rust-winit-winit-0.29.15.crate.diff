@@ -1,0 +1,10 @@
+Source package : rust-winit
+File name       : winit-0.29.15.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-winit/winit-0.29.15.crate/sha512/eb1ffc450eb4254b45e44d0291e6574247254eea39e0703379c81a14a4ac77429710f5b8e2f25b84c44ad0fa080318cbff12012bcf28b892f56321aa8eb13160/winit-0.29.15.crate
+Source URL      : https://crates.io/api/v1/crates/winit/0.29.15/download#/winit-0.29.15.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-winit-0.29.15.crate: gzip compressed data, was "winit-0.29.15.crate", max compression, original size modulo 2^32 2880000
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-winit-0.29.15.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

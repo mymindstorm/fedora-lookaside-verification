@@ -1,0 +1,10 @@
+Source package : lua-readline
+File name       : readline-3.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/lua-readline/readline-3.3.tar.gz/sha512/a64fb71302c18a8733ac3548da53616532834e07d557bdcd6926d9793ba615b074b74890b18626ac7f5fd75a90f4ad4155e0788daffd9f8f1bb3e5d3931347ce/readline-3.3.tar.gz
+Source URL      : https://pjb.com.au/comp/lua/readline-3.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-readline-3.3.tar.gz: HTML document, ASCII text
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-readline-3.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 71680
+
+
+Only in lookaside-readline-3.3.tar.gz-extracted: readline-3.3

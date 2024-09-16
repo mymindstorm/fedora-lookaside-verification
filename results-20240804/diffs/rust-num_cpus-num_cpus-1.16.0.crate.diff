@@ -1,0 +1,10 @@
+Source package : rust-num_cpus
+File name       : num_cpus-1.16.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-num_cpus/num_cpus-1.16.0.crate/sha512/a75863afc4a563e63c64d06471c7921615355d98011ea9497b1f1a7dac2bdfc876509136018e8062ac38575ccf476a196d1fd9231e09e90017333bbf2df4615d/num_cpus-1.16.0.crate
+Source URL      : https://crates.io/api/v1/crates/num_cpus/1.16.0/download#/num_cpus-1.16.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-num_cpus-1.16.0.crate: gzip compressed data, was "num_cpus-1.16.0.crate", max compression, original size modulo 2^32 85504
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-num_cpus-1.16.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

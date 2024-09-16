@@ -1,0 +1,512 @@
+Source package : jitterentropy
+File name       : jitterentropy-library-3.5.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jitterentropy/jitterentropy-library-3.5.0.tar.gz/sha512/0f02777e9f2b274ed9e4524b207c3116bb4fd7d966ad757c64f7d90386dc6e380ea8b19121390ac95c3c4e777590bfa6ee21c5435469a98603fd2e77f9d27eee/jitterentropy-library-3.5.0.tar.gz
+Source URL      : https://github.com/smuellerDD/jitterentropy-library/archive/v3.5.0/jitterentropy-library-3.5.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-jitterentropy-library-3.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 450560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-jitterentropy-library-3.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 450560
+
+
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/arch/jitterentropy-base-power.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/arch/jitterentropy-base-power.h
+4c4
+<  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2024
+---
+>  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2022
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/arch/jitterentropy-base-s390.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/arch/jitterentropy-base-s390.h
+4c4
+<  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2024
+---
+>  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2022
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/arch/jitterentropy-base-windows.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/arch/jitterentropy-base-windows.h
+4c4
+<  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2024
+---
+>  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2022
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/arch/jitterentropy-base-x86.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/arch/jitterentropy-base-x86.h
+4c4
+<  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2024
+---
+>  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2022
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/CHANGES.md lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/CHANGES.md
+4,6d3
+<  * add compile time option to allow configuring a mask to reduce the size of
+<    the time stamp used for the APT
+< 
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/doc/jitterentropy.3 lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/doc/jitterentropy.3
+1c1
+< .\" Copyright (c) 2013 - 2024 by Stephan Mueller (smueller@chronox.de)
+---
+> .\" Copyright (c) 2013 - 2022 by Stephan Mueller (smueller@chronox.de)
+Only in source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0: .gitignore
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/jitterentropy-base-user.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/jitterentropy-base-user.h
+4c4
+<  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2024
+---
+>  * Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2022
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/jitterentropy.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/jitterentropy.h
+4c4
+<  * Copyright Stephan Mueller <smueller@chronox.de>, 2014 - 2024
+---
+>  * Copyright Stephan Mueller <smueller@chronox.de>, 2014 - 2022
+97,116d96
+< /*
+<  * Mask specifying the number of bits of the raw entropy data of the time delta
+<  * value used for the APT.
+<  *
+<  * This value implies that for the APT, only the low bits specified by
+<  * JENT_APT_MASK are taken as suggested by IG D.K resolution 22. The mask is
+<  * applied to a time stamp where the GCD is already applied and thus no
+<  * "non-moving" low-order bits are present. The smaller the mask, the more
+<  * sensitive the APT becomes, i.e. it becomes more likely that the APT flags
+<  * an health error as masked out higher bits that may provide entropy are
+<  * ignored. Yet, it is disputed that masking the time stamp is helpful.
+<  *
+<  * IG D.K may suggest a mask value of 0xff as the analysis of the raw entropy
+<  * data with the SP800-90B tool truncates the time delta to 8 bits.
+<  *
+<  * Due to the disputed nature of the mask, the default value is set such
+<  * that no data is maked out.
+<  */
+< #define JENT_APT_MASK		(UINT64_C(0xffffffffffffffff))
+< 
+127,128c107,108
+< #define JENT_SHA3_256_SIZE_DIGEST_BITS	256
+< #define JENT_SHA3_256_SIZE_DIGEST	(JENT_SHA3_256_SIZE_DIGEST_BITS >> 3)
+---
+> #define SHA3_256_SIZE_DIGEST_BITS	256
+> #define SHA3_256_SIZE_DIGEST		(SHA3_256_SIZE_DIGEST_BITS >> 3)
+198c178
+< #define DATA_SIZE_BITS (JENT_SHA3_256_SIZE_DIGEST_BITS)
+---
+> #define DATA_SIZE_BITS (SHA3_256_SIZE_DIGEST_BITS)
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/LICENSE lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/LICENSE
+1c1
+< Copyright (C) 2017 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+> Copyright (C) 2017 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/README.md lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/README.md
+13c13
+< http://www.chronox.de/jent . This documentation also covers the full
+---
+> http://www.chronox.de/jent.html . This documentation also covers the full
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-base.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-base.c
+4c4
+<  * Copyright Stephan Mueller <smueller@chronox.de>, 2014 - 2024
+---
+>  * Copyright Stephan Mueller <smueller@chronox.de>, 2014 - 2022
+498c498
+< 	if (jent_sha3_alloc(&entropy_collector->hash_state))
+---
+> 	if (sha3_alloc(&entropy_collector->hash_state))
+502c502
+< 	jent_sha3_256_init(entropy_collector->hash_state);
+---
+> 	sha3_256_init(entropy_collector->hash_state);
+544c544
+< 		jent_sha3_dealloc(entropy_collector->hash_state);
+---
+> 		sha3_dealloc(entropy_collector->hash_state);
+586c586
+< 		jent_sha3_dealloc(entropy_collector->hash_state);
+---
+> 		sha3_dealloc(entropy_collector->hash_state);
+742c742
+< 	if (jent_sha3_tester())
+---
+> 	if (sha3_tester())
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-base.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-base.h
+2c2
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-gcd.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-gcd.c
+3,4c3,4
+<  * Copyright (C) 2021 - 2024, Joshua E. Hill <josh@keypair.us>
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Joshua E. Hill <josh@keypair.us>
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-gcd.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-gcd.h
+2c2
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-health.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-health.c
+3,4c3,4
+<  * Copyright (C) 2021 - 2024, Joshua E. Hill <josh@keypair.us>
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Joshua E. Hill <josh@keypair.us>
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+337,338d336
+< 	current_delta &= JENT_APT_MASK;
+< 
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-health.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-health.h
+2c2
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-internal.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-internal.h
+4c4
+<  * Copyright Stephan Mueller <smueller@chronox.de>, 2014 - 2024
+---
+>  * Copyright Stephan Mueller <smueller@chronox.de>, 2014 - 2022
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-noise.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-noise.c
+3c3
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+104c104
+< 	uint8_t intermediary[JENT_SHA3_256_SIZE_DIGEST];
+---
+> 	uint8_t intermediary[SHA3_256_SIZE_DIGEST];
+117c117
+< 	jent_sha3_256_init(&ctx);
+---
+> 	sha3_256_init(&ctx);
+140,152c140,152
+< 		jent_sha3_update(&ctx, intermediary, sizeof(intermediary));
+< 		jent_sha3_update(&ctx, (uint8_t *)&ec->rct_count,
+< 				 sizeof(ec->rct_count));
+< 		jent_sha3_update(&ctx, (uint8_t *)&ec->apt_cutoff,
+< 				 sizeof(ec->apt_cutoff));
+< 		jent_sha3_update(&ctx, (uint8_t *)&ec->apt_observations,
+< 				 sizeof(ec->apt_observations));
+< 		jent_sha3_update(&ctx, (uint8_t *)&ec->apt_count,
+< 				 sizeof(ec->apt_count));
+< 		jent_sha3_update(&ctx,(uint8_t *) &ec->apt_base,
+< 				 sizeof(ec->apt_base));
+< 		jent_sha3_update(&ctx, (uint8_t *)&j, sizeof(uint64_t));
+< 		jent_sha3_final(&ctx, intermediary);
+---
+> 		sha3_update(&ctx, intermediary, sizeof(intermediary));
+> 		sha3_update(&ctx, (uint8_t *)&ec->rct_count,
+> 			    sizeof(ec->rct_count));
+> 		sha3_update(&ctx, (uint8_t *)&ec->apt_cutoff,
+> 			    sizeof(ec->apt_cutoff));
+> 		sha3_update(&ctx, (uint8_t *)&ec->apt_observations,
+> 			    sizeof(ec->apt_observations));
+> 		sha3_update(&ctx, (uint8_t *)&ec->apt_count,
+> 			    sizeof(ec->apt_count));
+> 		sha3_update(&ctx,(uint8_t *) &ec->apt_base,
+> 			    sizeof(ec->apt_base));
+> 		sha3_update(&ctx, (uint8_t *)&j, sizeof(uint64_t));
+> 		sha3_final(&ctx, intermediary);
+159c159
+< 	jent_sha3_update(ec->hash_state, intermediary, sizeof(intermediary));
+---
+> 	sha3_update(ec->hash_state, intermediary, sizeof(intermediary));
+170,173c170,171
+< 	if (!stuck) {
+< 		jent_sha3_update(ec->hash_state, (uint8_t *)&time,
+< 				 sizeof(uint64_t));
+< 	}
+---
+> 	if (!stuck)
+> 		sha3_update(ec->hash_state, (uint8_t *)&time, sizeof(uint64_t));
+175c173
+< 	jent_memset_secure(&ctx, JENT_SHA_MAX_CTX_SIZE);
+---
+> 	jent_memset_secure(&ctx, SHA_MAX_CTX_SIZE);
+411c409
+< 	uint8_t jent_block[JENT_SHA3_256_SIZE_DIGEST];
+---
+> 	uint8_t jent_block[SHA3_256_SIZE_DIGEST];
+413c411
+< 	BUILD_BUG_ON(JENT_SHA3_256_SIZE_DIGEST != (DATA_SIZE_BITS / 8));
+---
+> 	BUILD_BUG_ON(SHA3_256_SIZE_DIGEST != (DATA_SIZE_BITS / 8));
+416c414
+< 	jent_sha3_final(ec->hash_state, jent_block);
+---
+> 	sha3_final(ec->hash_state, jent_block);
+424c422
+< 	jent_sha3_update(ec->hash_state, jent_block, sizeof(jent_block));
+---
+> 	sha3_update(ec->hash_state, jent_block, sizeof(jent_block));
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-noise.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-noise.h
+2c2
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-sha3.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-sha3.c
+3c3
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+61c61
+< static inline void jent_keccakp_theta(uint64_t s[25])
+---
+> static inline void keccakp_theta(uint64_t s[25])
+111c111
+< static inline void jent_keccakp_rho(uint64_t s[25])
+---
+> static inline void keccakp_rho(uint64_t s[25])
+144c144
+< static inline void jent_keccakp_pi(uint64_t s[25])
+---
+> static inline void keccakp_pi(uint64_t s[25])
+176c176
+< static inline void jent_keccakp_chi(uint64_t s[25])
+---
+> static inline void keccakp_chi(uint64_t s[25])
+223c223
+< static const uint64_t jent_keccakp_iota_vals[] = {
+---
+> static const uint64_t keccakp_iota_vals[] = {
+234c234
+< static inline void jent_keccakp_iota(uint64_t s[25], unsigned int round)
+---
+> static inline void keccakp_iota(uint64_t s[25], unsigned int round)
+236c236
+< 	s[0] ^= jent_keccakp_iota_vals[round];
+---
+> 	s[0] ^= keccakp_iota_vals[round];
+239c239
+< static inline void jent_keccakp_1600(uint64_t s[25])
+---
+> static inline void keccakp_1600(uint64_t s[25])
+244,248c244,248
+< 		jent_keccakp_theta(s);
+< 		jent_keccakp_rho(s);
+< 		jent_keccakp_pi(s);
+< 		jent_keccakp_chi(s);
+< 		jent_keccakp_iota(s, round);
+---
+> 		keccakp_theta(s);
+> 		keccakp_rho(s);
+> 		keccakp_pi(s);
+> 		keccakp_chi(s);
+> 		keccakp_iota(s, round);
+254c254
+< static inline void jent_sha3_init(struct jent_sha_ctx *ctx)
+---
+> static inline void sha3_init(struct sha_ctx *ctx)
+263c263
+< void jent_sha3_256_init(struct jent_sha_ctx *ctx)
+---
+> void sha3_256_init(struct sha_ctx *ctx)
+265,268c265,268
+< 	jent_sha3_init(ctx);
+< 	ctx->r = JENT_SHA3_256_SIZE_BLOCK;
+< 	ctx->rword = JENT_SHA3_256_SIZE_BLOCK / sizeof(uint64_t);
+< 	ctx->digestsize = JENT_SHA3_256_SIZE_DIGEST;
+---
+> 	sha3_init(ctx);
+> 	ctx->r = SHA3_256_SIZE_BLOCK;
+> 	ctx->rword = SHA3_256_SIZE_BLOCK / sizeof(uint64_t);
+> 	ctx->digestsize = SHA3_256_SIZE_DIGEST;
+271,272c271
+< static inline void jent_sha3_fill_state(struct jent_sha_ctx *ctx,
+< 					const uint8_t *in)
+---
+> static inline void sha3_fill_state(struct sha_ctx *ctx, const uint8_t *in)
+282c281
+< void jent_sha3_update(struct jent_sha_ctx *ctx, const uint8_t *in, size_t inlen)
+---
+> void sha3_update(struct sha_ctx *ctx, const uint8_t *in, size_t inlen)
+311,312c310,311
+< 		jent_sha3_fill_state(ctx, ctx->partial);
+< 		jent_keccakp_1600(ctx->state);
+---
+> 		sha3_fill_state(ctx, ctx->partial);
+> 		keccakp_1600(ctx->state);
+317,318c316,317
+< 		jent_sha3_fill_state(ctx, in);
+< 		jent_keccakp_1600(ctx->state);
+---
+> 		sha3_fill_state(ctx, in);
+> 		keccakp_1600(ctx->state);
+325c324
+< void jent_sha3_final(struct jent_sha_ctx *ctx, uint8_t *digest)
+---
+> void sha3_final(struct sha_ctx *ctx, uint8_t *digest)
+343,344c342,343
+< 	jent_sha3_fill_state(ctx, ctx->partial);
+< 	jent_keccakp_1600(ctx->state);
+---
+> 	sha3_fill_state(ctx, ctx->partial);
+> 	keccakp_1600(ctx->state);
+358c357
+< 	jent_sha3_init(ctx);
+---
+> 	sha3_init(ctx);
+361c360
+< int jent_sha3_tester(void)
+---
+> int sha3_tester(void)
+371c370
+< 	uint8_t act[JENT_SHA3_256_SIZE_DIGEST] = { 0 };
+---
+> 	uint8_t act[SHA3_256_SIZE_DIGEST] = { 0 };
+374,376c373,375
+< 	jent_sha3_256_init(&ctx);
+< 	jent_sha3_update(&ctx, msg_256, 3);
+< 	jent_sha3_final(&ctx, act);
+---
+> 	sha3_256_init(&ctx);
+> 	sha3_update(&ctx, msg_256, 3);
+> 	sha3_final(&ctx, act);
+378c377
+< 	for (i = 0; i < JENT_SHA3_256_SIZE_DIGEST; i++) {
+---
+> 	for (i = 0; i < SHA3_256_SIZE_DIGEST; i++) {
+386c385
+< int jent_sha3_alloc(void **hash_state)
+---
+> int sha3_alloc(void **hash_state)
+390c389
+< 	tmp = jent_zalloc(JENT_SHA_MAX_CTX_SIZE);
+---
+> 	tmp = jent_zalloc(SHA_MAX_CTX_SIZE);
+399c398
+< void jent_sha3_dealloc(void *hash_state)
+---
+> void sha3_dealloc(void *hash_state)
+403c402
+< 	jent_zfree(ctx, JENT_SHA_MAX_CTX_SIZE);
+---
+> 	jent_zfree(ctx, SHA_MAX_CTX_SIZE);
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-sha3.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-sha3.h
+2c2
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+30,33c30,32
+< #define JENT_SHA3_SIZE_BLOCK(bits)	((1600 - 2 * bits) >> 3)
+< #define JENT_SHA3_256_SIZE_BLOCK                                               \
+< 	JENT_SHA3_SIZE_BLOCK(JENT_SHA3_256_SIZE_DIGEST_BITS)
+< #define JENT_SHA3_MAX_SIZE_BLOCK	JENT_SHA3_256_SIZE_BLOCK
+---
+> #define SHA3_SIZE_BLOCK(bits)	((1600 - 2 * bits) >> 3)
+> #define SHA3_256_SIZE_BLOCK	SHA3_SIZE_BLOCK(SHA3_256_SIZE_DIGEST_BITS)
+> #define SHA3_MAX_SIZE_BLOCK	SHA3_256_SIZE_BLOCK
+35c34
+< struct jent_sha_ctx {
+---
+> struct sha_ctx {
+41c40
+< 	uint8_t partial[JENT_SHA3_MAX_SIZE_BLOCK];
+---
+> 	uint8_t partial[SHA3_MAX_SIZE_BLOCK];
+44c43
+< #define JENT_SHA_MAX_CTX_SIZE	(sizeof(struct jent_sha_ctx))
+---
+> #define SHA_MAX_CTX_SIZE	(sizeof(struct sha_ctx))
+46c45
+< 	struct jent_sha_ctx name
+---
+> 	struct sha_ctx name
+48,54c47,52
+< void jent_sha3_256_init(struct jent_sha_ctx *ctx);
+< void jent_sha3_update(struct jent_sha_ctx *ctx, const uint8_t *in,
+< 		      size_t inlen);
+< void jent_sha3_final(struct jent_sha_ctx *ctx, uint8_t *digest);
+< int jent_sha3_alloc(void **hash_state);
+< void jent_sha3_dealloc(void *hash_state);
+< int jent_sha3_tester(void);
+---
+> void sha3_256_init(struct sha_ctx *ctx);
+> void sha3_update(struct sha_ctx *ctx, const uint8_t *in, size_t inlen);
+> void sha3_final(struct sha_ctx *ctx, uint8_t *digest);
+> int sha3_alloc(void **hash_state);
+> void sha3_dealloc(void *hash_state);
+> int sha3_tester(void);
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-timer.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-timer.c
+3c3
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-timer.h lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/src/jitterentropy-timer.h
+2c2
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/gcd/gcd.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/gcd/gcd.c
+2c2
+<  * Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/gcd/Makefile lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/gcd/Makefile
+2c2
+< # Copyright (C) 2021 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+> # Copyright (C) 2021 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_restart_kernelspace/boottime_test_record.sh lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_restart_kernelspace/boottime_test_record.sh
+3c3
+< # Copyright (C) 2023 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+> # Copyright (C) 2023, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_runtime_kernelspace/attic/jitterentropy-foldtime.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_runtime_kernelspace/attic/jitterentropy-foldtime.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_runtime_kernelspace/attic/jitterentropy-lfsrtime.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_runtime_kernelspace/attic/jitterentropy-lfsrtime.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_runtime_kernelspace/getrawentropy.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_runtime_kernelspace/getrawentropy.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_runtime_kernelspace/LICENSE lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_runtime_kernelspace/LICENSE
+1c1
+< Copyright (C) 2016 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+> Copyright (C) 2016 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy-foldtime.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy-foldtime.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy-hashtime.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy-hashtime.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy-lfsrtime.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy-lfsrtime.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy-rng.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy-rng.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/LICENSE lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/LICENSE
+1c1
+< Copyright (C) 2016 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+> Copyright (C) 2016 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-restart/extractlsb.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-restart/extractlsb.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-restart-kernel/extractlsb.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-restart-kernel/extractlsb.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-runtime/extractlsb.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-runtime/extractlsb.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-runtime/processdata.sh lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-runtime/processdata.sh
+160,164d159
+< 
+< 	if [ ! -f $infile ]
+< 		continue
+< 	fi
+< 
+diff -r source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-runtime-kernel/extractlsb.c lookaside-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/validation-runtime-kernel/extractlsb.c
+2c2
+<  * Copyright (C) 2019 - 2024, Stephan Mueller <smueller@chronox.de>
+---
+>  * Copyright (C) 2019 - 2022, Stephan Mueller <smueller@chronox.de>
+diff: source-jitterentropy-library-3.5.0.tar.gz-extracted/jitterentropy-library-3.5.0/tests/raw-entropy/recording_userspace/jitterentropy: recursive directory loop

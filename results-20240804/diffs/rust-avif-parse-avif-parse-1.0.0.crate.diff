@@ -1,0 +1,10 @@
+Source package : rust-avif-parse
+File name       : avif-parse-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-avif-parse/avif-parse-1.0.0.crate/sha512/af2321514e7b12d7d51a4662e3c40e07a83f9c76d8db27590b5d46f9a6e43b3bbda739df0ce77615523ac6f9e4d8328f6c5188087eeae718bcbd8f0cf00556df/avif-parse-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/avif-parse/1.0.0/download#/avif-parse-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-avif-parse-1.0.0.crate: gzip compressed data, was "avif-parse-1.0.0.crate", max compression, original size modulo 2^32 106496
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-avif-parse-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-virtio-queue
+File name       : virtio-queue-0.12.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-virtio-queue/virtio-queue-0.12.0.crate/sha512/64ca16606e0e59039e5a826d80a69fadf9bc35ae486a9c0904d59888a121d79e9c5aa67803fa4c98d2b55fea80ae202759eaedb6564732045957690e9ce07781/virtio-queue-0.12.0.crate
+Source URL      : https://crates.io/api/v1/crates/virtio-queue/0.12.0/download#/virtio-queue-0.12.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-virtio-queue-0.12.0.crate: gzip compressed data, was "virtio-queue-0.12.0.crate", max compression, original size modulo 2^32 322048
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-virtio-queue-0.12.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

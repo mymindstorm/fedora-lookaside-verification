@@ -1,0 +1,11 @@
+Source package : jakarta-el
+File name       : el-ri-4.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jakarta-el/el-ri-4.0.0.tar.gz/sha512/fc8e80430c37b3728e4b27a14e583bd3ae790f8968560d4945c802d9893f62e47a3427760b9db3ca59d44da2355d85673aa8aa50c7e91617e5e758c7381e2c10/el-ri-4.0.0.tar.gz
+Source URL      : https://github.com/eclipse-ee4j/el-ri/archive/4.0.0-RELEASE/el-ri-4.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-el-ri-4.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1187840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-el-ri-4.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3718893685 gzip compressed data, reserved method, ASCII, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3718893685
+
+
+Only in lookaside-el-ri-4.0.0.tar.gz-extracted: el-ri-4.0.0-RELEASE
+Only in source-el-ri-4.0.0.tar.gz-extracted: expression-language-4.0.0-RELEASE

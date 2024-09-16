@@ -1,0 +1,10 @@
+Source package : ioport
+File name       : ioport-1.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ioport/ioport-1.2.tar.gz/md5/cb5491eb1b08de5372bbbfbff8c3eada/ioport-1.2.tar.gz
+Source URL      : http://et.redhat.com/~rjones/ioport/files/ioport-1.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ioport-1.2.tar.gz: HTML document, ASCII text, with very long lines (3300)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ioport-1.2.tar.gz: gzip compressed data, last modified: Mon Mar 23 11:26:19 2009, max compression, from Unix, original size modulo 2^32 307200
+
+
+Only in lookaside-ioport-1.2.tar.gz-extracted: ioport-1.2

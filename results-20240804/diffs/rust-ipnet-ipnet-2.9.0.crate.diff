@@ -1,0 +1,10 @@
+Source package : rust-ipnet
+File name       : ipnet-2.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ipnet/ipnet-2.9.0.crate/sha512/8ce429ba2bae53cfdaf8a7d6bf980e10b9dd515446ef3ed4e4e11432043a18e09454260567419818f523bc589fc367194bc345660f2cc808d281db235d3e0b54/ipnet-2.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/ipnet/2.9.0/download#/ipnet-2.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ipnet-2.9.0.crate: gzip compressed data, was "ipnet-2.9.0.crate", max compression, original size modulo 2^32 163328
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ipnet-2.9.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

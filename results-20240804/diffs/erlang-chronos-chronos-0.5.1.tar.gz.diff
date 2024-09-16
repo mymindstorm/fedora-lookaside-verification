@@ -1,0 +1,11 @@
+Source package : erlang-chronos
+File name       : chronos-0.5.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/erlang-chronos/chronos-0.5.1.tar.gz/sha512/110cef8943324c2d8c905ad1fa91dc44fa5c7338de1aa9a07863cc726d692582a761a2d24e681af9a08b23a7e3f7680f2ed818367f4b20ee6497a0b05720207d/chronos-0.5.1.tar.gz
+Source URL      : https://github.com/lehoff/chronos/archive/0.5.1/chronos-0.5.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-chronos-0.5.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1263203601 gzip compressed data, unknown method, ASCII, has CRC, was "", from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 1263203601
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-chronos-0.5.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 61440
+
+
+Only in lookaside-chronos-0.5.1.tar.gz-extracted: chronos-0.5.1
+Only in source-chronos-0.5.1.tar.gz-extracted: kairos-0.5.1

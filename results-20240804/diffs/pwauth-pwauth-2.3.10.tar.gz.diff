@@ -1,0 +1,11 @@
+Source package : pwauth
+File name       : pwauth-2.3.10.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/pwauth/pwauth-2.3.10.tar.gz/md5/4f2e860ebc8f7f7c17743156b03659b0/pwauth-2.3.10.tar.gz
+Source URL      : https://github.com/phokz/pwauth/archive/pwauth-2.3.10.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pwauth-2.3.10.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1567547613 gzip compressed data, unknown method, ASCII, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 1567547613
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pwauth-2.3.10.tar.gz: gzip compressed data, last modified: Wed Oct  5 13:47:49 2011, from Unix, original size modulo 2^32 3218558819 gzip compressed data, reserved method, ASCII, has CRC, extra field, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3218558819
+
+
+Only in lookaside-pwauth-2.3.10.tar.gz-extracted: pwauth-2.3.10
+Only in source-pwauth-2.3.10.tar.gz-extracted: pwauth-pwauth-2.3.10

@@ -1,0 +1,40 @@
+Source package : python-agate
+File name       : agate-1.11.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-agate/agate-1.11.0.tar.gz/sha512/9134987ed32838565e6d599568d5346e90d4623dca0868d13d134d6333d55f64ee4fc67469c691e1e964c735e14482e18615ca79f25108ffaf24c4da50a28ae6/agate-1.11.0.tar.gz
+Source URL      : https://github.com/wireservice/agate/archive/1.11.0/agate-1.11.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-agate-1.11.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1423360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-agate-1.11.0.tar.gz: gzip compressed data, was "agate-1.11.0.tar", last modified: Mon May 27 17:23:09 2024, max compression, original size modulo 2^32 1699840
+
+
+Only in lookaside-agate-1.11.0.tar.gz-extracted/agate-1.11.0: agate.egg-info
+Only in source-agate-1.11.0.tar.gz-extracted/agate-1.11.0: .github
+Only in source-agate-1.11.0.tar.gz-extracted/agate-1.11.0: .gitignore
+Only in lookaside-agate-1.11.0.tar.gz-extracted/agate-1.11.0: PKG-INFO
+Only in source-agate-1.11.0.tar.gz-extracted/agate-1.11.0: .pre-commit-config.yaml
+Only in source-agate-1.11.0.tar.gz-extracted/agate-1.11.0: .readthedocs.yaml
+diff -r source-agate-1.11.0.tar.gz-extracted/agate-1.11.0/setup.cfg lookaside-agate-1.11.0.tar.gz-extracted/agate-1.11.0/setup.cfg
+3,11c3,9
+< per-file-ignores =
+<     # imported but unused, unable to detect undefined names
+<     agate/__init__.py: F401,F403
+<     agate/aggregations/__init__.py: F401
+<     agate/computations/__init__.py: F401
+<     agate/data_types/__init__.py: F401
+<     # module level import not at top of file
+<     agate/tableset/__init__.py: E402
+<     agate/table/__init__.py: E402
+---
+> per-file-ignores = 
+> 	agate/__init__.py: F401,F403
+> 	agate/aggregations/__init__.py: F401
+> 	agate/computations/__init__.py: F401
+> 	agate/data_types/__init__.py: F401
+> 	agate/tableset/__init__.py: E402
+> 	agate/table/__init__.py: E402
+17a16,20
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 

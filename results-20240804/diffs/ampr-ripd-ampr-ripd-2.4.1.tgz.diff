@@ -1,0 +1,25 @@
+Source package : ampr-ripd
+File name       : ampr-ripd-2.4.1.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ampr-ripd/ampr-ripd-2.4.1.tgz/sha512/26a4265a7be8a1d05836d106b5ea1f544739f99f3d4426038191453accb96945bbe12ddb72c4bdd6be7707bab16a15b9c6732d7f13f2ac450d4c6d4048ce7914/ampr-ripd-2.4.1.tgz
+Source URL      : http://www.yo2loj.ro/hamprojects/ampr-ripd-2.4.1.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ampr-ripd-2.4.1.tgz: gzip compressed data, last modified: Tue Dec 14 07:46:50 2021, from Unix, original size modulo 2^32 133120
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ampr-ripd-2.4.1.tgz: gzip compressed data, last modified: Wed Dec  8 13:44:38 2021, from Unix, original size modulo 2^32 81920
+
+
+diff -r source-ampr-ripd-2.4.1.tgz-extracted/ampr-ripd-2.4.1/ampr-ripd.c lookaside-ampr-ripd-2.4.1.tgz-extracted/ampr-ripd-2.4.1/ampr-ripd.c
+118d117
+< #include <stdint.h>
+125c124,125
+< #include <bits/getopt_core.h>
+---
+> #include <fcntl.h>
+> #include <asm/types.h>
+128a129,130
+> #include <sys/stat.h>
+> #include <net/route.h>
+Only in source-ampr-ripd-2.4.1.tgz-extracted/ampr-ripd-2.4.1: COPYING
+Only in source-ampr-ripd-2.4.1.tgz-extracted/ampr-ripd-2.4.1: edgerouter
+Only in source-ampr-ripd-2.4.1.tgz-extracted/ampr-ripd-2.4.1: Makefile.mips
+Only in source-ampr-ripd-2.4.1.tgz-extracted/ampr-ripd-2.4.1: Makefile.mipsel
+Only in source-ampr-ripd-2.4.1.tgz-extracted/ampr-ripd-2.4.1: README.md

@@ -1,0 +1,11 @@
+Source package : php-wikimedia-assert
+File name       : php-wikimedia-assert-0.5.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-wikimedia-assert/php-wikimedia-assert-0.5.1.tar.gz/sha512/38ff93fca750563862c88c4f1cbd66dca794031eab6d2778c435136414e754827c38206ac7c4225e6520a35c756356a176f9563098cf9c5fbcad904d682482a0/php-wikimedia-assert-0.5.1.tar.gz
+Source URL      : https://github.com/wikimedia/Assert/archive/refs/tags/v0.5.1.tar.gz#/php-wikimedia-assert-0.5.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-php-wikimedia-assert-0.5.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 593860758
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-php-wikimedia-assert-0.5.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 40960
+
+
+Only in lookaside-php-wikimedia-assert-0.5.1.tar.gz-extracted: Assert-0.5.1
+Only in source-php-wikimedia-assert-0.5.1.tar.gz-extracted: mediawiki-libs-Assert-0.5.1

@@ -1,0 +1,10 @@
+Source package : rust-serde_with1
+File name       : serde_with-1.14.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-serde_with1/serde_with-1.14.0.crate/sha512/643183189980641b904fd181a699faeebb95ce1eea4805cad8ac72f32a2d47dd4aaaf146f7489c0a062f7867076860cae1aa73e12cb96d542fb0991231a51923/serde_with-1.14.0.crate
+Source URL      : https://crates.io/api/v1/crates/serde_with/1.14.0/download#/serde_with-1.14.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-serde_with-1.14.0.crate: gzip compressed data, was "serde_with-1.14.0.crate", max compression, original size modulo 2^32 700928
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-serde_with-1.14.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

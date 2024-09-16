@@ -1,0 +1,10 @@
+Source package : rust-dissimilar
+File name       : dissimilar-1.0.9.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-dissimilar/dissimilar-1.0.9.crate/sha512/12d9b849b7ed14a4106123ab0a23c96a9f3fffc77eac3d780d0185eed9a6b259f64013460d22a34b01696f947cdee8f12f6a21a7734ef8fa52e9a84c9b60b36a/dissimilar-1.0.9.crate
+Source URL      : https://crates.io/api/v1/crates/dissimilar/1.0.9/download#/dissimilar-1.0.9.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dissimilar-1.0.9.crate: gzip compressed data, was "dissimilar-1.0.9.crate", max compression, original size modulo 2^32 123904
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dissimilar-1.0.9.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : ldapjdk
+File name       : ldap-sdk-5.5.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ldapjdk/ldap-sdk-5.5.0.tar.gz/sha512/8f3502a731cfd8275664bdef5413db2fadcb80252b847cd5835de4ff6ba75e975c65aa4ea068ae18d35ecfeccf086a113c2763cf3160144e12b4c58c9b698d59/ldap-sdk-5.5.0.tar.gz
+Source URL      : https://github.com/dogtagpki/ldap-sdk/archive/v5.5.0/ldap-sdk-5.5.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ldap-sdk-5.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 6420480
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ldap-sdk-5.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 6420480
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-sealed_test
+File name       : sealed_test-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-sealed_test/sealed_test-1.0.0.crate/sha512/df495003ee98d1675035185f6b52d44b57832cab7c85cfac6f795d9ebc9ea92d34fa27482f2fb8b4f046c4e23fa7b6c284aa3c0aa03c229eb7702b6f7c888140/sealed_test-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/sealed_test/1.0.0/download#/sealed_test-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sealed_test-1.0.0.crate: gzip compressed data, was "sealed_test-1.0.0.crate", max compression, original size modulo 2^32 4014837484
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sealed_test-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

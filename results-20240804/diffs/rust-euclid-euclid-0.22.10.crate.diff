@@ -1,0 +1,10 @@
+Source package : rust-euclid
+File name       : euclid-0.22.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-euclid/euclid-0.22.10.crate/sha512/618008ea3120adde78f239c7fbb55ad14d10bdd233f2175b7868e65ba95b6ebebd3ca3218be9c857821dab2dfa8e80b18c9d881ee62842a1d132e70fa49e110d/euclid-0.22.10.crate
+Source URL      : https://crates.io/api/v1/crates/euclid/0.22.10/download#/euclid-0.22.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-euclid-0.22.10.crate: gzip compressed data, was "euclid-0.22.10.crate", max compression, original size modulo 2^32 531456
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-euclid-0.22.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

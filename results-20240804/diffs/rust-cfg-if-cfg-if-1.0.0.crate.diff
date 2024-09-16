@@ -1,0 +1,10 @@
+Source package : rust-cfg-if
+File name       : cfg-if-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cfg-if/cfg-if-1.0.0.crate/sha512/0fb16a8882fd30e86b62c5143b1cb18ab564e84e75bd1f28fd12f24ffdc4a42e0d2e012a99abb606c12efe3c11061ff5bf8e24ab053e550ae083f7d90f6576ff/cfg-if-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/cfg-if/1.0.0/download#/cfg-if-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cfg-if-1.0.0.crate: gzip compressed data, was "cfg-if-1.0.0.crate", max compression, original size modulo 2^32 31744
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cfg-if-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

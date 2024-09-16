@@ -1,0 +1,10 @@
+Source package : rust-rustyline
+File name       : rustyline-13.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rustyline/rustyline-13.0.0.crate/sha512/67221298a09e238bcd9bd7fff5e59512abf2538761b993f05595bd737af1d8f71a0e33dde5565c143d189b5a2a7ae9f02f77324662c6e50f65b93b33949e8cca/rustyline-13.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/rustyline/13.0.0/download#/rustyline-13.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rustyline-13.0.0.crate: gzip compressed data, was "rustyline-13.0.0.crate", max compression, original size modulo 2^32 601600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rustyline-13.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

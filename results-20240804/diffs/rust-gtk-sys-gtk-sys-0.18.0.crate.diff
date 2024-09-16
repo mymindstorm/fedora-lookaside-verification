@@ -1,0 +1,10 @@
+Source package : rust-gtk-sys
+File name       : gtk-sys-0.18.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gtk-sys/gtk-sys-0.18.0.crate/sha512/ff51215d62f45685e3165c86d79dde2fa267068bc82495dade45175f8922b427cee90570c5b972c3897bf76125210c0187838ff764bb314ac79397493c277d4d/gtk-sys-0.18.0.crate
+Source URL      : https://crates.io/api/v1/crates/gtk-sys/0.18.0/download#/gtk-sys-0.18.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gtk-sys-0.18.0.crate: gzip compressed data, was "gtk-sys-0.18.0.crate", max compression, original size modulo 2^32 1399296
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gtk-sys-0.18.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

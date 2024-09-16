@@ -1,0 +1,10 @@
+Source package : rust-cargo-insta
+File name       : cargo-insta-1.39.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cargo-insta/cargo-insta-1.39.0.crate/sha512/a4e27193c3bdb2a1193f241ae316a29e332ed57160b5dd6399839f38b2cc1f66358e1218a3cdccf84f4845df18b74fd871a2ef37ef5ddecdfc1b4c6f70e244e7/cargo-insta-1.39.0.crate
+Source URL      : https://crates.io/api/v1/crates/cargo-insta/1.39.0/download#/cargo-insta-1.39.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cargo-insta-1.39.0.crate: gzip compressed data, was "cargo-insta-1.39.0.crate", max compression, original size modulo 2^32 121344
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cargo-insta-1.39.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

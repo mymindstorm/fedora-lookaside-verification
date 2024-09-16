@@ -1,0 +1,14 @@
+Source package : python-dirhash
+File name       : dirhash-python-0.4.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-dirhash/dirhash-python-0.4.0.tar.gz/sha512/de07cca3f3979acd7aa6eb8f2a56ca641a6097880e50c83dcc236cad2faeed6caefebbf4121d835d85773086e3e81d1126924e66b9e011bbb6e5f748b239b98e/dirhash-python-0.4.0.tar.gz
+Source URL      : https://github.com/andhus/dirhash-python/archive/v0.4.0/dirhash-python-0.4.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dirhash-python-0.4.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 163840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dirhash-python-0.4.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 163840
+
+
+diff -r source-dirhash-python-0.4.0.tar.gz-extracted/dirhash-python-0.4.0/src/dirhash/_version.py lookaside-dirhash-python-0.4.0.tar.gz-extracted/dirhash-python-0.4.0/src/dirhash/_version.py
+30c30
+<     git_refnames = " (tag: v0.4.0)"
+---
+>     git_refnames = " (HEAD -> master, tag: v0.4.0)"

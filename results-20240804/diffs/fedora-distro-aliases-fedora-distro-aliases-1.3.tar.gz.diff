@@ -1,0 +1,11 @@
+Source package : fedora-distro-aliases
+File name       : fedora-distro-aliases-1.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/fedora-distro-aliases/fedora-distro-aliases-1.3.tar.gz/sha512/c37c144bc651c12c4faa0d927aec7afc5be0ed5d77c9913a0d6738830f08a91d02e9e78c3719dc07b6111d9fcaae53afdea738ac192d96ef30e8d0255429caf7/fedora-distro-aliases-1.3.tar.gz
+Source URL      : https://github.com/rpm-software-management/fedora-distro-aliases/archive/fedora-distro-aliases-1.3-1/fedora-distro-aliases-1.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-fedora-distro-aliases-1.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2805018410
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-fedora-distro-aliases-1.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 71680
+
+
+Only in lookaside-fedora-distro-aliases-1.3.tar.gz-extracted: fedora-distro-aliases-1.3
+Only in source-fedora-distro-aliases-1.3.tar.gz-extracted: fedora-distro-aliases-fedora-distro-aliases-1.3-1

@@ -1,0 +1,216 @@
+Source package : rng-tools
+File name       : rng-tools-6.17.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rng-tools/rng-tools-6.17.tar.gz/sha512/32d2d18b9ff13976f6af0011d89fe962fac41761e66eeb24a54f372c7068c8f665537aab6b396e432954d52101b56cd73ac27d27f6a59937d48fc549d9b71421/rng-tools-6.17.tar.gz
+Source URL      : https://github.com/nhorman/rng-tools/archive/v6.17/rng-tools-6.17.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rng-tools-6.17.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 307200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rng-tools-6.17.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 315463582 gzip compressed data, reserved method, has CRC, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 315463582
+
+
+Only in source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17: .cvsignore
+Only in source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17: .gitignore
+Only in source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17: .gitmodules
+diff -r source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/rdrand_asm.S lookaside-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/rdrand_asm.S
+22,25c22,42
+< #define ENTRY(x)	  \
+< 	.balign	64	; \
+< 	.globl	x	; \
+< x:
+---
+> /* Add Intel CET IBT instrumentation */
+> #if defined __CET__ && (__CET__ & 1)
+> #ifdef __x86_64__
+> 	#define ENTRY(x)	  \
+> 		.balign	64	; \
+> 		.globl	x	; \
+> 	x:			  \
+> 		endbr64
+> #elif defined(__i386__)
+> 	#define ENTRY(x)	  \
+> 		.balign	64	; \
+> 		.globl	x	; \
+> 	x:			  \
+> 		endbr32
+> #endif /* __x86_64__ */
+> #else /* __CET__ */
+> 	#define ENTRY(x)	  \
+> 		.balign	64	; \
+> 		.globl	x	; \
+> 	x:
+> #endif /* __CET__ */
+377a395,422
+>  * This is necessary to inform a linker that this code has IBT (Indirect
+>  * Branch Tracking) feature of the Intel CET (Control-flow Enforcement
+>  * Technology) enabled.
+>  * See: https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html#index-fcf-protection
+>  */
+> #if defined __CET__ && (__CET__ & 1)
+> 	.section	.note.gnu.property,"a"
+> 	.align	8
+> 	.long	1f - 0f		/* name length */
+> 	.long	4f - 1f		/* data length */
+> 	/* NT_GNU_PROPERTY_TYPE_0 */
+> 	.long	5		/* note type */
+> 0:
+> 	.string	"GNU"		/* vendor name */
+> 1:
+> 	.align	8
+> 	/* GNU_PROPERTY_X86_FEATURE_1_AND */
+> 	.long	0xc0000002	/* pr_type */
+> 	.long	3f - 2f		/* pr_datasz */
+> 2:
+> 	/* GNU_PROPERTY_X86_FEATURE_1_XXX */
+> 	.long	0x3
+> 3:
+> 	.align	8
+> 4:
+> #endif
+> 
+> /*
+381c426
+<                 .section        .note.GNU-stack,"",%progbits
+---
+> 	.section	.note.GNU-stack,"",%progbits
+diff -r source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/rngd_entsource.c lookaside-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/rngd_entsource.c
+79,80c79,80
+< 	ssize_t r;
+< 	int retval;
+---
+> 	ssize_t r, r2;
+> 	int retval = 0;
+113c113
+< 			retval = write(ent_src->rng_fd,
+---
+> 			r2 = write(ent_src->rng_fd,
+116c116
+< 			if (retval < 0) {
+---
+> 			if (r2 < 0) {
+123c123
+< 			r += retval;
+---
+> 			r += r2;
+132,133c132
+< 		r = (r - TPM_GET_RNG_OVERHEAD);
+< 		if(r <= 0) {
+---
+> 		if (r <= TPM_GET_RNG_OVERHEAD) {
+138a138
+> 		r -= TPM_GET_RNG_OVERHEAD;
+148c148
+< 	retval = 0;
+---
+> 
+150c150
+<     close(ent_src->rng_fd);
+---
+> 	close(ent_src->rng_fd);
+diff -r source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/rngd_jitter.c lookaside-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/rngd_jitter.c
+63a64,66
+> 	if (i == -1)
+> 		return -errno;
+> 
+71c74
+<         /*
+---
+> 	/*
+257a261,262
+> #define MAX_ERRORS_RW 7
+> 
+268c273
+< 	/* STARTUP */
+---
+> 	int maxerr = MAX_ERRORS_RW;
+269a275
+> 	/* STARTUP */
+294c300
+< 		message_entsrc(me->ent_src,LOG_DAEMON|LOG_DEBUG, "Unable to allocate temp buffer on cpu %d\n", me->core_id);
+---
+> 		message_entsrc(me->ent_src, LOG_DAEMON|LOG_DEBUG, "Unable to allocate temp buffer on cpu %d\n", me->core_id);
+312c318
+< 		message_entsrc(me->ent_src,LOG_DAEMON|LOG_DEBUG, "JITTER thread on cpu %d wakes up for refill\n", me->core_id);
+---
+> 		message_entsrc(me->ent_src, LOG_DAEMON|LOG_DEBUG, "JITTER thread on cpu %d wakes up for refill\n", me->core_id);
+318,321d323
+< 		message_entsrc(me->ent_src,LOG_DEBUG|LOG_ERR, "jent_read_entropy time on cpu %d is %.12e sec\n",
+< 			me->core_id, elapsed_time(&start, &end));
+< 		if (ret < 0)
+< 			message_entsrc(me->ent_src,LOG_DAEMON|LOG_DEBUG, "JITTER THREAD_FAILS TO GATHER ENTROPY\n");
+323a326,338
+> 		message_entsrc(me->ent_src, LOG_DEBUG|LOG_ERR, "jent_read_entropy time on cpu %d is %.12e sec\n",
+> 			me->core_id, elapsed_time(&start, &end));
+> 		if (ret < 0) {
+> 			message_entsrc(me->ent_src, LOG_DAEMON|LOG_DEBUG, "JITTER THREAD FAILS TO GATHER ENTROPY\n");
+> 			if (maxerr-- == 0) {
+> 				message_entsrc(me->ent_src, LOG_DAEMON|LOG_ERR, "Too many jitter read errors, bailing out\n");
+> 				goto out_interrupt;
+> 			} else
+> 				/* Read unsuccessful, nothing to write out */
+> 				continue;
+> 		}
+> 		/* Read successful, reset error counter */
+> 		maxerr = MAX_ERRORS_RW;
+328c343
+< 			message_entsrc(me->ent_src,LOG_DAEMON|LOG_DEBUG, "Writing to pipe\n");
+---
+> 			message_entsrc(me->ent_src, LOG_DAEMON|LOG_DEBUG, "Writing to pipe\n");
+330,333c345,359
+<                         if ((ret < 0) && (errno != EBADF))
+< 				message_entsrc(me->ent_src,LOG_DAEMON|LOG_WARNING, "Error on pipe write: %s\n", strerror(errno));
+< 			message_entsrc(me->ent_src,LOG_DAEMON|LOG_DEBUG, "DONE Writing to pipe with return %ld\n", ret);
+< 			written += ret;
+---
+> 			/* Suppress EBADF errors, as those indicate the pipe is closed and we are exiting */
+> 			if ((ret < 0) && (errno != EBADF)) {
+> 				message_entsrc(me->ent_src, LOG_DAEMON|LOG_WARNING, "Error on pipe write: %s\n", strerror(errno));
+> 				if (maxerr-- == 0) {
+> 					message_entsrc(me->ent_src, LOG_DAEMON|LOG_ERR, "Too many pipe errors, bailing out\n");
+> 					goto out_interrupt;
+> 				}
+> 			} else {
+> 				/* Branch ret >= 0 || errno == EBADF */
+> 				if (ret > 0) {
+> 					message_entsrc(me->ent_src, LOG_DAEMON|LOG_DEBUG, "DONE Writing to pipe with return %ld\n", ret);
+> 					written += ret;
+> 					maxerr = MAX_ERRORS_RW;
+> 				}
+> 			}
+335d360
+< 
+448a474,480
+> 	if (i == -1) {
+> 		message_entsrc(ent_src, LOG_DAEMON|LOG_DEBUG, "Failed to get a number of CPUs: %s\n", strerror(errno));
+> 		close(pipefds[1]);
+> 		close(pipefds[0]);
+> 		return 1;
+> 	}
+> 
+473c505
+< 	
+---
+> 
+475a508,517
+> 	if (!tdata || !threads) {
+> 		message_entsrc(ent_src, LOG_DAEMON|LOG_DEBUG, "Failed to allocate memory for %d threads: %s\n",
+> 			num_threads, strerror(errno));
+> 		close(pipefds[0]);
+> 		close(pipefds[1]);
+> 		free(tdata);
+> 		free(threads);
+> 		CPU_FREE(cpus);
+> 		return 1;
+> 	}
+diff -r source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/tests/rngtestjitter.sh lookaside-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/tests/rngtestjitter.sh
+15,17c15
+< ../rngd -f -o /dev/stdout -x hwrng -x rdrand -x tpm -O jitter:use_aes:1 $TIMEOUT | ../rngtest -c 100 --pipe > /dev/null
+< 
+< 
+---
+> ../rngd -f -o /dev/stdout -x hwrng -x rdrand -x tpm -x namedpipe -O jitter:use_aes:1 $TIMEOUT | ../rngtest -c 100 --pipe > /dev/null
+diff -r source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/tests/rngtesturandom.sh lookaside-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/tests/rngtesturandom.sh
+12a13
+> 
+diff -r source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/tests/rngtestzero.sh lookaside-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17/tests/rngtestzero.sh
+11d10
+< 
+Only in source-rng-tools-6.17.tar.gz-extracted/rng-tools-6.17: .travis.yml

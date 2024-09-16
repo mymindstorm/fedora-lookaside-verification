@@ -1,0 +1,14 @@
+Source package : gimp-layer-via-copy-cut
+File name       : layer-via-copy-cut.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/gimp-layer-via-copy-cut/layer-via-copy-cut.zip/md5/8407b941be70215af707672a3bd13110/layer-via-copy-cut.zip
+Source URL      : http://some-gimp-plugins.com/contents/en/extensions/002/layer-via-copy-cut.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-layer-via-copy-cut.zip: HTML document, ASCII text, with very long lines (531), with no line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-layer-via-copy-cut.zip: Zip archive data, at least v2.0 to extract, compression method=store
+
+
+Only in lookaside-layer-via-copy-cut.zip-extracted: changelog.txt
+Only in lookaside-layer-via-copy-cut.zip-extracted: cover.png
+Only in lookaside-layer-via-copy-cut.zip-extracted: info.txt
+Only in lookaside-layer-via-copy-cut.zip-extracted: layer-via-copy-cut.py
+Only in lookaside-layer-via-copy-cut.zip-extracted: Locale

@@ -1,0 +1,10 @@
+Source package : ddupdate
+File name       : ddupdate-0.7.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ddupdate/ddupdate-0.7.1.tar.gz/sha512/edd20d44dd79c356d7ecbf7a3145f3c17681f5d148ed6a9e24407932b31235fed2a01285f024b4f945a64ca62460592b278c8218e6048d7738135045fdadeeb3/ddupdate-0.7.1.tar.gz
+Source URL      : http://github.com/leamas/ddupdate/archive/0.7.1/ddupdate-0.7.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ddupdate-0.7.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4169093017 gzip compressed data, unknown method, was "", has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 4169093017
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ddupdate-0.7.1.tar.gz: gzip compressed data, was "ddupdate-0.7.1.tar", last modified: Wed Apr  6 13:38:08 2022, from Unix, original size modulo 2^32 215040
+
+
+No differences detected!

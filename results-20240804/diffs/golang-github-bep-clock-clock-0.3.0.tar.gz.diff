@@ -1,0 +1,11 @@
+Source package : golang-github-bep-clock
+File name       : clock-0.3.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-bep-clock/clock-0.3.0.tar.gz/sha512/e6f42481853e230d5f469c2549283cb94b67bea978d22299cda2ba7960bf55e366eb57e9383efcf70ac3798fda49496d0f6aa0d2d06ab5f4d56bb6fe32357157/clock-0.3.0.tar.gz
+Source URL      : https://github.com/bep/clock/archive/v0.3.0/clock-0.3.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-clock-0.3.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 296636157 gzip compressed data, reserved method, ASCII, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 296636157
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-clock-0.3.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 30720
+
+
+Only in lookaside-clock-0.3.0.tar.gz-extracted: clock-0.3.0
+Only in source-clock-0.3.0.tar.gz-extracted: clocks-0.3.0

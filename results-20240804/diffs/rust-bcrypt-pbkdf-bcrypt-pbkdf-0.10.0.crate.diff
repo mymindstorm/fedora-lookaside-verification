@@ -1,0 +1,10 @@
+Source package : rust-bcrypt-pbkdf
+File name       : bcrypt-pbkdf-0.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-bcrypt-pbkdf/bcrypt-pbkdf-0.10.0.crate/sha512/857ae23e1996c11e1e7375f18addffd60c6d02972d5856d594f0e03750065481f414addcf0c846e9f65d93c41982ca6fb3a464a4dc13fb56f67ca39e373def34/bcrypt-pbkdf-0.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/bcrypt-pbkdf/0.10.0/download#/bcrypt-pbkdf-0.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-bcrypt-pbkdf-0.10.0.crate: gzip compressed data, was "bcrypt-pbkdf-0.10.0.crate", max compression, original size modulo 2^32 41472
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-bcrypt-pbkdf-0.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

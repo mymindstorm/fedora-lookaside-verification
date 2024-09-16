@@ -1,0 +1,10 @@
+Source package : php-pear-Net-Curl
+File name       : Net_Curl-1.2.5.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-pear-Net-Curl/Net_Curl-1.2.5.tgz/md5/0bb20480301256a7c5a04b4ca7e6f755/Net_Curl-1.2.5.tgz
+Source URL      : http://pear.php.net/get/Net_Curl-1.2.5.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-Net_Curl-1.2.5.tgz: gzip compressed data, was "Net_Curl-1.2.5.tar", last modified: Sat May  3 19:50:29 2008, from Unix, original size modulo 2^32 34816
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-Net_Curl-1.2.5.tgz: gzip compressed data, from Unix, original size modulo 2^32 2655301263 gzip compressed data, unknown method, has CRC, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 2655301263
+
+
+No differences detected!

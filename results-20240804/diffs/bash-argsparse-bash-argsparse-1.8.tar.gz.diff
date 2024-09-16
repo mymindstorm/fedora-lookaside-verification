@@ -1,0 +1,11 @@
+Source package : bash-argsparse
+File name       : bash-argsparse-1.8.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/bash-argsparse/bash-argsparse-1.8.tar.gz/sha512/047c0e9b4bd6e85a46378e29e7d9b0a7aff82fe6699c2530be8fe4381d934cb5149b93f897bae8fa557a513d7dafb955820eb9a725503a1d9b2b50a5e4d80279/bash-argsparse-1.8.tar.gz
+Source URL      : http://argsparse.livna.org/bash-argsparse-1.8.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-bash-argsparse-1.8.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 204800
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-bash-argsparse-1.8.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 204800
+
+
+Only in source-bash-argsparse-1.8.tar.gz-extracted: bash-argsparse-1.8
+Only in lookaside-bash-argsparse-1.8.tar.gz-extracted: bash-argsparse-bash-argsparse-1.8

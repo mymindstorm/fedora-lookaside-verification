@@ -1,0 +1,10 @@
+Source package : rust-gif0.12
+File name       : gif-0.12.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gif0.12/gif-0.12.0.crate/sha512/9cee5c4f68b02252f6214fccabda29087c89cadd8408df4fb6b9479da7958a9759dfc4b13ad2bc7e1447be9050cea6d3757d891b774a7e6fe8c6fd25bca3b74a/gif-0.12.0.crate
+Source URL      : https://crates.io/api/v1/crates/gif/0.12.0/download#/gif-0.12.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gif-0.12.0.crate: gzip compressed data, was "gif-0.12.0.crate", max compression, original size modulo 2^32 759296
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gif-0.12.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,42 @@
+Source package : dirvish
+File name       : dirvish-1.2.1.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/dirvish/dirvish-1.2.1.tgz/md5/892ec9333b19e623880cdb499443c11b/dirvish-1.2.1.tgz
+Source URL      : http://www.dirvish.org/dirvish-1.2.1.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dirvish-1.2.1.tgz: gzip compressed data, last modified: Sat Jan  7 03:26:43 2012, from Unix, original size modulo 2^32 184320
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dirvish-1.2.1.tgz: gzip compressed data, last modified: Wed May 10 17:20:15 2006, from Unix, original size modulo 2^32 3880885455
+
+
+diff -r source-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish.conf.5 lookaside-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish.conf.5
+789c789
+< 	wd { 1 } md { 1\-7 } mo { 1 4 7 10 }	never
+---
+> 	wd { 1 } md { 1\-7 } mo { 1,4,7,10 }	never
+diff -r source-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish-expire.pl lookaside-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish-expire.pl
+5,6c5,6
+< $VERSION = ('$Name: Dirvish-1_2_1 $' =~ /Dirvish/i)
+< 	? ('$Name: Dirvish-1_2_1 $' =~ m/^.*:\s+dirvish-(.*)\s*\$$/i)[0]
+---
+> $VERSION = ('$Name: Dirvish-1_2 $' =~ /Dirvish/i)
+> 	? ('$Name: Dirvish-1_2 $' =~ m/^.*:\s+dirvish-(.*)\s*\$$/i)[0]
+diff -r source-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish-locate.pl lookaside-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish-locate.pl
+3,4c3,4
+< $VERSION = ('$Name: Dirvish-1_2_1 $' =~ /Dirvish/i)
+< 	? ('$Name: Dirvish-1_2_1 $' =~ m/^.*:\s+dirvish-(.*)\s*\$$/i)[0]
+---
+> $VERSION = ('$Name: Dirvish-1_2 $' =~ /Dirvish/i)
+> 	? ('$Name: Dirvish-1_2 $' =~ m/^.*:\s+dirvish-(.*)\s*\$$/i)[0]
+diff -r source-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish.pl lookaside-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish.pl
+4,5c4,5
+< $VERSION = ('$Name: Dirvish-1_2_1 $' =~ /Dirvish/i)
+< 	? ('$Name: Dirvish-1_2_1 $' =~ m/^.*:\s+dirvish-(.*)\s*\$$/i)[0]
+---
+> $VERSION = ('$Name: Dirvish-1_2 $' =~ /Dirvish/i)
+> 	? ('$Name: Dirvish-1_2 $' =~ m/^.*:\s+dirvish-(.*)\s*\$$/i)[0]
+diff -r source-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish-runall.pl lookaside-dirvish-1.2.1.tgz-extracted/dirvish-1.2.1/dirvish-runall.pl
+4,5c4,5
+< $VERSION = ('$Name: Dirvish-1_2_1 $' =~ /Dirvish/i)
+< 	? ('$Name: Dirvish-1_2_1 $' =~ m/^.*:\s+dirvish-(.*)\s*\$$/i)[0]
+---
+> $VERSION = ('$Name: Dirvish-1_2 $' =~ /Dirvish/i)
+> 	? ('$Name: Dirvish-1_2 $' =~ m/^.*:\s+dirvish-(.*)\s*\$$/i)[0]

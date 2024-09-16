@@ -1,0 +1,14 @@
+Source package : python-datalad
+File name       : datalad-1.1.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-datalad/datalad-1.1.2.tar.gz/sha512/cad0d933eb849f6362716bcda2d3dbde0aa87bc215fca414b68c499e338f1f9adfbf3018d2904668c738c89f60c1e47dbef9962a517fcbc4238b2ebf9132be05/datalad-1.1.2.tar.gz
+Source URL      : https://github.com/datalad/datalad/archive/1.1.2/datalad-1.1.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-datalad-1.1.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 5857280
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-datalad-1.1.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 981094686 gzip compressed data, unknown method, has CRC, was "\331\214(\263\225\237\211\343\322\014\3658\3232\214r\007P\207aZ\353\365\024\001\206\246\037lrIR\340l\370\356l\317bH\361\203\003\265\346xp1\226g:\273]M_J<\336\327-\345\245p\217\242}\322j\346\310\215\373\277\266\237\355g\373\331~\266\237\355g\373\331~\266\237\355g\373\331~\266\237\355g\373\271\373\363\377\001\355x\022}", has comment, encrypted, original size modulo 2^32 981094686
+
+
+diff -r source-datalad-1.1.2.tar.gz-extracted/datalad-1.1.2/datalad/_version.py lookaside-datalad-1.1.2.tar.gz-extracted/datalad-1.1.2/datalad/_version.py
+28c28
+<     git_refnames = " (tag: 1.1.2)"
+---
+>     git_refnames = " (HEAD -> maint, tag: 1.1.2)"

@@ -1,0 +1,10 @@
+Source package : rust-kvm-ioctls
+File name       : kvm-ioctls-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-kvm-ioctls/kvm-ioctls-0.17.0.crate/sha512/d27ba8678a3fc4daad2df59ce448c9c06311ce46481bac7fa914611d21f441fc491083abfa60258ad7747b4bbc76dedb70c40a17c32f253698f96d881734fec3/kvm-ioctls-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/kvm-ioctls/0.17.0/download#/kvm-ioctls-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-kvm-ioctls-0.17.0.crate: gzip compressed data, was "kvm-ioctls-0.17.0.crate", max compression, original size modulo 2^32 341504
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-kvm-ioctls-0.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

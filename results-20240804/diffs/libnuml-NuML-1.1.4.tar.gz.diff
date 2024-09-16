@@ -1,0 +1,11 @@
+Source package : libnuml
+File name       : NuML-1.1.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/libnuml/NuML-1.1.4.tar.gz/sha512/07b0ef62d9902c3616a094dd44c78b742886e69498ed01d8ed153aa3085f6abf9ffc7697ad74445bfe0a8cfcb4c24f51674ea01edfece102dbb81d8512a310c4/NuML-1.1.4.tar.gz
+Source URL      : https://github.com/NuML/NuML/archive/50815eb877aaa42bf9428cfa32f6ea33fc101e3f/NuML-1.1.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-NuML-1.1.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4997120
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-NuML-1.1.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4997120
+
+
+Only in lookaside-NuML-1.1.4.tar.gz-extracted: NuML-1.1.4
+Only in source-NuML-1.1.4.tar.gz-extracted: NuML-50815eb877aaa42bf9428cfa32f6ea33fc101e3f

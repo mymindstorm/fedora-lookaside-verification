@@ -1,0 +1,10 @@
+Source package : rust-zmq-sys
+File name       : zmq-sys-0.11.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-zmq-sys/zmq-sys-0.11.0.crate/sha512/eacf60332b3ab93344c8fc97390533a1e79b9eaf899be331399526d7142b0c4455ef556826dfe77b6abf6452c32dd2601f3e47f7569cc784f1938dbd3efa80a0/zmq-sys-0.11.0.crate
+Source URL      : https://crates.io/api/v1/crates/zmq-sys/0.11.0/download#/zmq-sys-0.11.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-zmq-sys-0.11.0.crate: gzip compressed data, was "zmq-sys-0.11.0.crate", max compression, original size modulo 2^32 59392
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-zmq-sys-0.11.0.crate: POSIX tar archive
+
+
+No differences detected!

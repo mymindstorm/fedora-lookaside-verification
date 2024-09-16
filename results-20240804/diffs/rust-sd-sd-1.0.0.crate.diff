@@ -1,0 +1,10 @@
+Source package : rust-sd
+File name       : sd-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-sd/sd-1.0.0.crate/sha512/f1aa5f0f547c61ede1d3550956d732dc6b55b40e9a68b2d12ad221e85953578ccdc47183d232645cd4cad170ef69063a13fb540ea94fdbe097f28ea5dcbcb0bc/sd-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/sd/1.0.0/download#/sd-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sd-1.0.0.crate: gzip compressed data, was "sd-1.0.0.crate", max compression, original size modulo 2^32 124416
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sd-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

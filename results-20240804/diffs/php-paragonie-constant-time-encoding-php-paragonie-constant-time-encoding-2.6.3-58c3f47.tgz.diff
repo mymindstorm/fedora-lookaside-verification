@@ -1,0 +1,15 @@
+Source package : php-paragonie-constant-time-encoding
+File name       : php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-paragonie-constant-time-encoding/php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz/sha512/91ec951ddb263abcf81c427afff570b88d52b30186f920454f23810f0dbafcc3aa44d36ec912d4865db0ab2aed78cf96ac969e9fbf43247a7bb4a95b7eadc6fa/php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz
+Source URL      : https://github.com/paragonie/constant_time_encoding/archive/58c3f47f650c94ec05a151692652a868995d2938.tar.gz#/php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz: gzip compressed data, from Unix, original size modulo 2^32 526312298 gzip compressed data, unknown method, ASCII, has CRC, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 526312298
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz: gzip compressed data, from Unix, original size modulo 2^32 1665229528
+
+
+Only in lookaside-php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz-extracted/constant_time_encoding-58c3f47f650c94ec05a151692652a868995d2938: .gitattributes
+Only in lookaside-php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz-extracted/constant_time_encoding-58c3f47f650c94ec05a151692652a868995d2938: .github
+Only in lookaside-php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz-extracted/constant_time_encoding-58c3f47f650c94ec05a151692652a868995d2938: .gitignore
+Only in lookaside-php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz-extracted/constant_time_encoding-58c3f47f650c94ec05a151692652a868995d2938: phpunit.xml.dist
+Only in lookaside-php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz-extracted/constant_time_encoding-58c3f47f650c94ec05a151692652a868995d2938: psalm.xml
+Only in lookaside-php-paragonie-constant-time-encoding-2.6.3-58c3f47.tgz-extracted/constant_time_encoding-58c3f47f650c94ec05a151692652a868995d2938: tests

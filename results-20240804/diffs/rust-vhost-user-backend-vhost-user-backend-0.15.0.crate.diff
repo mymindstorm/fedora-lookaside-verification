@@ -1,0 +1,10 @@
+Source package : rust-vhost-user-backend
+File name       : vhost-user-backend-0.15.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-vhost-user-backend/vhost-user-backend-0.15.0.crate/sha512/c3fc8e64155a4239d98940030cda8c924b96a4185792f6834c136daa578ef48f6f70da33ef19716bf001eb6cc5a311136ead941d775745fd0a5f066d1c9ad303/vhost-user-backend-0.15.0.crate
+Source URL      : https://crates.io/api/v1/crates/vhost-user-backend/0.15.0/download#/vhost-user-backend-0.15.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-vhost-user-backend-0.15.0.crate: gzip compressed data, was "vhost-user-backend-0.15.0.crate", max compression, original size modulo 2^32 145920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-vhost-user-backend-0.15.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

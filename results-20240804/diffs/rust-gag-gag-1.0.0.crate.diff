@@ -1,0 +1,10 @@
+Source package : rust-gag
+File name       : gag-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gag/gag-1.0.0.crate/sha512/16f540d2075d1c9ede9ba5f579dd03271b38b940422f0cc605f7c72fc972ee0e696ea5e46b05c38b510ae247cca1a12e28c803bdfe835439d6d7f23e32609286/gag-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/gag/1.0.0/download#/gag-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gag-1.0.0.crate: gzip compressed data, was "gag-1.0.0.crate", max compression, original size modulo 2^32 3027915616
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gag-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

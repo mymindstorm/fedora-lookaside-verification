@@ -1,0 +1,10 @@
+Source package : SDL2_gfx
+File name       : SDL2_gfx-1.0.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/SDL2_gfx/SDL2_gfx-1.0.4.tar.gz/sha512/81a100d3c8c3a7c6bd37a23f1290ff10685f8e62fbecd83b0086aae4edc721483e2153cd4219fbd9168f115eea0ea6b25f9be375faf5761f0babdfb1b52fe482/SDL2_gfx-1.0.4.tar.gz
+Source URL      : http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-1.0.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-SDL2_gfx-1.0.4.tar.gz: tar archive
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-SDL2_gfx-1.0.4.tar.gz: gzip compressed data, was "SDL2_gfx-1.0.4.tar", last modified: Sat Feb 24 05:36:39 2018, max compression, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3135731055
+
+
+Only in lookaside-SDL2_gfx-1.0.4.tar.gz-extracted: SDL2_gfx-1.0.4

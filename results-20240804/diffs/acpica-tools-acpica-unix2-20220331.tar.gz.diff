@@ -1,0 +1,10 @@
+Source package : acpica-tools
+File name       : acpica-unix2-20220331.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/acpica-tools/acpica-unix2-20220331.tar.gz/sha512/c606396323dc342ae4c7bab9526b04aca09b00a932363146c1791523962ade0bdb4e40b67ff2a0a246df3ce322592879288c3fcc5fb7a450beb87a6d70c5ef40/acpica-unix2-20220331.tar.gz
+Source URL      : https://acpica.org/sites/acpica/files/acpica-unix2-20220331.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-acpica-unix2-20220331.tar.gz: HTML document, Unicode text, UTF-8 text, with very long lines (638)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-acpica-unix2-20220331.tar.gz: gzip compressed data, last modified: Thu Mar 31 16:38:54 2022, from Unix, original size modulo 2^32 9676800
+
+
+Only in lookaside-acpica-unix2-20220331.tar.gz-extracted: acpica-unix2-20220331

@@ -1,0 +1,10 @@
+Source package : rust-sequoia-sop
+File name       : sequoia-sop-0.35.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-sequoia-sop/sequoia-sop-0.35.0.crate/sha512/35a5089cf1dc0c68b9fc6ab19ef70d93fc79387e59346e78e12b49a9fe78cf4d232c805a3cee49b4996b4a8fb99c261fe611d8b0e791a2adfd5929ebad801427/sequoia-sop-0.35.0.crate
+Source URL      : https://crates.io/api/v1/crates/sequoia-sop/0.35.0/download#/sequoia-sop-0.35.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sequoia-sop-0.35.0.crate: gzip compressed data, was "sequoia-sop-0.35.0.crate", max compression, original size modulo 2^32 164352
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sequoia-sop-0.35.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

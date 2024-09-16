@@ -1,0 +1,10 @@
+Source package : rust-dotenv
+File name       : dotenv-0.15.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-dotenv/dotenv-0.15.0.crate/sha512/5ed02534115937de3ea3e04f1bcbadc6eb96abe2ac548f9f70180d0145209594259f76c82308f5b594ec5138755b64e89cde33a50ac0edd8e3ec1d824c41f4dc/dotenv-0.15.0.crate
+Source URL      : https://crates.io/api/v1/crates/dotenv/0.15.0/download#/dotenv-0.15.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dotenv-0.15.0.crate: gzip compressed data, was "dotenv-0.15.0.crate", max compression, original size modulo 2^32 11723439
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dotenv-0.15.0.crate: POSIX tar archive
+
+
+No differences detected!

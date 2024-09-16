@@ -1,0 +1,10 @@
+Source package : python-pocketlint
+File name       : pocketlint-0.25.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-pocketlint/pocketlint-0.25.tar.gz/sha512/5722b39c508205a815e4ec573686b16ec4722ddbbef76bfc5a1f1f486134507d92a34803753038b2d752877002d4a6f1fcb67da90f3f901cd3a8207639002f0e/pocketlint-0.25.tar.gz
+Source URL      : https://github.com/rhinstaller/pocketlint/archive/0.25/pocketlint-0.25.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pocketlint-0.25.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3196704484 gzip compressed data, reserved method, has CRC, extra field, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3196704484
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pocketlint-0.25.tar.gz: gzip compressed data, was "pocketlint-0.25.tar", last modified: Mon Oct  2 05:48:02 2023, max compression, from Unix, original size modulo 2^32 1144550865
+
+
+No differences detected!

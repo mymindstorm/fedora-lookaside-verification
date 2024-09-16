@@ -1,0 +1,10 @@
+Source package : rust-uu_mkdir
+File name       : uu_mkdir-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uu_mkdir/uu_mkdir-0.0.27.crate/sha512/b5b743c0862a388c49e845e2a225ba684157183cbbc433deeeaa30777c13f1cdf788eb5efd16224273a8086af759094fc596a6c85c0270eb80ce2666c0b14561/uu_mkdir-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uu_mkdir/0.0.27/download#/uu_mkdir-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uu_mkdir-0.0.27.crate: gzip compressed data, was "uu_mkdir-0.0.27.crate", max compression, original size modulo 2^32 31232
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uu_mkdir-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

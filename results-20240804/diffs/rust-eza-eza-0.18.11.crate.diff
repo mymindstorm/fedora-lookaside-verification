@@ -1,0 +1,10 @@
+Source package : rust-eza
+File name       : eza-0.18.11.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-eza/eza-0.18.11.crate/sha512/fc558c25a61db806781f06d4e535c67be14e62c72a1ea80af7452fbbd37a7cbf20796e0d8f0a38509d4ed07d7e4bb1f03a7b79bb273389984d24765cc7ba758a/eza-0.18.11.crate
+Source URL      : https://crates.io/api/v1/crates/eza/0.18.11/download#/eza-0.18.11.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-eza-0.18.11.crate: gzip compressed data, was "eza-0.18.11.crate", max compression, original size modulo 2^32 1935872
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-eza-0.18.11.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

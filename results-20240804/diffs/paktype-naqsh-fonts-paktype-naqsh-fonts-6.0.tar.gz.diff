@@ -1,0 +1,59 @@
+Source package : paktype-naqsh-fonts
+File name       : paktype-naqsh-fonts-6.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/paktype-naqsh-fonts/paktype-naqsh-fonts-6.0.tar.gz/sha512/c865f577ce0c23382946c10bec43d07e15c344b1a4d2f4e775487f62762c1343afeed416f62cf754df2e66660334bc31bf6ed33b8322c17ae51048d687884331/paktype-naqsh-fonts-6.0.tar.gz
+Source URL      : https://sourceforge.net/p/paktype/code/HEAD/tree/Fonts/Release/PakType-Naqsh-6.0.tar.gz?format=raw#/paktype-naqsh-fonts-6.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-paktype-naqsh-fonts-6.0.tar.gz: POSIX tar archive
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-paktype-naqsh-fonts-6.0.tar.gz: gzip compressed data, was "PakType-Release-2020-06-03.tar", last modified: Wed Jun  3 19:06:34 2020, max speed, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 9290240
+
+
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: Features
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: License files
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeAjrak.eot
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeAjrak.svg
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeAjrak.ttf
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeAjrak.woff
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeAjrak.woff2
+Binary files source-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.eot and lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.eot differ
+Only in source-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakType Naqsh Features.pdf
+Only in source-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakType Naqsh License.txt
+diff -r source-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.svg lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.svg
+46a47,58
+>     <glyph glyph-name="NameMe.1536" unicode="&#x644;&#x621;&#x627;" horiz-adv-x="1085" 
+> d="M486.147 1576.91q15.0361 0 63.7529 -18.5518v-84.4619q-11.4277 14.6465 -18.6445 23.9229q-15.0361 18.0635 -44.5068 18.0635q-42.7021 0 -42.7021 -29.293q6.61523 -3.90625 78.1875 -82.0215q24.0576 -26.3633 26.4629 -65.4209v-70.792l-56.5352 2.44141
+> q-12.0293 0.488281 -25.8623 -5.85938q-58.9404 -26.3633 -168.403 -26.3633q-76.9844 0 -102.244 19.5283q23.4561 42.4756 33.6797 63.957q33.0801 -17.0879 72.7744 -17.0879q36.6885 0 96.2305 17.8203q59.543 17.8203 78.1875 17.8203q6.61621 0 12.0293 -1.46484
+> q-5.41309 20.5049 -31.877 28.8047q-29.4707 9.27637 -51.1221 17.5762q-54.1299 20.9932 -54.1299 84.4619q0 41.9873 32.4775 72.2568q37.29 34.6631 102.245 34.6631zM111 -88q-57 116 -75 180q39 -84 108 -167q44 13 98 16q66 3 83 21q33 33 33 139v592q0 40 -33 40
+> q-28 0 -52 -34q-4 3 -5 7l219 254v-890q-24 -87 -30 -99q-20 -40 -79 -58q-56 -17 -206 -20q45 -50 80 -71q65 -39 239 -50q16 -1 31 -1q181 6 244 75q95 104 95 307v1194q0 40 -33 40q-27 0 -51 -33q-2 1 -4 7l225 253v-1449q0 -62 -16 -169q-29 -190 -95 -298
+> q-58 -95 -311 -95q-242 0 -325 78q-47 44 -122 194l-8 16q-52 -24 -78 -66q32 60 56 82q6 3 12 5z" />
+>     <glyph glyph-name="NameMe.1537" unicode="&#xfede;&#x621;&#x627;" horiz-adv-x="1038" 
+> d="M474.147 1319.91q15.0361 0 63.7529 -18.5518v-84.4619q-11.4277 14.6465 -18.6445 23.9229q-15.0361 18.0635 -44.5068 18.0635q-42.7021 0 -42.7021 -29.293q6.61523 -3.90625 78.1875 -82.0215q24.0576 -26.3633 26.4629 -65.4209v-70.792l-56.5352 2.44141
+> q-12.0293 0.488281 -25.8623 -5.85938q-58.9404 -26.3633 -168.403 -26.3633q-76.9844 0 -102.244 19.5283q23.4561 42.4756 33.6797 63.957q33.0801 -17.0879 72.7744 -17.0879q36.6885 0 96.2305 17.8203q59.543 17.8203 78.1875 17.8203q6.61621 0 12.0293 -1.46484
+> q-5.41309 20.5049 -31.877 28.8047q-29.4707 9.27637 -51.1221 17.5762q-54.1299 20.9932 -54.1299 84.4619q0 41.9873 32.4775 72.2568q37.29 34.6631 102.245 34.6631zM144 -76q47 14 98 17q66 3 83 21q33 33 33 139v592q0 40 -33 40q-28 0 -52 -34q-4 3 -5 7l219 254
+> v-890q-24 -87 -30 -99q-22 -41 -79 -58q-66 -20 -206 -22q49 -55 88 -78q67 -39 239 -50q16 -1 31 -1q181 6 244 75q95 104 95 307v1194q0 40 -34 40q-26 0 -50 -34q-4 4 -5 7l225 253v-1460h43v-144h-56q-29 -199 -97 -311q-58 -95 -312 -95q-243 0 -325 77
+> q-54 51 -121 195l-12 26q-55 -24 -82 -67q32 60 56 82q7 3 15 6q-56 116 -71 170q39 -82 101 -159z" />
+4559,4570d4570
+<     <glyph glyph-name="NameMe.1536" horiz-adv-x="1085" 
+< d="M486.147 1576.91q15.0361 0 63.7529 -18.5518v-84.4619q-11.4277 14.6465 -18.6445 23.9229q-15.0361 18.0635 -44.5068 18.0635q-42.7021 0 -42.7021 -29.293q6.61523 -3.90625 78.1875 -82.0215q24.0576 -26.3633 26.4629 -65.4209v-70.792l-56.5352 2.44141
+< q-12.0293 0.488281 -25.8623 -5.85938q-58.9404 -26.3633 -168.403 -26.3633q-76.9844 0 -102.244 19.5283q23.4561 42.4756 33.6797 63.957q33.0801 -17.0879 72.7744 -17.0879q36.6885 0 96.2305 17.8203q59.543 17.8203 78.1875 17.8203q6.61621 0 12.0293 -1.46484
+< q-5.41309 20.5049 -31.877 28.8047q-29.4707 9.27637 -51.1221 17.5762q-54.1299 20.9932 -54.1299 84.4619q0 41.9873 32.4775 72.2568q37.29 34.6631 102.245 34.6631zM111 -88q-57 116 -75 180q39 -84 108 -167q44 13 98 16q66 3 83 21q33 33 33 139v592q0 40 -33 40
+< q-28 0 -52 -34q-4 3 -5 7l219 254v-890q-24 -87 -30 -99q-20 -40 -79 -58q-56 -17 -206 -20q45 -50 80 -71q65 -39 239 -50q16 -1 31 -1q181 6 244 75q95 104 95 307v1194q0 40 -33 40q-27 0 -51 -33q-2 1 -4 7l225 253v-1449q0 -62 -16 -169q-29 -190 -95 -298
+< q-58 -95 -311 -95q-242 0 -325 78q-47 44 -122 194l-8 16q-52 -24 -78 -66q32 60 56 82q6 3 12 5z" />
+<     <glyph glyph-name="NameMe.1537" horiz-adv-x="1038" 
+< d="M474.147 1319.91q15.0361 0 63.7529 -18.5518v-84.4619q-11.4277 14.6465 -18.6445 23.9229q-15.0361 18.0635 -44.5068 18.0635q-42.7021 0 -42.7021 -29.293q6.61523 -3.90625 78.1875 -82.0215q24.0576 -26.3633 26.4629 -65.4209v-70.792l-56.5352 2.44141
+< q-12.0293 0.488281 -25.8623 -5.85938q-58.9404 -26.3633 -168.403 -26.3633q-76.9844 0 -102.244 19.5283q23.4561 42.4756 33.6797 63.957q33.0801 -17.0879 72.7744 -17.0879q36.6885 0 96.2305 17.8203q59.543 17.8203 78.1875 17.8203q6.61621 0 12.0293 -1.46484
+< q-5.41309 20.5049 -31.877 28.8047q-29.4707 9.27637 -51.1221 17.5762q-54.1299 20.9932 -54.1299 84.4619q0 41.9873 32.4775 72.2568q37.29 34.6631 102.245 34.6631zM144 -76q47 14 98 17q66 3 83 21q33 33 33 139v592q0 40 -33 40q-28 0 -52 -34q-4 3 -5 7l219 254
+< v-890q-24 -87 -30 -99q-22 -41 -79 -58q-66 -20 -206 -22q49 -55 88 -78q67 -39 239 -50q16 -1 31 -1q181 6 244 75q95 104 95 307v1194q0 40 -34 40q-26 0 -50 -34q-4 4 -5 7l225 253v-1460h43v-144h-56q-29 -199 -97 -311q-58 -95 -312 -95q-243 0 -325 77
+< q-54 51 -121 195l-12 26q-55 -24 -82 -67q32 60 56 82q7 3 15 6q-56 116 -71 170q39 -82 101 -159z" />
+Binary files source-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.ttf and lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.ttf differ
+Binary files source-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.woff and lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.woff differ
+Binary files source-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.woff2 and lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted/PakTypeNaqsh.woff2 differ
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeNaskhBasic.eot
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeNaskhBasic.svg
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeNaskhBasic.ttf
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeNaskhBasic.woff
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeNaskhBasic.woff2
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeTehreer.eot
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeTehreer.svg
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeTehreer.ttf
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeTehreer.woff
+Only in lookaside-paktype-naqsh-fonts-6.0.tar.gz-extracted: PakTypeTehreer.woff2

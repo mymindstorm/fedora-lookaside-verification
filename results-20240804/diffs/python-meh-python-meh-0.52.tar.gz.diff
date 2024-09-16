@@ -1,0 +1,11 @@
+Source package : python-meh
+File name       : python-meh-0.52.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-meh/python-meh-0.52.tar.gz/sha512/2f7235de88834dd21200a46429ea3233064c51f6e2a2e9300f46922ae2b6285e8e702a2b9aee4d04f17e9a2a255ac68e4f8974cedc0b29858364991b99f1fc36/python-meh-0.52.tar.gz
+Source URL      : https://github.com/rhinstaller/python-meh/archive/python-meh-0.52.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-python-meh-0.52.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 163840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-python-meh-0.52.tar.gz: gzip compressed data, was "python-meh-0.52.tar", last modified: Tue Jun  4 14:13:33 2024, max compression, from Unix, original size modulo 2^32 645120
+
+
+Only in lookaside-python-meh-0.52.tar.gz-extracted: python-meh-0.52
+Only in source-python-meh-0.52.tar.gz-extracted: python-meh-python-meh-0.52

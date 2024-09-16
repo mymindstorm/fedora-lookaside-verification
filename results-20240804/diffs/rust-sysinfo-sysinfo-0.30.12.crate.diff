@@ -1,0 +1,10 @@
+Source package : rust-sysinfo
+File name       : sysinfo-0.30.12.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-sysinfo/sysinfo-0.30.12.crate/sha512/cb3fa76d3a7d4f0c8742e711f8119bd744273e6e3a8ae01506d4a988c13a84e6328566e82e4ad2e70e44c551a42f5f456a1db24a74a322541480af639f0f9781/sysinfo-0.30.12.crate
+Source URL      : https://crates.io/api/v1/crates/sysinfo/0.30.12/download#/sysinfo-0.30.12.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sysinfo-0.30.12.crate: gzip compressed data, was "sysinfo-0.30.12.crate", max compression, original size modulo 2^32 880128
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sysinfo-0.30.12.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

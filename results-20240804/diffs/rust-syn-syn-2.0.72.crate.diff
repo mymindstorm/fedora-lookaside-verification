@@ -1,0 +1,10 @@
+Source package : rust-syn
+File name       : syn-2.0.72.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-syn/syn-2.0.72.crate/sha512/c3d26bf9787555bc6fd8bd789855d252e80ad28a413593e13bad174adf86087ff195a6b4227bdeb6d1a1c87b0af8e965d6f2d04b8d45e7383b6de49990b92e89/syn-2.0.72.crate
+Source URL      : https://crates.io/api/v1/crates/syn/2.0.72/download#/syn-2.0.72.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-syn-2.0.72.crate: gzip compressed data, was "syn-2.0.72.crate", max compression, original size modulo 2^32 2156544
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-syn-2.0.72.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

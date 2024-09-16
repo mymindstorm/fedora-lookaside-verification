@@ -1,0 +1,19 @@
+Source package : python-pcodedmp
+File name       : pcodedmp-1.2.6.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-pcodedmp/pcodedmp-1.2.6.tar.gz/sha512/2ca83c81a16a307e9e5eefbdfe21bffa14b5c385f716c2b76b1edeef6604b9cd3471e222d02d6799ba9835e90233a4fee891e6b738e6e93f264ad7b922a9d373/pcodedmp-1.2.6.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/p/pcodedmp/pcodedmp-1.2.6.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pcodedmp-1.2.6.tar.gz: gzip compressed data, was "dist/pcodedmp-1.2.6.tar", last modified: Tue Jul 30 18:01:01 2019, max compression, original size modulo 2^32 163840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pcodedmp-1.2.6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 133120
+
+
+Only in lookaside-pcodedmp-1.2.6.tar.gz-extracted/pcodedmp-1.2.6: .gitignore
+Only in source-pcodedmp-1.2.6.tar.gz-extracted/pcodedmp-1.2.6: pcodedmp.egg-info
+Only in source-pcodedmp-1.2.6.tar.gz-extracted/pcodedmp-1.2.6: PKG-INFO
+diff -r source-pcodedmp-1.2.6.tar.gz-extracted/pcodedmp-1.2.6/setup.cfg lookaside-pcodedmp-1.2.6.tar.gz-extracted/pcodedmp-1.2.6/setup.cfg
+6,10d5
+< 
+< [egg_info]
+< tag_build = 
+< tag_date = 0
+< 

@@ -1,0 +1,10 @@
+Source package : rust-derive_builder0.9
+File name       : derive_builder-0.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-derive_builder0.9/derive_builder-0.9.0.crate/sha512/e56a01ed13420ac024be394883e5cf148f83ea74d2488931216d84cd2e8f00953e2d61f9b81d34f18be40bda055c02614baeaa89d5fbb9d3defe9ed314f2ef95/derive_builder-0.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/derive_builder/0.9.0/download#/derive_builder-0.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-derive_builder-0.9.0.crate: gzip compressed data, was "derive_builder-0.9.0.crate", max compression, original size modulo 2^32 193024
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-derive_builder-0.9.0.crate: POSIX tar archive
+
+
+No differences detected!

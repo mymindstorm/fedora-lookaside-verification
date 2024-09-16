@@ -1,0 +1,10 @@
+Source package : rust-procfs0.12
+File name       : procfs-0.12.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-procfs0.12/procfs-0.12.0.crate/sha512/48bdd24c0514dd9a4a16be492085d9b6be41b81333b5dfc99cf0f04e337a532dee5d50b4317ae450f396924364f00b01fcd3b63e655ad50e53eb222f29a90499/procfs-0.12.0.crate
+Source URL      : https://crates.io/api/v1/crates/procfs/0.12.0/download#/procfs-0.12.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-procfs-0.12.0.crate: gzip compressed data, was "procfs-0.12.0.crate", max compression, original size modulo 2^32 574518257
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-procfs-0.12.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

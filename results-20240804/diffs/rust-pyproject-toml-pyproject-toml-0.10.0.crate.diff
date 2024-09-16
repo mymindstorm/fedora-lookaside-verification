@@ -1,0 +1,10 @@
+Source package : rust-pyproject-toml
+File name       : pyproject-toml-0.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-pyproject-toml/pyproject-toml-0.10.0.crate/sha512/9e8bd5572b86b9e9a27aa67a7f6a7eedeb9c3f190512577872cbce4fb52450a3966a3576a695d3e54bbe1005f9f6f1be4d20db3af4b354e294af8e8d50b59095/pyproject-toml-0.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/pyproject-toml/0.10.0/download#/pyproject-toml-0.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pyproject-toml-0.10.0.crate: gzip compressed data, was "pyproject-toml-0.10.0.crate", max compression, original size modulo 2^32 2028836914
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pyproject-toml-0.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

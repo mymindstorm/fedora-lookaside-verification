@@ -1,0 +1,10 @@
+Source package : rust-input-sys
+File name       : input-sys-1.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-input-sys/input-sys-1.17.0.crate/sha512/5c98527c89a38b3cc3284afefdef4c47a6c1709968eb65af4108d4ab8a8f1814e9a82d8541b1bb8866e5ecf88ac39eb2038734eea07f361386ca9a03c70b6336/input-sys-1.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/input-sys/1.17.0/download#/input-sys-1.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-input-sys-1.17.0.crate: gzip compressed data, was "input-sys-1.17.0.crate", max compression, original size modulo 2^32 8735232
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-input-sys-1.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

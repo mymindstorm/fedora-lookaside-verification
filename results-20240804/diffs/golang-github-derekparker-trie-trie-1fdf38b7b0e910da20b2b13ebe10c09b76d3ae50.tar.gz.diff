@@ -1,0 +1,10 @@
+Source package : golang-github-derekparker-trie
+File name       : trie-1fdf38b7b0e910da20b2b13ebe10c09b76d3ae50.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-derekparker-trie/trie-1fdf38b7b0e910da20b2b13ebe10c09b76d3ae50.tar.gz/sha512/d6e2cfa2ffe878f1951ca5dfef5ab42febfd99afacc8d614af8b1ba4f8358cb538e1b9bc285ac487271ad848a2048608e84b0ba69ca7222945e1c7f5ab4da948/trie-1fdf38b7b0e910da20b2b13ebe10c09b76d3ae50.tar.gz
+Source URL      : https://github.com/derekparker/trie/archive/1fdf38b7b0e910da20b2b13ebe10c09b76d3ae50/trie-1fdf38b7b0e910da20b2b13ebe10c09b76d3ae50.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-trie-1fdf38b7b0e910da20b2b13ebe10c09b76d3ae50.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3704086636 gzip compressed data, reserved method, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3704086636
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-trie-1fdf38b7b0e910da20b2b13ebe10c09b76d3ae50.tar.gz: gzip compressed data, last modified: Sat Jun 18 15:40:54 2022, from Unix, original size modulo 2^32 23552
+
+
+No differences detected!

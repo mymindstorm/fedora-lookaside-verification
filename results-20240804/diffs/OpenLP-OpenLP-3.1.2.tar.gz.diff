@@ -1,0 +1,11 @@
+Source package : OpenLP
+File name       : OpenLP-3.1.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/OpenLP/OpenLP-3.1.2.tar.gz/sha512/4f7574e2d5931024aaab1b0af4879002a97e596e0a23d00210f9930c86f9c3094d4c54acf09015c1cdf2aa6f8a64f961b10ea76ec28cfef99620a622656bc769/OpenLP-3.1.2.tar.gz
+Source URL      : https://get.openlp.org/3.1.2/OpenLP-3.1.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-OpenLP-3.1.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 53944320
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-OpenLP-3.1.2.tar.gz: gzip compressed data, was "OpenLP-3.1.2.tar", last modified: Sun May 19 08:31:19 2024, max compression, original size modulo 2^32 63580160
+
+
+Only in source-OpenLP-3.1.2.tar.gz-extracted: openlp-3.1.2
+Only in lookaside-OpenLP-3.1.2.tar.gz-extracted: OpenLP-3.1.2

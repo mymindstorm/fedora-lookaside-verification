@@ -1,0 +1,18 @@
+Source package : R-combinat
+File name       : combinat_0.0-8.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/R-combinat/combinat_0.0-8.tar.gz/md5/f50d1b850c8d7663317179f2023e2b02/combinat_0.0-8.tar.gz
+Source URL      : http://cran.r-project.org/src/contrib/combinat_0.0-8.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-combinat_0.0-8.tar.gz: gzip compressed data, last modified: Mon Oct 29 13:26:38 2012, from Unix, original size modulo 2^32 51200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-combinat_0.0-8.tar.gz: gzip compressed data, last modified: Thu Aug  5 05:39:22 2010, from Unix, original size modulo 2^32 1175371963
+
+
+diff -r source-combinat_0.0-8.tar.gz-extracted/combinat/DESCRIPTION lookaside-combinat_0.0-8.tar.gz-extracted/combinat/DESCRIPTION
+9,10c9,10
+< Date/Publication: 2012-10-29 08:58:26
+< Packaged: 2012-10-29 08:58:26 UTC; ripley
+---
+> Date/Publication: 2010-08-05 05:39:22
+> Packaged: 2010-08-05 00:25:01 UTC; stvjc
+Only in source-combinat_0.0-8.tar.gz-extracted/combinat: MD5
+Only in source-combinat_0.0-8.tar.gz-extracted/combinat: NAMESPACE

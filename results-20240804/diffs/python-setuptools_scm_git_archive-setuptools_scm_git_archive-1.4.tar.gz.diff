@@ -1,0 +1,14 @@
+Source package : python-setuptools_scm_git_archive
+File name       : setuptools_scm_git_archive-1.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-setuptools_scm_git_archive/setuptools_scm_git_archive-1.4.tar.gz/sha512/89458dda9e12c96d3ec969445aad583e34f12866e1faa97134ad986b12c287bea629862f7d6f1609592c2f00ea675b322e8466c4706359013d76f108421b96ba/setuptools_scm_git_archive-1.4.tar.gz
+Source URL      : https://github.com/Changaco/setuptools_scm_git_archive/archive/1.4/setuptools_scm_git_archive-1.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-setuptools_scm_git_archive-1.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3266536009
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-setuptools_scm_git_archive-1.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 20480
+
+
+diff -r source-setuptools_scm_git_archive-1.4.tar.gz-extracted/setuptools_scm_git_archive-1.4/.git_archival.txt lookaside-setuptools_scm_git_archive-1.4.tar.gz-extracted/setuptools_scm_git_archive-1.4/.git_archival.txt
+4c4
+< ref-names: tag: 1.4
+---
+> ref-names: HEAD -> master, tag: 1.4

@@ -1,0 +1,10 @@
+Source package : rust-lv2-atom
+File name       : lv2-atom-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-lv2-atom/lv2-atom-2.0.0.crate/sha512/81a16bd6d3d761a63a647d2fbecb63b04ca2e77a480185f2f78a7dd1aee15e7c90c8e50ae7b21e52cb7d5dab9052ccfce9676c0547318676cd308ee08349f9fc/lv2-atom-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/lv2-atom/2.0.0/download#/lv2-atom-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-lv2-atom-2.0.0.crate: gzip compressed data, was "lv2-atom-2.0.0.crate", max compression, original size modulo 2^32 129536
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-lv2-atom-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

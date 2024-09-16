@@ -1,0 +1,11 @@
+Source package : scidavis
+File name       : scidavis-2.9.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/scidavis/scidavis-2.9.0.tar.gz/sha512/3058b11e7864a646c31e5576ac4ebb3e30bcc08f382ee1798183935482236890bbd1090c8e2272c28b54e2498a42dfed801f17fc4c0aca83264ab76f4a7fb7ba/scidavis-2.9.0.tar.gz
+Source URL      : https://github.com/SciDAVis/scidavis/archive/master/scidavis-2.9.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-scidavis-2.9.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 27228160
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-scidavis-2.9.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 27228160
+
+
+Only in lookaside-scidavis-2.9.0.tar.gz-extracted: scidavis-2.9.0
+Only in source-scidavis-2.9.0.tar.gz-extracted: scidavis-master

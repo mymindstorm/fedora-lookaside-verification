@@ -1,0 +1,20 @@
+Source package : mingw-python-homography
+File name       : homography-0.1.7.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/mingw-python-homography/homography-0.1.7.tar.gz/sha512/c06df1a2f97afaa0cd5fdddcc18f0a74bbf9574465521b703a816a25a3802a863633d229716cc9f702246cc31daddee0d9435ce8be37d05a930824956f20b274/homography-0.1.7.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/h/homography/homography-0.1.7.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-homography-0.1.7.tar.gz: gzip compressed data, was "dist/homography-0.1.7.tar", last modified: Fri Jan 22 08:41:37 2021, max compression, original size modulo 2^32 40960
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-homography-0.1.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 71680
+
+
+Only in lookaside-homography-0.1.7.tar.gz-extracted/homography-0.1.7: build_docs.py
+Only in lookaside-homography-0.1.7.tar.gz-extracted/homography-0.1.7: .gitignore
+Only in source-homography-0.1.7.tar.gz-extracted/homography-0.1.7: homography.egg-info
+Only in lookaside-homography-0.1.7.tar.gz-extracted/homography-0.1.7: LICENSE
+Only in source-homography-0.1.7.tar.gz-extracted/homography-0.1.7: PKG-INFO
+Only in lookaside-homography-0.1.7.tar.gz-extracted/homography-0.1.7: pytest.ini
+Only in lookaside-homography-0.1.7.tar.gz-extracted/homography-0.1.7: requirements-build.txt
+Only in source-homography-0.1.7.tar.gz-extracted/homography-0.1.7: setup.cfg
+Only in lookaside-homography-0.1.7.tar.gz-extracted/homography-0.1.7: sphinx
+Only in lookaside-homography-0.1.7.tar.gz-extracted/homography-0.1.7: test_homography.py
+Only in lookaside-homography-0.1.7.tar.gz-extracted/homography-0.1.7: .travis.yml

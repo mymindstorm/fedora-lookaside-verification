@@ -1,0 +1,14 @@
+Source package : php-Monolog
+File name       : php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-Monolog/php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz/sha512/4a6926f7ddfc893d7a9e444f06088ab74161dd38f7fad3ae0277841661356b75c6f7a3464667b46c89ef011b1666fe72d225f30345486eb6b0e10add0db37a55/php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz
+Source URL      : https://github.com/Seldaek/monolog/archive/904713c5929655dc9b97288b69cfeedad610c9a1/php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 346017873 gzip compressed data, reserved method, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 346017873
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 942080
+
+
+Only in lookaside-php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz-extracted/monolog-904713c5929655dc9b97288b69cfeedad610c9a1: doc
+Only in lookaside-php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz-extracted/monolog-904713c5929655dc9b97288b69cfeedad610c9a1: .github
+Only in lookaside-php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz-extracted/monolog-904713c5929655dc9b97288b69cfeedad610c9a1: .php_cs
+Only in lookaside-php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz-extracted/monolog-904713c5929655dc9b97288b69cfeedad610c9a1: phpunit.xml.dist
+Only in lookaside-php-Monolog-1.27.1-904713c5929655dc9b97288b69cfeedad610c9a1.tar.gz-extracted/monolog-904713c5929655dc9b97288b69cfeedad610c9a1: tests

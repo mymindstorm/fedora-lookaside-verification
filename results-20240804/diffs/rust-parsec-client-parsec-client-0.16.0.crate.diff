@@ -1,0 +1,10 @@
+Source package : rust-parsec-client
+File name       : parsec-client-0.16.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-parsec-client/parsec-client-0.16.0.crate/sha512/85097b27893e2cc3d922d3295c07a9bd26d7585a14e7fa1a99b39e587fe6d56a01a24aa4ac132825d04307818f77f8c4054dc9327dd55e897d21305e3097b9fc/parsec-client-0.16.0.crate
+Source URL      : https://crates.io/api/v1/crates/parsec-client/0.16.0/download#/parsec-client-0.16.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-parsec-client-0.16.0.crate: gzip compressed data, was "parsec-client-0.16.0.crate", max compression, original size modulo 2^32 176128
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-parsec-client-0.16.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

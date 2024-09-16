@@ -1,0 +1,92 @@
+Source package : sagator
+File name       : sagator-2.0.3-0.beta3.tar.bz2
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sagator/sagator-2.0.3-0.beta3.tar.bz2/sha512/f6bce012cbf3d272499591104d228f63ec6ea0ff2a16eab6f4461f3d4da95df618072a112812573928cf7c550a94c4d8a21f3e6d4d87f295d0a8d884a4843cad/sagator-2.0.3-0.beta3.tar.bz2
+Source URL      : http://www.salstar.sk/pub/antivir/snapshots/unstable/sagator-2.0.3-0.beta3.tar.bz2
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sagator-2.0.3-0.beta3.tar.bz2: bzip2 compressed data, block size = 900k
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sagator-2.0.3-0.beta3.tar.bz2: bzip2 compressed data, block size = 900k
+
+
+diff -r source-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/debian/changelog lookaside-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/debian/changelog
+5c5
+<  -- Jan ONDREJ (SAGATOR) <ondrejj@salstar.sk>  Thu, 30 May 2024 07:21:48 +0200
+---
+>  -- Jan ONDREJ (SAGATOR) <ondrejj@salstar.sk>  Thu, 30 May 2024 06:56:08 +0200
+diff -r source-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/doc/sagator.html lookaside-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/doc/sagator.html
+75c75
+< Time: 05:00:44 GMT, May 30, 2024
+---
+> Time: 13:22:28 GMT, May 17, 2024
+diff -r source-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/doc/sgfilter.html lookaside-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/doc/sgfilter.html
+103c103
+< Time: 05:00:44 GMT, May 30, 2024
+---
+> Time: 13:22:28 GMT, May 17, 2024
+diff -r source-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/doc/sgscan.html lookaside-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/doc/sgscan.html
+86c86
+< Time: 05:00:44 GMT, May 30, 2024
+---
+> Time: 13:22:28 GMT, May 17, 2024
+diff -r source-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/doc/sqback.html lookaside-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/doc/sqback.html
+73c73
+< Time: 05:00:44 GMT, May 30, 2024
+---
+> Time: 13:22:28 GMT, May 17, 2024
+diff -r source-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/scripts/sagator.spec lookaside-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/scripts/sagator.spec
+1,6c1,6
+< %global CHROOTDIR %{_var}/spool/vscan
+< %global BASE_LIBS glibc,libgcc,expat,libstdc++,zlib,bzip2-libs,cracklib,cracklib-dicts
+< %global ARCHIVERS tar,arc,unace,unrar,rar,zoo,unarj,arj,unzip,zip,gzip,bzip2
+< %global ANTIVIRS clamav,clamav-libs,avglinux,nod32ls,nod32lfs,kav4mailservers-linux
+< %global ANTISPAMS bogofilter,qsf
+< %global CLAMAV_VERSION 0.100
+---
+> %define CHROOTDIR %{_var}/spool/vscan
+> %define BASE_LIBS glibc,libgcc,expat,libstdc++,zlib,bzip2-libs,cracklib,cracklib-dicts
+> %define ARCHIVERS tar,arc,unace,unrar,rar,zoo,unarj,arj,unzip,zip,gzip,bzip2
+> %define ANTIVIRS clamav,clamav-libs,avglinux,nod32ls,nod32lfs,kav4mailservers-linux
+> %define ANTISPAMS bogofilter,qsf
+> %define CLAMAV_VERSION 0.100
+9,10c9,10
+< %global install_sepolicy 0
+< %global sepolicy %{_datadir}/%{name}/selinux/%{name}.pp
+---
+> %define install_sepolicy 0
+> %define sepolicy %{_datadir}/%{name}/selinux/%{name}.pp
+13c13
+< %global python_version python3
+---
+> %define python_version python3
+15c15
+< %global python_version python2
+---
+> %define python_version python2
+diff -r source-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/scripts/sagator.spec.in lookaside-sagator-2.0.3-0.beta3.tar.bz2-extracted/sagator-2.0.3/scripts/sagator.spec.in
+1,6c1,6
+< %global CHROOTDIR %{_var}/spool/vscan
+< %global BASE_LIBS glibc,libgcc,expat,libstdc++,zlib,bzip2-libs,cracklib,cracklib-dicts
+< %global ARCHIVERS tar,arc,unace,unrar,rar,zoo,unarj,arj,unzip,zip,gzip,bzip2
+< %global ANTIVIRS clamav,clamav-libs,avglinux,nod32ls,nod32lfs,kav4mailservers-linux
+< %global ANTISPAMS bogofilter,qsf
+< %global CLAMAV_VERSION 0.100
+---
+> %define CHROOTDIR %{_var}/spool/vscan
+> %define BASE_LIBS glibc,libgcc,expat,libstdc++,zlib,bzip2-libs,cracklib,cracklib-dicts
+> %define ARCHIVERS tar,arc,unace,unrar,rar,zoo,unarj,arj,unzip,zip,gzip,bzip2
+> %define ANTIVIRS clamav,clamav-libs,avglinux,nod32ls,nod32lfs,kav4mailservers-linux
+> %define ANTISPAMS bogofilter,qsf
+> %define CLAMAV_VERSION 0.100
+9,10c9,10
+< %global install_sepolicy 0
+< %global sepolicy %{_datadir}/%{name}/selinux/%{name}.pp
+---
+> %define install_sepolicy 0
+> %define sepolicy %{_datadir}/%{name}/selinux/%{name}.pp
+13c13
+< %global python_version python3
+---
+> %define python_version python3
+15c15
+< %global python_version python2
+---
+> %define python_version python2

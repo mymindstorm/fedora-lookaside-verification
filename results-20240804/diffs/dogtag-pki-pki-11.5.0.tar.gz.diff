@@ -1,0 +1,10 @@
+Source package : dogtag-pki
+File name       : pki-11.5.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/dogtag-pki/pki-11.5.0.tar.gz/sha512/28b4099abd59b6fb5c510fff39fe7b2258f663f3fc21c973243a9615f5f601a18b763722ee6ea033afe76a094464d4fdce5cd0af45f9126566badf89e3a69923/pki-11.5.0.tar.gz
+Source URL      : https://github.com/dogtagpki/pki/archive/v11.5.0/pki-11.5.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pki-11.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 45649920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pki-11.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 45649920
+
+
+No differences detected!

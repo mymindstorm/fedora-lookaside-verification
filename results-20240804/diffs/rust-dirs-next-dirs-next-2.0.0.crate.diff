@@ -1,0 +1,10 @@
+Source package : rust-dirs-next
+File name       : dirs-next-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-dirs-next/dirs-next-2.0.0.crate/sha512/6ccb732da8ccf7bf35952c22a3b0caa8238319feb0a6cd3b0957e6be12548a2ce507c69cb6d3cbd2adfb37e13e6521c6229da5999edb0e47a292a41c3ea1a766/dirs-next-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/dirs-next/2.0.0/download#/dirs-next-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dirs-next-2.0.0.crate: gzip compressed data, was "dirs-next-2.0.0.crate", max compression, original size modulo 2^32 1667833171
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dirs-next-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

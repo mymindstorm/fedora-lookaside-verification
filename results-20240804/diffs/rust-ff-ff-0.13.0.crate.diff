@@ -1,0 +1,10 @@
+Source package : rust-ff
+File name       : ff-0.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ff/ff-0.13.0.crate/sha512/eab19938f5a2cddb0fcc78b0724efd788aab7f17f04c482e0d06acac4d1cef2bcbfc74d6e4b2d9f535f9c955bf39c2153e010bdd2fa72d6d637d44baf8bf5f63/ff-0.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/ff/0.13.0/download#/ff-0.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ff-0.13.0.crate: gzip compressed data, was "ff-0.13.0.crate", max compression, original size modulo 2^32 68608
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ff-0.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

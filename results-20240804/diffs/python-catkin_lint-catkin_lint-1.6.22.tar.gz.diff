@@ -1,0 +1,14 @@
+Source package : python-catkin_lint
+File name       : catkin_lint-1.6.22.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-catkin_lint/catkin_lint-1.6.22.tar.gz/sha512/14213cc7c8e34151128119d63919e7edd4a0c1799d50f51abf69a4b70780352e405da878017547c8228121676846146ca71c123c9f6a984388b55f47b70f61b7/catkin_lint-1.6.22.tar.gz
+Source URL      : https://github.com/fkie/catkin_lint/archive/1.6.22/catkin_lint-1.6.22.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-catkin_lint-1.6.22.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2027520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-catkin_lint-1.6.22.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2027520
+
+
+diff -r source-catkin_lint-1.6.22.tar.gz-extracted/catkin_lint-1.6.22/.git_archival.txt lookaside-catkin_lint-1.6.22.tar.gz-extracted/catkin_lint-1.6.22/.git_archival.txt
+4c4
+< ref-names: tag: 1.6.22
+---
+> ref-names: HEAD -> master, tag: 1.6.22

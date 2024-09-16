@@ -1,0 +1,10 @@
+Source package : rust-lz4
+File name       : lz4-1.25.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-lz4/lz4-1.25.0.crate/sha512/c60344595d8d8eccc43dd484d79e20981aa92a107108ac4f0f333e6ee9c0348ab30a89287cc5f74991f8997b8a6cb2a2bef59f793116c14c798832991bd11993/lz4-1.25.0.crate
+Source URL      : https://crates.io/api/v1/crates/lz4/1.25.0/download#/lz4-1.25.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-lz4-1.25.0.crate: gzip compressed data, was "lz4-1.25.0.crate", max compression, original size modulo 2^32 551356243
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-lz4-1.25.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

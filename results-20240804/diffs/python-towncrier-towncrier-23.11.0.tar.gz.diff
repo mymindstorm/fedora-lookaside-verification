@@ -1,0 +1,14 @@
+Source package : python-towncrier
+File name       : towncrier-23.11.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-towncrier/towncrier-23.11.0.tar.gz/sha512/6226ef75c163748872f0f5d60c03629365cf0a942412ca791ea28762a227942d974f8573205551678735380629eadf2bf726478b0ef1d4d1e6ee14b47e25fbae/towncrier-23.11.0.tar.gz
+Source URL      : https://github.com/hawkowl/towncrier/archive/23.11.0/towncrier-23.11.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-towncrier-23.11.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 327680
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-towncrier-23.11.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 327680
+
+
+diff -r source-towncrier-23.11.0.tar.gz-extracted/towncrier-23.11.0/src/towncrier/_version.py lookaside-towncrier-23.11.0.tar.gz-extracted/towncrier-23.11.0/src/towncrier/_version.py
+14c14
+< __version__ = Version("towncrier", 23, 11, 1, dev=0)
+---
+> __version__ = Version("towncrier", 23, 11, 0)

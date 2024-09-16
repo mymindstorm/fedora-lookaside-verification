@@ -1,0 +1,11 @@
+Source package : lua-argparse
+File name       : lua-argparse-0.7.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/lua-argparse/lua-argparse-0.7.1.tar.gz/sha512/fc0c2193483710aa9080a1debcc723d0f1fe9e6212bc18835574b0414c13a2c26e13ef383ea5b47ab3539adb91340bc59cf85827a71a45de1ddb35b11c9261b6/lua-argparse-0.7.1.tar.gz
+Source URL      : https://github.com/luarocks/argparse/archive/0.7.1/lua-argparse-0.7.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-lua-argparse-0.7.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 245760
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-lua-argparse-0.7.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 204800
+
+
+Only in source-lua-argparse-0.7.1.tar.gz-extracted: argparse-0.7.1
+Only in lookaside-lua-argparse-0.7.1.tar.gz-extracted: argparse-412e6aca393e365f92c0315dfe50181b193f1ace

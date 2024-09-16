@@ -1,0 +1,14 @@
+Source package : ipmctl
+File name       : ipmctl-03.00.00.0468_with_edk2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ipmctl/ipmctl-03.00.00.0468_with_edk2.tar.gz/sha512/0cff6e12c89dcb14c243d996aa299a2a8d630a08f84de172dbfcdc5e9c73ecf3d7512f47704f1b9a0c4541fbe31491ec9bf9ac25f1febc2433a9796049e38d4a/ipmctl-03.00.00.0468_with_edk2.tar.gz
+Source URL      : https://github.com/intel/ipmctl/archive/v03.00.00.0468/ipmctl-03.00.00.0468_with_edk2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ipmctl-03.00.00.0468_with_edk2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4894720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ipmctl-03.00.00.0468_with_edk2.tar.gz: gzip compressed data, was "ipmctl-03.00.00.0468_with_edk2.tar", last modified: Wed Sep 28 20:48:18 2022, from Unix, original size modulo 2^32 137011200
+
+
+Only in lookaside-ipmctl-03.00.00.0468_with_edk2.tar.gz-extracted/ipmctl-03.00.00.0468: BaseTools
+Only in lookaside-ipmctl-03.00.00.0468_with_edk2.tar.gz-extracted/ipmctl-03.00.00.0468: edk2_License.txt
+Only in lookaside-ipmctl-03.00.00.0468_with_edk2.tar.gz-extracted/ipmctl-03.00.00.0468: MdeModulePkg
+Only in lookaside-ipmctl-03.00.00.0468_with_edk2.tar.gz-extracted/ipmctl-03.00.00.0468: MdePkg
+Only in lookaside-ipmctl-03.00.00.0468_with_edk2.tar.gz-extracted/ipmctl-03.00.00.0468: ShellPkg

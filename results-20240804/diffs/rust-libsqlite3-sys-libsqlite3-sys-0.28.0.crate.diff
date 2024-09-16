@@ -1,0 +1,10 @@
+Source package : rust-libsqlite3-sys
+File name       : libsqlite3-sys-0.28.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-libsqlite3-sys/libsqlite3-sys-0.28.0.crate/sha512/4a3d16eec47c6e3e53e00232501fd50fa77f1ee1370f4ab6c984496f2f897b4acd1c15c697caa8babd635d31a946e147d5d090378615676a3b5c4a9656355016/libsqlite3-sys-0.28.0.crate
+Source URL      : https://crates.io/api/v1/crates/libsqlite3-sys/0.28.0/download#/libsqlite3-sys-0.28.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libsqlite3-sys-0.28.0.crate: gzip compressed data, was "libsqlite3-sys-0.28.0.crate", max compression, original size modulo 2^32 20194304
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libsqlite3-sys-0.28.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-exacl
+File name       : exacl-0.12.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-exacl/exacl-0.12.0.crate/sha512/d0eed224863b6d5216d8974bf83ad794123650808ec042d63db138cb252caf408e127fc5707fbeef181cdf50fba0c2a27ce49fa2dfd630da822e4bdee0f130dc/exacl-0.12.0.crate
+Source URL      : https://crates.io/api/v1/crates/exacl/0.12.0/download#/exacl-0.12.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-exacl-0.12.0.crate: gzip compressed data, was "exacl-0.12.0.crate", max compression, original size modulo 2^32 424960
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-exacl-0.12.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

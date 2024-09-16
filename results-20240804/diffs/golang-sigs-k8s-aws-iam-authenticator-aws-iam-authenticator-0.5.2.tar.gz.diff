@@ -1,0 +1,14 @@
+Source package : golang-sigs-k8s-aws-iam-authenticator
+File name       : aws-iam-authenticator-0.5.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-sigs-k8s-aws-iam-authenticator/aws-iam-authenticator-0.5.2.tar.gz/sha512/a16a630096ed3223d156e1586f02ffcfcf256f12530ba565f5f1f649c83418cd71ea66c554c9e1edd1b44dd745d9393f4ed4c63c62677ae973e9bd9a1a24fe5b/aws-iam-authenticator-0.5.2.tar.gz
+Source URL      : https://github.com/kubernetes-sigs/aws-iam-authenticator/archive/v0.5.2/aws-iam-authenticator-0.5.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-aws-iam-authenticator-0.5.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 39618560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-aws-iam-authenticator-0.5.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 39618560
+
+
+diff -r source-aws-iam-authenticator-0.5.2.tar.gz-extracted/aws-iam-authenticator-0.5.2/vendor/k8s.io/client-go/pkg/version/base.go lookaside-aws-iam-authenticator-0.5.2.tar.gz-extracted/aws-iam-authenticator-0.5.2/vendor/k8s.io/client-go/pkg/version/base.go
+58c58
+< 	gitVersion   string = "v0.0.0-master+292b9b82d"
+---
+> 	gitVersion   string = "v0.0.0-master+292b9b82"

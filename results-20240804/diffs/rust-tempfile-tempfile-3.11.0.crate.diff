@@ -1,0 +1,10 @@
+Source package : rust-tempfile
+File name       : tempfile-3.11.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-tempfile/tempfile-3.11.0.crate/sha512/47d4c48c4f90d116a2f7d5ebf29ea623fb0a0fbfb1192aaaa53a83218ac910b6c836d6d4d8233b07d06e14de70fbf30d243152b7ac22a03d180905c53b6ad9e6/tempfile-3.11.0.crate
+Source URL      : https://crates.io/api/v1/crates/tempfile/3.11.0/download#/tempfile-3.11.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tempfile-3.11.0.crate: gzip compressed data, was "tempfile-3.11.0.crate", max compression, original size modulo 2^32 172032
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tempfile-3.11.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : berusky
+File name       : berusky-1.7.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/berusky/berusky-1.7.1.tar.gz/md5/582edadd5cc642b6ce10f53e58c7d0fc/berusky-1.7.1.tar.gz
+Source URL      : http://www.anakreon.cz/download/berusky-1.7.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-berusky-1.7.1.tar.gz: tar archive
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-berusky-1.7.1.tar.gz: gzip compressed data, last modified: Mon Nov 17 19:14:51 2014, max compression, from Unix, original size modulo 2^32 2222080
+
+
+Only in lookaside-berusky-1.7.1.tar.gz-extracted: berusky-1.7.1

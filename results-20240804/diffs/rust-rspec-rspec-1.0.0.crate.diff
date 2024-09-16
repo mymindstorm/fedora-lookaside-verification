@@ -1,0 +1,10 @@
+Source package : rust-rspec
+File name       : rspec-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rspec/rspec-1.0.0.crate/sha512/06aeec960dadb47cd67c4d1cc76b7b70dedb586bc88cfe698fee9fc581dbfb7bd3143dbdf5ce55f3d76eea38c997715b7894ba390cfe9c9b660c8394780c333d/rspec-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/rspec/1.0.0/download#/rspec-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rspec-1.0.0.crate: gzip compressed data, was "rspec-1.0.0.crate", max compression, original size modulo 2^32 162816
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rspec-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

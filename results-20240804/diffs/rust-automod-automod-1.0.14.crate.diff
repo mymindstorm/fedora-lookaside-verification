@@ -1,0 +1,10 @@
+Source package : rust-automod
+File name       : automod-1.0.14.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-automod/automod-1.0.14.crate/sha512/5efdf134f24298f3a522688b3bb87f5e8e43bafd761909a09a1018f7142ef0ce3ed390f7f01cc475391bf8e6e3d433d776c47efce619a403276ed8998b2c531f/automod-1.0.14.crate
+Source URL      : https://crates.io/api/v1/crates/automod/1.0.14/download#/automod-1.0.14.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-automod-1.0.14.crate: gzip compressed data, was "automod-1.0.14.crate", max compression, original size modulo 2^32 34816
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-automod-1.0.14.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

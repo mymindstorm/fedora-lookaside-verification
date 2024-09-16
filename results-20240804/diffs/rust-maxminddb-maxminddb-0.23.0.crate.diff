@@ -1,0 +1,10 @@
+Source package : rust-maxminddb
+File name       : maxminddb-0.23.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-maxminddb/maxminddb-0.23.0.crate/sha512/28251e78cf0129a800718186a99b3f6686d7c7681d7a40aaa447bc48114307bb3c0cb33a271fcd5d1604b1e5476e5cd942229a10c98a7c8528919e0647ce768f/maxminddb-0.23.0.crate
+Source URL      : https://crates.io/api/v1/crates/maxminddb/0.23.0/download#/maxminddb-0.23.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-maxminddb-0.23.0.crate: gzip compressed data, was "maxminddb-0.23.0.crate", max compression, original size modulo 2^32 91136
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-maxminddb-0.23.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,11 @@
+Source package : jakarta-servlet
+File name       : servlet-api-5.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jakarta-servlet/servlet-api-5.0.0.tar.gz/sha512/ff6ab67d99ea06d2fdbe6ea15224009481b280deb62ae552c430d7233838d980d23ea8eb042be2344433eca7e2741d2495ceffe231ba6ab23243860a158b32db/servlet-api-5.0.0.tar.gz
+Source URL      : https://github.com/eclipse-ee4j/servlet-api/archive/5.0.0-RELEASE/servlet-api-5.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-servlet-api-5.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2826240
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-servlet-api-5.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2529280
+
+
+Only in source-servlet-api-5.0.0.tar.gz-extracted: servlet-5.0.0-RELEASE
+Only in lookaside-servlet-api-5.0.0.tar.gz-extracted: servlet-api-5.0.0-RELEASE

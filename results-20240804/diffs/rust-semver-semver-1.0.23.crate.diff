@@ -1,0 +1,10 @@
+Source package : rust-semver
+File name       : semver-1.0.23.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-semver/semver-1.0.23.crate/sha512/5ea1fa17c08d1280c3a4bc8d28494e88ee05acd5dc969ef6f0c6f91fd3b5a8fbe999c9e8bbd2da383413038b8d29fabf02b87bd5265bbb8333f3fcbe409103ec/semver-1.0.23.crate
+Source URL      : https://crates.io/api/v1/crates/semver/1.0.23/download#/semver-1.0.23.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-semver-1.0.23.crate: gzip compressed data, was "semver-1.0.23.crate", max compression, original size modulo 2^32 145408
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-semver-1.0.23.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

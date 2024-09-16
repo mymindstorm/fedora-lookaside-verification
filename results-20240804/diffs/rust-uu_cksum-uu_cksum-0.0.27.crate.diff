@@ -1,0 +1,10 @@
+Source package : rust-uu_cksum
+File name       : uu_cksum-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uu_cksum/uu_cksum-0.0.27.crate/sha512/0e23652b7fc45daa2974707d3419b2919381accbde1f9c6b0d4777ab96a9f60e6f38788d1df05f40a62cb0d6337604b9bb3d896d5dff7b8b3bed4ad3dba3bd94/uu_cksum-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uu_cksum/0.0.27/download#/uu_cksum-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uu_cksum-0.0.27.crate: gzip compressed data, was "uu_cksum-0.0.27.crate", max compression, original size modulo 2^32 50176
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uu_cksum-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

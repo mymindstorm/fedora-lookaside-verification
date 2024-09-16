@@ -1,0 +1,10 @@
+Source package : cfitsio
+File name       : cfitsio-4.4.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/cfitsio/cfitsio-4.4.0.tar.gz/sha512/9358b1ed94fdc456cf8c0ddcb346c08f6bc97ee862c31366f3fae2d1be8d5278ffc79da01e41ceebf67ebc831f58bce3551e087c883bbf6b396133110d74b076/cfitsio-4.4.0.tar.gz
+Source URL      : http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.4.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cfitsio-4.4.0.tar.gz: POSIX tar archive (GNU)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cfitsio-4.4.0.tar.gz: gzip compressed data, was "cfitsio-4.4.0.tar", last modified: Sun Feb 25 18:32:50 2024, from Unix, original size modulo 2^32 12851200
+
+
+No differences detected!

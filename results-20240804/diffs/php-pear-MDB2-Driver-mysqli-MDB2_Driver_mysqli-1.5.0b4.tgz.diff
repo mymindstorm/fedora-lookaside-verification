@@ -1,0 +1,10 @@
+Source package : php-pear-MDB2-Driver-mysqli
+File name       : MDB2_Driver_mysqli-1.5.0b4.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-pear-MDB2-Driver-mysqli/MDB2_Driver_mysqli-1.5.0b4.tgz/md5/4f65358cf74e98d645b66dd575e810ff/MDB2_Driver_mysqli-1.5.0b4.tgz
+Source URL      : http://pear.php.net/get/MDB2_Driver_mysqli-1.5.0b4.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-MDB2_Driver_mysqli-1.5.0b4.tgz: gzip compressed data, was "MDB2_Driver_mysqli-1.5.0b4.tar", last modified: Tue Oct 23 18:15:50 2012, from Unix, original size modulo 2^32 264704
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-MDB2_Driver_mysqli-1.5.0b4.tgz: gzip compressed data, max compression, from Unix, original size modulo 2^32 2134139004 gzip compressed data, unknown method, ASCII, has CRC, extra field, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 2134139004
+
+
+No differences detected!

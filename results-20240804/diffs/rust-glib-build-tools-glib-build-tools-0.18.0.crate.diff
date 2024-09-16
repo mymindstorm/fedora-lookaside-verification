@@ -1,0 +1,10 @@
+Source package : rust-glib-build-tools
+File name       : glib-build-tools-0.18.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-glib-build-tools/glib-build-tools-0.18.0.crate/sha512/9ba73324374159d15d70a6089638cffbb69c70156444c08adbd2366249642836a3c1220864ccbddbfd3ce158104c30cc32c2b624d48d06e424e98f44a5828689/glib-build-tools-0.18.0.crate
+Source URL      : https://crates.io/api/v1/crates/glib-build-tools/0.18.0/download#/glib-build-tools-0.18.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-glib-build-tools-0.18.0.crate: gzip compressed data, was "glib-build-tools-0.18.0.crate", max compression, original size modulo 2^32 12288
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-glib-build-tools-0.18.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

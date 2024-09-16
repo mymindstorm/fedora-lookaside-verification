@@ -1,0 +1,8 @@
+Source package : toga2
+File name       : TogaII40.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/toga2/TogaII40.zip/sha512/948f10e28d528b0072e81faeb5943b4ccec124fc2a2ffc2b7f798c09e96841c10db1895800b6cb735ebb914be86d3e8f35d66b7ff83bd473e629cd22109e3a25/TogaII40.zip
+Source URL      : https://www.mediafire.com/file/4c8m5lejoo7fi3d/TogaII40.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-TogaII40.zip: HTML document, ASCII text, with very long lines (63125)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-TogaII40.zip: Zip archive data, at least v2.0 to extract, compression method=store
+Could not fetch file! Error: Error: EISDIR: illegal operation on a directory, open '/tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-TogaII40.zip-extracted/TogaII40/'

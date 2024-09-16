@@ -1,0 +1,10 @@
+Source package : rust-cargo-deny
+File name       : cargo-deny-0.14.24.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cargo-deny/cargo-deny-0.14.24.crate/sha512/ef0c18045f4422fe70d79daa16fc182dab773cec0940b85f9f0fbc8c2cdf88474c5357c72e90d8689e0ebb0c6970141a5c21afd88fb216142ce299250262ac51/cargo-deny-0.14.24.crate
+Source URL      : https://crates.io/api/v1/crates/cargo-deny/0.14.24/download#/cargo-deny-0.14.24.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cargo-deny-0.14.24.crate: gzip compressed data, was "cargo-deny-0.14.24.crate", max compression, original size modulo 2^32 2170880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cargo-deny-0.14.24.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

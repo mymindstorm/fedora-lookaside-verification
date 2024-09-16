@@ -1,0 +1,10 @@
+Source package : rust-async-io1
+File name       : async-io-1.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-async-io1/async-io-1.13.0.crate/sha512/b37a13fdb1d29e2e8852ab6f24589718a88aa39bf532145ae7541d61c3f49f731f890764dd945845eef6c8b5af1042bac2c04cdabc00b36dc4350fa1c62ce54e/async-io-1.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/async-io/1.13.0/download#/async-io-1.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-async-io-1.13.0.crate: gzip compressed data, was "async-io-1.13.0.crate", max compression, original size modulo 2^32 181248
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-async-io-1.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

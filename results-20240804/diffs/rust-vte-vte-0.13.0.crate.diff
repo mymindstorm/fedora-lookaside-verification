@@ -1,0 +1,10 @@
+Source package : rust-vte
+File name       : vte-0.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-vte/vte-0.13.0.crate/sha512/833dc2f1c42cc0537f0185c00eca2ec76cd07cdd96a066a23366ffc2d7b8ae6903167d53002497265962954974e734cdd9bc06080030761cc1f7fd87c29d3bca/vte-0.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/vte/0.13.0/download#/vte-0.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-vte-0.13.0.crate: gzip compressed data, was "vte-0.13.0.crate", max compression, original size modulo 2^32 322048
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-vte-0.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

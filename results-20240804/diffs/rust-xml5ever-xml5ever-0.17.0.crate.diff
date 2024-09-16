@@ -1,0 +1,10 @@
+Source package : rust-xml5ever
+File name       : xml5ever-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-xml5ever/xml5ever-0.17.0.crate/sha512/0c67244411811a3e82fe58d341b371b938ce6e45ec1af2bd8615c0f0a9628fa662ec0eb130de2ae199d32c7778f0c2d2b80221812dc33831b93333dcde5a682e/xml5ever-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/xml5ever/0.17.0/download#/xml5ever-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-xml5ever-0.17.0.crate: gzip compressed data, was "xml5ever-0.17.0.crate", max compression, original size modulo 2^32 190464
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-xml5ever-0.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

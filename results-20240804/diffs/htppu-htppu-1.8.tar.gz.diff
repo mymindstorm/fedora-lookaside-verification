@@ -1,0 +1,45 @@
+Source package : htppu
+File name       : htppu-1.8.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/htppu/htppu-1.8.tar.gz/sha512/36d15332314ff57259f8046b73070b0048e360e1dd336150e5984c23d9edaa8f6a5240a7ae3ab0bef45a720d45d19d73a2764cb5c6593e506ecf63b795b4fb5b/htppu-1.8.tar.gz
+Source URL      : https://downloads.sourceforge.net/htppu/htppu-1.8.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-htppu-1.8.tar.gz: gzip compressed data, last modified: Sat Jul 25 14:47:44 2020, from Unix, original size modulo 2^32 368640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-htppu-1.8.tar.gz: gzip compressed data, last modified: Sat Jul 25 12:59:10 2020, from Unix, original size modulo 2^32 368640
+
+
+diff -r source-htppu-1.8.tar.gz-extracted/htppu-1.8/config.c lookaside-htppu-1.8.tar.gz-extracted/htppu-1.8/config.c
+312,316c312
+< 	if (mysyslink) {
+< 		hfree(mysyslink);
+< 		mysyslink = NULL;
+< 	}
+< 
+---
+> 	
+321c317
+< 	   && (mysyslink) && (secretnumber) )) {
+---
+> 	   && (secretnumber) )) {
+diff -r source-htppu-1.8.tar.gz-extracted/htppu-1.8/host.c lookaside-htppu-1.8.tar.gz-extracted/htppu-1.8/host.c
+545,547c545
+< 	char buffer[2048];
+< 	long uptime;
+< 	FILE *fd;
+---
+> 	char buffer[256];
+561,574d558
+< 		clear_locks();
+< 		sprintf(buffer, "*** %s: %s\n", myhostname, (mysysinfo) ? mysyslink : "no additional information available");
+< 		send_msg_to_user("conversd", user, buffer);
+< 		clear_locks();
+< 		sprintf(buffer, "*** %s: %s uptime %s", myhostname, SOFT_RELEASE, ts4(currtime - boottime));
+< 		send_msg_to_user("conversd", user, buffer);
+< 		clear_locks();
+< 		if (!access(fd = fopen("/proc/uptime", "r"))) {
+< 			fscanf(fd, "%ld", &uptime);
+< 			fclose(fd);
+< 		}
+< 		sprintf(buffer, "*** %s: host time is %s %s", myhostname, ts2(currtime), mytimezone);
+< 		send_msg_to_user("conversd", user, buffer);
+< 		clear_locks();
+Only in source-htppu-1.8.tar.gz-extracted/htppu-1.8: .user.c.swp

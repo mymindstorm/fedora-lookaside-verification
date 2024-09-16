@@ -1,0 +1,10 @@
+Source package : rust-cargo-c
+File name       : cargo-c-0.9.32+cargo-0.79.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cargo-c/cargo-c-0.9.32+cargo-0.79.0.crate/sha512/97a7f2ee8b7b5ae95fe1677f1f0706a21599f63cd99d4dba05097087a6637f11ab383ef67d7eb174a3d6839e642fbc885c4c1ad4ed3f61fa25cc6c19b4d59c31/cargo-c-0.9.32+cargo-0.79.0.crate
+Source URL      : https://crates.io/api/v1/crates/cargo-c/0.9.32+cargo-0.79.0/download#/cargo-c-0.9.32+cargo-0.79.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cargo-c-0.9.32+cargo-0.79.0.crate: gzip compressed data, was "cargo-c-0.9.32+cargo-0.79.0.crate", max compression, original size modulo 2^32 218624
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cargo-c-0.9.32+cargo-0.79.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

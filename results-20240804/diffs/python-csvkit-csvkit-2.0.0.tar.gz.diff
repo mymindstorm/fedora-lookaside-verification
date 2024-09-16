@@ -1,0 +1,22 @@
+Source package : python-csvkit
+File name       : csvkit-2.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-csvkit/csvkit-2.0.0.tar.gz/sha512/70b1d8977bbeefd3ae4cfc26149d17527f6ad56b16b5a932d930505ac7b272fcb0ed9080eba33c9c60daa347c1e79c95c6b05c8dded2e0ea5a301335d21f8a88/csvkit-2.0.0.tar.gz
+Source URL      : https://github.com/wireservice/csvkit/archive/2.0.0/csvkit-2.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-csvkit-2.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 40990720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-csvkit-2.0.0.tar.gz: gzip compressed data, was "csvkit-2.0.0.tar", last modified: Wed May  1 19:52:12 2024, max compression, original size modulo 2^32 41318400
+
+
+Only in lookaside-csvkit-2.0.0.tar.gz-extracted/csvkit-2.0.0: csvkit.egg-info
+Only in lookaside-csvkit-2.0.0.tar.gz-extracted/csvkit-2.0.0/docs: _build
+Only in source-csvkit-2.0.0.tar.gz-extracted/csvkit-2.0.0: .github
+Only in source-csvkit-2.0.0.tar.gz-extracted/csvkit-2.0.0: .gitignore
+Only in lookaside-csvkit-2.0.0.tar.gz-extracted/csvkit-2.0.0: PKG-INFO
+Only in source-csvkit-2.0.0.tar.gz-extracted/csvkit-2.0.0: .readthedocs.yaml
+diff -r source-csvkit-2.0.0.tar.gz-extracted/csvkit-2.0.0/setup.cfg lookaside-csvkit-2.0.0.tar.gz-extracted/csvkit-2.0.0/setup.cfg
+8a9,13
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 

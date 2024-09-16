@@ -1,0 +1,10 @@
+Source package : rust-downcast
+File name       : downcast-0.11.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-downcast/downcast-0.11.0.crate/sha512/11b037a09829e3e93eabff69f02b608725e6e348a191b1b6c8bb044b8d820a6ebf46eaea2f8bf5eb1c156f20d3e97be9b581e1b5fccebbfe76d94157d6bccd53/downcast-0.11.0.crate
+Source URL      : https://crates.io/api/v1/crates/downcast/0.11.0/download#/downcast-0.11.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-downcast-0.11.0.crate: gzip compressed data, was "downcast-0.11.0.crate", max compression, original size modulo 2^32 34816
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-downcast-0.11.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

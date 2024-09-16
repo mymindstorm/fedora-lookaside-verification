@@ -1,0 +1,11 @@
+Source package : python-blivet
+File name       : blivet-3.10.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-blivet/blivet-3.10.1.tar.gz/sha512/de4c95a9b8afe59fc8e51f48ecd2916891e3294f8c584852035102a9e0f7f61d34cdbff6156adad6f0ba465d54e9e236a12a01bc0a9b3030cb1b8922f967aaf2/blivet-3.10.1.tar.gz
+Source URL      : http://github.com/storaged-project/blivet/archive/blivet-3.10.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-blivet-3.10.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3829760
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-blivet-3.10.1.tar.gz: gzip compressed data, was "blivet-3.10.1.tar", last modified: Fri Jun  7 12:04:08 2024, max compression, original size modulo 2^32 5171200
+
+
+Only in lookaside-blivet-3.10.1.tar.gz-extracted: blivet-3.10.1
+Only in source-blivet-3.10.1.tar.gz-extracted: blivet-blivet-3.10.1

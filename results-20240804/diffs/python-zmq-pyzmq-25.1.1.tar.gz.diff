@@ -1,0 +1,25 @@
+Source package : python-zmq
+File name       : pyzmq-25.1.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-zmq/pyzmq-25.1.1.tar.gz/sha512/4aa0d5d5c1036e6ac35898c48d9612f677ee6e9345fafd02091ba81a5081f1ac8bf552eb5c03636ad643cc87e17f037013ec981d9b852c0252d30de8ce046d5a/pyzmq-25.1.1.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/p/pyzmq/pyzmq-25.1.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pyzmq-25.1.1.tar.gz: gzip compressed data, was "pyzmq-25.1.1.tar", last modified: Thu Aug 10 08:36:25 2023, max compression, original size modulo 2^32 8499200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pyzmq-25.1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1546240
+
+
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1: bundled
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1: PKG-INFO
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1: pyzmq.egg-info
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1: setup.cfg
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: context.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: _device.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: error.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: message.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: _poll.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: _proxy_steerable.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: socket.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: utils.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/backend/cython: _version.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/devices: monitoredqueue.c
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/utils: compiler.json
+Only in source-pyzmq-25.1.1.tar.gz-extracted/pyzmq-25.1.1/zmq/utils: config.json

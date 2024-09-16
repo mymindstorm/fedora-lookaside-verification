@@ -1,0 +1,259 @@
+Source package : tralics
+File name       : tralics-src-2.15.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/tralics/tralics-src-2.15.4.tar.gz/md5/38df1f7878cabc7f0dc4fcae72283c29/tralics-src-2.15.4.tar.gz
+Source URL      : ftp://ftp-sop.inria.fr/marelle/tralics/src/tralics-src-2.15.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tralics-src-2.15.4.tar.gz: gzip compressed data, was "tralics-src-2.15.4.tar", last modified: Mon May 29 06:43:56 2017, from Unix, original size modulo 2^32 6656000
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tralics-src-2.15.4.tar.gz: gzip compressed data, was "tralics-src-2.15.4.tar", last modified: Wed Nov 25 08:04:09 2015, from Unix, original size modulo 2^32 6615040
+
+
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/ChangeLog lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/ChangeLog
+6c6
+< <!-- $Id: ChangeLog,v 2.358 2017/05/29 06:22:57 grimm Exp $ -->
+---
+> <!-- $Id: ChangeLog,v 2.355 2015/11/25 07:27:31 grimm Exp $ -->
+97c97
+< </samp> is now <tt class='xml_in'>&amp;#x27FB;&amp;#x27FD;&amp;&amp;#x27FC;&amp;#x27FE;</tt>
+---
+> </samp> is now <tt span class='xml_in'>&amp;#x27FB;&amp;#x27FD;&amp;&amp;#x27FC;&amp;#x27FE;</tt>
+183c183
+<    <samp>\newcount</samp>.
+---
+>    <samp>\newcount </samp>.
+191c191
+<    <br/> No seg fault for <samp>\newif~</samp> or <samp>\newif\~</samp>.
+---
+>    <br/> No seg fault for <samp>\newif~</samp>or <samp>\newif\~</samp>.
+215c215
+<    <br/> Array preamble <samp>{&gt;{$} c&lt;{$}}</samp> works.
+---
+>    <br/> Array preamble <samp>{&gt:{$} c&lt:{$}}</samp> works.
+219,221d218
+<     <br/> [2016-01-04] Bug correction in environment <span class='samp'>subequation</span>
+<     <br/> [2017-05-26] Added command <samp'>\omitcite</samp>
+<   
+232c229
+< <small>Last modified $Date: 2017/05/29 06:22:57 $</small>
+---
+> <small>Last modified $Date: 2015/11/25 07:27:31 $</small>
+Only in source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/confdir: ra2015.clt
+Only in source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/confdir: ra2015.tcf
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/mktar lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/mktar
+27c27
+<     ra2013.tcf ra2015.clt ra2015.tcf"
+---
+>     ra2013.tcf "
+65c65
+<   xtp.tex my-expl3-code.tex omitcite.tex exemple2015.tex"
+---
+>   xtp.tex my-expl3-code.tex"
+80,81c80
+<    testot2.xml testmathfont.xml booktabs.xml manip.xml tl3.xml tl3err.xml \
+<    xtp.xml omitcite.xml"
+---
+>    testot2.xml testmathfont.xml booktabs.xml manip.xml tl3.xml tl3err.xml xtp.xml"
+Only in source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Modele: omitcite.xml
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Modele/teststr.xml lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Modele/teststr.xml
+3c3
+< <!-- Translated from latex by tralics 2.15.4, date: 2015/11/26-->
+---
+> <!-- Translated from latex by tralics 2.15.4, date: 2015/11/24-->
+282c282,283
+< </Section>
+---
+> <p noindent='true'>
+> </p></Section>
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Modele/torture.xml lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Modele/torture.xml
+3c3
+< <!-- Translated from latex by tralics 2.15.4, date: 2016/01/04-->
+---
+> <!-- Translated from latex by tralics 2.15.4, date: 2015/11/20-->
+5c5
+< <p>The time is 14h 19min, 4th�January 2016.</p>
+---
+> <p>The time is 13h 08min, 20th�November 2015.</p>
+1460,1465c1460
+< <anchor id-text='15' id='uid110'/><formula id-text='15a' id='uid111' textype='equation' type='display'><math mode='display' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math></formula>
+< <formula id-text='15b' id='uid112' textype='equation' type='display'><math mode='display' xmlns='http://www.w3.org/1998/Math/MathML'><mi>B</mi></math></formula>
+< <p noindent='true'>where</p>
+< <anchor id-text='16' id='uid113'/><formula id-text='16a' id='uid114' textype='equation' type='display'><math mode='display' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math></formula>
+< <formula id-text='16b' id='uid115' textype='equation' type='display'><math mode='display' xmlns='http://www.w3.org/1998/Math/MathML'><mi>D</mi></math></formula>
+< <p noindent='true'><ref target='uid113'/><ref target='uid113'/>
+---
+> <p><ref target='uid60'/><ref target='uid60'/>
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txbib.C lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txbib.C
+13c13
+<   "$Id: txbib.C,v 2.91 2017/05/29 06:22:57 grimm Exp $";
+---
+>   "$Id: txbib.C,v 2.90 2015/10/28 17:38:45 grimm Exp $";
+32,33c32
+<   vector <string> omitcite_list;
+<   
+---
+> 
+137,149d135
+< // case of \omitcite{foo}. reads an argument, puts it in the omit mist
+< // and logs it
+< void Parser:: T_omitcite ()
+< {
+<   flush_buffer();
+<   string s = sT_arg_nopar();
+<   omitcite_list.push_back (s);
+<   the_log << lg_startbrace << "\\omitcite(" << int(omitcite_list.size ());
+<   the_log << ") = "  << s << lg_endbrace; 
+< }
+< 
+< 
+< 
+895c881
+< // This finds a citation that matches exactly S
+---
+> // This finds a citation that matches exaclty S
+1508d1493
+< // the entry is ignored if teh name is in the omit list (with the same case)
+1514,1518d1498
+<   for(int i= 0; i< int(omitcite_list.size ()); i++)
+<     if (omitcite_list [i] == cur_entry_name) {
+<       the_log << lg_start << "bib: Omitting " << cur_entry_name << lg_end;
+<       return 0;
+<     }
+2931a2912,2923
+> 
+> 
+> void Buffer::chars_to_buffer(Buffer& X)
+> {
+>   X.reset();
+>   for(;;) {
+>     char c = head();
+>     if(!is_letter(c))  break;
+>     X.push_back(c);
+>     advance();
+>   }
+> }
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txcmd.h lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txcmd.h
+2c2
+< //$Id: txcmd.h,v 2.62 2017/05/29 06:22:57 grimm Exp $
+---
+> //$Id: txcmd.h,v 2.61 2015/11/24 17:08:44 grimm Exp $
+46c46
+<   omitcite_cmd,
+---
+>   cite_type_cmd, 
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txcommands.C lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txcommands.C
+15c15
+<   "$Id: txcommands.C,v 2.164 2017/05/29 06:22:57 grimm Exp $";
+---
+>   "$Id: txcommands.C,v 2.163 2015/11/23 16:14:00 grimm Exp $";
+913d912
+<   case omitcite_cmd : T_omitcite (); return ;
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txerr.C lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txerr.C
+14c14
+<   "$Id: txerr.C,v 2.60 2015/11/27 17:06:16 grimm Exp $";
+---
+>   "$Id: txerr.C,v 2.59 2015/10/28 17:38:46 grimm Exp $";
+308c308
+< 	    << " found in counter name";
+---
+> 	    << "\nfound in counter name";
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txparser.C lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txparser.C
+16c16
+<   "$Id: txparser.C,v 2.177 2015/11/27 17:06:16 grimm Exp $";
+---
+>   "$Id: txparser.C,v 2.176 2015/11/25 07:38:28 grimm Exp $";
+1501c1501
+<     if(get_x_token()) return true; 
+---
+>     if(get_x_token()) return true;
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txparser.h lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txparser.h
+2c2
+< // $Id: txparser.h,v 2.177 2017/05/29 06:22:57 grimm Exp $
+---
+> // $Id: txparser.h,v 2.176 2015/11/24 17:08:44 grimm Exp $
+881d880
+<   void T_omitcite ();
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txtoken1.C lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txtoken1.C
+14c14
+<   "$Id: txtoken1.C,v 2.99 2017/05/29 06:22:57 grimm Exp $";
+---
+>   "$Id: txtoken1.C,v 2.98 2015/11/24 17:08:44 grimm Exp $";
+2633d2632
+<   case omitcite_cmd : return "omitcite";
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txtoken2.C lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txtoken2.C
+15c15
+<   "$Id: txtoken2.C,v 2.29 2017/05/29 06:22:57 grimm Exp $";
+---
+>   "$Id: txtoken2.C,v 2.28 2015/11/18 17:58:11 grimm Exp $";
+218d217
+<   primitive ("omitcite", omitcite_cmd);
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txtranslate.C lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/src/txtranslate.C
+15c15
+<   "$Id: txtranslate.C,v 2.161 2017/05/29 06:22:58 grimm Exp $";
+---
+>   "$Id: txtranslate.C,v 2.160 2015/11/24 17:08:44 grimm Exp $";
+27c27
+<   Token T_theequation, T_theparentequation,  T_at_theparentequation;
+---
+> 
+689a690
+>   Token T_theequation, T_theparentequation,  T_at_theparentequation;
+695a697
+> 
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test/alltests lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test/alltests
+132,133d131
+< run_tralics exemple2015
+< mv exemple.xml exemple2015.xml 
+145d142
+< run_tralics_with_err omitcite "There were 3 errors." 
+203d199
+< compare_file omitcite.xml 
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test/exemple2013.tex lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test/exemple2013.tex
+110,122d109
+< @article{testomit,
+< title = {OMIT},
+< author = {Nobodyx},
+< x-pays = {US,PT},
+< journal = {Serials Review}, 
+< x-editorial-board = {yes}, 
+< x-international-audience = {yes}, 
+< volume = 4, 
+< year = 2013, 
+< pages = 80, 
+< url =  "http://www.cnrs.fr/",
+< url-hal = "http://hal.archives-ouvertes.fr/hal-00362159/fr/"
+< } 
+796c783
+< \nocite{*} \omitcite{testomit}
+---
+> \nocite{*}
+Only in source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test: exemple2015.tex
+Only in source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test: omitcite.tex
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test/teststr.tex lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test/teststr.tex
+517,521d516
+< %
+< \let\foo#\def\A\foo1\foo2{\foo1} \def\B#1#2{#1}\testeq\A\B
+< \def\A{\foo#} \def\B{##}\testeq\A\B 
+< \def\A{#\foo} \let\foo\relax\def\B{\foo}\testeq\A\B 
+< 
+diff -r source-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test/torture.tex lookaside-tralics-src-2.15.4.tar.gz-extracted/tralics-2.15.4/Test/torture.tex
+8c8
+< % $Id: torture.tex,v 1.181 2017/05/29 06:22:57 grimm Exp $
+---
+> % $Id: torture.tex,v 1.179 2015/11/20 17:09:10 grimm Exp $
+1826c1826
+< {\makeatletter %\tracingall
+---
+> {\makeatletter%\tracingall
+3869,3877c3869
+< \begin{subequations}
+< \begin{equation} A\end{equation}
+< \begin{equation} B \end{equation}
+< \end{subequations}
+< where
+< \begin{subequations}
+< \begin{equation} C \end{equation}
+< \begin{equation} D \end{equation}
+< \end{subequations}
+---
+> 
+3883d3874
+< \omitcite{not-a-citation}\omitcite{tor1}\omitcite{tor1}%

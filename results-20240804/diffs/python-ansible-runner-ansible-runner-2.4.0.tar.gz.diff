@@ -1,0 +1,14 @@
+Source package : python-ansible-runner
+File name       : ansible-runner-2.4.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-ansible-runner/ansible-runner-2.4.0.tar.gz/sha512/a8cd1c3b0d84f930728d5184372248fea425a9b83ab75daf724d8880e233d5e052d1114196daa4f6dfd2a1c119ae4df4c2e3e039386b295166edfb09dba2f197/ansible-runner-2.4.0.tar.gz
+Source URL      : https://github.com/ansible/ansible-runner/archive/2.4.0/ansible-runner-2.4.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ansible-runner-2.4.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 819200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ansible-runner-2.4.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 819200
+
+
+diff -r source-ansible-runner-2.4.0.tar.gz-extracted/ansible-runner-2.4.0/.git_archival.txt lookaside-ansible-runner-2.4.0.tar.gz-extracted/ansible-runner-2.4.0/.git_archival.txt
+4c4
+< ref-names: tag: 2.4.0
+---
+> ref-names: tag: 2.4.0, release_2.4

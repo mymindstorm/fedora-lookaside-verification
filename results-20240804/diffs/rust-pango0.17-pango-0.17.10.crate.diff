@@ -1,0 +1,10 @@
+Source package : rust-pango0.17
+File name       : pango-0.17.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-pango0.17/pango-0.17.10.crate/sha512/ccc73cb66b0d00396e01ee76dc5b2b6476219a8bc25a1770e8d9e419f33eb1b5fd6187fd1d0f32ac24fb36a2fb9fb2e98054c754d49de10e1035fb11be7aae87/pango-0.17.10.crate
+Source URL      : https://crates.io/api/v1/crates/pango/0.17.10/download#/pango-0.17.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pango-0.17.10.crate: gzip compressed data, was "pango-0.17.10.crate", max compression, original size modulo 2^32 392704
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pango-0.17.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

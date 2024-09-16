@@ -1,0 +1,14 @@
+Source package : python-pytest-mpi
+File name       : pytest-mpi-0.6.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-pytest-mpi/pytest-mpi-0.6.tar.gz/sha512/a4bc27f4a0bbe500bec1cd6da304a5061f82dc47c9812abcd6404e936e0633c00106e3310dc1a5a6c3eb1ca8db4293f1848c67be636b90cfc75a2596fbef665a/pytest-mpi-0.6.tar.gz
+Source URL      : https://github.com/aragilar/pytest-mpi/archive/v0.6/pytest-mpi-0.6.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pytest-mpi-0.6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2023912479 gzip compressed data, reserved method, was "", has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 2023912479
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pytest-mpi-0.6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 194560
+
+
+diff -r source-pytest-mpi-0.6.tar.gz-extracted/pytest-mpi-0.6/src/pytest_mpi/_version.py lookaside-pytest-mpi-0.6.tar.gz-extracted/pytest-mpi-0.6/src/pytest_mpi/_version.py
+27c27
+<     git_refnames = " (tag: v0.6)"
+---
+>     git_refnames = " (HEAD -> master, tag: v0.6, staging)"

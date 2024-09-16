@@ -1,0 +1,10 @@
+Source package : rust-gix
+File name       : gix-0.63.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gix/gix-0.63.0.crate/sha512/7864cbb80f0c81c3cf8c69f357279c64c3c860d9997a1445b955f32351069d02e66f213cc4b0d5c2631c4bcf0a8ed492f56fda81a7ca9c29c4ec2b7ae47422c5/gix-0.63.0.crate
+Source URL      : https://crates.io/api/v1/crates/gix/0.63.0/download#/gix-0.63.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gix-0.63.0.crate: gzip compressed data, was "gix-0.63.0.crate", max compression, original size modulo 2^32 1319424
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gix-0.63.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

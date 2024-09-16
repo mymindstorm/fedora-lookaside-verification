@@ -1,0 +1,11 @@
+Source package : sisu
+File name       : org.eclipse.sisu.inject-0.3.5.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sisu/org.eclipse.sisu.inject-0.3.5.tar.gz/sha512/53efe8c948359eef9d9a569fc6e479e2747af06b8b36976edce52bae6100b0e3d01fa5b64ab55b24324dee5dac17d415c4e7bc150538e93c309341c99f65a7b8/org.eclipse.sisu.inject-0.3.5.tar.gz
+Source URL      : https://github.com/eclipse/sisu.inject/archive/refs/tags/releases/0.3.5.tar.gz#/org.eclipse.sisu.inject-0.3.5.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-org.eclipse.sisu.inject-0.3.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2170880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-org.eclipse.sisu.inject-0.3.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 817409825 gzip compressed data, reserved method, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 817409825
+
+
+Only in lookaside-org.eclipse.sisu.inject-0.3.5.tar.gz-extracted: sisu.inject-releases-0.3.5
+Only in source-org.eclipse.sisu.inject-0.3.5.tar.gz-extracted: sisu-project-releases-0.3.5

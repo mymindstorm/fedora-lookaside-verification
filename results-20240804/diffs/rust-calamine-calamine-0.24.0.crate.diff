@@ -1,0 +1,10 @@
+Source package : rust-calamine
+File name       : calamine-0.24.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-calamine/calamine-0.24.0.crate/sha512/242ec9a0fdcd6d5b5f6d6a3e2de0ea15b620bce054166d2c32e7913d6400fbb25b5976c920b398160fc28f8018b54593f3e3a440fe42027bca3d6435fa86e6e6/calamine-0.24.0.crate
+Source URL      : https://crates.io/api/v1/crates/calamine/0.24.0/download#/calamine-0.24.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-calamine-0.24.0.crate: gzip compressed data, was "calamine-0.24.0.crate", max compression, original size modulo 2^32 386560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-calamine-0.24.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

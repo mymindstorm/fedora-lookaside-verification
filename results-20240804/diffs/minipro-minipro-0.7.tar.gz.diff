@@ -1,0 +1,14 @@
+Source package : minipro
+File name       : minipro-0.7.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/minipro/minipro-0.7.tar.gz/sha512/41b3d720dbff227d06e579ecc9eb0dbdfd173a281bf4988bcd8563e1ed9a50424714fff2b7186aebf181a845396b20f9cbe99b35739a45c499440345c4a78759/minipro-0.7.tar.gz
+Source URL      : https://gitlab.com/DavidGriffith/minipro/-/archive/0.7/minipro-0.7.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-minipro-0.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 18391040
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-minipro-0.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 18391040
+
+
+diff -r source-minipro-0.7.tar.gz-extracted/minipro-0.7/Makefile lookaside-minipro-0.7.tar.gz-extracted/minipro-0.7/Makefile
+39c39
+<         GIT_BRANCH = $(shell echo "tag: 0.7, refs/keep-around/9f268f8359c577977550df3b0f916b379020d95a" | sed s/^.*\>\\s*//)
+---
+>         GIT_BRANCH = $(shell echo "HEAD -> master, tag: 0.7" | sed s/^.*\>\\s*//)

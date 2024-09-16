@@ -1,0 +1,30 @@
+Source package : python-apypie
+File name       : apypie-0.4.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-apypie/apypie-0.4.0.tar.gz/sha512/8074ba610d6255265e36ed0fb3a848db4ad22ad42591e4f4c8993b774cb0f41c439a70bef882fe6fea10421dbcd93f71ee5fa7edbb64fdba520d386619b46f42/apypie-0.4.0.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/a/apypie/apypie-0.4.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-apypie-0.4.0.tar.gz: gzip compressed data, was "dist/apypie-0.4.0.tar", last modified: Wed Jun 14 07:02:16 2023, max compression, original size modulo 2^32 281416014
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-apypie-0.4.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3366675306 gzip compressed data, reserved method, was "\035\016\311J\022K\200\247\372c\232\214\340\316w\2467\314\002\364?\266D\357\311,\376k\234\243\232"qE\311\261\205\367\263\241\345Z\344\306l$])3Z&\335R\364?\276Q\250\347\020Hk\312\214'\271JqY2_c\321n`\006\266\201\241\234`\360\024\263~^\343\364\270\377\265\022z0z1 \24122\257\341\305U2\256g\344\250", last modified: Wed Apr 13 20:53:12 1988, original size modulo 2^32 3366675306
+
+
+Only in source-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: apypie.egg-info
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: docs
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: .github
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: .gitignore
+Only in source-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: PKG-INFO
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: .pylintrc
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: requirements-docs.txt
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: requirements-test.txt
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: requirements.txt
+diff -r source-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0/setup.cfg lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0/setup.cfg
+2,7c2
+< license_file = LICENSE
+< 
+< [egg_info]
+< tag_build = 
+< tag_date = 0
+< 
+---
+> license_file=LICENSE
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: tests
+Only in lookaside-apypie-0.4.0.tar.gz-extracted/apypie-0.4.0: tox.ini

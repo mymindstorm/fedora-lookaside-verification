@@ -1,0 +1,10 @@
+Source package : rust-strum0.25
+File name       : strum-0.25.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-strum0.25/strum-0.25.0.crate/sha512/a3522df79547e94518f25a0e29248f67f1d7e2586a7a424d7d996cb6bfe5d98fcc4fc44da7ddcd4e35a1127b2816bee55107f30cb2a559f5b9bbb1346139544a/strum-0.25.0.crate
+Source URL      : https://crates.io/api/v1/crates/strum/0.25.0/download#/strum-0.25.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-strum-0.25.0.crate: gzip compressed data, was "strum-0.25.0.crate", max compression, original size modulo 2^32 19456
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-strum-0.25.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

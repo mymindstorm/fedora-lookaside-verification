@@ -1,0 +1,10 @@
+Source package : rust-retry
+File name       : retry-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-retry/retry-2.0.0.crate/sha512/e3e0f0e4a1c0b728edcb503f42a7bf828544f74152c4ac74f1acfe26aa5ade60fa901e4d7b38989651708cd23f28d837a2846c9e4d27d0ec0cb2772c8810d8cd/retry-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/retry/2.0.0/download#/retry-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-retry-2.0.0.crate: gzip compressed data, was "retry-2.0.0.crate", max compression, original size modulo 2^32 36352
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-retry-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

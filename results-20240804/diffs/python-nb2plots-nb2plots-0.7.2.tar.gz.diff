@@ -1,0 +1,14 @@
+Source package : python-nb2plots
+File name       : nb2plots-0.7.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-nb2plots/nb2plots-0.7.2.tar.gz/sha512/e9bd87556a9c379b6a3526fa2e55df3fa4f1bdd0b81b3cec7ac22600211a1e5e2e66ac95eccd243e50c1479b1440fa6f8de43d6df353be47efae13fe05e470b7/nb2plots-0.7.2.tar.gz
+Source URL      : https://github.com/matthew-brett/nb2plots/archive/0.7.2/nb2plots-0.7.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-nb2plots-0.7.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 634880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-nb2plots-0.7.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3487038942 gzip compressed data, reserved method, ASCII, has CRC, extra field, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3487038942
+
+
+diff -r source-nb2plots-0.7.2.tar.gz-extracted/nb2plots-0.7.2/nb2plots/_version.py lookaside-nb2plots-0.7.2.tar.gz-extracted/nb2plots-0.7.2/nb2plots/_version.py
+28c28
+<     git_refnames = " (tag: 0.7.2)"
+---
+>     git_refnames = " (HEAD -> main, tag: 0.7.2)"

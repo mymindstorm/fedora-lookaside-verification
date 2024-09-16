@@ -1,0 +1,10 @@
+Source package : rust-parking_lot_core
+File name       : parking_lot_core-0.9.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-parking_lot_core/parking_lot_core-0.9.10.crate/sha512/4f30fb60ded274d3154ffb00f6f50ac284b6fb97daebc1a2ac897ce97fa8e2ec6ff30cbdadf3b7419617a410fa7525f30ef5e580334e07d4420f4c0200a57389/parking_lot_core-0.9.10.crate
+Source URL      : https://crates.io/api/v1/crates/parking_lot_core/0.9.10/download#/parking_lot_core-0.9.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-parking_lot_core-0.9.10.crate: gzip compressed data, was "parking_lot_core-0.9.10.crate", max compression, original size modulo 2^32 158720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-parking_lot_core-0.9.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

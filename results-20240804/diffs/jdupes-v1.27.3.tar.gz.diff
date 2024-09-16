@@ -1,0 +1,11 @@
+Source package : jdupes
+File name       : v1.27.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jdupes/v1.27.3.tar.gz/sha512/423b1594a97138aede3e7fab755448ae0957f91aa87b8bdbfa875ee677a0fc7d7adc49b5a0878015df938359ee0994960b9d1615b1b5858bb87d7ab628858e13/v1.27.3.tar.gz
+Source URL      : https://codeberg.org/jbruchon/jdupes/archive/v1.27.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-v1.27.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 901120
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-v1.27.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3403617485 gzip compressed data, reserved method, has CRC, was "", from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3403617485
+
+
+diff: source-v1.27.3.tar.gz-extracted/jdupes/testdir/recursed_a/symlink_infinite_loop: recursive directory loop
+diff: source-v1.27.3.tar.gz-extracted/jdupes/testdir/symlink_dir/symlink_infinite_loop: recursive directory loop

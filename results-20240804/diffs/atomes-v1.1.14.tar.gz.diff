@@ -1,0 +1,21 @@
+Source package : atomes
+File name       : v1.1.14.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/atomes/v1.1.14.tar.gz/sha512/1be8de3e6a5c394eaf53701441864646b55b4ca1ef1bf01b6f7fbe2a85058a14507def6cf5a260d55abf5cf9e9d00a63a1009e94ff4077fb7733d9eef9592d39/v1.1.14.tar.gz
+Source URL      : https://github.com/Slookeur/Atomes-GNU/archive/refs/tags/v1.1.14.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-v1.1.14.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 19578880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-v1.1.14.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 19578880
+
+
+diff -r source-v1.1.14.tar.gz-extracted/Atomes-GNU-1.1.14/atomes.spec lookaside-v1.1.14.tar.gz-extracted/Atomes-GNU-1.1.14/atomes.spec
+4c4
+< Release:        2%{?dist}
+---
+> Release:        1%{?dist}
+90,92d89
+< * Wed Mar 20 2024 Sébastien Le Roux <sebastien.leroux@ipcms.unistra.fr> - 1.1.14-2
+< - Bug corrections and improvements (see: https://github.com/Slookeur/Atomes-GNU/releases/tag/v1.1.14)
+< 
+diff -r source-v1.1.14.tar.gz-extracted/Atomes-GNU-1.1.14/src/project/readers/read_cif.c lookaside-v1.1.14.tar.gz-extracted/Atomes-GNU-1.1.14/src/project/readers/read_cif.c
+1142d1141
+<       g_free (k_word);

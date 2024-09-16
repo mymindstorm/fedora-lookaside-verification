@@ -1,0 +1,11 @@
+Source package : sediment
+File name       : sediment-0.9.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sediment/sediment-0.9.1.tar.gz/sha512/3775cfab419cb0fbf576aa5f10a47fb2085138c9b80c64732c22cf5e96ccb96ce716b96e5d9d34dc0027a01867dd12c6fdc3c337a7efd08710bbd6de58382410/sediment-0.9.1.tar.gz
+Source URL      : https://github.com/wcohen/sediment/archive/sediment-0.9.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sediment-0.9.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2570240
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sediment-0.9.1.tar.gz: gzip compressed data, last modified: Tue Nov  6 05:02:53 2018, from Unix, original size modulo 2^32 2570240
+
+
+Only in lookaside-sediment-0.9.1.tar.gz-extracted: sediment-0.9.1
+Only in source-sediment-0.9.1.tar.gz-extracted: sediment-sediment-0.9.1

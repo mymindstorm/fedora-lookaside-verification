@@ -1,0 +1,30 @@
+Source package : python-agate-excel
+File name       : agate-excel-0.4.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-agate-excel/agate-excel-0.4.1.tar.gz/sha512/934e8c0416df2e57b617095454aca14e202df1301779814841934452faf672e27a65628efee344df2873bece3731435fa40a6831321ed59a606810bd472d23b8/agate-excel-0.4.1.tar.gz
+Source URL      : https://github.com/wireservice/agate-excel/archive/0.4.1/agate-excel-0.4.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-agate-excel-0.4.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 675840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-agate-excel-0.4.1.tar.gz: gzip compressed data, was "agate-excel-0.4.1.tar", last modified: Mon Nov 20 20:14:56 2023, max compression, original size modulo 2^32 727040
+
+
+Only in lookaside-agate-excel-0.4.1.tar.gz-extracted/agate-excel-0.4.1: agate_excel.egg-info
+Only in source-agate-excel-0.4.1.tar.gz-extracted/agate-excel-0.4.1: .github
+Only in source-agate-excel-0.4.1.tar.gz-extracted/agate-excel-0.4.1: .gitignore
+Only in lookaside-agate-excel-0.4.1.tar.gz-extracted/agate-excel-0.4.1: PKG-INFO
+Only in source-agate-excel-0.4.1.tar.gz-extracted/agate-excel-0.4.1: .readthedocs.yaml
+diff -r source-agate-excel-0.4.1.tar.gz-extracted/agate-excel-0.4.1/setup.cfg lookaside-agate-excel-0.4.1.tar.gz-extracted/agate-excel-0.4.1/setup.cfg
+3,6c3,5
+< per-file-ignores =
+<     # imported but unused
+<     agateexcel/__init__.py: F401
+<     example.py: F401
+---
+> per-file-ignores = 
+> 	agateexcel/__init__.py: F401
+> 	example.py: F401
+12a12,16
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 

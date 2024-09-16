@@ -1,0 +1,10 @@
+Source package : rust-crossbeam-epoch
+File name       : crossbeam-epoch-0.9.18.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-crossbeam-epoch/crossbeam-epoch-0.9.18.crate/sha512/0a8a199b9d77f4e28e91fe0a0cbff7e0dec58cac283631fd972477fa912d2f6ddfddaed2c695e4978b01cb5440b702822af6333e7c3dfbcb9a2c2086999516b2/crossbeam-epoch-0.9.18.crate
+Source URL      : https://crates.io/api/v1/crates/crossbeam-epoch/0.9.18/download#/crossbeam-epoch-0.9.18.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-crossbeam-epoch-0.9.18.crate: gzip compressed data, was "crossbeam-epoch-0.9.18.crate", max compression, original size modulo 2^32 224768
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-crossbeam-epoch-0.9.18.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-mailparse
+File name       : mailparse-0.14.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-mailparse/mailparse-0.14.0.crate/sha512/0edfecbd7f2fa918c758ae5e9c5634c85b69f57e928c85fe8b2aca41641d9e3ce12770ef40b7c3a31b1fb8ac6b15003166d9b86764a282ee2bf73461014c9018/mailparse-0.14.0.crate
+Source URL      : https://crates.io/api/v1/crates/mailparse/0.14.0/download#/mailparse-0.14.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-mailparse-0.14.0.crate: gzip compressed data, was "mailparse-0.14.0.crate", max compression, original size modulo 2^32 192512
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-mailparse-0.14.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

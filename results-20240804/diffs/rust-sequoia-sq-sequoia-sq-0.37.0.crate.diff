@@ -1,0 +1,10 @@
+Source package : rust-sequoia-sq
+File name       : sequoia-sq-0.37.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-sequoia-sq/sequoia-sq-0.37.0.crate/sha512/c716284bfd1f8492d7f073c07adbbfd73495573a8503d7aa5e24a42873a50392086c69c25a1bd655e3d09df6c369bc2568d02dfda3dc83c189cb9187c440162c/sequoia-sq-0.37.0.crate
+Source URL      : https://crates.io/api/v1/crates/sequoia-sq/0.37.0/download#/sequoia-sq-0.37.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sequoia-sq-0.37.0.crate: gzip compressed data, was "sequoia-sq-0.37.0.crate", max compression, original size modulo 2^32 2045952
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sequoia-sq-0.37.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

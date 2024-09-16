@@ -1,0 +1,10 @@
+Source package : rust-elf
+File name       : elf-0.0.12.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-elf/elf-0.0.12.crate/sha512/a25592035a27377b3b6bc96078356f0f3afc98ed9cfe788b186c5b02c1c92931c01258f96548e82a4b48c7fce226c95eb018f542fd2d100d78a74023bb357ad0/elf-0.0.12.crate
+Source URL      : https://crates.io/api/v1/crates/elf/0.0.12/download#/elf-0.0.12.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-elf-0.0.12.crate: gzip compressed data, was "elf-0.0.12.crate", max compression, original size modulo 2^32 2867062486
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-elf-0.0.12.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

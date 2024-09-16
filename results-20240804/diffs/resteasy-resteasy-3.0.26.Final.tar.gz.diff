@@ -1,0 +1,11 @@
+Source package : resteasy
+File name       : resteasy-3.0.26.Final.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/resteasy/resteasy-3.0.26.Final.tar.gz/sha512/1a3440a597d594d3239d85052b8bea3f3c23b4cd5a0d4ebeeaf0d1e3024f076dc3574c788736692f6ed60e22147f6a4c5a241209bf8a66498b2923fc8406cb6d/resteasy-3.0.26.Final.tar.gz
+Source URL      : https://github.com/resteasy/Resteasy/archive/3.0.26.Final/resteasy-3.0.26.Final.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-resteasy-3.0.26.Final.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 22773760
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-resteasy-3.0.26.Final.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 22773760
+
+
+Only in source-resteasy-3.0.26.Final.tar.gz-extracted: resteasy-3.0.26.Final
+Only in lookaside-resteasy-3.0.26.Final.tar.gz-extracted: Resteasy-3.0.26.Final

@@ -1,0 +1,18 @@
+Source package : python-ansible-compat
+File name       : ansible-compat-24.7.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-ansible-compat/ansible-compat-24.7.0.tar.gz/sha512/5c0ad52adf346d0b3c3fda38d24f05beefef478414c0d7b418cb2768f0237c8155f260e8be2d8ca16097955159095348d31966b5f10b33198d83b24fe5d42251/ansible-compat-24.7.0.tar.gz
+Source URL      : https://github.com/ansible/ansible-compat/archive/refs/tags/v24.7.0.tar.gz#/ansible-compat-24.7.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ansible-compat-24.7.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1625109243
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ansible-compat-24.7.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 307200
+
+
+diff -r source-ansible-compat-24.7.0.tar.gz-extracted/ansible-compat-24.7.0/.git_archival.txt lookaside-ansible-compat-24.7.0.tar.gz-extracted/ansible-compat-24.7.0/.git_archival.txt
+2c2
+< node-date: 2024-07-10T21:01:51Z
+---
+> node-date: 2024-07-10T21:01:51+00:00
+4c4
+< ref-names: tag: v24.7.0
+---
+> ref-names: HEAD -> main, tag: v24.7.0

@@ -1,0 +1,10 @@
+Source package : rust-x11-dl
+File name       : x11-dl-2.21.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-x11-dl/x11-dl-2.21.0.crate/sha512/b864b0865720a9b2afc6d986fb7ebe19734671433449897d7f00488e019f3781f417f8e3763f09fa0db100a1d0c7e709ea9ac43c6dd48775f3daf803ebaebee5/x11-dl-2.21.0.crate
+Source URL      : https://crates.io/api/v1/crates/x11-dl/2.21.0/download#/x11-dl-2.21.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-x11-dl-2.21.0.crate: gzip compressed data, was "x11-dl-2.21.0.crate", max compression, original size modulo 2^32 440832
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-x11-dl-2.21.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

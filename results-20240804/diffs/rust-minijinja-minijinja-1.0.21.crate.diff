@@ -1,0 +1,10 @@
+Source package : rust-minijinja
+File name       : minijinja-1.0.21.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-minijinja/minijinja-1.0.21.crate/sha512/28a3d116412712f59ce1a6491b80b4c99ed76210d5c326e1a47fbeac234d0fee4f69b953985e526e254846e03fd2d85f93bdda3988794085442cbdade005ceef/minijinja-1.0.21.crate
+Source URL      : https://crates.io/api/v1/crates/minijinja/1.0.21/download#/minijinja-1.0.21.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-minijinja-1.0.21.crate: gzip compressed data, was "minijinja-1.0.21.crate", max compression, original size modulo 2^32 676352
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-minijinja-1.0.21.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,18 @@
+Source package : hunspell-fr
+File name       : hunspell-french-dictionaries-v6.2.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/hunspell-fr/hunspell-french-dictionaries-v6.2.zip/sha512/49fb5362b963335ea9c4779e261138448a376cd5f231ceb4c606bd780551ce66ce9af907b2cf40ee07f352c4d9271208273c0849363679aa4ba268f8529f01c0/hunspell-french-dictionaries-v6.2.zip
+Source URL      : http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v6.2.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-hunspell-french-dictionaries-v6.2.zip: HTML document, Unicode text, UTF-8 text, with very long lines (18058)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-hunspell-french-dictionaries-v6.2.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+
+
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: fr-classique.aff
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: fr-classique.dic
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: fr-moderne.aff
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: fr-moderne.dic
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: fr-reforme1990.aff
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: fr-reforme1990.dic
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: fr-toutesvariantes.aff
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: fr-toutesvariantes.dic
+Only in lookaside-hunspell-french-dictionaries-v6.2.zip-extracted: README_dict_fr.txt

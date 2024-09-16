@@ -1,0 +1,10 @@
+Source package : rust-x11rb
+File name       : x11rb-0.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-x11rb/x11rb-0.13.0.crate/sha512/9e86c7fab70d20193804a85608aaf46697b56f3d78eec50dd835c4ddd4a45ff56c0819309b443baa4a58f93e7d37f303e29ef279dbcd5d8c917c559751ca00b8/x11rb-0.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/x11rb/0.13.0/download#/x11rb-0.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-x11rb-0.13.0.crate: gzip compressed data, was "x11rb-0.13.0.crate", max compression, original size modulo 2^32 1401344
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-x11rb-0.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

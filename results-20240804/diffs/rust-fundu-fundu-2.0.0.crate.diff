@@ -1,0 +1,10 @@
+Source package : rust-fundu
+File name       : fundu-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-fundu/fundu-2.0.0.crate/sha512/2a0f530d21acb0f39ad01c664e090778c915e8779d5e91e258b4a673183d1777b5ee3a770b78e239c82188c5c0a09ca51efec53b0c20788ade5aa23a0e2a73c1/fundu-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/fundu/2.0.0/download#/fundu-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-fundu-2.0.0.crate: gzip compressed data, was "fundu-2.0.0.crate", max compression, original size modulo 2^32 3205947239
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-fundu-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

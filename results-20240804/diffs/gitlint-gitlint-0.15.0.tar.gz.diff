@@ -1,0 +1,43 @@
+Source package : gitlint
+File name       : gitlint-0.15.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/gitlint/gitlint-0.15.0.tar.gz/sha512/4e9f5dd1212b7049dc1a84819d2e2a6b5a45e5cb1d39359ed99329feb350a33ec83ec0fd7b6889227fb68aed50b82d2978f8e70923a6024ceb28537df20b27ee/gitlint-0.15.0.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/g/gitlint/gitlint-0.15.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gitlint-0.15.0.tar.gz: gzip compressed data, was "dist/gitlint-0.15.0.tar", last modified: Fri Nov 27 10:34:10 2020, max compression, original size modulo 2^32 194560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gitlint-0.15.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 860160
+
+
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: CHANGELOG.md
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: CONTRIBUTING.md
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: .coveragerc
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: Dockerfile
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: Dockerfile.dev
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: doc-requirements.txt
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: docs
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: examples
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: .flake8
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: .github
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: .gitignore
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0/gitlint: tests
+Only in source-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: gitlint.egg-info
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: mkdocs.yml
+Only in source-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: PKG-INFO
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: .pre-commit-hooks.yaml
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: .pylintrc
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: qa
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: requirements.txt
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: run_tests.sh
+diff -r source-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0/setup.cfg lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0/setup.cfg
+2,7c2
+< universal = 1
+< 
+< [egg_info]
+< tag_build = 
+< tag_date = 0
+< 
+---
+> universal = 1
+\ No newline at end of file
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: test-requirements.txt
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: tools
+Only in lookaside-gitlint-0.15.0.tar.gz-extracted/gitlint-0.15.0: Vagrantfile

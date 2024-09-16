@@ -1,0 +1,10 @@
+Source package : rust-parse-size
+File name       : parse-size-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-parse-size/parse-size-1.0.0.crate/sha512/572d0d13ba87364dd2813fee1ea6ab102dc0970076adf3ce18d08cb0e86cb45f595c19dd1aeee0fdde18904a539451d425524f124c5d4b5123d493f5e89fbbb9/parse-size-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/parse-size/1.0.0/download#/parse-size-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-parse-size-1.0.0.crate: gzip compressed data, was "parse-size-1.0.0.crate", max compression, original size modulo 2^32 32256
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-parse-size-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

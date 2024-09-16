@@ -1,0 +1,10 @@
+Source package : mysql-mmm
+File name       : mysql-mmm-2.2.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/mysql-mmm/mysql-mmm-2.2.1.tar.gz/md5/f5f8b48bdf89251d3183328f0249461e/mysql-mmm-2.2.1.tar.gz
+Source URL      : http://mysql-mmm.org/_media/:mmm2:/mysql-mmm-2.2.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-mysql-mmm-2.2.1.tar.gz: HTML document, ASCII text, with CRLF line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-mysql-mmm-2.2.1.tar.gz: gzip compressed data, last modified: Fri May  7 07:55:50 2010, from Unix, original size modulo 2^32 307200
+
+
+Only in lookaside-mysql-mmm-2.2.1.tar.gz-extracted: mysql-mmm-2.2.1

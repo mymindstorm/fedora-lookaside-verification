@@ -1,0 +1,11 @@
+Source package : jakarta-interceptors
+File name       : interceptor-api-2.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jakarta-interceptors/interceptor-api-2.0.0.tar.gz/sha512/3f071a3c6fec7bf8cbf401edda3a34a2f5091cba4a466efe0b634b53dc3a298fd5cfa306ef99674b48ee481451edf3ab496dc28476777cba4fd1ad0d67d6ad80/interceptor-api-2.0.0.tar.gz
+Source URL      : https://github.com/eclipse-ee4j/interceptor-api/archive/2.0.0-RELEASE/interceptor-api-2.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-interceptor-api-2.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 266240
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-interceptor-api-2.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 266240
+
+
+Only in lookaside-interceptor-api-2.0.0.tar.gz-extracted: interceptor-api-2.0.0-RELEASE
+Only in source-interceptor-api-2.0.0.tar.gz-extracted: interceptors-2.0.0-RELEASE

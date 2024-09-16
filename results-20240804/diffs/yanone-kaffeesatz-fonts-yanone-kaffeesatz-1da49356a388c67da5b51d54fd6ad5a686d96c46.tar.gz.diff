@@ -1,0 +1,11 @@
+Source package : yanone-kaffeesatz-fonts
+File name       : yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/yanone-kaffeesatz-fonts/yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46.tar.gz/sha512/1cf29916d1b129376b2c3e7dd8b03dff1119b330f696b619ec0b40eea0e8efd89436ea4e5e52992291ec5a4cff5437fec359b405d9e67dada471a2e002b9eb7e/yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46.tar.gz
+Source URL      : https://github.com/alexeiva/yanone-kaffeesatz/archive/1da49356a388c67da5b51d54fd6ad5a686d96c46/yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3665920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2961096489 gzip compressed data, unknown method, has comment, encrypted, original size modulo 2^32 2961096489
+
+
+Only in source-yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46.tar.gz-extracted: kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46
+Only in lookaside-yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46.tar.gz-extracted: yanone-kaffeesatz-1da49356a388c67da5b51d54fd6ad5a686d96c46

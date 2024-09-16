@@ -1,0 +1,190 @@
+Source package : ibus-m17n
+File name       : ibus-m17n-1.4.31.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ibus-m17n/ibus-m17n-1.4.31.tar.gz/sha512/06f6d412d36b13628cb2ce9d7b3a1827a19c7e7213a0579f685f791bfbe101d5e8fc80162bde1ba46ac931f3f689492d02da8c02a8e2155cddc39181416f2269/ibus-m17n-1.4.31.tar.gz
+Source URL      : https://github.com/ibus/ibus-m17n/archive/1.4.31/ibus-m17n-1.4.31.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ibus-m17n-1.4.31.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 931840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ibus-m17n-1.4.31.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 2498560
+
+
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: ABOUT-NLS
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: aclocal.m4
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: APACHE-LICENSE-2.0
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: codereview.settings
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: compile
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: config.guess
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: config.h.in
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: config.rpath
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: config.sub
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: configure
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: debian
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: depcomp
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: .github
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: .gitignore
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/icons: 24x24
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/icons: Makefile.in
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: INSTALL
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: install-sh
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: its
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: LICENSE
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: ltmain.sh
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: gettext.m4
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: .gitignore
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: iconv.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: intlmacosx.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: lib-ld.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: lib-link.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: lib-prefix.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: libtool.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: lt~obsolete.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: ltoptions.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: ltsugar.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: ltversion.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: Makefile.in
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: nls.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: po.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/m4: progtest.m4
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: Makefile.in
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: missing
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: ar.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ar.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ar.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: bn.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/bn.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/bn.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: boldquot.sed
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: cs.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/cs.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/cs.po
+10c10
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: de.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/de.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/de.po
+12c12
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: en@boldquot.header
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: en@quot.header
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: es.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/es.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/es.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: fa.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/fa.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/fa.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: fr.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/fr.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/fr.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: .gitignore
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: hi.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/hi.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/hi.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: id.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/id.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/id.po
+10c10
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: insert-header.sin
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: ja.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ja.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ja.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: ka.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ka.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ka.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: lt.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/lt.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/lt.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: Makefile.in.in
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: ml.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ml.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ml.po
+10c10
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: POTFILES.skip
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: pt_BR.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/pt_BR.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/pt_BR.po
+10c10
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: quot.sed
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: remove-potcdate.sin
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: ru.gmo
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: Rules-quot
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ru.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/ru.po
+10c10
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: si.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/si.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/si.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: stamp-po
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: sv.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/sv.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/sv.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: tr.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/tr.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/tr.po
+10c10
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: uk.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/uk.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/uk.po
+11c11
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: zanata.xml
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: zh_CN.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/zh_CN.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/zh_CN.po
+11c11
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po: zh_TW.gmo
+diff -r source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/zh_TW.po lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/po/zh_TW.po
+9c9
+< "POT-Creation-Date: 2024-07-19 19:20+0200\n"
+---
+> "POT-Creation-Date: 2024-07-25 09:27+0200\n"
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: screenshots
+Only in source-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/src: .gitignore
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31/src: Makefile.in
+Only in lookaside-ibus-m17n-1.4.31.tar.gz-extracted/ibus-m17n-1.4.31: test-driver

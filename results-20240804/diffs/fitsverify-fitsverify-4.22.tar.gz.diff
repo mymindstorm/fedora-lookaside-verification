@@ -1,0 +1,10 @@
+Source package : fitsverify
+File name       : fitsverify-4.22.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/fitsverify/fitsverify-4.22.tar.gz/sha512/177afc4b9bb6754085bcce7c10b5f96fcb91ca6bf983112c3588bcbeb3b318ad94a07c025c08865397b67307bb2f2dcf25a4feed5a4aec15aa7bccb32e266cad/fitsverify-4.22.tar.gz
+Source URL      : https://heasarc.gsfc.nasa.gov/docs/software/ftools/fitsverify//fitsverify-4.22.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-fitsverify-4.22.tar.gz: POSIX tar archive (GNU)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-fitsverify-4.22.tar.gz: gzip compressed data, last modified: Wed Jul 12 15:49:02 2023, from Unix, original size modulo 2^32 225280
+
+
+No differences detected!

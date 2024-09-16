@@ -1,0 +1,10 @@
+Source package : rust-bat
+File name       : bat-0.24.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-bat/bat-0.24.0.crate/sha512/54ab9c32543d678004f757d51a39cf4532c9398f8df751438b1827d5c80c0bfed4244c8cb9896f318492d1df13de93566d732cc441de1b85735d36742a865128/bat-0.24.0.crate
+Source URL      : https://crates.io/api/v1/crates/bat/0.24.0/download#/bat-0.24.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-bat-0.24.0.crate: gzip compressed data, was "bat-0.24.0.crate", max compression, original size modulo 2^32 7326720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-bat-0.24.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

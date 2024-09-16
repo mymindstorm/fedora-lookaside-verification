@@ -1,0 +1,10 @@
+Source package : rust-glib
+File name       : glib-0.19.9.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-glib/glib-0.19.9.crate/sha512/9eb9911b9ded5fd5a24afe54e96309d2dbb37abeff106f48bb5bb30cb7a28da2e224708d70a0c7c053071e8981c225a3d2b3e492e2793808bc478fb68812c72a/glib-0.19.9.crate
+Source URL      : https://crates.io/api/v1/crates/glib/0.19.9/download#/glib-0.19.9.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-glib-0.19.9.crate: gzip compressed data, was "glib-0.19.9.crate", max compression, original size modulo 2^32 1885696
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-glib-0.19.9.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

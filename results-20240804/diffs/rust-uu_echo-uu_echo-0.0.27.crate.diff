@@ -1,0 +1,10 @@
+Source package : rust-uu_echo
+File name       : uu_echo-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uu_echo/uu_echo-0.0.27.crate/sha512/f13650e359eb504f6c3359672255c581c5c764853c3c21f19b5577ae5116ff211c5086ecde7d8090fec7e07c396daedac7f3837d467e8a4b6e8e11d78835b907/uu_echo-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uu_echo/0.0.27/download#/uu_echo-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uu_echo-0.0.27.crate: gzip compressed data, was "uu_echo-0.0.27.crate", max compression, original size modulo 2^32 30208
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uu_echo-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

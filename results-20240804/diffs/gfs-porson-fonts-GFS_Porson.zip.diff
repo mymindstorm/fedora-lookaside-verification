@@ -1,0 +1,22 @@
+Source package : gfs-porson-fonts
+File name       : GFS_Porson.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/gfs-porson-fonts/GFS_Porson.zip/sha512/f9eea6cc96792be1cfc19aa99a8fcd8ced8ff1ae339f34c0cf8e631368001335cae302771cc8629ad867b9a5d05bfb4e2d107788d651c03951382fe519565435/GFS_Porson.zip
+Source URL      : http://www.greekfontsociety-gfs.gr/_assets/fonts/GFS_Porson.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-GFS_Porson.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-GFS_Porson.zip: Zip archive data, at least v1.0 to extract, compression method=store
+
+
+Only in lookaside-GFS_Porson.zip-extracted: GFS_PORSON
+Only in source-GFS_Porson.zip-extracted: GFSPorson.otf
+Only in source-GFS_Porson.zip-extracted: GFSPorson.ttf
+Only in lookaside-GFS_Porson.zip-extracted/__MACOSX: ._GFS_PORSON
+Only in lookaside-GFS_Porson.zip-extracted/__MACOSX: GFS_PORSON
+Only in source-GFS_Porson.zip-extracted/__MACOSX: ._GFSPorson.otf
+Only in source-GFS_Porson.zip-extracted/__MACOSX: ._GFSPorson.ttf
+Only in source-GFS_Porson.zip-extracted/__MACOSX: ._OFL-FAQ.txt
+Only in source-GFS_Porson.zip-extracted/__MACOSX: ._OFL.txt
+Only in source-GFS_Porson.zip-extracted/__MACOSX: ._PorsonSpecimen.pdf
+Only in source-GFS_Porson.zip-extracted: OFL-FAQ.txt
+Only in source-GFS_Porson.zip-extracted: OFL.txt
+Only in source-GFS_Porson.zip-extracted: PorsonSpecimen.pdf

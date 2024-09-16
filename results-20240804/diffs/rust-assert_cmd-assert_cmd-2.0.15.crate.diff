@@ -1,0 +1,10 @@
+Source package : rust-assert_cmd
+File name       : assert_cmd-2.0.15.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-assert_cmd/assert_cmd-2.0.15.crate/sha512/7ba88c3af404c431be87ba15ca11f43173abeadd26cd1f4ec2adef4d098091f3d7715608896169b6c50b8b94a0cb1796b2e31726bb66352318c825c3bdaa4755/assert_cmd-2.0.15.crate
+Source URL      : https://crates.io/api/v1/crates/assert_cmd/2.0.15/download#/assert_cmd-2.0.15.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-assert_cmd-2.0.15.crate: gzip compressed data, was "assert_cmd-2.0.15.crate", max compression, original size modulo 2^32 122880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-assert_cmd-2.0.15.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

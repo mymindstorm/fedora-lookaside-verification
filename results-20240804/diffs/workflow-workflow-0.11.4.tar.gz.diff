@@ -1,0 +1,236 @@
+Source package : workflow
+File name       : workflow-0.11.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/workflow/workflow-0.11.4.tar.gz/sha512/e688b503d0044fbd690c0b8dbd12567a46e11d2707f8fec82130174c8882bc58e83c877dc95719923395540372ffce3a1b41ffb61621b3957d9953fff7a362be/workflow-0.11.4.tar.gz
+Source URL      : https://github.com/sogou/workflow/archive/v0.11.4/workflow-0.11.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-workflow-0.11.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2170880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-workflow-0.11.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2170880
+
+
+diff -r source-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/factory/KafkaTaskImpl.cc lookaside-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/factory/KafkaTaskImpl.cc
+777,778d776
+< 	else
+< 		uri.state = URI_STATE_SUCCESS;
+diff -r source-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/factory/WFTaskFactory.inl lookaside-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/factory/WFTaskFactory.inl
+511,512d510
+< 	else
+< 		uri.state = URI_STATE_SUCCESS;
+diff -r source-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/include/workflow/json_parser.h lookaside-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/include/workflow/json_parser.h
+43d42
+< json_value_t *json_value_copy(const json_value_t *val);
+diff -r source-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/include/workflow/WFTaskFactory.inl lookaside-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/include/workflow/WFTaskFactory.inl
+511,512d510
+< 	else
+< 		uri.state = URI_STATE_SUCCESS;
+diff -r source-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/kernel/thrdpool.c lookaside-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/kernel/thrdpool.c
+21a22
+> #include <string.h>
+80c81
+< 	if (!pthread_equal(tid, __zero_tid))
+---
+> 	if (memcmp(&tid, &__zero_tid, sizeof (pthread_t)) != 0)
+105c106
+< 	if (!pthread_equal(pool->tid, __zero_tid))
+---
+> 	if (memcmp(&pool->tid, &__zero_tid, sizeof (pthread_t)) != 0)
+161c162
+< 				pool->tid = __zero_tid;
+---
+> 				memset(&pool->tid, 0, sizeof (pthread_t));
+diff -r source-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/util/json_parser.c lookaside-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/util/json_parser.c
+809,834d808
+< json_value_t *json_value_parse(const char *cursor)
+< {
+< 	json_value_t *val;
+< 
+< 	val = (json_value_t *)malloc(sizeof (json_value_t));
+< 	if (!val)
+< 		return NULL;
+< 
+< 	while (isspace(*cursor))
+< 		cursor++;
+< 
+< 	if (__parse_json_value(cursor, &cursor, 0, val) >= 0)
+< 	{
+< 		while (isspace(*cursor))
+< 			cursor++;
+< 
+< 		if (*cursor == '\0')
+< 			return val;
+< 
+< 		__destroy_json_value(val);
+< 	}
+< 
+< 	free(val);
+< 	return NULL;
+< }
+< 
+908c882
+< json_value_t *json_value_create(int type, ...)
+---
+> json_value_t *json_value_parse(const char *cursor)
+911,912d884
+< 	va_list ap;
+< 	int ret;
+918,987c890,891
+< 	va_start(ap, type);
+< 	ret = __set_json_value(type, ap, val);
+< 	va_end(ap);
+< 	if (ret < 0)
+< 	{
+< 		free(val);
+< 		return NULL;
+< 	}
+< 
+< 	return val;
+< }
+< 
+< static int __copy_json_value(const json_value_t *src, json_value_t *dest);
+< 
+< static int __copy_json_members(const json_object_t *src, json_object_t *dest)
+< {
+< 	struct list_head *pos;
+< 	json_member_t *entry;
+< 	json_member_t *memb;
+< 	int len;
+< 
+< 	list_for_each(pos, &src->head)
+< 	{
+< 		entry = list_entry(pos, json_member_t, list);
+< 		len = strlen(entry->name);
+< 		memb = (json_member_t *)malloc(offsetof(json_member_t, name) + len + 1);
+< 		if (!memb)
+< 			return -1;
+< 
+< 		if (__copy_json_value(&entry->value, &memb->value) < 0)
+< 		{
+< 			free(memb);
+< 			return -1;
+< 		}
+< 
+< 		memcpy(memb->name, entry->name, len + 1);
+< 		__insert_json_member(memb, dest->head.prev, dest);
+< 	}
+< 
+< 	return src->size;
+< }
+< 
+< static int __copy_json_elements(const json_array_t *src, json_array_t *dest)
+< {
+< 	struct list_head *pos;
+< 	json_element_t *entry;
+< 	json_element_t *elem;
+< 
+< 	list_for_each(pos, &src->head)
+< 	{
+< 		elem = (json_element_t *)malloc(sizeof (json_element_t));
+< 		if (!elem)
+< 			return -1;
+< 
+< 		entry = list_entry(pos, json_element_t, list);
+< 		if (__copy_json_value(&entry->value, &elem->value) < 0)
+< 		{
+< 			free(elem);
+< 			return -1;
+< 		}
+< 
+< 		list_add_tail(&elem->list, &dest->head);
+< 	}
+< 
+< 	return src->size;
+< }
+< 
+< static int __copy_json_value(const json_value_t *src, json_value_t *dest)
+< {
+< 	int len;
+---
+> 	while (isspace(*cursor))
+> 		cursor++;
+989c893
+< 	switch (src->type)
+---
+> 	if (__parse_json_value(cursor, &cursor, 0, val) >= 0)
+991,1014c895,896
+< 	case JSON_VALUE_STRING:
+< 		len = strlen(src->value.string);
+< 		dest->value.string = (char *)malloc(len + 1);
+< 		if (!dest->value.string)
+< 			return -1;
+< 
+< 		memcpy(dest->value.string, src->value.string, len + 1);
+< 		break;
+< 
+< 	case JSON_VALUE_NUMBER:
+< 		dest->value.number = src->value.number;
+< 		break;
+< 
+< 	case JSON_VALUE_OBJECT:
+< 		INIT_LIST_HEAD(&dest->value.object.head);
+< 		dest->value.object.root.rb_node = NULL;
+< 		if (__copy_json_members(&src->value.object, &dest->value.object) < 0)
+< 		{
+< 			__destroy_json_members(&dest->value.object);
+< 			return -1;
+< 		}
+< 
+< 		dest->value.object.size = src->value.object.size;
+< 		break;
+---
+> 		while (isspace(*cursor))
+> 			cursor++;
+1016,1022c898,899
+< 	case JSON_VALUE_ARRAY:
+< 		INIT_LIST_HEAD(&dest->value.array.head);
+< 		if (__copy_json_elements(&src->value.array, &dest->value.array) < 0)
+< 		{
+< 			__destroy_json_elements(&dest->value.array);
+< 			return -1;
+< 		}
+---
+> 		if (*cursor == '\0')
+> 			return val;
+1024,1025c901
+< 		dest->value.array.size = src->value.array.size;
+< 		break;
+---
+> 		__destroy_json_value(val);
+1028,1029c904,905
+< 	dest->type = src->type;
+< 	return 0;
+---
+> 	free(val);
+> 	return NULL;
+1032c908
+< json_value_t *json_value_copy(const json_value_t *val)
+---
+> json_value_t *json_value_create(int type, ...)
+1034c910,912
+< 	json_value_t *copy;
+---
+> 	json_value_t *val;
+> 	va_list ap;
+> 	int ret;
+1036,1037c914,915
+< 	copy = (json_value_t *)malloc(sizeof (json_value_t));
+< 	if (!copy)
+---
+> 	val = (json_value_t *)malloc(sizeof (json_value_t));
+> 	if (!val)
+1040c918,921
+< 	if (__copy_json_value(val, copy) < 0)
+---
+> 	va_start(ap, type);
+> 	ret = __set_json_value(type, ap, val);
+> 	va_end(ap);
+> 	if (ret < 0)
+1042c923
+< 		free(copy);
+---
+> 		free(val);
+1046c927
+< 	return copy;
+---
+> 	return val;
+diff -r source-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/util/json_parser.h lookaside-workflow-0.11.4.tar.gz-extracted/workflow-0.11.4/src/util/json_parser.h
+43d42
+< json_value_t *json_value_copy(const json_value_t *val);

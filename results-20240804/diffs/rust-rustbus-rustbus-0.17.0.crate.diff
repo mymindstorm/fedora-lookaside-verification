@@ -1,0 +1,10 @@
+Source package : rust-rustbus
+File name       : rustbus-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rustbus/rustbus-0.17.0.crate/sha512/a31dc95bfb29b910a6466f3d7dd3659b3da249770401a97b9064bd8f4b86480a9f130c176e42cdaca64d48cc320743e6c509519b2d3510320e7a621ab5fbfbf3/rustbus-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/rustbus/0.17.0/download#/rustbus-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rustbus-0.17.0.crate: gzip compressed data, was "rustbus-0.17.0.crate", max compression, original size modulo 2^32 474624
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rustbus-0.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

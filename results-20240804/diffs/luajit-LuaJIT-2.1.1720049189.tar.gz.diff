@@ -1,0 +1,350 @@
+Source package : luajit
+File name       : LuaJIT-2.1.1720049189.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/luajit/LuaJIT-2.1.1720049189.tar.gz/sha512/8bc8e4c2bdcc75e57a293fd278d1b188d0f440bd83924a7e6f06dda4a1c7d31eec6cf36f165be08a871a09a8c33640dae53ae845f4250d3c6329a340aa00006f/LuaJIT-2.1.1720049189.tar.gz
+Source URL      : https://github.com/LuaJIT/LuaJIT/archive/refs/heads/v2.1/LuaJIT-2.1.1720049189.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-LuaJIT-2.1.1720049189.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4526080
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-LuaJIT-2.1.1720049189.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4526080
+
+
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/Makefile lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/Makefile
+44c44
+< export INSTALL_LJLIBD= $(INSTALL_SHARE)/luajit-$(MMVERSION)
+---
+> INSTALL_LJLIBD= $(INSTALL_SHARE)/luajit-$(MMVERSION)
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/.relver lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/.relver
+1c1
+< 1725453128
+---
+> 1720049189
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/jit/dis_arm64.lua lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/jit/dis_arm64.lua
+661,664d660
+<   },
+<   { -- 010
+<     shift = 0, mask = 0x81f8fc00,
+<     [0x100e400] = "moviDdG"
+839,852d834
+< local function decode_fpmovi(op)
+<   local lo = rshift(op, 5)
+<   local hi = rshift(op, 9)
+<   lo = bor(band(lo, 1) * 0xff, band(lo, 2) * 0x7f80, band(lo, 4) * 0x3fc000,
+< 	   band(lo, 8) * 0x1fe00000)
+<   hi = bor(band(hi, 1) * 0xff, band(hi, 0x80) * 0x1fe,
+< 	   band(hi, 0x100) * 0xff00, band(hi, 0x200) * 0x7f8000)
+<   if hi ~= 0 then
+<     return fmt_hex32(hi)..tohex(lo)
+<   else
+<     return fmt_hex32(lo)
+<   end
+< end
+< 
+1152,1153d1133
+<     elseif p == "G" then
+<       x = "#0x"..decode_fpmovi(op)
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_asm_mips.h lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_asm_mips.h
+459c459
+<   emit_tsi(as, MIPSI_AL, RID_TMP, base, (LJ_BE || LJ_FR2) ? -8 : -4);
+---
+>   emit_tsi(as, MIPSI_AL, RID_TMP, base, -8);
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_crecord.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_crecord.c
+35d34
+< #include "lj_strscan.h"
+1811,1820d1809
+< static TRef crec_bit64_arg(jit_State *J, CType *d, TRef sp, TValue *sval)
+< {
+<   if (LJ_UNLIKELY(tref_isstr(sp))) {
+<     if (lj_strscan_num(strV(sval), sval)) {
+<       sp = emitir(IRTG(IR_STRTO, IRT_NUM), sp, 0);
+<     }  /* else: interpreter will throw. */
+<   }
+<   return crec_ct_tv(J, d, 0, sp, sval);
+< }
+< 
+1824,1825c1813,1814
+<   TRef tr = crec_bit64_arg(J, ctype_get(cts, CTID_INT64),
+< 			   J->base[0], &rd->argv[0]);
+---
+>   TRef tr = crec_ct_tv(J, ctype_get(cts, CTID_INT64), 0,
+> 		       J->base[0], &rd->argv[0]);
+1836c1825
+<     TRef tr = crec_bit64_arg(J, ctype_get(cts, id), J->base[0], &rd->argv[0]);
+---
+>     TRef tr = crec_ct_tv(J, ctype_get(cts, id), 0, J->base[0], &rd->argv[0]);
+1856c1845
+<     TRef tr = crec_bit64_arg(J, ct, J->base[0], &rd->argv[0]);
+---
+>     TRef tr = crec_ct_tv(J, ct, 0, J->base[0], &rd->argv[0]);
+1858c1847
+<       TRef tr2 = crec_bit64_arg(J, ct, J->base[i], &rd->argv[i]);
+---
+>       TRef tr2 = crec_ct_tv(J, ct, 0, J->base[i], &rd->argv[i]);
+1873,1874c1862,1863
+<     tsh = crec_bit64_arg(J, ctype_get(cts, CTID_INT64),
+< 			 J->base[1], &rd->argv[1]);
+---
+>     tsh = crec_ct_tv(J, ctype_get(cts, CTID_INT64), 0,
+> 		     J->base[1], &rd->argv[1]);
+1881c1870
+<     TRef tr = crec_bit64_arg(J, ctype_get(cts, id), J->base[0], &rd->argv[0]);
+---
+>     TRef tr = crec_ct_tv(J, ctype_get(cts, id), 0, J->base[0], &rd->argv[0]);
+1911c1900
+<       trsf = crec_bit64_arg(J, ctype_get(cts, CTID_INT32), trsf, &rd->argv[1]);
+---
+>       trsf = crec_ct_tv(J, ctype_get(cts, CTID_INT32), 0, trsf, &rd->argv[1]);
+1922c1911
+<     tr = crec_bit64_arg(J, ctype_get(cts, id), J->base[0], &rd->argv[0]);
+---
+>     tr = crec_ct_tv(J, ctype_get(cts, id), 0, J->base[0], &rd->argv[0]);
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_emit_arm64.h lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_emit_arm64.h
+69,79d68
+< static uint32_t emit_isfpmovi(uint64_t n)
+< {
+<   /* Is every byte either 0x00 or 0xff? */
+<   if ((n & U64x(01010101,01010101)) * 0xff != n) return 0;
+<   /* Form 8-bit value by taking one bit from each byte. */
+<   n &= U64x(80402010,08040201);
+<   n = (n * U64x(01010101,01010101)) >> 56;
+<   /* Split into the format expected by movi. */
+<   return ((n & 0xe0) << 6) | 0x700 | (n & 0x1f);
+< }
+< 
+112,116d100
+< static void emit_dl(ASMState *as, A64Ins ai, Reg rd, uint32_t l)
+< {
+<   *--as->mcp = ai | A64F_D(rd) | A64F_S19(l >> 2);
+< }
+< 
+234c218
+<   emit_dl(as, ai|(((uint32_t)ofs&3)<<29), rd, ofs);
+---
+>   emit_d(as, ai|(((uint32_t)ofs&3)<<29)|A64F_S19(ofs>>2), rd);
+299c283
+<     emit_dl(as, A64I_LDRLx, r, mcpofs(as, p));
+---
+>     emit_d(as, A64I_LDRLx | A64F_S19(mcpofs(as, p)>>2), r);
+319,321d302
+<     } else if ((fpk = emit_isfpmovi(*k))) {
+<       emit_d(as, A64I_MOVI_DI | (fpk << 5), (r & 31));
+<       return;
+328,330d308
+<   } else if (checkmcpofs(as, k)) {
+<     emit_dl(as, r >= RID_MAX_GPR ? A64I_LDRLd : A64I_LDRLx,
+< 	    (r & 31), mcpofs(as, k));
+336c314,317
+<     emit_loadu64(as, r, *k);
+---
+>     if (checkmcpofs(as, k))
+>       emit_d(as, A64I_LDRLx | A64F_S19(mcpofs(as, k)>>2), r);
+>     else
+>       emit_loadu64(as, r, *k);
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_ffrecord.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_ffrecord.c
+262c262
+<       emitir(IRT(IR_TBAR, IRT_NIL), tr, 0);
+---
+>       emitir(IRT(IR_TBAR, IRT_TAB), tr, 0);
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_gc.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_gc.c
+556a557
+>       g->gc.nocdatafin = 0;
+606c607
+<   MSize i;
+---
+>   MSize i, strmask;
+610c611,612
+<   for (i = g->str.mask; i != ~(MSize)0; i--)  /* Free all string hash chains. */
+---
+>   strmask = g->str.mask;
+>   for (i = 0; i <= strmask; i++)  /* Free all string hash chains. */
+690a693,695
+> #if LJ_HASFFI
+> 	g->gc.nocdatafin = 1;
+> #endif
+709a715,717
+> #if LJ_HASFFI
+>     if (!g->gc.nocdatafin) lj_tab_rehash(L, tabref(g->gcroot[GCROOT_FFI_FIN]));
+> #endif
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_load.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_load.c
+104d103
+<   int err = 0;
+106d104
+<     chunkname = lua_pushfstring(L, "@%s", filename);
+109d106
+<       L->top--;
+112a110
+>     chunkname = lua_pushfstring(L, "@%s", filename);
+118c116,122
+<   if (ferror(ctx.fp)) err = errno;
+---
+>   if (ferror(ctx.fp)) {
+>     L->top -= filename ? 2 : 1;
+>     lua_pushfstring(L, "cannot read %s: %s", chunkname+1, strerror(errno));
+>     if (filename)
+>       fclose(ctx.fp);
+>     return LUA_ERRFILE;
+>   }
+120d123
+<     fclose(ctx.fp);
+123,127c126
+<   }
+<   if (err) {
+<     L->top--;
+<     lua_pushfstring(L, "cannot read %s: %s", chunkname+1, strerror(err));
+<     return LUA_ERRFILE;
+---
+>     fclose(ctx.fp);
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_obj.h lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_obj.h
+598c598
+<   uint8_t unused0;
+---
+>   uint8_t nocdatafin;	/* No cdata finalizer called. */
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_opt_fold.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_opt_fold.c
+1138c1138
+< LJFOLD(CONV CONV IRCONV_U32_NUM)  /* _U32 */
+---
+> LJFOLD(CONV CONV IRCONV_U32_NUM)  /* _U32*/
+1173d1172
+< LJFOLD(CONV CONV IRCONV_INT_U32)  /* _INT or _U32 */
+1176d1174
+< LJFOLD(CONV CONV IRCONV_U32_INT)  /* _INT or _U32 */
+1221c1219
+< /* Shortcut floor/ceil/trunc + IRT_NUM <- integer conversion. */
+---
+> /* Shortcut floor/ceil/round + IRT_NUM <- IRT_INT/IRT_U32 conversion. */
+1227c1225,1226
+<   if ((uint32_t)(fleft->op2 & IRCONV_SRCMASK) - (uint32_t)IRT_I8 <= (uint32_t)(IRT_U64 - IRT_U8))
+---
+>   if ((fleft->op2 & IRCONV_SRCMASK) == IRT_INT ||
+>       (fleft->op2 & IRCONV_SRCMASK) == IRT_U32)
+1939c1938
+<   /* Invariant ABC marked as P32 or U32. Drop if op1 is invariant too. */
+---
+>   /* Invariant ABC marked as PTR. Drop if op1 is invariant, too. */
+1941,1942c1940
+<       (irt_isu32(fins->t) ||
+<        (!irref_isk(fins->op1) && !irt_isphi(IR(fins->op1)->t))))
+---
+>       !irt_isphi(IR(fins->op1)->t))
+2489,2499d2486
+< 
+< /* -- Miscellaneous ------------------------------------------------------- */
+< 
+< LJFOLD(CARG any any)
+< LJFOLDF(cse_carg)
+< {
+<   TRef tr = lj_opt_cse(J);
+<   if (tref_ref(tr) < J->chain[IR_LOOP])  /* CSE across loop? */
+<     return EMITFOLD;  /* Raw emit. Assumes fins is left intact by CSE. */
+<   return tr;
+< }
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_opt_narrow.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_opt_narrow.c
+344,345c344
+<       /* Limit total number of conversions. */
+<       if (count <= 1 && nc->sp < nc->maxsp) {
+---
+>       if (count <= 1) {  /* Limit total number of conversions. */
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_record.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_record.c
+1398,1399c1398
+< 	uint32_t abc = IRTG(IR_ABC, tref_isk(asizeref) ? IRT_U32 : IRT_P32);
+< 	emitir(abc, asizeref, ofs == 0 ? J->scev.stop :
+---
+> 	emitir(IRTG(IR_ABC, IRT_P32), asizeref, ofs == 0 ? J->scev.stop :
+1404c1403
+< 	  emitir(abc, asizeref, ikey);
+---
+> 	  emitir(IRTG(IR_ABC, IRT_P32), asizeref, ikey);
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_snap.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_snap.c
+960,961c960
+<   setcframe_pc(L->cframe, pc+1);
+<   setcframe_pc(cframe_raw(cframe_prev(L->cframe)), pc);
+---
+>   setcframe_pc(cframe_raw(L->cframe), pc+1);
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_tab.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_tab.c
+369a370,376
+> #if LJ_HASFFI
+> void lj_tab_rehash(lua_State *L, GCtab *t)
+> {
+>   rehashtab(L, t, niltv(L));
+> }
+> #endif
+> 
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_tab.h lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_tab.h
+62a63,65
+> #if LJ_HASFFI
+> LJ_FUNC void lj_tab_rehash(lua_State *L, GCtab *t);
+> #endif
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_target_arm64.h lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_target_arm64.h
+284d283
+<   A64I_LDRLd = 0x5c000000,
+324d322
+<   A64I_MOVI_DI = 0x2f000400,
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_trace.c lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/lj_trace.c
+908c908,909
+<   if (errcode)
+---
+>   if (errcode) {
+>     setcframe_pc(cframe_raw(L->cframe), L);  /* Point to any valid memory. */
+909a911
+>   }
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/luaconf.h lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/luaconf.h
+39a40
+> #define LUA_LJDIR	"/luajit-2.1/"
+53,57c54
+< #ifndef LUA_LJDIR
+< #define LUA_LJDIR	LUA_JROOT "/share/luajit-2.1"
+< #endif
+< 
+< #define LUA_JPATH	";" LUA_LJDIR "/?.lua"
+---
+> #define LUA_JPATH	";" LUA_JROOT "/share" LUA_LJDIR "?.lua"
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/Makefile lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/Makefile
+302,304d301
+< ifneq (,$(INSTALL_LJLIBD))
+<   TARGET_XCFLAGS+= -DLUA_LJDIR=\"$(INSTALL_LJLIBD)\"
+< endif
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/Makefile.dep lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/Makefile.dep
+101c101
+<  lj_crecord.h lj_strfmt.h lj_strscan.h
+---
+>  lj_crecord.h lj_strfmt.h
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/vm_arm64.dasc lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/vm_arm64.dasc
+1661c1661
+<   |// FP number to bit conversion. Clobbers CARG1-CARG2, FARG1-FARG2.
+---
+>   |// FP number to bit conversion for soft-float. Clobbers CARG1-CARG3
+1664,1668c1664,1676
+<   |  fmov FARG1, CARG1
+<   |  movz CARG2, #0x4338, lsl #48
+<   |  fmov FARG2, CARG2
+<   |  fadd FARG1, FARG1, FARG2
+<   |  fmov CARG1w, s0
+---
+>   |  add CARG2, CARG1, CARG1
+>   |  mov CARG3, #1076
+>   |  sub CARG3, CARG3, CARG2, lsr #53
+>   |  cmp CARG3, #53
+>   |  bhi >1
+>   |  and CARG2, CARG2, #U64x(001fffff,ffffffff)
+>   |  orr CARG2, CARG2, #U64x(00200000,00000000)
+>   |   cmp CARG1, #0
+>   |  lsr CARG2, CARG2, CARG3
+>   |   cneg CARG1w, CARG2w, mi
+>   |  br lr
+>   |1:
+>   |  mov CARG1w, #0
+diff -r source-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/vm_arm.dasc lookaside-LuaJIT-2.1.1720049189.tar.gz-extracted/LuaJIT-2.1/src/vm_arm.dasc
+1825a1826
+>   |// FP number to bit conversion for soft-float. Clobbers r0-r3.
+1828,1838d1828
+<   |.if FPU
+<   |// FP number to bit conversion for hard-float. Clobbers r0, d0-d1.
+<   |  vldr d1, >9
+<   |  vmov d0, CARG1, CARG2
+<   |  vadd.f64 d0, d0, d1
+<   |  vmov CARG1, s0
+<   |  bx lr
+<   |9:
+<   |  .long 0, 0x43380000		// (double)(2^52 + 2^51).
+<   |.else
+<   |// FP number to bit conversion for soft-float. Clobbers r0-r3.
+1863d1852
+<   |.endif

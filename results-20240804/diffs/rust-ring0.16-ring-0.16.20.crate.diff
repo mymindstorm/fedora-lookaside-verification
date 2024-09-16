@@ -1,0 +1,10 @@
+Source package : rust-ring0.16
+File name       : ring-0.16.20.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ring0.16/ring-0.16.20.crate/sha512/d97d1b08eb796d4c107426ff2c015ab1f221612500c8a57fca8e3f064e8c0f5ae2a5e6071d013313cd9f4be8fed4ba03beae84bd446f56b2b2ca5d483c328191/ring-0.16.20.crate
+Source URL      : https://crates.io/api/v1/crates/ring/0.16.20/download#/ring-0.16.20.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ring-0.16.20.crate: gzip compressed data, was "ring-0.16.20.crate", max compression, original size modulo 2^32 14430208
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ring-0.16.20.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

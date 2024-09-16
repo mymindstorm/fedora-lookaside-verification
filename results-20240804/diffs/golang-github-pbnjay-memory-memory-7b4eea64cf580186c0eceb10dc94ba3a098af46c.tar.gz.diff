@@ -1,0 +1,10 @@
+Source package : golang-github-pbnjay-memory
+File name       : memory-7b4eea64cf580186c0eceb10dc94ba3a098af46c.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-pbnjay-memory/memory-7b4eea64cf580186c0eceb10dc94ba3a098af46c.tar.gz/sha512/19fdf560db40a922d44cab3e5c6029d990af1d9b5578d0924b038d6d418029f9534d29b97dd9135f57668f8962a723f4bda41bc32a6c580899bd8560b4dc215a/memory-7b4eea64cf580186c0eceb10dc94ba3a098af46c.tar.gz
+Source URL      : https://github.com/pbnjay/memory/archive/7b4eea64cf580186c0eceb10dc94ba3a098af46c/memory-7b4eea64cf580186c0eceb10dc94ba3a098af46c.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-memory-7b4eea64cf580186c0eceb10dc94ba3a098af46c.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2333098308 gzip compressed data, unknown method, ASCII, has CRC, was "", from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 2333098308
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-memory-7b4eea64cf580186c0eceb10dc94ba3a098af46c.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 20480
+
+
+No differences detected!

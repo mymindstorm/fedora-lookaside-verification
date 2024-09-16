@@ -1,0 +1,10 @@
+Source package : rust-atk
+File name       : atk-0.18.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-atk/atk-0.18.0.crate/sha512/8464754932ae54bf49e30cbeea2a130317bdb1770bfb080593579ffccad6574e647d952b447fe566d12a2338587dc9dbe978fc7f055438adbefb366df3a84964/atk-0.18.0.crate
+Source URL      : https://crates.io/api/v1/crates/atk/0.18.0/download#/atk-0.18.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-atk-0.18.0.crate: gzip compressed data, was "atk-0.18.0.crate", max compression, original size modulo 2^32 304640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-atk-0.18.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

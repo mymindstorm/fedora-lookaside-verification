@@ -1,0 +1,10 @@
+Source package : rust-funty
+File name       : funty-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-funty/funty-2.0.0.crate/sha512/691e1c275b648110ef42c4adece8178cf037bad40d469780280eb2ebe07aa4b0406737c5ba02c9f9f63ee57a99fec27e5e51712e2113655f7522c8678f689155/funty-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/funty/2.0.0/download#/funty-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-funty-2.0.0.crate: gzip compressed data, was "funty-2.0.0.crate", max compression, original size modulo 2^32 4238343110
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-funty-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : aisleriot
+File name       : aisleriot-3.22.21.tar.bz2
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/aisleriot/aisleriot-3.22.21.tar.bz2/sha512/0f454b7770ea24ce6837e43f4bf5068ef89bea062f7c80d621cdeabbc261dae083859d966c6f8809c437f04c221e89ea3bfdaebb4d390e65b4b000feb197d582/aisleriot-3.22.21.tar.bz2
+Source URL      : https://gitlab.gnome.org/GNOME/${name}/-/archive/3.22.21/aisleriot-3.22.21.tar.bz2
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-aisleriot-3.22.21.tar.bz2: HTML document, Unicode text, UTF-8 text, with very long lines (2316)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-aisleriot-3.22.21.tar.bz2: bzip2 compressed data, block size = 900k
+
+
+Only in lookaside-aisleriot-3.22.21.tar.bz2-extracted: aisleriot-3.22.21

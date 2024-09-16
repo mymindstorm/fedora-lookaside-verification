@@ -1,0 +1,10 @@
+Source package : rust-addr
+File name       : addr-0.14.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-addr/addr-0.14.0.crate/sha512/18d6cecbbeb2ea11f2b4f40356d8a2de5aad45e57ac5f13dc9cd98cff4250b7612aadfb73935775c657e728ca10bc8313e601354f239a96e63ef90a8d2f6b870/addr-0.14.0.crate
+Source URL      : https://crates.io/api/v1/crates/addr/0.14.0/download#/addr-0.14.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-addr-0.14.0.crate: gzip compressed data, was "addr-0.14.0.crate", max compression, original size modulo 2^32 304640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-addr-0.14.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

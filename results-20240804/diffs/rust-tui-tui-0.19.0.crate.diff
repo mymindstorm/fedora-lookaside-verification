@@ -1,0 +1,10 @@
+Source package : rust-tui
+File name       : tui-0.19.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-tui/tui-0.19.0.crate/sha512/b90497d06181ca74ad0a976ed57bfd6e6495e6fc96651ee96fe9e326ebf773b6627d87cae07aec26d17800a4274624ad3e835a86c37258c51077c86e667078a8/tui-0.19.0.crate
+Source URL      : https://crates.io/api/v1/crates/tui/0.19.0/download#/tui-0.19.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tui-0.19.0.crate: gzip compressed data, was "tui-0.19.0.crate", max compression, original size modulo 2^32 683520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tui-0.19.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

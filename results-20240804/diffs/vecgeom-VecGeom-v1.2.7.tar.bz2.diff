@@ -1,0 +1,16 @@
+Source package : vecgeom
+File name       : VecGeom-v1.2.7.tar.bz2
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/vecgeom/VecGeom-v1.2.7.tar.bz2/sha512/0e23760554c77a0021bad3fe97d2e8f83e2415939e765230c01deb72a2529dc2c954e992c834a1fe5c80480ea3cae3c127ab786b69f38550d315832965ebe991/VecGeom-v1.2.7.tar.bz2
+Source URL      : https://gitlab.cern.ch/VecGeom/VecGeom/-/archive/v1.2.7/VecGeom-v1.2.7.tar.bz2
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-VecGeom-v1.2.7.tar.bz2: bzip2 compressed data, block size = 900k
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-VecGeom-v1.2.7.tar.bz2: bzip2 compressed data, block size = 900k
+
+
+diff -r source-VecGeom-v1.2.7.tar.bz2-extracted/VecGeom-v1.2.7/cmake/CgvFindVersion.cmake lookaside-VecGeom-v1.2.7.tar.bz2-extracted/VecGeom-v1.2.7/cmake/CgvFindVersion.cmake
+93c93
+<   set(_ARCHIVE_TAG "tag: v1.2.7, tag: v01.02.07, refs/keep-around/be99ff9e6b26fa5e0063f8bd21df23cb87911bf8")
+---
+>   set(_ARCHIVE_TAG "tag: v1.2.7, tag: v01.02.07, refs/keep-around/be99ff9e6b26fa5e0063f8bd21df23cb87911bf8, v1-patches")
+diff: source-VecGeom-v1.2.7.tar.bz2-extracted/VecGeom-v1.2.7/doc/doxygen/INSTALL.md: No such file or directory
+diff: lookaside-VecGeom-v1.2.7.tar.bz2-extracted/VecGeom-v1.2.7/doc/doxygen/INSTALL.md: No such file or directory

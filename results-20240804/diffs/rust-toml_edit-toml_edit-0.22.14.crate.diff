@@ -1,0 +1,10 @@
+Source package : rust-toml_edit
+File name       : toml_edit-0.22.14.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-toml_edit/toml_edit-0.22.14.crate/sha512/fef6ca35315482f635bfe35c2c6753d09f9bd33681d8f032f448fb9c6f494d30fc5789d96f99657879be9fdd7b35a640d52fce7722fc6ca05d8b9d5ed91903c4/toml_edit-0.22.14.crate
+Source URL      : https://crates.io/api/v1/crates/toml_edit/0.22.14/download#/toml_edit-0.22.14.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-toml_edit-0.22.14.crate: gzip compressed data, was "toml_edit-0.22.14.crate", max compression, original size modulo 2^32 905216
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-toml_edit-0.22.14.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

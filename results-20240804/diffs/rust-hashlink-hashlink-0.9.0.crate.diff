@@ -1,0 +1,10 @@
+Source package : rust-hashlink
+File name       : hashlink-0.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-hashlink/hashlink-0.9.0.crate/sha512/bf9d356d39e14e4de4a95ac6f43064ce42f42fac15ce005d7225d2538968ab171c89c4fade7b1f76e480783406d2f6afd005f8450e0c674b9a138951f0abd7a9/hashlink-0.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/hashlink/0.9.0/download#/hashlink-0.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-hashlink-0.9.0.crate: gzip compressed data, was "hashlink-0.9.0.crate", max compression, original size modulo 2^32 156672
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-hashlink-0.9.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

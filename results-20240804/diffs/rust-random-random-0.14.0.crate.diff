@@ -1,0 +1,10 @@
+Source package : rust-random
+File name       : random-0.14.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-random/random-0.14.0.crate/sha512/134d99dac4245ab02221c3051043c081b9ccc0eccf3a874cd897f9a8d76e7cda2078ca6bbbe7a978edea3dc1f43fddbcc83a3c317593ca5ca2fcb3f7feafe093/random-0.14.0.crate
+Source URL      : https://crates.io/api/v1/crates/random/0.14.0/download#/random-0.14.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-random-0.14.0.crate: gzip compressed data, was "random-0.14.0.crate", max compression, original size modulo 2^32 19968
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-random-0.14.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

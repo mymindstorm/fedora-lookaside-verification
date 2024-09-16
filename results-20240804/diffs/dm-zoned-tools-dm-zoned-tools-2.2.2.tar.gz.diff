@@ -1,0 +1,26 @@
+Source package : dm-zoned-tools
+File name       : dm-zoned-tools-2.2.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/dm-zoned-tools/dm-zoned-tools-2.2.2.tar.gz/sha512/42b17eb50b46826f11cfb27e85c362e81189dba1bd2207fd26f4d09813fc06e58c33880615af43df32a1fc22c5ad427f853edd460b48e4a0b7c7ccbf83021804/dm-zoned-tools-2.2.2.tar.gz
+Source URL      : https://github.com/westerndigitalcorporation/dm-zoned-tools/archive/v2.2.2/dm-zoned-tools-2.2.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dm-zoned-tools-2.2.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 245760
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dm-zoned-tools-2.2.2.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 1628160
+
+
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2: aclocal.m4
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2: build-aux
+Only in source-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2: CODE_OF_CONDUCT.md
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2: configure
+Only in source-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2: debian
+Only in source-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2: .gitignore
+Only in source-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2: LICENSES
+Only in source-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/m4: dontremove
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/m4: libtool.m4
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/m4: lt~obsolete.m4
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/m4: ltoptions.m4
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/m4: ltsugar.m4
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/m4: ltversion.m4
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2: Makefile.in
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/man: Makefile.in
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/src: config.h.in
+Only in lookaside-dm-zoned-tools-2.2.2.tar.gz-extracted/dm-zoned-tools-2.2.2/src: Makefile.in

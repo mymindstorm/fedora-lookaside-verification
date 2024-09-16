@@ -1,0 +1,10 @@
+Source package : rust-netlink-packet-route
+File name       : netlink-packet-route-0.19.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-netlink-packet-route/netlink-packet-route-0.19.0.crate/sha512/85f9b459ea7fbe1b50fc665fe377ddd3de3c30e9c80dbfa54de16609d6349d80b2b499413c9cbfd302ce1541f77186cf4cc35746056952e0b2ddbf813532d51f/netlink-packet-route-0.19.0.crate
+Source URL      : https://crates.io/api/v1/crates/netlink-packet-route/0.19.0/download#/netlink-packet-route-0.19.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-netlink-packet-route-0.19.0.crate: gzip compressed data, was "netlink-packet-route-0.19.0.crate", max compression, original size modulo 2^32 1034240
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-netlink-packet-route-0.19.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-termini
+File name       : termini-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-termini/termini-1.0.0.crate/sha512/3296af101d3687d3863881e96e0344fa9ec6b14f997791cafef99616af646a71e2369fc3f08e40d08a0a7d25c01a9e17149291dc95ee210e37c501a087ae9f4d/termini-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/termini/1.0.0/download#/termini-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-termini-1.0.0.crate: gzip compressed data, was "termini-1.0.0.crate", max compression, original size modulo 2^32 58368
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-termini-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,22 @@
+Source package : xgrep
+File name       : xgrep-0.08.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/xgrep/xgrep-0.08.tar.gz/md5/6e703caf8aa06047da455433d43f3c7f/xgrep-0.08.tar.gz
+Source URL      : http://www.wohlberg.net/public/software/xml/xgrep/xgrep-0.08.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-xgrep-0.08.tar.gz: gzip compressed data, was "xgrep-0.08.tar", last modified: Sat Aug 10 05:20:06 2013, max compression, from Unix, original size modulo 2^32 235520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-xgrep-0.08.tar.gz: gzip compressed data, was "xgrep-0.08.tar", last modified: Sat Aug 10 01:38:29 2013, max compression, from Unix, original size modulo 2^32 235520
+
+
+diff -r source-xgrep-0.08.tar.gz-extracted/xgrep-0.08/xgrep.1 lookaside-xgrep-0.08.tar.gz-extracted/xgrep-0.08/xgrep.1
+1a2
+> .LO 1
+16a18
+> .l
+59a62
+> .Vb 1
+60a64
+> .Ve
+65a70
+> .Vb 1
+67a73
+> .Ve

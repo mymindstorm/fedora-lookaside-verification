@@ -1,0 +1,11 @@
+Source package : python-rtmidi
+File name       : python_rtmidi-1.5.8.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-rtmidi/python_rtmidi-1.5.8.tar.gz/sha512/0f2b949a2a53f813a891bc391ce0369fbbec0d6e898a9ace2925adc5714d791ce1f4df133edf34c87b3336cb3ab4ad70851a42124241ec1707f32f66a778dc18/python_rtmidi-1.5.8.tar.gz
+Source URL      : https://github.com/SpotlightKid/python-rtmidi/archive/1.5.8/python_rtmidi-1.5.8.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-python_rtmidi-1.5.8.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2681871091 gzip compressed data, reserved method, ASCII, has CRC, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 2681871091
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-python_rtmidi-1.5.8.tar.gz: gzip compressed data, was "python_rtmidi-1.5.8.tar", last modified: Mon Nov 20 21:35:59 2023, max compression, original size modulo 2^32 2099200
+
+
+Only in source-python_rtmidi-1.5.8.tar.gz-extracted: python-rtmidi-1.5.8
+Only in lookaside-python_rtmidi-1.5.8.tar.gz-extracted: python_rtmidi-1.5.8

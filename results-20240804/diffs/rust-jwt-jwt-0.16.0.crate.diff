@@ -1,0 +1,10 @@
+Source package : rust-jwt
+File name       : jwt-0.16.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-jwt/jwt-0.16.0.crate/sha512/90be42949352f9d47778ee59aea325d37c3d0c4e98904b2c30e89900a2507380303891f0cb1a8f0543a563f7340f50775b805ca6bc48da2bacb3d468dd0aaaef/jwt-0.16.0.crate
+Source URL      : https://crates.io/api/v1/crates/jwt/0.16.0/download#/jwt-0.16.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-jwt-0.16.0.crate: gzip compressed data, was "jwt-0.16.0.crate", max compression, original size modulo 2^32 89600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-jwt-0.16.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

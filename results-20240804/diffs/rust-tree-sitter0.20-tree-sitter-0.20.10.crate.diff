@@ -1,0 +1,10 @@
+Source package : rust-tree-sitter0.20
+File name       : tree-sitter-0.20.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-tree-sitter0.20/tree-sitter-0.20.10.crate/sha512/247274c285493886a4ba5e6bc6590f04d6644a0c9a8fe06b2e65f887e2d0dd5475a907d8b2922d9a65055a59534091faab92fb3d245b547420f209bdeb284ea3/tree-sitter-0.20.10.crate
+Source URL      : https://crates.io/api/v1/crates/tree-sitter/0.20.10/download#/tree-sitter-0.20.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tree-sitter-0.20.10.crate: gzip compressed data, was "tree-sitter-0.20.10.crate", max compression, original size modulo 2^32 695808
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tree-sitter-0.20.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

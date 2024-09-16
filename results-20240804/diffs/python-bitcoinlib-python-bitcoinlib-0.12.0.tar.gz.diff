@@ -1,0 +1,19 @@
+Source package : python-bitcoinlib
+File name       : python-bitcoinlib-0.12.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-bitcoinlib/python-bitcoinlib-0.12.0.tar.gz/sha512/107f0d4a40e9438080b736b31f4d72818325c2bacf28a6b9170e678049ef634e0391b9389464a94b9d7ad01671d2f7b01569327368d51974e18dd3dc06c9d0df/python-bitcoinlib-0.12.0.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/p/python-bitcoinlib/python-bitcoinlib-0.12.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-python-bitcoinlib-0.12.0.tar.gz: gzip compressed data, was "python-bitcoinlib-0.12.0.tar", last modified: Wed Jan 25 14:25:51 2023, max compression, original size modulo 2^32 727040
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-python-bitcoinlib-0.12.0.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 727040
+
+
+Only in lookaside-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: doc
+Only in lookaside-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: examples
+Only in lookaside-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: .gitignore
+Only in source-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: PKG-INFO
+Only in source-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: python_bitcoinlib.egg-info
+Only in lookaside-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: release-notes.md
+Only in lookaside-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: runtests.sh
+Only in source-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: setup.cfg
+Only in lookaside-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: tox.ini
+Only in lookaside-python-bitcoinlib-0.12.0.tar.gz-extracted/python-bitcoinlib-0.12.0: .travis.yml

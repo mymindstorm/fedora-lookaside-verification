@@ -1,0 +1,10 @@
+Source package : rust-natord
+File name       : natord-1.0.9.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-natord/natord-1.0.9.crate/sha512/bf58eda54c759fecca1fd310bece370f26555bde1096081adc5bb1e9446a538f1652fb3049a52f898f4f62a2608805b72cb72dd52ff3fc9b88fe0a7c9071025a/natord-1.0.9.crate
+Source URL      : https://crates.io/api/v1/crates/natord/1.0.9/download#/natord-1.0.9.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-natord-1.0.9.crate: gzip compressed data, was "natord-1.0.9.crate", max compression, from MacOS, original size modulo 2^32 16384
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-natord-1.0.9.crate: POSIX tar archive
+
+
+No differences detected!

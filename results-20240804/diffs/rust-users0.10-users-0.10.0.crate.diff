@@ -1,0 +1,10 @@
+Source package : rust-users0.10
+File name       : users-0.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-users0.10/users-0.10.0.crate/sha512/21052adcd602ff6c30a4e9f4e14fdca896dce03969b1b03069f93f3e9d2b25c66b83ac2f40ed4e960dcfb5a0e67719ee45da475855f6e397f3618273ea52469b/users-0.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/users/0.10.0/download#/users-0.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-users-0.10.0.crate: gzip compressed data, was "users-0.10.0.crate", max compression, original size modulo 2^32 95232
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-users-0.10.0.crate: POSIX tar archive
+
+
+No differences detected!

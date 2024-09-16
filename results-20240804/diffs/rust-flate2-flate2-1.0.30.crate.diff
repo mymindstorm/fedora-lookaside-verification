@@ -1,0 +1,10 @@
+Source package : rust-flate2
+File name       : flate2-1.0.30.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-flate2/flate2-1.0.30.crate/sha512/21528f80c1709cfa764723dce012903581dbc2b63ecad194ec601fc75103307e1b2ef17479186ad895ad957c9a33c6fd666b2981382a8a68ca78dfac7cb5d578/flate2-1.0.30.crate
+Source URL      : https://crates.io/api/v1/crates/flate2/1.0.30/download#/flate2-1.0.30.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-flate2-1.0.30.crate: gzip compressed data, was "flate2-1.0.30.crate", max compression, original size modulo 2^32 352256
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-flate2-1.0.30.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

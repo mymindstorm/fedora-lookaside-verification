@@ -1,0 +1,10 @@
+Source package : rust-termion
+File name       : termion-3.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-termion/termion-3.0.0.crate/sha512/e307697f0a68bbf4182432d2f4ed3d846b7f42c9990edb01077d7c7eb1c1aa4df181c2399de43f7f0911b2fe23accee837c00ff56499f27fdc6a6a2a4f7a02e3/termion-3.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/termion/3.0.0/download#/termion-3.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-termion-3.0.0.crate: gzip compressed data, was "termion-3.0.0.crate", max compression, original size modulo 2^32 125440
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-termion-3.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,14 @@
+Source package : python-transforms3d
+File name       : transforms3d-0.4.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-transforms3d/transforms3d-0.4.1.tar.gz/sha512/b73e5a60da18290a18d3b07761651d2cd1b2b7112e1542c9478c262198a2b9d082b107d5372c8dca443b118f89021a8656915f6e7fc60bbf17507ff525d39bfa/transforms3d-0.4.1.tar.gz
+Source URL      : https://github.com/matthew-brett/transforms3d/archive/0.4.1/transforms3d-0.4.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-transforms3d-0.4.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2027520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-transforms3d-0.4.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2027520
+
+
+diff -r source-transforms3d-0.4.1.tar.gz-extracted/transforms3d-0.4.1/transforms3d/_version.py lookaside-transforms3d-0.4.1.tar.gz-extracted/transforms3d-0.4.1/transforms3d/_version.py
+28c28
+<     git_refnames = " (tag: 0.4.1)"
+---
+>     git_refnames = " (HEAD -> main, tag: 0.4.1)"

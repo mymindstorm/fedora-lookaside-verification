@@ -1,0 +1,36 @@
+Source package : python-leather
+File name       : leather-0.4.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-leather/leather-0.4.0.tar.gz/sha512/2ad71c5ceaf7d76f5c03da675d527a67b6a582dacc91c9ad6d0536acff314e9f99093032ffd34638bcd662a1b64590ec3aae4a7f495e3644c686f68e093bfc5e/leather-0.4.0.tar.gz
+Source URL      : https://github.com/wireservice/leather/archive/0.4.0/leather-0.4.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-leather-0.4.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 327680
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-leather-0.4.0.tar.gz: gzip compressed data, was "leather-0.4.0.tar", last modified: Fri Feb 23 22:03:20 2024, max compression, original size modulo 2^32 471040
+
+
+Only in source-leather-0.4.0.tar.gz-extracted/leather-0.4.0: .github
+Only in source-leather-0.4.0.tar.gz-extracted/leather-0.4.0: .gitignore
+Only in lookaside-leather-0.4.0.tar.gz-extracted/leather-0.4.0: leather.egg-info
+Only in lookaside-leather-0.4.0.tar.gz-extracted/leather-0.4.0: PKG-INFO
+Only in source-leather-0.4.0.tar.gz-extracted/leather-0.4.0: .readthedocs.yaml
+diff -r source-leather-0.4.0.tar.gz-extracted/leather-0.4.0/setup.cfg lookaside-leather-0.4.0.tar.gz-extracted/leather-0.4.0/setup.cfg
+3,9c3,8
+< per-file-ignores =
+<     # imported but unused
+<     leather/__init__.py: F401
+<     leather/scales/__init__.py: F401
+<     leather/series/__init__.py: F401
+<     leather/shapes/__init__.py: F401
+<     leather/ticks/__init__.py: F401
+---
+> per-file-ignores = 
+> 	leather/__init__.py: F401
+> 	leather/scales/__init__.py: F401
+> 	leather/series/__init__.py: F401
+> 	leather/shapes/__init__.py: F401
+> 	leather/ticks/__init__.py: F401
+18a18,22
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 

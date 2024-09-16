@@ -1,0 +1,10 @@
+Source package : rust-fragile
+File name       : fragile-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-fragile/fragile-2.0.0.crate/sha512/a48fee7c13ad800142a9ef1f355b2200b904ad9bf97b3601e310bad2b6ad90ea235b9704964c54be1d9c415c9c95fbc5f49e8ba5d7c6ee3488573f3404912608/fragile-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/fragile/2.0.0/download#/fragile-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-fragile-2.0.0.crate: gzip compressed data, was "fragile-2.0.0.crate", max compression, original size modulo 2^32 79360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-fragile-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

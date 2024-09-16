@@ -1,0 +1,10 @@
+Source package : rust-ipnetwork0.17
+File name       : ipnetwork-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ipnetwork0.17/ipnetwork-0.17.0.crate/sha512/0708ea810a0dee7e353c92fa04373219b926e2c448f96f4718d3e827dcfd30cfa313e0516bdee6b564b15e8fdfd77883e44df7ac98efb2cbeb58f5cce9a44191/ipnetwork-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/ipnetwork/0.17.0/download#/ipnetwork-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ipnetwork-0.17.0.crate: gzip compressed data, was "ipnetwork-0.17.0.crate", max compression, original size modulo 2^32 85504
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ipnetwork-0.17.0.crate: POSIX tar archive
+
+
+No differences detected!

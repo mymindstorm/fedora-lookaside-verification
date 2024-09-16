@@ -1,0 +1,10 @@
+Source package : xrootd
+File name       : xrootd-5.7.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/xrootd/xrootd-5.7.0.tar.gz/sha512/2103d453e8d655a19c58beb050158b08f6e36ce5d1a6cc9181881af3cae06938222a00af5cad102d1e2df4408d61ea364e54a0d2d41c71f1f2e07641a618effe/xrootd-5.7.0.tar.gz
+Source URL      : https://xrootd.slac.stanford.edu//download/v5.7.0/xrootd-5.7.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-xrootd-5.7.0.tar.gz: POSIX tar archive
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-xrootd-5.7.0.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 2854847087 gzip compressed data, unknown method, has CRC, was "\277\033\226\201\206$0\350D\364Y\222\360\361\204\203' ", encrypted, last modified: Mon Jul  5 13:12:49 2021, original size modulo 2^32 2854847087
+
+
+No differences detected!

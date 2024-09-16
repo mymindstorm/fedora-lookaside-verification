@@ -1,0 +1,24 @@
+Source package : guidelines-support-library
+File name       : guidelines-support-library-4.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/guidelines-support-library/guidelines-support-library-4.0.0.tar.gz/sha512/50a6a362e401ca1744f0719e521a38c32d54e4cc7ee9b0a601dd018e00e7a08a83062183411f34d5254dd49ce76ba9acc1037f5301a5f4e0f8c337608eb78110/guidelines-support-library-4.0.0.tar.gz
+Source URL      : https://github.com/Microsoft/GSL/archive/v4.0.0/guidelines-support-library-4.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-guidelines-support-library-4.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 378880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-guidelines-support-library-4.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 378880
+
+
+diff -r source-guidelines-support-library-4.0.0.tar.gz-extracted/GSL-4.0.0/CMakeLists.txt lookaside-guidelines-support-library-4.0.0.tar.gz-extracted/GSL-4.0.0/CMakeLists.txt
+7c7
+<     VERSION 4.0.0
+---
+>     VERSION 3.1.0
+diff -r source-guidelines-support-library-4.0.0.tar.gz-extracted/GSL-4.0.0/include/gsl/narrow lookaside-guidelines-support-library-4.0.0.tar.gz-extracted/GSL-4.0.0/include/gsl/narrow
+39,44c39
+< GSL_SUPPRESS(es.103) // NO-FORMAT: attribute // don't overflow
+< GSL_SUPPRESS(es.104) // NO-FORMAT: attribute // don't underflow
+< GSL_SUPPRESS(p.2) // NO-FORMAT: attribute // don't rely on undefined behavior
+<     const T t = narrow_cast<T>(u); // While this is technically undefined behavior in some cases (i.e., if the source value is of floating-point type
+<                                    // and cannot fit into the destination integral type), the resultant behavior is benign on the platforms
+<                                    // that we target (i.e., no hardware trap representations are hit).
+---
+>     const T t = narrow_cast<T>(u);

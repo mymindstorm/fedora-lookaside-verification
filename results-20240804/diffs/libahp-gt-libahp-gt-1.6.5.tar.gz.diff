@@ -1,0 +1,43 @@
+Source package : libahp-gt
+File name       : libahp-gt-1.6.5.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/libahp-gt/libahp-gt-1.6.5.tar.gz/sha512/61a0d64508a7127414b06021c5dc93ceb02ed304ab2fc1b6b383ffc5b3189d6ecd3fa7a3da77e6742c3cddd707eea07858bf5f6f115d83e0578c66232c686b9b/libahp-gt-1.6.5.tar.gz
+Source URL      : https://github.com/ahp-electronics/libahp-gt/archive/v1.6.5/libahp-gt-1.6.5.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libahp-gt-1.6.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 256000
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libahp-gt-1.6.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 256000
+
+
+diff -r source-libahp-gt-1.6.5.tar.gz-extracted/libahp-gt-1.6.5/ahp_gt.c lookaside-libahp-gt-1.6.5.tar.gz-extracted/libahp-gt-1.6.5/ahp_gt.c
+860a861,869
+> 
+>     switch(devices[ahp_gt_get_current_device()].stepping_mode[axis]) {
+>     case HalfStep:
+>     case Microstep:
+>         devices[ahp_gt_get_current_device()].multiplier [axis] = 1;
+>         break;
+>     default:
+>         break;
+>     }
+1055a1065
+>     double motor = 1.0;
+1059d1068
+<     double motor = 1.0;
+1061c1070,1074
+<     double decimals = worm - round(worm);
+---
+>     double decimals = worm - floor(worm);
+>     if(decimals >= 1.0)
+>         decimals /= floor(worm);
+>     else
+>         decimals /= floor(motor / worm) / worm;
+1063,1064c1076
+<         decimals /= round(motor / worm) / worm;
+<         motor = 1.0 / decimals;
+---
+>         motor /= decimals;
+1068,1069c1080,1081
+<     devices[ahp_gt_get_current_device()].motor [axis] = fabs(round(motor));
+<     devices[ahp_gt_get_current_device()].worm [axis] = fabs(round(worm));
+---
+>     devices[ahp_gt_get_current_device()].motor [axis] = round(motor);
+>     devices[ahp_gt_get_current_device()].worm [axis] = round(worm);

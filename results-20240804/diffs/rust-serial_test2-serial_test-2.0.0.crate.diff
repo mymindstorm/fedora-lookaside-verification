@@ -1,0 +1,10 @@
+Source package : rust-serial_test2
+File name       : serial_test-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-serial_test2/serial_test-2.0.0.crate/sha512/65bbba74ddf39c3437b3afa327f7cb1befad12a81e639bc6285608211621b444dbf81edfde8b1b85c708a873c105d27aaf0d2f2d4dcac8872c68d92849c8f3dc/serial_test-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/serial_test/2.0.0/download#/serial_test-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-serial_test-2.0.0.crate: gzip compressed data, was "serial_test-2.0.0.crate", max compression, original size modulo 2^32 45568
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-serial_test-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

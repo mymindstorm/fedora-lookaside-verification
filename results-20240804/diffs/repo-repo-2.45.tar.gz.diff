@@ -1,0 +1,10 @@
+Source package : repo
+File name       : repo-2.45.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/repo/repo-2.45.tar.gz/sha512/fb68a0a37334cf3ce4baff0f86f15c73866c18fc1540f331d1c71b555987787bb6745c9e51f7b0d0e50a5de08bb35e421250fb64cf196287a7e56e80099f870e/repo-2.45.tar.gz
+Source URL      : https://gerrit.googlesource.com/git-repo/+archive/v2.45.tar.gz#/repo-2.45.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-repo-2.45.tar.gz: gzip compressed data, original size modulo 2^32 3258794751
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-repo-2.45.tar.gz: gzip compressed data, original size modulo 2^32 1449984
+
+
+No differences detected!

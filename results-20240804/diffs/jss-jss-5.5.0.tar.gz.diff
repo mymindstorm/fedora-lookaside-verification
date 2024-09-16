@@ -1,0 +1,10 @@
+Source package : jss
+File name       : jss-5.5.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jss/jss-5.5.0.tar.gz/sha512/bda0b4df1ef08a264525c9124a29f57945e3a24adadda609b54032d840a1c311d522e34f29bb2246d03d493d108d425a64e4826edcc8a296a2f55b1cdd8a95c0/jss-5.5.0.tar.gz
+Source URL      : https://github.com/dogtagpki/jss/archive/v5.5.0/jss-5.5.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-jss-5.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 6973440
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-jss-5.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 6973440
+
+
+No differences detected!

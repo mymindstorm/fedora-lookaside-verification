@@ -100,7 +100,23 @@ Source URL      : ${sourceURL}\n\n`;
         });
       }
     } catch (e) {
-      comparisonReport += `Could not fetch file! Error: ${e.toString()}`;
+      comparisonReport += `Could not fetch file! Error: ${(e as Error).toString()}`;
+
+      try {
+        await rimraf([
+          urls[0].extractPath,
+          urls[1].extractPath,
+          urls[0].tmpFilePath,
+          urls[1].tmpFilePath,
+        ]);
+      } catch {
+        // no-op
+      }
+
+      await writeFile(
+        join(output, `${sourcePackage}-${fileName}.diff`),
+        comparisonReport,
+      );
       continue;
     }
 
@@ -124,12 +140,16 @@ Source URL      : ${sourceURL}\n\n`;
       comparisonReport += `\n\n${output.stdout + output.stderr}`;
     }
 
-    await rimraf([
-      urls[0].extractPath,
-      urls[1].extractPath,
-      urls[0].tmpFilePath,
-      urls[1].tmpFilePath,
-    ]);
+    try {
+      await rimraf([
+        urls[0].extractPath,
+        urls[1].extractPath,
+        urls[0].tmpFilePath,
+        urls[1].tmpFilePath,
+      ]);
+    } catch {
+      // no-op
+    }
 
     await writeFile(
       join(output, `${sourcePackage}-${fileName}.diff`),

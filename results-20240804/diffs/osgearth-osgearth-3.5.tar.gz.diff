@@ -1,0 +1,364 @@
+Source package : osgearth
+File name       : osgearth-3.5.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/osgearth/osgearth-3.5.tar.gz/sha512/338281f0d1d800581bb3008d0c80d7fbc072f122c846afbc6061de874cf0bf36f6028aaba59914fb84f4e7e7a254db39c178bc5ca411468f916b4a18352d18c6/osgearth-3.5.tar.gz
+Source URL      : https://github.com/gwaldron/osgearth/archive/osgearth-3.5.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-osgearth-3.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 235622400 gzip compressed data, reserved method, was "", encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 235622400
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-osgearth-3.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 235622400 gzip compressed data, reserved method, ASCII, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 235622400
+
+
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/CMakeLists.txt lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/CMakeLists.txt
+297c297
+<     VERSION ${OSGEARTH_VERSION}
+---
+>     VERSION 3.4.0
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/docs/source/conf.py lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/docs/source/conf.py
+22,23c22,23
+< #from recommonmark.parser import CommonMarkParser
+< #from recommonmark.transform import AutoStructify
+---
+> from recommonmark.parser import CommonMarkParser
+> from recommonmark.transform import AutoStructify
+34d33
+<     'myst_parser'
+41,43c40,42
+< #source_parsers = {
+< #    '.md': CommonMarkParser,
+< #}
+---
+> source_parsers = {
+>     '.md': CommonMarkParser,
+> }
+243c242
+<    u'Pelican Mapping', 'osgEarth', 'Geospatial SDK for OpenSceneGraph',
+---
+>    u'Pelican Mapping', 'osgEarth', 'One line description of project.',
+259,262c258,261
+<     #app.add_config_value('recommonmark_config', {
+<     #    'enable_auto_toc_tree': True,
+<     #}, True)
+<     #app.add_transform(AutoStructify)
+---
+>     app.add_config_value('recommonmark_config', {
+>         'enable_auto_toc_tree': True,
+>     }, True)
+>     app.add_transform(AutoStructify)
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/docs/source/requirements.txt lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/docs/source/requirements.txt
+2d1
+< myst-parser==2.0.0
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/osgEarthConfig.cmake.in lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/osgEarthConfig.cmake.in
+1c1
+< set(OSGEARTH_VERSION @OSGEARTH_VERSION@)
+---
+> set(OSGEARTH_VERSION 3.1.0)
+32,33c32,33
+< set(osgEarth_LIBRARIES ${osgEarth_LIBRARY})
+< set(osgEarth_LIBRARIES_DEBUG ${osgEarth_LIBRARY_DEBUG})
+---
+> set(osgEarth_LIBRARIES    ${osgEarth_LIBRARY})
+> set(osgEarth_LIBRARIES_DEBUG    ${osgEarth_LIBRARY_DEBUG})
+35c35
+< set(osgEarth_LIBRARY_DIR ${osgEarth_LIBRARY_DIRS})
+---
+> set(osgEarth_LIBRARY_DIR  ${osgEarth_LIBRARY_DIRS})
+37c37
+< set(osgEarth_LDFLAGS ${${XPREFIX}_LDFLAGS})
+---
+> set(osgEarth_LDFLAGS      ${${XPREFIX}_LDFLAGS})
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/AnnotationLayer lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/AnnotationLayer
+50c50
+<         void addChild(osg::Node*);
+---
+>         void addChild(AnnotationNode*);
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/AnnotationLayer.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/AnnotationLayer.cpp
+66c66
+< AnnotationLayer::addChild(osg::Node* node)
+---
+> AnnotationLayer::addChild(AnnotationNode* node)
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/CoverageLayer lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/CoverageLayer
+252c252
+<                             // This path runs when we already have a partial tile from
+---
+>                             // this path is taken when we already have a partial tile from
+255,262c255,261
+<                             // NB: layer->mayHaveData() is insufficient here. We want to be sure
+<                             // to fail and fall back until we get data, and mayHaveData() will return
+<                             // false if our LOD exceeds that of the source layer. Instead we just query
+<                             // the "best available" key and start the search from there if that
+<                             // key is valid. (It will be invalid, for example, if the extents don't intersect.)
+<                             inputKey = imageLayer->getBestAvailableTileKey(inputKey);
+< 
+<                             while (inputKey.valid() && !input.valid() && imageLayer->isKeyInLegalRange(inputKey))
+---
+>                             
+>                             // NB: do not call mayHaveData() on the key, since we want to be sure
+>                             // to fail and fall back until we get data.
+>                             while (
+>                                 input.valid() == false &&
+>                                 inputKey.valid() &&
+>                                 imageLayer->isKeyInLegalRange(inputKey))
+270c269
+<                         else if (imageLayer->mayHaveData(inputKey))
+---
+>                         else
+272c271
+<                             // This path runs when we have no data at all yet.
+---
+>                             // this path is taken when we have no data at all yet.
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ExampleResources.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ExampleResources.cpp
+31d30
+< #include <osgEarth/AnnotationLayer>
+694,695c693
+<         URI kmlFileURI( kmlFile );
+<         osg::Node* kml = KML::load(kmlFileURI, mapNode, kml_options );
+---
+>         osg::Node* kml = KML::load( URI(kmlFile), mapNode, kml_options );
+707,712c705
+<             
+<             auto kmllayer = new AnnotationLayer();
+<             kmllayer->setName(kmlFileURI.base());
+<             kmllayer->addChild(kml);
+< 
+<             mapNode->getMap()->addLayer(kmllayer);
+---
+>             mapNode->addChild( kml );
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/FeatureModelGraph.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/FeatureModelGraph.cpp
+708c708
+<             OE_DEBUG << LC << _session->getFeatureSource()->getName()
+---
+>             OE_INFO << LC << _session->getFeatureSource()->getName()
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/FeatureModelLayer.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/FeatureModelLayer.cpp
+114,119c114
+<         if (getFeatureSource())
+<         {
+<             // tell the source to recompute its profile, etc.
+<             getFeatureSource()->dirty();
+<             create();
+<         }
+---
+>         create();
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImageOverlay.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImageOverlay.cpp
+223,227c223,225
+<     if (mapNode)
+<     {
+<         ImageOverlay::setMapNode(mapNode);
+<         compile();
+<     }
+---
+>     ImageOverlay::setMapNode(mapNode);
+> 
+>     compile();
+365,366d362
+<     OE_SOFT_ASSERT_AND_RETURN(getMapNode(), new osg::Group());
+< 
+457a454,456
+> 
+> 
+> 
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImGui/AnnotationsGUI lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImGui/AnnotationsGUI
+24d23
+< #include <osgEarth/ViewFitter>
+55,56d53
+<         const osgEarth::SpatialReference* srs = nullptr;
+<         osg::Camera* camera = nullptr;
+66d62
+<             auto anode = dynamic_cast<osgEarth::AnnotationNode*>(&node);
+68d63
+< 
+94,121d88
+<             else if (anode)
+<             {
+<                 ImGui::PushID((std::uintptr_t)data);
+< 
+<                 auto name = anode->getName();
+<                 if (name.empty()) name = "[" + std::string(anode->className()) + "]";
+< 
+<                 bool visible = node.getNodeMask() != 0;
+<                 if (ImGui::Checkbox("", &visible))
+<                 {
+<                     SetAnnotationNodeMask set(visible ? ~0 : 0);
+<                     node.accept(set);
+<                 }
+<                 ImGui::SameLine();
+<                 bool is_selected = false;
+<                 if (ImGui::Selectable(name.c_str(), &is_selected) && manip)
+<                 {
+<                     ViewFitter fitter(srs, camera);
+<                     Viewpoint vp;
+<                     fitter.createViewpoint(anode, vp);
+<                     manip->setViewpoint(vp);
+<                 }
+< 
+<                 ImGui::PopID();
+< 
+<                 ImGui::Indent();
+< 
+<             }
+125c92
+<             if (data || anode)
+---
+>             if (data)
+167,168d133
+<                     getannos.srs = _mapNode->getMapSRS();
+<                     getannos.camera = camera(ri);
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImGui/ImGuiApp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImGui/ImGuiApp
+213c213
+<                 //_menu["Tools"].push_back(GUIPtr(new PickerGUI));
+---
+>                 _menu["Tools"].push_back(GUIPtr(new PickerGUI));
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImGui/PickerGUI lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImGui/PickerGUI
+157c157
+< 
+---
+>         
+162c162
+<         osg::ref_ptr<const Feature> _pickedFeature;
+---
+>         osg::ref_ptr < const Feature > _pickedFeature;
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImGui/ViewpointsGUI lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ImGui/ViewpointsGUI
+121d120
+< #if 0
+134d132
+< #endif
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ObjectIDPicker lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ObjectIDPicker
+56,59d55
+<         //! Size of the RTT image (pixels per side) - must call before setView()
+<         void setRTTSize(int value) { _rttSize = value; }
+<         int getRTTSize() const { return _rttSize; }
+< 
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ObjectIDPicker.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/ObjectIDPicker.cpp
+108,109d107
+<     OE_SOFT_ASSERT_AND_RETURN(_rttSize >= 1, void());
+< 
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/OGRFeatureSource lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/OGRFeatureSource
+126,129d125
+<         //! Call this if the underlying geometry changes and we need to
+<         //! recompute the profile.
+<         void dirty() override;
+< 
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/OGRFeatureSource.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/OGRFeatureSource.cpp
+701,729d700
+< void
+< OGRFeatureSource::dirty()
+< {
+<     if (_profile.valid())
+<     {
+<         setFeatureProfile(new FeatureProfile(_profile->getExtent()));
+<     }
+<     else if (_geometry.valid())
+<     {
+<         // if the user specified explicit geometry, use that and the calculated
+<         // extent of the geometry to derive a profile.
+<         GeoExtent ex;
+<         if (_profile.valid())
+<         {
+<             ex = GeoExtent(_profile->getSRS(), _geometry->getBounds());
+<         }
+< 
+<         if (!ex.isValid())
+<         {
+<             // default to WGS84 Lat/Long
+<             //osg::ref_ptr<const Profile> gg = Profile::create(Profile::GLOBAL_GEODETIC);
+<             //ex = gg->getExtent();
+<             ex = GeoExtent(SpatialReference::get("wgs84"), _geometry->getBounds());
+<         }
+< 
+<         setFeatureProfile(new FeatureProfile(ex));
+<     }
+< }
+< 
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/Registry.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarth/Registry.cpp
+178,182d177
+<     // pre-load KML/KMZ plugin so that we can use it in URIs
+<     std::string kmzLib = osgDB::Registry::instance()->createLibraryNameForExtension("kml");
+<     if (!kmzLib.empty())
+<         osgDB::Registry::instance()->loadLibrary(kmzLib);
+< 
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KML_Common lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KML_Common
+24a25
+> #include <osgEarth/MapNode>
+74a76
+>         MapNode*                              _mapNode;         // reference map node
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KML_GroundOverlay.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KML_GroundOverlay.cpp
+69,70c69
+<         //im = new ImageOverlay( cx._mapNode, image.get() );
+<         im = new ImageOverlay(nullptr, image.get());
+---
+>         im = new ImageOverlay( cx._mapNode, image.get() );
+89c88
+<         im = new ImageOverlay(nullptr, image.get());
+---
+>         im = new ImageOverlay(cx._mapNode, image.get());
+109c108
+<             im = new ImageOverlay(nullptr, image.get() );
+---
+>             im = new ImageOverlay( cx._mapNode, image.get() );
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KML_NetworkLink.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KML_NetworkLink.cpp
+57c57
+<         const SpatialReference* geoSRS = cx._srs;
+---
+>         const SpatialReference* geoSRS = cx._mapNode->getMapSRS()->getGeographicSRS();
+101,103c101,103
+<         //osgDB::Options* options = Registry::instance()->cloneOrCreateOptions();
+<         //options->setPluginData( "osgEarth::MapNode", cx._mapNode );
+<         //plod->setDatabaseOptions( options );
+---
+>         osgDB::Options* options = Registry::instance()->cloneOrCreateOptions();
+>         options->setPluginData( "osgEarth::MapNode", cx._mapNode );
+>         plod->setDatabaseOptions( options );
+116,118c116,118
+<         //osgDB::Options* options = Registry::instance()->cloneOrCreateOptions();
+<         //options->setPluginData( "osgEarth::MapNode", cx._mapNode );
+<         //proxy->setDatabaseOptions( options );
+---
+>         osgDB::Options* options = Registry::instance()->cloneOrCreateOptions();
+>         options->setPluginData( "osgEarth::MapNode", cx._mapNode );
+>         proxy->setDatabaseOptions( options );
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KML_Placemark.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KML_Placemark.cpp
+129c129
+<                         ModelNode* node = new ModelNode(nullptr, style, cx._dbOptions.get() );
+---
+>                         ModelNode* node = new ModelNode( cx._mapNode, style, cx._dbOptions.get() );
+189c189
+<                     //featureNode->setMapNode( cx._mapNode );
+---
+>                     featureNode->setMapNode( cx._mapNode );
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KMLReader lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KMLReader
+55,56c55,56
+<         MapNode* _mapNode = nullptr;
+<         const KMLOptions* _options = nullptr;
+---
+>         MapNode*          _mapNode;
+>         const KMLOptions* _options;
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KMLReader.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/KMLReader.cpp
+36,38c36,38
+< KMLReader::KMLReader(MapNode* mapNode, const KMLOptions* options) :
+<     _mapNode(mapNode),
+<     _options(options)
+---
+> KMLReader::KMLReader( MapNode* mapNode, const KMLOptions* options ) :
+> _mapNode( mapNode ),
+> _options( options )
+77a78
+>     cx._mapNode   = _mapNode;
+82c83
+<     cx._srs = _mapNode ? _mapNode->getMapSRS()->getGeographicSRS() : SpatialReference::create("wgs84");
+---
+>     cx._srs = _mapNode->getMapSRS()->getGeographicSRS();
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/ReaderWriterKML.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/kml/ReaderWriterKML.cpp
+85c85,88
+<         // this plugin can receive an optional MapNode* in options.
+---
+>         if ( !options )
+>             return ReadResult("Missing required MapNode option");
+> 
+>         // this plugin requires that you pass in a MapNode* in options.
+87a91,92
+>         if ( !mapNode )
+>             return ReadResult("Missing required MapNode option");
+diff -r source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/sky_simple/SimpleSkyNode.cpp lookaside-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/src/osgEarthDrivers/sky_simple/SimpleSkyNode.cpp
+761c761
+<         stateSet->setTextureAttribute(0, texture, osg::StateAttribute::ON | osg::StateAttribute::PROTECTED);
+---
+>         stateSet->setTextureAttributeAndModes(0, texture, osg::StateAttribute::ON | osg::StateAttribute::PROTECTED);
+Only in source-osgearth-3.5.tar.gz-extracted/osgearth-osgearth-3.5/tests: kml.earth

@@ -1,0 +1,11 @@
+Source package : efifs
+File name       : efifs-1.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/efifs/efifs-1.9.tar.gz/sha512/5bca4eb4bc72b2a72f68176b4b47bafdbb962afea4b1c6af0e3144d388b2d3d64487b150b86af62edfabe819da8dd92961391fbe67bdf15f84f64875983efa72/efifs-1.9.tar.gz
+Source URL      : https://github.com/pbatard/efifs/archive/v1.9/efifs-1.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-efifs-1.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1116160
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-efifs-1.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1116160
+
+
+Only in lookaside-efifs-1.9.tar.gz-extracted: efifs-1.9
+Only in source-efifs-1.9.tar.gz-extracted: EfiFs-1.9

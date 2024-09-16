@@ -1,0 +1,10 @@
+Source package : rust-actix-rt
+File name       : actix-rt-2.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-actix-rt/actix-rt-2.10.0.crate/sha512/3f9f76ba181cc92a980d24542a0c5f647868736adf9ac636622a74ac4ad03d1cf567c2c4c5e188e401c83a65300c28b96e22607cadc9736433934ea485f63df2/actix-rt-2.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/actix-rt/2.10.0/download#/actix-rt-2.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-actix-rt-2.10.0.crate: gzip compressed data, was "actix-rt-2.10.0.crate", max compression, original size modulo 2^32 3536192389
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-actix-rt-2.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

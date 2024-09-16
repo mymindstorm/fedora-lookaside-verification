@@ -1,0 +1,10 @@
+Source package : rust-group
+File name       : group-0.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-group/group-0.13.0.crate/sha512/359db06bee4cb51ffe799d9c408791e310e72fde3bb3fd447cf97482ebb909af07b43e9b728e3639d5497fc905b650bf00403b3a6b21515e6628c2466e0851e3/group-0.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/group/0.13.0/download#/group-0.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-group-0.13.0.crate: gzip compressed data, was "group-0.13.0.crate", max compression, original size modulo 2^32 74240
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-group-0.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

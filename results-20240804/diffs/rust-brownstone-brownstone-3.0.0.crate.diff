@@ -1,0 +1,10 @@
+Source package : rust-brownstone
+File name       : brownstone-3.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-brownstone/brownstone-3.0.0.crate/sha512/52ccf0d970fca06cd5d6585e589e61c3a455a6485f006eb74cba2357c0649c015ccd83ce8c2697953032d4e960f7b8fe23796fe4ac6f4cb43a977ee0d887007d/brownstone-3.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/brownstone/3.0.0/download#/brownstone-3.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-brownstone-3.0.0.crate: gzip compressed data, was "brownstone-3.0.0.crate", max compression, original size modulo 2^32 43520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-brownstone-3.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

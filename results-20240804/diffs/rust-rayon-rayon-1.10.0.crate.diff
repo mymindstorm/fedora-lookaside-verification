@@ -1,0 +1,10 @@
+Source package : rust-rayon
+File name       : rayon-1.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rayon/rayon-1.10.0.crate/sha512/3f628c58f3af3cbd1f245ca1be9c8393eff41112891fc4e676a2b9e26b6cba7cb80d7b6ce46e75bbb65e42fc00c5c0bb6b6a4b59092882f03febeb31f9cca5d3/rayon-1.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/rayon/1.10.0/download#/rayon-1.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rayon-1.10.0.crate: gzip compressed data, was "rayon-1.10.0.crate", max compression, original size modulo 2^32 1007104
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rayon-1.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

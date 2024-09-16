@@ -1,0 +1,10 @@
+Source package : rust-metrics
+File name       : metrics-0.23.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-metrics/metrics-0.23.0.crate/sha512/77fa47383bf390cd8a66abda9a2492ea39831070744ebcbc048e8312523c1feca5e9a671352040efb7352fb4a55b8d7a44591224a6b12c6f66c456cf2ac85635/metrics-0.23.0.crate
+Source URL      : https://crates.io/api/v1/crates/metrics/0.23.0/download#/metrics-0.23.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-metrics-0.23.0.crate: gzip compressed data, was "metrics-0.23.0.crate", max compression, original size modulo 2^32 194048
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-metrics-0.23.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

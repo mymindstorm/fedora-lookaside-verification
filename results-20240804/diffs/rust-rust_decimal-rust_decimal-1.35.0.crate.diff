@@ -1,0 +1,10 @@
+Source package : rust-rust_decimal
+File name       : rust_decimal-1.35.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rust_decimal/rust_decimal-1.35.0.crate/sha512/17ffd08f67305e428820d0e64ee06a381eb026f1ef1903da48f26c079505365c122d3159ebbd7566261ba3abb5360b8e80b51efc6ca5d182a8d68646aeaa9dcd/rust_decimal-1.35.0.crate
+Source URL      : https://crates.io/api/v1/crates/rust_decimal/1.35.0/download#/rust_decimal-1.35.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rust_decimal-1.35.0.crate: gzip compressed data, was "rust_decimal-1.35.0.crate", max compression, original size modulo 2^32 691712
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rust_decimal-1.35.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

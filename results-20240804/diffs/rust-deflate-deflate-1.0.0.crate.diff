@@ -1,0 +1,10 @@
+Source package : rust-deflate
+File name       : deflate-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-deflate/deflate-1.0.0.crate/sha512/06ffe2829956c59b5bb80c29a58742ddcf33884410d8edfd126dbd7fd39c1dac704b2561dc99ed63ca1ea4665cf68d6bce96de99dbf105a7b1616ac858704862/deflate-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/deflate/1.0.0/download#/deflate-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-deflate-1.0.0.crate: gzip compressed data, was "deflate-1.0.0.crate", max compression, original size modulo 2^32 282112
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-deflate-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

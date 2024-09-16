@@ -1,0 +1,11 @@
+Source package : smesh
+File name       : smesh-9.8.0.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/smesh/smesh-9.8.0.2.tar.gz/sha512/03ee9490677208089ebf8b147596ea61fc33aebd949c245cdaa2a717b9fae51946df3c2b2059fe024f5e09c3975178cada2a7bcceccf853658838c6ade5c5cf4/smesh-9.8.0.2.tar.gz
+Source URL      : https://github.com/trelau/SMESH/archive/v9.8.0.2/smesh-9.8.0.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-smesh-9.8.0.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 593920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-smesh-9.8.0.2.tar.gz: gzip compressed data, was "smesh-9.8.0.2.tar", last modified: Tue May 17 11:04:08 2022, from Unix, original size modulo 2^32 41512960
+
+
+Only in lookaside-smesh-9.8.0.2.tar.gz-extracted: smesh-9.8.0.2
+Only in source-smesh-9.8.0.2.tar.gz-extracted: SMESH-9.8.0.2

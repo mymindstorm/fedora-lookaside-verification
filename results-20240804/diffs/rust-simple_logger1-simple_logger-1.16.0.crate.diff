@@ -1,0 +1,10 @@
+Source package : rust-simple_logger1
+File name       : simple_logger-1.16.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-simple_logger1/simple_logger-1.16.0.crate/sha512/bd0636318e3c365047802d8c35cd262ed0bd0df4a2c3d2094e875c5805d982b6f337937603f597a27a3a4983c8c5f25a77a1fbb2d23692f311b0fb268f0a8f70/simple_logger-1.16.0.crate
+Source URL      : https://crates.io/api/v1/crates/simple_logger/1.16.0/download#/simple_logger-1.16.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-simple_logger-1.16.0.crate: gzip compressed data, was "simple_logger-1.16.0.crate", max compression, original size modulo 2^32 46592
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-simple_logger-1.16.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

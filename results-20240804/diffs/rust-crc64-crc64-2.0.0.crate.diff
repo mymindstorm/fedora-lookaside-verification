@@ -1,0 +1,10 @@
+Source package : rust-crc64
+File name       : crc64-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-crc64/crc64-2.0.0.crate/sha512/fa1195b7010e35efcb8b199214a2e6978343a0c8df36aeb62e6cc9faaf833b6dcaef0bebe189cd1b99b410aa57f76e208949a519faf790fcae4156bbf62088a4/crc64-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/crc64/2.0.0/download#/crc64-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-crc64-2.0.0.crate: gzip compressed data, was "crc64-2.0.0.crate", max compression, original size modulo 2^32 69120
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-crc64-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

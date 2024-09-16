@@ -1,0 +1,10 @@
+Source package : rust-tokio-rustls
+File name       : tokio-rustls-0.26.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-tokio-rustls/tokio-rustls-0.26.0.crate/sha512/101f2083e04feffec48204388c4be3d51fd6dc45bdd04bb75bdfaba48cbdd89529e14dda194ef45b2d78530cc74f128a763fb09165a52d738eb17adff7c56664/tokio-rustls-0.26.0.crate
+Source URL      : https://crates.io/api/v1/crates/tokio-rustls/0.26.0/download#/tokio-rustls-0.26.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tokio-rustls-0.26.0.crate: gzip compressed data, was "tokio-rustls-0.26.0.crate", max compression, original size modulo 2^32 145920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tokio-rustls-0.26.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

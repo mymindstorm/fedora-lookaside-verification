@@ -1,0 +1,12 @@
+Source package : mythes-fr
+File name       : thesaurus-v2.3.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/mythes-fr/thesaurus-v2.3.zip/md5/0bfb1c5188bf19237885ee2cf2793edc/thesaurus-v2.3.zip
+Source URL      : http://www.dicollecte.org/download/fr/thesaurus-v2.3.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-thesaurus-v2.3.zip: HTML document, Unicode text, UTF-8 text, with very long lines (18058)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-thesaurus-v2.3.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+
+
+Only in lookaside-thesaurus-v2.3.zip-extracted: README_thes_fr.txt
+Only in lookaside-thesaurus-v2.3.zip-extracted: thes_fr.dat
+Only in lookaside-thesaurus-v2.3.zip-extracted: thes_fr.idx

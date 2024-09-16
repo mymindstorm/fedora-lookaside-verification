@@ -1,0 +1,10 @@
+Source package : rust-linux-loader
+File name       : linux-loader-0.11.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-linux-loader/linux-loader-0.11.0.crate/sha512/e074f6941875fb8156fd08f7e0f8cdcc6a0c21de0b140cc3dfd4a8b8cd3ec2f7edf6db908708f3cdeb2ebffbbe583256c6cf6aeded4fd7225fa0b2e667242185/linux-loader-0.11.0.crate
+Source URL      : https://crates.io/api/v1/crates/linux-loader/0.11.0/download#/linux-loader-0.11.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-linux-loader-0.11.0.crate: gzip compressed data, was "linux-loader-0.11.0.crate", max compression, original size modulo 2^32 408576
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-linux-loader-0.11.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

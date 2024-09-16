@@ -1,0 +1,18 @@
+Source package : adobe-source-han-serif-jp-fonts
+File name       : SourceHanSerifJP.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/adobe-source-han-serif-jp-fonts/SourceHanSerifJP.zip/sha512/5e6005e904619b671b1ffd089a0f44e0502e3a6af1dca749ddcf0fe0fe6d67cbb0d2e19099f5e0da173a31e67bcbeb6f884e41eb998141346be69122452a0ae4/SourceHanSerifJP.zip
+Source URL      : https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifJP.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-SourceHanSerifJP.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-SourceHanSerifJP.zip: Zip archive data, at least v1.0 to extract, compression method=store
+
+
+Only in source-SourceHanSerifJP.zip-extracted: LICENSE.txt
+Only in lookaside-SourceHanSerifJP.zip-extracted: SourceHanSerifJP
+Only in source-SourceHanSerifJP.zip-extracted: SourceHanSerifJP-Bold.otf
+Only in source-SourceHanSerifJP.zip-extracted: SourceHanSerifJP-ExtraLight.otf
+Only in source-SourceHanSerifJP.zip-extracted: SourceHanSerifJP-Heavy.otf
+Only in source-SourceHanSerifJP.zip-extracted: SourceHanSerifJP-Light.otf
+Only in source-SourceHanSerifJP.zip-extracted: SourceHanSerifJP-Medium.otf
+Only in source-SourceHanSerifJP.zip-extracted: SourceHanSerifJP-Regular.otf
+Only in source-SourceHanSerifJP.zip-extracted: SourceHanSerifJP-SemiBold.otf

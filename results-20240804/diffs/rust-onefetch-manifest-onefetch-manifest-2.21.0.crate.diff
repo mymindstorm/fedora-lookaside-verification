@@ -1,0 +1,10 @@
+Source package : rust-onefetch-manifest
+File name       : onefetch-manifest-2.21.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-onefetch-manifest/onefetch-manifest-2.21.0.crate/sha512/76a13299ea8db69f8aa19d9ccd028e9c8bef0ee74b5b1a65f47b7bf26e58f0dd58c5a429c40c697d56b2e5b5a041db76d72ed7835933ca797bf48093faed1f5d/onefetch-manifest-2.21.0.crate
+Source URL      : https://crates.io/api/v1/crates/onefetch-manifest/2.21.0/download#/onefetch-manifest-2.21.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-onefetch-manifest-2.21.0.crate: gzip compressed data, was "onefetch-manifest-2.21.0.crate", max compression, original size modulo 2^32 21504
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-onefetch-manifest-2.21.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

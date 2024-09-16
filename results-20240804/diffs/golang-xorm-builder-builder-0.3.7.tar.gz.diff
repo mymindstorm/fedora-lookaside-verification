@@ -1,0 +1,10 @@
+Source package : golang-xorm-builder
+File name       : builder-0.3.7.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-xorm-builder/builder-0.3.7.tar.gz/sha512/123180a861d1105294742dc7897f3203a22f21e7473033c3450061f3dd92887e2f42161320196ff61303f047c9cf6ff247156ebad955e41fcaf7832ecfa14a7b/builder-0.3.7.tar.gz
+Source URL      : https://gitea.com/xorm/builder/archive/v0.3.7.tar.gz#/builder-0.3.7.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-builder-0.3.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 194560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-builder-0.3.7.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 194560
+
+
+No differences detected!

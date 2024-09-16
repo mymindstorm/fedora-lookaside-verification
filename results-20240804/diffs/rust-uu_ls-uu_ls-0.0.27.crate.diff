@@ -1,0 +1,10 @@
+Source package : rust-uu_ls
+File name       : uu_ls-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uu_ls/uu_ls-0.0.27.crate/sha512/9150a2437000a005a62250eed126898553ad6996c1c4034ba73d0acc6778f2ae5233835869064c5f71594419892b5118cec1b667d08cac157816b3b2ec85e316/uu_ls-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uu_ls/0.0.27/download#/uu_ls-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uu_ls-0.0.27.crate: gzip compressed data, was "uu_ls-0.0.27.crate", max compression, original size modulo 2^32 180736
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uu_ls-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

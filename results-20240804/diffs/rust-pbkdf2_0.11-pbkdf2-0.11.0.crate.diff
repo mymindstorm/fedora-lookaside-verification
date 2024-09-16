@@ -1,0 +1,10 @@
+Source package : rust-pbkdf2_0.11
+File name       : pbkdf2-0.11.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-pbkdf2_0.11/pbkdf2-0.11.0.crate/sha512/f900766e8e84d865670977bbe5816b74036f0c2b3a30df4c8ed73680f76f0ae111472af7aed96524cdf7e1092609c2008c5f40efb9a9c65b3a796b7f3415c087/pbkdf2-0.11.0.crate
+Source URL      : https://crates.io/api/v1/crates/pbkdf2/0.11.0/download#/pbkdf2-0.11.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pbkdf2-0.11.0.crate: gzip compressed data, was "pbkdf2-0.11.0.crate", max compression, original size modulo 2^32 68608
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pbkdf2-0.11.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

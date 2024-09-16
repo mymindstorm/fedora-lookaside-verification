@@ -1,0 +1,15 @@
+Source package : python-asciitree
+File name       : asciitree-0.3.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-asciitree/asciitree-0.3.3.tar.gz/md5/2570b31e563b69da1aff54509db8ac6a/asciitree-0.3.3.tar.gz
+Source URL      : https://github.com/mbr/asciitree/archive/0.3.3/asciitree-0.3.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-asciitree-0.3.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 40960
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-asciitree-0.3.3.tar.gz: gzip compressed data, was "dist/asciitree-0.3.3.tar", last modified: Mon Sep  5 19:10:40 2016, max compression, original size modulo 2^32 30720
+
+
+Only in lookaside-asciitree-0.3.3.tar.gz-extracted/asciitree-0.3.3: asciitree.egg-info
+Only in source-asciitree-0.3.3.tar.gz-extracted/asciitree-0.3.3: docs
+Only in source-asciitree-0.3.3.tar.gz-extracted/asciitree-0.3.3: example.py
+Only in lookaside-asciitree-0.3.3.tar.gz-extracted/asciitree-0.3.3: PKG-INFO
+Only in lookaside-asciitree-0.3.3.tar.gz-extracted/asciitree-0.3.3: setup.cfg
+Only in source-asciitree-0.3.3.tar.gz-extracted/asciitree-0.3.3: tests

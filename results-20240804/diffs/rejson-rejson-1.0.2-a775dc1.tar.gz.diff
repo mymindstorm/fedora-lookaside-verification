@@ -1,0 +1,11 @@
+Source package : rejson
+File name       : rejson-1.0.2-a775dc1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rejson/rejson-1.0.2-a775dc1.tar.gz/sha512/357a2dfaf82366b336d228e7caf7eafe3afb6e285d2bec886aef6f7e76abdc326e619902443dd00434403eed03fdc9adc58ce879ec46f01bf6d3bf058c1d8049/rejson-1.0.2-a775dc1.tar.gz
+Source URL      : https://github.com/goodform/rejson/archive/a775dc17a93ca31eca186815600aac9a14eef2ac/rejson-1.0.2-a775dc1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rejson-1.0.2-a775dc1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 5836800
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rejson-1.0.2-a775dc1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 5826560
+
+
+Only in lookaside-rejson-1.0.2-a775dc1.tar.gz-extracted: rejson-1.0.2
+Only in source-rejson-1.0.2-a775dc1.tar.gz-extracted: rejson-a775dc17a93ca31eca186815600aac9a14eef2ac

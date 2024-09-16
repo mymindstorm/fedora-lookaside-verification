@@ -1,0 +1,105 @@
+Source package : python-cachelib
+File name       : cachelib-0.13.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-cachelib/cachelib-0.13.0.tar.gz/sha512/09604fdd03f84a207770313192898087fdd724999be93b08e61c463b793611783ea70b18afbd89e10c655d227108bebb5a192c7a8d5c241bc94209ff51f7b338/cachelib-0.13.0.tar.gz
+Source URL      : https://github.com/pallets-eco/cachelib/archive/0.13.0/cachelib-0.13.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cachelib-0.13.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 174080
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cachelib-0.13.0.tar.gz: gzip compressed data, was "cachelib-0.13.0.tar", last modified: Sat Apr 13 14:16:09 2024, max compression, original size modulo 2^32 266240
+
+
+Only in lookaside-cachelib-0.13.0.tar.gz-extracted/cachelib-0.13.0: PKG-INFO
+Only in source-cachelib-0.13.0.tar.gz-extracted/cachelib-0.13.0/requirements: typing.in
+Only in source-cachelib-0.13.0.tar.gz-extracted/cachelib-0.13.0: requirements.txt
+diff -r source-cachelib-0.13.0.tar.gz-extracted/cachelib-0.13.0/setup.cfg lookaside-cachelib-0.13.0.tar.gz-extracted/cachelib-0.13.0/setup.cfg
+5,12c5,12
+< project_urls =
+<     Donate = https://palletsprojects.com/donate
+<     Documentation = https://cachelib.readthedocs.io/
+<     Changes = https://cachelib.readthedocs.io/changes/
+<     Source Code = https://github.com/pallets-eco/cachelib/
+<     Issue Tracker = https://github.com/pallets-eco/cachelib/issues/
+<     Twitter = https://twitter.com/PalletsTeam
+<     Chat = https://discord.gg/pallets
+---
+> project_urls = 
+> 	Donate = https://palletsprojects.com/donate
+> 	Documentation = https://cachelib.readthedocs.io/
+> 	Changes = https://cachelib.readthedocs.io/changes/
+> 	Source Code = https://github.com/pallets-eco/cachelib/
+> 	Issue Tracker = https://github.com/pallets-eco/cachelib/issues/
+> 	Twitter = https://twitter.com/PalletsTeam
+> 	Chat = https://discord.gg/pallets
+20,25c20,25
+< classifiers =
+<     Development Status :: 5 - Production/Stable
+<     Intended Audience :: Developers
+<     License :: OSI Approved :: BSD License
+<     Operating System :: OS Independent
+<     Programming Language :: Python
+---
+> classifiers = 
+> 	Development Status :: 5 - Production/Stable
+> 	Intended Audience :: Developers
+> 	License :: OSI Approved :: BSD License
+> 	Operating System :: OS Independent
+> 	Programming Language :: Python
+38,41c38,41
+< filterwarnings =
+<     error
+<     default::DeprecationWarning:cachelib.uwsgi
+<     default::DeprecationWarning:cachelib.redis
+---
+> filterwarnings = 
+> 	error
+> 	default::DeprecationWarning:cachelib.uwsgi
+> 	default::DeprecationWarning:cachelib.redis
+45,47c45,47
+< source =
+<     cachelib
+<     tests
+---
+> source = 
+> 	cachelib
+> 	tests
+50,52c50,52
+< source =
+<     src
+<     */site-packages
+---
+> source = 
+> 	src
+> 	*/site-packages
+55,60d54
+< # B = bugbear
+< # E = pycodestyle errors
+< # F = flake8 pyflakes
+< # W = pycodestyle warnings
+< # B9 = bugbear opinions
+< # ISC = implicit-str-concat
+62,73c56,61
+< ignore =
+<     # slice notation whitespace, invalid
+<     E203
+<     # line length, handled by bugbear B950
+<     E501
+<     # bare except, handled by bugbear B001
+<     E722
+<     # bin op line break, invalid
+<     W503
+<     # zip without an explicit strict
+<     B905
+< # up to 88 allowed by bugbear B950
+---
+> ignore = 
+> 	E203
+> 	E501
+> 	E722
+> 	W503
+> 	B905
+91a80,84
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 
+Only in lookaside-cachelib-0.13.0.tar.gz-extracted/cachelib-0.13.0/src: cachelib.egg-info

@@ -1,0 +1,16 @@
+Source package : gawk-json
+File name       : gawk-json-2.0.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/gawk-json/gawk-json-2.0.1.tar.gz/sha512/6d9e381ca7a5c06b2f4217266d84d1b9b5bb1bf64a461c1b2693e47386a04cf4977c700ee3a7d6803d6bffe14ef56d4388773411daa46acb7955017979c17a8c/gawk-json-2.0.1.tar.gz
+Source URL      : https://sourceforge.net/projects/gawkextlib/files/gawk-json-2.0.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gawk-json-2.0.1.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 3998748746 gzip compressed data, unknown method, has CRC, extra field, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3998748746
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gawk-json-2.0.1.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 1976320
+
+
+diff -r source-gawk-json-2.0.1.tar.gz-extracted/gawk-json-2.0.1/packaging/gawk-json.spec.in lookaside-gawk-json-2.0.1.tar.gz-extracted/gawk-json-2.0.1/packaging/gawk-json.spec.in
+13a14
+> BuildRequires:    make
+17c18
+< BuildRequires:    gawk(abi) < 4.0
+---
+> BuildRequires:    gawk(abi) < 5.0

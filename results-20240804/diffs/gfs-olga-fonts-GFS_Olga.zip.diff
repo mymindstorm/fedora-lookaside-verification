@@ -1,0 +1,22 @@
+Source package : gfs-olga-fonts
+File name       : GFS_Olga.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/gfs-olga-fonts/GFS_Olga.zip/sha512/d1e82c5084073de0ea04cb161312df6fb5aac301957142d7cc3ce46790a2a64428bb2b3b5894924311b3396e45bfe2761b6533138bf6263e28ad1b482eb95b9b/GFS_Olga.zip
+Source URL      : http://www.greekfontsociety-gfs.gr/_assets/fonts/GFS_Olga.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-GFS_Olga.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-GFS_Olga.zip: Zip archive data, at least v1.0 to extract, compression method=store
+
+
+Only in lookaside-GFS_Olga.zip-extracted: GFS_Olga
+Only in source-GFS_Olga.zip-extracted: GFSOlga.otf
+Only in source-GFS_Olga.zip-extracted: GFSOlga.ttf
+Only in lookaside-GFS_Olga.zip-extracted/__MACOSX: ._GFS_Olga
+Only in lookaside-GFS_Olga.zip-extracted/__MACOSX: GFS_Olga
+Only in source-GFS_Olga.zip-extracted/__MACOSX: ._GFSOlga.otf
+Only in source-GFS_Olga.zip-extracted/__MACOSX: ._GFSOlga.ttf
+Only in source-GFS_Olga.zip-extracted/__MACOSX: ._OFL-FAQ.txt
+Only in source-GFS_Olga.zip-extracted/__MACOSX: ._OFL.txt
+Only in source-GFS_Olga.zip-extracted/__MACOSX: ._OlgaSpecimen.pdf
+Only in source-GFS_Olga.zip-extracted: OFL-FAQ.txt
+Only in source-GFS_Olga.zip-extracted: OFL.txt
+Only in source-GFS_Olga.zip-extracted: OlgaSpecimen.pdf

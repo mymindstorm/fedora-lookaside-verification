@@ -1,0 +1,2592 @@
+Source package : qd
+File name       : qd-2.3.24.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/qd/qd-2.3.24.tar.gz/sha512/cf12a65f806bd66bd20df044637d7ea787f7dff081904ca5f3bf4c374ef57c3599c4c1e45339474875516f949288a61567440635365c1935d46c5079b09805a7/qd-2.3.24.tar.gz
+Source URL      : https://www.davidhbailey.com/dhbsoftware//qd-2.3.24.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-qd-2.3.24.tar.gz: POSIX tar archive
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-qd-2.3.24.tar.gz: gzip compressed data, was "qd-2.3.24.tar", last modified: Fri Nov  3 14:52:51 2023, from Unix, original size modulo 2^32 2996736
+
+
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/aclocal.m4 lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/aclocal.m4
+1c1
+< # generated automatically by aclocal 1.16.5 -*- Autoconf -*-
+---
+> # generated automatically by aclocal 1.16.3 -*- Autoconf -*-
+3c3
+< # Copyright (C) 1996-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1996-2020 Free Software Foundation, Inc.
+23c23
+< # Copyright (C) 2002-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2002-2020 Free Software Foundation, Inc.
+38c38
+< m4_if([$1], [1.16.5], [],
+---
+> m4_if([$1], [1.16.3], [],
+54c54
+< [AM_AUTOMAKE_VERSION([1.16.5])dnl
+---
+> [AM_AUTOMAKE_VERSION([1.16.3])dnl
+61c61
+< # Copyright (C) 2001-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2001-2020 Free Software Foundation, Inc.
+113c113
+< # Copyright (C) 1997-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1997-2020 Free Software Foundation, Inc.
+144c144
+< # Copyright (C) 1999-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1999-2020 Free Software Foundation, Inc.
+335c335
+< # Copyright (C) 1999-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1999-2020 Free Software Foundation, Inc.
+403c403
+< # Copyright (C) 1996-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1996-2020 Free Software Foundation, Inc.
+431,434d430
+< m4_ifdef([_$0_ALREADY_INIT],
+<   [m4_fatal([$0 expanded multiple times
+< ]m4_defn([_$0_ALREADY_INIT]))],
+<   [m4_define([_$0_ALREADY_INIT], m4_expansion_stack)])dnl
+471c467
+<   m4_ifset([AC_PACKAGE_NAME], [ok]):m4_ifset([AC_PACKAGE_VERSION], [ok]),
+---
+>   m4_ifdef([AC_PACKAGE_NAME], [ok]):m4_ifdef([AC_PACKAGE_VERSION], [ok]),
+523,536d518
+< # Variables for tags utilities; see am/tags.am
+< if test -z "$CTAGS"; then
+<   CTAGS=ctags
+< fi
+< AC_SUBST([CTAGS])
+< if test -z "$ETAGS"; then
+<   ETAGS=etags
+< fi
+< AC_SUBST([ETAGS])
+< if test -z "$CSCOPE"; then
+<   CSCOPE=cscope
+< fi
+< AC_SUBST([CSCOPE])
+< 
+618c600
+< # Copyright (C) 2001-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2001-2020 Free Software Foundation, Inc.
+639c621
+< # Copyright (C) 2003-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2003-2020 Free Software Foundation, Inc.
+660c642
+< # Copyright (C) 2001-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2001-2020 Free Software Foundation, Inc.
+703c685
+< # Copyright (C) 1997-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1997-2020 Free Software Foundation, Inc.
+737c719
+< # Copyright (C) 2001-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2001-2020 Free Software Foundation, Inc.
+766c748
+< # Copyright (C) 1999-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1999-2020 Free Software Foundation, Inc.
+813c795
+< # Copyright (C) 2001-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2001-2020 Free Software Foundation, Inc.
+832c814
+< # Copyright (C) 1996-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1996-2020 Free Software Foundation, Inc.
+913c895
+< # Copyright (C) 2009-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2009-2020 Free Software Foundation, Inc.
+973c955
+< # Copyright (C) 2001-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2001-2020 Free Software Foundation, Inc.
+1001c983
+< # Copyright (C) 2006-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2006-2020 Free Software Foundation, Inc.
+1020c1002
+< # Copyright (C) 2004-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2004-2020 Free Software Foundation, Inc.
+Binary files source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/._BSD-LBNL-License.doc and lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/._BSD-LBNL-License.doc differ
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/config/ltmain.sh lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/config/ltmain.sh
+1c1
+< #!/bin/sh
+---
+> #! /bin/sh
+3c3
+< ##               by inline-source v2019-02-19.15
+---
+> ##               by inline-source v2014-01-03.01
+5c5
+< # libtool (GNU libtool) 2.4.7
+---
+> # libtool (GNU libtool) 2.4.6
+9c9
+< # Copyright (C) 1996-2019, 2021-2022 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1996-2015 Free Software Foundation, Inc.
+34,35c34,35
+< VERSION=2.4.7
+< package_revision=2.4.7
+---
+> VERSION=2.4.6
+> package_revision=2.4.6
+67c67
+< scriptversion=2019-02-19.15; # UTC
+---
+> scriptversion=2015-10-04.22; # UTC
+72,82c72,89
+< # This is free software.  There is NO warranty; not even for
+< # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+< #
+< # Copyright (C) 2004-2019, 2021 Bootstrap Authors
+< #
+< # This file is dual licensed under the terms of the MIT license
+< # <https://opensource.org/license/MIT>, and GPL version 2 or later
+< # <http://www.gnu.org/licenses/gpl-2.0.html>.  You must apply one of
+< # these licenses when using or redistributing this software or any of
+< # the files within it.  See the URLs above, or the file `LICENSE`
+< # included in the Bootstrap distribution for the full license texts.
+---
+> # Copyright (C) 2004-2015 Free Software Foundation, Inc.
+> # This is free software; see the source for copying conditions.  There is NO
+> # warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+> 
+> # This program is free software; you can redistribute it and/or modify
+> # it under the terms of the GNU General Public License as published by
+> # the Free Software Foundation; either version 3 of the License, or
+> # (at your option) any later version.
+> 
+> # As a special exception to the GNU General Public License, if you distribute
+> # this file as part of a program or library that is built using GNU Libtool,
+> # you may include this file under the same distribution terms that you use
+> # for the rest of that program.
+> 
+> # This program is distributed in the hope that it will be useful,
+> # but WITHOUT ANY WARRANTY; without even the implied warranty of
+> # MERCHANTABILITY or FITNES FOR A PARTICULAR PURPOSE. See the GNU
+> # General Public License for more details.
+84,85c91,94
+< # Please report bugs or propose patches to:
+< # <https://github.com/gnulib-modules/bootstrap/issues>
+---
+> # You should have received a copy of the GNU General Public License
+> # along with this program. If not, see <http://www.gnu.org/licenses/>.
+> 
+> # Please report bugs or propose patches to gary@gnu.org.
+133,138c142,144
+< # These NLS vars are set unconditionally (bootstrap issue #24).  Unset those
+< # in case the environment reset is needed later and the $save_* variant is not
+< # defined (see the code above).
+< LC_ALL=C
+< LANGUAGE=C
+< export LANGUAGE LC_ALL
+---
+> 
+> # CDPATH.
+> (unset CDPATH) >/dev/null 2>&1 && unset CDPATH
+156,175d161
+< # func_unset VAR
+< # --------------
+< # Portably unset VAR.
+< # In some shells, an 'unset VAR' statement leaves a non-zero return
+< # status if VAR is already unset, which might be problematic if the
+< # statement is used at the end of a function (thus poisoning its return
+< # value) or when 'set -e' is active (causing even a spurious abort of
+< # the script in this case).
+< func_unset ()
+< {
+<     { eval $1=; (eval unset $1) >/dev/null 2>&1 && eval unset $1 || : ; }
+< }
+< 
+< 
+< # Make sure CDPATH doesn't cause `cd` commands to output the target dir.
+< func_unset CDPATH
+< 
+< # Make sure ${,E,F}GREP behave sanely.
+< func_unset GREP_OPTIONS
+< 
+276c262
+<   func_path_progs "sed gsed" func_check_prog_sed "$PATH:/usr/xpg4/bin"
+---
+>   func_path_progs "sed gsed" func_check_prog_sed $PATH:/usr/xpg4/bin
+312c298
+<   func_path_progs "grep ggrep" func_check_prog_grep "$PATH:/usr/xpg4/bin"
+---
+>   func_path_progs "grep ggrep" func_check_prog_grep $PATH:/usr/xpg4/bin
+377,405d362
+< # require_check_ifs_backslash
+< # ---------------------------
+< # Check if we can use backslash as IFS='\' separator, and set
+< # $check_ifs_backshlash_broken to ':' or 'false'.
+< require_check_ifs_backslash=func_require_check_ifs_backslash
+< func_require_check_ifs_backslash ()
+< {
+<   _G_save_IFS=$IFS
+<   IFS='\'
+<   _G_check_ifs_backshlash='a\\b'
+<   for _G_i in $_G_check_ifs_backshlash
+<   do
+<   case $_G_i in
+<   a)
+<     check_ifs_backshlash_broken=false
+<     ;;
+<   '')
+<     break
+<     ;;
+<   *)
+<     check_ifs_backshlash_broken=:
+<     break
+<     ;;
+<   esac
+<   done
+<   IFS=$_G_save_IFS
+<   require_check_ifs_backslash=:
+< }
+< 
+626,627c583,584
+<     func_quote_arg pretty "$2"
+<     eval "$1+=\\ \$func_quote_arg_result"
+---
+>     func_quote_for_eval "$2"
+>     eval "$1+=\\ \$func_quote_for_eval_result"
+634,635c591,592
+<     func_quote_arg pretty "$2"
+<     eval "$1=\$$1\\ \$func_quote_arg_result"
+---
+>     func_quote_for_eval "$2"
+>     eval "$1=\$$1\\ \$func_quote_for_eval_result"
+1137,1142c1094,1099
+< # func_quote_portable EVAL ARG
+< # ----------------------------
+< # Internal function to portably implement func_quote_arg.  Note that we still
+< # keep attention to performance here so we as much as possible try to avoid
+< # calling sed binary (so far O(N) complexity as long as func_append is O(1)).
+< func_quote_portable ()
+---
+> # func_quote ARG
+> # --------------
+> # Aesthetically quote one ARG, store the result into $func_quote_result.  Note
+> # that we keep attention to performance here (so far O(N) complexity as long as
+> # func_append is O(1)).
+> func_quote ()
+1146,1157c1103
+<     $require_check_ifs_backslash
+< 
+<     func_quote_portable_result=$2
+< 
+<     # one-time-loop (easy break)
+<     while true
+<     do
+<       if $1; then
+<         func_quote_portable_result=`$ECHO "$2" | $SED \
+<           -e "$sed_double_quote_subst" -e "$sed_double_backslash"`
+<         break
+<       fi
+---
+>     func_quote_result=$1
+1159,1170c1105,1112
+<       # Quote for eval.
+<       case $func_quote_portable_result in
+<         *[\\\`\"\$]*)
+<           # Fallback to sed for $func_check_bs_ifs_broken=:, or when the string
+<           # contains the shell wildcard characters.
+<           case $check_ifs_backshlash_broken$func_quote_portable_result in
+<             :*|*[\[\*\?]*)
+<               func_quote_portable_result=`$ECHO "$func_quote_portable_result" \
+<                   | $SED "$sed_quote_subst"`
+<               break
+<               ;;
+<           esac
+---
+>     case $func_quote_result in
+>       *[\\\`\"\$]*)
+>         case $func_quote_result in
+>           *[\[\*\?]*)
+>             func_quote_result=`$ECHO "$func_quote_result" | $SED "$sed_quote_subst"`
+>             return 0
+>             ;;
+>         esac
+1172,1173c1114,1121
+<           func_quote_portable_old_IFS=$IFS
+<           for _G_char in '\' '`' '"' '$'
+---
+>         func_quote_old_IFS=$IFS
+>         for _G_char in '\' '`' '"' '$'
+>         do
+>           # STATE($1) PREV($2) SEPARATOR($3)
+>           set start "" ""
+>           func_quote_result=dummy"$_G_char$func_quote_result$_G_char"dummy
+>           IFS=$_G_char
+>           for _G_part in $func_quote_result
+1175,1194c1123,1135
+<             # STATE($1) PREV($2) SEPARATOR($3)
+<             set start "" ""
+<             func_quote_portable_result=dummy"$_G_char$func_quote_portable_result$_G_char"dummy
+<             IFS=$_G_char
+<             for _G_part in $func_quote_portable_result
+<             do
+<               case $1 in
+<               quote)
+<                 func_append func_quote_portable_result "$3$2"
+<                 set quote "$_G_part" "\\$_G_char"
+<                 ;;
+<               start)
+<                 set first "" ""
+<                 func_quote_portable_result=
+<                 ;;
+<               first)
+<                 set quote "$_G_part" ""
+<                 ;;
+<               esac
+<             done
+---
+>             case $1 in
+>             quote)
+>               func_append func_quote_result "$3$2"
+>               set quote "$_G_part" "\\$_G_char"
+>               ;;
+>             start)
+>               set first "" ""
+>               func_quote_result=
+>               ;;
+>             first)
+>               set quote "$_G_part" ""
+>               ;;
+>             esac
+1196,1211c1137,1138
+<           IFS=$func_quote_portable_old_IFS
+<           ;;
+<         *) ;;
+<       esac
+<       break
+<     done
+< 
+<     func_quote_portable_unquoted_result=$func_quote_portable_result
+<     case $func_quote_portable_result in
+<       # double-quote args containing shell metacharacters to delay
+<       # word splitting, command substitution and variable expansion
+<       # for a subsequent eval.
+<       # many bourne shells cannot handle close brackets correctly
+<       # in scan sets, so we specify it separately.
+<       *[\[\~\#\^\&\*\(\)\{\}\|\;\<\>\?\'\ \	]*|*]*|"")
+<         func_quote_portable_result=\"$func_quote_portable_result\"
+---
+>           IFS=$func_quote_old_IFS
+>         done
+1212a1140
+>       *) ;;
+1217,1235c1145,1176
+< # func_quotefast_eval ARG
+< # -----------------------
+< # Quote one ARG (internal).  This is equivalent to 'func_quote_arg eval ARG',
+< # but optimized for speed.  Result is stored in $func_quotefast_eval.
+< if test xyes = `(x=; printf -v x %q yes; echo x"$x") 2>/dev/null`; then
+<   printf -v _GL_test_printf_tilde %q '~'
+<   if test '\~' = "$_GL_test_printf_tilde"; then
+<     func_quotefast_eval ()
+<     {
+<       printf -v func_quotefast_eval_result %q "$1"
+<     }
+<   else
+<     # Broken older Bash implementations.  Make those faster too if possible.
+<     func_quotefast_eval ()
+<     {
+<       case $1 in
+<         '~'*)
+<           func_quote_portable false "$1"
+<           func_quotefast_eval_result=$func_quote_portable_result
+---
+> # func_quote_for_eval ARG...
+> # --------------------------
+> # Aesthetically quote ARGs to be evaled later.
+> # This function returns two values:
+> #   i) func_quote_for_eval_result
+> #      double-quoted, suitable for a subsequent eval
+> #  ii) func_quote_for_eval_unquoted_result
+> #      has all characters that are still active within double
+> #      quotes backslashified.
+> func_quote_for_eval ()
+> {
+>     $debug_cmd
+> 
+>     func_quote_for_eval_unquoted_result=
+>     func_quote_for_eval_result=
+>     while test 0 -lt $#; do
+>       func_quote "$1"
+>       _G_unquoted_arg=$func_quote_result
+>       if test -n "$func_quote_for_eval_unquoted_result"; then
+> 	func_append func_quote_for_eval_unquoted_result " $_G_unquoted_arg"
+>       else
+>         func_append func_quote_for_eval_unquoted_result "$_G_unquoted_arg"
+>       fi
+> 
+>       case $_G_unquoted_arg in
+>         # Double-quote args containing shell metacharacters to delay
+>         # word splitting, command substitution and variable expansion
+>         # for a subsequent eval.
+>         # Many Bourne shells cannot handle close brackets correctly
+>         # in scan sets, so we specify it separately.
+>         *[\[\~\#\^\&\*\(\)\{\}\|\;\<\>\?\'\ \	]*|*]*|"")
+>           _G_quoted_arg=\"$_G_unquoted_arg\"
+1238,1239c1179,1180
+<           printf -v func_quotefast_eval_result %q "$1"
+<           ;;
+---
+>           _G_quoted_arg=$_G_unquoted_arg
+> 	  ;;
+1241,1249d1181
+<     }
+<   fi
+< else
+<   func_quotefast_eval ()
+<   {
+<     func_quote_portable false "$1"
+<     func_quotefast_eval_result=$func_quote_portable_result
+<   }
+< fi
+1250a1183,1190
+>       if test -n "$func_quote_for_eval_result"; then
+> 	func_append func_quote_for_eval_result " $_G_quoted_arg"
+>       else
+>         func_append func_quote_for_eval_result "$_G_quoted_arg"
+>       fi
+>       shift
+>     done
+> }
+1252,1299d1191
+< # func_quote_arg MODEs ARG
+< # ------------------------
+< # Quote one ARG to be evaled later.  MODEs argument may contain zero or more
+< # specifiers listed below separated by ',' character.  This function returns two
+< # values:
+< #   i) func_quote_arg_result
+< #      double-quoted (when needed), suitable for a subsequent eval
+< #  ii) func_quote_arg_unquoted_result
+< #      has all characters that are still active within double
+< #      quotes backslashified.  Available only if 'unquoted' is specified.
+< #
+< # Available modes:
+< # ----------------
+< # 'eval' (default)
+< #       - escape shell special characters
+< # 'expand'
+< #       - the same as 'eval';  but do not quote variable references
+< # 'pretty'
+< #       - request aesthetic output, i.e. '"a b"' instead of 'a\ b'.  This might
+< #         be used later in func_quote to get output like: 'echo "a b"' instead
+< #         of 'echo a\ b'.  This is slower than default on some shells.
+< # 'unquoted'
+< #       - produce also $func_quote_arg_unquoted_result which does not contain
+< #         wrapping double-quotes.
+< #
+< # Examples for 'func_quote_arg pretty,unquoted string':
+< #
+< #   string      | *_result              | *_unquoted_result
+< #   ------------+-----------------------+-------------------
+< #   "           | \"                    | \"
+< #   a b         | "a b"                 | a b
+< #   "a b"       | "\"a b\""             | \"a b\"
+< #   *           | "*"                   | *
+< #   z="${x-$y}" | "z=\"\${x-\$y}\""     | z=\"\${x-\$y}\"
+< #
+< # Examples for 'func_quote_arg pretty,unquoted,expand string':
+< #
+< #   string        |   *_result          |  *_unquoted_result
+< #   --------------+---------------------+--------------------
+< #   z="${x-$y}"   | "z=\"${x-$y}\""     | z=\"${x-$y}\"
+< func_quote_arg ()
+< {
+<     _G_quote_expand=false
+<     case ,$1, in
+<       *,expand,*)
+<         _G_quote_expand=:
+<         ;;
+<     esac
+1301,1306c1193,1204
+<     case ,$1, in
+<       *,pretty,*|*,expand,*|*,unquoted,*)
+<         func_quote_portable $_G_quote_expand "$2"
+<         func_quote_arg_result=$func_quote_portable_result
+<         func_quote_arg_unquoted_result=$func_quote_portable_unquoted_result
+<         ;;
+---
+> # func_quote_for_expand ARG
+> # -------------------------
+> # Aesthetically quote ARG to be evaled later; same as above,
+> # but do not quote variable references.
+> func_quote_for_expand ()
+> {
+>     $debug_cmd
+> 
+>     case $1 in
+>       *[\\\`\"]*)
+> 	_G_arg=`$ECHO "$1" | $SED \
+> 	    -e "$sed_double_quote_subst" -e "$sed_double_backslash"` ;;
+1308,1311c1206
+<         # Faster quote-for-eval for some shells.
+<         func_quotefast_eval "$2"
+<         func_quote_arg_result=$func_quotefast_eval_result
+<         ;;
+---
+>         _G_arg=$1 ;;
+1313d1207
+< }
+1314a1209,1217
+>     case $_G_arg in
+>       # Double-quote args containing shell metacharacters to delay
+>       # word splitting and command substitution for a subsequent eval.
+>       # Many Bourne shells cannot handle close brackets correctly
+>       # in scan sets, so we specify it separately.
+>       *[\[\~\#\^\&\*\(\)\{\}\|\;\<\>\?\'\ \	]*|*]*|"")
+>         _G_arg=\"$_G_arg\"
+>         ;;
+>     esac
+1316,1333c1219
+< # func_quote MODEs ARGs...
+< # ------------------------
+< # Quote all ARGs to be evaled later and join them into single command.  See
+< # func_quote_arg's description for more info.
+< func_quote ()
+< {
+<     $debug_cmd
+<     _G_func_quote_mode=$1 ; shift
+<     func_quote_result=
+<     while test 0 -lt $#; do
+<       func_quote_arg "$_G_func_quote_mode" "$1"
+<       if test -n "$func_quote_result"; then
+<         func_append func_quote_result " $func_quote_arg_result"
+<       else
+<         func_append func_quote_result "$func_quote_arg_result"
+<       fi
+<       shift
+<     done
+---
+>     func_quote_for_expand_result=$_G_arg
+1379,1380c1265,1266
+<     func_quote_arg pretty,expand "$_G_cmd"
+<     eval "func_notquiet $func_quote_arg_result"
+---
+>     func_quote_for_expand "$_G_cmd"
+>     eval "func_notquiet $func_quote_for_expand_result"
+1405,1406c1291,1292
+<       func_quote_arg expand,pretty "$_G_cmd"
+<       eval "func_echo $func_quote_arg_result"
+---
+>       func_quote_for_expand "$_G_cmd"
+>       eval "func_echo $func_quote_for_expand_result"
+1531c1417,1420
+< #!/bin/sh
+---
+> #! /bin/sh
+> 
+> # Set a version string for this script.
+> scriptversion=2014-01-07.03; # UTC
+1536,1546c1425,1432
+< # This is free software.  There is NO warranty; not even for
+< # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+< #
+< # Copyright (C) 2010-2019, 2021 Bootstrap Authors
+< #
+< # This file is dual licensed under the terms of the MIT license
+< # <https://opensource.org/license/MIT>, and GPL version 2 or later
+< # <http://www.gnu.org/licenses/gpl-2.0.html>.  You must apply one of
+< # these licenses when using or redistributing this software or any of
+< # the files within it.  See the URLs above, or the file `LICENSE`
+< # included in the Bootstrap distribution for the full license texts.
+---
+> # Copyright (C) 2010-2015 Free Software Foundation, Inc.
+> # This is free software; see the source for copying conditions.  There is NO
+> # warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+> 
+> # This program is free software: you can redistribute it and/or modify
+> # it under the terms of the GNU General Public License as published by
+> # the Free Software Foundation, either version 3 of the License, or
+> # (at your option) any later version.
+1548,1549c1434,1437
+< # Please report bugs or propose patches to:
+< # <https://github.com/gnulib-modules/bootstrap/issues>
+---
+> # This program is distributed in the hope that it will be useful,
+> # but WITHOUT ANY WARRANTY; without even the implied warranty of
+> # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+> # GNU General Public License for more details.
+1551,1552c1439,1442
+< # Set a version string for this script.
+< scriptversion=2019-02-19.15; # UTC
+---
+> # You should have received a copy of the GNU General Public License
+> # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+> 
+> # Please report bugs or propose patches to gary@gnu.org.
+1575c1465
+< # starting with '# Written by ' and ending with '# Copyright'.
+---
+> # starting with '# Written by ' and ending with '# warranty; '.
+1587c1477
+< # After sourcing this file, you can plug in processing for additional
+---
+> # After sourcing this file, you can plug processing for additional
+1636,1637c1526,1527
+< # in the main code.  A hook is just a list of function names that can be
+< # run in order later on.
+---
+> # to the main code.  A hook is just a named list of of function, that can
+> # be run in order later on.
+1670,1671c1560
+< # Remove HOOK_FUNC from the list of hook functions to be called by
+< # FUNC_NAME.
+---
+> # Remove HOOK_FUNC from the list of functions called by FUNC_NAME.
+1680,1697d1568
+< # func_propagate_result FUNC_NAME_A FUNC_NAME_B
+< # ---------------------------------------------
+< # If the *_result variable of FUNC_NAME_A _is set_, assign its value to
+< # *_result variable of FUNC_NAME_B.
+< func_propagate_result ()
+< {
+<     $debug_cmd
+< 
+<     func_propagate_result_result=:
+<     if eval "test \"\${${1}_result+set}\" = set"
+<     then
+<       eval "${2}_result=\$${1}_result"
+<     else
+<       func_propagate_result_result=false
+<     fi
+< }
+< 
+< 
+1701c1572
+< # It's assumed that the list of hook functions contains nothing more
+---
+> # It is assumed that the list of hook functions contains nothing more
+1711c1582
+<       *) func_fatal_error "'$1' does not support hook functions." ;;
+---
+>       *) func_fatal_error "'$1' does not support hook funcions.n" ;;
+1717,1722c1588,1593
+<       func_unset "${_G_hook}_result"
+<       eval $_G_hook '${1+"$@"}'
+<       func_propagate_result $_G_hook func_run_hooks
+<       if $func_propagate_result_result; then
+<         eval set dummy "$func_run_hooks_result"; shift
+<       fi
+---
+>       eval $_G_hook '"$@"'
+> 
+>       # store returned options list back into positional
+>       # parameters for next 'cmd' execution.
+>       eval _G_hook_result=\$${_G_hook}_result
+>       eval set dummy "$_G_hook_result"; shift
+1723a1595,1597
+> 
+>     func_quote_for_eval ${1+"$@"}
+>     func_run_hooks_result=$func_quote_for_eval_result
+1733,1744c1607,1610
+< # full positional parameter list from your hook function.  You may remove
+< # or edit any options that you action, and then pass back the remaining
+< # unprocessed options in '<hooked_function_name>_result', escaped
+< # suitably for 'eval'.
+< #
+< # The '<hooked_function_name>_result' variable is automatically unset
+< # before your hook gets called; for best performance, only set the
+< # *_result variable when necessary (i.e. don't call the 'func_quote'
+< # function unnecessarily because it can be an expensive operation on some
+< # machines).
+< #
+< # Like this:
+---
+> # full positional parameter list in your hook function, remove any
+> # options that you action, and then pass back the remaining unprocessed
+> # options in '<hooked_function_name>_result', escaped suitably for
+> # 'eval'.  Like this:
+1754,1755c1620,1622
+< #        # No change in '$@' (ignored completely by this hook).  Leave
+< #        # my_options_prep_result variable intact.
+---
+> #
+> #        func_quote_for_eval ${1+"$@"}
+> #        my_options_prep_result=$func_quote_for_eval_result
+1764,1766c1631
+< #        args_changed=false
+< #
+< #        # Note that, for efficiency, we parse as many options as we can
+---
+> #        # Note that for efficiency, we parse as many options as we can
+1772,1774c1637
+< #            --silent|-s) opt_silent=:
+< #                         args_changed=:
+< #                         ;;
+---
+> #            --silent|-s) opt_silent=: ;;
+1780d1642
+< #                         args_changed=:
+1782,1785c1644
+< #            *)           # Make sure the first unrecognised option "$_G_opt"
+< #                         # is added back to "$@" in case we need it later,
+< #                         # if $args_changed was set to 'true'.
+< #                         set dummy "$_G_opt" ${1+"$@"}; shift; break ;;
+---
+> #            *)            set dummy "$_G_opt" "$*"; shift; break ;;
+1789,1793c1648,1649
+< #        # Only call 'func_quote' here if we processed at least one argument.
+< #        if $args_changed; then
+< #          func_quote eval ${1+"$@"}
+< #          my_silent_option_result=$func_quote_result
+< #        fi
+---
+> #        func_quote_for_eval ${1+"$@"}
+> #        my_silent_option_result=$func_quote_for_eval_result
+1803a1660,1662
+> #
+> #        func_quote_for_eval ${1+"$@"}
+> #        my_option_validation_result=$func_quote_for_eval_result
+1807c1666
+< # You'll also need to manually amend $usage_message to reflect the extra
+---
+> # You'll alse need to manually amend $usage_message to reflect the extra
+1812,1823d1670
+< # func_options_finish [ARG]...
+< # ----------------------------
+< # Finishing the option parse loop (call 'func_options' hooks ATM).
+< func_options_finish ()
+< {
+<     $debug_cmd
+< 
+<     func_run_hooks func_options ${1+"$@"}
+<     func_propagate_result func_run_hooks func_options_finish
+< }
+< 
+< 
+1833c1680,1684
+<     _G_options_quoted=false
+---
+>     func_options_prep ${1+"$@"}
+>     eval func_parse_options \
+>         ${func_options_prep_result+"$func_options_prep_result"}
+>     eval func_validate_options \
+>         ${func_parse_options_result+"$func_parse_options_result"}
+1835,1845c1686,1687
+<     for my_func in options_prep parse_options validate_options options_finish
+<     do
+<       func_unset func_${my_func}_result
+<       func_unset func_run_hooks_result
+<       eval func_$my_func '${1+"$@"}'
+<       func_propagate_result func_$my_func func_options
+<       if $func_propagate_result_result; then
+<         eval set dummy "$func_options_result"; shift
+<         _G_options_quoted=:
+<       fi
+<     done
+---
+>     eval func_run_hooks func_options \
+>         ${func_validate_options_result+"$func_validate_options_result"}
+1847,1853c1689,1690
+<     $_G_options_quoted || {
+<       # As we (func_options) are top-level options-parser function and
+<       # nobody quoted "$@" for us yet, we need to do it explicitly for
+<       # caller.
+<       func_quote eval ${1+"$@"}
+<       func_options_result=$func_quote_result
+<     }
+---
+>     # save modified positional parameters for caller
+>     func_options_result=$func_run_hooks_result
+1862,1863c1699,1701
+< # needs to propagate that back to rest of this script, then the complete
+< # modified list must be put in 'func_run_hooks_result' before returning.
+---
+> # needs to propogate that back to rest of this script, then the complete
+> # modified list must be put in 'func_run_hooks_result' before
+> # returning.
+1874c1712,1714
+<     func_propagate_result func_run_hooks func_options_prep
+---
+> 
+>     # save modified positional parameters for caller
+>     func_options_prep_result=$func_run_hooks_result
+1886c1726,1727
+<     _G_parse_options_requote=false
+---
+>     func_parse_options_result=
+> 
+1892,1899c1733,1735
+<       func_propagate_result func_run_hooks func_parse_options
+<       if $func_propagate_result_result; then
+<         eval set dummy "$func_parse_options_result"; shift
+<         # Even though we may have changed "$@", we passed the "$@" array
+<         # down into the hook and it quoted it for us (because we are in
+<         # this if-branch).  No need to quote it again.
+<         _G_parse_options_requote=false
+<       fi
+---
+> 
+>       # Adjust func_parse_options positional parameters to match
+>       eval set dummy "$func_run_hooks_result"; shift
+1904,1906d1739
+<       # We expect that one of the options parsed in this function matches
+<       # and thus we remove _G_opt from "$@" and need to re-quote.
+<       _G_match_parse_options=:
+1911c1744
+<                       func_echo "enabling shell trace mode" >&2
+---
+>                       func_echo "enabling shell trace mode"
+1921,1924c1754
+<                       if test $# = 0 && func_missing_arg $_G_opt; then
+<                         _G_parse_options_requote=:
+<                         break
+<                       fi
+---
+>                       test $# = 0 && func_missing_arg $_G_opt && break
+1977c1807
+<         --)           _G_parse_options_requote=: ; break ;;
+---
+>         --)           break ;;
+1979,1982c1809
+<         *)            set dummy "$_G_opt" ${1+"$@"}; shift
+<                       _G_match_parse_options=false
+<                       break
+<                       ;;
+---
+>         *)            set dummy "$_G_opt" ${1+"$@"}; shift; break ;;
+1984,1987d1810
+< 
+<       if $_G_match_parse_options; then
+<         _G_parse_options_requote=:
+<       fi
+1990,1994c1813,1815
+<     if $_G_parse_options_requote; then
+<       # save modified positional parameters for caller
+<       func_quote eval ${1+"$@"}
+<       func_parse_options_result=$func_quote_result
+<     fi
+---
+>     # save modified positional parameters for caller
+>     func_quote_for_eval ${1+"$@"}
+>     func_parse_options_result=$func_quote_for_eval_result
+2011d1831
+<     func_propagate_result func_run_hooks func_validate_options
+2014a1835,1837
+> 
+>     # save modified positional parameters for caller
+>     func_validate_options_result=$func_run_hooks_result
+2070,2071c1893,1894
+< # Set func_split_equals_lhs and func_split_equals_rhs shell variables
+< # after splitting STRING at the '=' sign.
+---
+> # Set func_split_equals_lhs and func_split_equals_rhs shell variables after
+> # splitting STRING at the '=' sign.
+2086,2088c1909,1910
+<       if test "x$func_split_equals_lhs" = "x$1"; then
+<         func_split_equals_rhs=
+<       fi
+---
+>       test "x$func_split_equals_lhs" = "x$1" \
+>         && func_split_equals_rhs=
+2098c1920
+<       test "x$func_split_equals_lhs=" = "x$1" \
+---
+>       test "x$func_split_equals_lhs" = "x$1" \
+2124c1946
+<       func_split_short_opt_name=`expr "x$1" : 'x\(-.\)'`
+---
+>       func_split_short_opt_name=`expr "x$1" : 'x-\(.\)'`
+2166,2174d1987
+< # The version message is extracted from the calling file's header
+< # comments, with leading '# ' stripped:
+< #   1. First display the progname and version
+< #   2. Followed by the header comment line matching  /^# Written by /
+< #   3. Then a blank line followed by the first following line matching
+< #      /^# Copyright /
+< #   4. Immediately followed by any lines between the previous matches,
+< #      except lines preceding the intervening completely blank line.
+< # For example, see the header comments of this file.
+2181,2187c1994,1999
+<         /^# Written by /!b
+<         s|^# ||; p; n
+< 
+<         :fwd2blnk
+<         /./ {
+<           n
+<           b fwd2blnk
+---
+>         /(C)/!b go
+>         :more
+>         /\./!{
+>           N
+>           s|\n# | |
+>           b more
+2189,2197c2001,2006
+<         p; n
+< 
+<         :holdwrnt
+<         s|^# ||
+<         s|^# *$||
+<         /^Copyright /!{
+<           /./H
+<           n
+<           b holdwrnt
+---
+>         :go
+>         /^# Written by /,/# warranty; / {
+>           s|^# ||
+>           s|^# *$||
+>           s|\((C)\)[ 0-9,-]*[ ,-]\([1-9][0-9]* \)|\1 \2|
+>           p
+2199,2203c2008,2012
+< 
+<         s|\((C)\)[ 0-9,-]*[ ,-]\([1-9][0-9]* \)|\1 \2|
+<         G
+<         s|\(\n\)\n*|\1|g
+<         p; q' < "$progpath"
+---
+>         /^# Written by / {
+>           s|^# ||
+>           p
+>         }
+>         /^warranty; /q' < "$progpath"
+2213c2022
+< # time-stamp-pattern: "30/scriptversion=%:y-%02m-%02d.%02H; # UTC"
+---
+> # time-stamp-pattern: "10/scriptversion=%:y-%02m-%02d.%02H; # UTC"
+2218c2027
+< scriptversion='(GNU libtool) 2.4.7'
+---
+> scriptversion='(GNU libtool) 2.4.6'
+2309c2118
+<        version:        $progname (GNU libtool) 2.4.7
+---
+>        version:        $progname (GNU libtool) 2.4.6
+2365c2174
+<     func_fatal_error ${1+"$@"} \
+---
+>     func__fatal_error ${1+"$@"} \
+2511,2512d2319
+<     _G_rc_lt_options_prep=:
+< 
+2536,2538d2342
+<     *)
+<       _G_rc_lt_options_prep=false
+<       ;;
+2541,2545c2345,2347
+<     if $_G_rc_lt_options_prep; then
+<       # Pass back the list of options.
+<       func_quote eval ${1+"$@"}
+<       libtool_options_prep_result=$func_quote_result
+<     fi
+---
+>     # Pass back the list of options.
+>     func_quote_for_eval ${1+"$@"}
+>     libtool_options_prep_result=$func_quote_for_eval_result
+2557,2558d2358
+<     _G_rc_lt_parse_options=false
+< 
+2562d2361
+<       _G_match_lt_parse_options=:
+2637,2641c2436,2437
+<         # An option not handled by this hook function:
+<         *)              set dummy "$_G_opt" ${1+"$@"} ; shift
+<                         _G_match_lt_parse_options=false
+<                         break
+<                         ;;
+---
+> 	# An option not handled by this hook function:
+>         *)		set dummy "$_G_opt" ${1+"$@"};	shift; break  ;;
+2643d2438
+<       $_G_match_lt_parse_options && _G_rc_lt_parse_options=:
+2646,2650c2441,2444
+<     if $_G_rc_lt_parse_options; then
+<       # save modified positional parameters for caller
+<       func_quote eval ${1+"$@"}
+<       libtool_parse_options_result=$func_quote_result
+<     fi
+---
+> 
+>     # save modified positional parameters for caller
+>     func_quote_for_eval ${1+"$@"}
+>     libtool_parse_options_result=$func_quote_for_eval_result
+2707,2708c2501,2502
+<     func_quote eval ${1+"$@"}
+<     libtool_validate_options_result=$func_quote_result
+---
+>     func_quote_for_eval ${1+"$@"}
+>     libtool_validate_options_result=$func_quote_for_eval_result
+3674,3675c3468,3469
+<     func_quote_arg pretty "$libobj"
+<     test "X$libobj" != "X$func_quote_arg_result" \
+---
+>     func_quote_for_eval "$libobj"
+>     test "X$libobj" != "X$func_quote_for_eval_result" \
+3748,3749c3542,3543
+<     func_quote_arg pretty "$srcfile"
+<     qsrcfile=$func_quote_arg_result
+---
+>     func_quote_for_eval "$srcfile"
+>     qsrcfile=$func_quote_for_eval_result
+3904,3905c3698
+<   -Wc,FLAG
+<   -Xcompiler FLAG   pass FLAG directly to the compiler
+---
+>   -Wc,FLAG          pass FLAG directly to the compiler
+4011,4012d3803
+<   -Wa,FLAG
+<   -Xassembler FLAG  pass linker-specific FLAG directly to the assembler
+4355,4356c4146,4147
+<       func_quote_arg pretty "$nonopt"
+<       install_prog="$func_quote_arg_result "
+---
+>       func_quote_for_eval "$nonopt"
+>       install_prog="$func_quote_for_eval_result "
+4366,4367c4157,4158
+<     func_quote_arg pretty "$arg"
+<     func_append install_prog "$func_quote_arg_result"
+---
+>     func_quote_for_eval "$arg"
+>     func_append install_prog "$func_quote_for_eval_result"
+4424,4425c4215,4216
+<       func_quote_arg pretty "$arg"
+<       func_append install_prog " $func_quote_arg_result"
+---
+>       func_quote_for_eval "$arg"
+>       func_append install_prog " $func_quote_for_eval_result"
+4427c4218
+< 	func_quote_arg pretty "$arg2"
+---
+> 	func_quote_for_eval "$arg2"
+4429c4220
+<       func_append install_shared_prog " $func_quote_arg_result"
+---
+>       func_append install_shared_prog " $func_quote_for_eval_result"
+4440,4441c4231,4232
+< 	func_quote_arg pretty "$install_override_mode"
+< 	func_append install_shared_prog " -m $func_quote_arg_result"
+---
+> 	func_quote_for_eval "$install_override_mode"
+> 	func_append install_shared_prog " -m $func_quote_for_eval_result"
+4737,4738c4528,4529
+< 	          func_quote_arg expand,pretty "$relink_command"
+< 		  eval "func_echo $func_quote_arg_result"
+---
+> 	          func_quote_for_expand "$relink_command"
+> 		  eval "func_echo $func_quote_for_expand_result"
+5517,5518c5308,5309
+<     func_quote_arg pretty "$ECHO"
+<     qECHO=$func_quote_arg_result
+---
+>     func_quote "$ECHO"
+>     qECHO=$func_quote_result
+5528c5319
+<     ECHO=$qECHO
+---
+>     ECHO=\"$qECHO\"
+6871,6873c6662,6664
+<       func_quote_arg pretty,unquoted "$arg"
+<       qarg=$func_quote_arg_unquoted_result
+<       func_append libtool_args " $func_quote_arg_result"
+---
+>       func_quote_for_eval "$arg"
+>       qarg=$func_quote_for_eval_unquoted_result
+>       func_append libtool_args " $func_quote_for_eval_result"
+7109,7115d6899
+< 	xassembler)
+< 	  func_append compiler_flags " -Xassembler $qarg"
+< 	  prev=
+< 	  func_append compile_command " -Xassembler $qarg"
+< 	  func_append finalize_command " -Xassembler $qarg"
+< 	  continue
+< 	  ;;
+7286c7070
+< 	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig* | *-*-midnightbsd*)
+---
+> 	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig*)
+7306c7090
+< 	 *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig* | *-*-midnightbsd*)
+---
+> 	 *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig*)
+7336,7349c7120,7121
+<      # Solaris ld rejects as of 11.4. Refer to Oracle bug 22985199.
+<      -pthread)
+< 	case $host in
+< 	  *solaris2*) ;;
+< 	  *)
+< 	    case "$new_inherited_linker_flags " in
+< 	        *" $arg "*) ;;
+< 	        * ) func_append new_inherited_linker_flags " $arg" ;;
+< 	    esac
+< 	  ;;
+< 	esac
+< 	continue
+< 	;;
+<       -mt|-mthreads|-kthread|-Kthread|-pthreads|--thread-safe \
+---
+> 
+>       -mt|-mthreads|-kthread|-Kthread|-pthread|-pthreads|--thread-safe \
+7357a7130,7139
+> 
+> 	# As we are forced to pass -nostdlib to g++ during linking, the option
+> 	# -pthread{,s} is not in effect;  add the -lpthread to $deplist
+> 	# explicitly to link correctly.
+> 	if test "$tagname" = CXX -a x"$with_gcc" = xyes; then
+> 	  case "$arg" in
+> 	    -pthread*) func_append deplibs " -lpthread" ;;
+> 	  esac
+> 	fi
+> 
+7490,7492c7272,7274
+<           func_quote_arg pretty "$flag"
+< 	  func_append arg " $func_quote_arg_result"
+< 	  func_append compiler_flags " $func_quote_arg_result"
+---
+>           func_quote_for_eval "$flag"
+> 	  func_append arg " $func_quote_for_eval_result"
+> 	  func_append compiler_flags " $func_quote_for_eval_result"
+7506,7509c7288,7291
+<           func_quote_arg pretty "$flag"
+< 	  func_append arg " $wl$func_quote_arg_result"
+< 	  func_append compiler_flags " $wl$func_quote_arg_result"
+< 	  func_append linker_flags " $func_quote_arg_result"
+---
+>           func_quote_for_eval "$flag"
+> 	  func_append arg " $wl$func_quote_for_eval_result"
+> 	  func_append compiler_flags " $wl$func_quote_for_eval_result"
+> 	  func_append linker_flags " $func_quote_for_eval_result"
+7516,7520d7297
+<       -Xassembler)
+<         prev=xassembler
+<         continue
+<         ;;
+< 
+7538,7539c7315,7316
+< 	func_quote_arg pretty "$arg"
+< 	arg=$func_quote_arg_result
+---
+> 	func_quote_for_eval "$arg"
+> 	arg=$func_quote_for_eval_result
+7560d7336
+<       # -Wa,*                Pass flags directly to the assembler
+7564,7566c7340,7342
+<       -specs=*|-fsanitize=*|-fuse-ld=*|-Wa,*)
+<         func_quote_arg pretty "$arg"
+< 	arg=$func_quote_arg_result
+---
+>       -specs=*|-fsanitize=*|-fuse-ld=*)
+>         func_quote_for_eval "$arg"
+> 	arg=$func_quote_for_eval_result
+7587,7588c7363,7364
+< 	  func_quote_arg pretty "$arg"
+< 	  arg=$func_quote_arg_result
+---
+> 	  func_quote_for_eval "$arg"
+> 	  arg=$func_quote_for_eval_result
+7594,7595c7370,7371
+<         func_quote_arg pretty "$arg"
+< 	arg=$func_quote_arg_result
+---
+>         func_quote_for_eval "$arg"
+> 	arg=$func_quote_for_eval_result
+7715,7716c7491,7492
+< 	func_quote_arg pretty "$arg"
+< 	arg=$func_quote_arg_result
+---
+> 	func_quote_for_eval "$arg"
+> 	arg=$func_quote_for_eval_result
+8921c8697
+<           case `$CC -V 2>&1 | $SED 5q` in
+---
+>           case `$CC -V 2>&1 | sed 5q` in
+9094c8870
+< 	  darwin|freebsd-elf|linux|midnightbsd-elf|osf|windows|none)
+---
+> 	  darwin|freebsd-elf|linux|osf|windows|none)
+9185c8961
+< 	freebsd-elf | midnightbsd-elf)
+---
+> 	freebsd-elf)
+9411c9187
+< 	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-midnightbsd*)
+---
+> 	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
+10222,10223c9998,9999
+< 		  func_quote_arg expand,pretty "$cmd"
+< 		  eval "func_echo $func_quote_arg_result"
+---
+> 		  func_quote_for_expand "$cmd"
+> 		  eval "func_echo $func_quote_for_expand_result"
+10316,10317c10092,10093
+< 	    func_quote_arg expand,pretty "$cmd"
+< 	    eval "func_echo $func_quote_arg_result"
+---
+> 	    func_quote_for_expand "$cmd"
+> 	    eval "func_echo $func_quote_for_expand_result"
+10791,10792c10567,10568
+< 	    func_quote_arg pretty "$var_value"
+< 	    relink_command="$var=$func_quote_arg_result; export $var; $relink_command"
+---
+> 	    func_quote_for_eval "$var_value"
+> 	    relink_command="$var=$func_quote_for_eval_result; export $var; $relink_command"
+10795,10797c10571,10572
+< 	func_quote eval cd "`pwd`"
+< 	func_quote_arg pretty,unquoted "($func_quote_result; $relink_command)"
+< 	relink_command=$func_quote_arg_unquoted_result
+---
+> 	func_quote "(cd `pwd`; $relink_command)"
+> 	relink_command=$func_quote_result
+11037,11038c10812,10813
+< 	  func_quote_arg pretty,unquoted "$var_value"
+< 	  relink_command="$var=$func_quote_arg_unquoted_result; export $var; $relink_command"
+---
+> 	  func_quote_for_eval "$var_value"
+> 	  relink_command="$var=$func_quote_for_eval_result; export $var; $relink_command"
+11042,11045c10817,10819
+<       func_quote eval cd "`pwd`"
+<       relink_command="($func_quote_result; $SHELL \"$progpath\" $preserve_args --mode=relink $libtool_args @inst_prefix_dir@)"
+<       func_quote_arg pretty,unquoted "$relink_command"
+<       relink_command=$func_quote_arg_unquoted_result
+---
+>       relink_command="(cd `pwd`; $SHELL \"$progpath\" $preserve_args --mode=relink $libtool_args @inst_prefix_dir@)"
+>       func_quote "$relink_command"
+>       relink_command=$func_quote_result
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/configure lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/configure
+3c3
+< # Generated by GNU Autoconf 2.71 for qd 2.3.24.
+---
+> # Generated by GNU Autoconf 2.71 for qd 2.3.23.
+624,625c624,625
+< PACKAGE_VERSION='2.3.24'
+< PACKAGE_STRING='qd 2.3.24'
+---
+> PACKAGE_VERSION='2.3.23'
+> PACKAGE_STRING='qd 2.3.23'
+679d678
+< FILECMD
+739,741d737
+< CSCOPE
+< ETAGS
+< CTAGS
+1388c1384
+< \`configure' configures qd 2.3.24 to adapt to many kinds of systems.
+---
+> \`configure' configures qd 2.3.23 to adapt to many kinds of systems.
+1459c1455
+<      short | recursive ) echo "Configuration of qd 2.3.24:";;
+---
+>      short | recursive ) echo "Configuration of qd 2.3.23:";;
+1585c1581
+< qd configure 2.3.24
+---
+> qd configure 2.3.23
+2216c2212
+< It was created by qd $as_me 2.3.24, which was
+---
+> It was created by qd $as_me 2.3.23, which was
+3193c3189
+< PATCH_VERSION="24"
+---
+> PATCH_VERSION="23"
+3721c3717
+<  VERSION='2.3.24'
+---
+>  VERSION='2.3.23'
+3884,3897d3879
+< # Variables for tags utilities; see am/tags.am
+< if test -z "$CTAGS"; then
+<   CTAGS=ctags
+< fi
+< 
+< if test -z "$ETAGS"; then
+<   ETAGS=etags
+< fi
+< 
+< if test -z "$CSCOPE"; then
+<   CSCOPE=cscope
+< fi
+< 
+< 
+8641,8642c8623,8624
+< macro_version='2.4.7'
+< macro_revision='2.4.7'
+---
+> macro_version='2.4.6'
+> macro_revision='2.4.6'
+9195c9177
+< 	case `"$tmp_nm" -B $lt_bad_file 2>&1 | $SED '1q'` in
+---
+> 	case `"$tmp_nm" -B $lt_bad_file 2>&1 | sed '1q'` in
+9201c9183
+< 	  case `"$tmp_nm" -p /dev/null 2>&1 | $SED '1q'` in
+---
+> 	  case `"$tmp_nm" -p /dev/null 2>&1 | sed '1q'` in
+9339c9321
+<     case `$DUMPBIN -symbols -headers /dev/null 2>&1 | $SED '1q'` in
+---
+>     case `$DUMPBIN -symbols -headers /dev/null 2>&1 | sed '1q'` in
+9436a9419,9423
+>   mint*)
+>     # On MiNT this can take a long time and run out of memory.
+>     lt_cv_sys_max_cmd_len=8192;
+>     ;;
+> 
+9443c9430
+<   bitrig* | darwin* | dragonfly* | freebsd* | midnightbsd* | netbsd* | openbsd*)
+---
+>   bitrig* | darwin* | dragonfly* | freebsd* | netbsd* | openbsd*)
+9486c9473
+<       lt_cv_sys_max_cmd_len=`echo $kargmax | $SED 's/.*[	 ]//'`
+---
+>       lt_cv_sys_max_cmd_len=`echo $kargmax | sed 's/.*[	 ]//'`
+9692,9799d9678
+<   # Extract the first word of "${ac_tool_prefix}file", so it can be a program name with args.
+< set dummy ${ac_tool_prefix}file; ac_word=$2
+< { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+< printf %s "checking for $ac_word... " >&6; }
+< if test ${ac_cv_prog_FILECMD+y}
+< then :
+<   printf %s "(cached) " >&6
+< else $as_nop
+<   if test -n "$FILECMD"; then
+<   ac_cv_prog_FILECMD="$FILECMD" # Let the user override the test.
+< else
+< as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
+< for as_dir in $PATH
+< do
+<   IFS=$as_save_IFS
+<   case $as_dir in #(((
+<     '') as_dir=./ ;;
+<     */) ;;
+<     *) as_dir=$as_dir/ ;;
+<   esac
+<     for ac_exec_ext in '' $ac_executable_extensions; do
+<   if as_fn_executable_p "$as_dir$ac_word$ac_exec_ext"; then
+<     ac_cv_prog_FILECMD="${ac_tool_prefix}file"
+<     printf "%s\n" "$as_me:${as_lineno-$LINENO}: found $as_dir$ac_word$ac_exec_ext" >&5
+<     break 2
+<   fi
+< done
+<   done
+< IFS=$as_save_IFS
+< 
+< fi
+< fi
+< FILECMD=$ac_cv_prog_FILECMD
+< if test -n "$FILECMD"; then
+<   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $FILECMD" >&5
+< printf "%s\n" "$FILECMD" >&6; }
+< else
+<   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: no" >&5
+< printf "%s\n" "no" >&6; }
+< fi
+< 
+< 
+< fi
+< if test -z "$ac_cv_prog_FILECMD"; then
+<   ac_ct_FILECMD=$FILECMD
+<   # Extract the first word of "file", so it can be a program name with args.
+< set dummy file; ac_word=$2
+< { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+< printf %s "checking for $ac_word... " >&6; }
+< if test ${ac_cv_prog_ac_ct_FILECMD+y}
+< then :
+<   printf %s "(cached) " >&6
+< else $as_nop
+<   if test -n "$ac_ct_FILECMD"; then
+<   ac_cv_prog_ac_ct_FILECMD="$ac_ct_FILECMD" # Let the user override the test.
+< else
+< as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
+< for as_dir in $PATH
+< do
+<   IFS=$as_save_IFS
+<   case $as_dir in #(((
+<     '') as_dir=./ ;;
+<     */) ;;
+<     *) as_dir=$as_dir/ ;;
+<   esac
+<     for ac_exec_ext in '' $ac_executable_extensions; do
+<   if as_fn_executable_p "$as_dir$ac_word$ac_exec_ext"; then
+<     ac_cv_prog_ac_ct_FILECMD="file"
+<     printf "%s\n" "$as_me:${as_lineno-$LINENO}: found $as_dir$ac_word$ac_exec_ext" >&5
+<     break 2
+<   fi
+< done
+<   done
+< IFS=$as_save_IFS
+< 
+< fi
+< fi
+< ac_ct_FILECMD=$ac_cv_prog_ac_ct_FILECMD
+< if test -n "$ac_ct_FILECMD"; then
+<   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $ac_ct_FILECMD" >&5
+< printf "%s\n" "$ac_ct_FILECMD" >&6; }
+< else
+<   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: no" >&5
+< printf "%s\n" "no" >&6; }
+< fi
+< 
+<   if test "x$ac_ct_FILECMD" = x; then
+<     FILECMD=":"
+<   else
+<     case $cross_compiling:$ac_tool_warned in
+< yes:)
+< { printf "%s\n" "$as_me:${as_lineno-$LINENO}: WARNING: using cross tools not prefixed with host triplet" >&5
+< printf "%s\n" "$as_me: WARNING: using cross tools not prefixed with host triplet" >&2;}
+< ac_tool_warned=yes ;;
+< esac
+<     FILECMD=$ac_ct_FILECMD
+<   fi
+< else
+<   FILECMD="$ac_cv_prog_FILECMD"
+< fi
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< if test -n "$ac_tool_prefix"; then
+9942c9821
+<   lt_cv_file_magic_cmd='$FILECMD -L'
+---
+>   lt_cv_file_magic_cmd='/usr/bin/file -L'
+9976c9855
+< freebsd* | dragonfly* | midnightbsd*)
+---
+> freebsd* | dragonfly*)
+9983c9862
+<       lt_cv_file_magic_cmd=$FILECMD
+---
+>       lt_cv_file_magic_cmd=/usr/bin/file
+9997c9876
+<   lt_cv_file_magic_cmd=$FILECMD
+---
+>   lt_cv_file_magic_cmd=/usr/bin/file
+10044c9923
+<   lt_cv_file_magic_cmd=$FILECMD
+---
+>   lt_cv_file_magic_cmd=/usr/bin/file
+10416a10296
+> : ${AR_FLAGS=cru}
+10423,10439d10302
+< # Use ARFLAGS variable as AR's operation code to sync the variable naming with
+< # Automake.  If both AR_FLAGS and ARFLAGS are specified, AR_FLAGS should have
+< # higher priority because thats what people were doing historically (setting
+< # ARFLAGS for automake and AR_FLAGS for libtool).  FIXME: Make the AR_FLAGS
+< # variable obsoleted/removed.
+< 
+< test ${AR_FLAGS+y} || AR_FLAGS=${ARFLAGS-cr}
+< lt_ar_flags=$AR_FLAGS
+< 
+< 
+< 
+< 
+< 
+< 
+< # Make AR_FLAGS overridable by 'make ARFLAGS='.  Don't try to run-time override
+< # by AR_FLAGS because that was never working and AR_FLAGS is about to die.
+< 
+10864c10727
+<   lt_cv_sys_global_symbol_to_import="$SED -n -e 's/^I .* \(.*\)$/\1/p'"
+---
+>   lt_cv_sys_global_symbol_to_import="sed -n -e 's/^I .* \(.*\)$/\1/p'"
+10882c10745
+< lt_cv_sys_global_symbol_to_cdecl="$SED -n"\
+---
+> lt_cv_sys_global_symbol_to_cdecl="sed -n"\
+10888c10751
+< lt_cv_sys_global_symbol_to_c_name_address="$SED -n"\
+---
+> lt_cv_sys_global_symbol_to_c_name_address="sed -n"\
+10895c10758
+< lt_cv_sys_global_symbol_to_c_name_address_lib_prefix="$SED -n"\
+---
+> lt_cv_sys_global_symbol_to_c_name_address_lib_prefix="sed -n"\
+10919c10782
+<     # Also find C++ and __fastcall symbols from MSVC++ or ICC,
+---
+>     # Also find C++ and __fastcall symbols from MSVC++,
+10937c10800
+<     lt_cv_sys_global_symbol_pipe="$SED -n -e 's/^.*[	 ]\($symcode$symcode*\)[	 ][	 ]*$ac_symprfx$sympat$opt_cr$/$symxfrm/p'"
+---
+>     lt_cv_sys_global_symbol_pipe="sed -n -e 's/^.*[	 ]\($symcode$symcode*\)[	 ][	 ]*$ac_symprfx$sympat$opt_cr$/$symxfrm/p'"
+10939c10802
+<   lt_cv_sys_global_symbol_pipe="$lt_cv_sys_global_symbol_pipe | $SED '/ __gnu_lto/d'"
+---
+>   lt_cv_sys_global_symbol_pipe="$lt_cv_sys_global_symbol_pipe | sed '/ __gnu_lto/d'"
+11142c11005
+<    lt_sysroot=`echo "$with_sysroot" | $SED -e "$sed_quote_subst"`
+---
+>    lt_sysroot=`echo "$with_sysroot" | sed -e "$sed_quote_subst"`
+11267c11130
+<     case `$FILECMD conftest.$ac_objext` in
+---
+>     case `/usr/bin/file conftest.$ac_objext` in
+11288c11151
+<       case `$FILECMD conftest.$ac_objext` in
+---
+>       case `/usr/bin/file conftest.$ac_objext` in
+11300c11163
+<       case `$FILECMD conftest.$ac_objext` in
+---
+>       case `/usr/bin/file conftest.$ac_objext` in
+11326c11189
+<     case `$FILECMD conftest.$ac_objext` in
+---
+>     case `/usr/bin/file conftest.$ac_objext` in
+11334c11197
+<     case `$FILECMD conftest.$ac_objext` in
+---
+>     case `/usr/bin/file conftest.$ac_objext` in
+11342c11205
+<     case `$FILECMD conftest.$ac_objext` in
+---
+>     case `/usr/bin/file conftest.$ac_objext` in
+11366c11229
+<     case `$FILECMD conftest.o` in
+---
+>     case `/usr/bin/file conftest.o` in
+11373c11236
+< 	    case `$FILECMD conftest.o` in
+---
+> 	    case `/usr/bin/file conftest.o` in
+11404c11267
+< 	  powerpcle-*linux*)
+---
+> 	  powerpcle-*linux*|powerpc64le-*linux*)
+11407c11270
+< 	  powerpc-*linux*)
+---
+> 	  powerpc-*linux*|powerpc64-*linux*)
+11489c11352
+<     case `$FILECMD conftest.o` in
+---
+>     case `/usr/bin/file conftest.o` in
+12280,12281c12143,12144
+<       echo "$AR $AR_FLAGS libconftest.a conftest.o" >&5
+<       $AR $AR_FLAGS libconftest.a conftest.o 2>&5
+---
+>       echo "$AR cru libconftest.a conftest.o" >&5
+>       $AR cru libconftest.a conftest.o 2>&5
+12308,12313c12171,12181
+<     darwin*)
+<       case $MACOSX_DEPLOYMENT_TARGET,$host in
+<         10.[012],*|,*powerpc*-darwin[5-8]*)
+<           _lt_dar_allow_undefined='$wl-flat_namespace $wl-undefined ${wl}suppress' ;;
+<         *)
+<           _lt_dar_allow_undefined='$wl-undefined ${wl}dynamic_lookup' ;;
+---
+>     darwin*) # darwin 5.x on
+>       # if running on 10.5 or later, the deployment target defaults
+>       # to the OS version, if on x86, and 10.4, the deployment
+>       # target defaults to 10.4. Don't you love it?
+>       case ${MACOSX_DEPLOYMENT_TARGET-10.0},$host in
+> 	10.0,*86*-darwin8*|10.0,*-darwin[91]*)
+> 	  _lt_dar_allow_undefined='$wl-undefined ${wl}dynamic_lookup' ;;
+> 	10.[012][,.]*)
+> 	  _lt_dar_allow_undefined='$wl-flat_namespace $wl-undefined ${wl}suppress' ;;
+> 	10.*)
+> 	  _lt_dar_allow_undefined='$wl-undefined ${wl}dynamic_lookup' ;;
+12682,12683c12550,12551
+< # All known linkers require a '.a' archive for static linking (except MSVC and
+< # ICC, which need '.lib').
+---
+> # All known linkers require a '.a' archive for static linking (except MSVC,
+> # which needs '.lib').
+13195c13063
+< 	case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	case `$CC -V 2>&1 | sed 5q` in
+13618c13486
+<     # FIXME: the MSVC++ and ICC port hasn't been tested in a loooong time
+---
+>     # FIXME: the MSVC++ port hasn't been tested in a loooong time
+13620c13488
+<     # Microsoft Visual C++ or Intel C++ Compiler.
+---
+>     # Microsoft Visual C++.
+13626c13494
+<     # we just hope/assume this is gcc and not c89 (= MSVC++ or ICC)
+---
+>     # we just hope/assume this is gcc and not c89 (= MSVC++)
+13678c13546
+<     case `$LD -v | $SED -e 's/([^)]\+)\s\+//' 2>&1` in
+---
+>     case `$LD -v | $SED -e 's/(^)\+)\s\+//' 2>&1` in
+13790d13657
+<       file_list_spec='@'
+13805c13672
+<       archive_expsym_cmds='$SED "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+---
+>       archive_expsym_cmds='sed "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+13848c13715
+< 	case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	case `$CC -V 2>&1 | sed 5q` in
+13860c13727
+<             cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+---
+>             cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+13876c13743
+<               cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+---
+>               cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+14008c13875
+< 	  export_symbols_cmds='`func_echo_all $NM | $SED -e '\''s/B\([^B]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "L") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && (substr(\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+---
+> 	  export_symbols_cmds='`func_echo_all $NM | $SED -e '\''s/B\([^B]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && (substr(\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+14295c14162
+<       # Microsoft Visual C++ or Intel C++ Compiler.
+---
+>       # Microsoft Visual C++.
+14299,14300c14166,14167
+<       cl* | icl*)
+< 	# Native MSVC or ICC
+---
+>       cl*)
+> 	# Native MSVC
+14341c14208
+< 	# Assume MSVC and ICC wrapper
+---
+> 	# Assume MSVC wrapper
+14382,14383c14249,14250
+<     archive_expsym_cmds="$SED 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod$_lt_dar_export_syms$_lt_dsymutil"
+<     module_expsym_cmds="$SED -e 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags$_lt_dar_export_syms$_lt_dsymutil"
+---
+>     archive_expsym_cmds="sed 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod$_lt_dar_export_syms$_lt_dsymutil"
+>     module_expsym_cmds="sed -e 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags$_lt_dar_export_syms$_lt_dsymutil"
+14417c14284
+<     freebsd* | dragonfly* | midnightbsd*)
+---
+>     freebsd* | dragonfly*)
+14668d14534
+<       file_list_spec='@'
+15361c15227
+<       soname_spec='`echo $libname | $SED -e 's/^lib/cyg/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+---
+>       soname_spec='`echo $libname | sed -e 's/^lib/cyg/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+15371c15237
+<       library_names_spec='`echo $libname | $SED -e 's/^lib/pw/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+---
+>       library_names_spec='`echo $libname | sed -e 's/^lib/pw/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+15377,15378c15243,15244
+<   *,cl* | *,icl*)
+<     # Native MSVC or ICC
+---
+>   *,cl*)
+>     # Native MSVC
+15397c15263
+<       sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -e 's|\\\\|/|g' -e 's| \\([a-zA-Z]\\):| /\\1|g' -e 's|^ ||'`
+---
+>       sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | sed -e 's|\\\\|/|g' -e 's| \\([a-zA-Z]\\):| /\\1|g' -e 's|^ ||'`
+15434c15300
+<     # Assume MSVC and ICC wrapper
+---
+>     # Assume MSVC wrapper
+15448c15314
+<   library_names_spec='$libname$release$major$shared_ext $libname$shared_ext'
+---
+>   library_names_spec='$libname$release$versuffix$shared_ext $libname$release$major$shared_ext $libname$shared_ext'
+15452c15318
+<   shrext_cmds='`test .$module = .yes && echo .so || echo .dylib`'
+---
+>   shrext_cmds='`test .$module = .yes && echo .bundle || echo .dylib`'
+15467c15333
+< freebsd* | dragonfly* | midnightbsd*)
+---
+> freebsd* | dragonfly*)
+15478c15344,15351
+<   version_type=freebsd-$objformat
+---
+>   # Handle Gentoo/FreeBSD as it was Linux
+>   case $host_vendor in
+>     gentoo)
+>       version_type=linux ;;
+>     *)
+>       version_type=freebsd-$objformat ;;
+>   esac
+> 
+15489a15363,15368
+>     linux)
+>       library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
+>       soname_spec='${libname}${release}${shared_ext}$major'
+>       need_lib_prefix=no
+>       need_version=no
+>       ;;
+16668,16675c16547,16550
+< if test -z "$STRIP"; then
+<   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: no" >&5
+< printf "%s\n" "no" >&6; }
+< else
+<   if $STRIP -V 2>&1 | $GREP "GNU strip" >/dev/null; then
+<     old_striplib="$STRIP --strip-debug"
+<     striplib="$STRIP --strip-unneeded"
+<     { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+---
+> if test -n "$STRIP" && $STRIP -V 2>&1 | $GREP "GNU strip" >/dev/null; then
+>   test -z "$old_striplib" && old_striplib="$STRIP --strip-debug"
+>   test -z "$striplib" && striplib="$STRIP --strip-unneeded"
+>   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+16677,16680c16552,16556
+<   else
+<     case $host_os in
+<     darwin*)
+<       # FIXME - insert some real tests, host_os isn't really good enough
+---
+> else
+> # FIXME - insert some real tests, host_os isn't really good enough
+>   case $host_os in
+>   darwin*)
+>     if test -n "$STRIP"; then
+16685,16697c16561
+<       ;;
+<     freebsd*)
+<       if $STRIP -V 2>&1 | $GREP "elftoolchain" >/dev/null; then
+<         old_striplib="$STRIP --strip-debug"
+<         striplib="$STRIP --strip-unneeded"
+<         { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+< printf "%s\n" "yes" >&6; }
+<       else
+<         { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: no" >&5
+< printf "%s\n" "no" >&6; }
+<       fi
+<       ;;
+<     *)
+---
+>     else
+16700,16702c16564,16570
+<       ;;
+<     esac
+<   fi
+---
+>     fi
+>     ;;
+>   *)
+>     { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: no" >&5
+> printf "%s\n" "no" >&6; }
+>     ;;
+>   esac
+17488,17489c17356,17357
+< 	,cl* | no,cl* | ,icl* | no,icl*)
+< 	  # Native MSVC or ICC
+---
+> 	,cl* | no,cl*)
+> 	  # Native MSVC
+17580,17581c17448,17449
+<     archive_expsym_cmds_CXX="$SED 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod$_lt_dar_export_syms$_lt_dsymutil"
+<     module_expsym_cmds_CXX="$SED -e 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags$_lt_dar_export_syms$_lt_dsymutil"
+---
+>     archive_expsym_cmds_CXX="sed 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod$_lt_dar_export_syms$_lt_dsymutil"
+>     module_expsym_cmds_CXX="sed -e 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags$_lt_dar_export_syms$_lt_dsymutil"
+17584c17452
+<       archive_expsym_cmds_CXX="$SED 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -r -keep_private_externs -nostdlib -o \$lib-master.o \$libobjs~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$lib-master.o \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring$_lt_dar_export_syms$_lt_dsymutil"
+---
+>       archive_expsym_cmds_CXX="sed 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -r -keep_private_externs -nostdlib -o \$lib-master.o \$libobjs~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$lib-master.o \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring$_lt_dar_export_syms$_lt_dsymutil"
+17619d17486
+< 	file_list_spec_CXX='@'
+17650c17517
+<       freebsd* | dragonfly* | midnightbsd*)
+---
+>       freebsd* | dragonfly*)
+17787c17654
+< 	archive_expsym_cmds_CXX='$SED "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+---
+> 	archive_expsym_cmds_CXX='sed "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+17927c17794
+<                 cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+---
+>                 cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+17933c17800
+< 	    case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	    case `$CC -V 2>&1 | sed 5q` in
+18590c18457
+<       freebsd* | dragonfly* | midnightbsd*)
+---
+>       freebsd* | dragonfly*)
+18673c18540
+< 	    case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	    case `$CC -V 2>&1 | sed 5q` in
+19060c18927
+<       export_symbols_cmds_CXX='`func_echo_all $NM | $SED -e '\''s/B\([^B]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "L") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && (substr(\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+---
+>       export_symbols_cmds_CXX='`func_echo_all $NM | $SED -e '\''s/B\([^B]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && (substr(\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+19068c18935
+<     cl* | icl*)
+---
+>     cl*)
+19416c19283
+<       soname_spec='`echo $libname | $SED -e 's/^lib/cyg/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+---
+>       soname_spec='`echo $libname | sed -e 's/^lib/cyg/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+19425c19292
+<       library_names_spec='`echo $libname | $SED -e 's/^lib/pw/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+---
+>       library_names_spec='`echo $libname | sed -e 's/^lib/pw/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+19431,19432c19298,19299
+<   *,cl* | *,icl*)
+<     # Native MSVC or ICC
+---
+>   *,cl*)
+>     # Native MSVC
+19451c19318
+<       sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -e 's|\\\\|/|g' -e 's| \\([a-zA-Z]\\):| /\\1|g' -e 's|^ ||'`
+---
+>       sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | sed -e 's|\\\\|/|g' -e 's| \\([a-zA-Z]\\):| /\\1|g' -e 's|^ ||'`
+19488c19355
+<     # Assume MSVC and ICC wrapper
+---
+>     # Assume MSVC wrapper
+19502c19369
+<   library_names_spec='$libname$release$major$shared_ext $libname$shared_ext'
+---
+>   library_names_spec='$libname$release$versuffix$shared_ext $libname$release$major$shared_ext $libname$shared_ext'
+19506c19373
+<   shrext_cmds='`test .$module = .yes && echo .so || echo .dylib`'
+---
+>   shrext_cmds='`test .$module = .yes && echo .bundle || echo .dylib`'
+19520c19387
+< freebsd* | dragonfly* | midnightbsd*)
+---
+> freebsd* | dragonfly*)
+19531c19398,19405
+<   version_type=freebsd-$objformat
+---
+>   # Handle Gentoo/FreeBSD as it was Linux
+>   case $host_vendor in
+>     gentoo)
+>       version_type=linux ;;
+>     *)
+>       version_type=freebsd-$objformat ;;
+>   esac
+> 
+19542a19417,19422
+>     linux)
+>       library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
+>       soname_spec='${libname}${release}${shared_ext}$major'
+>       need_lib_prefix=no
+>       need_version=no
+>       ;;
+20633c20513
+< 	case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	case `$CC -V 2>&1 | sed 5q` in
+21041c20921
+<     # FIXME: the MSVC++ and ICC port hasn't been tested in a loooong time
+---
+>     # FIXME: the MSVC++ port hasn't been tested in a loooong time
+21043c20923
+<     # Microsoft Visual C++ or Intel C++ Compiler.
+---
+>     # Microsoft Visual C++.
+21049c20929
+<     # we just hope/assume this is gcc and not c89 (= MSVC++ or ICC)
+---
+>     # we just hope/assume this is gcc and not c89 (= MSVC++)
+21101c20981
+<     case `$LD -v | $SED -e 's/([^)]\+)\s\+//' 2>&1` in
+---
+>     case `$LD -v | $SED -e 's/(^)\+)\s\+//' 2>&1` in
+21213d21092
+<       file_list_spec_FC='@'
+21228c21107
+<       archive_expsym_cmds_FC='$SED "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+---
+>       archive_expsym_cmds_FC='sed "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+21271c21150
+< 	case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	case `$CC -V 2>&1 | sed 5q` in
+21283c21162
+<             cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+---
+>             cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+21299c21178
+<               cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+---
+>               cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+21431c21310
+< 	  export_symbols_cmds_FC='`func_echo_all $NM | $SED -e '\''s/B\([^B]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "L") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && (substr(\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+---
+> 	  export_symbols_cmds_FC='`func_echo_all $NM | $SED -e '\''s/B\([^B]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && (substr(\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+21690c21569
+<       # Microsoft Visual C++ or Intel C++ Compiler.
+---
+>       # Microsoft Visual C++.
+21694,21695c21573,21574
+<       cl* | icl*)
+< 	# Native MSVC or ICC
+---
+>       cl*)
+> 	# Native MSVC
+21736c21615
+< 	# Assume MSVC and ICC wrapper
+---
+> 	# Assume MSVC wrapper
+21777,21778c21656,21657
+<     archive_expsym_cmds_FC="$SED 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod$_lt_dar_export_syms$_lt_dsymutil"
+<     module_expsym_cmds_FC="$SED -e 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags$_lt_dar_export_syms$_lt_dsymutil"
+---
+>     archive_expsym_cmds_FC="sed 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod$_lt_dar_export_syms$_lt_dsymutil"
+>     module_expsym_cmds_FC="sed -e 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags$_lt_dar_export_syms$_lt_dsymutil"
+21812c21691
+<     freebsd* | dragonfly* | midnightbsd*)
+---
+>     freebsd* | dragonfly*)
+22024d21902
+<       file_list_spec_FC='@'
+22547c22425
+<       soname_spec='`echo $libname | $SED -e 's/^lib/cyg/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+---
+>       soname_spec='`echo $libname | sed -e 's/^lib/cyg/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+22556c22434
+<       library_names_spec='`echo $libname | $SED -e 's/^lib/pw/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+---
+>       library_names_spec='`echo $libname | sed -e 's/^lib/pw/'``echo $release | $SED -e 's/[.]/-/g'`$versuffix$shared_ext'
+22562,22563c22440,22441
+<   *,cl* | *,icl*)
+<     # Native MSVC or ICC
+---
+>   *,cl*)
+>     # Native MSVC
+22582c22460
+<       sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -e 's|\\\\|/|g' -e 's| \\([a-zA-Z]\\):| /\\1|g' -e 's|^ ||'`
+---
+>       sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | sed -e 's|\\\\|/|g' -e 's| \\([a-zA-Z]\\):| /\\1|g' -e 's|^ ||'`
+22619c22497
+<     # Assume MSVC and ICC wrapper
+---
+>     # Assume MSVC wrapper
+22633c22511
+<   library_names_spec='$libname$release$major$shared_ext $libname$shared_ext'
+---
+>   library_names_spec='$libname$release$versuffix$shared_ext $libname$release$major$shared_ext $libname$shared_ext'
+22637c22515
+<   shrext_cmds='`test .$module = .yes && echo .so || echo .dylib`'
+---
+>   shrext_cmds='`test .$module = .yes && echo .bundle || echo .dylib`'
+22651c22529
+< freebsd* | dragonfly* | midnightbsd*)
+---
+> freebsd* | dragonfly*)
+22662c22540,22547
+<   version_type=freebsd-$objformat
+---
+>   # Handle Gentoo/FreeBSD as it was Linux
+>   case $host_vendor in
+>     gentoo)
+>       version_type=linux ;;
+>     *)
+>       version_type=freebsd-$objformat ;;
+>   esac
+> 
+22673a22559,22564
+>     linux)
+>       library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
+>       soname_spec='${libname}${release}${shared_ext}$major'
+>       need_lib_prefix=no
+>       need_version=no
+>       ;;
+23776c23667
+< This file was extended by qd $as_me 2.3.24, which was
+---
+> This file was extended by qd $as_me 2.3.23, which was
+23844c23735
+< qd config.status 2.3.24
+---
+> qd config.status 2.3.23
+24007d23897
+< FILECMD='`$ECHO "$FILECMD" | $SED "$delay_single_quote_subst"`'
+24016d23905
+< lt_ar_flags='`$ECHO "$lt_ar_flags" | $SED "$delay_single_quote_subst"`'
+24239d24127
+< FILECMD \
+24247a24136
+> AR_FLAGS \
+25280,25282d25168
+< # A file(cmd) program that detects file types.
+< FILECMD=$lt_FILECMD
+< 
+25307,25309d25192
+< # Flags to create an archive (by configure).
+< lt_ar_flags=$lt_ar_flags
+< 
+25311c25194
+< AR_FLAGS=\${ARFLAGS-"\$lt_ar_flags"}
+---
+> AR_FLAGS=$lt_AR_FLAGS
+25701c25584
+<   $SED '$q' "$ltmain" >> "$cfgfile" \
+---
+>   sed '$q' "$ltmain" >> "$cfgfile" \
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/configure.ac lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/configure.ac
+3c3
+< define([QD_PATCH_VERSION], 24)
+---
+> define([QD_PATCH_VERSION], 23)
+Binary files source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/._COPYING and lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/._COPYING differ
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/fortran/Makefile.in lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/fortran/Makefile.in
+1c1
+< # Makefile.in generated by automake 1.16.5 from Makefile.am.
+---
+> # Makefile.in generated by automake 1.16.3 from Makefile.am.
+4c4
+< # Copyright (C) 1994-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1994-2020 Free Software Foundation, Inc.
+329a330,331
+> ETAGS = etags
+> CTAGS = ctags
+346,347d347
+< CSCOPE = @CSCOPE@
+< CTAGS = @CTAGS@
+362d361
+< ETAGS = @ETAGS@
+371d369
+< FILECMD = @FILECMD@
+741a740
+> 
+778,779d776
+< install-EXTRAPROGRAMS: install-libLTLIBRARIES
+< 
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/include/Makefile.in lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/include/Makefile.in
+1c1
+< # Makefile.in generated by automake 1.16.5 from Makefile.am.
+---
+> # Makefile.in generated by automake 1.16.3 from Makefile.am.
+4c4
+< # Copyright (C) 1994-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1994-2020 Free Software Foundation, Inc.
+179a180,181
+> ETAGS = etags
+> CTAGS = ctags
+195,196d196
+< CSCOPE = @CSCOPE@
+< CTAGS = @CTAGS@
+211d210
+< ETAGS = @ETAGS@
+220d218
+< FILECMD = @FILECMD@
+460a459
+> 
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/m4/libtool.m4 lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/m4/libtool.m4
+3,4c3
+< #   Copyright (C) 1996-2001, 2003-2019, 2021-2022 Free Software
+< #   Foundation, Inc.
+---
+> #   Copyright (C) 1996-2001, 2003-2015 Free Software Foundation, Inc.
+35c34
+< # serial 59 LT_INIT
+---
+> # serial 58 LT_INIT
+185d183
+< m4_require([_LT_DECL_FILECMD])dnl
+224,225c222,223
+< # All known linkers require a '.a' archive for static linking (except MSVC and
+< # ICC, which need '.lib').
+---
+> # All known linkers require a '.a' archive for static linking (except MSVC,
+> # which needs '.lib').
+783c781
+<   $SED '$q' "$ltmain" >> "$cfgfile" \
+---
+>   sed '$q' "$ltmain" >> "$cfgfile" \
+1047,1048c1045,1046
+<       echo "$AR $AR_FLAGS libconftest.a conftest.o" >&AS_MESSAGE_LOG_FD
+<       $AR $AR_FLAGS libconftest.a conftest.o 2>&AS_MESSAGE_LOG_FD
+---
+>       echo "$AR cru libconftest.a conftest.o" >&AS_MESSAGE_LOG_FD
+>       $AR cru libconftest.a conftest.o 2>&AS_MESSAGE_LOG_FD
+1072,1077c1070,1080
+<     darwin*)
+<       case $MACOSX_DEPLOYMENT_TARGET,$host in
+<         10.[[012]],*|,*powerpc*-darwin[[5-8]]*)
+<           _lt_dar_allow_undefined='$wl-flat_namespace $wl-undefined ${wl}suppress' ;;
+<         *)
+<           _lt_dar_allow_undefined='$wl-undefined ${wl}dynamic_lookup' ;;
+---
+>     darwin*) # darwin 5.x on
+>       # if running on 10.5 or later, the deployment target defaults
+>       # to the OS version, if on x86, and 10.4, the deployment
+>       # target defaults to 10.4. Don't you love it?
+>       case ${MACOSX_DEPLOYMENT_TARGET-10.0},$host in
+> 	10.0,*86*-darwin8*|10.0,*-darwin[[91]]*)
+> 	  _lt_dar_allow_undefined='$wl-undefined ${wl}dynamic_lookup' ;;
+> 	10.[[012]][[,.]]*)
+> 	  _lt_dar_allow_undefined='$wl-flat_namespace $wl-undefined ${wl}suppress' ;;
+> 	10.*)
+> 	  _lt_dar_allow_undefined='$wl-undefined ${wl}dynamic_lookup' ;;
+1126,1127c1129,1130
+<     _LT_TAGVAR(archive_expsym_cmds, $1)="$SED 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod$_lt_dar_export_syms$_lt_dsymutil"
+<     _LT_TAGVAR(module_expsym_cmds, $1)="$SED -e 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags$_lt_dar_export_syms$_lt_dsymutil"
+---
+>     _LT_TAGVAR(archive_expsym_cmds, $1)="sed 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod$_lt_dar_export_syms$_lt_dsymutil"
+>     _LT_TAGVAR(module_expsym_cmds, $1)="sed -e 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags$_lt_dar_export_syms$_lt_dsymutil"
+1131c1134
+<       _LT_TAGVAR(archive_expsym_cmds, $1)="$SED 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -r -keep_private_externs -nostdlib -o \$lib-master.o \$libobjs~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$lib-master.o \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring$_lt_dar_export_syms$_lt_dsymutil"
+---
+>       _LT_TAGVAR(archive_expsym_cmds, $1)="sed 's|^|_|' < \$export_symbols > \$output_objdir/\$libname-symbols.expsym~\$CC -r -keep_private_externs -nostdlib -o \$lib-master.o \$libobjs~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$lib-master.o \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring$_lt_dar_export_syms$_lt_dsymutil"
+1245,1246c1248
+< [m4_require([_LT_DECL_SED])dnl
+< AC_MSG_CHECKING([for sysroot])
+---
+> [AC_MSG_CHECKING([for sysroot])
+1263c1265
+<    lt_sysroot=`echo "$with_sysroot" | $SED -e "$sed_quote_subst"`
+---
+>    lt_sysroot=`echo "$with_sysroot" | sed -e "$sed_quote_subst"`
+1293c1295
+<     case `$FILECMD conftest.$ac_objext` in
+---
+>     case `/usr/bin/file conftest.$ac_objext` in
+1310c1312
+<       case `$FILECMD conftest.$ac_objext` in
+---
+>       case `/usr/bin/file conftest.$ac_objext` in
+1322c1324
+<       case `$FILECMD conftest.$ac_objext` in
+---
+>       case `/usr/bin/file conftest.$ac_objext` in
+1344c1346
+<     case `$FILECMD conftest.$ac_objext` in
+---
+>     case `/usr/bin/file conftest.$ac_objext` in
+1352c1354
+<     case `$FILECMD conftest.$ac_objext` in
+---
+>     case `/usr/bin/file conftest.$ac_objext` in
+1360c1362
+<     case `$FILECMD conftest.$ac_objext` in
+---
+>     case `/usr/bin/file conftest.$ac_objext` in
+1380c1382
+<     case `$FILECMD conftest.o` in
+---
+>     case `/usr/bin/file conftest.o` in
+1387c1389
+< 	    case `$FILECMD conftest.o` in
+---
+> 	    case `/usr/bin/file conftest.o` in
+1418c1420
+< 	  powerpcle-*linux*)
+---
+> 	  powerpcle-*linux*|powerpc64le-*linux*)
+1421c1423
+< 	  powerpc-*linux*)
+---
+> 	  powerpc-*linux*|powerpc64-*linux*)
+1455c1457
+<     case `$FILECMD conftest.o` in
+---
+>     case `/usr/bin/file conftest.o` in
+1493a1496
+> : ${AR_FLAGS=cru}
+1495,1509c1498
+< 
+< # Use ARFLAGS variable as AR's operation code to sync the variable naming with
+< # Automake.  If both AR_FLAGS and ARFLAGS are specified, AR_FLAGS should have
+< # higher priority because thats what people were doing historically (setting
+< # ARFLAGS for automake and AR_FLAGS for libtool).  FIXME: Make the AR_FLAGS
+< # variable obsoleted/removed.
+< 
+< test ${AR_FLAGS+y} || AR_FLAGS=${ARFLAGS-cr}
+< lt_ar_flags=$AR_FLAGS
+< _LT_DECL([], [lt_ar_flags], [0], [Flags to create an archive (by configure)])
+< 
+< # Make AR_FLAGS overridable by 'make ARFLAGS='.  Don't try to run-time override
+< # by AR_FLAGS because that was never working and AR_FLAGS is about to die.
+< _LT_DECL([], [AR_FLAGS], [\@S|@{ARFLAGS-"\@S|@lt_ar_flags"}],
+<          [Flags to create an archive])
+---
+> _LT_DECL([], [AR_FLAGS], [1], [Flags to create an archive])
+1721a1711,1715
+>   mint*)
+>     # On MiNT this can take a long time and run out of memory.
+>     lt_cv_sys_max_cmd_len=8192;
+>     ;;
+> 
+1728c1722
+<   bitrig* | darwin* | dragonfly* | freebsd* | midnightbsd* | netbsd* | openbsd*)
+---
+>   bitrig* | darwin* | dragonfly* | freebsd* | netbsd* | openbsd*)
+1771c1765
+<       lt_cv_sys_max_cmd_len=`echo $kargmax | $SED 's/.*[[	 ]]//'`
+---
+>       lt_cv_sys_max_cmd_len=`echo $kargmax | sed 's/.*[[	 ]]//'`
+2221,2222c2215,2218
+< if test -z "$STRIP"; then
+<   AC_MSG_RESULT([no])
+---
+> if test -n "$STRIP" && $STRIP -V 2>&1 | $GREP "GNU strip" >/dev/null; then
+>   test -z "$old_striplib" && old_striplib="$STRIP --strip-debug"
+>   test -z "$striplib" && striplib="$STRIP --strip-unneeded"
+>   AC_MSG_RESULT([yes])
+2224,2231c2220,2223
+<   if $STRIP -V 2>&1 | $GREP "GNU strip" >/dev/null; then
+<     old_striplib="$STRIP --strip-debug"
+<     striplib="$STRIP --strip-unneeded"
+<     AC_MSG_RESULT([yes])
+<   else
+<     case $host_os in
+<     darwin*)
+<       # FIXME - insert some real tests, host_os isn't really good enough
+---
+> # FIXME - insert some real tests, host_os isn't really good enough
+>   case $host_os in
+>   darwin*)
+>     if test -n "$STRIP"; then
+2235,2245c2227
+<       ;;
+<     freebsd*)
+<       if $STRIP -V 2>&1 | $GREP "elftoolchain" >/dev/null; then
+<         old_striplib="$STRIP --strip-debug"
+<         striplib="$STRIP --strip-unneeded"
+<         AC_MSG_RESULT([yes])
+<       else
+<         AC_MSG_RESULT([no])
+<       fi
+<       ;;
+<     *)
+---
+>     else
+2247,2249c2229,2234
+<       ;;
+<     esac
+<   fi
+---
+>     fi
+>     ;;
+>   *)
+>     AC_MSG_RESULT([no])
+>     ;;
+>   esac
+2572c2557
+<       soname_spec='`echo $libname | $SED -e 's/^lib/cyg/'``echo $release | $SED -e 's/[[.]]/-/g'`$versuffix$shared_ext'
+---
+>       soname_spec='`echo $libname | sed -e 's/^lib/cyg/'``echo $release | $SED -e 's/[[.]]/-/g'`$versuffix$shared_ext'
+2582c2567
+<       library_names_spec='`echo $libname | $SED -e 's/^lib/pw/'``echo $release | $SED -e 's/[[.]]/-/g'`$versuffix$shared_ext'
+---
+>       library_names_spec='`echo $libname | sed -e 's/^lib/pw/'``echo $release | $SED -e 's/[[.]]/-/g'`$versuffix$shared_ext'
+2588,2589c2573,2574
+<   *,cl* | *,icl*)
+<     # Native MSVC or ICC
+---
+>   *,cl*)
+>     # Native MSVC
+2608c2593
+<       sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -e 's|\\\\|/|g' -e 's| \\([[a-zA-Z]]\\):| /\\1|g' -e 's|^ ||'`
+---
+>       sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | sed -e 's|\\\\|/|g' -e 's| \\([[a-zA-Z]]\\):| /\\1|g' -e 's|^ ||'`
+2645c2630
+<     # Assume MSVC and ICC wrapper
+---
+>     # Assume MSVC wrapper
+2659c2644
+<   library_names_spec='$libname$release$major$shared_ext $libname$shared_ext'
+---
+>   library_names_spec='$libname$release$versuffix$shared_ext $libname$release$major$shared_ext $libname$shared_ext'
+2663c2648
+<   shrext_cmds='`test .$module = .yes && echo .so || echo .dylib`'
+---
+>   shrext_cmds='`test .$module = .yes && echo .bundle || echo .dylib`'
+2678c2663
+< freebsd* | dragonfly* | midnightbsd*)
+---
+> freebsd* | dragonfly*)
+2689c2674,2681
+<   version_type=freebsd-$objformat
+---
+>   # Handle Gentoo/FreeBSD as it was Linux
+>   case $host_vendor in
+>     gentoo)
+>       version_type=linux ;;
+>     *)
+>       version_type=freebsd-$objformat ;;
+>   esac
+> 
+2700a2693,2698
+>     linux)
+>       library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
+>       soname_spec='${libname}${release}${shared_ext}$major'
+>       need_lib_prefix=no
+>       need_version=no
+>       ;;
+3477c3475
+<   lt_cv_file_magic_cmd='$FILECMD -L'
+---
+>   lt_cv_file_magic_cmd='/usr/bin/file -L'
+3511c3509
+< freebsd* | dragonfly* | midnightbsd*)
+---
+> freebsd* | dragonfly*)
+3518c3516
+<       lt_cv_file_magic_cmd=$FILECMD
+---
+>       lt_cv_file_magic_cmd=/usr/bin/file
+3532c3530
+<   lt_cv_file_magic_cmd=$FILECMD
+---
+>   lt_cv_file_magic_cmd=/usr/bin/file
+3579c3577
+<   lt_cv_file_magic_cmd=$FILECMD
+---
+>   lt_cv_file_magic_cmd=/usr/bin/file
+3706c3704
+< 	case `"$tmp_nm" -B $lt_bad_file 2>&1 | $SED '1q'` in
+---
+> 	case `"$tmp_nm" -B $lt_bad_file 2>&1 | sed '1q'` in
+3712c3710
+< 	  case `"$tmp_nm" -p /dev/null 2>&1 | $SED '1q'` in
+---
+> 	  case `"$tmp_nm" -p /dev/null 2>&1 | sed '1q'` in
+3738c3736
+<     case `$DUMPBIN -symbols -headers /dev/null 2>&1 | $SED '1q'` in
+---
+>     case `$DUMPBIN -symbols -headers /dev/null 2>&1 | sed '1q'` in
+3978c3976
+<   lt_cv_sys_global_symbol_to_import="$SED -n -e 's/^I .* \(.*\)$/\1/p'"
+---
+>   lt_cv_sys_global_symbol_to_import="sed -n -e 's/^I .* \(.*\)$/\1/p'"
+3996c3994
+< lt_cv_sys_global_symbol_to_cdecl="$SED -n"\
+---
+> lt_cv_sys_global_symbol_to_cdecl="sed -n"\
+4002c4000
+< lt_cv_sys_global_symbol_to_c_name_address="$SED -n"\
+---
+> lt_cv_sys_global_symbol_to_c_name_address="sed -n"\
+4009c4007
+< lt_cv_sys_global_symbol_to_c_name_address_lib_prefix="$SED -n"\
+---
+> lt_cv_sys_global_symbol_to_c_name_address_lib_prefix="sed -n"\
+4033c4031
+<     # Also find C++ and __fastcall symbols from MSVC++ or ICC,
+---
+>     # Also find C++ and __fastcall symbols from MSVC++,
+4051c4049
+<     lt_cv_sys_global_symbol_pipe="$SED -n -e 's/^.*[[	 ]]\($symcode$symcode*\)[[	 ]][[	 ]]*$ac_symprfx$sympat$opt_cr$/$symxfrm/p'"
+---
+>     lt_cv_sys_global_symbol_pipe="sed -n -e 's/^.*[[	 ]]\($symcode$symcode*\)[[	 ]][[	 ]]*$ac_symprfx$sympat$opt_cr$/$symxfrm/p'"
+4053c4051
+<   lt_cv_sys_global_symbol_pipe="$lt_cv_sys_global_symbol_pipe | $SED '/ __gnu_lto/d'"
+---
+>   lt_cv_sys_global_symbol_pipe="$lt_cv_sys_global_symbol_pipe | sed '/ __gnu_lto/d'"
+4340c4338
+<       freebsd* | dragonfly* | midnightbsd*)
+---
+>       freebsd* | dragonfly*)
+4423c4421
+< 	    case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	    case `$CC -V 2>&1 | sed 5q` in
+4759c4757
+< 	case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	case `$CC -V 2>&1 | sed 5q` in
+4942c4940
+<       _LT_TAGVAR(export_symbols_cmds, $1)='`func_echo_all $NM | $SED -e '\''s/B\([[^B]]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "L") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && ([substr](\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+---
+>       _LT_TAGVAR(export_symbols_cmds, $1)='`func_echo_all $NM | $SED -e '\''s/B\([[^B]]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && ([substr](\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+4950c4948
+<     cl* | icl*)
+---
+>     cl*)
+5007c5005
+<     # FIXME: the MSVC++ and ICC port hasn't been tested in a loooong time
+---
+>     # FIXME: the MSVC++ port hasn't been tested in a loooong time
+5009c5007
+<     # Microsoft Visual C++ or Intel C++ Compiler.
+---
+>     # Microsoft Visual C++.
+5015c5013
+<     # we just hope/assume this is gcc and not c89 (= MSVC++ or ICC)
+---
+>     # we just hope/assume this is gcc and not c89 (= MSVC++)
+5067c5065
+<     case `$LD -v | $SED -e 's/([[^)]]\+)\s\+//' 2>&1` in
+---
+>     case `$LD -v | $SED -e 's/([^)]\+)\s\+//' 2>&1` in
+5179d5176
+<       _LT_TAGVAR(file_list_spec, $1)='@'
+5194c5191
+<       _LT_TAGVAR(archive_expsym_cmds, $1)='$SED "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+---
+>       _LT_TAGVAR(archive_expsym_cmds, $1)='sed "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+5237c5234
+< 	case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	case `$CC -V 2>&1 | sed 5q` in
+5249c5246
+<             cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+---
+>             cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+5265c5262
+<               cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+---
+>               cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+5397c5394
+< 	  _LT_TAGVAR(export_symbols_cmds, $1)='`func_echo_all $NM | $SED -e '\''s/B\([[^B]]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "L") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && ([substr](\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+---
+> 	  _LT_TAGVAR(export_symbols_cmds, $1)='`func_echo_all $NM | $SED -e '\''s/B\([[^B]]*\)$/P\1/'\''` -PCpgl $libobjs $convenience | awk '\''{ if (((\$ 2 == "T") || (\$ 2 == "D") || (\$ 2 == "B") || (\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) && ([substr](\$ 1,1,1) != ".")) { if ((\$ 2 == "W") || (\$ 2 == "V") || (\$ 2 == "Z")) { print \$ 1 " weak" } else { print \$ 1 } } }'\'' | sort -u > $export_symbols'
+5580c5577
+<       # Microsoft Visual C++ or Intel C++ Compiler.
+---
+>       # Microsoft Visual C++.
+5584,5585c5581,5582
+<       cl* | icl*)
+< 	# Native MSVC or ICC
+---
+>       cl*)
+> 	# Native MSVC
+5626c5623
+< 	# Assume MSVC and ICC wrapper
+---
+> 	# Assume MSVC wrapper
+5674c5671
+<     freebsd* | dragonfly* | midnightbsd*)
+---
+>     freebsd* | dragonfly*)
+5885d5881
+<       _LT_TAGVAR(file_list_spec, $1)='@'
+6656,6657c6652,6653
+< 	,cl* | no,cl* | ,icl* | no,icl*)
+< 	  # Native MSVC or ICC
+---
+> 	,cl* | no,cl*)
+> 	  # Native MSVC
+6755d6750
+< 	_LT_TAGVAR(file_list_spec, $1)='@'
+6786c6781
+<       freebsd* | dragonfly* | midnightbsd*)
+---
+>       freebsd* | dragonfly*)
+6923c6918
+< 	_LT_TAGVAR(archive_expsym_cmds, $1)='$SED "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+---
+> 	_LT_TAGVAR(archive_expsym_cmds, $1)='sed "s|^|_|" $export_symbols >$output_objdir/$soname.expsym~$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-h,$soname $wl--retain-symbols-file,$output_objdir/$soname.expsym $wl--image-base,`expr ${RANDOM-$$} % 4096 / 2 \* 262144 + 1342177280` -o $lib'
+7063c7058
+<                 cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+---
+>                 cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+7069c7064
+< 	    case `$CC -V 2>&1 | $SED 5q` in
+---
+> 	    case `$CC -V 2>&1 | sed 5q` in
+8214,8221d8208
+< 
+< # _LT_DECL_FILECMD
+< # ----------------
+< # Check for a file(cmd) program that can be used to detect file type and magic
+< m4_defun([_LT_DECL_FILECMD],
+< [AC_CHECK_TOOL([FILECMD], [file], [:])
+< _LT_DECL([], [FILECMD], [1], [A file(cmd) program that detects file types])
+< ])# _LD_DECL_FILECMD
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/m4/ltversion.m4 lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/m4/ltversion.m4
+3,4c3
+< #   Copyright (C) 2004, 2011-2019, 2021-2022 Free Software Foundation,
+< #   Inc.
+---
+> #   Copyright (C) 2004, 2011-2015 Free Software Foundation, Inc.
+13c12
+< # serial 4245 ltversion.m4
+---
+> # serial 4179 ltversion.m4
+16,17c15,16
+< m4_define([LT_PACKAGE_VERSION], [2.4.7])
+< m4_define([LT_PACKAGE_REVISION], [2.4.7])
+---
+> m4_define([LT_PACKAGE_VERSION], [2.4.6])
+> m4_define([LT_PACKAGE_REVISION], [2.4.6])
+20,21c19,20
+< [macro_version='2.4.7'
+< macro_revision='2.4.7'
+---
+> [macro_version='2.4.6'
+> macro_revision='2.4.6'
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/Makefile.in lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/Makefile.in
+1c1
+< # Makefile.in generated by automake 1.16.5 from Makefile.am.
+---
+> # Makefile.in generated by automake 1.16.3 from Makefile.am.
+4c4
+< # Copyright (C) 1994-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1994-2020 Free Software Foundation, Inc.
+201a202,204
+> ETAGS = etags
+> CTAGS = ctags
+> CSCOPE = cscope
+211,212c214,215
+< 	config/config.sub config/depcomp config/install-sh \
+< 	config/ltmain.sh config/missing
+---
+> 	config/config.sub config/install-sh config/ltmain.sh \
+> 	config/missing
+270,271d272
+< CSCOPE = @CSCOPE@
+< CTAGS = @CTAGS@
+286d286
+< ETAGS = @ETAGS@
+295d294
+< FILECMD = @FILECMD@
+671a671
+> 
+Binary files source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/._NEWS and lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/._NEWS differ
+Binary files source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/._README and lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/._README differ
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/src/Makefile.in lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/src/Makefile.in
+1c1
+< # Makefile.in generated by automake 1.16.5 from Makefile.am.
+---
+> # Makefile.in generated by automake 1.16.3 from Makefile.am.
+4c4
+< # Copyright (C) 1994-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1994-2020 Free Software Foundation, Inc.
+232a233,234
+> ETAGS = etags
+> CTAGS = ctags
+248,249d249
+< CSCOPE = @CSCOPE@
+< CTAGS = @CTAGS@
+264d263
+< ETAGS = @ETAGS@
+273d271
+< FILECMD = @FILECMD@
+547a546
+> 
+diff -r source-qd-2.3.24.tar.gz-extracted/qd-2.3.24/tests/Makefile.in lookaside-qd-2.3.24.tar.gz-extracted/qd-2.3.24/tests/Makefile.in
+1c1
+< # Makefile.in generated by automake 1.16.5 from Makefile.am.
+---
+> # Makefile.in generated by automake 1.16.3 from Makefile.am.
+4c4
+< # Copyright (C) 1994-2021 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1994-2020 Free Software Foundation, Inc.
+259a260,261
+> ETAGS = etags
+> CTAGS = ctags
+481,482d482
+< CSCOPE = @CSCOPE@
+< CTAGS = @CTAGS@
+497d496
+< ETAGS = @ETAGS@
+506d504
+< FILECMD = @FILECMD@
+1004a1003
+> 

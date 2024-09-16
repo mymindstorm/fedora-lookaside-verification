@@ -1,0 +1,44 @@
+Source package : wmapmload
+File name       : wmapmload-0.3.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/wmapmload/wmapmload-0.3.4.tar.gz/md5/8239e46cf4b193b75835578b688b326c/wmapmload-0.3.4.tar.gz
+Source URL      : http://tnemeth.free.fr/projets/programmes/wmapmload-0.3.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-wmapmload-0.3.4.tar.gz: POSIX tar archive (GNU)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-wmapmload-0.3.4.tar.gz: gzip compressed data, was "wmapmload-0.3.4.tar", last modified: Thu Apr  7 09:42:36 2005, max compression, from Unix, original size modulo 2^32 947179470
+
+
+diff -r source-wmapmload-0.3.4.tar.gz-extracted/wmapmload-0.3.4/src/main.c lookaside-wmapmload-0.3.4.tar.gz-extracted/wmapmload-0.3.4/src/main.c
+503c503
+<         fprintf(stderr, "Cannot read APM information\n");
+---
+>         fprintf(stderr, "Cannot read APM information: %i\n");
+564c564
+<     (void)fgets(buffer, sizeof(buffer) - 1, str);
+---
+>     fgets(buffer, sizeof(buffer) - 1, str);
+592c592
+<         (void)fgets(buffer, sizeof(buffer) - 1, str);
+---
+>         fgets(buffer, sizeof(buffer) - 1, str);
+596,597c596,597
+<             (void)fgets(buffer, sizeof(buffer) - 1, str);
+<             (void)fgets(buffer, sizeof(buffer) - 1, str);
+---
+>             fgets(buffer, sizeof(buffer) - 1, str);
+>             fgets(buffer, sizeof(buffer) - 1, str);
+605c605
+<                 (void)fgets(buffer, sizeof(buffer) - 1, str);
+---
+>                 fgets(buffer, sizeof(buffer) - 1, str);
+611c611
+<                 (void)fgets(buffer, sizeof(buffer) - 1, str);
+---
+>                 fgets(buffer, sizeof(buffer) - 1, str);
+615c615
+<                     (void)fgets(buffer, sizeof(buffer) - 1, str);
+---
+>                     fgets(buffer, sizeof(buffer) - 1, str);
+617c617
+<                     (void)fgets(buffer, sizeof(buffer) - 1, str);
+---
+>                     fgets(buffer, sizeof(buffer) - 1, str);

@@ -1,0 +1,10 @@
+Source package : rust-pnet_datalink
+File name       : pnet_datalink-0.34.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-pnet_datalink/pnet_datalink-0.34.0.crate/sha512/4067bbf6c770d5ff55b482fb854b103477214faf28a79088309ede40e4e9d5843e67ad0a32a25f1bd0456632b35672188c3226d2f5f9bd3008078eccbbcc168a/pnet_datalink-0.34.0.crate
+Source URL      : https://crates.io/api/v1/crates/pnet_datalink/0.34.0/download#/pnet_datalink-0.34.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pnet_datalink-0.34.0.crate: gzip compressed data, was "pnet_datalink-0.34.0.crate", max compression, original size modulo 2^32 137216
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pnet_datalink-0.34.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

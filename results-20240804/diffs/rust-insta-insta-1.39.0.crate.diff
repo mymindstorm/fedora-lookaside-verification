@@ -1,0 +1,10 @@
+Source package : rust-insta
+File name       : insta-1.39.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-insta/insta-1.39.0.crate/sha512/6d50e49af1b76ac53962565d37e05a3fa5b9dae47655529cb675b498a0308ce6008d9c2821e4cc323c2e05560f76539572a7d8881d151e015b32444b02175e5d/insta-1.39.0.crate
+Source URL      : https://crates.io/api/v1/crates/insta/1.39.0/download#/insta-1.39.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-insta-1.39.0.crate: gzip compressed data, was "insta-1.39.0.crate", max compression, original size modulo 2^32 529408
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-insta-1.39.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

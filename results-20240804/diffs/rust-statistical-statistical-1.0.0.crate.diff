@@ -1,0 +1,10 @@
+Source package : rust-statistical
+File name       : statistical-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-statistical/statistical-1.0.0.crate/sha512/00f58a7e1b8c818336fdf55def5a46b1347c5961b4fc27d156fc03f5c197af6f53f23485eea80b2b3ca6ce2acfb304fa4846904d85c6290d1750ad4b5a635c22/statistical-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/statistical/1.0.0/download#/statistical-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-statistical-1.0.0.crate: gzip compressed data, was "statistical-1.0.0.crate", max compression, original size modulo 2^32 32768
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-statistical-1.0.0.crate: POSIX tar archive
+
+
+No differences detected!

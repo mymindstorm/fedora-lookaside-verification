@@ -1,0 +1,10 @@
+Source package : rust-flume
+File name       : flume-0.11.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-flume/flume-0.11.0.crate/sha512/29e499f3de970d2d400c3826e912a49a01408dae8d933068dc94576cb0c2ca0e42ec4a9ebeffd17a20f56869f09eec04a2b90a335bfaa6462b8df474b2a49fcd/flume-0.11.0.crate
+Source URL      : https://crates.io/api/v1/crates/flume/0.11.0/download#/flume-0.11.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-flume-0.11.0.crate: gzip compressed data, was "flume-0.11.0.crate", max compression, original size modulo 2^32 456192
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-flume-0.11.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

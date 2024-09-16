@@ -1,0 +1,10 @@
+Source package : rust-svg
+File name       : svg-0.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-svg/svg-0.10.0.crate/sha512/27538740cea0d2abe6c9bc4476fa360a36c129ada0cf10e17559198fd48dad191f901bb17096b7908a7cfcee2cbc803fb694233908721117d0ce18c808af7bd9/svg-0.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/svg/0.10.0/download#/svg-0.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-svg-0.10.0.crate: gzip compressed data, was "svg-0.10.0.crate", max compression, original size modulo 2^32 93696
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-svg-0.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,13 @@
+Source package : gnuradio
+File name       : gnuradio-3.10.11.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/gnuradio/gnuradio-3.10.11.0.tar.gz/sha512/f8c0b46c8d9513922a0375fc0d6c8886c877ad305ab899d72614bd464b10951da15b4845e9238b49cbd448ea99a553bb02a439394f3d88428d70382aae11ab03/gnuradio-3.10.11.0.tar.gz
+Source URL      : https://github.com/gnuradio/gnuradio/archive/v3.10.11.0/gnuradio-3.10.11.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gnuradio-3.10.11.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 27238400
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gnuradio-3.10.11.0.tar.gz: gzip compressed data, was "gnuradio-3.10.11.0.tar", last modified: Fri Jul 26 07:29:11 2024, from Unix, original size modulo 2^32 23869440
+
+
+diff -r source-gnuradio-3.10.11.0.tar.gz-extracted/gnuradio-3.10.11.0/CMakeLists.txt lookaside-gnuradio-3.10.11.0.tar.gz-extracted/gnuradio-3.10.11.0/CMakeLists.txt
+393d392
+< add_subdirectory(gr-dtv)
+Only in source-gnuradio-3.10.11.0.tar.gz-extracted/gnuradio-3.10.11.0: gr-dtv

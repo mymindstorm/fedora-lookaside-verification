@@ -1,0 +1,10 @@
+Source package : rust-freetype-sys0.17
+File name       : freetype-sys-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-freetype-sys0.17/freetype-sys-0.17.0.crate/sha512/6b26cbba311ab9bad368313075543e649d1826ec8da0fa0e35ff505e43b0ed6e52c6fbb66b56283dfb1dc872fc5dc47abd3642abaa58aba14db9a329037f13cf/freetype-sys-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/freetype-sys/0.17.0/download#/freetype-sys-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-freetype-sys-0.17.0.crate: gzip compressed data, was "freetype-sys-0.17.0.crate", max compression, original size modulo 2^32 18847232
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-freetype-sys-0.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

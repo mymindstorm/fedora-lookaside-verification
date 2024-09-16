@@ -1,0 +1,10 @@
+Source package : rust-either
+File name       : either-1.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-either/either-1.13.0.crate/sha512/72e803079bae621d282136ab1e423ba71415bf12038b6f386f294cae68a67ad9ff16e4fdf4344eb3fee4418e853f9cac344c248f6befa3006d1c954668b36322/either-1.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/either/1.13.0/download#/either-1.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-either-1.13.0.crate: gzip compressed data, was "either-1.13.0.crate", max compression, original size modulo 2^32 92160
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-either-1.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

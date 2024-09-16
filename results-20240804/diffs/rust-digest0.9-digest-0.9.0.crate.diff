@@ -1,0 +1,10 @@
+Source package : rust-digest0.9
+File name       : digest-0.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-digest0.9/digest-0.9.0.crate/sha512/8637a322c429f51ecb0fa4c3b58fabef01368c1a093492fad65f48eeeec2366fd1b7876e6e47723e089ec5ce11f881bfe4dcebdc605811252b797db027746a45/digest-0.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/digest/0.9.0/download#/digest-0.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-digest-0.9.0.crate: gzip compressed data, was "digest-0.9.0.crate", max compression, original size modulo 2^32 1314454577
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-digest-0.9.0.crate: POSIX tar archive
+
+
+No differences detected!

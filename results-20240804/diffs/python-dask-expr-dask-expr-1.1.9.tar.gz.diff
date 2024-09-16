@@ -1,0 +1,14 @@
+Source package : python-dask-expr
+File name       : dask-expr-1.1.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-dask-expr/dask-expr-1.1.9.tar.gz/sha512/2cea1885d386044501ec82bcfdb98132fe550666075a459efd5157c52d67b3b77f83253737b71ca732e26f7fa68c8d151c3bb33dc69832c67b83cb62c6203281/dask-expr-1.1.9.tar.gz
+Source URL      : https://github.com/dask/dask-expr/archive/v1.1.9/dask-expr-1.1.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dask-expr-1.1.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1484800
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dask-expr-1.1.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1484800
+
+
+diff -r source-dask-expr-1.1.9.tar.gz-extracted/dask-expr-1.1.9/dask_expr/_version.py lookaside-dask-expr-1.1.9.tar.gz-extracted/dask-expr-1.1.9/dask_expr/_version.py
+28c28
+<     git_refnames = " (tag: v1.1.9)"
+---
+>     git_refnames = " (HEAD -> main, tag: v1.1.9)"

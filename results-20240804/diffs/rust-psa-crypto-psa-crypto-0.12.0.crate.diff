@@ -1,0 +1,10 @@
+Source package : rust-psa-crypto
+File name       : psa-crypto-0.12.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-psa-crypto/psa-crypto-0.12.0.crate/sha512/f09fb6c8385495c261a74ce42f47761ecb0c3984905ee56623505c0e18ba29eb8998c27bd7dee9e479e452cdb996f4b178f272389a3762eeff64e5cdae4ce0cb/psa-crypto-0.12.0.crate
+Source URL      : https://crates.io/api/v1/crates/psa-crypto/0.12.0/download#/psa-crypto-0.12.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-psa-crypto-0.12.0.crate: gzip compressed data, was "psa-crypto-0.12.0.crate", max compression, original size modulo 2^32 241152
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-psa-crypto-0.12.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

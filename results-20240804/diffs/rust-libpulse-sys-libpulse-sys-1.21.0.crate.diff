@@ -1,0 +1,10 @@
+Source package : rust-libpulse-sys
+File name       : libpulse-sys-1.21.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-libpulse-sys/libpulse-sys-1.21.0.crate/sha512/74b9725742f7dcb3abf49dc3adde2621c7645b372bbcaec6c23caeaeb73b939b47d1f4a9dbc180a37de633408e2c478d979a25574df9605b545a41b5751ad212/libpulse-sys-1.21.0.crate
+Source URL      : https://crates.io/api/v1/crates/libpulse-sys/1.21.0/download#/libpulse-sys-1.21.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libpulse-sys-1.21.0.crate: gzip compressed data, was "libpulse-sys-1.21.0.crate", max compression, original size modulo 2^32 216064
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libpulse-sys-1.21.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

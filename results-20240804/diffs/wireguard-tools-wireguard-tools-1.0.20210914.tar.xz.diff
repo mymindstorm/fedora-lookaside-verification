@@ -1,0 +1,10 @@
+Source package : wireguard-tools
+File name       : wireguard-tools-1.0.20210914.tar.xz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/wireguard-tools/wireguard-tools-1.0.20210914.tar.xz/sha512/6727ea65551dbb064457449b93a943bd6534ca93bc7fa5704c2f6826266c98688ee9ea28731fda57a5245d5f63c05f3899fcca54e40c0b6251b7c4796e957445/wireguard-tools-1.0.20210914.tar.xz
+Source URL      : https://git.zx2c4.com/wireguard-tools/snapshot/wireguard-tools-1.0.20210914.tar.xz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-wireguard-tools-1.0.20210914.tar.xz: XZ compressed data, checksum CRC64
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-wireguard-tools-1.0.20210914.tar.xz: XZ compressed data, checksum CRC64
+
+
+No differences detected!

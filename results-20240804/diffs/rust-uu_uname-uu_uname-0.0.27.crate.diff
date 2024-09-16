@@ -1,0 +1,10 @@
+Source package : rust-uu_uname
+File name       : uu_uname-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uu_uname/uu_uname-0.0.27.crate/sha512/be411a871d2efbc155ae2ca280b436277c133b819552ded5793f2846d8a12cbf943014fc79e8718db5b808606feebb726f1ff4a13316a7ddae6ac0314b096ec8/uu_uname-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uu_uname/0.0.27/download#/uu_uname-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uu_uname-0.0.27.crate: gzip compressed data, was "uu_uname-0.0.27.crate", max compression, original size modulo 2^32 31744
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uu_uname-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

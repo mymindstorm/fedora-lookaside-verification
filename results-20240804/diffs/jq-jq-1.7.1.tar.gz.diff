@@ -1,0 +1,11 @@
+Source package : jq
+File name       : jq-1.7.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/jq/jq-1.7.1.tar.gz/sha512/af9c444e5306423182f467a53acdf45bb8aefa058a47f490ce16395f0aebfb7627e3843f65e96f41cd9d4b72b8ad274ab0bdb061abc6990b1158f86d2256d4ec/jq-1.7.1.tar.gz
+Source URL      : https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-1.7.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-jq-1.7.1.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 8755200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-jq-1.7.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4689920
+
+
+Only in source-jq-1.7.1.tar.gz-extracted: jq-1.7.1
+Only in lookaside-jq-1.7.1.tar.gz-extracted: jq-jq-1.7.1

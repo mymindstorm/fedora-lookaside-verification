@@ -1,0 +1,19 @@
+Source package : python-WSGIProxy2
+File name       : WSGIProxy2-0.4.6.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-WSGIProxy2/WSGIProxy2-0.4.6.tar.gz/sha512/9a3c8e96cafe4451943f63bbf47cc0f6ffc7a6916cd8e42f7d1aa53ccab59a74f772c55c1a1f456e97e72c5d15f1601c6501e2c0650bb54c81acd52696580023/WSGIProxy2-0.4.6.tar.gz
+Source URL      : https://pypi.python.org/packages/source/W/WSGIProxy2/WSGIProxy2-0.4.6.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-WSGIProxy2-0.4.6.tar.gz: gzip compressed data, was "dist/WSGIProxy2-0.4.6.tar", last modified: Fri Feb 22 12:08:29 2019, max compression, original size modulo 2^32 92160
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-WSGIProxy2-0.4.6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 71680
+
+
+Only in source-WSGIProxy2-0.4.6.tar.gz-extracted/WSGIProxy2-0.4.6: PKG-INFO
+diff -r source-WSGIProxy2-0.4.6.tar.gz-extracted/WSGIProxy2-0.4.6/setup.cfg lookaside-WSGIProxy2-0.4.6.tar.gz-extracted/WSGIProxy2-0.4.6/setup.cfg
+11,15d10
+< 
+< [egg_info]
+< tag_build = 
+< tag_date = 0
+< 
+Only in lookaside-WSGIProxy2-0.4.6.tar.gz-extracted/WSGIProxy2-0.4.6: .travis.yml
+Only in source-WSGIProxy2-0.4.6.tar.gz-extracted/WSGIProxy2-0.4.6: WSGIProxy2.egg-info

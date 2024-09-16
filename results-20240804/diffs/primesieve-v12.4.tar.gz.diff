@@ -1,0 +1,10 @@
+Source package : primesieve
+File name       : v12.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/primesieve/v12.4.tar.gz/sha512/e2be6b098d8be083753bdeac8d04fdef35001b425833e3a744f509c74e5af88767ae16bb9c957dec2a3c79fce05978d81cd3e8588bb17e901da89c6358772649/v12.4.tar.gz
+Source URL      : https://github.com/kimwalisch/primesieve/archive/v12.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-v12.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 737280
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-v12.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 737280
+
+
+No differences detected!

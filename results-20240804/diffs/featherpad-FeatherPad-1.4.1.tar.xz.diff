@@ -1,0 +1,10 @@
+Source package : featherpad
+File name       : FeatherPad-1.4.1.tar.xz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/featherpad/FeatherPad-1.4.1.tar.xz/sha512/0f6ba174449c2d1a044dbac8641f443b1a9c1f92c74dbec8ddddce0096165a892da19f5aedbf935ed16a777358837a150f5ad133cc7a3cc76a56eaf3b6259e41/FeatherPad-1.4.1.tar.xz
+Source URL      : https://github.com/tsujan/FeatherPad/archive/V1.4.1.tar.gz#/FeatherPad-1.4.1.tar.xz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-FeatherPad-1.4.1.tar.xz: gzip compressed data, from Unix, original size modulo 2^32 5785600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-FeatherPad-1.4.1.tar.xz: XZ compressed data, checksum CRC64
+
+
+Only in source-FeatherPad-1.4.1.tar.xz-extracted: FeatherPad-1.4.1

@@ -1,0 +1,10 @@
+Source package : rust-cargo-lock
+File name       : cargo-lock-9.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cargo-lock/cargo-lock-9.0.0.crate/sha512/1f9d030100074560772c1fdf31a253693f5e1ec39b6855dd238e73df5beb8182dcaa15fdfdb38bde7e7f283148825aaab72479f39b805ad526a12377ac5799c8/cargo-lock-9.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/cargo-lock/9.0.0/download#/cargo-lock-9.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cargo-lock-9.0.0.crate: gzip compressed data, was "cargo-lock-9.0.0.crate", max compression, original size modulo 2^32 205824
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cargo-lock-9.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

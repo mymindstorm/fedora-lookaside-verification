@@ -1,0 +1,306 @@
+Source package : python-ldap
+File name       : python-ldap-3.4.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-ldap/python-ldap-3.4.4.tar.gz/sha512/f0e7c5af4399ebb7331e6b41008b4dd54193fc47d6c48d53a0c155bc6cf9735b45128ae06442abe59ffbaf2282ea1a804484923e886f8b457c57cc727210bdfc/python-ldap-3.4.4.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/p/python-ldap/python-ldap-3.4.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-python-ldap-3.4.4.tar.gz: gzip compressed data, was "python-ldap-3.4.4.tar", last modified: Fri Nov 17 20:46:39 2023, max compression, original size modulo 2^32 2150400
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-python-ldap-3.4.4.tar.gz: gzip compressed data, was "python-ldap-3.4.4.tar", last modified: Tue Nov  7 22:07:37 2023, max compression, original size modulo 2^32 2129920
+
+
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/CHANGES lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/CHANGES
+1c1
+< Released 3.4.4 2022-11-17
+---
+> Released 3.4.4 2022-11-08
+6c6
+< * LDAP_set_option string formats are now compatible with Python 3.12
+---
+> * LDAP_set_option string formats are now compatible with Python 3.13
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Lib/python_ldap.egg-info/PKG-INFO lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Lib/python_ldap.egg-info/PKG-INFO
+34,35d33
+< Requires-Dist: pyasn1>=0.3.7
+< Requires-Dist: pyasn1_modules>=0.1.5
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Lib/python_ldap.egg-info/SOURCES.txt lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Lib/python_ldap.egg-info/SOURCES.txt
+132d131
+< Modules/LDAPObject.h
+134d132
+< Modules/berval.h
+136d133
+< Modules/common.h
+138d134
+< Modules/constants.h
+141d136
+< Modules/functions.h
+143d137
+< Modules/ldapcontrol.h
+146d139
+< Modules/message.h
+148c141
+< Modules/options.h
+---
+> Modules/pythonldap.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Makefile lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Makefile
+92c92,93
+< 	indent Modules/*.c Modules/*.h
+---
+> 	indent Modules/*.c
+> 	indent -npsl Modules/pythonldap.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/berval.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/berval.c
+3,4c3
+< #include "common.h"
+< #include "berval.h"
+---
+> #include "pythonldap.h"
+Only in source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: berval.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/common.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/common.c
+4c4
+< #include "common.h"
+---
+> #include "pythonldap.h"
+Only in source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: common.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/constants.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/constants.c
+4,6c4
+< #include "common.h"
+< #include "constants.h"
+< #include "ldapcontrol.h"
+---
+> #include "pythonldap.h"
+110c108
+<             pyresult = PyInt_FromLong(msgtype);
+---
+>             pyresult = PyLong_FromLong(msgtype);
+117c115
+<             pyresult = PyInt_FromLong(msgid);
+---
+>             pyresult = PyLong_FromLong(msgid);
+123c121
+<         pyresult = PyInt_FromLong(errnum);
+---
+>         pyresult = PyLong_FromLong(errnum);
+134c132
+<             pyerrno = PyInt_FromLong(myerrno);
+---
+>             pyerrno = PyLong_FromLong(myerrno);
+Only in source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: constants.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/functions.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/functions.c
+3,8c3
+< #include "common.h"
+< #include "functions.h"
+< #include "LDAPObject.h"
+< #include "berval.h"
+< #include "constants.h"
+< #include "options.h"
+---
+> #include "pythonldap.h"
+Only in source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: functions.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/ldapcontrol.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/ldapcontrol.c
+3,7c3
+< #include "common.h"
+< #include "LDAPObject.h"
+< #include "ldapcontrol.h"
+< #include "berval.h"
+< #include "constants.h"
+---
+> #include "pythonldap.h"
+Only in source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: ldapcontrol.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/ldapmodule.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/ldapmodule.c
+3,14c3
+< #include "common.h"
+< #include "constants.h"
+< #include "functions.h"
+< #include "ldapcontrol.h"
+< 
+< #include "LDAPObject.h"
+< 
+< #if PY_MAJOR_VERSION >= 3
+< PyMODINIT_FUNC PyInit__ldap(void);
+< #else
+< PyMODINIT_FUNC init_ldap(void);
+< #endif
+---
+> #include "pythonldap.h"
+35a25,32
+> static struct PyModuleDef ldap_moduledef = {
+>     PyModuleDef_HEAD_INIT,
+>     "_ldap",        /* m_name */
+>     "",             /* m_doc */
+>     -1,             /* m_size */
+>     methods,        /* m_methods */
+> };
+> 
+38,40c35,36
+< /* Common initialization code */
+< PyObject *
+< init_ldap_module(void)
+---
+> PyMODINIT_FUNC
+> PyInit__ldap()
+45,52d40
+< #if PY_MAJOR_VERSION >= 3
+<     static struct PyModuleDef ldap_moduledef = {
+<         PyModuleDef_HEAD_INIT,
+<         "_ldap",        /* m_name */
+<         "",             /* m_doc */
+<         -1,             /* m_size */
+<         methods,        /* m_methods */
+<     };
+54,56c42
+< #else
+<     m = Py_InitModule("_ldap", methods);
+< #endif
+---
+> 
+81,94d66
+< 
+< #if PY_MAJOR_VERSION < 3
+< PyMODINIT_FUNC
+< init_ldap()
+< {
+<     init_ldap_module();
+< }
+< #else
+< PyMODINIT_FUNC
+< PyInit__ldap()
+< {
+<     return init_ldap_module();
+< }
+< #endif
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/LDAPObject.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/LDAPObject.c
+3c3
+< #include "common.h"
+---
+> #include "pythonldap.h"
+8,13d7
+< #include "constants.h"
+< #include "LDAPObject.h"
+< #include "ldapcontrol.h"
+< #include "message.h"
+< #include "berval.h"
+< #include "options.h"
+279,282d272
+< #if PY_MAJOR_VERSION == 2
+<     }
+<     else if (PyBytes_Check(attrlist)) {
+< #else
+285d274
+< #endif
+296d284
+< #if PY_MAJOR_VERSION >= 3
+298,300d285
+< #else
+<         char *str;
+< #endif
+318,328d302
+< #if PY_MAJOR_VERSION == 2
+<             /* Encoded in Python to UTF-8 */
+<             if (!PyBytes_Check(item)) {
+<                 LDAPerror_TypeError
+<                     ("attrs_from_List(): expected bytes in list", item);
+<                 goto error;
+<             }
+<             if (PyBytes_AsStringAndSize(item, &str, &strlen) == -1) {
+<                 goto error;
+<             }
+< #else
+335d308
+< #endif
+524c497
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+575c548
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+733c706
+<     return PyInt_FromLong(ldaperror);
+---
+>     return PyLong_FromLong(ldaperror);
+760,764d732
+< #if (PY_MAJOR_VERSION == 2) && (PY_MINOR_VERSION < 3)
+<     if (!PyArg_ParseTuple
+<         (args, "sOOOi:sasl_interactive_bind_s", &who, &SASLObject,
+<          &serverctrls, &clientctrls, &sasl_flags))
+< #else
+768d735
+< #endif
+812c779
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+861c828
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+915c882
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+961c928
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+1018c985
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+1068c1035
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+1284c1251
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+1454c1421
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+1505c1472
+<     return PyInt_FromLong(msgid);
+---
+>     return PyLong_FromLong(msgid);
+Only in source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: LDAPObject.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/message.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/message.c
+3,7c3
+< #include "common.h"
+< #include "message.h"
+< #include "berval.h"
+< #include "ldapcontrol.h"
+< #include "constants.h"
+---
+> #include "pythonldap.h"
+Only in source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: message.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/options.c lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules/options.c
+3,8c3
+< #include "common.h"
+< #include "constants.h"
+< #include "LDAPObject.h"
+< #include "ldapcontrol.h"
+< #include "options.h"
+< #include "berval.h"
+---
+> #include "pythonldap.h"
+376c371
+<         return PyInt_FromLong(intval);
+---
+>         return PyLong_FromLong(intval);
+Only in source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: options.h
+Only in lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/Modules: pythonldap.h
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/PKG-INFO lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/PKG-INFO
+34,35d33
+< Requires-Dist: pyasn1>=0.3.7
+< Requires-Dist: pyasn1_modules>=0.1.5
+diff -r source-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/setup.py lookaside-python-ldap-3.4.4.tar.gz-extracted/python-ldap-3.4.4/setup.py
+120,122c120
+<         'Modules/LDAPObject.h',
+<         'Modules/berval.h',
+<         'Modules/common.h',
+---
+>         'Modules/pythonldap.h',
+124,128d121
+<         'Modules/constants.h',
+<         'Modules/functions.h',
+<         'Modules/ldapcontrol.h',
+<         'Modules/message.h',
+<         'Modules/options.h',

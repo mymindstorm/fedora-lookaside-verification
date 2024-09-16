@@ -1,0 +1,10 @@
+Source package : rust-uu_true
+File name       : uu_true-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uu_true/uu_true-0.0.27.crate/sha512/862f63b0510e42639470335fb7e94bff1a7417d717c1c3281b5fbe8cc27a18aa6f572b8c730cbc3e2092c199254391df059cead1442be5b7d802c04dc7f1071b/uu_true-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uu_true/0.0.27/download#/uu_true-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uu_true-0.0.27.crate: gzip compressed data, was "uu_true-0.0.27.crate", max compression, original size modulo 2^32 25600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uu_true-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

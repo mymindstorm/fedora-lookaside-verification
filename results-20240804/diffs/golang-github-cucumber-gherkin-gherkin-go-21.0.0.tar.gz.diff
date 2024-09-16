@@ -1,0 +1,10 @@
+Source package : golang-github-cucumber-gherkin
+File name       : gherkin-go-21.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-cucumber-gherkin/gherkin-go-21.0.0.tar.gz/sha512/431d3768dcd23b8897a34677415fe2d5446822378a9c117581075ef600f7246a2134cd97ea9e618a6208aa89aca3b00cf7230cde7a457af7ed48b8733d0a2672/gherkin-go-21.0.0.tar.gz
+Source URL      : https://github.com/cucumber/gherkin-go/archive/v21.0.0/gherkin-go-21.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gherkin-go-21.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3965315557 gzip compressed data, unknown method, extra field, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3965315557
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gherkin-go-21.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1187840
+
+
+No differences detected!

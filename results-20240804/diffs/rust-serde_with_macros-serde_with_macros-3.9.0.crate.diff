@@ -1,0 +1,10 @@
+Source package : rust-serde_with_macros
+File name       : serde_with_macros-3.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-serde_with_macros/serde_with_macros-3.9.0.crate/sha512/451af6f14cac8ead53b9705c530cb6494063ea8f20d1a7ca80561d16334985b98541bd9c3a50857a4cf377ab5d84593baadd5503676540da8212f9c5fea89e90/serde_with_macros-3.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/serde_with_macros/3.9.0/download#/serde_with_macros-3.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-serde_with_macros-3.9.0.crate: gzip compressed data, was "serde_with_macros-3.9.0.crate", max compression, original size modulo 2^32 135680
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-serde_with_macros-3.9.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

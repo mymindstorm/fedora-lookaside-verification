@@ -1,0 +1,10 @@
+Source package : rust-ureq
+File name       : ureq-2.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ureq/ureq-2.10.0.crate/sha512/a04831abe500771bec2394993e79092c37d02106623bd49d45acf18eba51d5324723e1650ec13d2ae20cd23d4f8c2b66ab8cf179e39e81dca6c0cc04208695af/ureq-2.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/ureq/2.10.0/download#/ureq-2.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ureq-2.10.0.crate: gzip compressed data, was "ureq-2.10.0.crate", max compression, original size modulo 2^32 487424
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ureq-2.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

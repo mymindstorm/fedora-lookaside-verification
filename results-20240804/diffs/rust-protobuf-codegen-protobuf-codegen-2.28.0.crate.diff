@@ -1,0 +1,10 @@
+Source package : rust-protobuf-codegen
+File name       : protobuf-codegen-2.28.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-protobuf-codegen/protobuf-codegen-2.28.0.crate/sha512/5b23b4987f2a7a080dd93842e63ab58e8b95e4a2d78de3e4af7ef863f8d6c359b989cbc6c0a6e0853803d903f66a43021598814efbe85a8d712320e38f9485eb/protobuf-codegen-2.28.0.crate
+Source URL      : https://crates.io/api/v1/crates/protobuf-codegen/2.28.0/download#/protobuf-codegen-2.28.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-protobuf-codegen-2.28.0.crate: gzip compressed data, was "protobuf-codegen-2.28.0.crate", max compression, original size modulo 2^32 245760
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-protobuf-codegen-2.28.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

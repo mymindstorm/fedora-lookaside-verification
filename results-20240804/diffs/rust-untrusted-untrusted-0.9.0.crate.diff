@@ -1,0 +1,10 @@
+Source package : rust-untrusted
+File name       : untrusted-0.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-untrusted/untrusted-0.9.0.crate/sha512/5929e4079c1c2ff933ae8d8f59a2ecc7a424e71a20d1b8821f75925af68bdf82604b024c008e5464b02e25ff093e561a352b685e755b3d0b27e4c30254689416/untrusted-0.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/untrusted/0.9.0/download#/untrusted-0.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-untrusted-0.9.0.crate: gzip compressed data, was "untrusted-0.9.0.crate", max compression, original size modulo 2^32 58880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-untrusted-0.9.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

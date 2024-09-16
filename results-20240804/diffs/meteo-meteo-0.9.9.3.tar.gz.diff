@@ -1,0 +1,44 @@
+Source package : meteo
+File name       : meteo-0.9.9.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/meteo/meteo-0.9.9.3.tar.gz/sha512/00960bc7bb6e4456ff7cfc851789da02074ba5246b6aca6b4128e6f0b64dc2750bcbbcb1ca55b727b4c902f02f4518c08a8238705991b55559da1adbc8844b5e/meteo-0.9.9.3.tar.gz
+Source URL      : https://gitlab.com/bitseater/meteo/-/archive/0.9.9.3/meteo-0.9.9.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-meteo-0.9.9.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1136640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-meteo-0.9.9.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1136640
+
+
+diff -r source-meteo-0.9.9.3.tar.gz-extracted/meteo-0.9.9.3/data/com.gitlab.bitseater.meteo.appdata.xml.in lookaside-meteo-0.9.9.3.tar.gz-extracted/meteo-0.9.9.3/data/com.gitlab.bitseater.meteo.appdata.xml.in
+43c43
+<     <developer_name>Carlos Suarez</developer_name>
+---
+>     <developer>Carlos Suarez</developer>
+50,78d49
+<     <content_rating type="oars-1.0">
+<         <content_attribute id="violence-cartoon">none</content_attribute>
+<         <content_attribute id="violence-fantasy">none</content_attribute>
+<         <content_attribute id="violence-realistic">none</content_attribute>
+<         <content_attribute id="violence-bloodshed">none</content_attribute>
+<         <content_attribute id="violence-sexual">none</content_attribute>
+<         <content_attribute id="violence-desecration">none</content_attribute>
+<         <content_attribute id="violence-slavery">none</content_attribute>
+<         <content_attribute id="violence-worship">none</content_attribute>
+<         <content_attribute id="drugs-alcohol">none</content_attribute>
+<         <content_attribute id="drugs-narcotics">none</content_attribute>
+<         <content_attribute id="drugs-tobacco">none</content_attribute>
+<         <content_attribute id="sex-nudity">none</content_attribute>
+<         <content_attribute id="sex-themes">none</content_attribute>
+<         <content_attribute id="sex-homosexuality">none</content_attribute>
+<         <content_attribute id="sex-prostitution">none</content_attribute>
+<         <content_attribute id="sex-adultery">none</content_attribute>
+<         <content_attribute id="sex-appearance">none</content_attribute>
+<         <content_attribute id="language-profanity">none</content_attribute>
+<         <content_attribute id="language-humor">none</content_attribute>
+<         <content_attribute id="language-discrimination">none</content_attribute>
+<         <content_attribute id="social-chat">none</content_attribute>
+<         <content_attribute id="social-info">none</content_attribute>
+<         <content_attribute id="social-audio">none</content_attribute>
+<         <content_attribute id="social-location">none</content_attribute>
+<         <content_attribute id="social-contacts">none</content_attribute>
+<         <content_attribute id="money-purchasing">none</content_attribute>
+<         <content_attribute id="money-gambling">none</content_attribute>
+<     </content_rating>

@@ -1,0 +1,26 @@
+Source package : python-polib
+File name       : polib-1.2.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-polib/polib-1.2.0.tar.gz/sha512/4cadd4b101686eb9094f117f88094f7f319353bb35c196aa4cec07958fac78bc2b8728f3650b79efd5cd3f04fb78a53117ae15073df02f3af9c70712f759d182/polib-1.2.0.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/p/polib/polib-1.2.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-polib-1.2.0.tar.gz: gzip compressed data, was "polib-1.2.0.tar", last modified: Thu Feb 23 17:53:56 2023, max compression, original size modulo 2^32 665600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-polib-1.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 573440
+
+
+Only in lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0: codecov.yml
+Only in lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0: .coveragerc
+Only in lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0: .github
+Only in lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0: .gitignore
+Only in lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0: Makefile
+Only in source-polib-1.2.0.tar.gz-extracted/polib-1.2.0: PKG-INFO
+Only in source-polib-1.2.0.tar.gz-extracted/polib-1.2.0: polib.egg-info
+Only in lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0: requirements-dev.txt
+diff -r source-polib-1.2.0.tar.gz-extracted/polib-1.2.0/setup.cfg lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0/setup.cfg
+3,7d2
+< 
+< [egg_info]
+< tag_build = 
+< tag_date = 0
+< 
+Only in lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0: tox.ini
+Only in lookaside-polib-1.2.0.tar.gz-extracted/polib-1.2.0: .travis.yml

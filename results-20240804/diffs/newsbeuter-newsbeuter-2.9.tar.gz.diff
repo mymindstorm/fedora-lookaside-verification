@@ -1,0 +1,10 @@
+Source package : newsbeuter
+File name       : newsbeuter-2.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/newsbeuter/newsbeuter-2.9.tar.gz/md5/9cf332dc7e591023147bda7add430835/newsbeuter-2.9.tar.gz
+Source URL      : http://newsbeuter.org/downloads/newsbeuter-2.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-newsbeuter-2.9.tar.gz: HTML document, ASCII text, with very long lines (10393), with CRLF, LF line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-newsbeuter-2.9.tar.gz: gzip compressed data, last modified: Thu Feb 19 11:06:45 2015, max compression, from Unix, original size modulo 2^32 2160640
+
+
+Only in lookaside-newsbeuter-2.9.tar.gz-extracted: newsbeuter-2.9

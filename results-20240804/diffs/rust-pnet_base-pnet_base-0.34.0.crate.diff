@@ -1,0 +1,10 @@
+Source package : rust-pnet_base
+File name       : pnet_base-0.34.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-pnet_base/pnet_base-0.34.0.crate/sha512/382bbb54732d028a52cdec63fa6d6d29d51f5a722adb55e77c0c8f06e6e9823b3e532008bca3a5b0b828d35682a84ef42ebb11e3ee75d29c738128c63282e8aa/pnet_base-0.34.0.crate
+Source URL      : https://crates.io/api/v1/crates/pnet_base/0.34.0/download#/pnet_base-0.34.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pnet_base-0.34.0.crate: gzip compressed data, was "pnet_base-0.34.0.crate", max compression, original size modulo 2^32 38912
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pnet_base-0.34.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

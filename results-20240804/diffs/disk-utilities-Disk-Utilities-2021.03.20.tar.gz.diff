@@ -1,0 +1,11 @@
+Source package : disk-utilities
+File name       : Disk-Utilities-2021.03.20.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/disk-utilities/Disk-Utilities-2021.03.20.tar.gz/sha512/715e33d5da3edb62e91b51fc2c251f1dff68183da3325f20ed396a2e1807ebf913d0751efd573b5ba6cf00c2e376c5a336b1e395d6e13df41baccf87f1792469/Disk-Utilities-2021.03.20.tar.gz
+Source URL      : https://github.com/keirf/Disk-Utilities/archive/2021.03.20/Disk-Utilities-2021.03.20.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-Disk-Utilities-2021.03.20.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1177600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-Disk-Utilities-2021.03.20.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1177600
+
+
+Only in source-Disk-Utilities-2021.03.20.tar.gz-extracted: disk-utilities-2021.03.20
+Only in lookaside-Disk-Utilities-2021.03.20.tar.gz-extracted: Disk-Utilities-2021.03.20

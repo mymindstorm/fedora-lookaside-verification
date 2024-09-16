@@ -1,0 +1,68 @@
+Source package : cxxtools
+File name       : cxxtools-3.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/cxxtools/cxxtools-3.0.tar.gz/sha512/839be18a8bf40c1cbaa016ac50ddacfd879d1f9bea6521209c65790d67d5ee81377519aac2fb373a5de154a293e33185401848e41a697aa57ad6aa42d4854250/cxxtools-3.0.tar.gz
+Source URL      : https://github.com/maekitalo/cxxtools/archive/refs/tags/V3.0.tar.gz#/cxxtools-3.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cxxtools-3.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 6451200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cxxtools-3.0.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 8161280
+
+
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: aclocal.m4
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: compile
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: config.guess
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: config.sub
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: configure
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: cxxtools.spec
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/demo/async: log.properties
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/demo/async: Makefile.in
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/demo/async: README.md
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/demo: .gitignore
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/demo: Makefile.in
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/demo: run_log
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/demo/ssl: Makefile.in
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: depcomp
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: doc
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: .gitignore
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/include/cxxtools: doxygen.cfg
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/include/cxxtools: loginit.h
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/include: Makefile.in
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: INSTALL
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: install-sh
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: lgpl++.txt
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: ltmain.sh
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/m4: libtool.m4
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/m4: lt~obsolete.m4
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/m4: ltoptions.m4
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/m4: ltsugar.m4
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/m4: ltversion.m4
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: Makefile.in
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: missing
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: README.git
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src/bin: Makefile.in
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src: config.h.in
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src/http: Makefile.in
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src/json: Makefile.in
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src: Makefile.in
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src: Makefile.mingw
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src: Makefile.win32
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src/unit: Makefile.in
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/src/xmlrpc: Makefile.in
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: cgitest.cpp
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: foo.cpp
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: .gitignore
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: jsonechoclient.pl
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: jsonechoserver.pl
+diff -r source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test/Makefile.am lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test/Makefile.am
+2a3
+>     foo \
+114a116,118
+> 
+> foo_SOURCES = foo.cpp
+> foo_LDADD = $(top_builddir)/src/libcxxtools.la
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: Makefile.in
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: MyApp.pm
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: net-test.cpp
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: query_params_test.cpp
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/test: tcpsockettest.cpp
+Only in lookaside-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0/tools: Makefile.in
+Only in source-cxxtools-3.0.tar.gz-extracted/cxxtools-3.0: utils

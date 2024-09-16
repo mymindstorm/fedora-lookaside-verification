@@ -1,0 +1,10 @@
+Source package : vconfig
+File name       : vlan.1.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/vconfig/vlan.1.9.tar.gz/md5/5f0c6060b33956fb16e11a15467dd394/vlan.1.9.tar.gz
+Source URL      : http://www.candelatech.com/~greear/vlan/vlan.1.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-vlan.1.9.tar.gz: data
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-vlan.1.9.tar.gz: gzip compressed data, last modified: Tue Sep 13 16:14:50 2005, from Unix, original size modulo 2^32 737280
+
+
+Only in lookaside-vlan.1.9.tar.gz-extracted: vlan

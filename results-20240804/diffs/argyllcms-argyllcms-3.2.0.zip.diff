@@ -1,0 +1,230 @@
+Source package : argyllcms
+File name       : argyllcms-3.2.0.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/argyllcms/argyllcms-3.2.0.zip/sha512/f667762f58885588ec685f400f5afa92749f4c427ae7142df3d8d3c266ef1423f38157c250eacfc4ef8506ef53257fd5d98bca48856c03bc9901bf6a603d3d60/argyllcms-3.2.0.zip
+Source URL      : https://www.argyllcms.com/Argyll_V3.2.0_src.zip#/argyllcms-3.2.0.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-argyllcms-3.2.0.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-argyllcms-3.2.0.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+
+
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/doc/ChangesSummary.html lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/doc/ChangesSummary.html
+34,35c34,35
+<       <li>Tweaked i1d3 Rev B AIO adaptive integration time to reduce
+<         measure time to be more comparable to just using Rev A commands.</li>
+---
+>       <li>Tweaked i1d3 AIO adaptive integration time to reduce measure
+>         time to be more comparable to just using Rev A commands.</li>
+1576d1575
+< 
+1591d1589
+< 
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/doc/colprof.html lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/doc/colprof.html
+31d30
+< 
+128d126
+< 
+205d202
+< 
+264d260
+< 
+288d283
+< 
+312d306
+< 
+336d329
+< 
+405d397
+< 
+495d486
+< 
+543d533
+< 
+597d586
+< 
+664d652
+< 
+698d685
+< 
+707d693
+< 
+710c696
+<     <tt><tt><tt><tt>&nbsp;<a href="#nI" moz-do-not-send="true">-nI</a>
+---
+>     <tt><tt><tt><tt>&nbsp;<a href="#nI" moz-do-not-send="true">-n</a>I
+729d714
+< 
+818d802
+< 
+859d842
+< 
+927d909
+< 
+1000d981
+< 
+1074d1054
+< 
+1147d1126
+< 
+1221d1199
+< 
+1294d1271
+< 
+1367d1343
+< 
+1402d1377
+< 
+1500d1474
+< 
+1584d1557
+< 
+1634d1606
+< 
+1721d1692
+< 
+1798d1768
+< 
+1993d1962
+< 
+2107d2075
+< 
+2181d2148
+< 
+2254d2220
+< 
+2327d2292
+< 
+2400d2364
+< 
+2481d2444
+< 
+2716d2678
+< 
+2970d2931
+< 
+3087d3047
+< 
+3111d3070
+< 
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/gamut/GenRMGam.c lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/gamut/GenRMGam.c
+16d15
+< #include "xicc.h"
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/Jambase lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/Jambase
+456c456
+< 		AR				?= $(TPFX2)ar rsc ;
+---
+> 		AR				?= $(TPFX2)ar rusc ;
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/log.txt lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/log.txt
+14c14
+<    to faulty Adobe Lightroom BPC for Perceptual intent in output profiles.
+---
+>    to faulty Adobe Lightroom BPC for Perceptual intent in output prodfiles.
+27c27
+<  * Tweaked i1d3 Rev B AIO adaptive integration time
+---
+>  * Tweaked i1d3 AIO adaptive integration time
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/numlib/numsup.c lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/numlib/numsup.c
+1225,1229d1224
+< /* Note the a suffix versions allocates on the stack using aloca() */
+< 
+< #ifdef NT
+< # define alloca _alloca
+< #endif
+1273,1288d1267
+< /* Double Vector on stack */
+< double *dvectora(
+< int nl,		/* Lowest index */
+< int nh		/* Highest index */
+< )	{
+< 	double *v;
+< 
+< 	if ((v = (double *) alloca((nh-nl+1) * sizeof(double))) == NULL) {
+< 		if (ret_null_on_malloc_fail)
+< 			return NULL;
+< 		else
+< 			error("Alloca failure in dvector()");
+< 	}
+< 	return v-nl;
+< }
+< 
+1414,1456d1392
+< }
+< 
+< /* 2D Double matrix on stack */
+< double **dmatrixa(
+< int nrl,	/* Row low index */
+< int nrh,	/* Row high index */
+< int ncl,	/* Col low index */
+< int nch		/* Col high index */
+< ) {
+< 	int i;
+< 	int rows, cols;
+< 	double **m;
+< 
+< 	if (nrh < nrl)	/* Prevent failure for 0 dimension */
+< 		nrh = nrl;
+< 	if (nch < ncl)
+< 		nch = ncl;
+< 
+< 	rows = nrh - nrl + 1;
+< 	cols = nch - ncl + 1;
+< 
+< 	/* One extra pointer before colums to hold main allocation address */
+< 	if ((m = (double **) alloca((rows + 1) * sizeof(double *))) == NULL) {
+< 		if (ret_null_on_malloc_fail)
+< 			return NULL;
+< 		else
+< 			error("Alloca failure in dmatrix(), pointers");
+< 	}
+< 	m -= nrl;	/* Offset to nrl */
+< 	m += 1;		/* Make nrl-1 pointer to main allocation, in case rows get swaped */
+< 
+< 	if ((m[nrl-1] = (double *) alloca(rows * cols * sizeof(double))) == NULL) {
+< 		if (ret_null_on_malloc_fail)
+< 			return NULL;
+< 		else
+< 			error("Alloca failure in dmatrix(), array");
+< 	}
+< 
+< 	m[nrl] = m[nrl-1] - ncl;		/* Set first row address, offset to ncl */
+< 	for(i = nrl+1; i <= nrh; i++)	/* Set subsequent row addresses */
+< 		m[i] = m[i-1] + cols;
+< 
+< 	return m;
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/numlib/numsup.h lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/numlib/numsup.h
+473c473
+< /* Double Vector */
+---
+> /* Double */
+477d476
+< double *dvectora(int nl,int nh);
+479,480d477
+< 
+< /* Double Matrix */
+485d481
+< double **dmatrixa(int nrl, int nrh, int ncl, int nch);
+487d482
+< /* Half Matrix */
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/profile/Jamfile lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/profile/Jamfile
+2,3c2,3
+< #PREF_CCFLAGS 	+= $(CCOPTFLAG) ;		# Turn optimisation on
+< PREF_CCFLAGS	+= $(CCDEBUGFLAG) ;		# Debugging flags
+---
+> PREF_CCFLAGS 	+= $(CCOPTFLAG) ;		# Turn optimisation on
+> #PREF_CCFLAGS	+= $(CCDEBUGFLAG) ;		# Debugging flags
+103,104c103,104
+< if [ GLOB [ NormPaths . ] : nmod7.c ]  {
+< 	Main nmod7 : nmod7.c ;
+---
+> if [ GLOB [ NormPaths . ] : nmod6.c ]  {
+> 	Main nmod6 : nmod6.c ;
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/spectro/linear.cal lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/spectro/linear.cal
+5c5
+< CREATED "Sun Apr 21 07:20:08 2024"
+---
+> CREATED "Wed Apr 17 08:14:15 2024"
+diff -r source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/spectro/strange.cal lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/spectro/strange.cal
+5c5
+< CREATED "Sun Apr 21 07:20:08 2024"
+---
+> CREATED "Wed Apr 17 08:14:15 2024"
+Binary files source-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/usb/ArgyllCMS.cat and lookaside-argyllcms-3.2.0.zip-extracted/Argyll_V3.2.0/usb/ArgyllCMS.cat differ

@@ -1,0 +1,30 @@
+Source package : python-agate-dbf
+File name       : agate-dbf-0.2.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-agate-dbf/agate-dbf-0.2.3.tar.gz/sha512/c77df50b5d38c4f8b92414d6ed793b13b9c54c02235cba5793865c1f6a60dac5af99933763db7cdb807687bbc1a4efd123037c2ab6f402e850d5d57f0eab2190/agate-dbf-0.2.3.tar.gz
+Source URL      : https://github.com/wireservice/agate-dbf/archive/0.2.3/agate-dbf-0.2.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-agate-dbf-0.2.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 333264094 gzip compressed data, reserved method, ASCII, has CRC, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 333264094
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-agate-dbf-0.2.3.tar.gz: gzip compressed data, was "agate-dbf-0.2.3.tar", last modified: Fri Feb 23 21:51:39 2024, max compression, original size modulo 2^32 81920
+
+
+Only in lookaside-agate-dbf-0.2.3.tar.gz-extracted/agate-dbf-0.2.3: agate_dbf.egg-info
+Only in source-agate-dbf-0.2.3.tar.gz-extracted/agate-dbf-0.2.3: .github
+Only in source-agate-dbf-0.2.3.tar.gz-extracted/agate-dbf-0.2.3: .gitignore
+Only in lookaside-agate-dbf-0.2.3.tar.gz-extracted/agate-dbf-0.2.3: PKG-INFO
+Only in source-agate-dbf-0.2.3.tar.gz-extracted/agate-dbf-0.2.3: .readthedocs.yaml
+diff -r source-agate-dbf-0.2.3.tar.gz-extracted/agate-dbf-0.2.3/setup.cfg lookaside-agate-dbf-0.2.3.tar.gz-extracted/agate-dbf-0.2.3/setup.cfg
+3,6c3,5
+< per-file-ignores =
+<     # imported but unused
+<     agatedbf/__init__.py: F401
+<     example.py: F401
+---
+> per-file-ignores = 
+> 	agatedbf/__init__.py: F401
+> 	example.py: F401
+12a12,16
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 

@@ -1,0 +1,14 @@
+Source package : python-efel
+File name       : eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-efel/eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c.tar.gz/sha512/d3a08e34ffa99f1b7e6d61ab510bcb02e5e488c3954f31236f56ed16e4a3b0047a35404ea9e6ad39b6496115deaa69a7d7ca66a88e9f8af95d0dbc3f3480f0f3/eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c.tar.gz
+Source URL      : https://github.com/BlueBrain/eFEL/archive/cc9a2b71c14a507fabf509ba73cb053bae14a53c/eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 23490560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 23490560
+
+
+diff -r source-eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c.tar.gz-extracted/eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c/efel/_version.py lookaside-eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c.tar.gz-extracted/eFEL-cc9a2b71c14a507fabf509ba73cb053bae14a53c/efel/_version.py
+29c29
+<     git_refnames = " (tag: 5.4.0)"
+---
+>     git_refnames = " (HEAD -> master, tag: 5.4.0)"

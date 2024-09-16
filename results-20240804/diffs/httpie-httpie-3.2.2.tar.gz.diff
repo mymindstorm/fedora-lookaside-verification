@@ -1,0 +1,11 @@
+Source package : httpie
+File name       : httpie-3.2.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/httpie/httpie-3.2.2.tar.gz/sha512/8769233c5f494bec7d0285361e4957c88833fe8d869d4c77455a1ee509d930b440fd768667d10defc23d1c015f952a9a6a47bb1bcfcf7321f57128779828b3ef/httpie-3.2.2.tar.gz
+Source URL      : https://github.com/httpie/httpie/archive/3.2.2/httpie-3.2.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-httpie-3.2.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2334720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-httpie-3.2.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2334720
+
+
+Only in source-httpie-3.2.2.tar.gz-extracted: cli-3.2.2
+Only in lookaside-httpie-3.2.2.tar.gz-extracted: httpie-3.2.2

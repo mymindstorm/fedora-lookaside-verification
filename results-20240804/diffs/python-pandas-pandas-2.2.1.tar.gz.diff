@@ -1,0 +1,14 @@
+Source package : python-pandas
+File name       : pandas-2.2.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-pandas/pandas-2.2.1.tar.gz/sha512/b552f1e7b1a7f304677f62e93dd8a0bb04b5f25ead5b3180f8a0e8903904a8c2e0ffa0f61a0691e8dcd0ed6e578ea1b724997ad255044fa8e73f65e703991fd5/pandas-2.2.1.tar.gz
+Source URL      : https://github.com/pandas-dev/pandas/archive/v2.2.1/pandas-2.2.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pandas-2.2.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3269727864
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pandas-2.2.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 23664640
+
+
+diff -r source-pandas-2.2.1.tar.gz-extracted/pandas-2.2.1/pandas/_version.py lookaside-pandas-2.2.1.tar.gz-extracted/pandas-2.2.1/pandas/_version.py
+28c28
+<     git_refnames = " (tag: v2.2.1)"
+---
+>     git_refnames = " (tag: v2.2.1, 2.2.x)"

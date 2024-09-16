@@ -1,0 +1,11 @@
+Source package : xar
+File name       : xar-417.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/xar/xar-417.1.tar.gz/sha512/4c3c61f5289d0b2e380cbde772b383da369ca8ad046f5d779e02f59300288c90c5e31d105a2c01ac17dc719b8b46b55d8d36a8b3b20360f315766fce92dec762/xar-417.1.tar.gz
+Source URL      : https://opensource.apple.com/tarballs/xar/xar-417.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-xar-417.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1075200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-xar-417.1.tar.gz: gzip compressed data, was "xar-417.1.tar", last modified: Sat Aug  3 06:37:44 2019, max compression, original size modulo 2^32 1075200
+
+
+Only in lookaside-xar-417.1.tar.gz-extracted: xar-417.1
+Only in source-xar-417.1.tar.gz-extracted: xar-xar-417.1

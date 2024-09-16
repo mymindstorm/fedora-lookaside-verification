@@ -1,0 +1,11 @@
+Source package : wildmidi
+File name       : wildmidi-0.4.6.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/wildmidi/wildmidi-0.4.6.tar.gz/sha512/223f69ba7b9d4bdd83d7c78b5f7ba021d195e19104506cd8d0ad75d66f560c0aae90098184bbc84a2fa290cad79e925603393f7736c91d59d4fdfadc59ab0229/wildmidi-0.4.6.tar.gz
+Source URL      : https://github.com/Mindwerks/wildmidi/archive/wildmidi-0.4.6.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-wildmidi-0.4.6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1075200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-wildmidi-0.4.6.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 1064960
+
+
+Only in lookaside-wildmidi-0.4.6.tar.gz-extracted: wildmidi-0.4.6
+Only in source-wildmidi-0.4.6.tar.gz-extracted: wildmidi-wildmidi-0.4.6

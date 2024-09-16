@@ -1,0 +1,10 @@
+Source package : golang-github-cucumber-messages
+File name       : messages-go-17.1.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-cucumber-messages/messages-go-17.1.1.tar.gz/sha512/95868114ce7d0c871491c2a405c773b89b5f3e19ae7d82ba759630f5fbf118c0cf2828d960bbc85f81ed21d130237b220fb961202648793c2af0105e9fb02c12/messages-go-17.1.1.tar.gz
+Source URL      : https://github.com/cucumber/messages-go/archive/v17.1.1/messages-go-17.1.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-messages-go-17.1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 51200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-messages-go-17.1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 51200
+
+
+No differences detected!

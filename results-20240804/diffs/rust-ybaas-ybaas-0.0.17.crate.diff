@@ -1,0 +1,10 @@
+Source package : rust-ybaas
+File name       : ybaas-0.0.17.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ybaas/ybaas-0.0.17.crate/sha512/ee937872bb4ab9298a68fbddd69fb20652159db793090bfc9bcee64f31392d419a01135deac0746fd93d87419aea7f03cb5401d2a1b5e4ac8277243da95f266d/ybaas-0.0.17.crate
+Source URL      : https://crates.io/api/v1/crates/ybaas/0.0.17/download#/ybaas-0.0.17.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ybaas-0.0.17.crate: gzip compressed data, was "ybaas-0.0.17.crate", max compression, original size modulo 2^32 93184
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ybaas-0.0.17.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

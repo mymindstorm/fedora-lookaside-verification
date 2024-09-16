@@ -1,0 +1,10 @@
+Source package : rust-png
+File name       : png-0.17.13.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-png/png-0.17.13.crate/sha512/064a932f4c48c2243286a9b4cdec0487cc976291bc8ecf4753691afdfe43acda4b17ea8d48ec933f309d158df28f40ee93b5b32b3ab5252e2e7aa1ee1c0e4e84/png-0.17.13.crate
+Source URL      : https://crates.io/api/v1/crates/png/0.17.13/download#/png-0.17.13.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-png-0.17.13.crate: gzip compressed data, was "png-0.17.13.crate", max compression, original size modulo 2^32 485888
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-png-0.17.13.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

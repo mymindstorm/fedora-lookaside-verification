@@ -1,0 +1,26 @@
+Source package : python-wsaccel
+File name       : wsaccel-0.6.6.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-wsaccel/wsaccel-0.6.6.tar.gz/sha512/c38ff2b0381d4d62ffcc2bd7c731a7100328c775b49fcb1f24671e14d6c16b39d33a580df07debe16d997c93bc7c02b089e3acffd5e4a9e11ff80dcd1d30cc50/wsaccel-0.6.6.tar.gz
+Source URL      : https://github.com/methane/wsaccel/archive/v0.6.6/wsaccel-0.6.6.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-wsaccel-0.6.6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4088924444 gzip compressed data, reserved method, ASCII, has CRC, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 4088924444
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-wsaccel-0.6.6.tar.gz: gzip compressed data, was "wsaccel-0.6.6.tar", last modified: Tue Sep  5 10:25:44 2023, max compression, original size modulo 2^32 2324480
+
+
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: bench
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: ChangeLog
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: examples
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: .github
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: .gitignore
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: Makefile
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: MANIFEST.in
+Only in lookaside-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: PKG-INFO
+Only in lookaside-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: pyproject.toml
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6: requirements.txt
+diff -r source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6/setup.cfg lookaside-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6/setup.cfg
+3a4
+> requires_python = >=3.9
+Only in lookaside-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6/wsaccel: utf8validator.c
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6/wsaccel: utf8validator.pyx
+Only in lookaside-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6/wsaccel: xormask.c
+Only in source-wsaccel-0.6.6.tar.gz-extracted/wsaccel-0.6.6/wsaccel: xormask.pyx

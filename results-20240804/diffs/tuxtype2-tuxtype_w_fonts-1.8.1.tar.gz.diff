@@ -1,0 +1,11 @@
+Source package : tuxtype2
+File name       : tuxtype_w_fonts-1.8.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/tuxtype2/tuxtype_w_fonts-1.8.1.tar.gz/md5/ce96616ba0c9e619ce0071a528301e94/tuxtype_w_fonts-1.8.1.tar.gz
+Source URL      : https://github.com/tux4kids/tuxtype/archive/1.8.1-7/tuxtype_w_fonts-1.8.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tuxtype_w_fonts-1.8.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 18073600
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tuxtype_w_fonts-1.8.1.tar.gz: gzip compressed data, last modified: Thu Apr 29 02:29:17 2010, max compression, from Unix, original size modulo 2^32 17981440
+
+
+Only in source-tuxtype_w_fonts-1.8.1.tar.gz-extracted: tuxtype-1.8.1-7
+Only in lookaside-tuxtype_w_fonts-1.8.1.tar.gz-extracted: tuxtype_w_fonts-1.8.1

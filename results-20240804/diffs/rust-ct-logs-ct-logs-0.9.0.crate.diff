@@ -1,0 +1,10 @@
+Source package : rust-ct-logs
+File name       : ct-logs-0.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ct-logs/ct-logs-0.9.0.crate/sha512/d3127a9e28e7453032961cec4a69ac99ff614bcc28890aaa874fca3b2cfd91a97aab05ddb04f18619bb47061a269d705ef4f38c1ebcab2bd5690f6db6e19ef5e/ct-logs-0.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/ct-logs/0.9.0/download#/ct-logs-0.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ct-logs-0.9.0.crate: gzip compressed data, was "ct-logs-0.9.0.crate", max compression, original size modulo 2^32 68096
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ct-logs-0.9.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

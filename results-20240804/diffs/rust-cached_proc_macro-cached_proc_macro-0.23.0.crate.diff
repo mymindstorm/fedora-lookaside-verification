@@ -1,0 +1,10 @@
+Source package : rust-cached_proc_macro
+File name       : cached_proc_macro-0.23.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cached_proc_macro/cached_proc_macro-0.23.0.crate/sha512/5d7a28a55986d3df1edfbf330c120410c6aa3dc67262259a4a9bb4ec6e00363d258a60f69f4be09150394bda2d66ac404ed36b690083be3ccd7cfdeb3395147e/cached_proc_macro-0.23.0.crate
+Source URL      : https://crates.io/api/v1/crates/cached_proc_macro/0.23.0/download#/cached_proc_macro-0.23.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cached_proc_macro-0.23.0.crate: gzip compressed data, was "cached_proc_macro-0.23.0.crate", max compression, original size modulo 2^32 69120
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cached_proc_macro-0.23.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

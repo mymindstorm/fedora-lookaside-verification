@@ -1,0 +1,21 @@
+Source package : sasutils
+File name       : sasutils-0.5.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sasutils/sasutils-0.5.0.tar.gz/sha512/28feed509a74945456d3493b48e1201a4dc44b2ae691555a4a1246f6879193b980903e0bf399f48b0498431f5e70e66a0820177dcede1ce95383c9e63ae94b6d/sasutils-0.5.0.tar.gz
+Source URL      : https://github.com/stanford-rc/sasutils/archive/v0.5.0/sasutils-0.5.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sasutils-0.5.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 393269922 gzip compressed data, unknown method, ASCII, has CRC, extra field, has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 393269922
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sasutils-0.5.0.tar.gz: gzip compressed data, was "sasutils-0.5.0.tar", last modified: Mon Oct  2 16:24:48 2023, max compression, original size modulo 2^32 1846533130
+
+
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0/doc: examples
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0/doc/man: Makefile
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: .gitignore
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: mkdeb.sh
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: mkrpm_el.sh
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: mkrpm_fedora.sh
+Only in lookaside-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: PKG-INFO
+Only in lookaside-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: sasutils.egg-info
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: sasutils-el7.spec
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: sasutils.spec
+Only in lookaside-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: setup.cfg
+Only in source-sasutils-0.5.0.tar.gz-extracted/sasutils-0.5.0: tests

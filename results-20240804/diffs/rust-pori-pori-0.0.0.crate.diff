@@ -1,0 +1,10 @@
+Source package : rust-pori
+File name       : pori-0.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-pori/pori-0.0.0.crate/sha512/6fbc9e74fde5229f57a91ca48799cc0de8febb47a5c636ed54ddb64c71d793518692a664ace776f9407004809e69c11fe2f5fa68aa98332885febb715b34a5a3/pori-0.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/pori/0.0.0/download#/pori-0.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pori-0.0.0.crate: gzip compressed data, was "pori-0.0.0.crate", max compression, original size modulo 2^32 3883995967
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pori-0.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

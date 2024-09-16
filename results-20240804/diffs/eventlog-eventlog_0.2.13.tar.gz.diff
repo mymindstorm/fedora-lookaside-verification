@@ -1,0 +1,10 @@
+Source package : eventlog
+File name       : eventlog_0.2.13.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/eventlog/eventlog_0.2.13.tar.gz/md5/68ec8d1ea3b98fa35002bb756227c315/eventlog_0.2.13.tar.gz
+Source URL      : http://www.balabit.com/downloads/files/syslog-ng/open-source-edition/3.4.4/source/eventlog_0.2.13.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-eventlog_0.2.13.tar.gz: HTML document, Unicode text, UTF-8 text, with very long lines (4311), with CRLF, LF line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-eventlog_0.2.13.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 1423360
+
+
+Only in lookaside-eventlog_0.2.13.tar.gz-extracted: eventlog-0.2.13

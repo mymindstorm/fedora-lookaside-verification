@@ -1,0 +1,10 @@
+Source package : rust-tiny_http
+File name       : tiny_http-0.12.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-tiny_http/tiny_http-0.12.0.crate/sha512/c74efe5a0cad88ef0d569329bd633a9ed09365854aa5ef601c97f7f20a7869253b53f8945b998146ff1d97e7301fd59ea76a497fb0f1866c6b9bb76b87561fb0/tiny_http-0.12.0.crate
+Source URL      : https://crates.io/api/v1/crates/tiny_http/0.12.0/download#/tiny_http-0.12.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tiny_http-0.12.0.crate: gzip compressed data, was "tiny_http-0.12.0.crate", max compression, original size modulo 2^32 228864
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tiny_http-0.12.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-executable-path
+File name       : executable-path-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-executable-path/executable-path-1.0.0.crate/sha512/40483193290dbd617c874927c2f54d72a75c374cc81e3db0e490c9cecff03f53a3c92db177e4c66372477c841fa233e84d4b6d44ea90452d5f46ecfcb679db0d/executable-path-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/executable-path/1.0.0/download#/executable-path-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-executable-path-1.0.0.crate: gzip compressed data, was "executable-path-1.0.0.crate", max compression, original size modulo 2^32 14336
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-executable-path-1.0.0.crate: POSIX tar archive
+
+
+No differences detected!

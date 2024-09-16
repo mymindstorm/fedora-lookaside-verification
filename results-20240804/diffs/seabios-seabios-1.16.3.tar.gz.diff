@@ -1,0 +1,10 @@
+Source package : seabios
+File name       : seabios-1.16.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/seabios/seabios-1.16.3.tar.gz/sha512/103aac0a7a890a681edb8950fee72d419899e20e8b06e2dd382987f98d3faf362789fca5aa4efabe27c4720e53ee19e0ae246d7aca2482b6661fa119efac648c/seabios-1.16.3.tar.gz
+Source URL      : http://code.coreboot.org/p/seabios/downloads/get/seabios-1.16.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-seabios-1.16.3.tar.gz: HTML document, ASCII text, with CRLF line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-seabios-1.16.3.tar.gz: gzip compressed data, was "seabios-1.16.3.tar", last modified: Tue Nov 28 07:35:31 2023, from Unix, original size modulo 2^32 2949120
+
+
+Only in lookaside-seabios-1.16.3.tar.gz-extracted: seabios-1.16.3

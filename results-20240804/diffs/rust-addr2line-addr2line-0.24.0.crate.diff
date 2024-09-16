@@ -1,0 +1,10 @@
+Source package : rust-addr2line
+File name       : addr2line-0.24.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-addr2line/addr2line-0.24.0.crate/sha512/c23eec35359c3389ef18cd6134417b2afe4adce8b8938c3c53deed0eb4f84d3a2c958d6038895298596f8ed380203a1175e4650573ac61bf2e1b6669fa20789f/addr2line-0.24.0.crate
+Source URL      : https://crates.io/api/v1/crates/addr2line/0.24.0/download#/addr2line-0.24.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-addr2line-0.24.0.crate: gzip compressed data, was "addr2line-0.24.0.crate", max compression, original size modulo 2^32 185344
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-addr2line-0.24.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

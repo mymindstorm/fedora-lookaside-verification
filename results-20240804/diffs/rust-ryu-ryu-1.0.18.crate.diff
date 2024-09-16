@@ -1,0 +1,10 @@
+Source package : rust-ryu
+File name       : ryu-1.0.18.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ryu/ryu-1.0.18.crate/sha512/a9b2beac778ec47e6be303148d7512ee681bd2361f6e4ac6db32c8b4baf86a8c5eb5b0d02eacd6131ae88c7b5105c57018c3050676e0b3dd1ed9c4d2fd650e84/ryu-1.0.18.crate
+Source URL      : https://crates.io/api/v1/crates/ryu/1.0.18/download#/ryu-1.0.18.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ryu-1.0.18.crate: gzip compressed data, was "ryu-1.0.18.crate", max compression, original size modulo 2^32 196096
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ryu-1.0.18.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

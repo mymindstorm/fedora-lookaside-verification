@@ -1,0 +1,10 @@
+Source package : rust-async-executor
+File name       : async-executor-1.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-async-executor/async-executor-1.13.0.crate/sha512/618d771243c1ec31496cc228f3e6bdd3d5cdd479eb94e30810c87241e38a5fa652b59d61ec55cefbd120f0ea1d557a683c8a42a3e82344b7813d172d25b6ddec/async-executor-1.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/async-executor/1.13.0/download#/async-executor-1.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-async-executor-1.13.0.crate: gzip compressed data, was "async-executor-1.13.0.crate", max compression, original size modulo 2^32 141824
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-async-executor-1.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

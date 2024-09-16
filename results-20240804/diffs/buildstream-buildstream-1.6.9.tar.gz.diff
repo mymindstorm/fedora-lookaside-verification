@@ -1,0 +1,20 @@
+Source package : buildstream
+File name       : buildstream-1.6.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/buildstream/buildstream-1.6.9.tar.gz/sha512/19f6853b9c6de36e4538e24cea330805467bd457f5c411c6622da7619ce66bd012a49c68ce1b0bf5a98030c55de398cd74a8d9942a4c1f6e664be74e60c4d54e/buildstream-1.6.9.tar.gz
+Source URL      : https://github.com/apache/buildstream/archive/1.6.9/buildstream-1.6.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-buildstream-1.6.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4321280
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-buildstream-1.6.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4321280
+
+
+diff -r source-buildstream-1.6.9.tar.gz-extracted/buildstream-1.6.9/buildstream/_version.py lookaside-buildstream-1.6.9.tar.gz-extracted/buildstream-1.6.9/buildstream/_version.py
+27c27
+<     git_refnames = " (tag: 1.6.9)"
+---
+>     git_refnames = " (tag: 1.6.9, bst-1)"
+diff: source-buildstream-1.6.9.tar.gz-extracted/buildstream-1.6.9/doc/examples/flatpak-autotools/files/links/bin: No such file or directory
+diff: lookaside-buildstream-1.6.9.tar.gz-extracted/buildstream-1.6.9/doc/examples/flatpak-autotools/files/links/bin: No such file or directory
+diff: source-buildstream-1.6.9.tar.gz-extracted/buildstream-1.6.9/doc/examples/flatpak-autotools/files/links/etc: No such file or directory
+diff: lookaside-buildstream-1.6.9.tar.gz-extracted/buildstream-1.6.9/doc/examples/flatpak-autotools/files/links/etc: No such file or directory
+diff: source-buildstream-1.6.9.tar.gz-extracted/buildstream-1.6.9/doc/examples/flatpak-autotools/files/links/lib: No such file or directory
+diff: lookaside-buildstream-1.6.9.tar.gz-extracted/buildstream-1.6.9/doc/examples/flatpak-autotools/files/links/lib: No such file or directory

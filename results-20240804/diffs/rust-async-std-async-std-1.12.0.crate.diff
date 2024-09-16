@@ -1,0 +1,10 @@
+Source package : rust-async-std
+File name       : async-std-1.12.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-async-std/async-std-1.12.0.crate/sha512/aaeef7f474fc700bba7beb6725d4eb778a9a05ebccfecdd81789b5d039c49508860d953f231c7b8fbce4c5b237d063a43eb03b83410490fc14eca572884f57e2/async-std-1.12.0.crate
+Source URL      : https://crates.io/api/v1/crates/async-std/1.12.0/download#/async-std-1.12.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-async-std-1.12.0.crate: gzip compressed data, was "async-std-1.12.0.crate", max compression, original size modulo 2^32 1248768
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-async-std-1.12.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

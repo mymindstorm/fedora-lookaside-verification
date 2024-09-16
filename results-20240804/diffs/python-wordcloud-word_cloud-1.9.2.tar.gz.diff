@@ -1,0 +1,14 @@
+Source package : python-wordcloud
+File name       : word_cloud-1.9.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-wordcloud/word_cloud-1.9.2.tar.gz/sha512/d2e15e62eca38dcad7ff75e8a430f0b2ca84326da46b374e1af4f1051df12302365157ce597cc2530a88d6a7d120650c62dca9c464fdb3b24fef02f1fc0cdcca/word_cloud-1.9.2.tar.gz
+Source URL      : https://github.com/amueller/word_cloud/archive/1.9.2/word_cloud-1.9.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-word_cloud-1.9.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 952369199 gzip compressed data, reserved method, ASCII, extra field, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 952369199
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-word_cloud-1.9.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 35420160
+
+
+diff -r source-word_cloud-1.9.2.tar.gz-extracted/word_cloud-1.9.2/wordcloud/_version.py lookaside-word_cloud-1.9.2.tar.gz-extracted/word_cloud-1.9.2/wordcloud/_version.py
+26c26
+<     git_refnames = " (tag: 1.9.2)"
+---
+>     git_refnames = " (HEAD -> main, tag: 1.9.2)"

@@ -1,0 +1,10 @@
+Source package : rust-tungstenite
+File name       : tungstenite-0.23.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-tungstenite/tungstenite-0.23.0.crate/sha512/1f5937470b78cb5598426cb73532835e348d620fd007a627a8c653da6b26c95a52dc9e95d9de71dec32a6e8a55929fd7fedd839d3eefc354b32a6c0d0da1dc26/tungstenite-0.23.0.crate
+Source URL      : https://crates.io/api/v1/crates/tungstenite/0.23.0/download#/tungstenite-0.23.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tungstenite-0.23.0.crate: gzip compressed data, was "tungstenite-0.23.0.crate", max compression, original size modulo 2^32 271360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tungstenite-0.23.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

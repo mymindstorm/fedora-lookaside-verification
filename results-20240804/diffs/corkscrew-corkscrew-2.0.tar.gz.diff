@@ -1,0 +1,6 @@
+Source package : corkscrew
+File name       : corkscrew-2.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/corkscrew/corkscrew-2.0.tar.gz/md5/35df77e7f0e59c0ec4f80313be52c10a/corkscrew-2.0.tar.gz
+Source URL      : http://www.agroman.net/corkscrew/corkscrew-2.0.tar.gz
+
+Could not fetch file! Error: AxiosError: Request failed with status code 410

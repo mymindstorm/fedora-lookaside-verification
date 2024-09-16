@@ -1,0 +1,21 @@
+Source package : golang-github-googleapis-gnostic
+File name       : gnostic-0.5.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-googleapis-gnostic/gnostic-0.5.3.tar.gz/sha512/e958fa215b17c3a3b55a7974f00ccf918ea2af5d5cf3f04d008259c6c66a0b222e2015e61c4bf6d76438989048c808584f633bc735ee342519e3be638118183a/gnostic-0.5.3.tar.gz
+Source URL      : https://github.com/googleapis/gnostic/archive/v0.5.3/gnostic-0.5.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gnostic-0.5.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3266560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gnostic-0.5.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3266560
+
+
+diff -r source-gnostic-0.5.3.tar.gz-extracted/gnostic-0.5.3/apps/protoc-gen-openapi/examples/google/example/library/v1/openapi.yaml lookaside-gnostic-0.5.3.tar.gz-extracted/gnostic-0.5.3/apps/protoc-gen-openapi/examples/google/example/library/v1/openapi.yaml
+4c4
+< openapi: "3.0"
+---
+> openapi: 3.0.3
+diff -r source-gnostic-0.5.3.tar.gz-extracted/gnostic-0.5.3/apps/protoc-gen-openapi/generator/openapi-v3.go lookaside-gnostic-0.5.3.tar.gz-extracted/gnostic-0.5.3/apps/protoc-gen-openapi/generator/openapi-v3.go
+70c70
+< 	d.Openapi = "3.0"
+---
+> 	d.Openapi = "3.0.3"
+86d85
+< 		log.Printf("REQUIRED SCHEMAS %+v", g.requiredSchemas)

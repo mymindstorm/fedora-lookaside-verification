@@ -1,0 +1,10 @@
+Source package : rust-async-channel1
+File name       : async-channel-1.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-async-channel1/async-channel-1.9.0.crate/sha512/cc624b87dbf34e4be4e219a82b96036396b92042025eeed2362d91f414ca17884365470fca5014b02659be44b77f20530ca33236dc427f0a2fcff2704c46c3dc/async-channel-1.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/async-channel/1.9.0/download#/async-channel-1.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-async-channel-1.9.0.crate: gzip compressed data, was "async-channel-1.9.0.crate", max compression, original size modulo 2^32 80384
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-async-channel-1.9.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,5348 @@
+Source package : libv3270
+File name       : libv3270-5.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/libv3270/libv3270-5.4.tar.gz/sha512/8c3c4fe0902cfc0573840f1d2bf2eff446e875253a15e538d3f848514be7d122c5e47c9427c4e0f99544c8f8fbec7d3d0519da984a83c9be23511fcc4f467b5c/libv3270-5.4.tar.gz
+Source URL      : https://github.com/PerryWerneck/libv3270/archive/5.4/libv3270-5.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libv3270-5.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1607680
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libv3270-5.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1505280
+
+
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/arch/PKGBUILD lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/arch/PKGBUILD
+5c5
+< pkgver=5.4
+---
+> pkgver=5.3
+11,12c11,12
+< depends=(lib3270 gtk3)
+< makedepends=(autoconf automake make openssl lib3270 gtk3 python3 libtool gzip)
+---
+> depends=()
+> makedepends=(autoconf automake make openssl lib3270 gtk3 python3)
+25,26d24
+<   mkdir -p scripts
+<   touch scripts/config.rpath
+28c26
+<   ./configure --prefix=/usr --disable-static
+---
+>   ./configure --prefix=/usr
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/autogen.sh lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/autogen.sh
+3,4d2
+< builddir=${PWD}
+< 
+7a6
+> olddir=`pwd`
+10d8
+< mkdir -p scripts
+13,27d10
+< LIBTOOLIZE=$(which libtoolize)
+< if [ -z ${LIBTOOLIZE} ]; then
+< 	LIBTOOLIZE=$(which glibtoolize)
+< fi
+< if [ -z ${LIBTOOLIZE} ]; then
+< 	echo "Can't find libtoolize"
+< 	exit -1
+< fi
+< 
+< ${LIBTOOLIZE} --force
+< if test $? != 0 ; then
+< 	echo "libtoolize failed."
+< 	exit -1
+< fi
+< 
+34,40c17
+< #autoheader --force
+< #if test $? != 0 ; then
+< #	echo "autoheader failed."
+< #	exit -1
+< #fi
+< 
+< autoconf --force
+---
+> autoconf
+45a23
+> mkdir -p scripts
+48,52c26,27
+< autopoint
+< 
+< cd "${builddir}"
+< 
+< test -n "$NOCONFIGURE" || "$srcdir/configure" --srcdir=${srcdir} $@
+---
+> cd "$olddir"
+> test -n "$NOCONFIGURE" || "$srcdir/configure" "$@"
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4: CHANGELOG
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/colors.conf lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/colors.conf
+102c102
+< cross-hair=rgb(30,48,34)
+---
+> cross-hair=rgb(222,222,222)
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/configure.ac lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/configure.ac
+35c35
+< AC_INIT([libv3270], [5.4], [perry.werneck@gmail.com])
+---
+> AC_INIT([libv3270], [5.3], [perry.werneck@gmail.com])
+43,45d42
+< dnl Initialize libtool.
+< LT_INIT
+< 
+58,60d54
+< dnl Set gettext version
+< AM_GNU_GETTEXT_VERSION([0.14])
+< 
+112c106
+< 		app_cv_osname="macos"
+---
+> 		app_cv_osname="linux"
+114c108
+< 		DLLEXT=".dylib"
+---
+> 		DLLEXT=".so"
+117c111
+< 		INSTALL_PACKAGES="macos-lib ${INSTALL_PACKAGES}"
+---
+> 		INSTALL_PACKAGES="linux-lib ${INSTALL_PACKAGES}"
+133d126
+< 		AC_CONFIG_FILES(debian/control)
+169,171d161
+< AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"libv3270-$app_vrs_major.$app_vrs_minor",[The gettext package name.])
+< AC_SUBST(GETTEXT_PACKAGE,"libv3270-$app_vrs_major.$app_vrs_minor")
+< 
+205,206c195,196
+< 	*-apple-darwin*)
+< 		AC_SUBST(SONAME,libv3270-$app_vrs_major.$app_vrs_minor.dylib)
+---
+>  	s390x-*)
+> 		AC_SUBST(SONAME,libv3270.so)
+368c358
+< AC_SUBST(BUILDDIR,$app_cv_buildir)
+---
+> AC_SUBST(BASEDIR,$app_cv_buildir)
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/changelog lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/changelog
+1c1
+< libv3270 (5.4-0) unstable; urgency=low
+---
+> libv3270 (5.3-0) unstable; urgency=low
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/control lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/control
+11c11
+< Provides: libv3270 (= ${binary:Version}), libv3270 (= 5.4)
+---
+> Provides: libv3270 (= ${binary:Version})
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian: control.in
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/libv3270.dsc lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/libv3270.dsc
+3c3
+< Version: 5.4-0
+---
+> Version: 5.3-0
+11c11
+<  00000000000000000000000000000000 000000 libv3270-5.4.tar.bz2
+---
+>  00000000000000000000000000000000 000000 libv3270-5.3.tar.bz2
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/rules lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/rules
+9c9
+< export DH_COMPAT=9
+---
+> export DH_COMPAT=9	
+26c26,31
+< 	NOCONFIGURE=1 ./autogen.sh 
+---
+> 	aclocal
+> 	autoconf
+>     
+> 	mkdir -p scripts
+> 	automake --add-missing 2> /dev/null | true
+>     
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/shlibs lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/debian/shlibs
+1c1
+< libv3270 5.4 libv3270 (>= 5.4)
+---
+> libv3270 5.3 libv3270 (>= 5.3)
+Only in lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/.github/workflows: codeql-analysis.yml
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/.github/workflows: codeql.yml
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/.github/workflows: macos.yml
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/.github/workflows: msys2.yml
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/.github/workflows: publish.yml
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/.gitignore lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/.gitignore
+56,58d55
+< ABOUT-NLS
+< intl
+< po
+64,65d60
+< marshal
+< libtool
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/locale: libv3270-5.4.pot
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/locale/Makefile.in lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/locale/Makefile.in
+34d33
+< srcdir=@srcdir@
+37d35
+< GETTEXT_PACKAGE=@GETTEXT_PACKAGE@
+42c40,41
+< BINDIR=.bin/locale
+---
+> BASEDIR=@BASEDIR@
+> BINDIR=$(BASEDIR)/.bin/locale
+54c53
+< 	$(GETTEXT_PACKAGE).pot
+---
+> 	$(PACKAGE_NAME).pot
+57c56
+< 	@$(MSGMERGE) --update --sort-output $@ $(GETTEXT_PACKAGE).pot
+---
+> 	@$(MSGMERGE) --update --sort-output $@ $(PACKAGE_NAME).pot
+60c59
+< $(BINDIR)/%/LC_MESSAGES/$(GETTEXT_PACKAGE).mo: \
+---
+> $(BINDIR)/%/LC_MESSAGES/$(PACKAGE_NAME).mo: \
+67,68c66,67
+< $(DESTDIR)$(localedir)/%/LC_MESSAGES/$(GETTEXT_PACKAGE).mo: \
+< 	$(BINDIR)/%/LC_MESSAGES/$(GETTEXT_PACKAGE).mo
+---
+> $(DESTDIR)$(localedir)/%/LC_MESSAGES/$(PACKAGE_NAME).mo: \
+> 	$(BINDIR)/%/LC_MESSAGES/$(PACKAGE_NAME).mo
+77,78c76
+< 	$(GETTEXT_PACKAGE).pot \
+< 	$(foreach SRC, $(basename $(wildcard *.po)), $(BINDIR)/$(SRC)/LC_MESSAGES/$(GETTEXT_PACKAGE).mo)
+---
+> 	$(foreach SRC, $(basename $(wildcard *.po)), $(BINDIR)/$(SRC)/LC_MESSAGES/$(PACKAGE_NAME).mo)
+81c79
+< 	$(foreach SRC, $(basename $(wildcard *.po)), $(DESTDIR)$(localedir)/$(SRC)/LC_MESSAGES/$(GETTEXT_PACKAGE).mo)
+---
+> 	$(foreach SRC, $(basename $(wildcard *.po)), $(DESTDIR)$(localedir)/$(SRC)/LC_MESSAGES/$(PACKAGE_NAME).mo)
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/locale/pt_BR.po lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/locale/pt_BR.po
+2c2
+< # Perry Werneck <perry.werneck@gmail.com>, 2012-2021.
+---
+> # Perry Werneck <perry.werneck@gmail.com>, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020.
+8,9c8,9
+< "POT-Creation-Date: 2023-05-02 06:08-0300\n"
+< "PO-Revision-Date: 2021-11-22 22:07-0300\n"
+---
+> "POT-Creation-Date: 2020-10-24 11:11-0300\n"
+> "PO-Revision-Date: 2020-10-15 15:37-0300\n"
+11c11
+< "Language-Team: Brazilian Portuguese <perry.werneck@gmail.com>\n"
+---
+> "Language-Team: Português <>\n"
+19,20c19,21
+< "Plural-Forms: nplurals=2; plural=(n > 1)\n"
+< "X-Generator: Gtranslator 3.38.0\n"
+---
+> "Plural-Forms: nplurals=4; plural= (n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != "
+> "11) ? 2 : 3;\n"
+> "X-Generator: Gtranslator 2.91.7\n"
+26c27,28
+< #: src/filetransfer/v3270ft.c:352 src/filetransfer/v3270ftprogress.c:386
+---
+> #: src/filetransfer/v3270ftprogress.c:386 src/filetransfer/v3270ft.c:353
+> #: src/dialogs/print/settingsdialog.c:284
+29d30
+< #: src/dialogs/print/settingsdialog.c:290
+33c34
+< #: src/terminal/accessible.c:100
+---
+> #: src/terminal/accessible.c:101
+41c42
+< #: src/terminal/widget.c:152
+---
+> #: src/terminal/widget.c:158
+57c58
+< #: src/dialogs/security.c:239
+---
+> #: src/dialogs/security.c:241
+61c62
+< #: src/dialogs/settings/accelerator.c:195
+---
+> #: src/dialogs/settings/accelerator.c:196
+65c66
+< #: src/dialogs/settings/accelerator.c:333
+---
+> #: src/dialogs/settings/accelerator.c:334
+69c70
+< #: src/dialogs/settings/accelerator.c:244
+---
+> #: src/dialogs/settings/accelerator.c:245
+77,78c78,79
+< #: src/dialogs/print/settingsdialog.c:202
+< #: src/dialogs/print/settingsdialog.c:238
+---
+> #: src/dialogs/print/settingsdialog.c:200
+> #: src/dialogs/print/settingsdialog.c:236
+82c83
+< #: src/terminal/actions/table.c:66
+---
+> #: src/terminal/actions/table.c:99
+86c87
+< #: src/dialogs/settings/url.c:209
+---
+> #: src/dialogs/settings/host.c:216
+90c91
+< #: src/tools/entry.c:122
+---
+> #: src/tools/entry.c:121
+94c95
+< #: src/dialogs/settings/accelerator.c:205
+---
+> #: src/dialogs/settings/accelerator.c:206
+114c115
+< #: src/terminal/actions/table.c:68
+---
+> #: src/terminal/actions/table.c:101
+118c119
+< #: src/terminal/actions/table.c:67
+---
+> #: src/terminal/actions/table.c:100
+126c127
+< #: src/dialogs/settings/accelerator.c:315
+---
+> #: src/dialogs/settings/accelerator.c:316
+131c132
+< #: src/dialogs/settings/host.c:464
+---
+> #: src/dialogs/settings/host.c:510
+135c136
+< #: src/dialogs/font/chooser.c:267
+---
+> #: src/dialogs/font/chooser.c:279
+143,144c144,145
+< #: src/dialogs/print/settingsdialog.c:413
+< #: src/dialogs/print/settingsdialog.c:432
+---
+> #: src/dialogs/print/settingsdialog.c:411
+> #: src/dialogs/print/settingsdialog.c:430
+164c165
+< #: src/dialogs/font/chooser.c:316
+---
+> #: src/dialogs/font/chooser.c:328
+168c169
+< #: src/dialogs/load.c:189 src/dialogs/save/save.c:276
+---
+> #: src/dialogs/load.c:181 src/dialogs/save/save.c:268
+176c177
+< #: src/dialogs/print/settingsdialog.c:246
+---
+> #: src/dialogs/print/settingsdialog.c:244
+190c191
+< #: src/dialogs/load.c:307
+---
+> #: src/dialogs/load.c:323
+209,210d209
+< #: src/selection/windows/paste.c:79 src/selection/windows/paste.c:119
+< #: src/selection/macos/paste.c:81 src/selection/macos/paste.c:115
+218,219c217,218
+< #: src/filetransfer/activitylist.c:436 src/filetransfer/save.c:117
+< #: src/trace/trace.c:483 src/dialogs/transfer.c:92 src/dialogs/save/save.c:608
+---
+> #: src/filetransfer/save.c:117 src/filetransfer/activitylist.c:436
+> #: src/trace/trace.c:484 src/dialogs/transfer.c:91 src/dialogs/save/save.c:625
+224c223
+< #: src/filetransfer/v3270ftprogress.c:781 src/filetransfer/worker.c:618
+---
+> #: src/filetransfer/worker.c:610 src/filetransfer/v3270ftprogress.c:773
+228c227
+< #: src/terminal/iocallback.c:196
+---
+> #: src/terminal/iocallback.c:200
+232c231
+< #: src/filetransfer/v3270ftprogress.c:768 src/filetransfer/worker.c:599
+---
+> #: src/filetransfer/worker.c:591 src/filetransfer/v3270ftprogress.c:760
+236,237c235,237
+< #: src/filetransfer/transfer.c:90 src/filetransfer/v3270ftprogress.c:433
+< #: src/dialogs/settings/host.c:367 src/tools/entry.c:99
+---
+> #: src/filetransfer/v3270ftprogress.c:433 src/filetransfer/transfer.c:89
+> #: src/dialogs/load.c:111 src/dialogs/save/save.c:117
+> #: src/dialogs/settings/host.c:401 src/tools/entry.c:99
+241c241
+< #: src/filetransfer/transfer.c:91
+---
+> #: src/filetransfer/transfer.c:90
+249c249,261
+< #: src/dialogs/settings/clipboard.c:432
+---
+> #: src/dialogs/load.c:206 src/dialogs/save/save.c:343
+> msgid "Click to cancel operation"
+> msgstr "Clique para cancelar operação"
+> 
+> #: src/dialogs/load.c:211
+> msgid "Click to load file"
+> msgstr "Clique para carregar arquivo"
+> 
+> #: src/dialogs/save/save.c:348
+> msgid "Click to save file"
+> msgstr "Clique para salvar arquivo"
+> 
+> #: src/dialogs/settings/clipboard.c:420
+253c265
+< #: src/terminal/properties/init.c:120
+---
+> #: src/terminal/properties/init.c:130
+256a269,272
+> #: src/dialogs/settings/clipboard.c:419
+> msgid "Clipboard properties"
+> msgstr "Configuração da área de transferência"
+> 
+261c277
+< #: src/dialogs/settings/clipboard.c:101
+---
+> #: src/dialogs/settings/clipboard.c:110
+269c285
+< #: src/terminal/properties/init.c:184
+---
+> #: src/terminal/properties/init.c:178
+273c289
+< #: src/dialogs/settings/host.c:242
+---
+> #: src/dialogs/settings/host.c:268
+277c293
+< #: src/dialogs/save/save.c:56
+---
+> #: src/dialogs/save/save.c:55
+281c297
+< #: src/trace/trace.c:357
+---
+> #: src/trace/trace.c:358
+285c301
+< #: src/dialogs/settings/host.c:431
+---
+> #: src/dialogs/settings/host.c:471
+289c305
+< #: src/terminal/actions/table.c:55 src/terminal/actions/table.c:95
+---
+> #: src/terminal/actions/table.c:70 src/terminal/actions/table.c:111
+293c309
+< #: src/terminal/actions/table.c:75
+---
+> #: src/terminal/actions/table.c:79
+297c313
+< #: src/terminal/actions/table.c:84
+---
+> #: src/terminal/actions/table.c:88
+301c317
+< #: src/terminal/actions/table.c:96
+---
+> #: src/terminal/actions/table.c:112
+305c321
+< #: src/terminal/actions/table.c:106 src/terminal/actions/table.c:107
+---
+> #: src/terminal/actions/table.c:122 src/terminal/actions/table.c:123
+309c325
+< #: src/dialogs/settings/clipboard.c:252
+---
+> #: src/dialogs/settings/clipboard.c:250
+313c329
+< #: src/terminal/actions/table.c:76
+---
+> #: src/terminal/actions/table.c:80
+317c333
+< #: src/terminal/actions/table.c:85
+---
+> #: src/terminal/actions/table.c:89
+321c337
+< #: src/terminal/actions/table.c:56
+---
+> #: src/terminal/actions/table.c:71
+342c358
+< #: src/dialogs/tools.c:178
+---
+> #: src/dialogs/tools.c:182
+359c375
+< #: src/dialogs/settings/host.c:228
+---
+> #: src/dialogs/settings/host.c:254
+363,364c379,380
+< #: src/terminal/actions/table.c:117 src/terminal/actions/table.c:126
+< #: src/terminal/actions/table.c:137
+---
+> #: src/terminal/actions/table.c:133 src/terminal/actions/table.c:142
+> #: src/terminal/actions/table.c:153
+368c384
+< #: src/terminal/actions/table.c:127
+---
+> #: src/terminal/actions/table.c:143
+372c388
+< #: src/terminal/actions/table.c:138
+---
+> #: src/terminal/actions/table.c:154
+376c392
+< #: src/terminal/actions/table.c:148 src/terminal/actions/table.c:149
+---
+> #: src/terminal/actions/table.c:164 src/terminal/actions/table.c:165
+404,408c420
+< #: src/dialogs/settings/clipboard.c:174
+< msgid "Detect http:// or https://"
+< msgstr "Detectar http:// ou https://"
+< 
+< #: src/dialogs/popups.c:168
+---
+> #: src/dialogs/popups.c:149
+412c424
+< #: src/dialogs/font/chooser.c:323
+---
+> #: src/dialogs/font/chooser.c:335
+420,436c432
+< #: src/terminal/actions/table.c:357
+< msgid "Edit clipboard settings"
+< msgstr "Altera configurações da area de transferência"
+< 
+< #: src/terminal/actions/table.c:340
+< msgid "Edit host and terminal emulation settings"
+< msgstr "Alterar configurações do servidor e emulação"
+< 
+< #: src/terminal/actions/table.c:331
+< msgid "Edit keyboard accelerators"
+< msgstr "Alterar atalhos de teclado"
+< 
+< #: src/terminal/actions/table.c:349
+< msgid "Edit terminal colors"
+< msgstr "Altera cores do terminal"
+< 
+< #: src/terminal/actions/pakey.c:105 src/terminal/actions/pfkey.c:105
+---
+> #: src/terminal/actions/pfkey.c:105 src/terminal/actions/pakey.c:105
+440,448c436
+< #: src/terminal/properties/init.c:168
+< msgid ""
+< "Emit signal 'open-url' when an http:// or https:// string is selected by "
+< "action 'word-select'"
+< msgstr ""
+< "Emite sinal 'open-url' quando uma string iniciada com http:// ou https:// é "
+< "selecionada pela ação 'word-select'"
+< 
+< #: src/dialogs/settings/host.c:441
+---
+> #: src/dialogs/settings/host.c:481
+460c448
+< #: src/dialogs/save/save.c:562
+---
+> #: src/dialogs/save/save.c:579
+472c460
+< #: src/dialogs/save/save.c:290
+---
+> #: src/dialogs/save/save.c:282
+476c464
+< #: src/dialogs/print/settingsdialog.c:363
+---
+> #: src/dialogs/print/settingsdialog.c:361
+480c468
+< #: src/terminal/actions/table.c:224
+---
+> #: src/terminal/actions/table.c:240
+488c476
+< #: src/terminal/properties/init.c:230
+---
+> #: src/terminal/properties/init.c:224
+509c497
+< #: src/dialogs/font/chooser.c:338 src/dialogs/settings/clipboard.c:84
+---
+> #: src/dialogs/font/chooser.c:350 src/dialogs/settings/clipboard.c:93
+523c511
+< #: src/terminal/properties/init.c:72
+---
+> #: src/terminal/properties/init.c:82
+527,531c515
+< #: src/terminal/actions/table.c:365
+< msgid "Font settings"
+< msgstr "Configurações de fonte"
+< 
+< #: src/dialogs/settings/clipboard.c:118
+---
+> #: src/dialogs/settings/clipboard.c:127
+543c527
+< #: src/filetransfer/v3270ft.c:370
+---
+> #: src/filetransfer/v3270ft.c:371
+547c531
+< #: src/dialogs/print/settingsdialog.c:348
+---
+> #: src/dialogs/print/settingsdialog.c:346
+559c543
+< #: src/dialogs/settings/clipboard.c:254
+---
+> #: src/dialogs/settings/clipboard.c:252
+563c547
+< #: src/dialogs/settings/host.c:581
+---
+> #: src/dialogs/settings/host.c:664
+567,571c551
+< #: src/terminal/actions/table.c:339
+< msgid "Host and emulation settings"
+< msgstr "Configuração de servidor e emulação"
+< 
+< #: src/dialogs/settings/host.c:580
+---
+> #: src/dialogs/settings/host.c:663
+575,579c555
+< #: src/dialogs/settings/url.c:208
+< msgid "Hostname"
+< msgstr "Nome do host"
+< 
+< #: src/dialogs/save/save.c:60
+---
+> #: src/dialogs/save/save.c:59
+591c567
+< #: src/terminal/properties/init.c:103 src/dialogs/settings/host.c:468
+---
+> #: src/terminal/properties/init.c:113 src/dialogs/settings/host.c:514
+603c579
+< #: src/filetransfer/transfer.c:81
+---
+> #: src/filetransfer/transfer.c:80
+607c583
+< #: src/filetransfer/transfer.c:82
+---
+> #: src/filetransfer/transfer.c:81
+611c587
+< #: src/dialogs/settings/clipboard.c:164
+---
+> #: src/dialogs/settings/clipboard.c:173
+615c591
+< #: src/terminal/actions/table.c:204
+---
+> #: src/terminal/actions/table.c:220
+619c595
+< #: src/terminal/actions/table.c:161
+---
+> #: src/terminal/actions/table.c:177
+623c599
+< #: src/filetransfer/v3270ft.c:386
+---
+> #: src/filetransfer/v3270ft.c:387
+635c611
+< #: src/terminal/callbacks.c:500
+---
+> #: src/terminal/callbacks.c:440
+656,657c632,633
+< #: src/terminal/actions/table.c:330 src/dialogs/settings/accelerator.c:149
+< #: src/dialogs/settings/accelerator.c:243
+---
+> #: src/dialogs/settings/accelerator.c:150
+> #: src/dialogs/settings/accelerator.c:244
+661c637
+< #: src/dialogs/settings/host.c:241
+---
+> #: src/dialogs/settings/host.c:267
+665c641
+< #: src/filetransfer/activitylist.c:384 src/filetransfer/v3270ft.c:201
+---
+> #: src/filetransfer/v3270ft.c:198 src/filetransfer/activitylist.c:384
+669c645
+< #: src/filetransfer/activitylist.c:383 src/filetransfer/v3270ft.c:200
+---
+> #: src/filetransfer/v3270ft.c:197 src/filetransfer/activitylist.c:383
+681c657
+< #: src/dialogs/settings/host.c:216
+---
+> #: src/dialogs/settings/host.c:242
+713c689
+< #: src/dialogs/settings/accelerator.c:157
+---
+> #: src/dialogs/settings/accelerator.c:158
+717c693
+< #: src/dialogs/settings/host.c:431
+---
+> #: src/dialogs/settings/host.c:471
+725,729c701
+< #: src/dialogs/popups.c:154
+< msgid "No host"
+< msgstr "Nenhum servidor"
+< 
+< #: src/terminal/properties/get.c:193
+---
+> #: src/terminal/properties/get.c:205
+741c713
+< #: src/filetransfer/worker.c:609
+---
+> #: src/filetransfer/worker.c:601
+745c717
+< #: src/dialogs/settings/clipboard.c:328
+---
+> #: src/dialogs/settings/clipboard.c:317
+749c721
+< #: src/dialogs/settings/clipboard.c:449
+---
+> #: src/dialogs/settings/clipboard.c:437
+753c725
+< #: src/selection/linux/paste.c:117 src/selection/macos/paste.c:117
+---
+> #: src/selection/linux/paste.c:117
+765,766c737
+< #: src/selection/linux/paste.c:77 src/selection/windows/paste.c:75
+< #: src/selection/macos/paste.c:77
+---
+> #: src/selection/linux/paste.c:77
+793a765,768
+> #: src/dialogs/load.c:93 src/dialogs/load.c:112
+> msgid "Open"
+> msgstr "Abrir"
+> 
+802,805d776
+< #: src/dialogs/settings/clipboard.c:431
+< msgid "Options for select, cut and paste actions"
+< msgstr "Configuração para selecionar, recortar e colar"
+< 
+818c789
+< #: src/dialogs/settings/host.c:215
+---
+> #: src/dialogs/settings/host.c:241
+826c797
+< #: src/terminal/actions/table.c:159 src/terminal/actions/table.c:171
+---
+> #: src/terminal/actions/table.c:175 src/terminal/actions/table.c:187
+830c801
+< #: src/terminal/actions/table.c:172
+---
+> #: src/terminal/actions/table.c:188
+834c805
+< #: src/terminal/actions/table.c:160
+---
+> #: src/terminal/actions/table.c:176
+838c809
+< #: src/terminal/actions/table.c:181
+---
+> #: src/terminal/actions/table.c:197
+842c813
+< #: src/terminal/actions/table.c:191 src/dialogs/settings/clipboard.c:144
+---
+> #: src/terminal/actions/table.c:207 src/dialogs/settings/clipboard.c:153
+846c817
+< #: src/dialogs/load.c:233
+---
+> #: src/dialogs/load.c:249
+850c821
+< #: src/terminal/actions/table.c:182
+---
+> #: src/terminal/actions/table.c:198
+854c825
+< #: src/dialogs/settings/clipboard.c:253
+---
+> #: src/dialogs/settings/clipboard.c:251
+858c829
+< #: src/terminal/actions/table.c:192
+---
+> #: src/terminal/actions/table.c:208
+866c837
+< #: src/dialogs/settings/host.c:229
+---
+> #: src/dialogs/settings/host.c:255
+878c849
+< #: src/dialogs/save/save.c:52
+---
+> #: src/dialogs/save/save.c:51
+882c853
+< #: src/dialogs/settings/clipboard.c:397
+---
+> #: src/dialogs/settings/clipboard.c:385
+886c857
+< #: src/dialogs/settings/url.c:215
+---
+> #: src/dialogs/settings/host.c:229
+910c881
+< #: src/terminal/actions/table.c:285
+---
+> #: src/terminal/actions/table.c:301
+914c885
+< #: src/terminal/actions/table.c:318
+---
+> #: src/terminal/actions/table.c:334
+922c893
+< #: src/dialogs/print/convenience.c:103
+---
+> #: src/dialogs/print/convenience.c:102
+926c897
+< #: src/terminal/actions/table.c:296
+---
+> #: src/terminal/actions/table.c:312
+928c899
+< msgstr "Imprimir tela"
+---
+> msgstr "Imrpimir tela"
+930c901
+< #: src/terminal/actions/table.c:286
+---
+> #: src/terminal/actions/table.c:302
+932c903
+< msgstr "Imprimir tela ou seleção"
+---
+> msgstr "Imrpimir tela ou seleção"
+934c905
+< #: src/terminal/actions/table.c:307
+---
+> #: src/terminal/actions/table.c:323
+938c909
+< #: src/terminal/actions/table.c:308
+---
+> #: src/terminal/actions/table.c:324
+946c917
+< #: src/terminal/actions/table.c:297
+---
+> #: src/terminal/actions/table.c:313
+948c919
+< msgstr "Imprimir toda a tela"
+---
+> msgstr "Imrpimir toda a tela"
+970c941
+< #: src/filetransfer/v3270ftprogress.c:747 src/dialogs/transfer.c:125
+---
+> #: src/filetransfer/v3270ftprogress.c:739 src/dialogs/transfer.c:124
+978c949
+< #: src/filetransfer/settings.c:519 src/filetransfer/v3270ft.c:339
+---
+> #: src/filetransfer/v3270ft.c:340 src/filetransfer/settings.c:519
+1007c978
+< #: src/filetransfer/v3270ft.c:394
+---
+> #: src/filetransfer/v3270ft.c:395
+1011c982
+< #: src/terminal/actions/table.c:57
+---
+> #: src/terminal/actions/table.c:72
+1015c986
+< #: src/terminal/actions/table.c:77
+---
+> #: src/terminal/actions/table.c:81
+1022c993
+< #: src/terminal/actions/table.c:86
+---
+> #: src/terminal/actions/table.c:90
+1029c1000
+< #: src/filetransfer/transfer.c:84
+---
+> #: src/filetransfer/transfer.c:83
+1045c1016
+< #: src/dialogs/settings/url.c:264
+---
+> #: src/dialogs/settings/host.c:560
+1049c1020
+< #: src/dialogs/settings/clipboard.c:329 src/dialogs/settings/clipboard.c:450
+---
+> #: src/dialogs/settings/clipboard.c:318 src/dialogs/settings/clipboard.c:438
+1053,1055c1024,1026
+< #: src/terminal/actions/table.c:238 src/filetransfer/activitylist.c:451
+< #: src/filetransfer/v3270ft.c:218 src/trace/trace.c:498
+< #: src/dialogs/transfer.c:70
+---
+> #: src/terminal/actions/table.c:254 src/filetransfer/v3270ft.c:215
+> #: src/filetransfer/activitylist.c:451 src/trace/trace.c:499
+> #: src/dialogs/transfer.c:69
+1059c1030
+< #: src/terminal/actions/table.c:272
+---
+> #: src/terminal/actions/table.c:288
+1063c1034
+< #: src/trace/tracewindow.c:125
+---
+> #: src/trace/tracewindow.c:124
+1067c1038
+< #: src/terminal/actions/table.c:248
+---
+> #: src/terminal/actions/table.c:264
+1071c1042
+< #: src/terminal/actions/table.c:270 src/dialogs/save/save.c:363
+---
+> #: src/terminal/actions/table.c:286 src/dialogs/save/save.c:377
+1075c1046
+< #: src/filetransfer/activitylist.c:450 src/filetransfer/v3270ft.c:217
+---
+> #: src/filetransfer/v3270ft.c:214 src/filetransfer/activitylist.c:450
+1079c1050
+< #: src/terminal/actions/table.c:250
+---
+> #: src/terminal/actions/table.c:266
+1083c1054
+< #: src/terminal/actions/table.c:239
+---
+> #: src/terminal/actions/table.c:255
+1087c1058
+< #: src/terminal/actions/table.c:259
+---
+> #: src/terminal/actions/table.c:275
+1091c1062
+< #: src/terminal/actions/table.c:261 src/dialogs/save/save.c:362
+---
+> #: src/terminal/actions/table.c:277 src/dialogs/save/save.c:376
+1095c1066
+< #: src/dialogs/save/save.c:361
+---
+> #: src/dialogs/save/save.c:375
+1099c1070
+< #: src/trace/trace.c:497
+---
+> #: src/trace/trace.c:498
+1103c1074
+< #: src/dialogs/transfer.c:69
+---
+> #: src/dialogs/transfer.c:68
+1107c1078
+< #: src/dialogs/transfer.c:188
+---
+> #: src/dialogs/transfer.c:189
+1111c1082
+< #: src/dialogs/print/settingsdialog.c:351
+---
+> #: src/dialogs/print/settingsdialog.c:349
+1115c1086
+< #: src/filetransfer/v3270ft.c:378
+---
+> #: src/filetransfer/v3270ft.c:379
+1119c1090
+< #: src/dialogs/print/settingsdialog.c:355
+---
+> #: src/dialogs/print/settingsdialog.c:353
+1123c1094
+< #: src/dialogs/settings/clipboard.c:398
+---
+> #: src/dialogs/settings/clipboard.c:386
+1127c1098
+< #: src/terminal/actions/table.c:193
+---
+> #: src/terminal/actions/table.c:209
+1147,1156c1118,1120
+< #: src/dialogs/settings/url.c:220
+< msgid "Security"
+< msgstr "Segurança"
+< 
+< #: src/dialogs/settings/url.c:221
+< msgid "Security engine"
+< msgstr "Mecanismo de segurança"
+< 
+< #: src/filetransfer/settings.c:209 src/filetransfer/v3270ft.c:302
+< #: src/dialogs/settings/host.c:368
+---
+> #: src/filetransfer/v3270ft.c:303 src/filetransfer/settings.c:209
+> #: src/dialogs/save/save.c:98 src/dialogs/save/save.c:118
+> #: src/dialogs/settings/host.c:402
+1160c1124
+< #: src/dialogs/settings/host.c:453
+---
+> #: src/dialogs/settings/host.c:497
+1164c1128
+< #: src/dialogs/settings/host.c:364
+---
+> #: src/dialogs/settings/host.c:398
+1168c1132
+< #: src/dialogs/save/save.c:263
+---
+> #: src/dialogs/save/save.c:97 src/dialogs/save/save.c:114
+1172,1173c1136,1138
+< #: src/filetransfer/settings.c:467 src/filetransfer/v3270ft.c:590
+< #: src/dialogs/load.c:176
+---
+> #: src/filetransfer/v3270ft.c:591 src/filetransfer/settings.c:467
+> #: src/dialogs/load.c:92 src/dialogs/load.c:108 src/dialogs/load.c:171
+> #: src/dialogs/save/save.c:258
+1177c1142
+< #: src/filetransfer/v3270ft.c:435 src/filetransfer/v3270ft.c:444
+---
+> #: src/filetransfer/v3270ft.c:436 src/filetransfer/v3270ft.c:445
+1181c1146
+< #: src/filetransfer/v3270ft.c:411 src/filetransfer/v3270ft.c:468
+---
+> #: src/filetransfer/v3270ft.c:412 src/filetransfer/v3270ft.c:469
+1185c1150
+< #: src/filetransfer/settings.c:208 src/filetransfer/v3270ft.c:301
+---
+> #: src/filetransfer/v3270ft.c:302 src/filetransfer/settings.c:208
+1189c1154
+< #: src/filetransfer/v3270ft.c:419 src/filetransfer/v3270ft.c:460
+---
+> #: src/filetransfer/v3270ft.c:420 src/filetransfer/v3270ft.c:461
+1193,1197c1158
+< #: src/dialogs/settings/clipboard.c:251
+< msgid "Select options"
+< msgstr "Opçoes para seleção"
+< 
+< #: src/filetransfer/v3270ft.c:427 src/filetransfer/v3270ft.c:452
+---
+> #: src/filetransfer/v3270ft.c:428 src/filetransfer/v3270ft.c:453
+1201,1204d1161
+< #: src/terminal/actions/table.c:366
+< msgid "Select terminal font"
+< msgstr "Seleção da fonte do terminal"
+< 
+1213,1216d1169
+< #: src/terminal/actions/table.c:356
+< msgid "Selection settings"
+< msgstr "Configurar seleção"
+< 
+1225c1178
+< #: src/filetransfer/v3270ftprogress.c:747 src/dialogs/transfer.c:125
+---
+> #: src/filetransfer/v3270ftprogress.c:739 src/dialogs/transfer.c:124
+1229,1233c1182
+< #: src/dialogs/settings/url.c:214
+< msgid "Service/Port"
+< msgstr "Serviço/Porta"
+< 
+< #: src/terminal/actions/table.c:225
+---
+> #: src/terminal/actions/table.c:241
+1237c1186
+< #: src/terminal/actions.c:73
+---
+> #: src/terminal/actions.c:72
+1241c1190
+< #: src/filetransfer/transfer.c:87
+---
+> #: src/filetransfer/transfer.c:86
+1245c1194
+< #: src/filetransfer/transfer.c:88
+---
+> #: src/filetransfer/transfer.c:87
+1249c1198
+< #: src/dialogs/settings/clipboard.c:154
+---
+> #: src/dialogs/settings/clipboard.c:163
+1253c1202
+< #: src/filetransfer/settings.c:544 src/filetransfer/v3270ft.c:340
+---
+> #: src/filetransfer/v3270ft.c:341 src/filetransfer/settings.c:544
+1301c1250
+< #: src/filetransfer/v3270ft.c:402
+---
+> #: src/filetransfer/v3270ft.c:403
+1305c1254
+< #: src/dialogs/print/settingsdialog.c:437
+---
+> #: src/dialogs/print/settingsdialog.c:435
+1309c1258
+< #: src/filetransfer/v3270ftprogress.c:798
+---
+> #: src/filetransfer/v3270ftprogress.c:790
+1313c1262
+< #: src/filetransfer/worker.c:314 src/dialogs/transfer.c:141
+---
+> #: src/filetransfer/worker.c:314 src/dialogs/transfer.c:142
+1325c1274
+< #: src/terminal/properties/init.c:152
+---
+> #: src/terminal/properties/init.c:162
+1329c1278
+< #: src/dialogs/settings/accelerator.c:175
+---
+> #: src/dialogs/settings/accelerator.c:176
+1341c1290
+< #: src/dialogs/settings/host.c:377
+---
+> #: src/dialogs/settings/host.c:411
+1345c1294
+< #: src/dialogs/settings/host.c:441
+---
+> #: src/dialogs/settings/host.c:481
+1349,1353c1298
+< #: src/dialogs/settings/url.c:122
+< msgid "TN3270 Host URL"
+< msgstr "URL do servidor TN3270"
+< 
+< #: src/terminal/properties/init.c:87
+---
+> #: src/terminal/properties/init.c:97
+1357,1358c1302,1303
+< #: src/terminal/actions/table.c:348 src/dialogs/settings/colors.c:148
+< #: src/dialogs/settings/colors.c:300 src/dialogs/settings/colors.c:379
+---
+> #: src/dialogs/settings/colors.c:148 src/dialogs/settings/colors.c:300
+> #: src/dialogs/settings/colors.c:379
+1362c1307
+< #: src/dialogs/font/chooser.c:337
+---
+> #: src/dialogs/font/chooser.c:349
+1366,1369d1310
+< #: src/dialogs/load.c:179
+< msgid "Text files"
+< msgstr "Arquivos de texto"
+< 
+1380c1321
+< #: src/dialogs/settings/host.c:562
+---
+> #: src/dialogs/settings/host.c:645
+1392c1333
+< #: src/filetransfer/worker.c:630
+---
+> #: src/filetransfer/worker.c:622
+1400c1341
+< #: src/dialogs/save/save.c:408
+---
+> #: src/dialogs/save/save.c:425
+1459c1400
+< #: src/dialogs/settings/accelerator.c:308
+---
+> #: src/dialogs/settings/accelerator.c:309
+1464c1405
+< #: src/dialogs/settings/accelerator.c:328
+---
+> #: src/dialogs/settings/accelerator.c:329
+1472c1413
+< #: src/terminal/properties/init.c:214
+---
+> #: src/terminal/properties/init.c:208
+1516c1457
+< #: src/terminal/properties/init.c:199
+---
+> #: src/terminal/properties/init.c:193
+1524c1465
+< #: src/filetransfer/v3270ftprogress.c:729 src/filetransfer/worker.c:576
+---
+> #: src/filetransfer/worker.c:568 src/filetransfer/v3270ftprogress.c:721
+1528c1469
+< #: src/filetransfer/worker.c:562
+---
+> #: src/filetransfer/worker.c:554
+1532c1473
+< #: src/filetransfer/settings.c:492 src/filetransfer/v3270ft.c:338
+---
+> #: src/filetransfer/v3270ft.c:339 src/filetransfer/settings.c:492
+1536,1538c1477,1479
+< #: src/dialogs/print/settingsdialog.c:381
+< #: src/dialogs/print/settingsdialog.c:400
+< #: src/dialogs/print/settingsdialog.c:419
+---
+> #: src/dialogs/print/settingsdialog.c:379
+> #: src/dialogs/print/settingsdialog.c:398
+> #: src/dialogs/print/settingsdialog.c:417
+1546c1487
+< #: src/terminal/properties/init.c:247
+---
+> #: src/terminal/properties/init.c:241
+1550c1491
+< #: src/terminal/properties/init.c:262
+---
+> #: src/terminal/properties/init.c:256
+1554c1495
+< #: src/filetransfer/transfer.c:85
+---
+> #: src/filetransfer/transfer.c:84
+1562c1503
+< #: src/dialogs/tools.c:167
+---
+> #: src/dialogs/tools.c:171
+1566,1571c1507
+< #: src/selection/windows/paste.c:115
+< #, fuzzy
+< msgid "Unable to paste formatted data"
+< msgstr "Incapaz de colar dados formatados."
+< 
+< #: src/selection/linux/paste.c:116 src/selection/macos/paste.c:116
+---
+> #: src/selection/linux/paste.c:116
+1580c1516
+< #: src/terminal/callbacks.c:509
+---
+> #: src/terminal/callbacks.c:449
+1585c1521
+< #: src/dialogs/save/save.c:478
+---
+> #: src/dialogs/save/save.c:495
+1590c1526
+< #: src/dialogs/save/save.c:446 src/dialogs/save/save.c:542
+---
+> #: src/dialogs/save/save.c:463 src/dialogs/save/save.c:559
+1600c1536
+< #: src/dialogs/settings/url.c:263
+---
+> #: src/dialogs/settings/host.c:559
+1604c1540
+< #: src/dialogs/windows/select.c:169
+---
+> #: src/dialogs/save/save.c:130
+1613c1549
+< #: src/dialogs/settings/clipboard.c:134
+---
+> #: src/dialogs/settings/clipboard.c:143
+1621c1557
+< #: src/dialogs/tools.c:168
+---
+> #: src/dialogs/tools.c:172
+1625,1629c1561
+< #: src/dialogs/settings/clipboard.c:175
+< msgid "When set URLs selected with double click will be opened"
+< msgstr "Quando ativo URLs selecionadas com duplo clique serão abertas."
+< 
+< #: src/dialogs/settings/clipboard.c:165
+---
+> #: src/dialogs/settings/clipboard.c:174
+1633c1565
+< #: src/dialogs/settings/clipboard.c:145
+---
+> #: src/dialogs/settings/clipboard.c:154
+1641c1573
+< #: src/dialogs/settings/clipboard.c:155
+---
+> #: src/dialogs/settings/clipboard.c:164
+1650c1582
+< #: src/dialogs/settings/clipboard.c:135
+---
+> #: src/dialogs/settings/clipboard.c:144
+1662c1594
+< #: src/dialogs/tools.c:169
+---
+> #: src/dialogs/tools.c:173
+1666,1667c1598,1599
+< #: src/terminal/drawing/oia.c:490 src/terminal/drawing/oia.c:514
+< #: src/terminal/drawing/oia.c:518
+---
+> #: src/terminal/drawing/oia.c:431 src/terminal/drawing/oia.c:455
+> #: src/terminal/drawing/oia.c:459
+1671c1603
+< #: src/terminal/drawing/oia.c:494
+---
+> #: src/terminal/drawing/oia.c:435
+1675c1607
+< #: src/terminal/drawing/oia.c:526
+---
+> #: src/terminal/drawing/oia.c:467
+1679c1611
+< #: src/terminal/drawing/oia.c:510
+---
+> #: src/terminal/drawing/oia.c:451
+1683c1615
+< #: src/terminal/drawing/oia.c:486
+---
+> #: src/terminal/drawing/oia.c:427
+1687c1619
+< #: src/terminal/drawing/oia.c:502
+---
+> #: src/terminal/drawing/oia.c:443
+1691c1623
+< #: src/terminal/drawing/oia.c:506
+---
+> #: src/terminal/drawing/oia.c:447
+1695c1627
+< #: src/terminal/drawing/oia.c:498
+---
+> #: src/terminal/drawing/oia.c:439
+1699c1631
+< #: src/terminal/drawing/oia.c:522
+---
+> #: src/terminal/drawing/oia.c:463
+1703c1635
+< #: src/terminal/drawing/oia.c:474
+---
+> #: src/terminal/drawing/oia.c:415
+1707c1639
+< #: src/terminal/drawing/oia.c:478
+---
+> #: src/terminal/drawing/oia.c:419
+1711c1643
+< #: src/terminal/properties/init.c:136
+---
+> #: src/terminal/properties/init.c:146
+1719c1651
+< #: src/dialogs/print/settingsdialog.c:243
+---
+> #: src/dialogs/print/settingsdialog.c:241
+1798c1730
+< #: src/terminal/actions/table.c:203
+---
+> #: src/terminal/actions/table.c:219
+1802c1734
+< #: src/terminal/actions/table.c:213
+---
+> #: src/terminal/actions/table.c:229
+1810c1742
+< #: src/dialogs/settings/dialog.c:204
+---
+> #: src/dialogs/settings/dialog.c:232
+1814,1821c1746,1750
+< #: src/dialogs/load.c:204 src/dialogs/popups.c:192
+< #: src/dialogs/print/settingsdialog.c:412
+< #: src/dialogs/print/settingsdialog.c:431 src/dialogs/save/save.c:341
+< #: src/dialogs/settings/dialog.c:203 src/selection/linux/paste.c:85
+< #: src/dialogs/linux/select.c:51 src/dialogs/linux/select.c:77
+< #: src/selection/windows/paste.c:83 src/selection/windows/paste.c:123
+< #: src/dialogs/windows/select.c:158 src/selection/macos/paste.c:85
+< #: src/dialogs/macos/select.c:51 src/dialogs/macos/select.c:77
+---
+> #: src/selection/linux/paste.c:85 src/dialogs/popups.c:173
+> #: src/dialogs/load.c:205 src/dialogs/load.c:224 src/dialogs/linux/select.c:51
+> #: src/dialogs/linux/select.c:77 src/dialogs/print/settingsdialog.c:410
+> #: src/dialogs/print/settingsdialog.c:429 src/dialogs/save/save.c:342
+> #: src/dialogs/save/save.c:361 src/dialogs/settings/dialog.c:231
+1825c1754
+< #: src/dialogs/settings/host.c:561
+---
+> #: src/dialogs/settings/host.c:644
+1829,1831c1758,1760
+< #: src/trace/tracewindow.c:126 src/dialogs/popups.c:106
+< #: src/dialogs/security.c:234 src/dialogs/transfer.c:160
+< #: src/dialogs/transfer.c:180
+---
+> #: src/trace/tracewindow.c:125 src/dialogs/transfer.c:161
+> #: src/dialogs/transfer.c:181 src/dialogs/security.c:236
+> #: src/dialogs/popups.c:104
+1839c1768
+< #: src/tools/entry.c:172
+---
+> #: src/tools/entry.c:175
+1843c1772
+< #: src/trace/tracewindow.c:118
+---
+> #: src/trace/tracewindow.c:117
+1847c1776
+< #: src/dialogs/load.c:165 src/dialogs/save/save.c:247
+---
+> #: src/dialogs/load.c:163 src/dialogs/save/save.c:250
+1855c1784,1788
+< #: src/dialogs/load.c:205
+---
+> #: src/dialogs/settings/host.c:215
+> msgid "_Host"
+> msgstr "_Servidor"
+> 
+> #: src/dialogs/load.c:210 src/dialogs/load.c:225
+1859c1792
+< #: src/filetransfer/v3270ft.c:333
+---
+> #: src/filetransfer/v3270ft.c:334
+1867,1868c1800,1801
+< #: src/dialogs/popups.c:88 src/dialogs/popups.c:94 src/dialogs/popups.c:100
+< #: src/dialogs/popups.c:112
+---
+> #: src/dialogs/popups.c:86 src/dialogs/popups.c:92 src/dialogs/popups.c:98
+> #: src/dialogs/popups.c:110
+1872c1805
+< #: src/tools/entry.c:164
+---
+> #: src/tools/entry.c:167
+1876c1809
+< #: src/filetransfer/v3270ft.c:332
+---
+> #: src/filetransfer/v3270ft.c:333
+1881,1882d1813
+< #: src/selection/windows/paste.c:84 src/selection/windows/paste.c:124
+< #: src/selection/macos/paste.c:86 src/selection/macos/paste.c:118
+1886c1817
+< #: src/filetransfer/v3270ft.c:334
+---
+> #: src/filetransfer/v3270ft.c:335
+1890,1891c1821,1822
+< #: src/trace/tracewindow.c:124 src/dialogs/save/save.c:342
+< #: src/tools/entry.c:168
+---
+> #: src/trace/tracewindow.c:123 src/dialogs/save/save.c:347
+> #: src/dialogs/save/save.c:362 src/tools/entry.c:171
+1894a1826,1833
+> #: src/dialogs/settings/host.c:545
+> msgid "_Security"
+> msgstr "_Segurança"
+> 
+> #: src/dialogs/settings/host.c:228
+> msgid "_Service"
+> msgstr "_Serviço"
+> 
+1899c1838
+< #: src/terminal/actions/table.c:214
+---
+> #: src/terminal/actions/table.c:230
+2430,2441d2368
+< #~ msgid "Click to cancel operation"
+< #~ msgstr "Clique para cancelar operação"
+< 
+< #~ msgid "Click to load file"
+< #~ msgstr "Clique para carregar arquivo"
+< 
+< #~ msgid "Click to save file"
+< #~ msgstr "Clique para salvar arquivo"
+< 
+< #~ msgid "Clipboard properties"
+< #~ msgstr "Configuração da área de transferência"
+< 
+2792a2720,2722
+> #~ msgid "Host type name"
+> #~ msgstr "Nome do tipo de host"
+> 
+3071,3073d3000
+< #~ msgid "Open"
+< #~ msgstr "Abrir"
+< 
+3479a3407,3409
+> #~ msgid "Security warning"
+> #~ msgstr "Alerta de segurança"
+> 
+3494a3425,3427
+> #~ msgid "Select font"
+> #~ msgstr "Selecione fonte"
+> 
+3501,3504d3433
+< #, fuzzy
+< #~ msgid "Selection"
+< #~ msgstr "Selecionar"
+< 
+3645a3575,3577
+> #~ msgid "Text files"
+> #~ msgstr "Arquivos de texto"
+> 
+4169,4171d4100
+< 
+< #~ msgid "_Host"
+< #~ msgstr "_Servidor"
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4: mac
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/Makefile.in lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/Makefile.in
+27,40d26
+< #---[ Paths ]----------------------------------------------------------------------------
+< 
+< prefix=@prefix@
+< exec_prefix=@exec_prefix@
+< bindir=@bindir@
+< srcdir=@srcdir@
+< sbindir=@sbindir@
+< libdir=@libdir@
+< includedir=@includedir@
+< datarootdir=@datarootdir@
+< localedir=@localedir@
+< docdir=@docdir@
+< sysconfdir=@sysconfdir@
+< 
+45d30
+< PACKAGE_NAME=@PACKAGE_NAME@
+48,65d32
+< GETTEXT_PACKAGE=@GETTEXT_PACKAGE@
+< 
+< COMMON_SOURCES= \
+< 	$(wildcard $(srcdir)/src/terminal/*.c) \
+< 	$(wildcard $(srcdir)/src/terminal/properties/*.c) \
+< 	$(wildcard $(srcdir)/src/terminal/drawing/*.c) \
+< 	$(wildcard $(srcdir)/src/terminal/font/*.c) \
+< 	$(wildcard $(srcdir)/src/terminal/keyboard/*.c) \
+< 	$(wildcard $(srcdir)/src/terminal/actions/*.c) \
+< 	$(wildcard $(srcdir)/src/filetransfer/*.c) \
+< 	$(wildcard $(srcdir)/src/selection/*.c) \
+< 	$(wildcard $(srcdir)/src/trace/*.c) \
+< 	$(wildcard $(srcdir)/src/dialogs/*.c) \
+< 	$(wildcard $(srcdir)/src/dialogs/print/*.c) \
+< 	$(wildcard $(srcdir)/src/dialogs/save/*.c) \
+< 	$(wildcard $(srcdir)/src/dialogs/font/*.c) \
+< 	$(wildcard $(srcdir)/src/dialogs/settings/*.c) \
+< 	$(wildcard $(srcdir)/src/tools/*.c)
+68,72c35,53
+< 	$(COMMON_SOURCES) \
+< 	$(wildcard $(srcdir)/src/terminal/@OSNAME@/*.rc) \
+< 	$(wildcard $(srcdir)/src/terminal/@OSNAME@/*.c) \
+< 	$(wildcard $(srcdir)/src/selection/@OSNAME@/*.c) \
+< 	$(wildcard $(srcdir)/src/dialogs/@OSNAME@/*.c) \
+---
+> 	$(wildcard src/terminal/*.c) \
+> 	$(wildcard src/terminal/@OSNAME@/*.rc) \
+> 	$(wildcard src/terminal/@OSNAME@/*.c) \
+> 	$(wildcard src/terminal/properties/*.c) \
+> 	$(wildcard src/terminal/drawing/*.c) \
+> 	$(wildcard src/terminal/font/*.c) \
+> 	$(wildcard src/terminal/keyboard/*.c) \
+> 	$(wildcard src/terminal/actions/*.c) \
+> 	$(wildcard src/filetransfer/*.c) \
+> 	$(wildcard src/selection/*.c) \
+> 	$(wildcard src/selection/@OSNAME@/*.c) \
+> 	$(wildcard src/trace/*.c) \
+> 	$(wildcard src/dialogs/*.c) \
+> 	$(wildcard src/dialogs/@OSNAME@/*.c) \
+> 	$(wildcard src/dialogs/print/*.c) \
+> 	$(wildcard src/dialogs/save/*.c) \
+> 	$(wildcard src/dialogs/font/*.c) \
+> 	$(wildcard src/dialogs/settings/*.c) \
+> 	$(wildcard src/tools/*.c)
+75c56
+< 	$(wildcard $(srcdir)/src/testprogram/*.c)
+---
+> 	$(wildcard src/testprogram/*.c)
+97c78,89
+< #---[ Build Paths ]----------------------------------------------------------------------
+---
+> #---[ Paths ]----------------------------------------------------------------------------
+> 
+> prefix=@prefix@
+> exec_prefix=@exec_prefix@
+> bindir=@bindir@
+> sbindir=@sbindir@
+> libdir=@libdir@
+> includedir=@includedir@
+> datarootdir=@datarootdir@
+> localedir=@localedir@
+> docdir=@docdir@
+> sysconfdir=@sysconfdir@
+99c91
+< BUILDDIR=@BUILDDIR@
+---
+> BASEDIR=@BASEDIR@
+101c93
+< POTDIR=$(BUILDDIR)/.pot
+---
+> POTDIR=$(BASEDIR)/.pot
+103c95
+< OBJDIR=$(BUILDDIR)/.obj/$(LIBNAME)
+---
+> OBJDIR=$(BASEDIR)/.obj/$(LIBNAME)
+107c99
+< BINDIR=$(BUILDDIR)/.bin
+---
+> BINDIR=$(BASEDIR)/.bin
+114,118c106,112
+< 	src/include/config.h \
+< 	src/include/marshal/filetransfer.h \
+< 	src/include/marshal/terminal.h \
+< 	src/include/marshal/trace.h \
+< 	src/include/marshal/dialogs.h
+---
+> 	Makefile \
+> 	src/include/*.h \
+> 	src/include/v3270/*.h \
+> 	src/filetransfer/marshal.h \
+> 	src/filetransfer/private.h \
+> 	src/terminal/marshal.h \
+> 	src/trace/marshal.h
+130d123
+< 	-I$(srcdir)/src/include \
+212c205
+< $(POTDIR)/%.pot: \
+---
+> $(POTDIR)/$(LIBNAME)/%.pot: \
+226c219
+< $(POTDIR)/%.pot: \
+---
+> $(POTDIR)/$(LIBNAME)/%.pot: \
+238,243d230
+< #---[ Main Target ]----------------------------------------------------------------------
+< 
+< all: \
+< 	$(BINRLS)/$(SONAME) \
+< 	$(BINRLS)/static/$(LIBNAME).a \
+< 	locale/$(GETTEXT_PACKAGE).pot
+247,256c234,235
+< src/include/marshal/terminal.h: \
+< 	$(srcdir)/src/terminal/marshal
+< 
+< 	@echo $@ ...
+< 	@$(MKDIR) $(@D)
+< 
+< 	@$(GENMARSHAL) --prefix=v3270 --header $< > $@
+< 
+< src/include/marshal/dialogs.h: \
+< 	$(srcdir)/src/dialogs/settings/marshal
+---
+> src/terminal/marshal.h: \
+> 	src/terminal/marshal
+264c243
+< 	$(srcdir)/src/terminal/marshal
+---
+> 	src/terminal/marshal
+272,273c251,252
+< src/include/marshal/filetransfer.h: \
+< 	$(srcdir)/src/filetransfer/marshal
+---
+> src/filetransfer/marshal.h: \
+> 	src/filetransfer/marshal
+281c260
+< 	$(srcdir)/src/filetransfer/marshal
+---
+> 	src/filetransfer/marshal
+288,289c267,268
+< src/include/marshal/trace.h: \
+< 	$(srcdir)/src/trace/marshal
+---
+> src/trace/marshal.h: \
+> 	src/trace/marshal
+297c276
+< 	$(srcdir)/src/trace/marshal
+---
+> 	src/trace/marshal
+303a283
+> 
+319a300,304
+> all: \
+> 	$(BINRLS)/$(SONAME) \
+> 	$(BINRLS)/static/$(LIBNAME).a \
+> 	locale/$(LIBNAME).pot
+> 
+356c341
+< 	locale/$(GETTEXT_PACKAGE).pot \
+---
+> 	locale/$(LIBNAME).pot \
+371,382d355
+< install-macos-lib: \
+< 	$(BINRLS)/$(SONAME) \
+< 	install-conf \
+< 	install-locale
+< 
+< 	# Install library
+< 	@$(MKDIR) $(DESTDIR)$(libdir)
+< 
+< 	@$(INSTALL_PROGRAM) \
+< 		$(BINRLS)/$(SONAME) \
+< 		$(DESTDIR)$(libdir)/$(SONAME)
+< 
+397c370
+< 	@$(ZIP) -9 -j $(BUILDDIR)/@PACKAGE_NAME@-@PACKAGE_VERSION@-@PACKAGE_RELEASE@-@host_cpu@.zip $(BINRLS)/$(SONAME)
+---
+> 	@$(ZIP) -9 -j $(BASEDIR)/@PACKAGE_NAME@-@PACKAGE_VERSION@-@PACKAGE_RELEASE@-@host_cpu@.zip $(BINRLS)/$(SONAME)
+403,405d375
+< 	@$(MKDIR) \
+< 		$(DESTDIR)$(libdir)
+< 
+417c387
+< 		$(srcdir)/remap/*.xml \
+---
+> 		remap/*.xml \
+425c395
+< 		$(srcdir)/conf/colors.conf \
+---
+> 		conf/colors.conf \
+429c399
+< 	locale/$(GETTEXT_PACKAGE).pot \
+---
+> 	locale/$(LIBNAME).pot \
+435c405
+< 		$(srcdir)/src/include/v3270/*.h \
+---
+> 		src/include/v3270/*.h \
+439c409
+< 		$(srcdir)/src/include/v3270.h \
+---
+> 		src/include/v3270.h \
+450c420
+< 	@$(INSTALL_DATA) locale/$(GETTEXT_PACKAGE).pot $(DESTDIR)$(datarootdir)/$(PRODUCT_NAME)/pot
+---
+> 	@$(INSTALL_DATA) locale/$(LIBNAME).pot $(DESTDIR)$(datarootdir)/$(PRODUCT_NAME)/pot
+462,470d431
+< install-macos-dev:
+< 
+< 	@$(MKDIR) \
+< 		$(DESTDIR)$(libdir)
+< 
+< 	@$(LN_S) \
+< 		$(SONAME) \
+< 		$(DESTDIR)$(libdir)/$(LIBNAME)@DLLEXT@
+< 
+489,492d449
+< 	@$(INSTALL_DATA) \
+< 		CHANGELOG \
+< 		$(DESTDIR)$(datarootdir)/$(PACKAGE_NAME).changes
+< 
+505c462
+< 		$(srcdir)/branding/icon-16x16.png \
+---
+> 		branding/icon-16x16.png \
+509c466
+< 		$(srcdir)/branding/icon-22x22.png \
+---
+> 		branding/icon-22x22.png \
+514,524c471,472
+< $(POTDIR)/$(GETTEXT_PACKAGE).pot: \
+< 	$(foreach SRC, $(basename $(COMMON_SOURCES)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/terminal/linux/*.c)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/selection/linux/*.c)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/dialogs/linux/*.c)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/terminal/windows/*.c)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/selection/windows/*.c)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/dialogs/windows/*.c)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/terminal/macos/*.c)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/selection/macos/*.c)), $(POTDIR)/$(SRC).pot) \
+< 	$(foreach SRC, $(basename $(wildcard $(srcdir)/src/dialogs/macos/*.c)), $(POTDIR)/$(SRC).pot)
+---
+> $(POTDIR)/$(LIBNAME).pot: \
+> 	$(foreach SRC, $(basename $(SOURCES)), $(POTDIR)/$(LIBNAME)/$(SRC).pot)
+531c479
+< 	locale/$(GETTEXT_PACKAGE).pot
+---
+> 	locale/$(LIBNAME).pot
+535,536c483,484
+< locale/$(GETTEXT_PACKAGE).pot: \
+< 	$(POTDIR)/$(GETTEXT_PACKAGE).pot
+---
+> locale/$(LIBNAME).pot: \
+> 	$(POTDIR)/$(LIBNAME).pot
+594c542
+< 		@DLL_LDFLAGS@ \
+---
+> 		-shared -Wl,-soname,$(@F) \
+608c556
+< 	@rm -fr $(BUILDDIR)/.tmp/$(LIBNAME)
+---
+> 	@rm -fr $(BASEDIR)/.tmp/$(LIBNAME)
+629c577
+< 	@rm -f $(GETTEXT_PACKAGE).pot
+---
+> 	@rm -f lib$(LIBNAME).pot
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4: PKGBUILD.mingw
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/pushtag.sh lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/pushtag.sh
+22a23,24
+> git checkout master
+> git merge origin/master
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/README.md lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/README.md
+3c3,5
+< Created originally as part of [PW3270](../../../pw3270) application.
+---
+> Created originally as part of PW3270 application.
+> 
+> See more details at https://softwarepublico.gov.br/social/pw3270/
+5d6
+< [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+7,8d7
+< [![build result](https://build.opensuse.org/projects/home:PerryWerneck:pw3270/packages/libv3270/badge.svg?type=percent)](https://build.opensuse.org/package/show/home:PerryWerneck:pw3270/libv3270)
+< [![Publish](https://github.com/PerryWerneck/libv3270/actions/workflows/publish.yml/badge.svg)](https://github.com/PerryWerneck/libv3270/actions/workflows/publish.yml)
+14c13
+< [<img src="https://raw.githubusercontent.com/PerryWerneck/pw3270/master/branding/obs-badge-en.svg" alt="Download from open build service" height="80px">]([https://software.opensuse.org/download.html?project=home%3APerryWerneck%3Apw3270&package=pw3270](https://software.opensuse.org/download.html?project=home%3APerryWerneck%3Apw3270&package=libv3270))
+---
+> For the supported distributions get the install repositories and instructions from https://software.opensuse.org/download.html?project=home%3APerryWerneck%3Apw3270&package=libv3270
+39,42c38,41
+< 	sudo zypper ar obs://windows:mingw:win32 mingw32
+< 	sudo zypper ar obs://windows:mingw:win64 mingw64
+< 	sudo zypper ar obs://home:PerryWerneck:pw3270 pw3270
+< 	sudo zypper ref
+---
+> 	$ sudo zypper ar obs://windows:mingw:win32 mingw32
+> 	$ sudo zypper ar obs://windows:mingw:win64 mingw64
+> 	$ sudo zypper ar obs://home:PerryWerneck:pw3270 pw3270
+> 	$ sudo zypper ref
+48c47
+< 	git clone https://github.com/PerryWerneck/libv3270.git ./v3270
+---
+> 	$ git clone https://github.com/PerryWerneck/libv3270.git ./v3270
+54c53
+< 	./v3270/win/install-cross.sh --64
+---
+> 	$ ./v3270/win/install-cross.sh --64
+60c59
+< 	./v3270/win/win-configure.sh --64
+---
+> 	$ ./v3270/win/win-configure.sh --64
+66,68c65,67
+< 	cd v3270
+< 	make clean
+< 	make all
+---
+> 	$ cd v3270
+> 	$ make clean
+> 	$ make all
+78c77
+< 	pacman -S mingw-w64-x86_64-gtk3
+---
+> 	$ pacman -S mingw-w64-x86_64-gtk3
+84c83
+< 	git clone https://github.com/PerryWerneck/libv3270.git ./libv3270
+---
+> 	$ git clone https://github.com/PerryWerneck/libv3270.git ./libv3270
+90,92c89,91
+< 	cd libv3270
+< 	./autogen.sh
+< 	make all
+---
+> 	$ cd libv3270
+> 	$ ./autogen.sh
+> 	$ make all
+95,97c94
+< ## Building for macOS
+< 
+< ### Using homebrew
+---
+> ## Building for macOS (using homebrew)
+104c101
+< 	brew install gtk+3
+---
+> 	$ brew install gtk+3
+110,119c107,109
+< 	./autogen.sh --prefix="$(brew --cellar)/libv3270/5.4"
+< 	make all && make install
+< 	brew link libv3270
+< 	```
+< 
+< To uninstall
+< 
+< 	```shell
+< 	brew unlink libv3270
+< 	rm -fr "$(brew --cellar)/libv3270"
+---
+> 	$ ./autogen.sh --prefix="$(brew --cellar)/libv3270/5.3"
+> 	$ make all && make install
+> 	$ brew link libv3270
+122c112
+< ### Using jhbuild
+---
+> ### Uninstalling
+124,128c114
+< 1. Install jhbuild and GTK-OSX
+< 
+< 	https://wiki.gnome.org/Projects/GTK/OSX/Building
+< 	
+< 2. build
+---
+> 1. To uninstall
+131c117,118
+< 	jhbuild --moduleset=https://raw.githubusercontent.com/PerryWerneck/libv3270/master/mac/libv3270.modules build libv3270
+---
+> 	$ brew unlink libv3270
+> 	$ rm -fr "$(brew --cellar)/libv3270"
+133d119
+< 
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/rpm/libv3270.spec lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/rpm/libv3270.spec
+21c21
+< Version:        5.4
+---
+> Version:        5.3
+32d31
+< BuildRequires:  libtool
+37,39c36,40
+< BuildRequires:  pkgconfig(lib3270) >= 5.4
+< 
+< Suggests:       %{name}-config
+---
+> BuildRequires:  pkgconfig(lib3270) >= 5.3
+> %if 0%{?centos_version}
+> # CENTOS Genmarshal doesn't depend on python!
+> BuildRequires:  python
+> %endif
+62,71d62
+< %package config
+< Summary:    Configuration files for the 3270 Virtual Terminal library
+< BuildArch:  noarch
+< Requires:   %{name}-%{_libvrs} = %{version}
+< Enhances:   %{_product}
+< Conflicts:  libv3270-5_3
+< 
+< %description config
+< Originally designed as part of the pw3270 application, this package provides the configuration files required to %{name}.
+< 
+90c81
+< %configure --with-release=%{release} --disable-static
+---
+> %configure --with-release=%{release}
+97c88
+< %find_lang %{name}-%{MAJOR_VERSION}.%{MINOR_VERSION} langfiles
+---
+> %find_lang %{name} langfiles
+103,104c94
+< 
+< %files config
+---
+> %{_datadir}/%{_product}/colors.conf
+106,107c96
+< %config %{_datadir}/%{_product}/colors.conf
+< %config %{_datadir}/%{_product}/remap/*.xml
+---
+> %{_datadir}/%{_product}/remap/*.xml
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/rpm/_service lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/rpm/_service
+11c11
+< 		<param name="versionformat">@PARENT_TAG@+git%cd</param>
+---
+> 		<param name="versionformat">@PARENT_TAG@</param>
+13a14,71
+> 	</service>
+> 
+> 	<!-- https://github.com/openSUSE/obs-service-extract_file -->
+> 	<!-- service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/rpm/libv3270.spec</param>
+> 	</service -->
+>   
+>   	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/arch/PKGBUILD</param>
+> 	</service>
+> 
+> 	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/debian/changelog</param>
+> 		<param name="outfilename">debian.changelog</param>
+> 	</service>
+>   
+> 	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/debian/*.dsc</param>
+> 	</service>
+> 
+> 	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/debian/control</param>
+> 		<param name="outfilename">debian.control</param>
+> 	</service>
+> 
+> 	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/debian/rules</param>
+> 		<param name="outfilename">debian.rules</param>
+> 	</service>
+> 
+>   	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/debian/compat</param>
+> 		<param name="outfilename">debian.compat</param>
+> 	</service>
+> 
+> 	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/debian/shlibs</param>
+> 		<param name="outfilename">debian.shlibs</param>
+> 	</service>
+> 
+> 	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/debian/postinst</param>
+> 		<param name="outfilename">debian.postinst</param>
+> 	</service>
+> 
+> 	<service name="extract_file">
+> 		<param name="archive">*.tar</param>
+> 		<param name="files">*/debian/postrm</param>
+> 		<param name="outfilename">debian.postrm</param>
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/rpm: _servicedata
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/colorscheme.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/colorscheme.c
+37c37
+<  #include <marshal/terminal.h>
+---
+>  #include "../terminal/marshal.h"
+419a420
+> 	//gtk_combo_box_set_active(GTK_COMBO_BOX(widget),-1);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/dialog.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/dialog.c
+38d37
+<  #include <v3270/tools.h>
+57a57,59
+> 	gboolean use_header;
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+> 
+61c63
+< 			"use-header-bar", (v3270_dialog_get_use_header() ? 1 : 0),
+---
+> 			"use-header-bar", (use_header ? 1 : 0),
+84,85c86
+< 
+<     gtk_dialog_set_toplevel(dialog,widget);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog),GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+86a88
+> 
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/font/chooser.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/font/chooser.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,15
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+6,14c17,26
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+<  *
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+>  *
+>  * Este programa está nomeado como - e possui - linhas de código.
+>  *
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+205a216,217
+> 
+> //		debug("%s",__FUNCTION__);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/load.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/load.c
+38d37
+<  #include <v3270/tools.h>
+77c76,85
+< /*
+---
+>  static void cancel_operation(GtkButton G_GNUC_UNUSED(*button), GtkDialog *dialog)
+>  {
+> 	gtk_dialog_response(dialog,GTK_RESPONSE_CANCEL);
+>  }
+> 
+>  static void apply_operation(GtkButton G_GNUC_UNUSED(*button), GtkDialog *dialog)
+>  {
+> 	gtk_dialog_response(dialog,GTK_RESPONSE_APPLY);
+>  }
+> 
+123,125d130
+< */
+< 
+<  static void filename_changed(GtkEntry *entry, V3270LoadDialog *dialog) {
+127,139c132,133
+<  	const gchar * text = gtk_entry_get_text(entry);
+< 	GtkWidget * button = gtk_dialog_get_widget_for_response(GTK_DIALOG(dialog),GTK_RESPONSE_APPLY);
+< 
+<  	if(!(text && *text)) {
+< 		gtk_widget_set_sensitive(button,FALSE);
+< 		return;
+<  	}
+< 
+< 	gtk_widget_set_sensitive(button,g_file_test(text, G_FILE_TEST_IS_REGULAR));
+< 
+<  }
+< 
+<  static void V3270LoadDialog_init(V3270LoadDialog *dialog) {
+---
+>  static void V3270LoadDialog_init(V3270LoadDialog *dialog)
+>  {
+143a138,140
+> 
+> //	gtk_window_set_deletable(GTK_WINDOW(dialog),FALSE);
+> 
+146a144
+> 	GtkWidget *button;
+171,180c169,172
+< 		g_signal_connect(dialog->filename,"changed",G_CALLBACK(filename_changed),dialog);
+< 
+< 		gtk_entry_bind_to_filechooser(
+< 			dialog->filename,
+< 			GTK_FILE_CHOOSER_ACTION_OPEN,
+< 			_( "Select file" ),
+< 			NULL,
+< 			"*.txt",
+< 			_("Text files")
+< 		);
+---
+> 		gtk_entry_set_icon_from_icon_name(GTK_ENTRY(dialog->filename),GTK_ENTRY_ICON_SECONDARY,"document-open");
+> 		gtk_entry_set_icon_activatable(GTK_ENTRY(dialog->filename),GTK_ENTRY_ICON_SECONDARY,TRUE);
+> 		gtk_entry_set_icon_tooltip_text(GTK_ENTRY(dialog->filename),GTK_ENTRY_ICON_SECONDARY,_("Select file"));
+> 		g_signal_connect(G_OBJECT(dialog->filename),"icon-press",G_CALLBACK(icon_press),dialog);
+202,212c194,200
+< 	gtk_dialog_add_buttons(
+< 		GTK_DIALOG (dialog),
+< 		_("_Cancel"), GTK_RESPONSE_CANCEL,
+< 		_("_Load"), GTK_RESPONSE_APPLY,
+< 		NULL
+< 	);
+< 
+< 	if(!v3270_dialog_get_use_header()) {
+< 		GtkWidget * content_area = gtk_dialog_get_content_area(GTK_DIALOG(dialog));
+< 		gtk_box_set_spacing(GTK_BOX(content_area),6);
+< 	}
+---
+> #ifdef _WIN32
+> 	widget = NULL;
+> #elif GTK_CHECK_VERSION(3,14,0)
+> 	widget = gtk_dialog_get_header_bar(GTK_DIALOG(dialog));
+> #else
+> 	widget = NULL;
+> #endif // GTK(3,14,0)
+214c202,220
+< 	gtk_widget_set_sensitive(gtk_dialog_get_widget_for_response(GTK_DIALOG(dialog),GTK_RESPONSE_APPLY),FALSE);
+---
+> 	if(widget)
+> 	{
+> 		// Have header bar
+> 		button = gtk_button_new_with_mnemonic(_("_Cancel"));
+> 		gtk_widget_set_tooltip_markup(button,_("Click to cancel operation"));
+> 		gtk_header_bar_pack_start(GTK_HEADER_BAR(widget),button);
+> 		g_signal_connect(G_OBJECT(button),"clicked",G_CALLBACK(cancel_operation),dialog);
+> 
+> 		button = gtk_button_new_with_mnemonic(_("_Load"));
+> 		gtk_widget_set_tooltip_markup(button,_("Click to load file"));
+> 		gtk_header_bar_pack_end(GTK_HEADER_BAR(widget),button);
+> 		g_signal_connect(G_OBJECT(button),"clicked",G_CALLBACK(apply_operation),dialog);
+> 	}
+> 	else
+> 	{
+> 		gtk_box_set_spacing(
+> 			GTK_BOX(gtk_dialog_get_content_area(GTK_DIALOG(dialog))),
+> 			18
+> 		);
+215a222,228
+> 		gtk_dialog_add_buttons(
+> 			GTK_DIALOG (dialog),
+> 			_("_Cancel"), GTK_RESPONSE_CANCEL,
+> 			_("_Load"), GTK_RESPONSE_APPLY,
+> 			NULL
+> 		);
+> 	}
+222a236,238
+> 	gboolean use_header;
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+> 
+227c243
+< 										"use-header-bar", (v3270_dialog_get_use_header() ? 1 : 0),
+---
+> 										"use-header-bar", (use_header ? 1 : 0),
+239c255
+< 	gtk_dialog_set_toplevel(GTK_WIDGET(dialog),widget);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog), GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs: macos
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/popups.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/popups.c
+35d34
+<  #include <v3270/tools.h>
+42c41,42
+< 	gtk_widget_add_class(widget,className);
+---
+> 	GtkStyleContext *context = gtk_widget_get_style_context(widget);
+> 	gtk_style_context_add_class(context,className);
+50d49
+< 	// For some reason we can't pass 'null' to gtk_message_dialog_new_with_markup!!
+54,58c53
+< 	gboolean allow_disabling = FALSE;
+< 
+< 	if(widget && GTK_IS_WIDGET(widget)) {
+< 		allow_disabling = (popup->name && GTK_IS_V3270(widget));
+< 	}
+---
+> 	gboolean allow_disabling = (popup->name && GTK_IS_V3270(widget));
+62c57
+< 	if(widget && allow_disabling) {
+---
+> 	if(allow_disabling) {
+117,124d111
+< 	// Get toplevel
+< 	GtkDialogFlags flags = 0;
+< 	GtkWindow *window = NULL;
+< 	if(widget) {
+< 		flags = GTK_DIALOG_MODAL|GTK_DIALOG_DESTROY_WITH_PARENT;
+< 		window = GTK_WINDOW(gtk_widget_get_toplevel(widget));
+< 	}
+< 
+128,129c115,116
+< 				window,
+< 				flags,
+---
+> 				GTK_WINDOW(gtk_widget_get_toplevel(widget)),
+> 				GTK_DIALOG_MODAL|GTK_DIALOG_DESTROY_WITH_PARENT,
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/draw.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/draw.c
+116a117,118
+> //		debug("Drawing: %u row=%u selection=%p pos=%u", (unsigned int) drawing, row, selection, (unsigned int) pos);
+> 
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/print.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/print.c
+215c215
+<     widget->font.name				= NULL;
+---
+>     widget->font.name				= NULL; // g_strdup(v3270_default_font);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/private.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/private.h
+30,31d29
+<  #pragma once
+< 
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/settings.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/settings.c
+93a94,96
+> 	// g_signal_connect(G_OBJECT(widget->color),"update-colors",G_CALLBACK(color_scheme_changed),widget);
+> 	// g_signal_connect(G_OBJECT(widget->selected),"toggled",G_CALLBACK(toggle_show_selection),widget);
+> 
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/settingsdialog.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/print/settingsdialog.c
+42,43d41
+<  #include <v3270/tools.h>
+< 
+458a457,459
+> 	gboolean use_header;
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+> 
+462c463
+< 			"use-header-bar", (v3270_dialog_get_use_header() ? 1 : 0),
+---
+> 			"use-header-bar", (use_header ? 1 : 0),
+468c469
+< 		gtk_dialog_set_toplevel(dialog,parent);
+---
+> 		gtk_window_set_transient_for(GTK_WINDOW(dialog), GTK_WINDOW(gtk_widget_get_toplevel(parent)));
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/save/private.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/save/private.h
+30,31d29
+<  #pragma once
+< 
+54c52
+< 	GtkComboBox				* format;
+---
+> 	GtkWidget				* format;
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/save/save.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/save/save.c
+37d36
+<  #include <v3270/tools.h>
+45c44
+<  static const struct _file_types
+---
+>  static const struct _formats
+49c48
+<  } file_types[] =
+---
+>  } formats[] =
+66a66,72
+> /*
+>  static void V3270SaveDialog_finalize(V3270SaveDialog *object)
+>  {
+> 	V3270SaveDialog *dialog = V3270_SAVE_DIALOG(object);
+>  }
+> */
+> 
+75c81,90
+< /*
+---
+>  static void cancel_operation(GtkButton G_GNUC_UNUSED(*button), GtkDialog *dialog)
+>  {
+> 	gtk_dialog_response(dialog,GTK_RESPONSE_CANCEL);
+>  }
+> 
+>  static void apply_operation(GtkButton G_GNUC_UNUSED(*button), GtkDialog *dialog)
+>  {
+> 	gtk_dialog_response(dialog,GTK_RESPONSE_APPLY);
+>  }
+> 
+124d138
+< */
+126c140,141
+<  static void filename_changed(GtkEntry *entry, V3270SaveDialog *dialog)
+---
+> 
+>  static void filename_changed(GtkEntry *entry, GtkComboBox *formats)
+129,134d143
+< 	GtkWidget * button = gtk_dialog_get_widget_for_response(GTK_DIALOG(dialog),GTK_RESPONSE_APPLY);
+< 
+<  	if(!(text && *text)) {
+< 		gtk_widget_set_sensitive(button,FALSE);
+< 		return;
+<  	}
+136,137c145
+<  	if(g_str_has_suffix(text,G_DIR_SEPARATOR_S)) {
+< 		gtk_widget_set_sensitive(button,FALSE);
+---
+>  	if(!(text && *text))
+139d146
+<  	}
+141,146c148
+<  	g_autofree gchar * dirname = g_path_get_dirname(text);
+<  	g_autofree gchar * basename = g_path_get_basename(text);
+< 
+<  	gtk_widget_set_sensitive(button,g_file_test(dirname,G_FILE_TEST_IS_DIR));
+< 
+< 	const gchar * extension = strrchr(basename,'.');
+---
+> 	const gchar * extension = strrchr(text,'.');
+151c153
+< 	const gchar	* format = gtk_combo_box_get_active_id(dialog->format);
+---
+> 	const gchar	* format = gtk_combo_box_get_active_id(formats);
+158,159c160,161
+< 	gint column = gtk_combo_box_get_id_column(dialog->format);
+< 	GtkTreeModel * model = gtk_combo_box_get_model(dialog->format);
+---
+> 	gint column = gtk_combo_box_get_id_column(formats);
+> 	GtkTreeModel * model = gtk_combo_box_get_model(formats);
+173c175
+< 				gtk_combo_box_set_active_iter(dialog->format,&iter);
+---
+> 				gtk_combo_box_set_active_iter(formats,&iter);
+182c184
+<  static void fileformat_changed(GtkComboBox *fmts, GtkEntry *entry)
+---
+>  static void fileformat_changed(GtkComboBox *formats, GtkEntry *entry)
+194c196
+< 	const gchar	* format = gtk_combo_box_get_active_id(fmts);
+---
+> 	const gchar	* format = gtk_combo_box_get_active_id(formats);
+228a231
+> 	GtkWidget *button;
+253d255
+< 		/*
+258,267d259
+< 		*/
+< 
+< 		gtk_entry_bind_to_filechooser(
+< 			dialog->filename,
+< 			GTK_FILE_CHOOSER_ACTION_SAVE,
+< 			_( "Select destination file" ),
+< 			NULL,
+< 			NULL,
+< 			NULL
+< 		);
+295c287
+< 		dialog->format = GTK_COMBO_BOX(gtk_combo_box_text_new());
+---
+> 		dialog->format = gtk_combo_box_text_new();
+297c289
+< 		gtk_grid_attach(grid,GTK_WIDGET(dialog->format),3,1,1,1);
+---
+> 		gtk_grid_attach(grid,dialog->format,3,1,1,1);
+299c291
+< 		for(ix=0;ix<G_N_ELEMENTS(file_types);ix++)
+---
+> 		for(ix=0;ix<G_N_ELEMENTS(formats);ix++)
+304,305c296,297
+< 				file_types[ix].extension,
+< 				g_dgettext(GETTEXT_PACKAGE,file_types[ix].name)
+---
+> 				formats[ix].extension,
+> 				g_dgettext(GETTEXT_PACKAGE,formats[ix].name)
+331c323
+< 		g_signal_connect(dialog->filename,"changed",G_CALLBACK(filename_changed),dialog);
+---
+> 		g_signal_connect(dialog->filename,"changed",G_CALLBACK(filename_changed),dialog->format);
+339,348c331,350
+< 	gtk_dialog_add_buttons(
+< 		GTK_DIALOG (dialog),
+< 		_("_Cancel"), GTK_RESPONSE_CANCEL,
+< 		_("_Save"), GTK_RESPONSE_APPLY,
+< 		NULL
+< 	);
+< 
+< 	if(!v3270_dialog_get_use_header()) {
+< 		GtkWidget * content_area = gtk_dialog_get_content_area(GTK_DIALOG(dialog));
+< 		gtk_box_set_spacing(GTK_BOX(content_area),6);
+---
+> #ifdef _WIN32
+> 	widget = NULL;
+> #elif GTK_CHECK_VERSION(3,14,0)
+> 	widget = gtk_dialog_get_header_bar(GTK_DIALOG(dialog));
+> #else
+> 	widget = NULL;
+> #endif // GTK(3,14,0)
+> 
+> 	if(widget)
+> 	{
+> 		// Have header bar
+> 		button = gtk_button_new_with_mnemonic(_("_Cancel"));
+> 		gtk_widget_set_tooltip_markup(button,_("Click to cancel operation"));
+> 		gtk_header_bar_pack_start(GTK_HEADER_BAR(widget),button);
+> 		g_signal_connect(G_OBJECT(button),"clicked",G_CALLBACK(cancel_operation),dialog);
+> 
+> 		button = gtk_button_new_with_mnemonic(_("_Save"));
+> 		gtk_widget_set_tooltip_markup(button,_("Click to save file"));
+> 		gtk_header_bar_pack_end(GTK_HEADER_BAR(widget),button);
+> 		g_signal_connect(G_OBJECT(button),"clicked",G_CALLBACK(apply_operation),dialog);
+349a352,357
+> 	else
+> 	{
+> 		gtk_box_set_spacing(
+> 			GTK_BOX(gtk_dialog_get_content_area(GTK_DIALOG(dialog))),
+> 			18
+> 		);
+351c359,365
+< 	gtk_widget_set_sensitive(gtk_dialog_get_widget_for_response(GTK_DIALOG(dialog),GTK_RESPONSE_APPLY),FALSE);
+---
+> 		gtk_dialog_add_buttons(
+> 			GTK_DIALOG (dialog),
+> 			_("_Cancel"), GTK_RESPONSE_CANCEL,
+> 			_("_Save"), GTK_RESPONSE_APPLY,
+> 			NULL
+> 		);
+> 	}
+365a380,382
+> 	gboolean use_header;
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+> 
+370c387
+< 										"use-header-bar", v3270_dialog_get_use_header() ? 1 : 0,
+---
+> 										"use-header-bar", (use_header ? 1 : 0),
+389c406
+< 	gtk_dialog_set_toplevel(GTK_WIDGET(dialog),widget);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog), GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+582c599
+< 	for(ix=0;ix<G_N_ELEMENTS(file_types);ix++)
+---
+> 	for(ix=0;ix<G_N_ELEMENTS(formats);ix++)
+584c601
+< 		if(!strcmp(file_types[ix].extension,format))
+---
+> 		if(!strcmp(formats[ix].extension,format))
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/security.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/security.c
+32a33
+>  #define GETTEXT_PACKAGE PACKAGE_NAME
+39d39
+<  #include <v3270/tools.h>
+217a218,219
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+> 
+221c223
+< 			"use-header-bar", (v3270_dialog_get_use_header() ? 1 : 0),
+---
+> 			"use-header-bar", (use_header ? 1 : 0),
+241c243
+< 	gtk_dialog_set_toplevel(dialog,widget);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog),GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/accelerator.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/accelerator.c
+115c115
+<  	//size_t ix;
+---
+>  	size_t ix;
+146a147
+> 
+182c183
+< 	gtk_tree_view_column_set_min_width(column, 100);
+---
+> 	gtk_tree_view_column_set_min_width(column, 500);
+212d212
+< 	/*
+215a216
+> 		gtk_tree_view_column_set_min_width(column, 200);
+218d218
+< 	*/
+226,227c226,230
+< 		gtk_scrolled_window_set_propagate_natural_width(GTK_SCROLLED_WINDOW(box),TRUE);
+< 		//gtk_scrolled_window_set_propagate_natural_height(GTK_SCROLLED_WINDOW(box),TRUE);
+---
+> 		/*
+> 		gtk_widget_set_vexpand(view,TRUE);
+> 		gtk_widget_set_hexpand(view,TRUE);
+> 		*/
+> 
+231,232d233
+< 		gtk_scrolled_window_set_min_content_width(GTK_SCROLLED_WINDOW(box),800);
+< 		//gtk_scrolled_window_set_min_content_height(GTK_SCROLLED_WINDOW(box),600);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/clipboard.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/clipboard.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,15
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+6,9c17,19
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+---
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+11,14c21,26
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Este programa está nomeado como - e possui - linhas de código.
+>  *
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+33,36c43,45
+<  	SELECT_OPTIONS,
+<  	COPY_OPTIONS,
+<  	PASTE_OPTIONS,
+<  	HTML_OPTIONS,
+---
+>  	COPY_SETTINGS,
+>  	PASTE_SETTINGS,
+>  	HTML_SETTINGS,
+46c55
+<  		.grid = SELECT_OPTIONS,
+---
+>  		.grid = COPY_SETTINGS,
+54c63
+<  		.grid = SELECT_OPTIONS,
+---
+>  		.grid = COPY_SETTINGS,
+62c71
+<  		.grid = PASTE_OPTIONS,
+---
+>  		.grid = PASTE_SETTINGS,
+70c79
+<  		.grid = PASTE_OPTIONS,
+---
+>  		.grid = PASTE_SETTINGS,
+79c88
+< 		.grid = HTML_OPTIONS,
+---
+> 		.grid = HTML_SETTINGS,
+96c105
+< 		.grid = HTML_OPTIONS,
+---
+> 		.grid = HTML_SETTINGS,
+113c122
+< 		.grid = COPY_OPTIONS,
+---
+> 		.grid = COPY_SETTINGS,
+140c149
+< 		.grid = HTML_OPTIONS
+---
+> 		.grid = HTML_SETTINGS
+150c159
+< 		.grid = PASTE_OPTIONS
+---
+> 		.grid = PASTE_SETTINGS
+157c166
+< 		.top = 1,
+---
+> 		.top = 4,
+160c169
+< 		.grid = COPY_OPTIONS
+---
+> 		.grid = COPY_SETTINGS
+167,176d175
+< 		.top = 2,
+< 		.width = 1,
+< 		.height = 1,
+< 		.grid = COPY_OPTIONS
+< 	},
+< 
+< 	{
+< 		.label = N_("Detect http:// or https://"),
+< 		.tooltip = N_("When set URLs selected with double click will be opened"),
+< 		.left = 1,
+180c179
+< 		.grid = SELECT_OPTIONS
+---
+> 		.grid = COPY_SETTINGS
+251d249
+< 			N_("Select options"),
+263d260
+< 				// SELECT_OPTIONS
+270,277d266
+< 				// COPY_OPTIONS
+<  				.left = 1,
+< 				.top = 0,
+< 				.width = 1
+< 			},
+< 
+< 			{
+< 				// PASTE_OPTIONS
+279c268
+< 				.top = 1,
+---
+> 				.top = 0,
+284d272
+< 				// HTML_OPTIONS
+288a277
+> 
+348d336
+< /*
+394c382
+< */
+---
+> 
+431c419
+<  	settings->title = _("Options for select, cut and paste actions");
+---
+>  	settings->title = _("Clipboard properties");
+499d486
+< 	gtk_toggle_button_set_active(widget->input.checkboxes[4],terminal->open_url != 0);
+591,596d577
+< 		}
+< 
+< 		if(gtk_toggle_button_get_active(widget->input.checkboxes[4])) {
+< 			terminal->open_url = 1;
+< 		} else {
+< 			terminal->open_url = 0;
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/colors.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/colors.c
+383a384,393
+> 
+>  LIB3270_EXPORT void v3270_edit_color_table(GtkWidget *terminal)
+>  {
+>  	v3270_settings_popup_dialog(
+> 		v3270_color_settings_new(),
+> 		terminal,
+> 		FALSE
+> 	);
+> 
+>  }
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/dialog.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/dialog.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,15
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+6,9c17,19
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+---
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+11,14c21,26
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Este programa está nomeado como - e possui - linhas de código.
+>  *
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+25d34
+<  #include <v3270/tools.h>
+41a51,63
+> /*
+> static gboolean on_tab_focus(V3270Settings *settings, GdkEvent G_GNUC_UNUSED(*event), V3270SettingsDialog *dialog)
+> {
+> 	debug("title: %s",settings->title);
+> 	debug("label: %s",settings->label);
+> 
+> 	if(settings->title)
+> 		gtk_window_set_title(dialog,settings->title);
+> 
+>  	return FALSE;
+> }
+> */
+> 
+196c218,220
+< 	dialog->has_subtitle = v3270_dialog_get_use_header();
+---
+> #ifndef _WIN32
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &dialog->has_subtitle, NULL);
+> #endif // _WIN32
+198c222,226
+< 	gtk_window_set_deletable(GTK_WINDOW(dialog),FALSE);
+---
+> 	// https://developer.gnome.org/hig/stable/visual-layout.html.en
+> 	//gtk_box_set_spacing(GTK_BOX(content_area),18);
+> 	//gtk_container_set_border_width(GTK_CONTAINER(content_area),18);
+> 
+> //	gtk_window_set_deletable(GTK_WINDOW(dialog),FALSE);
+210a239,243
+> #ifdef _WIN32
+> 	gtk_widget_set_margin_bottom(GTK_WIDGET(dialog->tabs),3);
+> //	gtk_notebook_set_show_border(dialog->tabs, TRUE);
+> #endif // _WIN32
+> 
+218,221c251
+< 	if(!dialog->has_subtitle) {
+< 		gtk_box_set_spacing(GTK_BOX(content_area),3);
+< 		gtk_widget_set_margin_bottom(content_area,3);
+< 	}
+---
+> 
+226c256,268
+< #if GTK_CHECK_VERSION(3,12,0)
+---
+> #ifdef _WIN32
+> 
+> 	GtkWidget * dialog =
+> 		GTK_WIDGET(g_object_new(
+> 			GTK_TYPE_V3270_SETTINGS_DIALOG,
+> 			"use-header-bar", FALSE,
+> 			NULL
+> 		));
+> 
+> #elif GTK_CHECK_VERSION(3,12,0)
+> 
+> 	gboolean use_header;
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+231c273
+< 			"use-header-bar", (v3270_dialog_get_use_header() ? 1 : 0),
+---
+> 			"use-header-bar", (use_header ? 1 : 0),
+245,252c287
+< struct _set_terminal_info
+< {
+< 	GtkNotebook *notebook;	///< @brief The notebook.
+< 	GtkWidget *terminal;	///< @brief The V3270 terminal.
+< 	gint selected;			///< @brief First sensitive page (-1 = none)
+< };
+< 
+< static void set_terminal_widget(GtkWidget *settings, struct _set_terminal_info *info)
+---
+> static void set_terminal_widget(GtkWidget *settings, GtkWidget *terminal)
+255,261c290
+< 	{
+< 		v3270_settings_set_terminal_widget(settings,info->terminal);
+< 		if(gtk_widget_get_sensitive(settings) && info->selected < 0)
+< 			info->selected = gtk_notebook_page_num(info->notebook,settings);
+< 	}
+< 
+< 	gtk_widget_show(settings);
+---
+> 		v3270_settings_set_terminal_widget(settings,terminal);
+272,277d300
+< 	struct _set_terminal_info info = {
+< 		.notebook = GTK_V3270_SETTINGS_DIALOG(widget)->tabs,
+< 		.terminal = terminal,
+< 		.selected = -1
+< 	};
+< 
+279c302
+< 		GTK_CONTAINER(info.notebook),
+---
+> 		GTK_CONTAINER(GTK_V3270_SETTINGS_DIALOG(widget)->tabs),
+281,296c304
+< 		&info
+< 	);
+< 
+< 	if(info.selected >= 0)
+< 	{
+< 		debug("Found active page on %d",info.selected);
+< 		gtk_notebook_set_current_page(info.notebook, info.selected);
+< 	}
+< 	else
+< 	{
+< 		g_message("No active page on settings dialog");
+< 	}
+< 
+< 	gtk_window_set_transient_for(
+< 		GTK_WINDOW(widget),
+< 		GTK_WINDOW(gtk_widget_get_toplevel(terminal))
+---
+> 		terminal
+298d305
+< 
+329a337,362
+> void v3270_settings_popup_dialog(GtkWidget *widget, GtkWidget *terminal, gboolean modal)
+> {
+> 	g_return_if_fail(GTK_IS_V3270(terminal) && GTK_IS_V3270_SETTINGS(widget));
+> 
+> 	GtkWidget 		* dialog = v3270_settings_dialog_new();
+> 	V3270Settings	* settings = GTK_V3270_SETTINGS(widget);
+> 
+> 	v3270_settings_dialog_set_has_subtitle(dialog,FALSE);
+> 
+> 	if(settings->title)
+> 		gtk_window_set_title(GTK_WINDOW(dialog),settings->title);
+> 
+> 	gtk_container_add(GTK_CONTAINER(dialog), widget);
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog),GTK_WINDOW(gtk_widget_get_toplevel(terminal)));
+> 
+> 	gtk_window_set_modal(GTK_WINDOW(dialog),modal);
+> 
+> 	v3270_settings_dialog_set_terminal_widget(dialog, terminal);
+> 
+> 	g_signal_connect(dialog,"close",G_CALLBACK(gtk_widget_destroy),NULL);
+> 	g_signal_connect(dialog,"response",G_CALLBACK(v3270_setttings_dialog_response),NULL);
+> 
+> 	gtk_widget_show_all(dialog);
+> 
+> }
+> 
+341c374
+< 	gtk_dialog_set_toplevel(dialog,terminal);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog),GTK_WINDOW(gtk_widget_get_toplevel(terminal)));
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/host.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/host.c
+41,42d40
+<  #include <v3270/settings/url.h>
+<  #include <v3270/tools.h>
+57c55
+<  		.top = 3,
+---
+>  		.top = 2,
+64c62
+<  		.top = 3,
+---
+>  		.top = 2,
+71c69
+<  		.top = 3,
+---
+>  		.top = 2,
+98a97,98
+>  	ENTRY_HOSTNAME,
+>  	ENTRY_SRVCNAME,
+208a209,234
+>  		.left = 0,
+>  		.top = 0,
+>  		.width = 5,
+>  		.height = 1,
+>  		.grid = CONNECTION,
+> 
+> 		.label = N_( "_Host" ),
+> 		.tooltip = N_("Address or name of the host to connect."),
+> 		.max_length = 0xFF,
+> 		.width_chars = 50,
+> 
+>  	},
+>  	{
+>  		.left = 0,
+>  		.top = 1,
+>  		.width = 1,
+>  		.height = 1,
+>  		.grid = CONNECTION,
+> 
+>  		.label = N_( "_Service" ),
+> 		.tooltip = N_("Port or service name."),
+> 		.max_length = 6,
+> 		.width_chars = 7,
+>  	},
+> 
+>  	{
+235,237c261,263
+<  		.left = 0,
+<  		.top = 2,
+<  		.width = 5,
+---
+>  		.left = 2,
+>  		.top = 1,
+>  		.width = 3,
+255a282
+> 		GtkComboBox			* ssl;									///< @brief SSL Connection?
+261d287
+< 		GtkWidget			* url;									///< @brief The URL entry widget.
+284c310
+< static void V3270HostSelectWidget_class_init(V3270HostSelectWidgetClass *klass)
+---
+> static void V3270HostSelectWidget_class_init(G_GNUC_UNUSED V3270HostSelectWidgetClass *klass)
+316c342,354
+< 		valid = v3270_url_edit_is_valid(settings->input.url);
+---
+> 
+>         // Check required inputs.
+> 
+>         static const int required[] = { ENTRY_HOSTNAME, ENTRY_SRVCNAME };
+>         size_t ix;
+> 
+>         for(ix = 0; ix < G_N_ELEMENTS(required); ix++) {
+>             const gchar * chars = gtk_editable_get_chars(GTK_EDITABLE(settings->input.entry[required[ix]]),0,-1);
+>             if(!*chars) {
+>                 valid = FALSE;
+>                 break;
+>             }
+>         }
+327c365
+< static void url_valid(GtkWidget G_GNUC_UNUSED(*url), gboolean valid, V3270HostSelectWidget *settings) {
+---
+> static void required_changed(GtkEditable *editable, GtkWidget *settings) {
+329,334c367,368
+< 	if(valid) {
+< 		update_valid(settings,valid);
+< 		return;
+< 	}
+< 
+< 	v3270_settings_set_valid(GTK_WIDGET(settings),valid);
+---
+>     const gchar * chars = gtk_editable_get_chars(editable,0,-1);
+>     update_valid(GTK_V3270HostSelectWidget(settings),(*chars ? TRUE : FALSE));
+423,424c457,458
+< 	grids[CONNECTION] = widget->input.url = v3270_url_edit_new();
+< 	g_signal_connect(grids[CONNECTION],"valid",G_CALLBACK(url_valid),widget);
+---
+> 	{
+> 		size_t grid;
+426c460,463
+< 	grids[EMULATION] = gtk_grid_new();
+---
+> 		for(grid = 0; grid < G_N_ELEMENTS(grids); grid++)
+> 			grids[grid] = gtk_grid_new();
+> 
+> 	}
+428a466,468
+>  	gtk_grid_set_row_spacing(GTK_GRID(grids[CONNECTION]),6);
+>  	gtk_grid_set_column_spacing(GTK_GRID(grids[CONNECTION]),12);
+> 
+448a489,492
+> 		// Custom settings
+> 		// gtk_entry_set_placeholder_text(widget->input.entry[ENTRY_SRVCNAME],"telnet");
+> 
+> 		gtk_widget_set_hexpand(GTK_WIDGET(widget->input.entry[ENTRY_HOSTNAME]),TRUE);
+458a503,504
+>         g_signal_connect(G_OBJECT(widget->input.entry[ENTRY_HOSTNAME]),"changed",G_CALLBACK(required_changed),widget);
+>         g_signal_connect(G_OBJECT(widget->input.entry[ENTRY_SRVCNAME]),"changed",G_CALLBACK(required_changed),widget);
+473,474c519,520
+< 		gtk_grid_attach(GTK_GRID(grids[CONNECTION]),label,0,3,1,1);
+< 		gtk_grid_attach(GTK_GRID(grids[CONNECTION]),GTK_WIDGET(widget->input.auto_disconnect),1,3,1,1);
+---
+> 		gtk_grid_attach(GTK_GRID(grids[CONNECTION]),label,0,2,1,1);
+> 		gtk_grid_attach(GTK_GRID(grids[CONNECTION]),GTK_WIDGET(widget->input.auto_disconnect),1,2,1,1);
+496a543,579
+> 	// SSL input
+> 	{
+> 		GtkWidget *label = gtk_label_new_with_mnemonic(_( "_Security" ));
+> 		gtk_widget_set_halign(label,GTK_ALIGN_END);
+> 		gtk_grid_attach(GTK_GRID(grids[CONNECTION]),label,0,3,1,1);
+> 
+> 		GtkTreeModel * model = (GtkTreeModel *) gtk_list_store_new(1,G_TYPE_STRING);
+> 
+> 		widget->input.ssl = GTK_COMBO_BOX(gtk_combo_box_new_with_model(model));
+> 
+> 		GtkCellRenderer * text_renderer	= gtk_cell_renderer_text_new();
+> 		gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget->input.ssl), text_renderer, TRUE);
+> 		gtk_cell_layout_set_attributes(GTK_CELL_LAYOUT(widget->input.ssl), text_renderer, "text", 0, NULL);
+> 
+> 		static const gchar * levels[] =
+> 		{
+> 			N_("Unsecure"),
+> 			N_("SSL/TLS")
+> 		};
+> 
+> 		size_t level;
+> 		for(level = 0; level < G_N_ELEMENTS(levels); level++)
+> 		{
+> 			GtkTreeIter iter;
+> 			gtk_list_store_append((GtkListStore *) model, &iter);
+> 			gtk_list_store_set((GtkListStore *) model, &iter, 0, levels[level], -1);
+> 		};
+> 
+> 		/*
+> 		widget->input.ssl = GTK_TOGGLE_BUTTON(gtk_check_button_new_with_mnemonic(_( "_Secure connection." )));
+> 		gtk_widget_set_tooltip_text(GTK_WIDGET(widget->input.ssl),_( "Check for SSL secure connection." ));
+> 		gtk_widget_set_halign(GTK_WIDGET(widget->input.ssl),GTK_ALIGN_START);
+> 		*/
+> 
+> 		gtk_grid_attach(GTK_GRID(grids[CONNECTION]),GTK_WIDGET(widget->input.ssl),1,3,2,1);
+> 	}
+> 
+591d673
+< /*
+604c686
+< 	gtk_dialog_set_toplevel(dialog,widget);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog),GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+637d718
+< */
+647c728,741
+< 	lib3270_set_url(hSession,v3270_url_edit_get_url(widget->input.url));
+---
+> 	{
+> 		g_autofree gchar * url =
+> 			g_strconcat(
+> 							(gtk_combo_box_get_active(widget->input.ssl) > 0 ? "tn3270s://" : "tn3270://"),
+> 							gtk_entry_get_text(widget->input.entry[ENTRY_HOSTNAME]),
+> 							":",
+> 							gtk_entry_get_text(widget->input.entry[ENTRY_SRVCNAME]),
+> 							NULL
+> 						);
+> 
+> 		debug("URL=[%s]",url);
+> 		lib3270_set_url(hSession,url);
+> 
+> 	}
+710c804,839
+< 	v3270_url_edit_set_url(widget->input.url,lib3270_get_url(hSession));
+---
+> 	const gchar * u = lib3270_get_url(hSession);
+> 
+> 	if(u)
+>     {
+> 
+>         g_autofree gchar * url = g_strdup(u);
+> 
+> 		gtk_combo_box_set_active(widget->input.ssl,(g_str_has_prefix(u,"tn3270s") ? 1 : 0));
+> //		gtk_toggle_button_set_active(widget->input.ssl,g_str_has_prefix(u,"tn3270s"));
+> 
+>         gchar *hostname = strstr(url,"://");
+>         if(!hostname)
+>         {
+>             g_message("Invalid URL: \"%s\" (no scheme)",url);
+>         }
+>         else
+>         {
+>             hostname += 3;
+> 
+>             gchar *srvcname = strchr(hostname,':');
+> 
+>             if(srvcname)
+>             {
+>                 *(srvcname++) = 0;
+>             }
+>             else
+>             {
+>                 srvcname = "23";
+>             }
+> 
+>             gtk_entry_set_text(widget->input.entry[ENTRY_HOSTNAME],hostname);
+>             gtk_entry_set_text(widget->input.entry[ENTRY_SRVCNAME],srvcname);
+> 
+>         }
+> 
+>     }
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings: marshal
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings: popup.c
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/private.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/private.h
+30c30
+<  #pragma once
+---
+> #ifndef PRIVATE_H_INCLUDED
+32,35c32,35
+<  #include <internals.h>
+<  #include <lib3270/log.h>
+<  #include <lib3270/toggle.h>
+<  #include <v3270/settings.h>
+---
+> 	#include <internals.h>
+> 	#include <lib3270/log.h>
+> 	#include <lib3270/toggle.h>
+> 	#include <v3270/settings.h>
+37,44c37,44
+<  /// @brief Toggle button factory.
+<  struct ToggleButtonDefinition {
+< 	gint left;
+< 	gint top;
+< 	gint width;
+< 	unsigned short grid;
+< 	LIB3270_TOGGLE_ID	id;
+<  };
+---
+> 	/// @brief Toggle button factory.
+> 	struct ToggleButtonDefinition {
+> 		gint left;
+> 		gint top;
+> 		gint width;
+> 		unsigned short grid;
+> 		LIB3270_TOGGLE_ID	id;
+> 	};
+46,48c46,48
+<  G_GNUC_INTERNAL void v3270_settings_create_toggle_buttons(const struct ToggleButtonDefinition * definitions, size_t length, GtkWidget **grids, GtkToggleButton **toggles);
+<  G_GNUC_INTERNAL void v3270_settings_load_toggle_buttons(const struct ToggleButtonDefinition * definitions, size_t length, GtkWidget *terminal, GtkToggleButton **toggles);
+<  G_GNUC_INTERNAL void v3270_settings_apply_toggle_buttons(const struct ToggleButtonDefinition * definitions, size_t length, GtkWidget *terminal, GtkToggleButton **toggles);
+---
+> 	G_GNUC_INTERNAL void v3270_settings_create_toggle_buttons(const struct ToggleButtonDefinition * definitions, size_t length, GtkWidget **grids, GtkToggleButton **toggles);
+> 	G_GNUC_INTERNAL void v3270_settings_load_toggle_buttons(const struct ToggleButtonDefinition * definitions, size_t length, GtkWidget *terminal, GtkToggleButton **toggles);
+> 	G_GNUC_INTERNAL void v3270_settings_apply_toggle_buttons(const struct ToggleButtonDefinition * definitions, size_t length, GtkWidget *terminal, GtkToggleButton **toggles);
+50,51c50,51
+<  /// @brief Entry field factory.
+<  struct EntryFieldDefinition {
+---
+> 	/// @brief Entry field factory.
+> 	struct EntryFieldDefinition {
+53c53
+< 	ENTRY_FIELD_HEAD
+---
+> 		ENTRY_FIELD_HEAD
+55,57c55,57
+< 	unsigned short grid;
+< 	gint max_length;
+< 	gint width_chars;
+---
+> 		unsigned short grid;
+> 		gint max_length;
+> 		gint width_chars;
+59c59
+<  };
+---
+> 	};
+61c61
+<  G_GNUC_INTERNAL void v3270_settings_create_entry_fields(const struct EntryFieldDefinition * definitions, size_t length, GtkWidget **grids, GtkEntry **entries);
+---
+> 	G_GNUC_INTERNAL void v3270_settings_create_entry_fields(const struct EntryFieldDefinition * definitions, size_t length, GtkWidget **grids, GtkEntry **entries);
+63,64c63,64
+<  /// @brief Combo Box factory
+<  struct ComboBoxDefinition {
+---
+> 	/// @brief Combo Box factory
+> 	struct ComboBoxDefinition {
+66c66
+< 	ENTRY_FIELD_HEAD
+---
+> 		ENTRY_FIELD_HEAD
+68c68
+< 	unsigned short grid;
+---
+> 		unsigned short grid;
+70,71c70,71
+< 	gint n_columns;
+< 	const GType *types;
+---
+> 		gint n_columns;
+> 		const GType *types;
+73c73
+<  };
+---
+> 	};
+75c75
+<  G_GNUC_INTERNAL void v3270_settings_create_combos(const struct ComboBoxDefinition * definitions, size_t length, GtkWidget **grids, GtkComboBox **combos);
+---
+> 	G_GNUC_INTERNAL void v3270_settings_create_combos(const struct ComboBoxDefinition * definitions, size_t length, GtkWidget **grids, GtkComboBox **combos);
+77,79c77,79
+<  /// @brief Checkbox factory
+<  struct CheckBoxDefinition {
+< 	ENTRY_FIELD_HEAD
+---
+> 	/// @brief Checkbox factory
+> 	struct CheckBoxDefinition {
+> 		ENTRY_FIELD_HEAD
+81,82c81,82
+< 	unsigned short grid;
+<  };
+---
+> 		unsigned short grid;
+> 	};
+84c84
+<  G_GNUC_INTERNAL void v3270_settings_create_checkboxes(const struct CheckBoxDefinition * definitions, size_t length, GtkWidget **grids, GtkToggleButton **buttons);
+---
+> 	G_GNUC_INTERNAL void v3270_settings_create_checkboxes(const struct CheckBoxDefinition * definitions, size_t length, GtkWidget **grids, GtkToggleButton **buttons);
+85a86
+> #endif // PRIVATE_H_INCLUDED
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings: url.c
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/widget.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/settings/widget.c
+31c31
+<  #include <marshal/terminal.h>
+---
+>  #include "../terminal/marshal.h"
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/tools.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/tools.c
+32d31
+<  #include <v3270/tools.h>
+49,54d47
+<  GtkWidget * v3270_dialog_section_get_label_widget(GtkWidget *widget) {
+< 	GtkWidget *rc = NULL;
+< 	g_object_get(G_OBJECT(widget),"label-widget",&rc,NULL);
+< 	return rc;
+<  }
+< 
+59,60c52,53
+< 	GtkFrame 	* frame	= GTK_FRAME(gtk_frame_new(title));
+< 	GtkWidget	* label	= v3270_dialog_section_get_label_widget(GTK_WIDGET(frame));
+---
+> 	GtkFrame 	* frame		= GTK_FRAME(gtk_frame_new(""));
+> 	GtkWidget	* label		= gtk_label_new(NULL);
+65c58,62
+< 		gtk_widget_add_class(label,"separator");
+---
+> 		g_autofree gchar * markup = g_strdup_printf("<b>%s</b>",title);
+> 		gtk_label_set_markup(GTK_LABEL(label),markup);
+> 
+> 		g_object_set(G_OBJECT(frame),"margin-top",6,NULL);
+> 
+68a66,70
+> #else
+> 	{
+> 		// Non Unix/Linux, use the windows style.
+> 		gtk_label_set_text(GTK_LABEL(label),title);
+> 	}
+70a73,74
+> 	gtk_frame_set_label_widget(GTK_FRAME(frame),label);
+> 
+216,229d219
+< 
+<  }
+< 
+<  gboolean v3270_dialog_get_use_header() {
+< 
+< #ifdef _WIN32
+< 	return FALSE;
+< #elif GTK_CHECK_VERSION(3,12,0)
+< 	gboolean use_header;
+< 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+< 	return use_header;
+< #else
+< 	return FALSE;
+< #endif // _WIN32
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/transfer.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/dialogs/transfer.c
+39d38
+<  #include <v3270/tools.h>
+129a129,130
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+> 
+133c134
+< 			"use-header-bar", (v3270_dialog_get_use_header() ? 1 : 0),
+---
+> 			"use-header-bar", (use_header ? 1 : 0),
+192c193
+< 	gtk_dialog_set_toplevel(dialog,widget);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog), GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/activitylist.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/activitylist.c
+33c33
+<  #include <marshal/filetransfer.h>
+---
+>  #include "marshal.h"
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/private.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/private.h
+37a38
+> 	#define GETTEXT_PACKAGE PACKAGE_NAME
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/settings.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/settings.c
+33c33
+<  #include <marshal/filetransfer.h>
+---
+>  #include "marshal.h"
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/transfer.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/transfer.c
+33d32
+<  #include <v3270/tools.h>
+142c141,142
+< 	gtk_dialog_set_toplevel(progress,dialog);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(progress),GTK_WINDOW(dialog));
+> //	gtk_window_set_deletable(progress,FALSE);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/v3270ft.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/v3270ft.c
+40d39
+<  #include <v3270/tools.h>
+106,107c105
+< 		if(entry) {
+< 			LIB3270_FT_OPTION opt = entry->options & ~(LIB3270_FT_OPTION_SEND|LIB3270_FT_OPTION_RECEIVE|LIB3270_FT_OPTION_ASCII|LIB3270_FT_OPTION_CRLF|LIB3270_FT_OPTION_REMAP);
+---
+> 		LIB3270_FT_OPTION opt = entry->options & ~(LIB3270_FT_OPTION_SEND|LIB3270_FT_OPTION_RECEIVE|LIB3270_FT_OPTION_ASCII|LIB3270_FT_OPTION_CRLF|LIB3270_FT_OPTION_REMAP);
+109c107
+< 			opt |= ft_type[selected].opt;
+---
+> 		opt |= ft_type[selected].opt;
+111,112c109,110
+< 			entry->type = selected;
+< 			debug("Transfer type=%d opt=%08x last=%08x",selected,opt,entry->options);
+---
+> 		entry->type = selected;
+> 		debug("Transfer type=%d opt=%08x last=%08x",selected,opt,entry->options);
+114,117c112,114
+< 			if(entry->options != opt) {
+< 				debug("Transfer type=%d opt=%08x",selected,opt);
+< 				v3270ft_set_options(GTK_WIDGET(dialog),opt);
+< 			}
+---
+> 		if(entry->options != opt) {
+> 			debug("Transfer type=%d opt=%08x",selected,opt);
+> 			v3270ft_set_options(GTK_WIDGET(dialog),opt);
+294a292,294
+> //#ifdef WIN32
+> //static void select_local_file(GtkButton G_GNUC_UNUSED(*button), v3270ft *dialog) {
+> //#else
+295a296
+> //#endif // WIN32
+727a729,731
+> 	gboolean use_header;
+> 	g_object_get(gtk_settings_get_default(), "gtk-dialogs-use-header", &use_header, NULL);
+> 
+731c735
+< 			"use-header-bar", (v3270_dialog_get_use_header() ? 1 : 0),
+---
+> 			"use-header-bar", (use_header ? 1 : 0),
+745c749
+< 	gtk_dialog_set_toplevel(dialog,parent);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog),GTK_WINDOW(gtk_widget_get_toplevel(parent)));
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/v3270ftprogress.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/v3270ftprogress.c
+39c39
+<  #include <marshal/filetransfer.h>
+---
+>  #include "marshal.h"
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/worker.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/filetransfer/worker.c
+33c33
+<  #include <marshal/filetransfer.h>
+---
+>  #include "marshal.h"
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/config.h.in lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/config.h.in
+38d37
+< 	#undef GETTEXT_PACKAGE
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/internals.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/internals.h
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,15
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+6,14c17,26
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+<  *
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+>  *
+>  * Este programa está nomeado como - e possui - linhas de código.
+>  *
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+26a37
+>  #define GETTEXT_PACKAGE PACKAGE_NAME
+114d124
+<  	V3270_SIGNAL_OPEN_URL,				///< @brief An URL was selected.
+185,186d194
+< 
+<  G_GNUC_INTERNAL gboolean		  v3270_dialog_get_use_header();
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/terminal.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/terminal.h
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,21
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+>  *
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+>  *
+>  * Este programa está nomeado como - e possui - linhas de código.
+6,14c23,26
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+<  *
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+20c30,54
+<  #pragma once
+---
+> #include <config.h>
+> #include <internals.h>
+> #include <v3270/selection.h>
+> 
+> G_BEGIN_DECLS
+> 
+> /*
+>  /// @brief V3270 Properties saved to the configuration file.
+>  typedef enum
+>  {
+> 	V3270_SETTING_URL,
+> 	V3270_SETTING_FONT_FAMILY,
+> 	V3270_SETTING_AUTO_DISCONNECT,
+> 	V3270_SETTING_REMAP_FILE,
+> 	V3270_SETTING_DYNAMIC_SPACING,
+> 	V3270_SETTING_LU_NAMES,
+> 	V3270_SETTING_MODEL_NUMBER,
+> 	V3270_SETTING_OVERSIZE,
+> 	V3270_SETTING_HOST_CHARSET,
+> 	V3270_SETTING_UNLOCK_DELAY,
+> 	V3270_SETTING_COLOR_TYPE,
+> 	V3270_SETTING_HOST_TYPE,
+> 	V3270_SETTING_CRL_PROTOCOL,
+> 	V3270_SETTING_TERMINAL_COLORS,
+> 	V3270_SETTING_SELECTION_OPTIONS,
+22,24c56,57
+<  #include <config.h>
+<  #include <internals.h>
+<  #include <v3270/selection.h>
+---
+>  	V3270_SETTING_COUNT					///< @brief Number of setting properties.
+>  } V3270_SETTING;
+26c59,60
+<  G_BEGIN_DECLS
+---
+>  G_GNUC_INTERNAL void v3270_notify_setting(GtkWidget *widget, V3270_SETTING id);
+> */
+57a92
+> //			guint responses;
+120,128c155,162
+< 	unsigned int selecting		: 1;	///< @brief Selecting region
+< 	unsigned int moving			: 1;	///< @brief Moving selected region
+< 	unsigned int resizing		: 1;	///< @brief Resizing selected region
+< 	unsigned int scaled_fonts	: 1;	///< @brief Use scaled fonts
+< 	unsigned int drawing		: 1;	///< @brief Draw widget?
+< 	unsigned int freeze			: 1;	///< @brief True when the "save settings" signal is disabled.
+< 	unsigned int append			: 1;	///< @brief Next smart-copy operation will be append.
+< 	unsigned int copying		: 1;	///< @brief Copy with center mouse button
+< 	unsigned int open_url		: 1;	///< @brief Emit 'open-url' signal when and http:// or https:// url is selected by 'word-select' action.
+---
+> 	int selecting		: 1;	/// @brief Selecting region
+> 	int moving			: 1;	/// @brief Moving selected region
+> 	int resizing		: 1;	/// @brief Resizing selected region
+> 	int scaled_fonts	: 1;	/// @brief Use scaled fonts
+> 	int drawing			: 1;	/// @brief Draw widget?
+> 	int freeze			: 1;	/// @brief Truee when the "save settings" signal is disabled.
+> 	int append			: 1;	/// @brief Next smart-copy operation will be append.
+> 	int copying			: 1;	/// @brief Copy with center mouse button
+208c242
+< 		unsigned int		  show : 1;						///< @brief Show element?
+---
+> 		int					  show : 1;						///< @brief Show element?
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270/accessible.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270/accessible.h
+30c30
+<  #pragma once
+---
+> #include <gtk/gtk.h>
+32c32
+<  #include <gtk/gtk.h>
+---
+> G_BEGIN_DECLS
+34c34,39
+<  G_BEGIN_DECLS
+---
+> #define GTK_TYPE_V3270_ACCESSIBLE					(v3270_accessible_get_type ())
+> #define GTK_V3270_ACCESSIBLE(obj)					(G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_V3270_ACCESSIBLE, v3270Accessible))
+> #define GTK_V3270_ACCESSIBLE_CLASS(klass)			(G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_V3270_ACCESSIBLE, v3270AccessibleClass))
+> #define GTK_IS_V3270_ACCESSIBLE(obj)				(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_V3270_ACCESSIBLE))
+> #define GTK_IS_V3270_ACCESSIBLE_CLASS(klass)		(G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_V3270_ACCESSIBLE))
+> #define GTK_V3270_ACCESSIBLE_GET_CLASS(obj)			(G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_V3270_ACCESSIBLE, v3270AccessibleClass))
+36,41c41,42
+<  #define GTK_TYPE_V3270_ACCESSIBLE					(v3270_accessible_get_type ())
+<  #define GTK_V3270_ACCESSIBLE(obj)					(G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_V3270_ACCESSIBLE, v3270Accessible))
+<  #define GTK_V3270_ACCESSIBLE_CLASS(klass)			(G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_V3270_ACCESSIBLE, v3270AccessibleClass))
+<  #define GTK_IS_V3270_ACCESSIBLE(obj)				(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_V3270_ACCESSIBLE))
+<  #define GTK_IS_V3270_ACCESSIBLE_CLASS(klass)		(G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_V3270_ACCESSIBLE))
+<  #define GTK_V3270_ACCESSIBLE_GET_CLASS(obj)			(G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_V3270_ACCESSIBLE, v3270AccessibleClass))
+---
+> typedef struct _v3270Accessible      v3270Accessible;
+> typedef struct _v3270AccessibleClass v3270AccessibleClass;
+43,47c44,45
+<  typedef struct _v3270Accessible      v3270Accessible;
+<  typedef struct _v3270AccessibleClass v3270AccessibleClass;
+< 
+<  typedef enum _v3270_state
+<  {
+---
+> typedef enum _v3270_state
+> {
+54c52
+<  } V3270_STATE;
+---
+> } V3270_STATE;
+56,57c54,55
+<  struct _v3270Accessible
+<  {
+---
+> struct _v3270Accessible
+> {
+61c59,60
+<  };
+---
+> //	AtkLayer	layer;
+> };
+63,64c62,63
+<  struct _v3270AccessibleClass
+<  {
+---
+> struct _v3270AccessibleClass
+> {
+66d64
+<  };
+68d65
+<  GType v3270_accessible_get_type(void);
+70c67,71
+<  void v3270_acessible_set_state(GtkAccessible *obj, LIB3270_MESSAGE id);
+---
+> };
+> 
+> GType v3270_accessible_get_type(void);
+> 
+> void v3270_acessible_set_state(GtkAccessible *obj, LIB3270_MESSAGE id);
+72c73
+<  G_END_DECLS
+---
+> G_END_DECLS
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270/colorscheme.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270/colorscheme.h
+30c30
+<  #pragma once
+---
+> #ifndef V3270_COLOR_SCHEME_H_INCLUDED
+68a69
+>  LIB3270_EXPORT void		  v3270_edit_color_table(GtkWidget *terminal);
+71a73
+> #endif // V3270_COLOR_SCHEME_H_INCLUDED
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270: settings
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270/settings.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270/settings.h
+105c105
+<  LIB3270_EXPORT GtkWidget * v3270_settings_popup_dialog(GtkWidget *settings, GtkWidget *terminal, gboolean modal);
+---
+>  LIB3270_EXPORT void v3270_settings_popup_dialog(GtkWidget *settings, GtkWidget *terminal, gboolean modal);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270/tools.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270/tools.h
+30c30
+<  #pragma once
+---
+> #ifndef V3270_TOOLS_H_INCLUDED
+37,38c37,38
+<  /// @brief Bind pointer to widget; release it when widget is destroyed.
+<  LIB3270_EXPORT void gtk_widget_bind_ptr(GtkWidget *widget, gpointer ptr);
+---
+> 	/// @brief Bind pointer to widget; release it when widget is destroyed.
+> 	LIB3270_EXPORT void gtk_widget_bind_ptr(GtkWidget *widget, gpointer ptr);
+40,47c40,41
+<  /// @brief Add style to widget.
+<  LIB3270_EXPORT void gtk_widget_add_class(GtkWidget *widget, const char *className);
+< 
+<  /// @brief Bind file chooser with entry field.
+<  LIB3270_EXPORT void gtk_entry_bind_to_filechooser(GtkWidget *widget, GtkFileChooserAction action, const gchar *title, const gchar *icon_name, const gchar *pattern, const gchar *name);
+< 
+<  /// @brief Bind dialog with toplevel
+<  LIB3270_EXPORT void gtk_dialog_set_toplevel(GtkWidget *dialog, GtkWidget *widget);
+---
+> 	/// @brief Bind file chooser with entry field.
+> 	LIB3270_EXPORT void gtk_entry_bind_to_filechooser(GtkWidget *widget, GtkFileChooserAction action, const gchar *title, const gchar *icon_name, const gchar *pattern, const gchar *name);
+50a45
+> #endif // V3270_TOOLS_H_INCLUDED
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/include/v3270.h
+242c242
+<  // LIB3270_EXPORT void			  v3270_select_host(GtkWidget *widget);
+---
+>  LIB3270_EXPORT void			  v3270_select_host(GtkWidget *widget);
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/selection: macos
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/selection/text.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/selection/text.c
+127c127
+< 		// Is there any better way for a "sed" here?
+---
+> 		// FIXME (perry#1#): Is there any better way for a "sed" here?
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/accessible.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/accessible.c
+32a33
+>  #define GETTEXT_PACKAGE PACKAGE_NAME
+Only in lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions: clipboard.c
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions/dialog.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions/dialog.c
+39d38
+<  #include <v3270/tools.h>
+129d127
+< 			gtk_dialog_set_toplevel(action->dialog,window);
+131c129
+< 			gtk_dialog_set_toplevel(action->dialog,window);
+---
+> 			gtk_window_set_transient_for(GTK_WINDOW(action->dialog),GTK_WINDOW(window));
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions/private.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions/private.h
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,15
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+6,14c17,26
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+<  *
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+>  *
+>  * Este programa está nomeado como - e possui - linhas de código.
+>  *
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+20,21d29
+<  #pragma once
+< 
+49a58,59
+>  G_GNUC_INTERNAL int fire_copy_accelerator(GtkWidget *widget, const V3270_ACTION *action);
+>  G_GNUC_INTERNAL int fire_paste_accelerator(GtkWidget *widget, const V3270_ACTION *action);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions/table.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions/table.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,19
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+>  *
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+6,9c21
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+---
+>  * Este programa está nomeado como properties.c e possui - linhas de código.
+11,14c23,26
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+24d33
+<  #include <v3270/settings.h>
+26a36,38
+> // static int fire_kp_add_action(GtkWidget *widget, const struct _v3270_action * action);
+> // static int fire_kp_sub_action(GtkWidget *widget, const struct _v3270_action * action);
+> 
+30,39d41
+<  static int fire_copy_accelerator(GtkWidget *widget, const V3270_ACTION *action);
+<  static int fire_paste_accelerator(GtkWidget *widget, const V3270_ACTION *action);
+< 
+<  // Dialogs
+<  static int fire_accelerators_dialog(GtkWidget *widget, const struct _v3270_action * action);
+<  static int fire_host_dialog(GtkWidget *widget, const struct _v3270_action * action);
+<  static int fire_color_dialog(GtkWidget *widget, const struct _v3270_action * action);
+<  static int fire_clipboard_dialog(GtkWidget *widget, const struct _v3270_action * action);
+<  static int fire_font_dialog(GtkWidget *widget, const struct _v3270_action * action);
+< 
+46c48,62
+< 		//
+---
+> 	 	/*
+> 		{
+> 			.name = "keypad-add",
+> 			.keys = "<Mod2>KP_Add",
+> 			.group = LIB3270_ACTION_GROUP_ONLINE,
+> 			.activate = fire_kp_add_action
+> 		},
+> 		{
+> 			.name = "keypad-subtract",
+> 			.keys = "<Mod2>KP_Subtract",
+> 			.group = LIB3270_ACTION_GROUP_ONLINE,
+> 			.activate = fire_kp_sub_action
+> 		},
+> 		*/
+> 
+48d63
+< 		//
+62,72d76
+< 			.name = "copy-append",
+< 			.keys = "<Primary><Shift>c",
+< 			.flags = (V3270_ACTION_FLAGS) V3270_COPY_APPEND,
+< 			.group = LIB3270_ACTION_GROUP_SELECTION,
+< 			.label = N_( "Add to copy" ),
+< 			.summary = N_("Append selection to clipboard"),
+< 			.description = N_("Append selected area to current clipboard contents"),
+< 			.activate = fire_copy_accelerator
+< 		},
+< 
+< 		{
+90a95,105
+> 			.name = "copy-append",
+> 			.keys = "<Alt>c",
+> 			.flags = (V3270_ACTION_FLAGS) V3270_COPY_APPEND,
+> 			.group = LIB3270_ACTION_GROUP_SELECTION,
+> 			.label = N_( "Add to copy" ),
+> 			.summary = N_("Append selection to clipboard"),
+> 			.description = N_("Append selected area to current clipboard contents"),
+> 			.activate = fire_copy_accelerator
+> 		},
+> 
+> 		{
+91a107
+> 			.keys = "<Primary><Shift>c",
+323,372d338
+< 		//
+< 		// Dialog actions
+< 		//
+< 		{
+< 			.group = LIB3270_ACTION_GROUP_NONE,
+< 			.name = "dialog-keyboard",
+< 			.icon = "preferences-desktop-keyboard-shortcuts",
+< 			.label = N_("Keyboard accelerators"),
+< 			.summary = N_("Edit keyboard accelerators"),
+< 			.activate = fire_accelerators_dialog
+< 		},
+< 
+< 		{
+< 			.group = LIB3270_ACTION_GROUP_OFFLINE,
+< 			.name = "dialog-host",
+< 			.icon = "network-server",
+< 			.label = N_("Host and emulation settings"),
+< 			.summary = N_("Edit host and terminal emulation settings"),
+< 			.activate = fire_host_dialog
+< 		},
+< 
+< 		{
+< 			.group = LIB3270_ACTION_GROUP_NONE,
+< 			.name = "dialog-colors",
+< 			.icon = "gtk-select-color",
+< 			.label = N_("Terminal colors"),
+< 			.summary = N_("Edit terminal colors"),
+< 			.activate = fire_color_dialog
+< 		},
+< 
+< 		{
+< 			.group = LIB3270_ACTION_GROUP_NONE,
+< 			.name = "dialog-clipboard",
+< 			.label = N_("Selection settings"),
+< 			.summary = N_("Edit clipboard settings"),
+< 			.activate = fire_clipboard_dialog
+< 		},
+< 
+< 		{
+< 			.group = LIB3270_ACTION_GROUP_NONE,
+< 			.icon = "preferences-desktop-font",
+< 			.name = "dialog-font",
+< 			.label = N_("Font settings"),
+< 			.summary = N_("Select terminal font"),
+< 			.activate = fire_font_dialog
+< 		},
+< 
+< 		//
+< 		// Terminator
+< 		//
+392c358,359
+<  static int fire_accelerators_dialog(GtkWidget *widget, const struct _v3270_action G_GNUC_UNUSED(* action)) {
+---
+>  /*
+>  int fire_kp_add_action(GtkWidget *widget, const struct _v3270_action G_GNUC_UNUSED(* action)) {
+394,399c361,362
+< 	GtkWidget * dialog =
+< 		v3270_settings_popup_dialog(
+< 			v3270_accelerator_settings_new(),
+< 			widget,
+< 			TRUE
+< 		);
+---
+> 	if(v3270_get_toggle(widget,LIB3270_TOGGLE_KP_ALTERNATIVE))
+> 		return lib3270_nextfield(GTK_V3270(widget)->host);
+401,402c364
+< 	gtk_window_set_default_size(GTK_WINDOW(dialog),950,400);
+< 	gtk_widget_show_all(dialog);
+---
+> 	v3270_set_string(widget, "+");
+405d366
+<  }
+407,415d367
+<  static int fire_host_dialog(GtkWidget *widget, const struct _v3270_action G_GNUC_UNUSED(* action)) {
+< 	gtk_widget_show_all(
+< 		v3270_settings_popup_dialog(
+< 			v3270_host_settings_new(),
+< 			widget,
+< 			TRUE
+< 		)
+< 	);
+< 	return 0;
+418,427c370
+<  static int fire_color_dialog(GtkWidget *widget, const struct _v3270_action G_GNUC_UNUSED(* action)) {
+< 	gtk_widget_show_all(
+< 		v3270_settings_popup_dialog(
+< 			v3270_color_settings_new(),
+< 			widget,
+< 			FALSE
+< 		)
+< 	);
+< 	return 0;
+<  }
+---
+>  int fire_kp_sub_action(GtkWidget *widget, const struct _v3270_action G_GNUC_UNUSED(* action)) {
+429,438c372,373
+<  static int fire_clipboard_dialog(GtkWidget *widget, const struct _v3270_action G_GNUC_UNUSED(* action)) {
+< 	gtk_widget_show_all(
+< 		v3270_settings_popup_dialog(
+< 			v3270_clipboard_settings_new(),
+< 			widget,
+< 			FALSE
+< 		)
+< 	);
+< 	return 0;
+<  }
+---
+> 	if(v3270_get_toggle(widget,LIB3270_TOGGLE_KP_ALTERNATIVE))
+> 		return lib3270_previousfield(GTK_V3270(widget)->host);
+440c375
+<  static int fire_font_dialog(GtkWidget *widget, const struct _v3270_action G_GNUC_UNUSED(* action)) {
+---
+> 	v3270_set_string(widget, "-");
+442,449d376
+< 	GtkWidget * dialog =
+< 		v3270_settings_popup_dialog(
+< 			v3270_font_settings_new(),
+< 			widget,
+< 			TRUE
+< 		);
+< 	gtk_window_set_default_size(GTK_WINDOW(dialog),950,400);
+< 	gtk_widget_show_all(dialog);
+451,453d377
+<  }
+< 
+<  static int fire_copy_accelerator(GtkWidget *widget, const V3270_ACTION * action) {
+455,488d378
+< 	v3270_clipboard_set(
+< 		widget,
+< 		(action->flags & 0x0F),
+< 		(action->flags & V3270_ACTION_FLAG_CUT) != 0
+< 	);
+< 
+< 	return EINVAL;
+<  }
+< 
+<  static int fire_paste_accelerator(GtkWidget *widget, const V3270_ACTION * action) {
+< 
+< 	switch((int) action->flags)
+< 	{
+< 	case 0:	// Default paste.
+< 		v3270_clipboard_get_from_url(widget,NULL);
+< 		break;
+< 
+< 	case 1:	// Text paste.
+< 		v3270_clipboard_get_from_url(widget,"text://");
+< 		break;
+< 
+< 	case 2: // File paste.
+< 		v3270_clipboard_get_from_url(widget,"file://");
+< 		break;
+< 
+< 	case 3: // screen paste.
+< 		v3270_clipboard_get_from_url(widget,"screen://");
+< 		break;
+< 
+< 	default:
+< 		g_warning("Unexpected paste flags %u",(unsigned int) action->flags);
+< 	}
+< 
+< 	return 0;
+489a380
+> */
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/actions.c
+34d33
+<  #include <v3270/tools.h>
+75c74
+< 		gtk_dialog_set_toplevel(dialog,widget);
+---
+>         gtk_window_set_transient_for(GTK_WINDOW(dialog),GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/callbacks.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/callbacks.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,19
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+>  *
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+6,9c21
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+---
+>  * Este programa está nomeado como - e possui - linhas de código.
+11,14c23,26
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+78,79c88
+< 
+< struct update_message_data
+---
+> static gboolean bg_update_message(H3270 *session)
+81,87c90
+< 	H3270 *hSession;
+< 	LIB3270_MESSAGE message;
+< };
+< 
+< static gboolean bg_update_message(struct update_message_data *data)
+< {
+< 	v3270 *terminal = (v3270 *) lib3270_get_user_data(data->hSession);
+---
+> 	v3270 *terminal = (v3270 *) lib3270_get_user_data(session);
+92c95
+< 		(gint) data->message
+---
+> 		(gint) lib3270_get_program_message(session)
+95c98
+< 	g_free(data);
+---
+>  	//trace("-----B %s %p",__FUNCTION__, lib3270_get_user_data(session));
+99c102
+< static void update_message(H3270 *hSession, LIB3270_MESSAGE message)
+---
+> static void update_message(H3270 *session, G_GNUC_UNUSED LIB3270_MESSAGE id)
+101,105c104
+< 	struct update_message_data *data = g_new0(struct update_message_data,1);
+< 	data->hSession = hSession;
+< 	data->message = message;
+< 
+< 	g_idle_add((GSourceFunc) bg_update_message, data);
+---
+> 	g_idle_add((GSourceFunc) bg_update_message, session);
+279a279,293
+> /*
+> static void message(H3270 *session, LIB3270_NOTIFY type , const char *title, const char *message, const char *text)
+> {
+> 	LIB3270_POPUP popup = {
+> 		.type = type,
+> 		.title = title,
+> 		.summary = message,
+> 		.body = text
+> 	};
+> 
+> 	v3270_popup_dialog_show(GTK_WIDGET(lib3270_get_user_data(session)),&popup,0);
+> 
+> }
+> */
+> 
+314a329,349
+> /*
+> static void popup_handler(H3270 *session, LIB3270_NOTIFY type, const char *title, const char *msg, const char *fmt, va_list args)
+> {
+> 	LIB3270_POPUP popup = {
+> 		.type = type,
+> 		.title = title,
+> 		.summary = msg
+> 	};
+> 
+> 	g_autofree gchar * body = NULL;
+> 
+> 	if(fmt) {
+> 		body = g_strdup_vprintf(fmt,args);
+> 		popup.body = body;
+> 	}
+> 
+> 	v3270_popup_dialog_show(GTK_WIDGET(lib3270_get_user_data(session)),&popup,0);
+> 
+>  }
+>  */
+> 
+338a374,375
+>  	debug("----------------------> %d", (int) state);
+> 
+392,488d428
+<  struct _bg_reconnect
+<  {
+< 	H3270 *hSession;
+< 	int seconds;
+<  };
+< 
+<  static gboolean bg_reconnect(struct _bg_reconnect *cfg)
+<  {
+< 	lib3270_reconnect(cfg->hSession,cfg->seconds);
+< 	return G_SOURCE_REMOVE;
+<  }
+< 
+<  static int reconnect(H3270 *hSession,int seconds)
+<  {
+<  	struct _bg_reconnect *cfg = g_new0(struct _bg_reconnect, 1);
+< 
+<  	cfg->hSession = hSession;
+<  	cfg->seconds = seconds;
+< 
+< 	g_idle_add_full(G_PRIORITY_DEFAULT_IDLE,(GSourceFunc) bg_reconnect, cfg, g_free);
+< 
+<  	return 0;
+<  }
+< 
+<  struct _word_selected
+<  {
+< 	H3270 *hSession;
+< 	int offset;
+< 	int len;
+<  };
+< 
+<  static gboolean bg_word_selected(struct _word_selected *cfg)
+<  {
+<  	v3270 *terminal = (v3270 *) lib3270_get_user_data(cfg->hSession);
+< 
+<  	debug("%s(open-url=%d)",__FUNCTION__,terminal->open_url);
+< 
+< 	if(cfg->len > 3 && terminal->open_url) {
+< 
+< 		lib3270_autoptr(char) text = lib3270_get_string_at_address(cfg->hSession,cfg->offset,cfg->len,0);
+< 
+< 		if(text && (g_str_has_prefix(text,"http://") || g_str_has_prefix(text,"https://")) ) {
+< 
+< 			debug("Emitting '%s'", text);
+< 
+< 			guint response = 0;
+< 			v3270_signal_emit(
+< 				terminal,
+< 				V3270_SIGNAL_OPEN_URL,
+< 				text,
+< 				&response
+< 			);
+< 
+< 			debug("Response was: %d", (int) response);
+< 
+< 			if(response == 0) {
+< 				// No one has changed the response, take default action.
+< 				g_message("Opening '%s'",text);
+< #ifdef G_OS_WIN32
+< 				if(gtk_show_uri_on_window(
+< 								NULL,
+< 								text,
+< 								GDK_CURRENT_TIME,
+< 								NULL
+< 						)) {
+< 					v3270_unselect(GTK_WIDGET(terminal));
+< 				}
+< #else
+< 				if(gtk_show_uri_on_window(
+< 								GTK_WINDOW(gtk_widget_get_toplevel(GTK_WIDGET(terminal))),
+< 								text,
+< 								GDK_CURRENT_TIME,
+< 								NULL
+< 						)) {
+< 					v3270_unselect(GTK_WIDGET(terminal));
+< 				}
+< #endif // G_OS_WIN32
+< 			}
+< 
+< 		}
+< 
+< 	}
+< 
+< 	return G_SOURCE_REMOVE;
+<  }
+< 
+<  static void word_selected(H3270 *hSession, int from, int to) {
+< 
+<  	struct _word_selected *cfg = g_new0(struct _word_selected, 1);
+< 
+<  	cfg->hSession = hSession;
+<  	cfg->offset = from;
+<  	cfg->len = (to-from)+1;
+< 
+< 	g_idle_add_full(G_PRIORITY_DEFAULT_IDLE,(GSourceFunc) bg_word_selected, cfg, g_free);
+< 
+<  }
+544,545d483
+< 	cbk->reconnect			= reconnect;
+< 	cbk->word_selected		= word_selected;
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/drawing/oia.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/drawing/oia.c
+37a38
+>  #define GETTEXT_PACKAGE PACKAGE_NAME
+147c148
+< 	if(lib3270_get_toggle(host,LIB3270_TOGGLE_CURSOR_POS) && lib3270_is_connected(host))
+---
+> 	if(lib3270_get_toggle(host,LIB3270_TOGGLE_CURSOR_POS))
+259a261
+> //	cairo_text_extents_t extents;
+261a264
+> //	cairo_text_extents(cr,str,&extents);
+293,346d295
+< static void draw_boxed_char(cairo_t *cr, const GdkRectangle *rect, v3270FontInfo *metrics, const char *str) {
+< 
+< 	cairo_status_t		 		  status;
+< 	cairo_glyph_t				* glyphs			= NULL;
+< 	int							  num_glyphs		= 0;
+< 	cairo_text_cluster_t		* clusters			= NULL;
+< 	int							  num_clusters		= 0;
+< 	cairo_text_cluster_flags_t	  cluster_flags;
+< 	double x = ((double) rect->x);
+< 	double y = (rect->y+metrics->height);
+< 
+< 	status = cairo_scaled_font_text_to_glyphs(
+< 					metrics->scaled,
+< 					x+1,
+< 					y,
+< 					str, strlen(str),
+< 					&glyphs,
+< 					&num_glyphs,
+< 					&clusters,
+< 					&num_clusters,
+< 					&cluster_flags
+< 				);
+< 
+< 	if (status == CAIRO_STATUS_SUCCESS) {
+< 		cairo_show_text_glyphs(
+< 			cr,
+< 			str,
+< 			strlen(str),
+< 			glyphs,
+< 			num_glyphs,
+< 			clusters,
+< 			num_clusters,
+< 			cluster_flags
+< 		);
+< 	}
+< 
+< 	if(glyphs)
+< 		cairo_glyph_free(glyphs);
+< 
+< 	if(clusters)
+< 		cairo_text_cluster_free(clusters);
+< 
+< 	// https://www.cairographics.org/FAQ/#sharp_lines
+< 	cairo_set_line_width(cr, 1);
+< 	cairo_move_to(cr,rect->x + 0.5, rect->y + 0.5);
+< 	cairo_line_to(cr,rect->x + 0.5, rect->y + rect->height + 0.5);
+< 	cairo_line_to(cr,rect->x + rect->width + 0.5, rect->y + rect->height + 0.5);
+< 	cairo_line_to(cr,rect->x + rect->width + 0.5, rect->y + 0.5);
+< 	cairo_close_path(cr);
+< 
+< 	cairo_stroke(cr);
+< 
+< }
+< 
+348a298,299
+>  	gchar str = ' ';
+> 
+352d302
+< 	cairo_stroke(cr);
+354a305,306
+> 	cairo_rectangle(cr, rect->x, rect->y, rect->width, rect->height);
+> 	cairo_stroke(cr);
+356,358c308
+< 	//cairo_rectangle(cr, rect->x, rect->y, rect->width, rect->height);
+< 
+<  	if(lib3270_get_oia_box_solid(host))
+---
+> 	if(lib3270_get_oia_box_solid(host))
+362d311
+< 		cairo_stroke(cr);
+366d314
+< 	const gchar *str = " ";
+368c316
+< 		str = "N";
+---
+> 		str = 'N';
+370c318
+< 		str = "S";
+---
+> 		str = 'S';
+372,379c320
+< 		str = "?";
+< 
+< 	draw_boxed_char(
+< 		cr,
+< 		rect,
+< 		metrics,
+< 		str
+< 	);
+---
+> 		str = '?';
+381c322
+< //	draw_centered_char(cr,metrics,rect->x,rect->y,str[0]);
+---
+> 	draw_centered_char(cr,metrics,rect->x,rect->y,str);
+614a556,558
+> // v3270_draw_oia(cr, terminal->host, rect.y, cols, &terminal->font, terminal->color,terminal->oia_rect);
+> // void v3270_draw_oia(cairo_t *cr, H3270 *host, int row, int cols, v3270FontInfo *metrics, GdkRGBA *color, GdkRectangle *rect)
+> 
+670,686d613
+< 	{
+< 		GdkRectangle rect = {
+< 			.x = lCol,
+< 			.y = row,
+< 			.width = terminal->font.width+2,
+< 			.height = terminal->font.spacing.value
+< 		};
+< 
+< 		draw_boxed_char(
+< 			cr,
+< 			&rect,
+< 			&terminal->font,
+< 			"4"
+< 		);
+< 	}
+< 
+< 	/*
+692d618
+< 	*/
+706,710d631
+< 	//terminal->oia.rect[V3270_OIA_CONNECTION].x = lCol;
+< 	//terminal->oia.rect[V3270_OIA_CONNECTION].y = row;
+< 	//terminal->oia.rect[V3270_OIA_CONNECTION].width  = terminal->font.width;
+< 	//terminal->oia.rect[V3270_OIA_CONNECTION].height = terminal->font.spacing.value;
+< 
+713c634
+< 	terminal->oia.rect[V3270_OIA_CONNECTION].width = terminal->font.width+2;
+---
+> 	terminal->oia.rect[V3270_OIA_CONNECTION].width  = terminal->font.width+3;
+715d635
+< 
+732a653
+> //	v3270_draw_ssl_status(cr,terminal->host,&terminal->font,terminal->color,terminal->oia.rect+V3270_OIA_SSL);
+762a684,686
+> #ifdef DEBUG
+> 	cairo_set_source_rgb(cr,0.1,0.1,0.1);
+> #else
+763a688,689
+> #endif
+> 
+797a724,725
+> 	cairo_t 		* cr;
+> 	GdkRectangle	* rect;
+799c727,728
+< 	if(widget->surface) {
+---
+> 	if(!widget->surface)
+> 		return;
+801,802c730
+< 		GdkRectangle	* rect;
+< 		cairo_t 		* cr	= v3270_oia_set_update_region(widget,&rect,V3270_OIA_MESSAGE);
+---
+> 	cr = v3270_oia_set_update_region(widget,&rect,V3270_OIA_MESSAGE);
+804,805c732
+< 		draw_status_message(cr,id,&widget->font,widget->color,rect);
+< 		cairo_destroy(cr);
+---
+> 	draw_status_message(cr,id,&widget->font,widget->color,rect);
+807c734
+< 		v3270_queue_draw_area(GTK_WIDGET(widget),rect->x,rect->y,rect->width,rect->height);
+---
+>     cairo_destroy(cr);
+809c736
+< 	}
+---
+> 	v3270_queue_draw_area(GTK_WIDGET(widget),rect->x,rect->y,rect->width,rect->height);
+874c801
+< 	if(lib3270_get_toggle(session,LIB3270_TOGGLE_CURSOR_POS) && lib3270_is_connected(session))
+---
+> 	if(lib3270_get_toggle(session,LIB3270_TOGGLE_CURSOR_POS))
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/font/properties.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/font/properties.c
+139c139
+< 		g_message(invalid_font_messages[0],family_name);
+---
+> 		g_message(invalid_font_messages[rc],family_name);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/iocallback.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/iocallback.c
+148a149,150
+> //	return callback(hSession,parm);
+> 
+150a153,154
+> //	trace("%s starts -------------------------------------", __FUNCTION__);
+> 
+176c180
+< 	static const LIB3270_IO_CONTROLLER hdl =
+---
+> 	static LIB3270_IO_CONTROLLER hdl =
+178c182
+< 		.sz = sizeof(LIB3270_IO_CONTROLLER),
+---
+> 		sizeof(LIB3270_IO_CONTROLLER),
+180,181c184,185
+< 		.AddTimer = static_AddTimer,
+< 		.RemoveTimer = static_RemoveTimer,
+---
+> 		static_AddTimer,
+> 		static_RemoveTimer,
+183,190c187,194
+< 		.add_poll = static_AddSource,
+< 		.remove_poll = static_RemoveSource,
+< 		.set_poll_state = static_SetSourceState,
+< 
+< 		.Wait = static_Sleep,
+< 		.event_dispatcher = static_RunPendingEvents,
+< 		.ring_bell = beep,
+< 		.run_task = static_RunTask
+---
+> 		static_AddSource,
+> 		static_RemoveSource,
+> 		static_SetSourceState,
+> 
+> 		static_Sleep,
+> 		static_RunPendingEvents,
+> 		beep,
+> 		static_RunTask
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/keyboard/accelerator.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/keyboard/accelerator.c
+74,75c74,83
+< 	// It's the same key and mods?
+< 	if(accel->key != keyval || accel->mods != mods)
+---
+>  	// Problems:
+> 
+> //	debug("%s: keys: %08x %08x",__FUNCTION__,accel->key,keyval);
+> 
+> 	// It's the same key?
+> 	if(accel->key != keyval)
+> 	{
+> 		g_autofree gchar * acckey = gtk_accelerator_name(accel->key,accel->mods);
+> 		g_autofree gchar * qkey = gtk_accelerator_name(keyval,mods);
+> //		debug("%s: Rejected by key %08x %08x (%s %s)",__FUNCTION__,accel->key,keyval,acckey,qkey);
+76a85
+> 	}
+78a88,100
+>  	if(accel->mods == mods)
+> 		return TRUE;
+> 
+> /*
+> #ifdef DEBUG
+> 	{
+> 		g_autofree gchar * acckey = gtk_accelerator_name(accel->key,accel->mods);
+> 		g_autofree gchar * qkey = gtk_accelerator_name(keyval,mods);
+> //		debug("%s: accel=%s (%0u/%08x) query=%s (%u/%08x) xor=%08x and=%08x",__FUNCTION__,acckey,accel->key,accel->mods,qkey,keyval,mods,(accel->mods^mods),(accel->mods & mods));
+> 	}
+> #endif // DEBUG
+> */
+> 
+141c163
+< //		debug("%s","V3270_ACCELERATOR_TYPE_LIB3270_ACTION");
+---
+> 		debug("%s","V3270_ACCELERATOR_TYPE_LIB3270_ACTION");
+146c168
+< //		debug("%s","V3270_ACCELERATOR_TYPE_LIB3270_TOGGLE");
+---
+> 		debug("%s","V3270_ACCELERATOR_TYPE_LIB3270_TOGGLE");
+151c173
+< //		debug("%s","V3270_ACCELERATOR_TYPE_INTERNAL");
+---
+> 		debug("%s","V3270_ACCELERATOR_TYPE_INTERNAL");
+158c180
+< //	debug("%s=%s",__FUNCTION__,description);
+---
+> 	debug("%s=%s",__FUNCTION__,description);
+220d241
+< 	/*
+249c270
+< 	*/
+---
+> 
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/keyboard/init.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/keyboard/init.c
+132a133,134
+> //					debug("%s=%s",actions[ix].name,keys[key]);
+> 
+229,230c231
+< 			switch(key) {
+< 			case 7:
+---
+> 			if(key == 7) {
+232,234c233
+< 				break;
+< 
+< 			case 8:
+---
+> 			} else if(key == 8) {
+236c235,237
+< 				break;
+---
+> 			}
+> 
+> 		}
+238,244c239,261
+< 			case 19:
+< 				accelerators = g_slist_prepend(accelerators,v3270_pfkey_accelerator_new(key,"<Shift>Page_Up"));
+< 				break;
+< 
+< 			case 20:
+< 				accelerators = g_slist_prepend(accelerators,v3270_pfkey_accelerator_new(key,"<Shift>Page_Down"));
+< 				break;
+---
+> 	}
+> 	/*
+> 	{
+> 		static const struct
+> 		{
+> 			guint 				  key;
+> 			GdkModifierType		  mods;
+> 			const gchar			* name;
+> 			const gchar			* description;
+> 			unsigned short		  pfkey;
+> 		} accels[] =
+> 		{
+> 			{
+> 				.key = GDK_Page_Up,
+> 				.name = "page-up",
+> 				.description = N_( "Previous page" ),
+> 				.pfkey = 7
+> 			},
+> 			{
+> 				.key = GDK_Page_Down,
+> 				.name = "page-down",
+> 				.description = N_( "Next page" ),
+> 				.pfkey = 8
+245a263,280
+> 		};
+> 
+>         for(ix = 0 ; ix < G_N_ELEMENTS(accels); ix++)
+> 		{
+> 			V3270PFKeyAccelerator * accelerator = g_new0(V3270PFKeyAccelerator,1);
+> 
+> 			accelerator->keycode			= accels[ix].pfkey;
+> 			accelerator->name				= accels[ix].name;
+> 			accelerator->description		= accels[ix].description;
+> 			accelerator->parent.type		= V3270_ACCELERATOR_TYPE_PFKEY;
+> 			accelerator->parent.key			= accels[ix].key;
+> 			accelerator->parent.mods		= accels[ix].mods;
+> 			accelerator->parent.arg			= (gconstpointer) accelerator;
+> 			accelerator->parent.activate	= G_CALLBACK(fire_pfkey_action);
+> 
+> 			debug("%s Accelerator(%s)=%p pfkey=%d",__FUNCTION__,accelerator->name,accelerator,accelerator->keycode);
+> 
+> 			widget->accelerators = g_slist_prepend(widget->accelerators,accelerator);
+249a285
+> 	*/
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/keyboard/keyfile.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/keyboard/keyfile.c
+109c109
+< 		g_warning("Can't parse accelerator '%s' with keys '%s'",name,keys);
+---
+> 		g_warning("Can't parse accelerator %s",name);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/keyfile.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/keyfile.c
+365a366,369
+> 	// Load Toggles
+> 	for(ix = 0; ix < G_N_ELEMENTS(klass->properties.toggle); ix++)
+> 		load_by_pspec(widget,klass->properties.toggle[ix],key_file,group_name);
+> 
+377,380d380
+< 
+< 	// Load Toggles
+< 	for(ix = 0; ix < G_N_ELEMENTS(klass->properties.toggle); ix++)
+< 		load_by_pspec(widget,klass->properties.toggle[ix],key_file,group_name);
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal: macos
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/marshal lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/marshal
+2c2
+< VOID:VOID,ENUM,BOOLEAN,STRING
+---
+> VOID:VOID,ENUM,BOOLEAN,POINTER
+5c5
+< VOID:STRING
+---
+> VOID:POINTER
+7c7
+< VOID:VOID,UINT,STRING
+---
+> VOID:VOID,UINT,POINTER
+9c9
+< UINT:STRING
+---
+> UINT:POINTER
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/properties/get.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/properties/get.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,21
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+>  *
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+>  *
+>  * Este programa está nomeado como properties.c e possui - linhas de código.
+6,14c23,26
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+<  *
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+31a42,47
+> 	/*
+>  	if(prop_id >= klass->properties.type.responses)
+> 	{
+> 		g_value_set_int(value,(int) window->responses[prop_id - klass->properties.type.responses]);
+> 	}
+>  	else */
+138,141d153
+< 			break;
+< 
+< 		case V3270_PROPERTY_OPEN_URL:
+< 			g_value_set_boolean(value,window->open_url != 0);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/properties/init.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/properties/init.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,19
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+>  *
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+6,9c21
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+---
+>  * Este programa está nomeado como properties.c e possui - linhas de código.
+11,14c23,26
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+163,178d172
+< 	// Open URL
+< 	spec =
+< 		g_param_spec_boolean(
+< 			"open-url",
+< 			"open-url",
+< 			_( "Emit signal 'open-url' when an http:// or https:// string is selected by action 'word-select'" ),
+< 			FALSE,
+< 			G_PARAM_READABLE|G_PARAM_WRITABLE
+< 		);
+< 
+< 	g_object_class_install_property(
+< 		gobject_class,
+< 		V3270_PROPERTY_OPEN_URL,
+< 		spec
+< 	);
+< 
+382c376
+< 		// debug("Property %u=%s (String)",(unsigned int) klass->properties.type.str + ix, str_props[ix].name);
+---
+> //		debug("Property %u=%s (String)",(unsigned int) klass->properties.type.str + ix, str_props[ix].name);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/properties/private.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/properties/private.h
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,15
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+6,14c17,26
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+<  *
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+>  *
+>  * Este programa está nomeado como properties.c e possui - linhas de código.
+>  *
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+20,22c30
+<  #pragma once
+< 
+<  #ifdef WIN32
+---
+> #ifdef WIN32
+26c34
+<  #endif // WIN32
+---
+> #endif // WIN32
+55d62
+< 	V3270_PROPERTY_OPEN_URL				= 14,	///< @brief Open URL when 'word' selected.
+57c64
+< 	V3270_PROPERTY_DYNAMIC				= 15	///< @brief Id of the first LIB3270 internal property.
+---
+> 	V3270_PROPERTY_DYNAMIC				= 14	///< @brief Id of the first LIB3270 internal property.
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/properties/set.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/properties/set.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,19
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+>  *
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+6,14c21,26
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+<  *
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Este programa está nomeado como properties.c e possui - linhas de código.
+>  *
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+134,137d143
+< 			break;
+< 
+< 		case V3270_PROPERTY_OPEN_URL:
+< 			GTK_V3270(object)->open_url = (g_value_get_boolean(value) ? 1 : 0);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/security.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/security.c
+32a33
+>  #define GETTEXT_PACKAGE PACKAGE_NAME
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/widget.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/widget.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,21
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+>  *
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+>  *
+>  * Este programa está nomeado como - e possui - linhas de código.
+6,9c23
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+---
+>  * Contatos:
+11,14c25,26
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+22c32
+<  #include <marshal/terminal.h>
+---
+>  #include "marshal.h"
+28d37
+<  #include <lib3270/properties.h>
+56d64
+< 		"open-url",
+72,73d79
+< 		"logfile",
+< 		"tracefile",
+180,191d185
+< static gboolean delayed_cleanup(H3270 *hSession) {
+< 
+< 	if(lib3270_get_task_count(hSession))
+< 		return G_SOURCE_CONTINUE;
+< 
+< 	g_message("Delayed cleanup complete");
+< 	lib3270_free(hSession);
+< 
+< 	return G_SOURCE_REMOVE;
+< 
+< }
+< 
+198,218d191
+< 	if(terminal->host) {
+< 		// Release session
+< 		debug("%s: Cleaning 3270 session",__FUNCTION__);
+< 		lib3270_disconnect(terminal->host);
+< 
+< 		debug("Task count: %u",lib3270_get_task_count(terminal->host));
+< 		if(lib3270_get_task_count(terminal->host))
+< 		{
+< 			// Should wait.
+< 			g_message("TN3270 session is busy, delaying cleanup");
+< 			lib3270_set_user_data(terminal->host,NULL);
+< 			g_idle_add((GSourceFunc) delayed_cleanup,terminal->host);
+< 		}
+< 		else
+< 		{
+< 			lib3270_session_free(terminal->host);
+< 		}
+< 
+< 		terminal->host = NULL;
+< 	}
+< 
+223a197,202
+> 	if(terminal->host) {
+> 		// Release session
+> 		lib3270_session_free(terminal->host);
+> 		terminal->host = NULL;
+> 	}
+> 
+365c344
+< 						v3270_VOID__VOID_ENUM_BOOLEAN_STRING,
+---
+> 						v3270_VOID__VOID_ENUM_BOOLEAN_POINTER,
+392c371
+< 						v3270_VOID__STRING,
+---
+> 						v3270_VOID__POINTER,
+419c398
+< 						v3270_VOID__VOID_UINT_STRING,
+---
+> 						v3270_VOID__VOID_UINT_POINTER,
+519,520c498,499
+< 						v3270_UINT__STRING,
+< 						G_TYPE_UINT, 1, G_TYPE_STRING);
+---
+> 						v3270_UINT__POINTER,
+> 						G_TYPE_UINT, 1, G_TYPE_POINTER);
+528,538c507,508
+< 						v3270_UINT__STRING,
+< 						G_TYPE_UINT, 1, G_TYPE_STRING);
+< 
+< 	v3270_widget_signal[V3270_SIGNAL_OPEN_URL] =
+< 		g_signal_new(	I_("open-url"),
+< 						G_OBJECT_CLASS_TYPE (gobject_class),
+< 						G_SIGNAL_RUN_LAST,
+< 						0,
+< 						NULL, NULL,
+< 						v3270_UINT__STRING,
+< 						G_TYPE_UINT, 1, G_TYPE_STRING);
+---
+> 						v3270_UINT__POINTER,
+> 						G_TYPE_UINT, 1, G_TYPE_POINTER);
+612,615d581
+< #ifdef DEBUG
+< 	lib3270_testpattern(widget->host);
+< #endif // DEBUG
+< 
+634,636d599
+< 
+< 		debug("%s: disconnecting", __FUNCTION__);
+< 		lib3270_disconnect(terminal->host);
+876a840,843
+> 	gdk_window_set_cursor(
+> 		window,
+> 		GTK_V3270_GET_CLASS(terminal)->cursors[LIB3270_POINTER_WAITING]
+> 	);
+878,885c845
+< 	if(window) {
+< 
+< 		gdk_window_set_cursor(
+< 			window,
+< 			GTK_V3270_GET_CLASS(terminal)->cursors[LIB3270_POINTER_WAITING]
+< 		);
+< 
+< 		gdk_display_sync(gtk_widget_get_display(GTK_WIDGET(terminal)));
+---
+> 	gdk_display_sync(gtk_widget_get_display(GTK_WIDGET(terminal)));
+887,888c847,848
+< 		terminal->freeze = 0;
+< 		g_signal_emit(terminal,v3270_widget_signal[V3270_SIGNAL_SAVE_SETTINGS], 0, FALSE);
+---
+> 	terminal->freeze = 0;
+> 	g_signal_emit(terminal,v3270_widget_signal[V3270_SIGNAL_SAVE_SETTINGS], 0, FALSE);
+890,900c850,853
+< 		gdk_window_set_cursor(
+< 			window,
+< 			NULL
+< 		);
+< 
+< 	} else {
+< 
+< 		terminal->freeze = 0;
+< 		g_signal_emit(terminal,v3270_widget_signal[V3270_SIGNAL_SAVE_SETTINGS], 0, FALSE);
+< 
+< 	}
+---
+> 	gdk_window_set_cursor(
+> 		window,
+> 		NULL
+> 	);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/windows/init.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/terminal/windows/init.c
+42a43,44
+>     debug("%s starts",__FUNCTION__);
+> 
+45a48
+> 		debug("%s: DLL_PROCESS_ATTACH",__FUNCTION__);
+47c50
+< 			char lpFilename[MAX_PATH+1];
+---
+> 			char lpFilename[4096];
+50,51c53
+< 
+< 			DWORD szPath = GetModuleFileName(hInstance,lpFilename,MAX_PATH);
+---
+> 			DWORD szPath = GetModuleFileName(hInstance,lpFilename,4095);
+55,63c57,58
+< 			if(ptr) {
+<                 ptr[0] = 0;
+< 
+<                 ptr = strrchr(lpFilename,'\\');
+<                 if(ptr && !(strcasecmp(ptr,"\\bin") && strcasecmp(ptr,"\\lib"))) {
+<                         *ptr = 0;
+<                 }
+< 
+< 			}
+---
+> 			if(ptr)
+> 				ptr[1] = 0;
+65c60
+< 			strncat(lpFilename,"\\locale",MAX_PATH);
+---
+> 			strncat(lpFilename,"locale",4095);
+74a70
+> 		debug("%s: DLL_PROCESS_DETACH",__FUNCTION__);
+78a75
+>     debug("%s ends",__FUNCTION__);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/testprogram/toolbar.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/testprogram/toolbar.c
+38d37
+<  #include <v3270/tools.h>
+52a52,70
+>  /*
+>  static void host_clicked(GtkButton G_GNUC_UNUSED(*button), GtkWidget *terminal)
+>  {
+> 	v3270_select_host(terminal);
+>  }
+>  */
+> 
+>  /*
+>  static void font_clicked(GtkButton G_GNUC_UNUSED(*button), GtkWidget *terminal)
+>  {
+> 	v3270_settings_popup_dialog(
+> 		v3270_font_settings_new(),
+> 		terminal,
+> 		FALSE
+> 	);
+> 
+>  }
+>  */
+> 
+72c90
+< 	gtk_dialog_set_toplevel(dialog,terminal);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(dialog),GTK_WINDOW(gtk_widget_get_toplevel(terminal)));
+200a219,223
+>  static void color_clicked(GtkButton G_GNUC_UNUSED(*button), GtkWidget *terminal)
+>  {
+> 	v3270_edit_color_table(terminal);
+>  }
+> 
+226,231c249,254
+< 		{ "media-playback-start",		G_CALLBACK(connect_clicked),		"Connect to host"  				},
+< 		{ "media-playback-stop",		G_CALLBACK(disconnect_clicked),		"Disconnect from host"  		},
+< 		{ "document-print",				G_CALLBACK(print_clicked),			"Print screen contents"			},
+< 		{ "drive-harddisk",				G_CALLBACK(ft_clicked),				"Open file transfer dialog"		},
+< 		{ "edit-copy",					G_CALLBACK(copy_clicked),			"Copy data"						},
+< 		{ "edit-paste",					G_CALLBACK(paste_clicked),			"Paste data"					},
+---
+> 		{ "gtk-connect",				G_CALLBACK(connect_clicked),		"Connect to host"  				},
+> 		{ "gtk-disconnect",				G_CALLBACK(disconnect_clicked),		"Disconnect from host"  		},
+> 		{ "gtk-print",					G_CALLBACK(print_clicked),			"Print screen contents"			},
+> 		{ "gtk-harddisk",				G_CALLBACK(ft_clicked),				"Open file transfer dialog"		},
+> 		{ "gtk-copy",					G_CALLBACK(copy_clicked),			"Copy data"						},
+> 		{ "gtk-paste",					G_CALLBACK(paste_clicked),			"Paste data"					},
+240c263
+< //		{ "gtk-select-color",			G_CALLBACK(color_clicked),			"Edit or change color scheme"	},
+---
+> 		{ "gtk-select-color",			G_CALLBACK(color_clicked),			"Edit or change color scheme"	},
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/tools: dialog.c
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/tools/entry.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/tools/entry.c
+104,105c104
+< 	if(descr->pattern) {
+< 
+---
+> 	{
+142a142,149
+>  static void release_ptr(GtkWidget G_GNUC_UNUSED(*object), gpointer ptr) {
+>  	g_free(ptr);
+>  }
+> 
+>  LIB3270_EXPORT void gtk_widget_bind_ptr(GtkWidget *widget, gpointer ptr) {
+> 	g_signal_connect(widget,"destroy",G_CALLBACK(release_ptr),ptr);
+>  }
+> 
+152,156c159
+< 	gsize szEntry = sizeof(struct FileEntry) + strlen(title) + 4;
+< 
+< 	if(pattern) {
+< 		szEntry += (strlen(pattern) + strlen(name));
+< 	}
+---
+> 	gsize szEntry = sizeof(struct FileEntry) + strlen(title) + strlen(pattern) + strlen(name) + 4;
+179,181c182,183
+< 	if(pattern) {
+< 		entry->pattern	= entry->title + strlen(entry->title) +1;
+< 		strcpy((char *) entry->pattern,pattern);
+---
+> 	entry->pattern	= entry->title + strlen(entry->title) +1;
+> 	strcpy((char *) entry->pattern,pattern);
+183,185c185,186
+< 		entry->name 	= entry->pattern + strlen(entry->pattern) + 1;
+< 		strcpy((char *) entry->name,name);
+< 	}
+---
+> 	entry->name 	= entry->pattern + strlen(entry->pattern) + 1;
+> 	strcpy((char *) entry->name,name);
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/tools: widget.c
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/exec.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/exec.c
+1,2d0
+< /* SPDX-License-Identifier: LGPL-3.0-or-later */
+< 
+4c2,15
+<  * Copyright (C) 2008 Banco do Brasil S.A.
+---
+>  * "Software pw3270, desenvolvido com base nos códigos fontes do WC3270  e X3270
+>  * (Paul Mattes Paul.Mattes@usa.net), de emulação de terminal 3270 para acesso a
+>  * aplicativos mainframe. Registro no INPI sob o nome G3270.
+>  *
+>  * Copyright (C) <2008> <Banco do Brasil S.A.>
+>  *
+>  * Este programa é software livre. Você pode redistribuí-lo e/ou modificá-lo sob
+>  * os termos da GPL v.2 - Licença Pública Geral  GNU,  conforme  publicado  pela
+>  * Free Software Foundation.
+>  *
+>  * Este programa é distribuído na expectativa de  ser  útil,  mas  SEM  QUALQUER
+>  * GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou  de  ADEQUAÇÃO
+>  * A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para
+>  * obter mais detalhes.
+6,9c17,19
+<  * This program is free software: you can redistribute it and/or modify
+<  * it under the terms of the GNU Lesser General Public License as published
+<  * by the Free Software Foundation, either version 3 of the License, or
+<  * (at your option) any later version.
+---
+>  * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este
+>  * programa; se não, escreva para a Free Software Foundation, Inc., 51 Franklin
+>  * St, Fifth Floor, Boston, MA  02110-1301  USA
+11,14c21,26
+<  * This program is distributed in the hope that it will be useful,
+<  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+<  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<  * GNU General Public License for more details.
+---
+>  * Este programa está nomeado como - e possui - linhas de código.
+>  *
+>  * Contatos:
+>  *
+>  * perry.werneck@gmail.com	(Alexandre Perry de Souza Werneck)
+>  * erico.mendonca@gmail.com	(Erico Mascarenhas Mendonça)
+16,17d27
+<  * You should have received a copy of the GNU Lesser General Public License
+<  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+27d36
+<  #include <v3270/actions.h>
+302,304c311,312
+< 	{
+< 		gboolean handled = FALSE;
+< 		gchar * args = cmdline;
+---
+> 	gboolean handled = FALSE;
+> 	gchar * args = cmdline;
+306,307c314,315
+< 		while(*args && !g_ascii_isspace(*args))
+< 			args++;
+---
+> 	while(*args && !g_ascii_isspace(*args))
+> 		args++;
+309,310c317,318
+< 		if(*args)
+< 			*(args++) = 0;
+---
+> 	if(*args)
+> 		*(args++) = 0;
+312c320
+< 		v3270_trace_signal_emit(GTK_WIDGET(t), V3270_TRACE_SIGNAL_COMMAND, cmdline, args, &handled);
+---
+> 	v3270_trace_signal_emit(GTK_WIDGET(t), V3270_TRACE_SIGNAL_COMMAND, cmdline, args, &handled);
+314,328c322,323
+< 		if(handled)
+< 			return 0;
+< 	}
+< 
+< 	// Check for v3270 actions
+< 	{
+< 		const V3270_ACTION * action = v3270_get_actions();
+< 
+< 		while(action->name) {
+< 			if(!g_ascii_strcasecmp(action->name,cmdline)) {
+< 				return action->activate(terminal,action);
+< 			}
+< 			action++;
+< 		}
+< 	}
+---
+> 	if(handled)
+> 		return 0;
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/private.h lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/private.h
+30c30
+<  #pragma once
+---
+> #ifndef PRIVATE_H_INCLUDED
+32c32
+<  #include <config.h>
+---
+> 	#include <config.h>
+34c34
+<  #include <gtk/gtk.h>
+---
+> 	#include <gtk/gtk.h>
+36d35
+<  #ifndef ENABLE_NLS
+38c37
+<  #endif // ENABLE_NLS
+---
+> 	#define GETTEXT_PACKAGE PACKAGE_NAME
+40,41c39,40
+<  #include <libintl.h>
+<  #include <glib/gi18n-lib.h>
+---
+> 	#include <libintl.h>
+> 	#include <glib/gi18n-lib.h>
+43,44c42,43
+<  #include <v3270.h>
+<  #include <v3270/trace.h>
+---
+> 	#include <v3270.h>
+> 	#include <v3270/trace.h>
+46,62c45,47
+<  #include <lib3270.h>
+<  #include <lib3270/log.h>
+<  #include <lib3270/trace.h>
+< 
+<  /// @brief V3270 Trace Signal list
+<  enum V3270_TRACE_SIGNAL
+<  {
+< 	V3270_TRACE_SIGNAL_COMMAND,
+< 
+< 	V3270_TRACE_SIGNAL_LAST
+<  };
+< 
+<  G_GNUC_INTERNAL H3270				* v3270_trace_get_session(GtkWidget *widget);
+<  G_GNUC_INTERNAL GtkWidget			* v3270_trace_get_terminal(GtkWidget *widget);
+<  G_GNUC_INTERNAL GtkTextBuffer		* v3270_trace_get_text_buffer(GtkWidget *widget);
+<  G_GNUC_INTERNAL GtkScrolledWindow	* v3270_trace_get_scrolled_window(GtkWidget *widget);
+<  G_GNUC_INTERNAL void				  v3270_trace_signal_emit(gpointer instance, enum V3270_TRACE_SIGNAL signal_id, ...);
+---
+> 	#include <lib3270.h>
+> 	#include <lib3270/log.h>
+> 	#include <lib3270/trace.h>
+63a49,70
+> 	/// @brief V3270 Trace Signal list
+> 	enum V3270_TRACE_SIGNAL
+> 	{
+> 		V3270_TRACE_SIGNAL_COMMAND,
+> 
+> 		V3270_TRACE_SIGNAL_LAST
+> 	};
+> 
+> 	G_GNUC_INTERNAL H3270				* v3270_trace_get_session(GtkWidget *widget);
+> 	G_GNUC_INTERNAL GtkWidget			* v3270_trace_get_terminal(GtkWidget *widget);
+> 	G_GNUC_INTERNAL GtkTextBuffer		* v3270_trace_get_text_buffer(GtkWidget *widget);
+> 	G_GNUC_INTERNAL GtkScrolledWindow	* v3270_trace_get_scrolled_window(GtkWidget *widget);
+> 	G_GNUC_INTERNAL void				  v3270_trace_signal_emit(gpointer instance, enum V3270_TRACE_SIGNAL signal_id, ...);
+> 
+> 	G_BEGIN_DECLS
+> 
+> 
+> 	G_END_DECLS
+> 
+> 
+> 
+> #endif // PRIVATE_H_INCLUDED
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/text.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/text.c
+64,66d63
+< 	// Release reference from v3270_trace_append_text.
+<  	g_object_unref(cfg->widget);
+< 
+79,81d75
+< 
+<  	// Get reference to widget.
+<  	g_object_ref(cfg->widget);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/trace.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/trace.c
+46c46
+<  #include <marshal/trace.h>
+---
+>  #include "marshal.h"
+88,89c88,89
+< 		LIB3270_TRACE_HANDLER handler;
+< 		void *userdata;
+---
+> 			void (*handler)(H3270 *session, void *userdata, const char *fmt, va_list args);
+> 			void *userdata;
+100c100
+<  static int trace_handler(const H3270 *hSession, void *userdata, const char *message)
+---
+>  static void trace_handler(H3270 *hSession, void *userdata, const char *fmt, va_list args)
+102c102,104
+< 	g_autofree gchar * utftext	= g_convert_with_fallback(message,-1,"UTF-8",lib3270_get_display_charset(hSession),"?",NULL,NULL,NULL);
+---
+> 	g_autofree gchar *ptr		= g_strdup_vprintf(fmt,args);
+> 	g_autofree gchar * utftext	= g_convert_with_fallback(ptr,-1,"UTF-8",lib3270_get_display_charset(hSession),"?",NULL,NULL,NULL);
+> 
+104c106
+< 	return 0;
+---
+> 
+154d155
+< 		lib3270_set_toggle(trace->hSession,toggles[ix],0);
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/tracewindow.c lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/src/trace/tracewindow.c
+39d38
+<  #include <config.h>
+41d39
+<  #include <v3270/tools.h>
+43a42
+>  #define GETTEXT_PACKAGE PACKAGE_NAME
+93c92
+< 	gtk_dialog_set_toplevel(window,widget);
+---
+> 	gtk_window_set_transient_for(GTK_WINDOW(window),GTK_WINDOW(gtk_widget_get_toplevel(widget)));
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/v3270.cbp lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/v3270.cbp
+120,122d119
+< 		<Unit filename="src/dialogs/settings/popup.c">
+< 			<Option compilerVar="CC" />
+< 		</Unit>
+127,129d123
+< 		<Unit filename="src/dialogs/settings/url.c">
+< 			<Option compilerVar="CC" />
+< 		</Unit>
+206d199
+< 		<Unit filename="src/include/v3270/settings/url.h" />
+415,417d407
+< 		<Unit filename="src/tools/dialog.c">
+< 			<Option compilerVar="CC" />
+< 		</Unit>
+419,421d408
+< 			<Option compilerVar="CC" />
+< 		</Unit>
+< 		<Unit filename="src/tools/widget.c">
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win: ci-build.sh
+Only in lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win: configure.sh
+Only in lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win: install-cross.sh
+Only in lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win: PKGBUILD
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win/x86_32/mingw32-libv3270.spec lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win/x86_32/mingw32-libv3270.spec
+35c35
+< %define MINOR_VERSION %(echo %{version} | cut -d. -f2 | cut -d+ -f1)
+---
+> %define MINOR_VERSION %(echo %{version} | cut -d. -f2)
+51,53d50
+< Requires:		mingw32(libgdk_pixbuf-2.0-0.dll)
+< BuildRequires:	mingw32(pkg:gdk-pixbuf-2.0)
+< 
+56d52
+< BuildRequires:	libtool
+136c132
+< %_mingw32_find_lang libv3270-%{MAJOR_VERSION}.%{MINOR_VERSION} langfiles
+---
+> %_mingw32_find_lang libv3270 langfiles
+148,150d143
+< %{_mingw32_datadir}/%{_product}/colors.conf
+< %dir %{_mingw32_datadir}/%{_product}/remap
+< %{_mingw32_datadir}/%{_product}/remap/*.xml
+160a154,158
+> %{_mingw32_datadir}/%{_product}/colors.conf
+> 
+> %dir %{_mingw32_datadir}/%{_product}/remap
+> %{_mingw32_datadir}/%{_product}/remap/*.xml
+> 
+Only in source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win/x86_64: CHANGELOG
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win/x86_64/mingw64-libv3270.spec lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win/x86_64/mingw64-libv3270.spec
+18a19,27
+> 
+> %define __strip %{_mingw64_strip}
+> %define __objdump %{_mingw64_objdump}
+> %define _use_internal_dependency_generator 0
+> %define __find_requires %{_mingw64_findrequires}
+> %define __find_provides %{_mingw64_findprovides}
+> %define __os_install_post %{_mingw64_debug_install_post} \
+>                           %{_mingw64_install_post}
+> 
+26c35
+< %define MINOR_VERSION %(echo %{version} | cut -d. -f2 | cut -d+ -f1)
+---
+> %define MINOR_VERSION %(echo %{version} | cut -d. -f2)
+42,44d50
+< Requires:		mingw64(libgdk_pixbuf-2.0-0.dll)
+< BuildRequires:	mingw64(pkg:gdk-pixbuf-2.0)
+< 
+47d52
+< BuildRequires:	libtool
+63,66d67
+< %_mingw64_package_header_debug
+< 
+< BuildArch: noarch
+< 
+110d110
+< %_mingw64_debug_package
+132c132
+< %_mingw64_find_lang libv3270-%{MAJOR_VERSION}.%{MINOR_VERSION} langfiles
+---
+> %_mingw64_find_lang libv3270 langfiles
+144,148d143
+< %{_mingw64_datadir}/%{_product}/colors.conf
+< %dir %{_mingw64_datadir}/%{_product}/remap
+< %{_mingw64_datadir}/%{_product}/remap/*.xml
+< 
+< %exclude %{_mingw64_datadir}/*.changes
+158a154,157
+> %{_mingw64_datadir}/%{_product}/colors.conf
+> 
+> %dir %{_mingw64_datadir}/%{_product}/remap
+> %{_mingw64_datadir}/%{_product}/remap/*.xml
+diff -r source-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win/x86_64/_service lookaside-libv3270-5.4.tar.gz-extracted/libv3270-5.4/win/x86_64/_service
+5c5,6
+< 
+---
+>         <param name="changesgenerate">enable</param>
+> 		<param name="versionformat">@PARENT_TAG@</param>
+7,13d7
+< 
+< 		<param name="revision">develop</param>
+< 
+< 		<param name="changesgenerate">enable</param>
+< 		<param name="changesauthor">perry.werneck@gmail.com</param>
+<       
+< 		<param name="versionformat">@PARENT_TAG@+git%cd</param>
+15d8
+<       
+19c12
+< 	<!-- service name="extract_file">
+---
+> 	<service name="extract_file">
+22c15
+< 	</service -->
+---
+> 	</service>

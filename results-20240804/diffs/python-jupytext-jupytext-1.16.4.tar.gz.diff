@@ -1,0 +1,14 @@
+Source package : python-jupytext
+File name       : jupytext-1.16.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-jupytext/jupytext-1.16.4.tar.gz/sha512/fe55a97fbb6ef7c0b1919ab05e3459900fdec530d497aa15d4decdd509edec5f2844c83051a0dcb1e87e5b0349a0c3e0302832e0471dc435beb0ddf10f5e48ba/jupytext-1.16.4.tar.gz
+Source URL      : https://github.com/mwouts/jupytext/archive/v1.16.4/jupytext-1.16.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-jupytext-1.16.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 11438080
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-jupytext-1.16.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 11438080
+
+
+diff -r source-jupytext-1.16.4.tar.gz-extracted/jupytext-1.16.4/.git_archival.txt lookaside-jupytext-1.16.4.tar.gz-extracted/jupytext-1.16.4/.git_archival.txt
+4c4
+< ref-names: tag: v1.16.4
+---
+> ref-names: HEAD -> main, tag: v1.16.4

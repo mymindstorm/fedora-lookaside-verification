@@ -1,0 +1,10 @@
+Source package : rust-associative-cache
+File name       : associative-cache-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-associative-cache/associative-cache-2.0.0.crate/sha512/854f5130f286aaa76ffa2f4cbe27ca57c8220ec517c0d6fac46e5a505a3cb5fdc9ab60818db9f890b63ce2f44d243594d44747f7a87af9f304aaab3f4a4e8567/associative-cache-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/associative-cache/2.0.0/download#/associative-cache-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-associative-cache-2.0.0.crate: gzip compressed data, was "associative-cache-2.0.0.crate", max compression, original size modulo 2^32 79360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-associative-cache-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

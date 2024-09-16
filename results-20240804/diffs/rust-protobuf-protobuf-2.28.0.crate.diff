@@ -1,0 +1,10 @@
+Source package : rust-protobuf
+File name       : protobuf-2.28.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-protobuf/protobuf-2.28.0.crate/sha512/14e87f5e4039eb98d473055634102e7d8f79d294de0e04e0c0423dba6e34abbb28b1f94bc2d96ab16d3e02e770fe876b4c8c3af8835a43a8448514efd0b02312/protobuf-2.28.0.crate
+Source URL      : https://crates.io/api/v1/crates/protobuf/2.28.0/download#/protobuf-2.28.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-protobuf-2.28.0.crate: gzip compressed data, was "protobuf-2.28.0.crate", max compression, original size modulo 2^32 1239552
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-protobuf-2.28.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

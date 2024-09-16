@@ -1,0 +1,10 @@
+Source package : rust-krates
+File name       : krates-0.16.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-krates/krates-0.16.10.crate/sha512/98cbdfb1d04b7b35dfdb9a8f70dd2e8d4f6681f9dc0292cdae07bae6ef169bdc86a0f325b58d22f537f5a56d63d2fc7ff6c49217d48b36a66672b9c171437899/krates-0.16.10.crate
+Source URL      : https://crates.io/api/v1/crates/krates/0.16.10/download#/krates-0.16.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-krates-0.16.10.crate: gzip compressed data, was "krates-0.16.10.crate", max compression, original size modulo 2^32 215040
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-krates-0.16.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-prometheus-client
+File name       : prometheus-client-0.19.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-prometheus-client/prometheus-client-0.19.0.crate/sha512/d6988be61554ca72e06a6161964cd20d75b1ec3a2d8eddebdb3a07b406fe7766f8a26a05175c1ac419951dfe73859db2e1a28bb3764acc58bd75651af93cca48/prometheus-client-0.19.0.crate
+Source URL      : https://crates.io/api/v1/crates/prometheus-client/0.19.0/download#/prometheus-client-0.19.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-prometheus-client-0.19.0.crate: gzip compressed data, was "prometheus-client-0.19.0.crate", max compression, original size modulo 2^32 287744
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-prometheus-client-0.19.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

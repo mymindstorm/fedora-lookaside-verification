@@ -1,0 +1,10 @@
+Source package : rust-fd-lock3
+File name       : fd-lock-3.0.13.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-fd-lock3/fd-lock-3.0.13.crate/sha512/34ffaac90749e3da728da7d28fa0e72b3b5137076451d51a9d2e630f2240a424be3924413c02b3c7ac0ff218ce073bfdc096d77c61427d9f1a19009307e92a18/fd-lock-3.0.13.crate
+Source URL      : https://crates.io/api/v1/crates/fd-lock/3.0.13/download#/fd-lock-3.0.13.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-fd-lock-3.0.13.crate: gzip compressed data, was "fd-lock-3.0.13.crate", max compression, original size modulo 2^32 71168
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-fd-lock-3.0.13.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

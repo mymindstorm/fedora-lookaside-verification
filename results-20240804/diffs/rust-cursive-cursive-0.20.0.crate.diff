@@ -1,0 +1,10 @@
+Source package : rust-cursive
+File name       : cursive-0.20.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cursive/cursive-0.20.0.crate/sha512/3a4d9a29daf882eafce2b33d3147d546e53f21afcae3c79a2d5030b3ef647a28041fd76cef0b82763b62418ac66c6337632ed1cea342796c33eeac62ef4a712f/cursive-0.20.0.crate
+Source URL      : https://crates.io/api/v1/crates/cursive/0.20.0/download#/cursive-0.20.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cursive-0.20.0.crate: gzip compressed data, was "cursive-0.20.0.crate", max compression, original size modulo 2^32 349184
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cursive-0.20.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

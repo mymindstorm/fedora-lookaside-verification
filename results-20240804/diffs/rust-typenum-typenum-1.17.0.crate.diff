@@ -1,0 +1,10 @@
+Source package : rust-typenum
+File name       : typenum-1.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-typenum/typenum-1.17.0.crate/sha512/99773d5d9f850c0602db4bb67dd062b0ade6f086e155216f1bb2fb6569461ba7e1b7c2f2af81ea8833bc3bfcf3fe5033edecb7c438adae63f59d3e30cf63a508/typenum-1.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/typenum/1.17.0/download#/typenum-1.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-typenum-1.17.0.crate: gzip compressed data, was "typenum-1.17.0.crate", max compression, original size modulo 2^32 241664
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-typenum-1.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-ratatui0.25
+File name       : ratatui-0.25.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ratatui0.25/ratatui-0.25.0.crate/sha512/0d35289329a225ea874e00fac9c6910c69b7a3552b5224473dd10f6e019969ebe495633df27670e24508526772d3b6a37a895d75b241359c7a94ee3673810687/ratatui-0.25.0.crate
+Source URL      : https://crates.io/api/v1/crates/ratatui/0.25.0/download#/ratatui-0.25.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ratatui-0.25.0.crate: gzip compressed data, was "ratatui-0.25.0.crate", max compression, original size modulo 2^32 1759744
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ratatui-0.25.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

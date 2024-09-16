@@ -1,0 +1,10 @@
+Source package : rust-cxx
+File name       : cxx-1.0.124.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cxx/cxx-1.0.124.crate/sha512/c5d0abe3404ab7408e11abb8a6384d31776ae1050ddf15aeccd357108ee085782bf4fa8c5f7feadf62bc3215c19dbd9f8c1e7cf0c2ac10aed2428aca59603402/cxx-1.0.124.crate
+Source URL      : https://crates.io/api/v1/crates/cxx/1.0.124/download#/cxx-1.0.124.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cxx-1.0.124.crate: gzip compressed data, was "cxx-1.0.124.crate", max compression, original size modulo 2^32 1394688
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cxx-1.0.124.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

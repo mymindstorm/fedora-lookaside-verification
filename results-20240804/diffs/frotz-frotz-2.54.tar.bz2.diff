@@ -1,0 +1,14 @@
+Source package : frotz
+File name       : frotz-2.54.tar.bz2
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/frotz/frotz-2.54.tar.bz2/sha512/35e6b66b884692f8755eaec4c61ba4a9e95391fec77089c3440d5e9d4b09eef7ef10b6772134fd7f9b8c239166707ff4555815496baae2da11782fd250280cce/frotz-2.54.tar.bz2
+Source URL      : https://gitlab.com/DavidGriffith/frotz/-/archive/2.54/frotz-2.54.tar.bz2
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-frotz-2.54.tar.bz2: bzip2 compressed data, block size = 900k
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-frotz-2.54.tar.bz2: bzip2 compressed data, block size = 900k
+
+
+diff -r source-frotz-2.54.tar.bz2-extracted/frotz-2.54/Makefile lookaside-frotz-2.54.tar.bz2-extracted/frotz-2.54/Makefile
+264c264
+< GIT_HASH_SHORT = 5a86de2f
+---
+> GIT_HASH_SHORT = 5a86de2

@@ -1,0 +1,10 @@
+Source package : rust-zvariant2
+File name       : zvariant-2.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-zvariant2/zvariant-2.10.0.crate/sha512/48227afe709c1cc54cb70b4d9ae26e7f836559b4b11a68136d7720d01bacf757c1f5f40cad9de634fa27e196e4942df69c33a7de1334bb23ca995ea34690c5ba/zvariant-2.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/zvariant/2.10.0/download#/zvariant-2.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-zvariant-2.10.0.crate: gzip compressed data, was "zvariant-2.10.0.crate", max compression, original size modulo 2^32 372736
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-zvariant-2.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

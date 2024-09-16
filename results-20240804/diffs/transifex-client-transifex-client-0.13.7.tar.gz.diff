@@ -1,0 +1,19 @@
+Source package : transifex-client
+File name       : transifex-client-0.13.7.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/transifex-client/transifex-client-0.13.7.tar.gz/sha512/cf43e61dc1e1bc4df4bfc8de4793836519f477958ac1cdeb4dd5e72f067e57d883a7ac1db9cdc6b466ec887bf019efe76c53a9d025040e6c9a4b64635203c692/transifex-client-0.13.7.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/t/transifex-client/transifex-client-0.13.7.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-transifex-client-0.13.7.tar.gz: gzip compressed data, was "dist/transifex-client-0.13.7.tar", last modified: Tue Jan  7 14:23:02 2020, max compression, original size modulo 2^32 573440
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-transifex-client-0.13.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 604160
+
+
+Only in lookaside-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: appveyor.yml
+Only in lookaside-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: .circleci
+Only in lookaside-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: codecov.yml
+Only in lookaside-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: contrib
+Only in lookaside-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: DEVELOPMENT.rst
+Only in lookaside-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: .gitignore
+Only in source-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: PKG-INFO
+Only in source-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: setup.cfg
+Only in lookaside-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: tox.ini
+Only in source-transifex-client-0.13.7.tar.gz-extracted/transifex-client-0.13.7: transifex_client.egg-info

@@ -1,0 +1,10 @@
+Source package : rust-serde_json
+File name       : serde_json-1.0.121.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-serde_json/serde_json-1.0.121.crate/sha512/a7f22e49405c05c93dcb715dd1137c7a2c563b60cb4ca0811d328d65f9c31e740d5cbd332e59b416585d84e9de4590cbaa06b6bc62efd394978aff03ad9d86a1/serde_json-1.0.121.crate
+Source URL      : https://crates.io/api/v1/crates/serde_json/1.0.121/download#/serde_json-1.0.121.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-serde_json-1.0.121.crate: gzip compressed data, was "serde_json-1.0.121.crate", max compression, original size modulo 2^32 785408
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-serde_json-1.0.121.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

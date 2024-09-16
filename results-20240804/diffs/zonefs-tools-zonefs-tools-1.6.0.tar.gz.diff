@@ -1,0 +1,29 @@
+Source package : zonefs-tools
+File name       : zonefs-tools-1.6.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/zonefs-tools/zonefs-tools-1.6.0.tar.gz/sha512/8ea81395491a4f6cb38a6356d8cfacfbf0384471eadb4f9a0224daba859b1c65764811cd1f1a61aea0776cdcc63060d488bf0332f7d3dfe167e8f9480e76a305/zonefs-tools-1.6.0.tar.gz
+Source URL      : https://github.com/westerndigitalcorporation/zonefs-tools/archive/v1.6.0/zonefs-tools-1.6.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-zonefs-tools-1.6.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 368640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-zonefs-tools-1.6.0.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 2467840
+
+
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0: aclocal.m4
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0: build-aux
+Only in source-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0: CODE_OF_CONDUCT.md
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0: configure
+Only in source-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0: .gitignore
+Only in source-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0: LICENSES
+Only in source-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/m4: dontremove
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/m4: libtool.m4
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/m4: lt~obsolete.m4
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/m4: ltoptions.m4
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/m4: ltsugar.m4
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/m4: ltversion.m4
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0: Makefile.in
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/man: Makefile.in
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/src: config.h.in
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/src: Makefile.in
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/tests: logs
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/tests/tools: .deps
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/tests/tools: Makefile
+Only in lookaside-zonefs-tools-1.6.0.tar.gz-extracted/zonefs-tools-1.6.0/tests/tools: Makefile.in

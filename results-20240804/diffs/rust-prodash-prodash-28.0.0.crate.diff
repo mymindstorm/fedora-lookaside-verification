@@ -1,0 +1,10 @@
+Source package : rust-prodash
+File name       : prodash-28.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-prodash/prodash-28.0.0.crate/sha512/36a9099fdb61f604d902d28f7082195891056af916727f7d7b78986dca35539238de0c4816c96ca2c3e74fd04f503c59599988e95be46f0ed87af70ae8ef3c70/prodash-28.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/prodash/28.0.0/download#/prodash-28.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-prodash-28.0.0.crate: gzip compressed data, was "prodash-28.0.0.crate", max compression, original size modulo 2^32 399360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-prodash-28.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

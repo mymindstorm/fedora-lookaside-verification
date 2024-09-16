@@ -1,0 +1,11 @@
+Source package : zeromq
+File name       : zeromq-4.3.5.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/zeromq/zeromq-4.3.5.tar.gz/sha512/a71d48aa977ad8941c1609947d8db2679fc7a951e4cd0c3a1127ae026d883c11bd4203cf315de87f95f5031aec459a731aec34e5ce5b667b8d0559b157952541/zeromq-4.3.5.tar.gz
+Source URL      : https://github.com/zeromq/libzmq/archive/v4.3.5/zeromq-4.3.5.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-zeromq-4.3.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 5201920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-zeromq-4.3.5.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 13240320
+
+
+Only in source-zeromq-4.3.5.tar.gz-extracted: libzmq-4.3.5
+Only in lookaside-zeromq-4.3.5.tar.gz-extracted: zeromq-4.3.5

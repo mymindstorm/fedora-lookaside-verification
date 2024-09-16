@@ -1,0 +1,10 @@
+Source package : rust-byte-unit4
+File name       : byte-unit-4.0.19.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-byte-unit4/byte-unit-4.0.19.crate/sha512/5fce31ae5826549cd0d6133af3fec5961b931e8cde57d082ac82220d19d444a186a5fb339be6eefda82845cb59ceeebff672c771ad1a17c372741bbca476e234/byte-unit-4.0.19.crate
+Source URL      : https://crates.io/api/v1/crates/byte-unit/4.0.19/download#/byte-unit-4.0.19.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-byte-unit-4.0.19.crate: gzip compressed data, was "byte-unit-4.0.19.crate", max compression, original size modulo 2^32 83456
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-byte-unit-4.0.19.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

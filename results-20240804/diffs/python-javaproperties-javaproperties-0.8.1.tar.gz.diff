@@ -1,0 +1,91 @@
+Source package : python-javaproperties
+File name       : javaproperties-0.8.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-javaproperties/javaproperties-0.8.1.tar.gz/sha512/bf8ad6dee42a9445f0b9f9fd69eeb3649f07335511c3208ab850822cfd7ce015ee59a197e7f9505a88e51fbb18b8defd5243662d92bcb8f52ef699211aaf47d8/javaproperties-0.8.1.tar.gz
+Source URL      : https://github.com/jwodder/javaproperties/archive/v0.8.1/javaproperties-0.8.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-javaproperties-0.8.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 256000
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-javaproperties-0.8.1.tar.gz: gzip compressed data, was "javaproperties-0.8.1.tar", last modified: Tue Oct  5 20:39:17 2021, max compression, original size modulo 2^32 317440
+
+
+Only in source-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1: .github
+Only in source-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1: .gitignore
+Only in lookaside-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1: PKG-INFO
+Only in source-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1: .pre-commit-config.yaml
+Only in source-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1: .readthedocs.yml
+diff -r source-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1/setup.cfg lookaside-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1/setup.cfg
+12,43c12,39
+< 
+< keywords =
+<     java
+<     properties
+<     javaproperties
+<     configfile
+<     config
+<     configuration
+< 
+< classifiers =
+<     Development Status :: 4 - Beta
+<     #Development Status :: 5 - Production/Stable
+<     Programming Language :: Python :: 3 :: Only
+<     Programming Language :: Python :: 3
+<     Programming Language :: Python :: 3.6
+<     Programming Language :: Python :: 3.7
+<     Programming Language :: Python :: 3.8
+<     Programming Language :: Python :: 3.9
+<     Programming Language :: Python :: 3.10
+<     Programming Language :: Python :: Implementation :: CPython
+<     Programming Language :: Python :: Implementation :: PyPy
+<     License :: OSI Approved :: MIT License
+<     Intended Audience :: Developers
+<     Topic :: Software Development
+<     Topic :: Software Development :: Libraries :: Java Libraries
+<     Topic :: Utilities
+<     Typing :: Typed
+< 
+< project_urls =
+<     Source Code = https://github.com/jwodder/javaproperties
+<     Bug Tracker = https://github.com/jwodder/javaproperties/issues
+<     Documentation = https://javaproperties.readthedocs.io
+---
+> keywords = 
+> 	java
+> 	properties
+> 	javaproperties
+> 	configfile
+> 	config
+> 	configuration
+> classifiers = 
+> 	Development Status :: 4 - Beta
+> 	Programming Language :: Python :: 3 :: Only
+> 	Programming Language :: Python :: 3
+> 	Programming Language :: Python :: 3.6
+> 	Programming Language :: Python :: 3.7
+> 	Programming Language :: Python :: 3.8
+> 	Programming Language :: Python :: 3.9
+> 	Programming Language :: Python :: 3.10
+> 	Programming Language :: Python :: Implementation :: CPython
+> 	Programming Language :: Python :: Implementation :: PyPy
+> 	License :: OSI Approved :: MIT License
+> 	Intended Audience :: Developers
+> 	Topic :: Software Development
+> 	Topic :: Software Development :: Libraries :: Java Libraries
+> 	Topic :: Utilities
+> 	Typing :: Typed
+> project_urls = 
+> 	Source Code = https://github.com/jwodder/javaproperties
+> 	Bug Tracker = https://github.com/jwodder/javaproperties/issues
+> 	Documentation = https://javaproperties.readthedocs.io
+47,48c43,44
+< package_dir =
+<     =src
+---
+> package_dir = 
+> 	=src
+68a65,69
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 
+Only in lookaside-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1/src: javaproperties.egg-info
+Only in source-javaproperties-0.8.1.tar.gz-extracted/javaproperties-0.8.1: TODO.md

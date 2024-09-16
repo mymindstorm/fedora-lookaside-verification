@@ -1,0 +1,10 @@
+Source package : rust-just
+File name       : just-1.33.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-just/just-1.33.0.crate/sha512/607d75a19223b7f421f9abec2ccce308b087d2e5ab865b5aab03e93c4f7e4cbd7a361ff1cc5e345544f9e45370245b391b1ed8759d01a5b23bb6a8f621987fa6/just-1.33.0.crate
+Source URL      : https://crates.io/api/v1/crates/just/1.33.0/download#/just-1.33.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-just-1.33.0.crate: gzip compressed data, was "just-1.33.0.crate", max compression, original size modulo 2^32 1298432
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-just-1.33.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

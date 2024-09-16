@@ -1,0 +1,173 @@
+Source package : nvml
+File name       : pmdk-2.1.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/nvml/pmdk-2.1.0.tar.gz/sha512/300ad1b63bffaa770f66697962939971f1711c626de4dc3a60221145c4c8815e99baaaa9f23dacd200e2a3a71ecd274fcdee2d5bd0c017dc00437329ef866429/pmdk-2.1.0.tar.gz
+Source URL      : https://github.com/pmem/pmdk/releases/download/2.1.0/pmdk-2.1.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pmdk-2.1.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 10178560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pmdk-2.1.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 9707520
+
+
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/ChangeLog lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/ChangeLog
+18c18
+< 	- Does not allow opening PMEMOBJ pool without unsafe shutdown counter (USC) if not explicitly disabled. (#5968)
+---
+> 	- Does not allow create PMEMOBJ pool without unsafe shutdown counter (USC) if not explicitly disabled. (#5968)
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/daxio: daxio.1
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem/.gitignore lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem/.gitignore
+4c4
+< pmem_log_get_treshold.3
+---
+> pmem_log_get_threshold.3
+6c6
+< pmem_log_set_treshold.3
+---
+> pmem_log_set_threshold.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem: libpmem.7
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem: pmem_flush.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem: pmem_is_pmem.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem: pmem_log_get_threshold.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem: pmem_log_set_function.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem: pmem_log_set_threshold.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem: pmem_memmove_persist.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: libpmem2.7
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: libpmem2_unsafe_shutdown.7
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_badblock_clear.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_badblock_context_new.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_badblock_next.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_config_new.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_config_set_length.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_config_set_offset.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_config_set_protection.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_config_set_required_store_granularity.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_config_set_sharing.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_config_set_vm_reservation.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_deep_flush.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_errormsg.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_get_drain_fn.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_get_flush_fn.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_get_memmove_fn.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_get_persist_fn.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_map_delete.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_map_from_existing.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_map_get_address.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_map_get_size.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_map_get_store_granularity.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_map_new.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_perror.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_alignment.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_device_id.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_device_usc.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_from_anon.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_from_fd.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_get_fd.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_numa_node.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_pread_mcsafe.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_source_size.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_vm_reservation_extend.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_vm_reservation_get_address.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_vm_reservation_get_size.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_vm_reservation_map_find.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmem2: pmem2_vm_reservation_new.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: libpmemobj.7
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: oid_is_null.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_action.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_alloc.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_ctl_get.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_first.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_list_insert.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_log_get_threshold.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_log_set_function.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_log_set_threshold.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_memcpy_persist.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_mutex_zero.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_open.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_root.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_tx_add_range.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_tx_alloc.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pmemobj_tx_begin.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pobj_layout_begin.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: pobj_list_head.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmemobj: toid_declare.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmempool: libpmempool.7
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmempool: pmempool_check_init.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmempool: pmempool_feature_query.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmempool: pmempool_rm.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/libpmempool: pmempool_sync.3
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmem_ctl: pmem_ctl.5
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-check.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-convert.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-create.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-dump.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-feature.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-info.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-rm.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-sync.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmempool: pmempool-transform.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/pmreorder: pmreorder.1
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/doc/poolset: poolset.5
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/.github/workflows: pmem.io_doc_update.yml
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/INSTALL.md lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/INSTALL.md
+131c131
+< [libpmem(7)](https://pmem.io/pmdk/manpages/linux/master/libpmem/libpmem.7/#debugging-and-error-handling).
+---
+> [libpmem(7)](https://github.com/pmem/pmdk/blob/master/doc/libpmem/libpmem.7.md#error-handling-1).
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/README.md lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/README.md
+8d7
+< [![pmem.io](https://github.com/pmem/pmdk/actions/workflows/pmem.io_doc_update.yml/badge.svg?branch=master)](https://github.com/pmem/pmdk/actions/workflows/pmem.io_doc_update.yml)
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/RELEASE_STEPS.md lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/RELEASE_STEPS.md
+111d110
+< - [pmem.io](https://pmem.io/announcements/)
+118,119d116
+< - once the pmem.github.io repository contains new documentation (thanks to `utils/docker/run-doc-update.sh` script run in CI),
+<   add a new tag ("$VER") in file `data/releases_linux.yml` based on previous tags in this file.
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0: .skip-doc
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/build-dpkg.sh lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/build-dpkg.sh
+295c295
+< Homepage: https://pmem.io/pmdk/
+---
+> Homepage: https://github.com/pmem/pmdk
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/docker/images/set-images-version.sh lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/docker/images/set-images-version.sh
+4c4
+< # Copyright 2020-2023, Intel Corporation
+---
+> # Copyright 2020-2024, Intel Corporation
+16c16
+< export IMG_VER=2.0
+---
+> export IMG_VER=2.1
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/libpmem2.pc.in lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/libpmem2.pc.in
+6c6
+< URL: https://pmem.io/pmdk
+---
+> URL: https://github.com/pmem/pmdk
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/libpmemobj.pc.in lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/libpmemobj.pc.in
+6c6
+< URL: https://pmem.io/pmdk
+---
+> URL: https://github.com/pmem/pmdk
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/libpmem.pc.in lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/libpmem.pc.in
+6c6
+< URL: https://pmem.io/pmdk
+---
+> URL: https://github.com/pmem/pmdk
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/libpmempool.pc.in lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/libpmempool.pc.in
+6c6
+< URL: https://pmem.io/pmdk
+---
+> URL: https://github.com/pmem/pmdk
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/pkg-config.sh lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/pkg-config.sh
+2c2
+< # Copyright 2014-2020, Intel Corporation
+---
+> # Copyright 2014-2024, Intel Corporation
+17c17
+< PACKAGE_URL="https://pmem.io/pmdk"
+---
+> PACKAGE_URL="https://github.com/pmem/pmdk"
+diff -r source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/pmdk.spec.in lookaside-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils/pmdk.spec.in
+28c28
+< URL:		https://pmem.io/pmdk
+---
+> URL:		https://github.com/pmem/pmdk
+Only in source-pmdk-2.1.0.tar.gz-extracted/pmdk-2.1.0/utils: run-doc-update.sh

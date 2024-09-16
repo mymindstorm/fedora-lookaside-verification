@@ -1,0 +1,10 @@
+Source package : rust-rustix
+File name       : rustix-0.38.34.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rustix/rustix-0.38.34.crate/sha512/717cf26e2ec792b41819ff964888adb265a215d2b6c6e2b7a8ca1f7f793b713b853bba9cf03c2cc88b0f9a5eb1a0478faedbc05526f39bd81583e7b1f764756f/rustix-0.38.34.crate
+Source URL      : https://crates.io/api/v1/crates/rustix/0.38.34/download#/rustix-0.38.34.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rustix-0.38.34.crate: gzip compressed data, was "rustix-0.38.34.crate", max compression, original size modulo 2^32 2282496
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rustix-0.38.34.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-uuid
+File name       : uuid-1.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uuid/uuid-1.10.0.crate/sha512/e17db9433d919b51468acaebd240a2cb218d07f099fade49118ca9313f8cdf6aa3103e7aa24440be65a4f25a25f8f511e36dba08cbef27747f9e43b849cd612b/uuid-1.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/uuid/1.10.0/download#/uuid-1.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uuid-1.10.0.crate: gzip compressed data, was "uuid-1.10.0.crate", max compression, original size modulo 2^32 279552
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uuid-1.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

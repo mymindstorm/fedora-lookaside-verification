@@ -1,0 +1,14 @@
+Source package : sdlhack
+File name       : sdlhack-1.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sdlhack/sdlhack-1.4.tar.gz/sha512/adb3e2fad97400d582b73ecadfe2d8ca53e930aa2efd098b3bff72c08fcd4b5b99bbaf4a3a8c9b0ad80504184cb2bac14fe9fa727a793f1784d8ccfedb05067c/sdlhack-1.4.tar.gz
+Source URL      : http://jspenguin.org:81/software/sdlhack/sdlhack-1.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sdlhack-1.4.tar.gz: gzip compressed data, last modified: Sun Apr 18 01:34:20 2021, from Unix, original size modulo 2^32 92160
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sdlhack-1.4.tar.gz: gzip compressed data, last modified: Tue Mar 12 20:58:25 2013, from Unix, original size modulo 2^32 92160
+
+
+diff -r source-sdlhack-1.4.tar.gz-extracted/sdlhack-1.4/libsdlhack.c lookaside-sdlhack-1.4.tar.gz-extracted/sdlhack-1.4/libsdlhack.c
+4c4
+<   Copyright (C) 2010 Katie Stafford (katie@ktpanda.org)
+---
+>   Copyright (C) 2010 Jared Stafford (jspenguin@gmail.com)

@@ -1,0 +1,10 @@
+Source package : rust-once_cell
+File name       : once_cell-1.19.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-once_cell/once_cell-1.19.0.crate/sha512/4154876afd34a699ee650d1a8a1c5ee5a25f0ebd9388b8bef2564e33629fae68f113d7507488c68abbe7ea1acf9bbc41813cbbf3ef3e464e3f3b9cc7a51d870c/once_cell-1.19.0.crate
+Source URL      : https://crates.io/api/v1/crates/once_cell/1.19.0/download#/once_cell-1.19.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-once_cell-1.19.0.crate: gzip compressed data, was "once_cell-1.19.0.crate", max compression, original size modulo 2^32 166400
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-once_cell-1.19.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

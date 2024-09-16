@@ -1,0 +1,10 @@
+Source package : rust-inferno
+File name       : inferno-0.11.19.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-inferno/inferno-0.11.19.crate/sha512/90d92628acf12b2c7dafbea9035bf6343910f7eaee824c5036eb0d93cbd1d1f12d9e21f6dae5d87bedb1b2859098479052f2421f9acf94735fd46efbaa5027f6/inferno-0.11.19.crate
+Source URL      : https://crates.io/api/v1/crates/inferno/0.11.19/download#/inferno-0.11.19.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-inferno-0.11.19.crate: gzip compressed data, was "inferno-0.11.19.crate", max compression, original size modulo 2^32 451584
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-inferno-0.11.19.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

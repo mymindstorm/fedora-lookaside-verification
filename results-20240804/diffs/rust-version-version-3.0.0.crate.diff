@@ -1,0 +1,10 @@
+Source package : rust-version
+File name       : version-3.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-version/version-3.0.0.crate/sha512/97743c4a14809e81474d8a3adc4c7e2adcc1dd0943f611f2662d8dbd646546e037e3248fba5289eade7b32c16ca3a090de7a653dd0a134901971f353149f1123/version-3.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/version/3.0.0/download#/version-3.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-version-3.0.0.crate: gzip compressed data, was "version-3.0.0.crate", max compression, original size modulo 2^32 22016
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-version-3.0.0.crate: POSIX tar archive
+
+
+No differences detected!

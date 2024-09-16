@@ -1,0 +1,10 @@
+Source package : rust-gobject-sys0.17
+File name       : gobject-sys-0.17.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gobject-sys0.17/gobject-sys-0.17.10.crate/sha512/42aad910f418c4bfa61ab8db121519c24146eb0ffcfb0703949d1927a11bffbe30317c0eff480d989829049e123d69a1a9a4471c18aa8fe40783ea1177e491e2/gobject-sys-0.17.10.crate
+Source URL      : https://crates.io/api/v1/crates/gobject-sys/0.17.10/download#/gobject-sys-0.17.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gobject-sys-0.17.10.crate: gzip compressed data, was "gobject-sys-0.17.10.crate", max compression, original size modulo 2^32 152576
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gobject-sys-0.17.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

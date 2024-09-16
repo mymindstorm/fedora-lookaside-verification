@@ -1,0 +1,10 @@
+Source package : lumail
+File name       : lumail-3.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/lumail/lumail-3.1.tar.gz/sha512/ea6848b86c31540fa61e68d8b28edbed3003dd008a709f54ec2ce67db479943f7cb9fc791f37f3d546a76e88bff76b13469bca03abfffda175ea60d4af91268f/lumail-3.1.tar.gz
+Source URL      : https://lumail.org/download/lumail-3.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-lumail-3.1.tar.gz: JavaScript source, Unicode text, UTF-8 text, with very long lines (9083), with CRLF, LF line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-lumail-3.1.tar.gz: gzip compressed data, last modified: Sun Jul  9 18:08:17 2017, from Unix, original size modulo 2^32 1218560
+
+
+Only in lookaside-lumail-3.1.tar.gz-extracted: lumail-3.1

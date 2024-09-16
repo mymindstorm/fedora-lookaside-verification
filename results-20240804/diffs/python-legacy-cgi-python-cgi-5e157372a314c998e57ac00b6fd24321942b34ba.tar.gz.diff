@@ -1,0 +1,11 @@
+Source package : python-legacy-cgi
+File name       : python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-legacy-cgi/python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba.tar.gz/sha512/9c6ba6985becdb43ffbe1813f853e3921a8d105796f8e4eec22eeeee9aaa2555a9c8a2d539cd05f21bc2a7b2602e044e344c622b023b3bc58f750e0bf4c02f6f/python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba.tar.gz
+Source URL      : https://github.com/jackrosenthal/python-cgi/archive/5e157372a314c998e57ac00b6fd24321942b34ba/python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 143360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 143360
+
+
+Only in source-python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba.tar.gz-extracted: legacy-cgi-5e157372a314c998e57ac00b6fd24321942b34ba
+Only in lookaside-python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba.tar.gz-extracted: python-cgi-5e157372a314c998e57ac00b6fd24321942b34ba

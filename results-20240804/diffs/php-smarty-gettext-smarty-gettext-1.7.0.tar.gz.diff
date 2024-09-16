@@ -1,0 +1,16 @@
+Source package : php-smarty-gettext
+File name       : smarty-gettext-1.7.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-smarty-gettext/smarty-gettext-1.7.0.tar.gz/sha512/c6003ddac9910b2bb6230a24f0286b0aa57a84497a7f771a9bd34967efcdc5b7a8b908f5c31610a904d83a99cc57521bd243408b4ef044894b5e156073c67215/smarty-gettext-1.7.0.tar.gz
+Source URL      : https://github.com/smarty-gettext/smarty-gettext/archive/1.7.0/smarty-gettext-1.7.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-smarty-gettext-1.7.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 136880190 gzip compressed data, unknown method, was "", from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 136880190
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-smarty-gettext-1.7.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 102400
+
+
+Only in lookaside-smarty-gettext-1.7.0.tar.gz-extracted/smarty-gettext-1.7.0: AUTHORS
+Only in lookaside-smarty-gettext-1.7.0.tar.gz-extracted/smarty-gettext-1.7.0: CHANGELOG.md
+Only in lookaside-smarty-gettext-1.7.0.tar.gz-extracted/smarty-gettext-1.7.0: composer.json
+Only in lookaside-smarty-gettext-1.7.0.tar.gz-extracted/smarty-gettext-1.7.0: COPYING
+Only in lookaside-smarty-gettext-1.7.0.tar.gz-extracted/smarty-gettext-1.7.0: phpunit.xml
+Only in lookaside-smarty-gettext-1.7.0.tar.gz-extracted/smarty-gettext-1.7.0: README.md
+Only in lookaside-smarty-gettext-1.7.0.tar.gz-extracted/smarty-gettext-1.7.0: tests

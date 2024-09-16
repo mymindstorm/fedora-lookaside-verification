@@ -1,0 +1,10 @@
+Source package : rust-rustc-hash
+File name       : rustc-hash-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rustc-hash/rustc-hash-2.0.0.crate/sha512/996ad683db2e6839ee28fdc4a31293aecce7baefaf6051220a633a00beddef1be41aef0995d7501e5b92dbc85350ced920bc980d05f5ba235e9a5d1a13464339/rustc-hash-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/rustc-hash/2.0.0/download#/rustc-hash-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rustc-hash-2.0.0.crate: gzip compressed data, was "rustc-hash-2.0.0.crate", max compression, original size modulo 2^32 47104
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rustc-hash-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

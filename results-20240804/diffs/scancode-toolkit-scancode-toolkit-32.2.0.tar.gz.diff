@@ -1,0 +1,14 @@
+Source package : scancode-toolkit
+File name       : scancode-toolkit-32.2.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/scancode-toolkit/scancode-toolkit-32.2.0.tar.gz/sha512/bdc799916466961ad2a4d9b167a1e691713f6cc574939de9ea3e8d5b91401529064df3c470800c5234dbcfa6e37f1753eb1d9b06a7b201ecf451842050203896/scancode-toolkit-32.2.0.tar.gz
+Source URL      : https://github.com/nexB/scancode-toolkit/archive/v32.2.0/scancode-toolkit-32.2.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-scancode-toolkit-32.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 258703360 gzip compressed data, reserved method, has CRC, extra field, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 258703360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-scancode-toolkit-32.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 258703360 gzip compressed data, unknown method, extra field, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 258703360
+
+
+diff -r source-scancode-toolkit-32.2.0.tar.gz-extracted/scancode-toolkit-32.2.0/.VERSION lookaside-scancode-toolkit-32.2.0.tar.gz-extracted/scancode-toolkit-32.2.0/.VERSION
+1c1
+< refs=tag: v32.2.0
+---
+> refs=HEAD -> develop, tag: v32.2.0

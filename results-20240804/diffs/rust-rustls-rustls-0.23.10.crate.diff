@@ -1,0 +1,10 @@
+Source package : rust-rustls
+File name       : rustls-0.23.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rustls/rustls-0.23.10.crate/sha512/eeabefd525abeb1b87024494bc0691832eececf8a39a6207efef096f1d061aa99403bf09568a2de95d1cf11b51a67834e418f4d761d64eedc9da73ffab67e278/rustls-0.23.10.crate
+Source URL      : https://crates.io/api/v1/crates/rustls/0.23.10/download#/rustls-0.23.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rustls-0.23.10.crate: gzip compressed data, was "rustls-0.23.10.crate", max compression, original size modulo 2^32 2113024
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rustls-0.23.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

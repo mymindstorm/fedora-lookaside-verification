@@ -1,0 +1,30 @@
+Source package : aprsdigi
+File name       : aprsdigi-3.5.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/aprsdigi/aprsdigi-3.5.1.tar.gz/md5/6201d52a44ca19fde8fcdfe2eed2ccb0/aprsdigi-3.5.1.tar.gz
+Source URL      : https://github.com/n2ygk/aprsdigi/archive/3.5.1.tar.gz#/aprsdigi-3.5.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-aprsdigi-3.5.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 593920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-aprsdigi-3.5.1.tar.gz: gzip compressed data, last modified: Mon Sep 24 02:30:05 2012, max compression, from Unix, original size modulo 2^32 593920
+
+
+diff -r source-aprsdigi-3.5.1.tar.gz-extracted/aprsdigi-3.5.1/aprsdigi.c lookaside-aprsdigi-3.5.1.tar.gz-extracted/aprsdigi-3.5.1/aprsdigi.c
+73c73
+< #define VERSION "$Revision$";
+---
+> #define VERSION "$Revision: 1.3 $";
+Only in lookaside-aprsdigi-3.5.1.tar.gz-extracted/aprsdigi-3.5.1: aprsdigi.spec
+diff -r source-aprsdigi-3.5.1.tar.gz-extracted/aprsdigi-3.5.1/aprsmon.c lookaside-aprsdigi-3.5.1.tar.gz-extracted/aprsdigi-3.5.1/aprsmon.c
+100c100
+< #define VERSION "$Revision$"
+---
+> #define VERSION "$Revision: 1.2 $"
+diff -r source-aprsdigi-3.5.1.tar.gz-extracted/aprsdigi-3.5.1/examples/aprsdigi-fc17.ks lookaside-aprsdigi-3.5.1.tar.gz-extracted/aprsdigi-3.5.1/examples/aprsdigi-fc17.ks
+1,2c1,5
+< # Kickstart template for use by cobbler. $Revision$
+< # $Log$
+---
+> # Kickstart template for use by cobbler. $Revision: 1.1 $
+> # $Log: aprsdigi-fc17.ks,v $
+> # Revision 1.1  2012/09/03 21:58:27  n2ygk
+> # 3.5.1 release
+> #

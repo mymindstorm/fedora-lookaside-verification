@@ -1,0 +1,11 @@
+Source package : golang-github-gocql
+File name       : gocql-e49edf966d9036342234c0f42c9643fbffdefaf5.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-gocql/gocql-e49edf966d9036342234c0f42c9643fbffdefaf5.tar.gz/sha512/de019c87b409ca230c798659f71633be1811a7b2bee0141a9d6553829b4e9213a9589ddc3c5c9ab6110f9785cf834f9c96883438e0bba307b8739ae0436dead2/gocql-e49edf966d9036342234c0f42c9643fbffdefaf5.tar.gz
+Source URL      : https://github.com/gocql/gocql/archive/e49edf966d9036342234c0f42c9643fbffdefaf5/gocql-e49edf966d9036342234c0f42c9643fbffdefaf5.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gocql-e49edf966d9036342234c0f42c9643fbffdefaf5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 890610965 gzip compressed data, unknown method, ASCII, extra field, has comment, encrypted, original size modulo 2^32 890610965
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gocql-e49edf966d9036342234c0f42c9643fbffdefaf5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 860160
+
+
+Only in source-gocql-e49edf966d9036342234c0f42c9643fbffdefaf5.tar.gz-extracted: cassandra-gocql-driver-e49edf966d9036342234c0f42c9643fbffdefaf5
+Only in lookaside-gocql-e49edf966d9036342234c0f42c9643fbffdefaf5.tar.gz-extracted: gocql-e49edf966d9036342234c0f42c9643fbffdefaf5

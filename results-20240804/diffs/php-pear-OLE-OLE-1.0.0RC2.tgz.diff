@@ -1,0 +1,10 @@
+Source package : php-pear-OLE
+File name       : OLE-1.0.0RC2.tgz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/php-pear-OLE/OLE-1.0.0RC2.tgz/md5/5ef0283689ddf6b41de0588bce995c89/OLE-1.0.0RC2.tgz
+Source URL      : http://pear.php.net/get/OLE-1.0.0RC2.tgz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-OLE-1.0.0RC2.tgz: gzip compressed data, was "OLE-1.0.0RC2.tar", last modified: Thu Jan 26 02:30:28 2012, from Unix, original size modulo 2^32 74240
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-OLE-1.0.0RC2.tgz: gzip compressed data, max compression, from Unix, original size modulo 2^32 2948490417 gzip compressed data, reserved method, ASCII, has CRC, extra field, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 2948490417
+
+
+No differences detected!

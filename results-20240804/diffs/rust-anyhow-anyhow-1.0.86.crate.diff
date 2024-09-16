@@ -1,0 +1,10 @@
+Source package : rust-anyhow
+File name       : anyhow-1.0.86.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-anyhow/anyhow-1.0.86.crate/sha512/3853da32a2c53d73969bb29a1e622f3a6d5832d8888dc6bc8eedb76394b392f983aa3fcb1f542933e238841486106f0f38e9a2400c12c7699baba0ebe1d8193a/anyhow-1.0.86.crate
+Source URL      : https://crates.io/api/v1/crates/anyhow/1.0.86/download#/anyhow-1.0.86.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-anyhow-1.0.86.crate: gzip compressed data, was "anyhow-1.0.86.crate", max compression, original size modulo 2^32 271360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-anyhow-1.0.86.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

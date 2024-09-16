@@ -1,0 +1,10 @@
+Source package : aom
+File name       : aom-3.9.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/aom/aom-3.9.0.tar.gz/sha512/e070b5078d69bced62ff1f2329639fff6218d2dcd0724618b93fd7a06e351fdb26933787e4c624999735e913476d14db3f386c4d66693d1c37b29124c97af0ff/aom-3.9.0.tar.gz
+Source URL      : https://aomedia.googlesource.com/aom/+archive/v3.9.0.tar.gz#/aom-3.9.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-aom-3.9.0.tar.gz: gzip compressed data, original size modulo 2^32 33274368
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-aom-3.9.0.tar.gz: gzip compressed data, original size modulo 2^32 33276416
+
+
+No differences detected!

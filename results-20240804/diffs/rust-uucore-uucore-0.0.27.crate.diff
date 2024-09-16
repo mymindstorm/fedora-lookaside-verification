@@ -1,0 +1,10 @@
+Source package : rust-uucore
+File name       : uucore-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uucore/uucore-0.0.27.crate/sha512/2f4366b9f7be62e22872c81e56682c1fa420fbef7091c92acc70bf57d12d328345e0cc5a77c0e96a222f3cd2a357d427f41ba412ad7bca43f0f374a70abaeca4/uucore-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uucore/0.0.27/download#/uucore-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uucore-0.0.27.crate: gzip compressed data, was "uucore-0.0.27.crate", max compression, original size modulo 2^32 506880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uucore-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

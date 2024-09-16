@@ -1,0 +1,10 @@
+Source package : rust-lv2-state
+File name       : lv2-state-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-lv2-state/lv2-state-2.0.0.crate/sha512/f40b705deda782fcb2028c2cf44b7d5348373433211f56d1bfc669e37480c41482f8fd679b4869fa4fbc7216f80eb0cca4c9eb7f238b7fa1410baf844beff20d/lv2-state-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/lv2-state/2.0.0/download#/lv2-state-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-lv2-state-2.0.0.crate: gzip compressed data, was "lv2-state-2.0.0.crate", max compression, original size modulo 2^32 82944
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-lv2-state-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

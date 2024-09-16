@@ -1,0 +1,2348 @@
+Source package : amavisd-milter
+File name       : amavisd-milter-1.7.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/amavisd-milter/amavisd-milter-1.7.2.tar.gz/sha512/4249fc380b14a6a527576c6e35772df6a7e735d83514fa0977a6de627e6f8a264c5c497ccce284869d0d906ad6cce3ae928d9da270778759315a618fa5aecdd1/amavisd-milter-1.7.2.tar.gz
+Source URL      : https://github.com/prehor/amavisd-milter/releases/download/1.7.2/amavisd-milter-1.7.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-amavisd-milter-1.7.2.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 798720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-amavisd-milter-1.7.2.tar.gz: gzip compressed data, last modified: Tue Jan  4 16:23:17 2022, max compression, from Unix, original size modulo 2^32 798720
+
+
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/ar-lib lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/ar-lib
+5c5
+< scriptversion=2012-03-01.08; # UTC
+---
+> scriptversion=2019-07-04.01; # UTC
+7c7
+< # Copyright (C) 2010-2018 Free Software Foundation, Inc.
+---
+> # Copyright (C) 2010-2020 Free Software Foundation, Inc.
+56c56
+< 	  CYGWIN*)
+---
+> 	  CYGWIN* | MSYS*)
+68c68
+< 	cygwin)
+---
+> 	cygwin | msys)
+227,230c227,231
+<     $AR -NOLOGO -LIST "$archive" | sed -e 's/\\/\\\\/g' | while read member
+<     do
+<       $AR -NOLOGO -EXTRACT:"$member" "$archive" || exit $?
+<     done
+---
+>     $AR -NOLOGO -LIST "$archive" | tr -d '\r' | sed -e 's/\\/\\\\/g' \
+>       | while read member
+>         do
+>           $AR -NOLOGO -EXTRACT:"$member" "$archive" || exit $?
+>         done
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/compile lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/compile
+6c6
+< # Copyright (C) 1999-2018 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1999-2020 Free Software Foundation, Inc.
+56c56
+< 	  CYGWIN*)
+---
+> 	  CYGWIN* | MSYS*)
+70c70
+< 	cygwin/*)
+---
+> 	cygwin/* | msys/*)
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/config.guess lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/config.guess
+5c5
+< timestamp='2018-03-08'
+---
+> timestamp='2018-08-29'
+87,88d86
+< trap 'exit 1' 1 2 15
+< 
+99,122c97,125
+< set_cc_for_build='
+< trap "exitcode=\$?; (rm -f \$tmpfiles 2>/dev/null; rmdir \$tmp 2>/dev/null) && exit \$exitcode" 0 ;
+< trap "rm -f \$tmpfiles 2>/dev/null; rmdir \$tmp 2>/dev/null; exit 1" 1 2 13 15 ;
+< : ${TMPDIR=/tmp} ;
+<  { tmp=`(umask 077 && mktemp -d "$TMPDIR/cgXXXXXX") 2>/dev/null` && test -n "$tmp" && test -d "$tmp" ; } ||
+<  { test -n "$RANDOM" && tmp=$TMPDIR/cg$$-$RANDOM && (umask 077 && mkdir $tmp) ; } ||
+<  { tmp=$TMPDIR/cg-$$ && (umask 077 && mkdir $tmp) && echo "Warning: creating insecure temp directory" >&2 ; } ||
+<  { echo "$me: cannot create a temporary directory in $TMPDIR" >&2 ; exit 1 ; } ;
+< dummy=$tmp/dummy ;
+< tmpfiles="$dummy.c $dummy.o $dummy.rel $dummy" ;
+< case $CC_FOR_BUILD,$HOST_CC,$CC in
+<  ,,)    echo "int x;" > "$dummy.c" ;
+< 	for c in cc gcc c89 c99 ; do
+< 	  if ($c -c -o "$dummy.o" "$dummy.c") >/dev/null 2>&1 ; then
+< 	     CC_FOR_BUILD="$c"; break ;
+< 	  fi ;
+< 	done ;
+< 	if test x"$CC_FOR_BUILD" = x ; then
+< 	  CC_FOR_BUILD=no_compiler_found ;
+< 	fi
+< 	;;
+<  ,,*)   CC_FOR_BUILD=$CC ;;
+<  ,*,*)  CC_FOR_BUILD=$HOST_CC ;;
+< esac ; set_cc_for_build= ;'
+---
+> tmp=
+> # shellcheck disable=SC2172
+> trap 'test -z "$tmp" || rm -fr "$tmp"' 1 2 13 15
+> trap 'exitcode=$?; test -z "$tmp" || rm -fr "$tmp"; exit $exitcode' 0
+> 
+> set_cc_for_build() {
+>     : "${TMPDIR=/tmp}"
+>     # shellcheck disable=SC2039
+>     { tmp=`(umask 077 && mktemp -d "$TMPDIR/cgXXXXXX") 2>/dev/null` && test -n "$tmp" && test -d "$tmp" ; } ||
+> 	{ test -n "$RANDOM" && tmp=$TMPDIR/cg$$-$RANDOM && (umask 077 && mkdir "$tmp" 2>/dev/null) ; } ||
+> 	{ tmp=$TMPDIR/cg-$$ && (umask 077 && mkdir "$tmp" 2>/dev/null) && echo "Warning: creating insecure temp directory" >&2 ; } ||
+> 	{ echo "$me: cannot create a temporary directory in $TMPDIR" >&2 ; exit 1 ; }
+>     dummy=$tmp/dummy
+>     case ${CC_FOR_BUILD-},${HOST_CC-},${CC-} in
+> 	,,)    echo "int x;" > "$dummy.c"
+> 	       for driver in cc gcc c89 c99 ; do
+> 		   if ($driver -c -o "$dummy.o" "$dummy.c") >/dev/null 2>&1 ; then
+> 		       CC_FOR_BUILD="$driver"
+> 		       break
+> 		   fi
+> 	       done
+> 	       if test x"$CC_FOR_BUILD" = x ; then
+> 		   CC_FOR_BUILD=no_compiler_found
+> 	       fi
+> 	       ;;
+> 	,,*)   CC_FOR_BUILD=$CC ;;
+> 	,*,*)  CC_FOR_BUILD=$HOST_CC ;;
+>     esac
+> }
+126c129
+< if (test -f /.attbin/uname) >/dev/null 2>&1 ; then
+---
+> if test -f /.attbin/uname ; then
+141c144
+< 	eval "$set_cc_for_build"
+---
+> 	set_cc_for_build
+202c205
+< 		eval "$set_cc_for_build"
+---
+> 		set_cc_for_build
+240c243
+< 	echo "$machine-${os}${release}${abi}"
+---
+> 	echo "$machine-${os}${release}${abi-}"
+392,405c395,403
+< 	eval "$set_cc_for_build"
+< 	SUN_ARCH=i386
+< 	# If there is a compiler, see if it is configured for 64-bit objects.
+< 	# Note that the Sun cc does not turn __LP64__ into 1 like gcc does.
+< 	# This test works for both compilers.
+< 	if [ "$CC_FOR_BUILD" != no_compiler_found ]; then
+< 	    if (echo '#ifdef __amd64'; echo IS_64BIT_ARCH; echo '#endif') | \
+< 		(CCOPTS="" $CC_FOR_BUILD -E - 2>/dev/null) | \
+< 		grep IS_64BIT_ARCH >/dev/null
+< 	    then
+< 		SUN_ARCH=x86_64
+< 	    fi
+< 	fi
+< 	echo "$SUN_ARCH"-pc-solaris2"`echo "$UNAME_RELEASE"|sed -e 's/[^.]*//'`"
+---
+> 	UNAME_REL="`echo "$UNAME_RELEASE" | sed -e 's/[^.]*//'`"
+> 	case `isainfo -b` in
+> 	    32)
+> 		echo i386-pc-solaris2"$UNAME_REL"
+> 		;;
+> 	    64)
+> 		echo x86_64-pc-solaris2"$UNAME_REL"
+> 		;;
+> 	esac
+485c483
+< 	eval "$set_cc_for_build"
+---
+> 	set_cc_for_build
+582c580
+< 		eval "$set_cc_for_build"
+---
+> 		set_cc_for_build
+663c661
+< 		    eval "$set_cc_for_build"
+---
+> 		    set_cc_for_build
+703c701
+< 	    eval "$set_cc_for_build"
+---
+> 	    set_cc_for_build
+729c727
+< 	eval "$set_cc_for_build"
+---
+> 	set_cc_for_build
+842a841,851
+>     arm:FreeBSD:*:*)
+> 	UNAME_PROCESSOR=`uname -p`
+> 	set_cc_for_build
+> 	if echo __ARM_PCS_VFP | $CC_FOR_BUILD -E - 2>/dev/null \
+> 	    | grep -q __ARM_PCS_VFP
+> 	then
+> 	    echo "${UNAME_PROCESSOR}"-unknown-freebsd"`echo ${UNAME_RELEASE}|sed -e 's/[-(].*//'`"-gnueabi
+> 	else
+> 	    echo "${UNAME_PROCESSOR}"-unknown-freebsd"`echo ${UNAME_RELEASE}|sed -e 's/[-(].*//'`"-gnueabihf
+> 	fi
+> 	exit ;;
+845,850d853
+< 	case "$UNAME_PROCESSOR" in
+< 	    amd64)
+< 		UNAME_PROCESSOR=x86_64 ;;
+< 	    i386)
+< 		UNAME_PROCESSOR=i586 ;;
+< 	esac
+897,898c900,901
+<     i*86:Minix:*:*)
+< 	echo "$UNAME_MACHINE"-pc-minix
+---
+>     *:Minix:*:*)
+> 	echo "$UNAME_MACHINE"-unknown-minix
+925c928
+< 	eval "$set_cc_for_build"
+---
+> 	set_cc_for_build
+974c977
+< 	eval "$set_cc_for_build"
+---
+> 	set_cc_for_build
+1288c1291
+< 	eval "$set_cc_for_build"
+---
+> 	set_cc_for_build
+1360a1364
+> 	# shellcheck disable=SC2154
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/config.sub lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/config.sub
+5c5
+< timestamp='2018-03-08'
+---
+> timestamp='2018-05-24'
+113,224c113,122
+< # Separate what the user gave into CPU-COMPANY and OS or KERNEL-OS (if any).
+< # Here we must recognize all the valid KERNEL-OS combinations.
+< maybe_os=`echo "$1" | sed 's/^\(.*\)-\([^-]*-[^-]*\)$/\2/'`
+< case $maybe_os in
+<   nto-qnx* | linux-gnu* | linux-android* | linux-dietlibc | linux-newlib* | \
+<   linux-musl* | linux-uclibc* | uclinux-uclibc* | uclinux-gnu* | kfreebsd*-gnu* | \
+<   knetbsd*-gnu* | netbsd*-gnu* | netbsd*-eabi* | \
+<   kopensolaris*-gnu* | cloudabi*-eabi* | \
+<   storm-chaos* | os2-emx* | rtmk-nova*)
+<     os=-$maybe_os
+<     basic_machine=`echo "$1" | sed 's/^\(.*\)-\([^-]*-[^-]*\)$/\1/'`
+<     ;;
+<   android-linux)
+<     os=-linux-android
+<     basic_machine=`echo "$1" | sed 's/^\(.*\)-\([^-]*-[^-]*\)$/\1/'`-unknown
+<     ;;
+<   *)
+<     basic_machine=`echo "$1" | sed 's/-[^-]*$//'`
+<     if [ "$basic_machine" != "$1" ]
+<     then os=`echo "$1" | sed 's/.*-/-/'`
+<     else os=; fi
+<     ;;
+< esac
+< 
+< ### Let's recognize common machines as not being operating systems so
+< ### that things like config.sub decstation-3100 work.  We also
+< ### recognize some manufacturers as not being operating systems, so we
+< ### can provide default operating systems below.
+< case $os in
+< 	-sun*os*)
+< 		# Prevent following clause from handling this invalid input.
+< 		;;
+< 	-dec* | -mips* | -sequent* | -encore* | -pc532* | -sgi* | -sony* | \
+< 	-att* | -7300* | -3300* | -delta* | -motorola* | -sun[234]* | \
+< 	-unicom* | -ibm* | -next | -hp | -isi* | -apollo | -altos* | \
+< 	-convergent* | -ncr* | -news | -32* | -3600* | -3100* | -hitachi* |\
+< 	-c[123]* | -convex* | -sun | -crds | -omron* | -dg | -ultra | -tti* | \
+< 	-harris | -dolphin | -highlevel | -gould | -cbm | -ns | -masscomp | \
+< 	-apple | -axis | -knuth | -cray | -microblaze*)
+< 		os=
+< 		basic_machine=$1
+< 		;;
+< 	-bluegene*)
+< 		os=-cnk
+< 		;;
+< 	-sim | -cisco | -oki | -wec | -winbond)
+< 		os=
+< 		basic_machine=$1
+< 		;;
+< 	-scout)
+< 		;;
+< 	-wrs)
+< 		os=-vxworks
+< 		basic_machine=$1
+< 		;;
+< 	-chorusos*)
+< 		os=-chorusos
+< 		basic_machine=$1
+< 		;;
+< 	-chorusrdb)
+< 		os=-chorusrdb
+< 		basic_machine=$1
+< 		;;
+< 	-hiux*)
+< 		os=-hiuxwe2
+< 		;;
+< 	-sco6)
+< 		os=-sco5v6
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-sco5)
+< 		os=-sco3.2v5
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-sco4)
+< 		os=-sco3.2v4
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-sco3.2.[4-9]*)
+< 		os=`echo $os | sed -e 's/sco3.2./sco3.2v/'`
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-sco3.2v[4-9]*)
+< 		# Don't forget version if it is 3.2v4 or newer.
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-sco5v6*)
+< 		# Don't forget version if it is 3.2v4 or newer.
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-sco*)
+< 		os=-sco3.2v2
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-udk*)
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-isc)
+< 		os=-isc2.2
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-clix*)
+< 		basic_machine=clipper-intergraph
+< 		;;
+< 	-isc*)
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-pc/'`
+< 		;;
+< 	-lynx*178)
+< 		os=-lynxos178
+< 		;;
+< 	-lynx*5)
+< 		os=-lynxos5
+---
+> # Split fields of configuration type
+> IFS="-" read -r field1 field2 field3 field4 <<EOF
+> $1
+> EOF
+> 
+> # Separate into logical components for further validation
+> case $1 in
+> 	*-*-*-*-*)
+> 		echo Invalid configuration \`"$1"\': more than four components >&2
+> 		exit 1
+226,227c124,126
+< 	-lynx*)
+< 		os=-lynxos
+---
+> 	*-*-*-*)
+> 		basic_machine=$field1-$field2
+> 		os=$field3-$field4
+229,230c128,149
+< 	-ptx*)
+< 		basic_machine=`echo "$1" | sed -e 's/86-.*/86-sequent/'`
+---
+> 	*-*-*)
+> 		# Ambiguous whether COMPANY is present, or skipped and KERNEL-OS is two
+> 		# parts
+> 		maybe_os=$field2-$field3
+> 		case $maybe_os in
+> 			nto-qnx* | linux-gnu* | linux-android* | linux-dietlibc \
+> 			| linux-newlib* | linux-musl* | linux-uclibc* | uclinux-uclibc* \
+> 			| uclinux-gnu* | kfreebsd*-gnu* | knetbsd*-gnu* | netbsd*-gnu* \
+> 			| netbsd*-eabi* | kopensolaris*-gnu* | cloudabi*-eabi* \
+> 			| storm-chaos* | os2-emx* | rtmk-nova*)
+> 				basic_machine=$field1
+> 				os=$maybe_os
+> 				;;
+> 			android-linux)
+> 				basic_machine=$field1-unknown
+> 				os=linux-android
+> 				;;
+> 			*)
+> 				basic_machine=$field1-$field2
+> 				os=$field3
+> 				;;
+> 		esac
+232,233c151,175
+< 	-psos*)
+< 		os=-psos
+---
+> 	*-*)
+> 		# Second component is usually, but not always the OS
+> 		case $field2 in
+> 			# Prevent following clause from handling this valid os
+> 			sun*os*)
+> 				basic_machine=$field1
+> 				os=$field2
+> 				;;
+> 			# Manufacturers
+> 			dec* | mips* | sequent* | encore* | pc532* | sgi* | sony* \
+> 			| att* | 7300* | 3300* | delta* | motorola* | sun[234]* \
+> 			| unicom* | ibm* | next | hp | isi* | apollo | altos* \
+> 			| convergent* | ncr* | news | 32* | 3600* | 3100* | hitachi* \
+> 			| c[123]* | convex* | sun | crds | omron* | dg | ultra | tti* \
+> 			| harris | dolphin | highlevel | gould | cbm | ns | masscomp \
+> 			| apple | axis | knuth | cray | microblaze* \
+> 			| sim | cisco | oki | wec | wrs | winbond)
+> 				basic_machine=$field1-$field2
+> 				os=
+> 				;;
+> 			*)
+> 				basic_machine=$field1
+> 				os=$field2
+> 				;;
+> 		esac
+235,237c177,561
+< 	-mint | -mint[0-9]*)
+< 		basic_machine=m68k-atari
+< 		os=-mint
+---
+> 	*)
+> 		# Convert single-component short-hands not valid as part of
+> 		# multi-component configurations.
+> 		case $field1 in
+> 			386bsd)
+> 				basic_machine=i386-pc
+> 				os=bsd
+> 				;;
+> 			a29khif)
+> 				basic_machine=a29k-amd
+> 				os=udi
+> 				;;
+> 			adobe68k)
+> 				basic_machine=m68010-adobe
+> 				os=scout
+> 				;;
+> 			am29k)
+> 				basic_machine=a29k-none
+> 				os=bsd
+> 				;;
+> 			amdahl)
+> 				basic_machine=580-amdahl
+> 				os=sysv
+> 				;;
+> 			amigaos | amigados)
+> 				basic_machine=m68k-unknown
+> 				os=amigaos
+> 				;;
+> 			amigaunix | amix)
+> 				basic_machine=m68k-unknown
+> 				os=sysv4
+> 				;;
+> 			apollo68)
+> 				basic_machine=m68k-apollo
+> 				os=sysv
+> 				;;
+> 			apollo68bsd)
+> 				basic_machine=m68k-apollo
+> 				os=bsd
+> 				;;
+> 			aros)
+> 				basic_machine=i386-pc
+> 				os=aros
+> 				;;
+> 			aux)
+> 				basic_machine=m68k-apple
+> 				os=aux
+> 				;;
+> 			balance)
+> 				basic_machine=ns32k-sequent
+> 				os=dynix
+> 				;;
+> 			blackfin)
+> 				basic_machine=bfin-unknown
+> 				os=linux
+> 				;;
+> 			cegcc)
+> 				basic_machine=arm-unknown
+> 				os=cegcc
+> 				;;
+> 			cray)
+> 				basic_machine=j90-cray
+> 				os=unicos
+> 				;;
+> 			craynv)
+> 				basic_machine=craynv-cray
+> 				os=unicosmp
+> 				;;
+> 			delta88)
+> 				basic_machine=m88k-motorola
+> 				os=sysv3
+> 				;;
+> 			dicos)
+> 				basic_machine=i686-pc
+> 				os=dicos
+> 				;;
+> 			djgpp)
+> 				basic_machine=i586-pc
+> 				os=msdosdjgpp
+> 				;;
+> 			ebmon29k)
+> 				basic_machine=a29k-amd
+> 				os=ebmon
+> 				;;
+> 			es1800 | OSE68k | ose68k | ose | OSE)
+> 				basic_machine=m68k-ericsson
+> 				os=ose
+> 				;;
+> 			gmicro)
+> 				basic_machine=tron-gmicro
+> 				os=sysv
+> 				;;
+> 			go32)
+> 				basic_machine=i386-pc
+> 				os=go32
+> 				;;
+> 			h8300hms)
+> 				basic_machine=h8300-hitachi
+> 				os=hms
+> 				;;
+> 			h8300xray)
+> 				basic_machine=h8300-hitachi
+> 				os=xray
+> 				;;
+> 			h8500hms)
+> 				basic_machine=h8500-hitachi
+> 				os=hms
+> 				;;
+> 			harris)
+> 				basic_machine=m88k-harris
+> 				os=sysv3
+> 				;;
+> 			hp300bsd)
+> 				basic_machine=m68k-hp
+> 				os=bsd
+> 				;;
+> 			hp300hpux)
+> 				basic_machine=m68k-hp
+> 				os=hpux
+> 				;;
+> 			hppaosf)
+> 				basic_machine=hppa1.1-hp
+> 				os=osf
+> 				;;
+> 			hppro)
+> 				basic_machine=hppa1.1-hp
+> 				os=proelf
+> 				;;
+> 			i386mach)
+> 				basic_machine=i386-mach
+> 				os=mach
+> 				;;
+> 			vsta)
+> 				basic_machine=i386-unknown
+> 				os=vsta
+> 				;;
+> 			isi68 | isi)
+> 				basic_machine=m68k-isi
+> 				os=sysv
+> 				;;
+> 			m68knommu)
+> 				basic_machine=m68k-unknown
+> 				os=linux
+> 				;;
+> 			magnum | m3230)
+> 				basic_machine=mips-mips
+> 				os=sysv
+> 				;;
+> 			merlin)
+> 				basic_machine=ns32k-utek
+> 				os=sysv
+> 				;;
+> 			mingw64)
+> 				basic_machine=x86_64-pc
+> 				os=mingw64
+> 				;;
+> 			mingw32)
+> 				basic_machine=i686-pc
+> 				os=mingw32
+> 				;;
+> 			mingw32ce)
+> 				basic_machine=arm-unknown
+> 				os=mingw32ce
+> 				;;
+> 			monitor)
+> 				basic_machine=m68k-rom68k
+> 				os=coff
+> 				;;
+> 			morphos)
+> 				basic_machine=powerpc-unknown
+> 				os=morphos
+> 				;;
+> 			moxiebox)
+> 				basic_machine=moxie-unknown
+> 				os=moxiebox
+> 				;;
+> 			msdos)
+> 				basic_machine=i386-pc
+> 				os=msdos
+> 				;;
+> 			msys)
+> 				basic_machine=i686-pc
+> 				os=msys
+> 				;;
+> 			mvs)
+> 				basic_machine=i370-ibm
+> 				os=mvs
+> 				;;
+> 			nacl)
+> 				basic_machine=le32-unknown
+> 				os=nacl
+> 				;;
+> 			ncr3000)
+> 				basic_machine=i486-ncr
+> 				os=sysv4
+> 				;;
+> 			netbsd386)
+> 				basic_machine=i386-unknown
+> 				os=netbsd
+> 				;;
+> 			netwinder)
+> 				basic_machine=armv4l-rebel
+> 				os=linux
+> 				;;
+> 			news | news700 | news800 | news900)
+> 				basic_machine=m68k-sony
+> 				os=newsos
+> 				;;
+> 			news1000)
+> 				basic_machine=m68030-sony
+> 				os=newsos
+> 				;;
+> 			necv70)
+> 				basic_machine=v70-nec
+> 				os=sysv
+> 				;;
+> 			nh3000)
+> 				basic_machine=m68k-harris
+> 				os=cxux
+> 				;;
+> 			nh[45]000)
+> 				basic_machine=m88k-harris
+> 				os=cxux
+> 				;;
+> 			nindy960)
+> 				basic_machine=i960-intel
+> 				os=nindy
+> 				;;
+> 			mon960)
+> 				basic_machine=i960-intel
+> 				os=mon960
+> 				;;
+> 			nonstopux)
+> 				basic_machine=mips-compaq
+> 				os=nonstopux
+> 				;;
+> 			os400)
+> 				basic_machine=powerpc-ibm
+> 				os=os400
+> 				;;
+> 			OSE68000 | ose68000)
+> 				basic_machine=m68000-ericsson
+> 				os=ose
+> 				;;
+> 			os68k)
+> 				basic_machine=m68k-none
+> 				os=os68k
+> 				;;
+> 			paragon)
+> 				basic_machine=i860-intel
+> 				os=osf
+> 				;;
+> 			parisc)
+> 				basic_machine=hppa-unknown
+> 				os=linux
+> 				;;
+> 			pw32)
+> 				basic_machine=i586-unknown
+> 				os=pw32
+> 				;;
+> 			rdos | rdos64)
+> 				basic_machine=x86_64-pc
+> 				os=rdos
+> 				;;
+> 			rdos32)
+> 				basic_machine=i386-pc
+> 				os=rdos
+> 				;;
+> 			rom68k)
+> 				basic_machine=m68k-rom68k
+> 				os=coff
+> 				;;
+> 			sa29200)
+> 				basic_machine=a29k-amd
+> 				os=udi
+> 				;;
+> 			sei)
+> 				basic_machine=mips-sei
+> 				os=seiux
+> 				;;
+> 			sps7)
+> 				basic_machine=m68k-bull
+> 				os=sysv2
+> 				;;
+> 			stratus)
+> 				basic_machine=i860-stratus
+> 				os=sysv4
+> 				;;
+> 			sun2os3)
+> 				basic_machine=m68000-sun
+> 				os=sunos3
+> 				;;
+> 			sun2os4)
+> 				basic_machine=m68000-sun
+> 				os=sunos4
+> 				;;
+> 			sun3os3)
+> 				basic_machine=m68k-sun
+> 				os=sunos3
+> 				;;
+> 			sun3os4)
+> 				basic_machine=m68k-sun
+> 				os=sunos4
+> 				;;
+> 			sun4os3)
+> 				basic_machine=sparc-sun
+> 				os=sunos3
+> 				;;
+> 			sun4os4)
+> 				basic_machine=sparc-sun
+> 				os=sunos4
+> 				;;
+> 			sun4sol2)
+> 				basic_machine=sparc-sun
+> 				os=solaris2
+> 				;;
+> 			sv1)
+> 				basic_machine=sv1-cray
+> 				os=unicos
+> 				;;
+> 			symmetry)
+> 				basic_machine=i386-sequent
+> 				os=dynix
+> 				;;
+> 			t3e)
+> 				basic_machine=alphaev5-cray
+> 				os=unicos
+> 				;;
+> 			t90)
+> 				basic_machine=t90-cray
+> 				os=unicos
+> 				;;
+> 			toad1)
+> 				basic_machine=pdp10-xkl
+> 				os=tops20
+> 				;;
+> 			tpf)
+> 				basic_machine=s390x-ibm
+> 				os=tpf
+> 				;;
+> 			udi29k)
+> 				basic_machine=a29k-amd
+> 				os=udi
+> 				;;
+> 			ultra3)
+> 				basic_machine=a29k-nyu
+> 				os=sym1
+> 				;;
+> 			v810 | necv810)
+> 				basic_machine=v810-nec
+> 				os=none
+> 				;;
+> 			vaxv)
+> 				basic_machine=vax-dec
+> 				os=sysv
+> 				;;
+> 			vms)
+> 				basic_machine=vax-dec
+> 				os=vms
+> 				;;
+> 			vxworks960)
+> 				basic_machine=i960-wrs
+> 				os=vxworks
+> 				;;
+> 			vxworks68)
+> 				basic_machine=m68k-wrs
+> 				os=vxworks
+> 				;;
+> 			vxworks29k)
+> 				basic_machine=a29k-wrs
+> 				os=vxworks
+> 				;;
+> 			xbox)
+> 				basic_machine=i686-pc
+> 				os=mingw32
+> 				;;
+> 			ymp)
+> 				basic_machine=ymp-cray
+> 				os=unicos
+> 				;;
+> 			*)
+> 				basic_machine=$1
+> 				os=
+> 				;;
+> 		esac
+252c576
+< 	| arm | arm[bl]e | arme[lb] | armv[2-8] | armv[3-8][lb] | armv7[arm] \
+---
+> 	| arm | arm[bl]e | arme[lb] | armv[2-8] | armv[3-8][lb] | armv6m | armv[78][arm] \
+257c581
+< 	| c4x | c8051 | clipper \
+---
+> 	| c4x | c8051 | clipper | csky \
+295a620
+> 	| nfp \
+300c625
+< 	| powerpc | powerpc64 | powerpc64le | powerpcle \
+---
+> 	| powerpc | powerpc64 | powerpc64le | powerpcle | powerpcspe \
+334c659
+< 		os=-none
+---
+> 		os=${os:-none}
+337a663,666
+> 	m9s12z | m68hcs12z | hcs12z | s12z)
+> 		basic_machine=s12z-unknown
+> 		os=${os:-none}
+> 		;;
+341d669
+< 
+347c675
+< 		os=-none
+---
+> 		os=${os:-none}
+363,367d690
+< 	# Object if more than one company name word.
+< 	*-*-*)
+< 		echo Invalid configuration \`"$1"\': machine \`"$basic_machine"\' not recognized 1>&2
+< 		exit 1
+< 		;;
+374c697
+< 	| alphapca5[67]-* | alpha64pca5[67]-* | arc-* | arceb-* \
+---
+> 	| alphapca5[67]-* | alpha64pca5[67]-* | amd64-* | arc-* | arceb-* \
+381c704
+< 	| c8051-* | clipper-* | craynv-* | cydra-* \
+---
+> 	| c8051-* | clipper-* | craynv-* | csky-* | cydra-* \
+421a745
+> 	| nfp-* \
+428c752
+< 	| powerpc-* | powerpc64-* | powerpc64le-* | powerpcle-* \
+---
+> 	| powerpc-* | powerpc64-* | powerpc64le-* | powerpcle-* | powerpcspe-* \
+459,462d782
+< 	386bsd)
+< 		basic_machine=i386-pc
+< 		os=-bsd
+< 		;;
+469,472d788
+< 	a29khif)
+< 		basic_machine=a29k-amd
+< 		os=-udi
+< 		;;
+476,479d791
+< 	adobe68k)
+< 		basic_machine=m68010-adobe
+< 		os=-scout
+< 		;;
+486,499d797
+< 	am29k)
+< 		basic_machine=a29k-none
+< 		os=-bsd
+< 		;;
+< 	amd64)
+< 		basic_machine=x86_64-pc
+< 		;;
+< 	amd64-*)
+< 		basic_machine=x86_64-`echo "$basic_machine" | sed 's/^[^-]*-//'`
+< 		;;
+< 	amdahl)
+< 		basic_machine=580-amdahl
+< 		os=-sysv
+< 		;;
+503,522d800
+< 	amigaos | amigados)
+< 		basic_machine=m68k-unknown
+< 		os=-amigaos
+< 		;;
+< 	amigaunix | amix)
+< 		basic_machine=m68k-unknown
+< 		os=-sysv4
+< 		;;
+< 	apollo68)
+< 		basic_machine=m68k-apollo
+< 		os=-sysv
+< 		;;
+< 	apollo68bsd)
+< 		basic_machine=m68k-apollo
+< 		os=-bsd
+< 		;;
+< 	aros)
+< 		basic_machine=i386-pc
+< 		os=-aros
+< 		;;
+526,537d803
+< 	aux)
+< 		basic_machine=m68k-apple
+< 		os=-aux
+< 		;;
+< 	balance)
+< 		basic_machine=ns32k-sequent
+< 		os=-dynix
+< 		;;
+< 	blackfin)
+< 		basic_machine=bfin-unknown
+< 		os=-linux
+< 		;;
+540c806
+< 		os=-linux
+---
+> 		os=linux
+544c810
+< 		os=-cnk
+---
+> 		os=cnk
+557,561c823
+< 		os=-unicos
+< 		;;
+< 	cegcc)
+< 		basic_machine=arm-unknown
+< 		os=-cegcc
+---
+> 		os=${os:-unicos}
+565c827
+< 		os=-bsd
+---
+> 		os=bsd
+569c831
+< 		os=-bsd
+---
+> 		os=bsd
+573c835
+< 		os=-bsd
+---
+> 		os=bsd
+577c839
+< 		os=-bsd
+---
+> 		os=bsd
+581,589c843
+< 		os=-bsd
+< 		;;
+< 	cray | j90)
+< 		basic_machine=j90-cray
+< 		os=-unicos
+< 		;;
+< 	craynv)
+< 		basic_machine=craynv-cray
+< 		os=-unicosmp
+---
+> 		os=bsd
+593c847
+< 		os=-elf
+---
+> 		os=${os:-elf}
+606c860
+< 		os=-elf
+---
+> 		os=${os:-elf}
+616c870
+< 		os=-tops10
+---
+> 		os=tops10
+620c874
+< 		os=-tops20
+---
+> 		os=tops20
+626,637d879
+< 	delta88)
+< 		basic_machine=m88k-motorola
+< 		os=-sysv3
+< 		;;
+< 	dicos)
+< 		basic_machine=i686-pc
+< 		os=-dicos
+< 		;;
+< 	djgpp)
+< 		basic_machine=i586-pc
+< 		os=-msdosdjgpp
+< 		;;
+640c882
+< 		os=-bosx
+---
+> 		os=${os:-bosx}
+644c886
+< 		os=-sysv3
+---
+> 		os=sysv3
+654,661d895
+< 	ebmon29k)
+< 		basic_machine=a29k-amd
+< 		os=-ebmon
+< 		;;
+< 	elxsi)
+< 		basic_machine=elxsi-elxsi
+< 		os=-bsd
+< 		;;
+665,667c899,901
+< 	es1800 | OSE68k | ose68k | ose | OSE)
+< 		basic_machine=m68k-ericsson
+< 		os=-ose
+---
+> 	elxsi)
+> 		basic_machine=elxsi-elxsi
+> 		os=${os:-bsd}
+675,682d908
+< 	gmicro)
+< 		basic_machine=tron-gmicro
+< 		os=-sysv
+< 		;;
+< 	go32)
+< 		basic_machine=i386-pc
+< 		os=-go32
+< 		;;
+685,701c911
+< 		os=-hiuxwe2
+< 		;;
+< 	h8300hms)
+< 		basic_machine=h8300-hitachi
+< 		os=-hms
+< 		;;
+< 	h8300xray)
+< 		basic_machine=h8300-hitachi
+< 		os=-xray
+< 		;;
+< 	h8500hms)
+< 		basic_machine=h8500-hitachi
+< 		os=-hms
+< 		;;
+< 	harris)
+< 		basic_machine=m88k-harris
+< 		os=-sysv3
+---
+> 		os=hiuxwe2
+706,713d915
+< 	hp300bsd)
+< 		basic_machine=m68k-hp
+< 		os=-bsd
+< 		;;
+< 	hp300hpux)
+< 		basic_machine=m68k-hp
+< 		os=-hpux
+< 		;;
+743,750d944
+< 	hppaosf)
+< 		basic_machine=hppa1.1-hp
+< 		os=-osf
+< 		;;
+< 	hppro)
+< 		basic_machine=hppa1.1-hp
+< 		os=-proelf
+< 		;;
+756c950
+< 		os=-sysv32
+---
+> 		os=sysv32
+760c954
+< 		os=-sysv4
+---
+> 		os=sysv4
+764c958
+< 		os=-sysv
+---
+> 		os=sysv
+768c962
+< 		os=-solaris2
+---
+> 		os=solaris2
+770,776c964,966
+< 	i386mach)
+< 		basic_machine=i386-mach
+< 		os=-mach
+< 		;;
+< 	vsta)
+< 		basic_machine=i386-unknown
+< 		os=-vsta
+---
+> 	j90 | j90-cray)
+> 		basic_machine=j90-cray
+> 		os=${os:-unicos}
+781c971
+< 		    -irix*)
+---
+> 		    irix*)
+784c974
+< 			os=-irix4
+---
+> 			os=irix4
+788,791d977
+< 	isi68 | isi)
+< 		basic_machine=m68k-isi
+< 		os=-sysv
+< 		;;
+795,798d980
+< 	m68knommu)
+< 		basic_machine=m68k-unknown
+< 		os=-linux
+< 		;;
+801,809c983
+< 		os=-linux
+< 		;;
+< 	magnum | m3230)
+< 		basic_machine=mips-mips
+< 		os=-sysv
+< 		;;
+< 	merlin)
+< 		basic_machine=ns32k-utek
+< 		os=-sysv
+---
+> 		os=linux
+814,825d987
+< 	mingw64)
+< 		basic_machine=x86_64-pc
+< 		os=-mingw64
+< 		;;
+< 	mingw32)
+< 		basic_machine=i686-pc
+< 		os=-mingw32
+< 		;;
+< 	mingw32ce)
+< 		basic_machine=arm-unknown
+< 		os=-mingw32ce
+< 		;;
+829c991
+< 	*mint | -mint[0-9]* | *MiNT | *MiNT[0-9]*)
+---
+> 	*mint | mint[0-9]* | *MiNT | *MiNT[0-9]*)
+831c993
+< 		os=-mint
+---
+> 		os=mint
+839,854d1000
+< 	monitor)
+< 		basic_machine=m68k-rom68k
+< 		os=-coff
+< 		;;
+< 	morphos)
+< 		basic_machine=powerpc-unknown
+< 		os=-morphos
+< 		;;
+< 	moxiebox)
+< 		basic_machine=moxie-unknown
+< 		os=-moxiebox
+< 		;;
+< 	msdos)
+< 		basic_machine=i386-pc
+< 		os=-msdos
+< 		;;
+858,889d1003
+< 	msys)
+< 		basic_machine=i686-pc
+< 		os=-msys
+< 		;;
+< 	mvs)
+< 		basic_machine=i370-ibm
+< 		os=-mvs
+< 		;;
+< 	nacl)
+< 		basic_machine=le32-unknown
+< 		os=-nacl
+< 		;;
+< 	ncr3000)
+< 		basic_machine=i486-ncr
+< 		os=-sysv4
+< 		;;
+< 	netbsd386)
+< 		basic_machine=i386-unknown
+< 		os=-netbsd
+< 		;;
+< 	netwinder)
+< 		basic_machine=armv4l-rebel
+< 		os=-linux
+< 		;;
+< 	news | news700 | news800 | news900)
+< 		basic_machine=m68k-sony
+< 		os=-newsos
+< 		;;
+< 	news1000)
+< 		basic_machine=m68030-sony
+< 		os=-newsos
+< 		;;
+892,896c1006
+< 		os=-newsos
+< 		;;
+< 	necv70)
+< 		basic_machine=v70-nec
+< 		os=-sysv
+---
+> 		os=newsos
+901c1011
+< 		    -nextstep* )
+---
+> 		    nextstep* )
+903,904c1013,1014
+< 		    -ns2*)
+< 		      os=-nextstep2
+---
+> 		    ns2*)
+> 		      os=nextstep2
+907c1017
+< 		      os=-nextstep3
+---
+> 		      os=nextstep3
+911,930d1020
+< 	nh3000)
+< 		basic_machine=m68k-harris
+< 		os=-cxux
+< 		;;
+< 	nh[45]000)
+< 		basic_machine=m88k-harris
+< 		os=-cxux
+< 		;;
+< 	nindy960)
+< 		basic_machine=i960-intel
+< 		os=-nindy
+< 		;;
+< 	mon960)
+< 		basic_machine=i960-intel
+< 		os=-mon960
+< 		;;
+< 	nonstopux)
+< 		basic_machine=mips-compaq
+< 		os=-nonstopux
+< 		;;
+951c1041
+< 		os=-proelf
+---
+> 		os=proelf
+956,967d1045
+< 	os400)
+< 		basic_machine=powerpc-ibm
+< 		os=-os400
+< 		;;
+< 	OSE68000 | ose68000)
+< 		basic_machine=m68000-ericsson
+< 		os=-ose
+< 		;;
+< 	os68k)
+< 		basic_machine=m68k-none
+< 		os=-os68k
+< 		;;
+970,978c1048
+< 		os=-hiuxwe2
+< 		;;
+< 	paragon)
+< 		basic_machine=i860-intel
+< 		os=-osf
+< 		;;
+< 	parisc)
+< 		basic_machine=hppa-unknown
+< 		os=-linux
+---
+> 		os=hiuxwe2
+982c1052
+< 		os=-linux
+---
+> 		os=linux
+1052,1067d1121
+< 	pw32)
+< 		basic_machine=i586-unknown
+< 		os=-pw32
+< 		;;
+< 	rdos | rdos64)
+< 		basic_machine=x86_64-pc
+< 		os=-rdos
+< 		;;
+< 	rdos32)
+< 		basic_machine=i386-pc
+< 		os=-rdos
+< 		;;
+< 	rom68k)
+< 		basic_machine=m68k-rom68k
+< 		os=-coff
+< 		;;
+1080,1083d1133
+< 	sa29200)
+< 		basic_machine=a29k-amd
+< 		os=-udi
+< 		;;
+1092,1096c1142
+< 		os=-elf
+< 		;;
+< 	sei)
+< 		basic_machine=mips-sei
+< 		os=-seiux
+---
+> 		os=${os:-elf}
+1106,1110c1152
+< 		os=-vxworks
+< 		;;
+< 	sps7)
+< 		basic_machine=m68k-bull
+< 		os=-sysv2
+---
+> 		os=vxworks
+1118,1121d1159
+< 	stratus)
+< 		basic_machine=i860-stratus
+< 		os=-sysv4
+< 		;;
+1128,1155d1165
+< 	sun2os3)
+< 		basic_machine=m68000-sun
+< 		os=-sunos3
+< 		;;
+< 	sun2os4)
+< 		basic_machine=m68000-sun
+< 		os=-sunos4
+< 		;;
+< 	sun3os3)
+< 		basic_machine=m68k-sun
+< 		os=-sunos3
+< 		;;
+< 	sun3os4)
+< 		basic_machine=m68k-sun
+< 		os=-sunos4
+< 		;;
+< 	sun4os3)
+< 		basic_machine=sparc-sun
+< 		os=-sunos3
+< 		;;
+< 	sun4os4)
+< 		basic_machine=sparc-sun
+< 		os=-sunos4
+< 		;;
+< 	sun4sol2)
+< 		basic_machine=sparc-sun
+< 		os=-solaris2
+< 		;;
+1165,1180d1174
+< 	sv1)
+< 		basic_machine=sv1-cray
+< 		os=-unicos
+< 		;;
+< 	symmetry)
+< 		basic_machine=i386-sequent
+< 		os=-dynix
+< 		;;
+< 	t3e)
+< 		basic_machine=alphaev5-cray
+< 		os=-unicos
+< 		;;
+< 	t90)
+< 		basic_machine=t90-cray
+< 		os=-unicos
+< 		;;
+1183c1177
+< 		os=-linux-gnu
+---
+> 		os=linux-gnu
+1191,1194d1184
+< 	toad1)
+< 		basic_machine=pdp10-xkl
+< 		os=-tops20
+< 		;;
+1198,1221d1187
+< 	tpf)
+< 		basic_machine=s390x-ibm
+< 		os=-tpf
+< 		;;
+< 	udi29k)
+< 		basic_machine=a29k-amd
+< 		os=-udi
+< 		;;
+< 	ultra3)
+< 		basic_machine=a29k-nyu
+< 		os=-sym1
+< 		;;
+< 	v810 | necv810)
+< 		basic_machine=v810-nec
+< 		os=-none
+< 		;;
+< 	vaxv)
+< 		basic_machine=vax-dec
+< 		os=-sysv
+< 		;;
+< 	vms)
+< 		basic_machine=vax-dec
+< 		os=-vms
+< 		;;
+1225,1236d1190
+< 	vxworks960)
+< 		basic_machine=i960-wrs
+< 		os=-vxworks
+< 		;;
+< 	vxworks68)
+< 		basic_machine=m68k-wrs
+< 		os=-vxworks
+< 		;;
+< 	vxworks29k)
+< 		basic_machine=a29k-wrs
+< 		os=-vxworks
+< 		;;
+1239c1193
+< 		os=-none
+---
+> 		os=none
+1243c1197
+< 		os=-proelf
+---
+> 		os=proelf
+1248,1251d1201
+< 	xbox)
+< 		basic_machine=i686-pc
+< 		os=-mingw32
+< 		;;
+1258,1261d1207
+< 	ymp)
+< 		basic_machine=ymp-cray
+< 		os=-unicos
+< 		;;
+1264c1210
+< 		os=-none
+---
+> 		os=${os:-none}
+1337c1283
+< if [ x"$os" != x"" ]
+---
+> if [ x$os != x ]
+1342,1344c1288,1290
+< 	# -solaris* is a basic system type, with this one exception.
+< 	-auroraux)
+< 		os=-auroraux
+---
+> 	# solaris* is a basic system type, with this one exception.
+> 	auroraux)
+> 		os=auroraux
+1346c1292,1295
+< 	-solaris1 | -solaris1.*)
+---
+> 	bluegene*)
+> 		os=cnk
+> 		;;
+> 	solaris1 | solaris1.*)
+1349,1350c1298,1299
+< 	-solaris)
+< 		os=-solaris2
+---
+> 	solaris)
+> 		os=solaris2
+1352,1353c1301,1302
+< 	-unixware*)
+< 		os=-sysv4.2uw
+---
+> 	unixware*)
+> 		os=sysv4.2uw
+1355c1304
+< 	-gnu/linux*)
+---
+> 	gnu/linux*)
+1359,1360c1308,1340
+< 	-es1800*)
+< 		os=-ose
+---
+> 	es1800*)
+> 		os=ose
+> 		;;
+> 	# Some version numbers need modification
+> 	chorusos*)
+> 		os=chorusos
+> 		;;
+> 	isc)
+> 		os=isc2.2
+> 		;;
+> 	sco6)
+> 		os=sco5v6
+> 		;;
+> 	sco5)
+> 		os=sco3.2v5
+> 		;;
+> 	sco4)
+> 		os=sco3.2v4
+> 		;;
+> 	sco3.2.[4-9]*)
+> 		os=`echo $os | sed -e 's/sco3.2./sco3.2v/'`
+> 		;;
+> 	sco3.2v[4-9]* | sco5v6*)
+> 		# Don't forget version if it is 3.2v4 or newer.
+> 		;;
+> 	scout)
+> 		# Don't match below
+> 		;;
+> 	sco*)
+> 		os=sco3.2v2
+> 		;;
+> 	psos*)
+> 		os=psos
+1365,1393c1345,1373
+< 	# -sysv* is not here because it comes later, after sysvr4.
+< 	-gnu* | -bsd* | -mach* | -minix* | -genix* | -ultrix* | -irix* \
+< 	      | -*vms* | -sco* | -esix* | -isc* | -aix* | -cnk* | -sunos | -sunos[34]*\
+< 	      | -hpux* | -unos* | -osf* | -luna* | -dgux* | -auroraux* | -solaris* \
+< 	      | -sym* | -kopensolaris* | -plan9* \
+< 	      | -amigaos* | -amigados* | -msdos* | -newsos* | -unicos* | -aof* \
+< 	      | -aos* | -aros* | -cloudabi* | -sortix* \
+< 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+< 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+< 	      | -hiux* | -knetbsd* | -mirbsd* | -netbsd* \
+< 	      | -bitrig* | -openbsd* | -solidbsd* | -libertybsd* \
+< 	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
+< 	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
+< 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \
+< 	      | -udi* | -eabi* | -lites* | -ieee* | -go32* | -aux* | -hcos* \
+< 	      | -chorusos* | -chorusrdb* | -cegcc* | -glidix* \
+< 	      | -cygwin* | -msys* | -pe* | -psos* | -moss* | -proelf* | -rtems* \
+< 	      | -midipix* | -mingw32* | -mingw64* | -linux-gnu* | -linux-android* \
+< 	      | -linux-newlib* | -linux-musl* | -linux-uclibc* \
+< 	      | -uxpv* | -beos* | -mpeix* | -udk* | -moxiebox* \
+< 	      | -interix* | -uwin* | -mks* | -rhapsody* | -darwin* \
+< 	      | -openstep* | -oskit* | -conix* | -pw32* | -nonstopux* \
+< 	      | -storm-chaos* | -tops10* | -tenex* | -tops20* | -its* \
+< 	      | -os2* | -vos* | -palmos* | -uclinux* | -nucleus* \
+< 	      | -morphos* | -superux* | -rtmk* | -windiss* \
+< 	      | -powermax* | -dnix* | -nx6 | -nx7 | -sei* | -dragonfly* \
+< 	      | -skyos* | -haiku* | -rdos* | -toppers* | -drops* | -es* \
+< 	      | -onefs* | -tirtos* | -phoenix* | -fuchsia* | -redox* | -bme* \
+< 	      | -midnightbsd*)
+---
+> 	# sysv* is not here because it comes later, after sysvr4.
+> 	gnu* | bsd* | mach* | minix* | genix* | ultrix* | irix* \
+> 	     | *vms* | esix* | aix* | cnk* | sunos | sunos[34]*\
+> 	     | hpux* | unos* | osf* | luna* | dgux* | auroraux* | solaris* \
+> 	     | sym* | kopensolaris* | plan9* \
+> 	     | amigaos* | amigados* | msdos* | newsos* | unicos* | aof* \
+> 	     | aos* | aros* | cloudabi* | sortix* \
+> 	     | nindy* | vxsim* | vxworks* | ebmon* | hms* | mvs* \
+> 	     | clix* | riscos* | uniplus* | iris* | rtu* | xenix* \
+> 	     | knetbsd* | mirbsd* | netbsd* \
+> 	     | bitrig* | openbsd* | solidbsd* | libertybsd* \
+> 	     | ekkobsd* | kfreebsd* | freebsd* | riscix* | lynxos* \
+> 	     | bosx* | nextstep* | cxux* | aout* | elf* | oabi* \
+> 	     | ptx* | coff* | ecoff* | winnt* | domain* | vsta* \
+> 	     | udi* | eabi* | lites* | ieee* | go32* | aux* | hcos* \
+> 	     | chorusrdb* | cegcc* | glidix* \
+> 	     | cygwin* | msys* | pe* | moss* | proelf* | rtems* \
+> 	     | midipix* | mingw32* | mingw64* | linux-gnu* | linux-android* \
+> 	     | linux-newlib* | linux-musl* | linux-uclibc* \
+> 	     | uxpv* | beos* | mpeix* | udk* | moxiebox* \
+> 	     | interix* | uwin* | mks* | rhapsody* | darwin* \
+> 	     | openstep* | oskit* | conix* | pw32* | nonstopux* \
+> 	     | storm-chaos* | tops10* | tenex* | tops20* | its* \
+> 	     | os2* | vos* | palmos* | uclinux* | nucleus* \
+> 	     | morphos* | superux* | rtmk* | windiss* \
+> 	     | powermax* | dnix* | nx6 | nx7 | sei* | dragonfly* \
+> 	     | skyos* | haiku* | rdos* | toppers* | drops* | es* \
+> 	     | onefs* | tirtos* | phoenix* | fuchsia* | redox* | bme* \
+> 	     | midnightbsd*)
+1396c1376
+< 	-qnx*)
+---
+> 	qnx*)
+1401c1381
+< 			os=-nto$os
+---
+> 			os=nto-$os
+1405c1385,1386
+< 	-nto-qnx*)
+---
+> 	hiux*)
+> 		os=hiuxwe2
+1407c1388,1390
+< 	-nto*)
+---
+> 	nto-qnx*)
+> 		;;
+> 	nto*)
+1410,1412c1393,1404
+< 	-sim | -xray | -os68k* | -v88r* \
+< 	      | -windows* | -osx | -abug | -netware* | -os9* \
+< 	      | -macos* | -mpw* | -magic* | -mmixware* | -mon960* | -lnews*)
+---
+> 	sim | xray | os68k* | v88r* \
+> 	    | windows* | osx | abug | netware* | os9* \
+> 	    | macos* | mpw* | magic* | mmixware* | mon960* | lnews*)
+> 		;;
+> 	linux-dietlibc)
+> 		os=linux-dietlibc
+> 		;;
+> 	linux*)
+> 		os=`echo $os | sed -e 's|linux|linux-gnu|'`
+> 		;;
+> 	lynx*178)
+> 		os=lynxos178
+1414c1406,1412
+< 	-mac*)
+---
+> 	lynx*5)
+> 		os=lynxos5
+> 		;;
+> 	lynx*)
+> 		os=lynxos
+> 		;;
+> 	mac*)
+1417,1418c1415,1416
+< 	-linux-dietlibc)
+< 		os=-linux-dietlibc
+---
+> 	opened*)
+> 		os=openedition
+1420,1421c1418,1419
+< 	-linux*)
+< 		os=`echo $os | sed -e 's|linux|linux-gnu|'`
+---
+> 	os400*)
+> 		os=os400
+1423c1421
+< 	-sunos5*)
+---
+> 	sunos5*)
+1426c1424
+< 	-sunos6*)
+---
+> 	sunos6*)
+1429,1430c1427,1428
+< 	-opened*)
+< 		os=-openedition
+---
+> 	wince*)
+> 		os=wince
+1432,1433c1430,1431
+< 	-os400*)
+< 		os=-os400
+---
+> 	utek*)
+> 		os=bsd
+1435,1436c1433,1434
+< 	-wince*)
+< 		os=-wince
+---
+> 	dynix*)
+> 		os=bsd
+1438,1439c1436,1437
+< 	-utek*)
+< 		os=-bsd
+---
+> 	acis*)
+> 		os=aos
+1441,1442c1439,1440
+< 	-dynix*)
+< 		os=-bsd
+---
+> 	atheos*)
+> 		os=atheos
+1444,1445c1442,1443
+< 	-acis*)
+< 		os=-aos
+---
+> 	syllable*)
+> 		os=syllable
+1447,1454c1445,1446
+< 	-atheos*)
+< 		os=-atheos
+< 		;;
+< 	-syllable*)
+< 		os=-syllable
+< 		;;
+< 	-386bsd)
+< 		os=-bsd
+---
+> 	386bsd)
+> 		os=bsd
+1456,1457c1448,1449
+< 	-ctix* | -uts*)
+< 		os=-sysv
+---
+> 	ctix* | uts*)
+> 		os=sysv
+1459,1460c1451,1452
+< 	-nova*)
+< 		os=-rtmk-nova
+---
+> 	nova*)
+> 		os=rtmk-nova
+1462,1463c1454,1455
+< 	-ns2)
+< 		os=-nextstep2
+---
+> 	ns2)
+> 		os=nextstep2
+1465,1466c1457,1458
+< 	-nsk*)
+< 		os=-nsk
+---
+> 	nsk*)
+> 		os=nsk
+1469c1461
+< 	-sinix5.*)
+---
+> 	sinix5.*)
+1472,1473c1464,1465
+< 	-sinix*)
+< 		os=-sysv4
+---
+> 	sinix*)
+> 		os=sysv4
+1475,1476c1467,1468
+< 	-tpf*)
+< 		os=-tpf
+---
+> 	tpf*)
+> 		os=tpf
+1478,1479c1470,1471
+< 	-triton*)
+< 		os=-sysv3
+---
+> 	triton*)
+> 		os=sysv3
+1481,1482c1473,1474
+< 	-oss*)
+< 		os=-sysv3
+---
+> 	oss*)
+> 		os=sysv3
+1484,1485c1476,1477
+< 	-svr4*)
+< 		os=-sysv4
+---
+> 	svr4*)
+> 		os=sysv4
+1487,1488c1479,1480
+< 	-svr3)
+< 		os=-sysv3
+---
+> 	svr3)
+> 		os=sysv3
+1490,1491c1482,1483
+< 	-sysvr4)
+< 		os=-sysv4
+---
+> 	sysvr4)
+> 		os=sysv4
+1493,1494c1485,1486
+< 	# This must come after -sysvr4.
+< 	-sysv*)
+---
+> 	# This must come after sysvr4.
+> 	sysv*)
+1496,1497c1488,1489
+< 	-ose*)
+< 		os=-ose
+---
+> 	ose*)
+> 		os=ose
+1499,1500c1491,1492
+< 	-*mint | -mint[0-9]* | -*MiNT | -MiNT[0-9]*)
+< 		os=-mint
+---
+> 	*mint | mint[0-9]* | *MiNT | MiNT[0-9]*)
+> 		os=mint
+1502,1503c1494,1495
+< 	-zvmoe)
+< 		os=-zvmoe
+---
+> 	zvmoe)
+> 		os=zvmoe
+1505,1506c1497,1498
+< 	-dicos*)
+< 		os=-dicos
+---
+> 	dicos*)
+> 		os=dicos
+1508c1500
+< 	-pikeos*)
+---
+> 	pikeos*)
+1514c1506
+< 			os=-eabi
+---
+> 			os=eabi
+1517c1509
+< 			os=-elf
+---
+> 			os=elf
+1521c1513
+< 	-nacl*)
+---
+> 	nacl*)
+1523c1515
+< 	-ios)
+---
+> 	ios)
+1525c1517,1519
+< 	-none)
+---
+> 	none)
+> 		;;
+> 	*-eabi)
+1528,1529d1521
+< 		# Get rid of the `-' at the beginning of $os.
+< 		os=`echo $os | sed 's/[^-]*-//'`
+1548c1540
+< 		os=-elf
+---
+> 		os=elf
+1551c1543
+< 		os=-elf
+---
+> 		os=elf
+1554c1546
+< 		os=-riscix1.2
+---
+> 		os=riscix1.2
+1557c1549
+< 		os=-linux
+---
+> 		os=linux
+1560c1552
+< 		os=-aout
+---
+> 		os=aout
+1563c1555
+< 		os=-coff
+---
+> 		os=coff
+1566c1558,1561
+< 		os=-elf
+---
+> 		os=elf
+> 		;;
+> 	clipper-intergraph)
+> 		os=clix
+1569c1564
+< 		os=-elf
+---
+> 		os=elf
+1572c1567
+< 		os=-coff
+---
+> 		os=coff
+1575c1570
+< 		os=-coff
+---
+> 		os=coff
+1578c1573
+< 		os=-coff
+---
+> 		os=coff
+1582c1577
+< 		os=-tops20
+---
+> 		os=tops20
+1585c1580
+< 		os=-none
+---
+> 		os=none
+1588c1583
+< 		os=-ultrix4.2
+---
+> 		os=ultrix4.2
+1591c1586
+< 		os=-domain
+---
+> 		os=domain
+1594c1589
+< 		os=-sunos4.0.2
+---
+> 		os=sunos4.0.2
+1597c1592
+< 		os=-sunos3
+---
+> 		os=sunos3
+1600c1595
+< 		os=-aout
+---
+> 		os=aout
+1603c1598
+< 		os=-elf
+---
+> 		os=elf
+1606c1601
+< 		os=-elf
+---
+> 		os=elf
+1609c1604
+< 		os=-elf
+---
+> 		os=elf
+1612c1607
+< 		os=-coff
+---
+> 		os=coff
+1615c1610
+< 		os=-sysv3
+---
+> 		os=sysv3
+1618c1613
+< 		os=-sunos4.1.1
+---
+> 		os=sunos4.1.1
+1621c1616
+< 		os=-elf
+---
+> 		os=elf
+1624c1619
+< 		os=-beos
+---
+> 		os=beos
+1627c1622
+< 		os=-aix
+---
+> 		os=aix
+1630c1625
+< 		os=-mmixware
+---
+> 		os=mmixware
+1633c1628
+< 		os=-proelf
+---
+> 		os=proelf
+1636c1631
+< 		os=-proelf
+---
+> 		os=proelf
+1639c1634
+< 		os=-proelf
+---
+> 		os=proelf
+1642c1637
+< 		os=-hpux
+---
+> 		os=hpux
+1645c1640
+< 		os=-hiux
+---
+> 		os=hiux
+1648c1643
+< 		os=-sysv
+---
+> 		os=sysv
+1651c1646
+< 		os=-amigaos
+---
+> 		os=amigaos
+1654c1649
+< 		os=-dgux
+---
+> 		os=dgux
+1657c1652
+< 		os=-sysv3
+---
+> 		os=sysv3
+1660c1655
+< 		os=-rtu
+---
+> 		os=rtu
+1663c1658
+< 		os=-luna
+---
+> 		os=luna
+1666c1661
+< 		os=-nextstep
+---
+> 		os=nextstep
+1669c1664
+< 		os=-ptx
+---
+> 		os=ptx
+1672c1667
+< 		os=-unos
+---
+> 		os=unos
+1675c1670
+< 		os=-genix
+---
+> 		os=genix
+1678c1673
+< 		os=-mvs
+---
+> 		os=mvs
+1681c1676
+< 		os=-sysv
+---
+> 		os=sysv
+1684c1679
+< 		os=-bsd
+---
+> 		os=bsd
+1687c1682
+< 		os=-bsd
+---
+> 		os=bsd
+1690c1685
+< 		os=-irix
+---
+> 		os=irix
+1693c1688
+< 		os=-sysv4
+---
+> 		os=sysv4
+1696c1691
+< 		os=-rtu
+---
+> 		os=rtu
+1699c1694
+< 		os=-uxpv
+---
+> 		os=uxpv
+1702c1697
+< 		os=-coff
+---
+> 		os=coff
+1705c1700
+< 		os=-coff
+---
+> 		os=coff
+1708c1703
+< 		os=-macos
+---
+> 		os=macos
+1711c1706,1709
+< 		os=-mint
+---
+> 		os=mint
+> 		;;
+> 	*-wrs)
+> 		os=vxworks
+1714c1712
+< 		os=-none
+---
+> 		os=none
+1725c1723
+< 			-riscix*)
+---
+> 			riscix*)
+1728c1726
+< 			-sunos*)
+---
+> 			sunos*)
+1731c1729
+< 			-cnk*|-aix*)
+---
+> 			cnk*|-aix*)
+1734c1732
+< 			-beos*)
+---
+> 			beos*)
+1737c1735
+< 			-hpux*)
+---
+> 			hpux*)
+1740c1738
+< 			-mpeix*)
+---
+> 			mpeix*)
+1743c1741
+< 			-hiux*)
+---
+> 			hiux*)
+1746c1744
+< 			-unos*)
+---
+> 			unos*)
+1749c1747
+< 			-dgux*)
+---
+> 			dgux*)
+1752c1750
+< 			-luna*)
+---
+> 			luna*)
+1755c1753
+< 			-genix*)
+---
+> 			genix*)
+1758c1756,1759
+< 			-mvs* | -opened*)
+---
+> 			clix*)
+> 				vendor=intergraph
+> 				;;
+> 			mvs* | opened*)
+1761c1762
+< 			-os400*)
+---
+> 			os400*)
+1764c1765
+< 			-ptx*)
+---
+> 			ptx*)
+1767c1768
+< 			-tpf*)
+---
+> 			tpf*)
+1770c1771
+< 			-vxsim* | -vxworks* | -windiss*)
+---
+> 			vxsim* | vxworks* | windiss*)
+1773c1774
+< 			-aux*)
+---
+> 			aux*)
+1776c1777
+< 			-hms*)
+---
+> 			hms*)
+1779c1780
+< 			-mpw* | -macos*)
+---
+> 			mpw* | macos*)
+1782c1783
+< 			-*mint | -mint[0-9]* | -*MiNT | -MiNT[0-9]*)
+---
+> 			*mint | mint[0-9]* | *MiNT | MiNT[0-9]*)
+1785c1786
+< 			-vos*)
+---
+> 			vos*)
+1793c1794
+< echo "$basic_machine$os"
+---
+> echo "$basic_machine-$os"
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/depcomp lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/depcomp
+6c6
+< # Copyright (C) 1999-2018 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1999-2020 Free Software Foundation, Inc.
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/install-sh lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/install-sh
+4c4
+< scriptversion=2018-03-11.20; # UTC
+---
+> scriptversion=2020-11-14.01; # UTC
+71a72,76
+> # Create dirs (including intermediate dirs) using mode 755.
+> # This is like GNU 'install' as of coreutils 8.32 (2020).
+> mkdir_umask=22
+> 
+> backupsuffix=
+102c107
+<   -C            install only if different (preserve the last data modification time)
+---
+>   -C            install only if different (preserve data modification time)
+106a112
+>   -p            pass -p to $cpprog.
+107a114
+>   -S SUFFIX     attempt to back up existing files, with suffix SUFFIX.
+113a121,128
+> 
+> By default, rm is invoked with -f; when overridden with RMPROG,
+> it's up to you to specify -f if you want it.
+> 
+> If -S is not specified, no backups are attempted.
+> 
+> Email bug reports to bug-automake@gnu.org.
+> Automake home page: https://www.gnu.org/software/automake/
+139a155,156
+>     -p) cpprog="$cpprog -p";;
+> 
+141a159,161
+>     -S) backupsuffix="$2"
+>         shift;;
+> 
+257a278,281
+>     # Don't chown directories that already exist.
+>     if test $dstdir_status = 0; then
+>       chowncmd=""
+>     fi
+304,319d327
+<         # Create intermediate dirs using mode 755 as modified by the umask.
+<         # This is like FreeBSD 'install' as of 1997-10-28.
+<         umask=`umask`
+<         case $stripcmd.$umask in
+<           # Optimize common cases.
+<           *[2367][2367]) mkdir_umask=$umask;;
+<           .*0[02][02] | .[02][02] | .[02]) mkdir_umask=22;;
+< 
+<           *[0-7])
+<             mkdir_umask=`expr $umask + 22 \
+<               - $umask % 100 % 40 + $umask % 20 \
+<               - $umask % 10 % 4 + $umask % 2
+<             `;;
+<           *) mkdir_umask=$umask,go-w;;
+<         esac
+< 
+329,374c337,379
+<         case $umask in
+<           *[123567][0-7][0-7])
+<             # POSIX mkdir -p sets u+wx bits regardless of umask, which
+<             # is incompatible with FreeBSD 'install' when (umask & 300) != 0.
+<             ;;
+<           *)
+<             # Note that $RANDOM variable is not portable (e.g. dash);  Use it
+<             # here however when possible just to lower collision chance.
+<             tmpdir=${TMPDIR-/tmp}/ins$RANDOM-$$
+< 
+<             trap 'ret=$?; rmdir "$tmpdir/a/b" "$tmpdir/a" "$tmpdir" 2>/dev/null; exit $ret' 0
+< 
+<             # Because "mkdir -p" follows existing symlinks and we likely work
+<             # directly in world-writeable /tmp, make sure that the '$tmpdir'
+<             # directory is successfully created first before we actually test
+<             # 'mkdir -p' feature.
+<             if (umask $mkdir_umask &&
+<                 $mkdirprog $mkdir_mode "$tmpdir" &&
+<                 exec $mkdirprog $mkdir_mode -p -- "$tmpdir/a/b") >/dev/null 2>&1
+<             then
+<               if test -z "$dir_arg" || {
+<                    # Check for POSIX incompatibilities with -m.
+<                    # HP-UX 11.23 and IRIX 6.5 mkdir -m -p sets group- or
+<                    # other-writable bit of parent directory when it shouldn't.
+<                    # FreeBSD 6.1 mkdir -m -p sets mode of existing directory.
+<                    test_tmpdir="$tmpdir/a"
+<                    ls_ld_tmpdir=`ls -ld "$test_tmpdir"`
+<                    case $ls_ld_tmpdir in
+<                      d????-?r-*) different_mode=700;;
+<                      d????-?--*) different_mode=755;;
+<                      *) false;;
+<                    esac &&
+<                    $mkdirprog -m$different_mode -p -- "$test_tmpdir" && {
+<                      ls_ld_tmpdir_1=`ls -ld "$test_tmpdir"`
+<                      test "$ls_ld_tmpdir" = "$ls_ld_tmpdir_1"
+<                    }
+<                  }
+<               then posix_mkdir=:
+<               fi
+<               rmdir "$tmpdir/a/b" "$tmpdir/a" "$tmpdir"
+<             else
+<               # Remove any dirs left behind by ancient mkdir implementations.
+<               rmdir ./$mkdir_mode ./-p ./-- "$tmpdir" 2>/dev/null
+<             fi
+<             trap '' 0;;
+<         esac;;
+---
+> 	# The $RANDOM variable is not portable (e.g., dash).  Use it
+> 	# here however when possible just to lower collision chance.
+> 	tmpdir=${TMPDIR-/tmp}/ins$RANDOM-$$
+> 
+> 	trap '
+> 	  ret=$?
+> 	  rmdir "$tmpdir/a/b" "$tmpdir/a" "$tmpdir" 2>/dev/null
+> 	  exit $ret
+> 	' 0
+> 
+> 	# Because "mkdir -p" follows existing symlinks and we likely work
+> 	# directly in world-writeable /tmp, make sure that the '$tmpdir'
+> 	# directory is successfully created first before we actually test
+> 	# 'mkdir -p'.
+> 	if (umask $mkdir_umask &&
+> 	    $mkdirprog $mkdir_mode "$tmpdir" &&
+> 	    exec $mkdirprog $mkdir_mode -p -- "$tmpdir/a/b") >/dev/null 2>&1
+> 	then
+> 	  if test -z "$dir_arg" || {
+> 	       # Check for POSIX incompatibilities with -m.
+> 	       # HP-UX 11.23 and IRIX 6.5 mkdir -m -p sets group- or
+> 	       # other-writable bit of parent directory when it shouldn't.
+> 	       # FreeBSD 6.1 mkdir -m -p sets mode of existing directory.
+> 	       test_tmpdir="$tmpdir/a"
+> 	       ls_ld_tmpdir=`ls -ld "$test_tmpdir"`
+> 	       case $ls_ld_tmpdir in
+> 		 d????-?r-*) different_mode=700;;
+> 		 d????-?--*) different_mode=755;;
+> 		 *) false;;
+> 	       esac &&
+> 	       $mkdirprog -m$different_mode -p -- "$test_tmpdir" && {
+> 		 ls_ld_tmpdir_1=`ls -ld "$test_tmpdir"`
+> 		 test "$ls_ld_tmpdir" = "$ls_ld_tmpdir_1"
+> 	       }
+> 	     }
+> 	  then posix_mkdir=:
+> 	  fi
+> 	  rmdir "$tmpdir/a/b" "$tmpdir/a" "$tmpdir"
+> 	else
+> 	  # Remove any dirs left behind by ancient mkdir implementations.
+> 	  rmdir ./$mkdir_mode ./-p ./-- "$tmpdir" 2>/dev/null
+> 	fi
+> 	trap '' 0;;
+385c390
+<       # The umask is ridiculous, or mkdir does not conform to POSIX,
+---
+>       # mkdir does not conform to POSIX,
+414c419
+<             (umask=$mkdir_umask &&
+---
+>             (umask $mkdir_umask &&
+454c459,470
+<     (umask $cp_umask && $doit_exec $cpprog "$src" "$dsttmp") &&
+---
+>     (umask $cp_umask &&
+>      { test -z "$stripcmd" || {
+> 	 # Create $dsttmp read-write so that cp doesn't create it read-only,
+> 	 # which would cause strip to fail.
+> 	 if test -z "$doit"; then
+> 	   : >"$dsttmp" # No need to fork-exec 'touch'.
+> 	 else
+> 	   $doit touch "$dsttmp"
+> 	 fi
+>        }
+>      } &&
+>      $doit_exec $cpprog "$src" "$dsttmp") &&
+479a496,502
+>       # If $backupsuffix is set, and the file being installed
+>       # already exists, attempt a backup.  Don't worry if it fails,
+>       # e.g., if mv doesn't support -f.
+>       if test -n "$backupsuffix" && test -f "$dst"; then
+>         $doit $mvcmd -f "$dst" "$dst$backupsuffix" 2>/dev/null
+>       fi
+> 
+494c517
+<           $doit $rmcmd -f "$dst" 2>/dev/null ||
+---
+>           $doit $rmcmd "$dst" 2>/dev/null ||
+496c519
+<             { $doit $rmcmd -f "$rmtmp" 2>/dev/null; :; }
+---
+>             { $doit $rmcmd "$rmtmp" 2>/dev/null; :; }
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/missing lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/aclocal/missing
+6c6
+< # Copyright (C) 1996-2018 Free Software Foundation, Inc.
+---
+> # Copyright (C) 1996-2020 Free Software Foundation, Inc.
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/amavisd-milter/amavisd-milter.8 lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/amavisd-milter/amavisd-milter.8
+1c1
+< .\" Automatically generated by Pandoc 2.9.2.1
+---
+> .\" Automatically generated by Pandoc 2.11.3.2
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/amavisd-milter/Makefile.in lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/amavisd-milter/Makefile.in
+312d311
+< runstatedir = @runstatedir@
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/compat/Makefile.in lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/compat/Makefile.in
+279d278
+< runstatedir = @runstatedir@
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/configure lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/configure
+717d716
+< runstatedir
+796d794
+< runstatedir='${localstatedir}/run'
+1049,1057d1046
+<   -runstatedir | --runstatedir | --runstatedi | --runstated \
+<   | --runstate | --runstat | --runsta | --runst | --runs \
+<   | --run | --ru | --r)
+<     ac_prev=runstatedir ;;
+<   -runstatedir=* | --runstatedir=* | --runstatedi=* | --runstated=* \
+<   | --runstate=* | --runstat=* | --runsta=* | --runst=* | --runs=* \
+<   | --run=* | --ru=* | --r=*)
+<     runstatedir=$ac_optarg ;;
+< 
+1195c1184
+< 		libdir localedir mandir runstatedir
+---
+> 		libdir localedir mandir
+1348d1336
+<   --runstatedir=DIR       modifiable per-process data [LOCALSTATEDIR/run]
+diff -r source-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/Makefile.in lookaside-amavisd-milter-1.7.2.tar.gz-extracted/amavisd-milter-1.7.2/Makefile.in
+171,172c171
+< 	aclocal/config.sub aclocal/depcomp aclocal/install-sh \
+< 	aclocal/missing
+---
+> 	aclocal/config.sub aclocal/install-sh aclocal/missing
+318d316
+< runstatedir = @runstatedir@

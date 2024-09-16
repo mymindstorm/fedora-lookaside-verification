@@ -1,0 +1,48 @@
+Source package : libmtp
+File name       : libmtp-1.1.19.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/libmtp/libmtp-1.1.19.tar.gz/sha512/8d9ecaad5be3699426dc4911cff4f3ff23bbf41cf3289e1b8b2d7ab4cf8dfc911f9f788dec92dff98904b825098455a3ac2649d3742b2409950b688d8b2cb629/libmtp-1.1.19.tar.gz
+Source URL      : https://download.sourceforge.net/libmtp/libmtp-1.1.19.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libmtp-1.1.19.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 3768320
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libmtp-1.1.19.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 17274880
+
+
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: aclocal.m4
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: autogen.sh
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: compile
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: config.guess
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: config.h.in
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: config.rpath
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: config.sub
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: configure
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: .cvsignore
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: depcomp
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/doc: .gitignore
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/doc: Makefile.in
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/examples: .gitignore
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/examples: Makefile.in
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: .gitignore
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: install-sh
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: libmtp.pc
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: libmtp.sh
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: logs
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: ltmain.sh
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/m4: .gitignore
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/m4: libtool.m4
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/m4: lt~obsolete.m4
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/m4: ltoptions.m4
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/m4: ltsugar.m4
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/m4: ltversion.m4
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: Makefile.in
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: missing
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/src: .gitignore
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/src: gphoto2-endian.h
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/src: gphoto2-sync.sh
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/src: libmtp.h
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/src: Makefile.in
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/src: _stdint.h
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: sync-usbids.sh
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: .travis-translate-pkgs
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19: .travis.yml
+Only in lookaside-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/util: .gitignore
+Only in source-libmtp-1.1.19.tar.gz-extracted/libmtp-1.1.19/util: Makefile.in

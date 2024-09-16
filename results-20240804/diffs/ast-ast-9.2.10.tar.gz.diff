@@ -1,0 +1,10 @@
+Source package : ast
+File name       : ast-9.2.10.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ast/ast-9.2.10.tar.gz/sha512/b559535496b88b33845bd3732bb6ee80572dc0d8d963173e0199d44be09add244244d9aab90642de84c65714bca6c73b5bdc3b3290a55f171e6f3ce7643250f5/ast-9.2.10.tar.gz
+Source URL      : http://www.starlink.ac.uk/download/ast/ast-9.2.10.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ast-9.2.10.tar.gz: tar archive
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ast-9.2.10.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 52316160
+
+
+Only in lookaside-ast-9.2.10.tar.gz-extracted: ast-9.2.10

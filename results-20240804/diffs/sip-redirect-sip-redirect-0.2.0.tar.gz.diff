@@ -1,0 +1,10 @@
+Source package : sip-redirect
+File name       : sip-redirect-0.2.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sip-redirect/sip-redirect-0.2.0.tar.gz/md5/b7a7af263adbba639aa17c10636f453a/sip-redirect-0.2.0.tar.gz
+Source URL      : https://ftp.robert-scheck.de/linux/sip-redirect/sip-redirect-0.2.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sip-redirect-0.2.0.tar.gz: HTML document, ASCII text, with very long lines (497)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sip-redirect-0.2.0.tar.gz: gzip compressed data, last modified: Fri Nov 28 23:00:00 2014, from Unix, original size modulo 2^32 773325755 gzip compressed data, unknown method, has CRC, extra field, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 773325755
+
+
+Only in lookaside-sip-redirect-0.2.0.tar.gz-extracted: sip-redirect-0.2.0

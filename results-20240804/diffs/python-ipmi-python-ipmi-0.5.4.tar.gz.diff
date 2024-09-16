@@ -1,0 +1,31 @@
+Source package : python-ipmi
+File name       : python-ipmi-0.5.4.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-ipmi/python-ipmi-0.5.4.tar.gz/sha512/8e812dbdb1d5f247ec31eb0208568348c362a3049b526f930b657bb01c13396548d93bc131b670bb5c046c9449def158d91e2a69bd54079d9fd11de4319b5024/python-ipmi-0.5.4.tar.gz
+Source URL      : https://github.com/kontron/python-ipmi/archive/0.5.4/python-ipmi-0.5.4.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-python-ipmi-0.5.4.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 829440
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-python-ipmi-0.5.4.tar.gz: gzip compressed data, was "/home/runner/work/python-ipmi/python-ipmi/dist/.tmp-s6bldt0t/python-ipmi-0.5.4.tar", last modified: Thu Feb  2 18:15:36 2023, max compression, original size modulo 2^32 501760
+
+
+Only in source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: bin
+Only in source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: .coveragerc
+Only in source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: docs
+Only in source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: examples
+Only in source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: .github
+Only in source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: .gitignore
+Only in lookaside-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: PKG-INFO
+Only in source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4/pyipmi: .gitignore
+Only in lookaside-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4/pyipmi: version.py
+Only in lookaside-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: python_ipmi.egg-info
+diff -r source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4/setup.cfg lookaside-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4/setup.cfg
+2c2
+< test=pytest
+---
+> test = pytest
+14a15,19
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 
+Only in source-python-ipmi-0.5.4.tar.gz-extracted/python-ipmi-0.5.4: tests

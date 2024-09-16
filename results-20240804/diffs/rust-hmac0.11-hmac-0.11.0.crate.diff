@@ -1,0 +1,10 @@
+Source package : rust-hmac0.11
+File name       : hmac-0.11.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-hmac0.11/hmac-0.11.0.crate/sha512/82d83071d1cea14603b1f1a85d564c78e28d982025a029779d8d83522fd5c56583303dd3a902d8023b5e9df2ddb5c5d9a5fc88000d41dba45dc026239ec81d0d/hmac-0.11.0.crate
+Source URL      : https://crates.io/api/v1/crates/hmac/0.11.0/download#/hmac-0.11.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-hmac-0.11.0.crate: gzip compressed data, was "hmac-0.11.0.crate", max compression, original size modulo 2^32 43008
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-hmac-0.11.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

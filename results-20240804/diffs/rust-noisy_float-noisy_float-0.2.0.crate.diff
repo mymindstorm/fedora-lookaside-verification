@@ -1,0 +1,10 @@
+Source package : rust-noisy_float
+File name       : noisy_float-0.2.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-noisy_float/noisy_float-0.2.0.crate/sha512/ff1a5346a6d5098262b4d83352870fb429b777f241c1c42019dbdf54983504ac18a68f3cb1498d92c0074f410c8d885333445b16716f01bed2f3b105ec45540e/noisy_float-0.2.0.crate
+Source URL      : https://crates.io/api/v1/crates/noisy_float/0.2.0/download#/noisy_float-0.2.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-noisy_float-0.2.0.crate: gzip compressed data, was "noisy_float-0.2.0.crate", max compression, original size modulo 2^32 80384
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-noisy_float-0.2.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

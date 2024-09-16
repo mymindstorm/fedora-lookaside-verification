@@ -1,0 +1,11 @@
+Source package : gap-pkg-caratinterface
+File name       : CaratInterface-2.3.6.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/gap-pkg-caratinterface/CaratInterface-2.3.6.tar.gz/sha512/724c9d6e4ad67bca104bcb68ee2b40660e74ac141e7943205e46d5e2b16347172ec66b2d1dd8896b354ffe6bddccafbcb9ca259391006bcd6583033715aa5b33/CaratInterface-2.3.6.tar.gz
+Source URL      : https://github.com/gap-packages/CaratInterface/archive/v2.3.6/CaratInterface-2.3.6.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-CaratInterface-2.3.6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 143360
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-CaratInterface-2.3.6.tar.gz: gzip compressed data, was "CaratInterface-2.3.6.tar", last modified: Mon Dec 18 17:32:58 2023, from Unix, original size modulo 2^32 7229440
+
+
+Only in lookaside-CaratInterface-2.3.6.tar.gz-extracted: CaratInterface
+Only in source-CaratInterface-2.3.6.tar.gz-extracted: CaratInterface-2.3.6

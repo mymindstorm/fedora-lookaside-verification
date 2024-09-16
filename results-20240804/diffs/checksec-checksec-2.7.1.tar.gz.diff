@@ -1,0 +1,311 @@
+Source package : checksec
+File name       : checksec-2.7.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/checksec/checksec-2.7.1.tar.gz/sha512/877a08cc2e335dc6378d52fc2e1ff39860dcf646e17be04addc50de99a3c68c1eaba0f843d6844ec9d3c687d7245379a008a2230838dc7a48e5b28893eacdee0/checksec-2.7.1.tar.gz
+Source URL      : https://github.com/slimm609/checksec.sh/archive/2.7.1/checksec-2.7.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-checksec-2.7.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 15636480
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-checksec-2.7.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 15636480
+
+
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/ChangeLog lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/ChangeLog
+28c28
+<     Thanks @petervas
+---
+>     Thanks @@petervas
+44c44
+<     Thanks @Artoria2e5
+---
+>     Thanks @petervas
+46c46
+<     Thanks @Artoria2e5
+---
+>     Thanks @petervas
+51c51
+<   * Check fortify vs fortified
+---
+>   * Check foritfy vs fortified
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/checksec lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/checksec
+42c42
+< SCRIPT_VERSION=2024042901
+---
+> SCRIPT_VERSION=2024042601
+54,56d53
+< # Currently unused, adding for reference
+< # https://github.com/gcc-mirror/gcc/blob/master/gcc/builtins.def#L1112
+< # FORTIFY_FUNCTIONS=(memcpy_chk memmove_chk mempcpy_chk memset_chk stpcpy_chk stpncpy_chk strcat_chk strcpy_chk strncat_chk strncpy_chk snprintf_chk sprintf_chk vsnprintf_chk vsprintf_chk fprintf_chk printf_chk vfprintf_chk vprintf_chk)
+92c89
+< for command in cat awk sed sysctl objdump uname mktemp openssl grep stat file find sort head ps readlink basename id which xargs ldconfig tr; do
+---
+> for command in cat awk sed sysctl objdump uname mktemp openssl grep stat file find sort head ps readlink basename id which xargs ldd tr; do
+115,117c112,114
+<     # otherwise use ldconfig to get the libc location
+<     elif [[ -f $(ldconfig -p | grep 'libc\.so' | awk '{print $4}' | head -n 1) ]]; then
+<       FS_libc=$(ldconfig -p | grep 'libc\.so' | awk '{print $4}' | head -n 1)
+---
+>     # otherwise use ldd to get the libc location
+>     elif [[ -f $(ldd "$(command -v grep)" 2> /dev/null | grep 'libc\.so' | cut -d' ' -f3) ]]; then
+>       FS_libc=$(ldd "$(command -v grep)" 2> /dev/null | grep 'libc\.so' | cut -d' ' -f3)
+120c117
+<     # if a search path was given or ldconfig failed we need to search for libc
+---
+>     # if a search path was given or ldd failed we need to search for libc
+125c122
+<       # if ldconfig failed, then as a last resort search for libc in "/lib/", "/lib64/" and "/"
+---
+>       # if ldd failed, then as a last resort search for libc in "/lib/", "/lib64/" and "/"
+823c820
+<     echo_message "\033[31m${SYM_cnt[0]} Symbols\t\033[m" 'Symbols,' ' symbols="yes"' '"symbols":"yes",'
+---
+>     echo_message "\033[31m${SYM_cnt[0]} Symbols\t\033[m  " 'Symbols,' ' symbols="yes"' '"symbols":"yes",'
+840c837
+<   if [[ "${libc_found}" == "false" ]] || [[ "${FS_cnt_total}" -eq "0" ]]; then
+---
+>   if [[ "${libc_found}" == "false" ]] || [[ "${FS_cnt_total}" == "0" ]]; then
+842,843d838
+<   elif [[ "${FS_cnt_checked}" -eq "0" ]]; then
+<     echo_message "\033[31mNo\033[m" "No," ' fortify_source="no" ' '"fortify_source":"no",'
+845c840,848
+<     echo_message '\033[32mYes\033[m' 'Yes,' ' fortify_source="yes" ' '"fortify_source":"yes",'
+---
+>     if [[ $FS_cnt_checked -eq $FS_cnt_total ]]; then
+>       echo_message '\033[32mYes\033[m' 'Yes,' ' fortify_source="yes" ' '"fortify_source":"yes",'
+>     else
+>       if [[ "${FS_cnt_checked}" == "0" ]]; then
+>         echo_message "\033[31mNo\033[m" "No," ' fortify_source="no" ' '"fortify_source":"no",'
+>       else
+>         echo_message "\033[33mPartial\033[m" "Partial," ' fortify_source="partial" ' '"fortify_source":"partial",'
+>       fi
+>     fi
+1608,1624c1611,1614
+<   #check for Fortify source support
+<   search_libc
+<   libc_found="false"
+<   if ${readelf} -d "$(readlink "${1}"/exe)" 2> /dev/null | grep 'NEEDED' | grep -q 'libc\.so'; then
+<     libc_found="true"
+<   fi
+<   Proc_FS_filechk_func_libc="$(${readelf} -s "${use_dynamic}" "${FS_libc}" 2> /dev/null | sed -ne 's/.*__\(.*_chk\)@@.*/\1/p')"
+<   Proc_FS_func_libc="${Proc_FS_filechk_func_libc//_chk/}"
+<   Proc_FS_func="$(${readelf} -s "${use_dynamic}" "${1}/exe" 2> /dev/null | awk '{ print $8 }' | sed -e 's/_*//' -e 's/@.*//' -e '/^$/d')"
+<   Proc_FS_cnt_checked=$(grep -cFxf <(sort -u <<< "${Proc_FS_filechk_func_libc}") <(sort -u <<< "${Proc_FS_func}"))
+<   Proc_FS_cnt_unchecked=$(grep -cFxf <(sort -u <<< "${Proc_FS_func_libc}") <(sort -u <<< "${Proc_FS_func}"))
+<   Proc_FS_cnt_total=$((Proc_FS_cnt_unchecked + Proc_FS_cnt_checked))
+< 
+<   if [[ "${libc_found}" == "false" ]] || [[ "${Proc_FS_cnt_total}" -eq "0" ]]; then
+<     echo_message "\033[32mN/A\033[m" "N/A," ' fortify_source="n/a">' '"fortify_source":"n/a" }'
+<   elif [[ "${Proc_FS_cnt_checked}" -eq "0" ]]; then
+<     echo_message "\033[31mNo\033[m" "No," ' fortify_source="no">' '"fortify_source":"no" }'
+---
+>   #check for forifty source support
+>   Proc_FS_functions="$(${readelf} -s "${1}/exe" 2> /dev/null | awk '{ print $8 }' | sed 's/_*//' | sed -e 's/@.*//')"
+>   if grep -q '_chk$' <<< "$Proc_FS_functions"; then
+>     echo_message '\033[32mYes\033[m' 'Yes' " fortify_source='yes'>" '"fortify_source":"yes" }'
+1626c1616
+<     echo_message '\033[32mYes\033[m' 'Yes,' ' fortify_source="yes">' '"fortify_source":"yes" }'
+---
+>     echo_message "\033[31mNo\033[m" "No" " fortify_source='no'>" '"fortify_source":"no" }'
+Only in source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1: checksec_new.pub
+Only in source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1: checksec_new.sig
+Binary files source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/checksec.sig and lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/checksec.sig differ
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/docker-compose.yml lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/docker-compose.yml
+0a1,2
+> version: '2'
+> 
+6a9,15
+>     command: bash -c "./tests/test-checksec.sh"
+> 
+>   checksec-photon:
+>     build:
+>       context: ./
+>       dockerfile: Dockerfile.photon
+>     image: checksec-photon
+Only in lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1: Dockerfile.photon
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/Dockerfile.ubuntu lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/Dockerfile.ubuntu
+3,6c3,13
+< # install the build script and run it.
+< # this is to give more flexiblity to the build process
+< COPY tests/docker-build.sh /tmp
+< RUN /tmp/docker-build.sh
+---
+> # Install dependencies
+> RUN apt-get update && apt-get -y -q upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y -q install \
+>   bc bison flex build-essential git file \
+>   libncurses-dev libssl-dev u-boot-tools wget \
+>   xz-utils vim libxml2-utils python3 python3-pip jq \
+>   gcc clang gcc-multilib && apt-get clean \
+>   pip3 install --upgrade pip && pip3 install setuptools && \
+>   pip3 install demjson3 && mkdir -p /zig && \
+>   wget https://ziglang.org/builds/zig-linux-$(uname -m)-0.12.0-dev.3667+77abd3a96.tar.xz && \
+>   tar xf zig-linux-$(uname -m)-0.12.0-dev.3667+77abd3a96.tar.xz -C /zig --strip-components=1 && \
+>   rm -rf zig-linux-$(uname -m)-0.12.0-dev.3667+77abd3a96.tar.xz
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/docs/index.md lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/docs/index.md
+74,82d73
+< Note on Fortify results. There is not currently a known way to determine if the binary was compiled with FORTIFY_SOURCE level 1, 2, or 3 in a reliable manner.
+< 
+< Some binaries include some details about how it was compiled. For example, VIM on ubuntu is compiled with `-D_FORTIFY_SOURCE=1`. This can be identified with strings on the binary. Most binaries do not include this data, but some do.
+< 
+< ```
+< $ strings vim | grep FORTIFY
+< gcc -c -I. -Iproto -DHAVE_CONFIG_H -Wdate-time -g -O2 -ffile-prefix-map=/build/vim-CSyBG7/vim-8.2.3995=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1
+< ```
+< 
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/.github/workflows/pull_request.yml lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/.github/workflows/pull_request.yml
+22a23,24
+>       - name: photon checksec
+>         run: docker-compose run checksec-photon
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/README.md lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/README.md
+14c14
+<    Last Update: 2024-04-29
+---
+>    Last Update: 2024-04-26
+20,25c20
+< **Cosign Verify Checksec**
+< 
+< `cosign verify-blob --signature checksec_new.sig --certificate checksec_new.pub checksec --certificate-identity=slimm609@gmail.com --certificate-oidc-issuer=https://github.com/login/oauth`
+< 
+< **Openssl Verify Checksec**
+< Openssl verification is being deprecated in favor of Cosign Verification, which is backed by a hardware security module and provides a greater level of intergrity.
+---
+> Manually verify checksec
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/src/core.sh lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/src/core.sh
+9c9
+< SCRIPT_VERSION=2024042901
+---
+> SCRIPT_VERSION=2024042601
+21,23d20
+< # Currently unused, adding for reference
+< # https://github.com/gcc-mirror/gcc/blob/master/gcc/builtins.def#L1112
+< # FORTIFY_FUNCTIONS=(memcpy_chk memmove_chk mempcpy_chk memset_chk stpcpy_chk stpncpy_chk strcat_chk strcpy_chk strncat_chk strncpy_chk snprintf_chk sprintf_chk vsnprintf_chk vsprintf_chk fprintf_chk printf_chk vfprintf_chk vprintf_chk)
+59c56
+< for command in cat awk sed sysctl objdump uname mktemp openssl grep stat file find sort head ps readlink basename id which xargs ldconfig tr; do
+---
+> for command in cat awk sed sysctl objdump uname mktemp openssl grep stat file find sort head ps readlink basename id which xargs ldd tr; do
+82,84c79,81
+<     # otherwise use ldconfig to get the libc location
+<     elif [[ -f $(ldconfig -p | grep 'libc\.so' | awk '{print $4}' | head -n 1) ]]; then
+<       FS_libc=$(ldconfig -p | grep 'libc\.so' | awk '{print $4}' | head -n 1)
+---
+>     # otherwise use ldd to get the libc location
+>     elif [[ -f $(ldd "$(command -v grep)" 2> /dev/null | grep 'libc\.so' | cut -d' ' -f3) ]]; then
+>       FS_libc=$(ldd "$(command -v grep)" 2> /dev/null | grep 'libc\.so' | cut -d' ' -f3)
+87c84
+<     # if a search path was given or ldconfig failed we need to search for libc
+---
+>     # if a search path was given or ldd failed we need to search for libc
+92c89
+<       # if ldconfig failed, then as a last resort search for libc in "/lib/", "/lib64/" and "/"
+---
+>       # if ldd failed, then as a last resort search for libc in "/lib/", "/lib64/" and "/"
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/src/functions/filecheck.sh lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/src/functions/filecheck.sh
+127c127
+<     echo_message "\033[31m${SYM_cnt[0]} Symbols\t\033[m" 'Symbols,' ' symbols="yes"' '"symbols":"yes",'
+---
+>     echo_message "\033[31m${SYM_cnt[0]} Symbols\t\033[m  " 'Symbols,' ' symbols="yes"' '"symbols":"yes",'
+144c144
+<   if [[ "${libc_found}" == "false" ]] || [[ "${FS_cnt_total}" -eq "0" ]]; then
+---
+>   if [[ "${libc_found}" == "false" ]] || [[ "${FS_cnt_total}" == "0" ]]; then
+146,147d145
+<   elif [[ "${FS_cnt_checked}" -eq "0" ]]; then
+<     echo_message "\033[31mNo\033[m" "No," ' fortify_source="no" ' '"fortify_source":"no",'
+149c147,155
+<     echo_message '\033[32mYes\033[m' 'Yes,' ' fortify_source="yes" ' '"fortify_source":"yes",'
+---
+>     if [[ $FS_cnt_checked -eq $FS_cnt_total ]]; then
+>       echo_message '\033[32mYes\033[m' 'Yes,' ' fortify_source="yes" ' '"fortify_source":"yes",'
+>     else
+>       if [[ "${FS_cnt_checked}" == "0" ]]; then
+>         echo_message "\033[31mNo\033[m" "No," ' fortify_source="no" ' '"fortify_source":"no",'
+>       else
+>         echo_message "\033[33mPartial\033[m" "Partial," ' fortify_source="partial" ' '"fortify_source":"partial",'
+>       fi
+>     fi
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/src/functions/proccheck.sh lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/src/functions/proccheck.sh
+120,136c120,123
+<   #check for Fortify source support
+<   search_libc
+<   libc_found="false"
+<   if ${readelf} -d "$(readlink "${1}"/exe)" 2> /dev/null | grep 'NEEDED' | grep -q 'libc\.so'; then
+<     libc_found="true"
+<   fi
+<   Proc_FS_filechk_func_libc="$(${readelf} -s "${use_dynamic}" "${FS_libc}" 2> /dev/null | sed -ne 's/.*__\(.*_chk\)@@.*/\1/p')"
+<   Proc_FS_func_libc="${Proc_FS_filechk_func_libc//_chk/}"
+<   Proc_FS_func="$(${readelf} -s "${use_dynamic}" "${1}/exe" 2> /dev/null | awk '{ print $8 }' | sed -e 's/_*//' -e 's/@.*//' -e '/^$/d')"
+<   Proc_FS_cnt_checked=$(grep -cFxf <(sort -u <<< "${Proc_FS_filechk_func_libc}") <(sort -u <<< "${Proc_FS_func}"))
+<   Proc_FS_cnt_unchecked=$(grep -cFxf <(sort -u <<< "${Proc_FS_func_libc}") <(sort -u <<< "${Proc_FS_func}"))
+<   Proc_FS_cnt_total=$((Proc_FS_cnt_unchecked + Proc_FS_cnt_checked))
+< 
+<   if [[ "${libc_found}" == "false" ]] || [[ "${Proc_FS_cnt_total}" -eq "0" ]]; then
+<     echo_message "\033[32mN/A\033[m" "N/A," ' fortify_source="n/a">' '"fortify_source":"n/a" }'
+<   elif [[ "${Proc_FS_cnt_checked}" -eq "0" ]]; then
+<     echo_message "\033[31mNo\033[m" "No," ' fortify_source="no">' '"fortify_source":"no" }'
+---
+>   #check for forifty source support
+>   Proc_FS_functions="$(${readelf} -s "${1}/exe" 2> /dev/null | awk '{ print $8 }' | sed 's/_*//' | sed -e 's/@.*//')"
+>   if grep -q '_chk$' <<< "$Proc_FS_functions"; then
+>     echo_message '\033[32mYes\033[m' 'Yes' " fortify_source='yes'>" '"fortify_source":"yes" }'
+138c125
+<     echo_message '\033[32mYes\033[m' 'Yes,' ' fortify_source="yes">' '"fortify_source":"yes" }'
+---
+>     echo_message "\033[31mNo\033[m" "No" " fortify_source='no'>" '"fortify_source":"no" }'
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries/build_binaries.sh lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries/build_binaries.sh
+53,59c53,56
+< # Fortify source (NASM assembler installation is required)
+< nasm -f elf64 -o nolibc.o nolibc.asm
+< nasm -f elf32 -o nolibc32.o nolibc32.asm
+< gcc -o output/nolibc nolibc.o -w -nostdlib -no-pie -s
+< clang -o output/nolibc_cl nolibc.o -w -nostdlib -no-pie -s
+< gcc -m32 -o output/nolibc32 nolibc32.o -w -nostdlib -no-pie -s
+< clang -m32 -o output/nolibc_cl32 nolibc32.o -w -nostdlib -no-pie -s
+---
+> gcc -o output/nolibc main.c start.S hello.S -w -nostdlib -no-pie -s
+> clang -o output/nolibc_cl main.c start.S hello.S -w -nostdlib -no-pie -s
+> gcc -m32 -o output/nolibc32 main.c start.S hello.S -w -nostdlib -no-pie -s
+> clang -m32 -o output/nolibc_cl32 main.c start.S hello.S -w -nostdlib -no-pie -s
+61,64c58,61
+< gcc -o output/fszero fszero.c -w -D_FORTIFY_SOURCE=0 -O2 -s
+< clang -o output/fszero_cl fszero.c -w -D_FORTIFY_SOURCE=0 -O2 -s
+< gcc -m32 -o output/fszero32 fszero.c -w -D_FORTIFY_SOURCE=0 -O2 -s
+< clang -m32 -o output/fszero_cl32 fszero.c -w -D_FORTIFY_SOURCE=0 -O2 -s
+---
+> gcc -o output/fszero helloworld.c -w -D_FORTIFY_SOURCE=0 -O2 -s
+> clang -o output/fszero_cl helloworld.c -w -D_FORTIFY_SOURCE=0 -O2 -s
+> gcc -m32 -o output/fszero32 helloworld.c -w -D_FORTIFY_SOURCE=0 -O2 -s
+> clang -m32 -o output/fszero_cl32 helloworld.c -w -D_FORTIFY_SOURCE=0 -O2 -s
+Only in source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries: fszero.c
+Only in lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries: hello.S
+Only in lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries: helloworld.c
+Only in lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries: main.c
+Only in source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries: nolibc32.asm
+Only in source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries: nolibc.asm
+Only in lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/binaries: start.S
+Only in source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests: docker-build.sh
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/hardening-checks.sh lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/hardening-checks.sh
+278a279,285
+> # Partial
+> for bin in partial partial32 partial_cl partial_cl32; do
+>   if [[ $("${PARENT}"/checksec --file="${DIR}/binaries/output/${bin}" --format=csv | cut -d, -f8) != "Partial" ]]; then
+>     echo "No Fortify validation failed on \"${bin}\": $("${PARENT}"/checksec --file="${DIR}/binaries/${bin}" --format=csv | cut -d, -f8)"
+>     exit 1
+>   fi
+> done
+424c431
+< echo "Starting Fortify process check"
+---
+> echo "Starting Foritfy process check"
+438,445d444
+<     exit 1
+<   fi
+< done
+< # N/A
+< for bin in nolibc nolibc_cl nolibc32 nolibc_cl32 fszero fszero_cl fszero32 fszero_cl32; do
+<   "${DIR}"/binaries/output/${bin} > /dev/null &
+<   if [[ $("${PARENT}"/checksec --proc=${bin} --format=csv | cut -d, -f8) != "N/A" ]]; then
+<     echo "No Fortify process validation failed on \"${bin}\": $("${PARENT}"/checksec --proc=${bin} --format=csv | cut -d, -f8)"
+diff -r source-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/test-checksec.sh lookaside-checksec-2.7.1.tar.gz-extracted/checksec.sh-2.7.1/tests/test-checksec.sh
+10c10,13
+< "${DIR}"/hardening-checks.sh || exit 2
+---
+> 
+> if [ ! -f /etc/photon-release ]; then
+>   "${DIR}"/hardening-checks.sh || exit 2
+> fi

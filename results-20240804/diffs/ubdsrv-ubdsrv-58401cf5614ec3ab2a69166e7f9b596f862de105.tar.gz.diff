@@ -1,0 +1,11 @@
+Source package : ubdsrv
+File name       : ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ubdsrv/ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105.tar.gz/sha512/50b3130a37a37e472fe63f1d3674fe964470e1674ef7a34d3d28a66b5182999510f799b2415a7853f7158adb171a9afa75f16ebaef1bc6fb92828fca63328eab/ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105.tar.gz
+Source URL      : https://github.com/ming1/ubdsrv/archive/58401cf5614ec3ab2a69166e7f9b596f862de105/ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4109068574 gzip compressed data, reserved method, extra field, has comment, encrypted, last modified: Sun Sep 13 07:10:44 1970, original size modulo 2^32 4109068574
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1761280
+
+
+Only in lookaside-ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105.tar.gz-extracted: ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105
+Only in source-ubdsrv-58401cf5614ec3ab2a69166e7f9b596f862de105.tar.gz-extracted: ublksrv-58401cf5614ec3ab2a69166e7f9b596f862de105

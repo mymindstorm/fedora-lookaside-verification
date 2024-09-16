@@ -1,0 +1,10 @@
+Source package : autofs
+File name       : autofs-5.1.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/autofs/autofs-5.1.9.tar.gz/sha512/30a7a47b92c0bccacb32744709c3c45df3c5263317106bcb6737e402f03c587c748232d617a967768e49111ff95ca6bddedb1c445ed4d7eebc66c0e3ea9ed2ec/autofs-5.1.9.tar.gz
+Source URL      : https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-autofs-5.1.9.tar.gz: gzip compressed data, last modified: Tue Nov  7 03:59:02 2023, max compression, from Unix, original size modulo 2^32 3348480
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-autofs-5.1.9.tar.gz: gzip compressed data, was "autofs-5.1.9.tar", last modified: Tue Nov  7 03:52:51 2023, max compression, from Unix, original size modulo 2^32 3348480
+
+
+No differences detected!

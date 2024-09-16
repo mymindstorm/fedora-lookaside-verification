@@ -1,0 +1,11 @@
+Source package : python-terminaltables
+File name       : 8020b8cb8ae859891a999620085d34c8d8bfe1a3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-terminaltables/8020b8cb8ae859891a999620085d34c8d8bfe1a3.tar.gz/sha512/621b71eb7f1e9650ad6a17efdc5002714a3d3b73e60b943a58e680cfa98d01c1bf32f0aa64085c40c95f68b6530c3c7af6ea25739e9675ff8848e32f9cc3a51c/8020b8cb8ae859891a999620085d34c8d8bfe1a3.tar.gz
+Source URL      : https://github.com/matthewdeanmartin/terminaltables/archive/8020b8cb8ae859891a999620085d34c8d8bfe1a3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-8020b8cb8ae859891a999620085d34c8d8bfe1a3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 962560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-8020b8cb8ae859891a999620085d34c8d8bfe1a3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 962560
+
+
+Only in source-8020b8cb8ae859891a999620085d34c8d8bfe1a3.tar.gz-extracted: terminaltables3-8020b8cb8ae859891a999620085d34c8d8bfe1a3
+Only in lookaside-8020b8cb8ae859891a999620085d34c8d8bfe1a3.tar.gz-extracted: terminaltables-8020b8cb8ae859891a999620085d34c8d8bfe1a3

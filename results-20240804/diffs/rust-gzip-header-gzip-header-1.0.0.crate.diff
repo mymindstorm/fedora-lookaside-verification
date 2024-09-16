@@ -1,0 +1,10 @@
+Source package : rust-gzip-header
+File name       : gzip-header-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gzip-header/gzip-header-1.0.0.crate/sha512/fc83bb409f298481c4d163b5231edf092c7e348bbe7327c665aa9f404dc6a01e57baee0794028c1803daed4f03cd59634b840aa39a123a115be910af49fb1d67/gzip-header-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/gzip-header/1.0.0/download#/gzip-header-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gzip-header-1.0.0.crate: gzip compressed data, was "gzip-header-1.0.0.crate", max compression, original size modulo 2^32 47616
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gzip-header-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,14 @@
+Source package : xdp-tools
+File name       : xdp-tools-1.4.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/xdp-tools/xdp-tools-1.4.2.tar.gz/sha512/ae4fd82cc8138f06cf75530a9911dcc196198f0fcfb82ed991f66a48bedc2991029553b1142d38c16631f4d9ea1e4ba6402ef72d406e7e271fec189857f94522/xdp-tools-1.4.2.tar.gz
+Source URL      : https://github.com/xdp-project/xdp-tools/releases/download/v1.4.2/xdp-tools-1.4.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-xdp-tools-1.4.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 5672960
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-xdp-tools-1.4.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 5672960
+
+
+diff -r source-xdp-tools-1.4.2.tar.gz-extracted/xdp-tools-1.4.2/packaging/rpm/xdp-tools.spec lookaside-xdp-tools-1.4.2.tar.gz-extracted/xdp-tools-1.4.2/packaging/rpm/xdp-tools.spec
+124c124
+< * Tue Jan 30 2024 Toke Høiland-Jørgensen <toke@redhat.com> 1.4.2-1
+---
+> * Tue Jan 30 2023 Toke Høiland-Jørgensen <toke@redhat.com> 1.4.2-1

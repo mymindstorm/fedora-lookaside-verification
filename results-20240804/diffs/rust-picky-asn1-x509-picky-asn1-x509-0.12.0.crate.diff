@@ -1,0 +1,10 @@
+Source package : rust-picky-asn1-x509
+File name       : picky-asn1-x509-0.12.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-picky-asn1-x509/picky-asn1-x509-0.12.0.crate/sha512/3219f59aa56803450c10be3fb8fdbfee5f56ae7ab39775365e16231955a35de7515b66295c73eba3dc10d9f2cd50b3fad8bbd5c362b4a36e5eae04b02319afc8/picky-asn1-x509-0.12.0.crate
+Source URL      : https://crates.io/api/v1/crates/picky-asn1-x509/0.12.0/download#/picky-asn1-x509-0.12.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-picky-asn1-x509-0.12.0.crate: gzip compressed data, was "picky-asn1-x509-0.12.0.crate", max compression, original size modulo 2^32 488448
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-picky-asn1-x509-0.12.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

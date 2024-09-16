@@ -1,0 +1,10 @@
+Source package : rust-openssl-sys
+File name       : openssl-sys-0.9.103.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-openssl-sys/openssl-sys-0.9.103.crate/sha512/61b802f6baf918ec055be90ee47c69fe0184f6d9a1d29c748386192a11d4df115758961ec9b636126a6b42d7d8f7509248c59f7c035905558c4cc35b804a8eaf/openssl-sys-0.9.103.crate
+Source URL      : https://crates.io/api/v1/crates/openssl-sys/0.9.103/download#/openssl-sys-0.9.103.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-openssl-sys-0.9.103.crate: gzip compressed data, was "openssl-sys-0.9.103.crate", max compression, original size modulo 2^32 464384
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-openssl-sys-0.9.103.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

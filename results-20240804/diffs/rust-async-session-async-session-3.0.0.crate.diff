@@ -1,0 +1,10 @@
+Source package : rust-async-session
+File name       : async-session-3.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-async-session/async-session-3.0.0.crate/sha512/efd043a82bbbd1ae54fd3aa75b28f48ea1313584199ac25757da2c291f6d2300124e2956d9e19ff850881d3d4412837ae88e85fbc7b45490b5a1e3dce3beefbf/async-session-3.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/async-session/3.0.0/download#/async-session-3.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-async-session-3.0.0.crate: gzip compressed data, was "async-session-3.0.0.crate", max compression, original size modulo 2^32 71680
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-async-session-3.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

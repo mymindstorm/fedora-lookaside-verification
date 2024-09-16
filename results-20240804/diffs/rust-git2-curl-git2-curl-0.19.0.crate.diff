@@ -1,0 +1,10 @@
+Source package : rust-git2-curl
+File name       : git2-curl-0.19.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-git2-curl/git2-curl-0.19.0.crate/sha512/900c0c9d58517e1ce567ccdc07046fba6b6cadc9ccdbd67ffcf4215b003d137b69020602441579b4243560cd413d3c3c13af4e121af870490b66a793ed6edadb/git2-curl-0.19.0.crate
+Source URL      : https://crates.io/api/v1/crates/git2-curl/0.19.0/download#/git2-curl-0.19.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-git2-curl-0.19.0.crate: gzip compressed data, was "git2-curl-0.19.0.crate", max compression, original size modulo 2^32 34816
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-git2-curl-0.19.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

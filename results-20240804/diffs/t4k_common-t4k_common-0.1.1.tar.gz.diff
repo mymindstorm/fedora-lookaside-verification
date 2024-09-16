@@ -1,0 +1,11 @@
+Source package : t4k_common
+File name       : t4k_common-0.1.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/t4k_common/t4k_common-0.1.1.tar.gz/md5/e3d5da74971f427e8deb1e904dfcf8ab/t4k_common-0.1.1.tar.gz
+Source URL      : https://github.com/tux4kids/t4kcommon/archive/debian/0.1.1-1.1/t4k_common-0.1.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-t4k_common-0.1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 30720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-t4k_common-0.1.1.tar.gz: gzip compressed data, last modified: Sat Apr  9 13:16:34 2011, max compression, from Unix, original size modulo 2^32 4136509407 gzip compressed data, reserved method, has CRC, extra field, has comment, encrypted, original size modulo 2^32 4136509407
+
+
+Only in lookaside-t4k_common-0.1.1.tar.gz-extracted: t4k_common-0.1.1
+Only in source-t4k_common-0.1.1.tar.gz-extracted: t4kcommon-debian-0.1.1-1.1

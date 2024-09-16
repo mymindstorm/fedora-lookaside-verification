@@ -1,0 +1,10 @@
+Source package : rust-gio0.17
+File name       : gio-0.17.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gio0.17/gio-0.17.10.crate/sha512/56ea1ed5f6e08a2c5ca197f921157cc9c750da079c3110e9c6c20f762bb14d18781ea47d4348883cb514d9e829e1a8ba4173e61b8b4c42f585ae94e14a692f98/gio-0.17.10.crate
+Source URL      : https://crates.io/api/v1/crates/gio/0.17.10/download#/gio-0.17.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gio-0.17.10.crate: gzip compressed data, was "gio-0.17.10.crate", max compression, original size modulo 2^32 2186752
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gio-0.17.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

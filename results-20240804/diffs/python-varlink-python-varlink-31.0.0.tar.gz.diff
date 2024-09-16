@@ -1,0 +1,11 @@
+Source package : python-varlink
+File name       : python-varlink-31.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-varlink/python-varlink-31.0.0.tar.gz/sha512/3a99876dd2ec519a877fc4994c5fec0567a8b9348cb19910aedf9e191bd7c2b6275c2340a861f6b86e64523a8c8792116d2565ac7b86e283fbebcfe195469d39/python-varlink-31.0.0.tar.gz
+Source URL      : https://github.com/varlink/python-varlink/archive/31.0.0/python-varlink-31.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-python-varlink-31.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 204800
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-python-varlink-31.0.0.tar.gz: gzip compressed data, was "varlink-31.0.0.tar", last modified: Mon Dec  6 12:57:53 2021, max compression, original size modulo 2^32 63110256
+
+
+Only in source-python-varlink-31.0.0.tar.gz-extracted: python-31.0.0
+Only in lookaside-python-varlink-31.0.0.tar.gz-extracted: varlink-31.0.0

@@ -1,0 +1,10 @@
+Source package : rust-gdk-sys0.17
+File name       : gdk-sys-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gdk-sys0.17/gdk-sys-0.17.0.crate/sha512/03edb4a8bd0dbdde3a9ea7aa51620e3dafc92252717440ba285d4d844e812d3efa39bebad8bae5c633c375bf8c9267428ee614e63662c652373451673202c1a8/gdk-sys-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/gdk-sys/0.17.0/download#/gdk-sys-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gdk-sys-0.17.0.crate: gzip compressed data, was "gdk-sys-0.17.0.crate", max compression, original size modulo 2^32 514560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gdk-sys-0.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

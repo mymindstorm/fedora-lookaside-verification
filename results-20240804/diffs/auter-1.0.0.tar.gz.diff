@@ -1,0 +1,30 @@
+Source package : auter
+File name       : 1.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/auter/1.0.0.tar.gz/sha512/a2caa7d89f7baf966f1c694bbf390e495b9c04472ff30cdfe01485a1bdc5a7b08535f068e71ff0a2015a07d6d323e61f1d3880060db9edd6e464e6a6985cce76/1.0.0.tar.gz
+Source URL      : https://github.com/rackerlabs/auter/archive/1.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-1.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 163840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-1.0.0.tar.gz: gzip compressed data, last modified: Fri Mar 29 12:48:01 2019, from Unix, original size modulo 2^32 972800
+
+
+diff -r source-1.0.0.tar.gz-extracted/auter-1.0.0/auter.spec lookaside-1.0.0.tar.gz-extracted/auter-1.0.0/auter.spec
+2c2
+< Version:        1.0.0
+---
+> Version:        0.12.3
+104,109d103
+< * Fri Mar 29 2019 Nick Rhodes <nrhodes91@gmail.com> 1.0.0-1
+< - #220 Introduce package dependant reboots using AUTOREBOOT option
+< - #215 Remove rpm and deb package build tests from travis
+< - #223 Parallelize the travis jobs
+< - #224/#225 Clean up ShellCheck warnings
+< 
+116,117c110,111
+< * Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.12.1-2
+< - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+---
+> +* Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.12.1-2
+> +- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+132a127
+> 
+Only in lookaside-1.0.0.tar.gz-extracted/auter-1.0.0: .git

@@ -1,0 +1,15 @@
+Source package : python-interrogate
+File name       : interrogate-1.7.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-interrogate/interrogate-1.7.0.tar.gz/sha512/b015dab0e7b2fb7aa99cd74691747090860218fcc56739cb97cf90fbd3db50caf9129af218a4319dae156a5df1e8806aeadb0aadaf22b5e822eaae8500a07d19/interrogate-1.7.0.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/i/interrogate/interrogate-1.7.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-interrogate-1.7.0.tar.gz: gzip compressed data, was "interrogate-1.7.0.tar", last modified: Sun Apr  7 22:30:02 2024, max compression, original size modulo 2^32 1372160
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-interrogate-1.7.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1116160
+
+
+Only in lookaside-interrogate-1.7.0.tar.gz-extracted/interrogate-1.7.0: CODE_OF_CONDUCT.md
+Only in lookaside-interrogate-1.7.0.tar.gz-extracted/interrogate-1.7.0: CONTRIBUTING.md
+Only in lookaside-interrogate-1.7.0.tar.gz-extracted/interrogate-1.7.0: .gitignore
+Only in source-interrogate-1.7.0.tar.gz-extracted/interrogate-1.7.0: PKG-INFO
+Only in source-interrogate-1.7.0.tar.gz-extracted/interrogate-1.7.0: setup.cfg
+Only in source-interrogate-1.7.0.tar.gz-extracted/interrogate-1.7.0/src: interrogate.egg-info

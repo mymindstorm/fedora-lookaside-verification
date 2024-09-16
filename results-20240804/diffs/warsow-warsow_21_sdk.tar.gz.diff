@@ -1,0 +1,10 @@
+Source package : warsow
+File name       : warsow_21_sdk.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/warsow/warsow_21_sdk.tar.gz/sha512/5b1559280ffb56355a88cfd24899a199c3c76c71f6ea04b2aa66561767b9a9bd1020f41e75cf6488ba8084d20d36a8eccf84e67ec56c1a3596bd7c3c034ea940/warsow_21_sdk.tar.gz
+Source URL      : http://update.warsow.gg/mirror/warsow_21_sdk.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-warsow_21_sdk.tar.gz: HTML document, ASCII text, with very long lines (486)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-warsow_21_sdk.tar.gz: gzip compressed data, last modified: Tue Apr 26 21:17:58 2016, max compression, from Unix, original size modulo 2^32 1552486400 gzip compressed data, unknown method, ASCII, has CRC, extra field, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 1552486400
+
+
+Only in lookaside-warsow_21_sdk.tar.gz-extracted: warsow_21_sdk

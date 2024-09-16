@@ -1,0 +1,10 @@
+Source package : rust-futures-lite1
+File name       : futures-lite-1.13.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-futures-lite1/futures-lite-1.13.0.crate/sha512/2c007c62294c86108eba30a850a341e8fb369892bcbacfcd4b7ca39f949bc9a20624c3bb21630706d8240e27dcc402cec542480dbae8867ff933375e4be15fef/futures-lite-1.13.0.crate
+Source URL      : https://crates.io/api/v1/crates/futures-lite/1.13.0/download#/futures-lite-1.13.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-futures-lite-1.13.0.crate: gzip compressed data, was "futures-lite-1.13.0.crate", max compression, original size modulo 2^32 226304
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-futures-lite-1.13.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

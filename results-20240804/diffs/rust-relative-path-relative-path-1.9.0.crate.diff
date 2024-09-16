@@ -1,0 +1,10 @@
+Source package : rust-relative-path
+File name       : relative-path-1.9.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-relative-path/relative-path-1.9.0.crate/sha512/67bee40251f33bed1ea84e34dc3d356fa27e3c0578d447c2f1f144ccc6ec55d5124add0e691af403f15e82263a990418d9a8de5c3bebd4025481a1a59f21d425/relative-path-1.9.0.crate
+Source URL      : https://crates.io/api/v1/crates/relative-path/1.9.0/download#/relative-path-1.9.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-relative-path-1.9.0.crate: gzip compressed data, was "relative-path-1.9.0.crate", max compression, original size modulo 2^32 806716138
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-relative-path-1.9.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

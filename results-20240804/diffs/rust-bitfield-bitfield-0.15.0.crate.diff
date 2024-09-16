@@ -1,0 +1,10 @@
+Source package : rust-bitfield
+File name       : bitfield-0.15.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-bitfield/bitfield-0.15.0.crate/sha512/71c0fdb0cb29f27fbccefc2d7bc6aa081c3368bc90856dd81cbb0072e413c32cb9355cddda348d6747e480ca877b8dd084bafcce483aea7815d3f1b4b591eef9/bitfield-0.15.0.crate
+Source URL      : https://crates.io/api/v1/crates/bitfield/0.15.0/download#/bitfield-0.15.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-bitfield-0.15.0.crate: gzip compressed data, was "bitfield-0.15.0.crate", max compression, original size modulo 2^32 102912
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-bitfield-0.15.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

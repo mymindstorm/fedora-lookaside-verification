@@ -1,0 +1,11 @@
+Source package : whowatch
+File name       : whowatch-1.8.6.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/whowatch/whowatch-1.8.6.tar.gz/sha512/49aa45b0a88a41c98fb7b548f0f098004c8bcca9ec078e977fcec8bc109c9beab25989003bfff4b3dc38a9d62d69378f64441753a1cca62729d2013d2ed73cb0/whowatch-1.8.6.tar.gz
+Source URL      : https://github.com/mtsuszycki/whowatch/archive/whowatch-1.8.6.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-whowatch-1.8.6.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 4287536339 gzip compressed data, reserved method, ASCII, has CRC, extra field, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 4287536339
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-whowatch-1.8.6.tar.gz: gzip compressed data, last modified: Wed Apr 11 06:20:34 2018, max compression, from Unix, original size modulo 2^32 532480
+
+
+Only in lookaside-whowatch-1.8.6.tar.gz-extracted: whowatch-1.8.6
+Only in source-whowatch-1.8.6.tar.gz-extracted: whowatch-whowatch-1.8.6

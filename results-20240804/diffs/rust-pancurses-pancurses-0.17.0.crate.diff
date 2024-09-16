@@ -1,0 +1,10 @@
+Source package : rust-pancurses
+File name       : pancurses-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-pancurses/pancurses-0.17.0.crate/sha512/048740f35324f6c702bb98a608c6497b77415bdeeb4a83978d85dd66bd0b352a952adbd50546021b039fb30be3a47dfeb3022f92fc1a96126a5069d5ebb14b1a/pancurses-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/pancurses/0.17.0/download#/pancurses-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pancurses-0.17.0.crate: gzip compressed data, was "pancurses-0.17.0.crate", max compression, original size modulo 2^32 156672
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pancurses-0.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

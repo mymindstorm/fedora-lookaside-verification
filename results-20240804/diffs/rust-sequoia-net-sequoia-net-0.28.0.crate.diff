@@ -1,0 +1,10 @@
+Source package : rust-sequoia-net
+File name       : sequoia-net-0.28.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-sequoia-net/sequoia-net-0.28.0.crate/sha512/1a87d9b078c2b44220882611e8d49c6117906d8cbd81e50301a6b31d7428cef5622223ed234e28558fa83e31c47df84dfed087f1b1962bd42a7d1bc2f0fe9fff/sequoia-net-0.28.0.crate
+Source URL      : https://crates.io/api/v1/crates/sequoia-net/0.28.0/download#/sequoia-net-0.28.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sequoia-net-0.28.0.crate: gzip compressed data, was "sequoia-net-0.28.0.crate", max compression, original size modulo 2^32 4108902213
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sequoia-net-0.28.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

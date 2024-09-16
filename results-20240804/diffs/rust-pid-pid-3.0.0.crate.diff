@@ -1,0 +1,10 @@
+Source package : rust-pid
+File name       : pid-3.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-pid/pid-3.0.0.crate/sha512/b765b8d19f3fabbebb5b5f75bb417fa2244893f9168164682f0b537a6312e8e1bd37c84eaf7f4c3b38f78b6d0bee6557b37f8a0abe6a208792aafd7a030f7e2b/pid-3.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/pid/3.0.0/download#/pid-3.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pid-3.0.0.crate: gzip compressed data, was "pid-3.0.0.crate", max compression, original size modulo 2^32 22016
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pid-3.0.0.crate: POSIX tar archive
+
+
+No differences detected!

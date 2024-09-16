@@ -1,0 +1,12 @@
+Source package : ns-tiza-chalk-fonts
+File name       : tiza.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ns-tiza-chalk-fonts/tiza.zip/md5/91e836058bf35f601eb5e473d05c63fe/tiza.zip
+Source URL      : http://www.nuevostudio.com/files/downloads/tiza.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-tiza.zip: HTML document, ASCII text, with no line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-tiza.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+
+
+Only in lookaside-tiza.zip-extracted: __MACOSX
+Only in lookaside-tiza.zip-extracted: tiza_chalk.ttf
+Only in lookaside-tiza.zip-extracted: Tiza_License.txt

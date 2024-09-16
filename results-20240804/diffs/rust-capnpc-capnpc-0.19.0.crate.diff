@@ -1,0 +1,10 @@
+Source package : rust-capnpc
+File name       : capnpc-0.19.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-capnpc/capnpc-0.19.0.crate/sha512/df2e6917b20c414cd09c50f58803c4368029999af76a7ff70559eb1e31b8d6c75ed789f8075591269a31e1b73e268da9c555fc745b0121aa94f721c742288f7d/capnpc-0.19.0.crate
+Source URL      : https://crates.io/api/v1/crates/capnpc/0.19.0/download#/capnpc-0.19.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-capnpc-0.19.0.crate: gzip compressed data, was "capnpc-0.19.0.crate", max compression, original size modulo 2^32 189440
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-capnpc-0.19.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

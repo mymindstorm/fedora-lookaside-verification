@@ -1,0 +1,6 @@
+Source package : messiggy
+File name       : messiggy-0.5.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/messiggy/messiggy-0.5.0.tar.gz/md5/d30864143f7449d34b028b9566225ba1/messiggy-0.5.0.tar.gz
+Source URL      : http://www.coyotegulch.com/distfiles/messiggy-0.5.0.tar.gz
+
+Could not fetch file! Error: AxiosError: Request failed with status code 410

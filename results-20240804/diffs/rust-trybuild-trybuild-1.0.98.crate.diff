@@ -1,0 +1,10 @@
+Source package : rust-trybuild
+File name       : trybuild-1.0.98.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-trybuild/trybuild-1.0.98.crate/sha512/6a6e33b0094a5ade8471e0c4cb4b8ff35402e2ed5335d3960dda68a07bd469bf079dea3530a263cd5b03626bca5be2a18e6b9e740f2f32b0a1bf640d065ef610/trybuild-1.0.98.crate
+Source URL      : https://crates.io/api/v1/crates/trybuild/1.0.98/download#/trybuild-1.0.98.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-trybuild-1.0.98.crate: gzip compressed data, was "trybuild-1.0.98.crate", max compression, original size modulo 2^32 214528
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-trybuild-1.0.98.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

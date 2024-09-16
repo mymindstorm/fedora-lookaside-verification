@@ -1,0 +1,10 @@
+Source package : rust-bumpalo
+File name       : bumpalo-3.16.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-bumpalo/bumpalo-3.16.0.crate/sha512/a51b75c36f6794db444cab20eeb24f42a319080ecb486a56d254d6f873f3d188b5ccba11db30c068bd0c52c4322d4a3f5f5195c81c94b0bc04387030418835b1/bumpalo-3.16.0.crate
+Source URL      : https://crates.io/api/v1/crates/bumpalo/3.16.0/download#/bumpalo-3.16.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-bumpalo-3.16.0.crate: gzip compressed data, was "bumpalo-3.16.0.crate", max compression, original size modulo 2^32 385536
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-bumpalo-3.16.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

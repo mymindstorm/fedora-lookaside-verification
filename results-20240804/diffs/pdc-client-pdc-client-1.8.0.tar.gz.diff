@@ -1,0 +1,16 @@
+Source package : pdc-client
+File name       : pdc-client-1.8.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/pdc-client/pdc-client-1.8.0.tar.gz/sha512/6be3543f9fba91f3b2ca4cfd54e383f01065d8b114d673a74b10f67cf557c70c8a2d36401a98f3e7c65b7f9331c914f795872f035baea989e29195bd2e9c4e91/pdc-client-1.8.0.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/p/pdc-client/pdc-client-1.8.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pdc-client-1.8.0.tar.gz: gzip compressed data, was "dist/pdc-client-1.8.0.tar", last modified: Thu Dec  7 10:50:30 2017, max compression, original size modulo 2^32 583680
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pdc-client-1.8.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 266240
+
+
+Only in lookaside-pdc-client-1.8.0.tar.gz-extracted/pdc-client-1.8.0: create-plugin.py
+Only in source-pdc-client-1.8.0.tar.gz-extracted/pdc-client-1.8.0/docs: .gitignore
+Only in source-pdc-client-1.8.0.tar.gz-extracted/pdc-client-1.8.0: pdc_client.egg-info
+Only in lookaside-pdc-client-1.8.0.tar.gz-extracted/pdc-client-1.8.0: pdc-client.spec
+Only in source-pdc-client-1.8.0.tar.gz-extracted/pdc-client-1.8.0: PKG-INFO
+Only in source-pdc-client-1.8.0.tar.gz-extracted/pdc-client-1.8.0: setup.cfg
+Only in source-pdc-client-1.8.0.tar.gz-extracted/pdc-client-1.8.0: tests

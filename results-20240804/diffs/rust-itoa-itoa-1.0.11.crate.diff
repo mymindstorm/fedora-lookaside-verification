@@ -1,0 +1,10 @@
+Source package : rust-itoa
+File name       : itoa-1.0.11.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-itoa/itoa-1.0.11.crate/sha512/7e22dffac34c9c9f432daef395e0ec710ed658164bc9cd9fc6445c9f984c912a10bac556214a026bcddbe27a3197b35b0c87d6709fd605062637d086b2d20311/itoa-1.0.11.crate
+Source URL      : https://crates.io/api/v1/crates/itoa/1.0.11/download#/itoa-1.0.11.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-itoa-1.0.11.crate: gzip compressed data, was "itoa-1.0.11.crate", max compression, original size modulo 2^32 43008
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-itoa-1.0.11.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

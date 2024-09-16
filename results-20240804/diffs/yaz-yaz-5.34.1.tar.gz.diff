@@ -1,0 +1,820 @@
+Source package : yaz
+File name       : yaz-5.34.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/yaz/yaz-5.34.1.tar.gz/sha512/ecb6500598320a7e5db6dc0ede000663991f8b11c3ab2688a8a16e2b14455a0266a4e076ad7b1801201f4a3feab0267b88003b440e4b6d821afa01d561a82d64/yaz-5.34.1.tar.gz
+Source URL      : http://ftp.indexdata.com/pub/yaz/yaz-5.34.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-yaz-5.34.1.tar.gz: gzip compressed data, last modified: Fri Jun 21 13:54:42 2024, max compression, from Unix, original size modulo 2^32 14848000
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-yaz-5.34.1.tar.gz: gzip compressed data, last modified: Tue Jun 18 16:21:08 2024, max compression, from Unix, original size modulo 2^32 14848000
+
+
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/ChangeLog lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/ChangeLog
+1,29d0
+< commit c9dae5618a721b82d94e39bcce49dcacd7bba24b
+< Author: Hugh McMaster <hugh.mcmaster@outlook.com>
+< Date:   Fri Jun 21 22:42:50 2024 +1000
+< 
+<     LICENSE: Update to match Index Data's online Revised BSD license (#115)
+<     
+<     * Extend copyright to 2024.
+<      * Replace 'Regents' with 'Index Data'.
+<      * Add whitespace for readability.
+<      * Wrap lines as needed.
+< 
+< commit 3c68842fb4c1ba02bec84ae315ab08f17e623485
+< Author: Jakub Skoczen <jakub@indexdata.dk>
+< Date:   Fri Jun 21 14:42:14 2024 +0200
+< 
+<     More updates on macOS (#117)
+< 
+< commit 5f1a2c7de92739243fc3ef5c498cef56add5b792
+< Author: Jakub Skoczen <jakub@indexdata.dk>
+< Date:   Fri Jun 21 14:16:09 2024 +0200
+< 
+<     Update docs re compilation on macOS (#116)
+< 
+< commit 3dc112d42667b857de0fc6c1e76525179db86a15
+< Author: Jakub Skoczen <jakub@indexdata.com>
+< Date:   Wed Jun 19 10:25:21 2024 +0200
+< 
+<     Remove outdated distros: Debian Stretch and Ubuntu Trusty
+< 
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/client/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/client/Makefile.in
+358c358
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu client/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign client/Makefile'; \
+360c360
+< 	  $(AUTOMAKE) --gnu client/Makefile
+---
+> 	  $(AUTOMAKE) --foreign client/Makefile
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/bib1-attr.7 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/bib1-attr.7
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "BIB\-1 ATTRIBUTE SET" "7" "06/21/2024" "YAZ 5.34.1" "Conventions and miscellaneous"
+---
+> .TH "BIB\-1 ATTRIBUTE SET" "7" "06/18/2024" "YAZ 5.34.1" "Conventions and miscellaneous"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/bib1.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/bib1.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Bib-1 Attribute Set</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-url.html" title="yaz-url"><link rel="next" href="yaz-json-parse.html" title="yaz-json-parse"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Bib-1 Attribute Set</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-url.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-json-parse.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="bib1"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>bib1-attr &#8212; Bib-1 Attribute Set</p></div><div class="refsect1"><a name="id9133"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Bib-1 Attribute Set</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-url.html" title="yaz-url"><link rel="next" href="yaz-json-parse.html" title="yaz-json-parse"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Bib-1 Attribute Set</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-url.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-json-parse.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="bib1"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>bib1-attr &#8212; Bib-1 Attribute Set</p></div><div class="refsect1"><a name="id9120"></a><h2>DESCRIPTION</h2><p>
+3c3
+<   </p></div><div class="refsect1"><a name="id9136"></a><h2>TYPES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9123"></a><h2>TYPES</h2><p>
+6c6
+<   </p></div><div class="refsect1"><a name="id9139"></a><h2>USE (1)</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9126"></a><h2>USE (1)</h2><p>
+108c108
+<   </p></div><div class="refsect1"><a name="id9143"></a><h2>RELATION (2)</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9130"></a><h2>RELATION (2)</h2><p>
+121c121
+<   </p></div><div class="refsect1"><a name="id9147"></a><h2>POSITION (3)</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9134"></a><h2>POSITION (3)</h2><p>
+127c127
+<   </p></div><div class="refsect1"><a name="id9151"></a><h2>STRUCTURE (4)</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9138"></a><h2>STRUCTURE (4)</h2><p>
+146c146
+<   </p></div><div class="refsect1"><a name="id9155"></a><h2>TRUNCATION (5)</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9142"></a><h2>TRUNCATION (5)</h2><p>
+164c164
+<   </p></div><div class="refsect1"><a name="id9161"></a><h2>COMPLETENESS (6)</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9148"></a><h2>COMPLETENESS (6)</h2><p>
+170c170
+<   </p></div><div class="refsect1"><a name="id9165"></a><h2>SORTING (7)</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9152"></a><h2>SORTING (7)</h2><p>
+178c178
+<   </p></div><div class="refsect1"><a name="id9170"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9157"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/book.xml lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/book.xml
+21d20
+<    <author><firstname>Jakub</firstname><surname>Skoczen</surname></author>
+417c416
+<   <sect1 id="installation.unix"><title>UNIX/macOS</title>
+---
+>   <sect1 id="installation.unix"><title>UNIX/MacOS</title>
+848c847
+<      <title>Compiling from source on macOS</title>
+---
+>      <title>Compiling from source on MacOS</title>
+850,883c849,850
+<        Install Apple's Xcode Command Line Tools package from <ulink url="https://developer.apple.com/">Apple Developer</ulink>
+<        which provides necessary tools for building C/C++ programs on macOS.
+<        This is sufficient for compiling &yaz; from a source distribution tarball
+<        as macOS already includes libxml and libxslt development libraries.
+<      </para>
+<      <para>
+<        If you are compiling &yaz; from a Git checkout, at the time of writing the latest
+<        version of XCLT is 15.4 and includes a very old GNU Bison which is insufficient
+<        to generate &yaz; sources. You can use e.g. <ulink url="https://brew.sh">Homebrew</ulink> to install a more recent version:
+<        <screen>
+<          brew install bison
+<        </screen>
+<        After installation make sure to put it on the path:
+<        <screen>
+<          export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+<        </screen>
+<        Note: XCLT 15.4 fails to make  <code>gm4</code> available as <code>m4</code> which can cause a silent Bison failure, one
+<        way to fix it is:
+<        <screen>
+<          sudo ln -s /Library/Developer/CommandLineTools/usr/bin/gm4 /Library/Developer/CommandLineTools/usr/bin/m4
+<        </screen>
+<        Additionally, you will need to install DocBook stylesheets to generate documentation:
+<        <screen>
+<          brew install docbook docbook-xsl
+<        </screen>
+<        per the caveats section (<code>brew info docbook</code>), for the compilation to find them, add:
+<        <screen>
+<          export XML_CATALOG_FILES="/opt/homebrew/etc/xml/catalog"
+<        </screen>
+<        If you want to compile &yaz; with ICU you must install it with Homebrew as macOS does not ship ICU headers:
+<        <screen>
+<          brew install icu4c
+<        </screen>
+<        and make sure to add compiler flags before the configure stage, per the caveats section (<code>brew info icu4c</code>):
+---
+>        Compiling from source on MacOSX requires libxml2. This can be installed
+>        with Homebrew, for instance:
+885,887c852
+<          export LDFLAGS="-L/opt/homebrew/opt/icu4c/lib"
+<          export CPPFLAGS="-I/opt/homebrew/opt/icu4c/include
+<          export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig""
+---
+>          brew install libxml2
+889,900c854,855
+<        If you want to also compile with more recent version of libxml2 and libxslt,
+<        install them with Homebrew:
+<        <screen>
+<          brew install libxml2 libxslt
+<        </screen> 
+<        and again make sure to add compiler flags, per the caveats section (<code>brew info libxml2</code>):
+<        <screen>
+<         export LDFLAGS="-L/opt/homebrew/opt/libxml2/lib -L/opt/homebrew/opt/libxslt/lib -L/opt/homebrew/opt/icu4c/lib"
+<         export CPPFLAGS="-I/opt/homebrew/opt/libxml2/include -I/opt/homebrew/opt/libxslt/include -I/opt/homebrew/opt/icu4c/include"
+<         export PKG_CONFIG_PATH="/opt/homebrew/opt/libxml2/lib/pkgconfig:/opt/homebrew/opt/libxslt/lib/pkgconfig:/opt/homebrew/opt/icu4c/lib/pkgconfig"
+<        </screen>
+<        Then configure and conpile with:
+---
+>      </para>
+>      <para> Review the Caveats section (<code>brew info libxml2</code>) for the <code>LDFLAGS</code>, <code>CPPFLAGS</code>, and <code>PKG_CONFIG_PATH</code> environment variables before executing the <code>./compile</code> command. For instance:
+901a857,859
+>          export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+>          export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+>          export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/common/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/common/Makefile.in
+335c335
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu doc/common/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign doc/common/Makefile'; \
+337c337
+< 	  $(AUTOMAKE) --gnu doc/common/Makefile
+---
+> 	  $(AUTOMAKE) --foreign doc/common/Makefile
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/index.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/index.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>YAZ User's Guide and Reference</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><meta name="description" content="This document is the programmer's guide and reference to the YAZ package version 5.34.1. YAZ is a compact toolkit that provides access to the Z39.50 and SRU/Solr protocols, as well as a set of higher-level tools for implementing the server and client roles, respectively. The documentation can be used on its own, or as a reference when looking at the example applications provided with the package. "><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="next" href="introduction.html" title="Chapter�1.�Introduction"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">YAZ User's Guide and Reference</th></tr><tr><td width="20%" align="left">�</td><th width="60%" align="center">�</th><td width="20%" align="right">�<a accesskey="n" href="introduction.html">Next</a></td></tr></table><hr></div><div class="book"><div class="titlepage"><div><div><h1 class="title"><a name="id1337"></a>YAZ User's Guide and Reference</h1></div><div><div class="authorgroup"><div class="author"><h3 class="author"><span class="firstname">Sebastian</span> <span class="surname">Hammer</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Adam</span> <span class="surname">Dickmeiss</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Mike</span> <span class="surname">Taylor</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Heikki</span> <span class="surname">Levanto</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Dennis</span> <span class="surname">Schafroth</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Jakub</span> <span class="surname">Skoczen</span></h3></div></div></div><div><p class="releaseinfo">5.34.1</p></div><div><p class="copyright">Copyright � 1995-2023 Index Data</p></div><div><div class="abstract"><p class="title"><b>Abstract</b></p><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>YAZ User's Guide and Reference</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><meta name="description" content="This document is the programmer's guide and reference to the YAZ package version 5.34.1. YAZ is a compact toolkit that provides access to the Z39.50 and SRU/Solr protocols, as well as a set of higher-level tools for implementing the server and client roles, respectively. The documentation can be used on its own, or as a reference when looking at the example applications provided with the package. "><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="next" href="introduction.html" title="Chapter�1.�Introduction"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">YAZ User's Guide and Reference</th></tr><tr><td width="20%" align="left">�</td><th width="60%" align="center">�</th><td width="20%" align="right">�<a accesskey="n" href="introduction.html">Next</a></td></tr></table><hr></div><div class="book"><div class="titlepage"><div><div><h1 class="title"><a name="id1337"></a>YAZ User's Guide and Reference</h1></div><div><div class="authorgroup"><div class="author"><h3 class="author"><span class="firstname">Sebastian</span> <span class="surname">Hammer</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Adam</span> <span class="surname">Dickmeiss</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Mike</span> <span class="surname">Taylor</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Heikki</span> <span class="surname">Levanto</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Dennis</span> <span class="surname">Schafroth</span></h3></div></div></div><div><p class="releaseinfo">5.34.1</p></div><div><p class="copyright">Copyright � 1995-2023 Index Data</p></div><div><div class="abstract"><p class="title"><b>Abstract</b></p><p>
+11c11
+<    </p></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="chapter"><a href="introduction.html">1. Introduction</a></span></dt><dd><dl><dt><span class="sect1"><a href="introduction.html#introduction.reading">1. Reading this Manual</a></span></dt><dt><span class="sect1"><a href="introduction.api.html">2. The API</a></span></dt></dl></dd><dt><span class="chapter"><a href="installation.html">2. Compilation and Installation</a></span></dt><dd><dl><dt><span class="sect1"><a href="installation.html#installation-introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="installation.unix.html">2. UNIX/macOS</a></span></dt><dd><dl><dt><span class="sect2"><a href="installation.unix.html#installation.source.unix">2.1. Compiling from source on Unix</a></span></dt><dt><span class="sect2"><a href="installation.unix.html#installation.source.macos">2.2. Compiling from source on macOS</a></span></dt><dt><span class="sect2"><a href="installation.unix.html#installation-linking-yaz-unix">2.3. How to make apps using YAZ on UNIX</a></span></dt></dl></dd><dt><span class="sect1"><a href="installation.win32.html">3. Windows</a></span></dt><dd><dl><dt><span class="sect2"><a href="installation.win32.html#installation.win32.source">3.1. Compiling from Source on Windows</a></span></dt><dt><span class="sect2"><a href="installation.win32.html#installation-linking-yaz-win32">3.2. How to make apps using YAZ on Windows</a></span></dt><dt><span class="sect2"><a href="installation.win32.html#installation.windows.libxml2">3.3. Compiling Libxml2 and Libxslt on windows</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="zoom.html">3. ZOOM</a></span></dt><dd><dl><dt><span class="sect1"><a href="zoom.html#zoom-connections">1. Connections</a></span></dt><dd><dl><dt><span class="sect2"><a href="zoom.html#zoom-connection-z39.50">1.1. Z39.50 Protocol behavior</a></span></dt><dt><span class="sect2"><a href="zoom.html#zoom.sru.init.behavior">1.2. SRU/Solr Protocol behavior</a></span></dt></dl></dd><dt><span class="sect1"><a href="zoom.query.html">2. Queries</a></span></dt><dt><span class="sect1"><a href="zoom.resultsets.html">3. Result sets</a></span></dt><dd><dl><dt><span class="sect2"><a href="zoom.resultsets.html#zoom.z3950.resultset.sort">3.1. Z39.50 Result-set Sort</a></span></dt><dt><span class="sect2"><a href="zoom.resultsets.html#zoom.z3950.resultset.behavior">3.2. Z39.50 Protocol behavior</a></span></dt><dt><span class="sect2"><a href="zoom.resultsets.html#zoom.sru.resultset.behavior">3.3. SRU Protocol behavior</a></span></dt></dl></dd><dt><span class="sect1"><a href="zoom.records.html">4. Records</a></span></dt><dd><dl><dt><span class="sect2"><a href="zoom.records.html#zoom.z3950.record.behavior">4.1. Z39.50 Protocol behavior</a></span></dt><dt><span class="sect2"><a href="zoom.records.html#zoom.sru.record.behavior">4.2. SRU/Solr Protocol behavior</a></span></dt></dl></dd><dt><span class="sect1"><a href="zoom.facets.html">5. ZOOM Facets</a></span></dt><dt><span class="sect1"><a href="zoom.scan.html">6. Scan</a></span></dt><dt><span class="sect1"><a href="zoom.extendedservices.html">7. Extended Services</a></span></dt><dd><dl><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.item.order">7.1. Item Order</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.record.update">7.2. Record Update</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.database.create">7.3. Database Create</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.database.drop">7.4. Database Drop</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.commit">7.5. Commit Operation</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.extended.services.behavior">7.6. Protocol behavior</a></span></dt></dl></dd><dt><span class="sect1"><a href="zoom.options.html">8. Options</a></span></dt><dt><span class="sect1"><a href="zoom.queryconversions.html">9. Query conversions</a></span></dt><dt><span class="sect1"><a href="zoom.events.html">10. Events</a></span></dt></dl></dd><dt><span class="chapter"><a href="server.html">4. Generic server</a></span></dt><dd><dl><dt><span class="sect1"><a href="server.html#server.introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="server.frontend.html">2. The Database Frontend</a></span></dt><dt><span class="sect1"><a href="server.backend.html">3. The Backend API</a></span></dt><dt><span class="sect1"><a href="server.main.html">4. Your main() Routine</a></span></dt><dt><span class="sect1"><a href="server.backendfunctions.html">5. The Backend Functions</a></span></dt><dd><dl><dt><span class="sect2"><a href="server.backendfunctions.html#server.init">5.1. Init</a></span></dt><dt><span class="sect2"><a href="server.backendfunctions.html#server.search.retrieve">5.2. Search and Retrieve</a></span></dt><dt><span class="sect2"><a href="server.backendfunctions.html#server.delete">5.3. Delete</a></span></dt><dt><span class="sect2"><a href="server.backendfunctions.html#server.scan">5.4. Scan</a></span></dt></dl></dd><dt><span class="sect1"><a href="server.invocation.html">6. Application Invocation</a></span></dt><dt><span class="sect1"><a href="server.vhosts.html">7. GFS Configuration and Virtual Hosts</a></span></dt></dl></dd><dt><span class="chapter"><a href="asn.html">5. The Z39.50 ASN.1 Module</a></span></dt><dd><dl><dt><span class="sect1"><a href="asn.html#asn.introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="asn.preparing.html">2. Preparing PDUs</a></span></dt><dt><span class="sect1"><a href="asn.external.html">3. EXTERNAL Data</a></span></dt><dt><span class="sect1"><a href="asn.pdu.html">4. PDU Contents Table</a></span></dt></dl></dd><dt><span class="chapter"><a href="soap.html">6. SOAP and SRU</a></span></dt><dd><dl><dt><span class="sect1"><a href="soap.html#soap.introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="soap.http.html">2. HTTP</a></span></dt><dt><span class="sect1"><a href="soap.xml.html">3. SOAP Packages</a></span></dt><dt><span class="sect1"><a href="soap.srw.html">4. SRU</a></span></dt></dl></dd><dt><span class="chapter"><a href="tools.html">7. Supporting Tools</a></span></dt><dd><dl><dt><span class="sect1"><a href="tools.html#tools.query">1. Query Syntax Parsers</a></span></dt><dd><dl><dt><span class="sect2"><a href="tools.html#PQF">1.1. Prefix Query Format</a></span></dt><dd><dl><dt><span class="sect3"><a href="tools.html#PQF-prox">1.1.1. Using Proximity Operators with PQF</a></span></dt><dt><span class="sect3"><a href="tools.html#pqf-examples">1.1.2. PQF queries</a></span></dt></dl></dd><dt><span class="sect2"><a href="tools.html#CCL">1.2. CCL</a></span></dt><dd><dl><dt><span class="sect3"><a href="tools.html#ccl.syntax">1.2.1. CCL Syntax</a></span></dt><dt><span class="sect3"><a href="tools.html#ccl.qualifiers">1.2.2. CCL Qualifiers</a></span></dt><dt><span class="sect3"><a href="tools.html#ccl.api">1.2.3. CCL API</a></span></dt></dl></dd><dt><span class="sect2"><a href="tools.html#cql">1.3. CQL</a></span></dt><dd><dl><dt><span class="sect3"><a href="tools.html#cql.parsing">1.3.1. CQL parsing</a></span></dt><dt><span class="sect3"><a href="tools.html#cql.tree">1.3.2. CQL tree</a></span></dt><dt><span class="sect3"><a href="tools.html#cql.to.pqf">1.3.3. CQL to PQF conversion</a></span></dt><dt><span class="sect3"><a href="tools.html#cql.to.rpn">1.3.4. Specification of CQL to RPN mappings</a></span></dt><dt><span class="sect3"><a href="tools.html#cql.xcql">1.3.5. CQL to XCQL conversion</a></span></dt><dt><span class="sect3"><a href="tools.html#rpn.to.cql">1.3.6. PQF to CQL conversion</a></span></dt></dl></dd></dl></dd><dt><span class="sect1"><a href="tools.oid.html">2. Object Identifiers</a></span></dt><dd><dl><dt><span class="sect2"><a href="tools.oid.html#tools.oid.database">2.1. OID database</a></span></dt><dt><span class="sect2"><a href="tools.oid.html#tools.oid.std">2.2. Standard OIDs</a></span></dt></dl></dd><dt><span class="sect1"><a href="tools.nmem.html">3. Nibble Memory</a></span></dt><dt><span class="sect1"><a href="tools.log.html">4. Log</a></span></dt><dt><span class="sect1"><a href="marc.html">5. MARC</a></span></dt><dd><dl><dt><span class="sect2"><a href="marc.html#tools.turbomarc">5.1. TurboMARC</a></span></dt></dl></dd><dt><span class="sect1"><a href="tools.retrieval.html">6. Retrieval Facility</a></span></dt><dd><dl><dt><span class="sect2"><a href="tools.retrieval.html#tools.retrieval.format">6.1. Retrieval XML format</a></span></dt><dt><span class="sect2"><a href="tools.retrieval.html#tools.retrieval.examples">6.2. Retrieval Facility Examples</a></span></dt><dt><span class="sect2"><a href="tools.retrieval.html#tools.retrieval.api">6.3. API</a></span></dt></dl></dd><dt><span class="sect1"><a href="sorting.html">7. Sorting</a></span></dt><dd><dl><dt><span class="sect2"><a href="sorting.html#id1339">7.1. Using the Z39.50 sort service</a></span></dt><dt><span class="sect2"><a href="sorting.html#id1340">7.2. Type-7 sort</a></span></dt></dl></dd><dt><span class="sect1"><a href="facets.html">8. Facets</a></span></dt></dl></dd><dt><span class="chapter"><a href="odr.html">8. The ODR Module</a></span></dt><dd><dl><dt><span class="sect1"><a href="odr.html#odr.introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="odr.use.html">2. Using ODR</a></span></dt><dd><dl><dt><span class="sect2"><a href="odr.use.html#odr.streams">2.1. ODR Streams</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.memory.management">2.2. Memory Management</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.encoding.and.decoding">2.3. Encoding and Decoding Data</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.printing">2.4. Printing</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.diagnostics">2.5. Diagnostics</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.summary.and.synopsis">2.6. Summary and Synopsis</a></span></dt></dl></dd><dt><span class="sect1"><a href="odr.programming.html">3. Programming with ODR</a></span></dt><dd><dl><dt><span class="sect2"><a href="odr.programming.html#odr.primitive.asn1.types">3.1. The Primitive ASN.1 Types</a></span></dt><dd><dl><dt><span class="sect3"><a href="odr.programming.html#odr.integer">3.1.1. INTEGER</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.boolean">3.1.2. BOOLEAN</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.real">3.1.3. REAL</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.null">3.1.4. NULL</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.octet.string">3.1.5. OCTET STRING</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.bit.string">3.1.6. BIT STRING</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.object.identifier">3.1.7. OBJECT IDENTIFIER</a></span></dt></dl></dd><dt><span class="sect2"><a href="odr.programming.html#odr.tagging.primitive.types">3.2. Tagging Primitive Types</a></span></dt><dt><span class="sect2"><a href="odr.programming.html#odr.constructed.types">3.3. Constructed Types</a></span></dt><dt><span class="sect2"><a href="odr.programming.html#odr.tagging.constructed.types">3.4. Tagging Constructed Types</a></span></dt><dd><dl><dt><span class="sect3"><a href="odr.programming.html#odr.implicit.tagging">3.4.1. Implicit Tagging</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.explicit.tagging">3.4.2. Explicit Tagging</a></span></dt></dl></dd><dt><span class="sect2"><a href="odr.programming.html#odr.sequence.of">3.5. SEQUENCE OF</a></span></dt><dt><span class="sect2"><a href="odr.programming.html#odr.choice.types">3.6. CHOICE Types</a></span></dt></dl></dd><dt><span class="sect1"><a href="odr.debugging.html">4. Debugging</a></span></dt></dl></dd><dt><span class="chapter"><a href="comstack.html">9. The COMSTACK Module</a></span></dt><dd><dl><dt><span class="sect1"><a href="comstack.html#comstack.synopsis">1. Synopsis (blocking mode)</a></span></dt><dt><span class="sect1"><a href="comstack.introduction.html">2. Introduction</a></span></dt><dt><span class="sect1"><a href="comstack.common.html">3. Common Functions</a></span></dt><dd><dl><dt><span class="sect2"><a href="comstack.common.html#comstack.managing.endpoints">3.1. Managing Endpoints</a></span></dt><dt><span class="sect2"><a href="comstack.common.html#comstack.data.exchange">3.2. Data Exchange</a></span></dt></dl></dd><dt><span class="sect1"><a href="comstack.client.html">4. Client Side</a></span></dt><dt><span class="sect1"><a href="comstack.server.html">5. Server Side</a></span></dt><dt><span class="sect1"><a href="comstack.addresses.html">6. Addresses</a></span></dt><dt><span class="sect1"><a href="comstack.ssl.html">7. SSL</a></span></dt><dt><span class="sect1"><a href="comstack.diagnostics.html">8. Diagnostics</a></span></dt><dt><span class="sect1"><a href="comstack.summary.html">9. Summary and Synopsis</a></span></dt></dl></dd><dt><span class="chapter"><a href="future.html">10. Future Directions</a></span></dt><dt><span class="reference"><a href="reference.html">I. Reference</a></span></dt><dd><dl><dt><span class="refentrytitle"><a href="yaz-client.html">yaz-client</a></span><span class="refpurpose"> &#8212; Z39.50/SRU client for implementors</span></dt><dt><span class="refentrytitle"><a href="yaz-ztest.html">yaz-ztest</a></span><span class="refpurpose"> &#8212; Z39.50/SRU Test Server</span></dt><dt><span class="refentrytitle"><a href="yaz-config.html">yaz-config</a></span><span class="refpurpose"> &#8212; Script to get information about YAZ.</span></dt><dt><span class="refentrytitle"><a href="yaz.html">yaz</a></span><span class="refpurpose"> &#8212; Z39.50 toolkit.</span></dt><dt><span class="refentrytitle"><a href="zoomsh.html">zoomsh</a></span><span class="refpurpose"> &#8212; ZOOM shell</span></dt><dt><span class="refentrytitle"><a href="yaz-asncomp.html">yaz-asncomp</a></span><span class="refpurpose"> &#8212; YAZ ASN.1 compiler</span></dt><dt><span class="refentrytitle"><a href="yaz-marcdump.html">yaz-marcdump</a></span><span class="refpurpose"> &#8212; MARC record dump utility</span></dt><dt><span class="refentrytitle"><a href="yaz-iconv.html">yaz-iconv</a></span><span class="refpurpose"> &#8212; YAZ Character set conversion utility</span></dt><dt><span class="refentrytitle"><a href="yaz-log.html">yaz-log</a></span><span class="refpurpose"> &#8212; Log handling in all yaz-based programs</span></dt><dt><span class="refentrytitle"><a href="yaz-illclient.html">yaz-illclient</a></span><span class="refpurpose"> &#8212; ILL client</span></dt><dt><span class="refentrytitle"><a href="yaz-icu.html">yaz-icu</a></span><span class="refpurpose"> &#8212; YAZ ICU utility</span></dt><dt><span class="refentrytitle"><a href="yaz-url.html">yaz-url</a></span><span class="refpurpose"> &#8212; YAZ URL fetch utility</span></dt><dt><span class="refentrytitle"><a href="bib1.html">Bib-1 Attribute Set</a></span><span class="refpurpose"> &#8212; Bib-1 Attribute Set</span></dt><dt><span class="refentrytitle"><a href="yaz-json-parse.html">yaz-json-parse</a></span><span class="refpurpose"> &#8212; YAZ JSON parser</span></dt><dt><span class="refentrytitle"><a href="yaz-record-iconv.html">yaz-record-iconv</a></span><span class="refpurpose"> &#8212; YAZ Record Conversion Utility</span></dt></dl></dd><dt><span class="appendix"><a href="list-oids.html">A. List of Object Identifiers</a></span></dt><dt><span class="appendix"><a href="bib1-diagnostics.html">B. Bib-1 diagnostics</a></span></dt><dt><span class="appendix"><a href="sru-diagnostics.html">C. SRU diagnostics</a></span></dt><dt><span class="appendix"><a href="license.html">D. License</a></span></dt><dd><dl><dt><span class="sect1"><a href="license.html#license.indexdata">1. Index Data Copyright</a></span></dt></dl></dd><dt><span class="appendix"><a href="indexdata.html">E. About Index Data</a></span></dt><dt><span class="appendix"><a href="credits.html">F. Credits</a></span></dt></dl></div><div class="list-of-figures"><p><b>List of Figures</b></p><dl><dt>1.1. <a href="introduction.api.html#yaz.layer">YAZ layers</a></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>3.1. <a href="zoom.html#zoom-connection-options">ZOOM Connection Options</a></dt><dt>3.2. <a href="zoom.query.html#zoom-sort-strategy">ZOOM sort strategy</a></dt><dt>3.3. <a href="zoom.resultsets.html#zoom.resultset.options">ZOOM Result set Options</a></dt><dt>3.4. <a href="zoom.resultsets.html#zoom.search.info.report.options">Search Info Report Options</a></dt><dt>3.5. <a href="zoom.scan.html#zoom.scanset.options">ZOOM Scan Set Options</a></dt><dt>3.6. <a href="zoom.extendedservices.html#zoom.extendedservices.type">Extended Service Type</a></dt><dt>3.7. <a href="zoom.extendedservices.html#zoom.extendedservices.options">Extended Service Common Options</a></dt><dt>3.8. <a href="zoom.extendedservices.html#zoom.item.order.options">Item Order Options</a></dt><dt>3.9. <a href="zoom.extendedservices.html#zoom.illrequest.options">ILL Request Options</a></dt><dt>3.10. <a href="zoom.extendedservices.html#zoom.record.update.options">Record Update Options</a></dt><dt>3.11. <a href="zoom.extendedservices.html#zoom.database.create.options">Database Create Options</a></dt><dt>3.12. <a href="zoom.extendedservices.html#zoom.database.drop.options">Database Drop Options</a></dt><dt>3.13. <a href="zoom.events.html#zoom.event.ids">ZOOM Event IDs</a></dt><dt>5.1. <a href="asn.pdu.html#asn.default.initialize.request">Default settings for PDU Initialize Request</a></dt><dt>5.2. <a href="asn.pdu.html#asn.default.initialize.response">Default settings for PDU Initialize Response</a></dt><dt>5.3. <a href="asn.pdu.html#asn.default.search.request">Default settings for PDU Search Request</a></dt><dt>5.4. <a href="asn.pdu.html#asn.default.search.response">Default settings for PDU Search Response</a></dt><dt>5.5. <a href="asn.pdu.html#asn.default.present.request">Default settings for PDU Present Request</a></dt><dt>5.6. <a href="asn.pdu.html#asn.default.present.response">Default settings for PDU Present Response</a></dt><dt>5.7. <a href="asn.pdu.html#asn.default.delete.result.set.request">Default settings for Delete Result Set Request</a></dt><dt>5.8. <a href="asn.pdu.html#asn.default.delete.result.set.response">Default settings for Delete Result Set Response</a></dt><dt>5.9. <a href="asn.pdu.html#asn.default.scan.request">Default settings for Scan Request</a></dt><dt>5.10. <a href="asn.pdu.html#asn.default.scan.response">Default settings for Scan Response</a></dt><dt>5.11. <a href="asn.pdu.html#asn.default.trigger.resource.control.request">Default settings for Trigger Resource Control Request</a></dt><dt>5.12. <a href="asn.pdu.html#asn.default.resource.control.request">Default settings for Resource Control Request</a></dt><dt>5.13. <a href="asn.pdu.html#asn.default.resource.control.response">Default settings for Resource Control Response</a></dt><dt>5.14. <a href="asn.pdu.html#asn.default.access.control.request">Default settings for Access Control Request</a></dt><dt>5.15. <a href="asn.pdu.html#asn.default.access.control.response">Default settings for Access Control Response</a></dt><dt>5.16. <a href="asn.pdu.html#asn.default.segment">Default settings for Segment</a></dt><dt>5.17. <a href="asn.pdu.html#asn.default.close">Default settings for Close</a></dt><dt>7.1. <a href="tools.html#ccl.common.bib1.attributes">Common Bib-1 attributes</a></dt><dt>7.2. <a href="tools.html#ccl.special.attribute.combos">Special attribute combos</a></dt><dt>7.3. <a href="tools.html#ccl.directives.table">CCL directives</a></dt><dt>7.4. <a href="facets.html#facet.attributes">Facet attributes</a></dt><dt>8.1. <a href="odr.use.html#odr.error.codes">ODR Error codes</a></dt></dl></div><div class="list-of-examples"><p><b>List of Examples</b></p><dl><dt>4.1. <a href="server.invocation.html#server.example.running.unix">Running the GFS on Unix</a></dt><dt>4.2. <a href="server.invocation.html#server.example.apache.sru">Setting up Apache as SRU Frontend</a></dt><dt>4.3. <a href="server.invocation.html#server.example.local.access">Running a server with local access only</a></dt><dt>7.1. <a href="tools.html#example.pqf.simple.terms">PQF queries using simple terms</a></dt><dt>7.2. <a href="tools.html#pqf.example.pqf.boolean.operators">PQF boolean operators</a></dt><dt>7.3. <a href="tools.html#example.pqf.result.sets">PQF references to result sets</a></dt><dt>7.4. <a href="tools.html#example.pqf.attributes">Attributes for terms</a></dt><dt>7.5. <a href="tools.html#example.pqf.proximity">PQF Proximity queries</a></dt><dt>7.6. <a href="tools.html#example.pqf.search.term.type">PQF specification of search term type</a></dt><dt>7.7. <a href="tools.html#example.pqf.mixed.queries">PQF mixed queries</a></dt><dt>7.8. <a href="tools.html#example.ccl.queries">CCL queries</a></dt><dt>7.9. <a href="tools.html#example.ccl.profile">CCL profile</a></dt><dt>7.10. <a href="tools.html#example.cql.to.rpn.mapping">CQL to RPN mapping file</a></dt><dt>7.11. <a href="tools.html#example.cql.to.rpn.string">CQL to RPN string attributes</a></dt><dt>7.12. <a href="tools.html#example.cql.to.rpn.bathprofile">CQL to RPN using Bath Profile</a></dt><dt>7.13. <a href="tools.oid.html#tools.oid.bib1.1">Create OID on stack</a></dt><dt>7.14. <a href="tools.oid.html#tools.oid.bib1.2">Using oid_oiddotstring_to_oid</a></dt><dt>7.15. <a href="tools.oid.html#tools.oid.bib1.3">Using odr_getoidbystr</a></dt><dt>7.16. <a href="tools.oid.html#tools.oid.bib1.4">Create OID with YAZ DB</a></dt><dt>7.17. <a href="tools.oid.html#tools.oid.bib1.5">Use a built-in OID</a></dt><dt>7.18. <a href="marc.html#example.marc.display">Display of MARC record</a></dt><dt>7.19. <a href="tools.retrieval.html#tools.retrieval.marc21">MARC21 backend</a></dt><dt>7.20. <a href="tools.retrieval.html#tools.retrieval.marcxml">MARCXML backend</a></dt><dt>7.21. <a href="tools.retrieval.html#tools.retrieval.rdf-lookup">RDF-lookup backend</a></dt><dt>8.1. <a href="odr.use.html#example.odr.encoding.and.decoding.functions">Encoding and decoding functions</a></dt><dt>8.2. <a href="odr.use.html#example.odr.encoding.of.integer">Encoding and decoding of an integer</a></dt><dt>8.3. <a href="odr.use.html#example.odr.element.path.record">Element Path for record</a></dt></dl></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left">�</td><td width="20%" align="center">�</td><td width="40%" align="right">�<a accesskey="n" href="introduction.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">�</td><td width="20%" align="center">�</td><td width="40%" align="right" valign="top">�Chapter�1.�Introduction</td></tr></table></div></body></html>
+---
+>    </p></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="chapter"><a href="introduction.html">1. Introduction</a></span></dt><dd><dl><dt><span class="sect1"><a href="introduction.html#introduction.reading">1. Reading this Manual</a></span></dt><dt><span class="sect1"><a href="introduction.api.html">2. The API</a></span></dt></dl></dd><dt><span class="chapter"><a href="installation.html">2. Compilation and Installation</a></span></dt><dd><dl><dt><span class="sect1"><a href="installation.html#installation-introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="installation.unix.html">2. UNIX/MacOS</a></span></dt><dd><dl><dt><span class="sect2"><a href="installation.unix.html#installation.source.unix">2.1. Compiling from source on Unix</a></span></dt><dt><span class="sect2"><a href="installation.unix.html#installation.source.macos">2.2. Compiling from source on MacOS</a></span></dt><dt><span class="sect2"><a href="installation.unix.html#installation-linking-yaz-unix">2.3. How to make apps using YAZ on UNIX</a></span></dt></dl></dd><dt><span class="sect1"><a href="installation.win32.html">3. Windows</a></span></dt><dd><dl><dt><span class="sect2"><a href="installation.win32.html#installation.win32.source">3.1. Compiling from Source on Windows</a></span></dt><dt><span class="sect2"><a href="installation.win32.html#installation-linking-yaz-win32">3.2. How to make apps using YAZ on Windows</a></span></dt><dt><span class="sect2"><a href="installation.win32.html#installation.windows.libxml2">3.3. Compiling Libxml2 and Libxslt on windows</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="zoom.html">3. ZOOM</a></span></dt><dd><dl><dt><span class="sect1"><a href="zoom.html#zoom-connections">1. Connections</a></span></dt><dd><dl><dt><span class="sect2"><a href="zoom.html#zoom-connection-z39.50">1.1. Z39.50 Protocol behavior</a></span></dt><dt><span class="sect2"><a href="zoom.html#zoom.sru.init.behavior">1.2. SRU/Solr Protocol behavior</a></span></dt></dl></dd><dt><span class="sect1"><a href="zoom.query.html">2. Queries</a></span></dt><dt><span class="sect1"><a href="zoom.resultsets.html">3. Result sets</a></span></dt><dd><dl><dt><span class="sect2"><a href="zoom.resultsets.html#zoom.z3950.resultset.sort">3.1. Z39.50 Result-set Sort</a></span></dt><dt><span class="sect2"><a href="zoom.resultsets.html#zoom.z3950.resultset.behavior">3.2. Z39.50 Protocol behavior</a></span></dt><dt><span class="sect2"><a href="zoom.resultsets.html#zoom.sru.resultset.behavior">3.3. SRU Protocol behavior</a></span></dt></dl></dd><dt><span class="sect1"><a href="zoom.records.html">4. Records</a></span></dt><dd><dl><dt><span class="sect2"><a href="zoom.records.html#zoom.z3950.record.behavior">4.1. Z39.50 Protocol behavior</a></span></dt><dt><span class="sect2"><a href="zoom.records.html#zoom.sru.record.behavior">4.2. SRU/Solr Protocol behavior</a></span></dt></dl></dd><dt><span class="sect1"><a href="zoom.facets.html">5. ZOOM Facets</a></span></dt><dt><span class="sect1"><a href="zoom.scan.html">6. Scan</a></span></dt><dt><span class="sect1"><a href="zoom.extendedservices.html">7. Extended Services</a></span></dt><dd><dl><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.item.order">7.1. Item Order</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.record.update">7.2. Record Update</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.database.create">7.3. Database Create</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.database.drop">7.4. Database Drop</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.commit">7.5. Commit Operation</a></span></dt><dt><span class="sect2"><a href="zoom.extendedservices.html#zoom.extended.services.behavior">7.6. Protocol behavior</a></span></dt></dl></dd><dt><span class="sect1"><a href="zoom.options.html">8. Options</a></span></dt><dt><span class="sect1"><a href="zoom.queryconversions.html">9. Query conversions</a></span></dt><dt><span class="sect1"><a href="zoom.events.html">10. Events</a></span></dt></dl></dd><dt><span class="chapter"><a href="server.html">4. Generic server</a></span></dt><dd><dl><dt><span class="sect1"><a href="server.html#server.introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="server.frontend.html">2. The Database Frontend</a></span></dt><dt><span class="sect1"><a href="server.backend.html">3. The Backend API</a></span></dt><dt><span class="sect1"><a href="server.main.html">4. Your main() Routine</a></span></dt><dt><span class="sect1"><a href="server.backendfunctions.html">5. The Backend Functions</a></span></dt><dd><dl><dt><span class="sect2"><a href="server.backendfunctions.html#server.init">5.1. Init</a></span></dt><dt><span class="sect2"><a href="server.backendfunctions.html#server.search.retrieve">5.2. Search and Retrieve</a></span></dt><dt><span class="sect2"><a href="server.backendfunctions.html#server.delete">5.3. Delete</a></span></dt><dt><span class="sect2"><a href="server.backendfunctions.html#server.scan">5.4. Scan</a></span></dt></dl></dd><dt><span class="sect1"><a href="server.invocation.html">6. Application Invocation</a></span></dt><dt><span class="sect1"><a href="server.vhosts.html">7. GFS Configuration and Virtual Hosts</a></span></dt></dl></dd><dt><span class="chapter"><a href="asn.html">5. The Z39.50 ASN.1 Module</a></span></dt><dd><dl><dt><span class="sect1"><a href="asn.html#asn.introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="asn.preparing.html">2. Preparing PDUs</a></span></dt><dt><span class="sect1"><a href="asn.external.html">3. EXTERNAL Data</a></span></dt><dt><span class="sect1"><a href="asn.pdu.html">4. PDU Contents Table</a></span></dt></dl></dd><dt><span class="chapter"><a href="soap.html">6. SOAP and SRU</a></span></dt><dd><dl><dt><span class="sect1"><a href="soap.html#soap.introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="soap.http.html">2. HTTP</a></span></dt><dt><span class="sect1"><a href="soap.xml.html">3. SOAP Packages</a></span></dt><dt><span class="sect1"><a href="soap.srw.html">4. SRU</a></span></dt></dl></dd><dt><span class="chapter"><a href="tools.html">7. Supporting Tools</a></span></dt><dd><dl><dt><span class="sect1"><a href="tools.html#tools.query">1. Query Syntax Parsers</a></span></dt><dd><dl><dt><span class="sect2"><a href="tools.html#PQF">1.1. Prefix Query Format</a></span></dt><dd><dl><dt><span class="sect3"><a href="tools.html#PQF-prox">1.1.1. Using Proximity Operators with PQF</a></span></dt><dt><span class="sect3"><a href="tools.html#pqf-examples">1.1.2. PQF queries</a></span></dt></dl></dd><dt><span class="sect2"><a href="tools.html#CCL">1.2. CCL</a></span></dt><dd><dl><dt><span class="sect3"><a href="tools.html#ccl.syntax">1.2.1. CCL Syntax</a></span></dt><dt><span class="sect3"><a href="tools.html#ccl.qualifiers">1.2.2. CCL Qualifiers</a></span></dt><dt><span class="sect3"><a href="tools.html#ccl.api">1.2.3. CCL API</a></span></dt></dl></dd><dt><span class="sect2"><a href="tools.html#cql">1.3. CQL</a></span></dt><dd><dl><dt><span class="sect3"><a href="tools.html#cql.parsing">1.3.1. CQL parsing</a></span></dt><dt><span class="sect3"><a href="tools.html#cql.tree">1.3.2. CQL tree</a></span></dt><dt><span class="sect3"><a href="tools.html#cql.to.pqf">1.3.3. CQL to PQF conversion</a></span></dt><dt><span class="sect3"><a href="tools.html#cql.to.rpn">1.3.4. Specification of CQL to RPN mappings</a></span></dt><dt><span class="sect3"><a href="tools.html#cql.xcql">1.3.5. CQL to XCQL conversion</a></span></dt><dt><span class="sect3"><a href="tools.html#rpn.to.cql">1.3.6. PQF to CQL conversion</a></span></dt></dl></dd></dl></dd><dt><span class="sect1"><a href="tools.oid.html">2. Object Identifiers</a></span></dt><dd><dl><dt><span class="sect2"><a href="tools.oid.html#tools.oid.database">2.1. OID database</a></span></dt><dt><span class="sect2"><a href="tools.oid.html#tools.oid.std">2.2. Standard OIDs</a></span></dt></dl></dd><dt><span class="sect1"><a href="tools.nmem.html">3. Nibble Memory</a></span></dt><dt><span class="sect1"><a href="tools.log.html">4. Log</a></span></dt><dt><span class="sect1"><a href="marc.html">5. MARC</a></span></dt><dd><dl><dt><span class="sect2"><a href="marc.html#tools.turbomarc">5.1. TurboMARC</a></span></dt></dl></dd><dt><span class="sect1"><a href="tools.retrieval.html">6. Retrieval Facility</a></span></dt><dd><dl><dt><span class="sect2"><a href="tools.retrieval.html#tools.retrieval.format">6.1. Retrieval XML format</a></span></dt><dt><span class="sect2"><a href="tools.retrieval.html#tools.retrieval.examples">6.2. Retrieval Facility Examples</a></span></dt><dt><span class="sect2"><a href="tools.retrieval.html#tools.retrieval.api">6.3. API</a></span></dt></dl></dd><dt><span class="sect1"><a href="sorting.html">7. Sorting</a></span></dt><dd><dl><dt><span class="sect2"><a href="sorting.html#id1339">7.1. Using the Z39.50 sort service</a></span></dt><dt><span class="sect2"><a href="sorting.html#id1340">7.2. Type-7 sort</a></span></dt></dl></dd><dt><span class="sect1"><a href="facets.html">8. Facets</a></span></dt></dl></dd><dt><span class="chapter"><a href="odr.html">8. The ODR Module</a></span></dt><dd><dl><dt><span class="sect1"><a href="odr.html#odr.introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="odr.use.html">2. Using ODR</a></span></dt><dd><dl><dt><span class="sect2"><a href="odr.use.html#odr.streams">2.1. ODR Streams</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.memory.management">2.2. Memory Management</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.encoding.and.decoding">2.3. Encoding and Decoding Data</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.printing">2.4. Printing</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.diagnostics">2.5. Diagnostics</a></span></dt><dt><span class="sect2"><a href="odr.use.html#odr.summary.and.synopsis">2.6. Summary and Synopsis</a></span></dt></dl></dd><dt><span class="sect1"><a href="odr.programming.html">3. Programming with ODR</a></span></dt><dd><dl><dt><span class="sect2"><a href="odr.programming.html#odr.primitive.asn1.types">3.1. The Primitive ASN.1 Types</a></span></dt><dd><dl><dt><span class="sect3"><a href="odr.programming.html#odr.integer">3.1.1. INTEGER</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.boolean">3.1.2. BOOLEAN</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.real">3.1.3. REAL</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.null">3.1.4. NULL</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.octet.string">3.1.5. OCTET STRING</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.bit.string">3.1.6. BIT STRING</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.object.identifier">3.1.7. OBJECT IDENTIFIER</a></span></dt></dl></dd><dt><span class="sect2"><a href="odr.programming.html#odr.tagging.primitive.types">3.2. Tagging Primitive Types</a></span></dt><dt><span class="sect2"><a href="odr.programming.html#odr.constructed.types">3.3. Constructed Types</a></span></dt><dt><span class="sect2"><a href="odr.programming.html#odr.tagging.constructed.types">3.4. Tagging Constructed Types</a></span></dt><dd><dl><dt><span class="sect3"><a href="odr.programming.html#odr.implicit.tagging">3.4.1. Implicit Tagging</a></span></dt><dt><span class="sect3"><a href="odr.programming.html#odr.explicit.tagging">3.4.2. Explicit Tagging</a></span></dt></dl></dd><dt><span class="sect2"><a href="odr.programming.html#odr.sequence.of">3.5. SEQUENCE OF</a></span></dt><dt><span class="sect2"><a href="odr.programming.html#odr.choice.types">3.6. CHOICE Types</a></span></dt></dl></dd><dt><span class="sect1"><a href="odr.debugging.html">4. Debugging</a></span></dt></dl></dd><dt><span class="chapter"><a href="comstack.html">9. The COMSTACK Module</a></span></dt><dd><dl><dt><span class="sect1"><a href="comstack.html#comstack.synopsis">1. Synopsis (blocking mode)</a></span></dt><dt><span class="sect1"><a href="comstack.introduction.html">2. Introduction</a></span></dt><dt><span class="sect1"><a href="comstack.common.html">3. Common Functions</a></span></dt><dd><dl><dt><span class="sect2"><a href="comstack.common.html#comstack.managing.endpoints">3.1. Managing Endpoints</a></span></dt><dt><span class="sect2"><a href="comstack.common.html#comstack.data.exchange">3.2. Data Exchange</a></span></dt></dl></dd><dt><span class="sect1"><a href="comstack.client.html">4. Client Side</a></span></dt><dt><span class="sect1"><a href="comstack.server.html">5. Server Side</a></span></dt><dt><span class="sect1"><a href="comstack.addresses.html">6. Addresses</a></span></dt><dt><span class="sect1"><a href="comstack.ssl.html">7. SSL</a></span></dt><dt><span class="sect1"><a href="comstack.diagnostics.html">8. Diagnostics</a></span></dt><dt><span class="sect1"><a href="comstack.summary.html">9. Summary and Synopsis</a></span></dt></dl></dd><dt><span class="chapter"><a href="future.html">10. Future Directions</a></span></dt><dt><span class="reference"><a href="reference.html">I. Reference</a></span></dt><dd><dl><dt><span class="refentrytitle"><a href="yaz-client.html">yaz-client</a></span><span class="refpurpose"> &#8212; Z39.50/SRU client for implementors</span></dt><dt><span class="refentrytitle"><a href="yaz-ztest.html">yaz-ztest</a></span><span class="refpurpose"> &#8212; Z39.50/SRU Test Server</span></dt><dt><span class="refentrytitle"><a href="yaz-config.html">yaz-config</a></span><span class="refpurpose"> &#8212; Script to get information about YAZ.</span></dt><dt><span class="refentrytitle"><a href="yaz.html">yaz</a></span><span class="refpurpose"> &#8212; Z39.50 toolkit.</span></dt><dt><span class="refentrytitle"><a href="zoomsh.html">zoomsh</a></span><span class="refpurpose"> &#8212; ZOOM shell</span></dt><dt><span class="refentrytitle"><a href="yaz-asncomp.html">yaz-asncomp</a></span><span class="refpurpose"> &#8212; YAZ ASN.1 compiler</span></dt><dt><span class="refentrytitle"><a href="yaz-marcdump.html">yaz-marcdump</a></span><span class="refpurpose"> &#8212; MARC record dump utility</span></dt><dt><span class="refentrytitle"><a href="yaz-iconv.html">yaz-iconv</a></span><span class="refpurpose"> &#8212; YAZ Character set conversion utility</span></dt><dt><span class="refentrytitle"><a href="yaz-log.html">yaz-log</a></span><span class="refpurpose"> &#8212; Log handling in all yaz-based programs</span></dt><dt><span class="refentrytitle"><a href="yaz-illclient.html">yaz-illclient</a></span><span class="refpurpose"> &#8212; ILL client</span></dt><dt><span class="refentrytitle"><a href="yaz-icu.html">yaz-icu</a></span><span class="refpurpose"> &#8212; YAZ ICU utility</span></dt><dt><span class="refentrytitle"><a href="yaz-url.html">yaz-url</a></span><span class="refpurpose"> &#8212; YAZ URL fetch utility</span></dt><dt><span class="refentrytitle"><a href="bib1.html">Bib-1 Attribute Set</a></span><span class="refpurpose"> &#8212; Bib-1 Attribute Set</span></dt><dt><span class="refentrytitle"><a href="yaz-json-parse.html">yaz-json-parse</a></span><span class="refpurpose"> &#8212; YAZ JSON parser</span></dt><dt><span class="refentrytitle"><a href="yaz-record-iconv.html">yaz-record-iconv</a></span><span class="refpurpose"> &#8212; YAZ Record Conversion Utility</span></dt></dl></dd><dt><span class="appendix"><a href="list-oids.html">A. List of Object Identifiers</a></span></dt><dt><span class="appendix"><a href="bib1-diagnostics.html">B. Bib-1 diagnostics</a></span></dt><dt><span class="appendix"><a href="sru-diagnostics.html">C. SRU diagnostics</a></span></dt><dt><span class="appendix"><a href="license.html">D. License</a></span></dt><dd><dl><dt><span class="sect1"><a href="license.html#license.indexdata">1. Index Data Copyright</a></span></dt></dl></dd><dt><span class="appendix"><a href="indexdata.html">E. About Index Data</a></span></dt><dt><span class="appendix"><a href="credits.html">F. Credits</a></span></dt></dl></div><div class="list-of-figures"><p><b>List of Figures</b></p><dl><dt>1.1. <a href="introduction.api.html#yaz.layer">YAZ layers</a></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>3.1. <a href="zoom.html#zoom-connection-options">ZOOM Connection Options</a></dt><dt>3.2. <a href="zoom.query.html#zoom-sort-strategy">ZOOM sort strategy</a></dt><dt>3.3. <a href="zoom.resultsets.html#zoom.resultset.options">ZOOM Result set Options</a></dt><dt>3.4. <a href="zoom.resultsets.html#zoom.search.info.report.options">Search Info Report Options</a></dt><dt>3.5. <a href="zoom.scan.html#zoom.scanset.options">ZOOM Scan Set Options</a></dt><dt>3.6. <a href="zoom.extendedservices.html#zoom.extendedservices.type">Extended Service Type</a></dt><dt>3.7. <a href="zoom.extendedservices.html#zoom.extendedservices.options">Extended Service Common Options</a></dt><dt>3.8. <a href="zoom.extendedservices.html#zoom.item.order.options">Item Order Options</a></dt><dt>3.9. <a href="zoom.extendedservices.html#zoom.illrequest.options">ILL Request Options</a></dt><dt>3.10. <a href="zoom.extendedservices.html#zoom.record.update.options">Record Update Options</a></dt><dt>3.11. <a href="zoom.extendedservices.html#zoom.database.create.options">Database Create Options</a></dt><dt>3.12. <a href="zoom.extendedservices.html#zoom.database.drop.options">Database Drop Options</a></dt><dt>3.13. <a href="zoom.events.html#zoom.event.ids">ZOOM Event IDs</a></dt><dt>5.1. <a href="asn.pdu.html#asn.default.initialize.request">Default settings for PDU Initialize Request</a></dt><dt>5.2. <a href="asn.pdu.html#asn.default.initialize.response">Default settings for PDU Initialize Response</a></dt><dt>5.3. <a href="asn.pdu.html#asn.default.search.request">Default settings for PDU Search Request</a></dt><dt>5.4. <a href="asn.pdu.html#asn.default.search.response">Default settings for PDU Search Response</a></dt><dt>5.5. <a href="asn.pdu.html#asn.default.present.request">Default settings for PDU Present Request</a></dt><dt>5.6. <a href="asn.pdu.html#asn.default.present.response">Default settings for PDU Present Response</a></dt><dt>5.7. <a href="asn.pdu.html#asn.default.delete.result.set.request">Default settings for Delete Result Set Request</a></dt><dt>5.8. <a href="asn.pdu.html#asn.default.delete.result.set.response">Default settings for Delete Result Set Response</a></dt><dt>5.9. <a href="asn.pdu.html#asn.default.scan.request">Default settings for Scan Request</a></dt><dt>5.10. <a href="asn.pdu.html#asn.default.scan.response">Default settings for Scan Response</a></dt><dt>5.11. <a href="asn.pdu.html#asn.default.trigger.resource.control.request">Default settings for Trigger Resource Control Request</a></dt><dt>5.12. <a href="asn.pdu.html#asn.default.resource.control.request">Default settings for Resource Control Request</a></dt><dt>5.13. <a href="asn.pdu.html#asn.default.resource.control.response">Default settings for Resource Control Response</a></dt><dt>5.14. <a href="asn.pdu.html#asn.default.access.control.request">Default settings for Access Control Request</a></dt><dt>5.15. <a href="asn.pdu.html#asn.default.access.control.response">Default settings for Access Control Response</a></dt><dt>5.16. <a href="asn.pdu.html#asn.default.segment">Default settings for Segment</a></dt><dt>5.17. <a href="asn.pdu.html#asn.default.close">Default settings for Close</a></dt><dt>7.1. <a href="tools.html#ccl.common.bib1.attributes">Common Bib-1 attributes</a></dt><dt>7.2. <a href="tools.html#ccl.special.attribute.combos">Special attribute combos</a></dt><dt>7.3. <a href="tools.html#ccl.directives.table">CCL directives</a></dt><dt>7.4. <a href="facets.html#facet.attributes">Facet attributes</a></dt><dt>8.1. <a href="odr.use.html#odr.error.codes">ODR Error codes</a></dt></dl></div><div class="list-of-examples"><p><b>List of Examples</b></p><dl><dt>4.1. <a href="server.invocation.html#server.example.running.unix">Running the GFS on Unix</a></dt><dt>4.2. <a href="server.invocation.html#server.example.apache.sru">Setting up Apache as SRU Frontend</a></dt><dt>4.3. <a href="server.invocation.html#server.example.local.access">Running a server with local access only</a></dt><dt>7.1. <a href="tools.html#example.pqf.simple.terms">PQF queries using simple terms</a></dt><dt>7.2. <a href="tools.html#pqf.example.pqf.boolean.operators">PQF boolean operators</a></dt><dt>7.3. <a href="tools.html#example.pqf.result.sets">PQF references to result sets</a></dt><dt>7.4. <a href="tools.html#example.pqf.attributes">Attributes for terms</a></dt><dt>7.5. <a href="tools.html#example.pqf.proximity">PQF Proximity queries</a></dt><dt>7.6. <a href="tools.html#example.pqf.search.term.type">PQF specification of search term type</a></dt><dt>7.7. <a href="tools.html#example.pqf.mixed.queries">PQF mixed queries</a></dt><dt>7.8. <a href="tools.html#example.ccl.queries">CCL queries</a></dt><dt>7.9. <a href="tools.html#example.ccl.profile">CCL profile</a></dt><dt>7.10. <a href="tools.html#example.cql.to.rpn.mapping">CQL to RPN mapping file</a></dt><dt>7.11. <a href="tools.html#example.cql.to.rpn.string">CQL to RPN string attributes</a></dt><dt>7.12. <a href="tools.html#example.cql.to.rpn.bathprofile">CQL to RPN using Bath Profile</a></dt><dt>7.13. <a href="tools.oid.html#tools.oid.bib1.1">Create OID on stack</a></dt><dt>7.14. <a href="tools.oid.html#tools.oid.bib1.2">Using oid_oiddotstring_to_oid</a></dt><dt>7.15. <a href="tools.oid.html#tools.oid.bib1.3">Using odr_getoidbystr</a></dt><dt>7.16. <a href="tools.oid.html#tools.oid.bib1.4">Create OID with YAZ DB</a></dt><dt>7.17. <a href="tools.oid.html#tools.oid.bib1.5">Use a built-in OID</a></dt><dt>7.18. <a href="marc.html#example.marc.display">Display of MARC record</a></dt><dt>7.19. <a href="tools.retrieval.html#tools.retrieval.marc21">MARC21 backend</a></dt><dt>7.20. <a href="tools.retrieval.html#tools.retrieval.marcxml">MARCXML backend</a></dt><dt>7.21. <a href="tools.retrieval.html#tools.retrieval.rdf-lookup">RDF-lookup backend</a></dt><dt>8.1. <a href="odr.use.html#example.odr.encoding.and.decoding.functions">Encoding and decoding functions</a></dt><dt>8.2. <a href="odr.use.html#example.odr.encoding.of.integer">Encoding and decoding of an integer</a></dt><dt>8.3. <a href="odr.use.html#example.odr.element.path.record">Element Path for record</a></dt></dl></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left">�</td><td width="20%" align="center">�</td><td width="40%" align="right">�<a accesskey="n" href="introduction.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">�</td><td width="20%" align="center">�</td><td width="40%" align="right" valign="top">�Chapter�1.�Introduction</td></tr></table></div></body></html>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/installation.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/installation.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Chapter�2.�Compilation and Installation</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="index.html" title="YAZ User's Guide and Reference"><link rel="prev" href="introduction.api.html" title="2.�The API"><link rel="next" href="installation.unix.html" title="2.�UNIX/macOS"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter�2.�Compilation and Installation</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="introduction.api.html">Prev</a>�</td><th width="60%" align="center">�</th><td width="20%" align="right">�<a accesskey="n" href="installation.unix.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="installation"></a>Chapter�2.�Compilation and Installation</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="sect1"><a href="installation.html#installation-introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="installation.unix.html">2. UNIX/macOS</a></span></dt><dd><dl><dt><span class="sect2"><a href="installation.unix.html#installation.source.unix">2.1. Compiling from source on Unix</a></span></dt><dt><span class="sect2"><a href="installation.unix.html#installation.source.macos">2.2. Compiling from source on macOS</a></span></dt><dt><span class="sect2"><a href="installation.unix.html#installation-linking-yaz-unix">2.3. How to make apps using YAZ on UNIX</a></span></dt></dl></dd><dt><span class="sect1"><a href="installation.win32.html">3. Windows</a></span></dt><dd><dl><dt><span class="sect2"><a href="installation.win32.html#installation.win32.source">3.1. Compiling from Source on Windows</a></span></dt><dt><span class="sect2"><a href="installation.win32.html#installation-linking-yaz-win32">3.2. How to make apps using YAZ on Windows</a></span></dt><dt><span class="sect2"><a href="installation.win32.html#installation.windows.libxml2">3.3. Compiling Libxml2 and Libxslt on windows</a></span></dt></dl></dd></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="installation-introduction"></a>1.�Introduction</h2></div></div></div><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Chapter�2.�Compilation and Installation</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="index.html" title="YAZ User's Guide and Reference"><link rel="prev" href="introduction.api.html" title="2.�The API"><link rel="next" href="installation.unix.html" title="2.�UNIX/MacOS"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter�2.�Compilation and Installation</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="introduction.api.html">Prev</a>�</td><th width="60%" align="center">�</th><td width="20%" align="right">�<a accesskey="n" href="installation.unix.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="installation"></a>Chapter�2.�Compilation and Installation</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="sect1"><a href="installation.html#installation-introduction">1. Introduction</a></span></dt><dt><span class="sect1"><a href="installation.unix.html">2. UNIX/MacOS</a></span></dt><dd><dl><dt><span class="sect2"><a href="installation.unix.html#installation.source.unix">2.1. Compiling from source on Unix</a></span></dt><dt><span class="sect2"><a href="installation.unix.html#installation.source.macos">2.2. Compiling from source on MacOS</a></span></dt><dt><span class="sect2"><a href="installation.unix.html#installation-linking-yaz-unix">2.3. How to make apps using YAZ on UNIX</a></span></dt></dl></dd><dt><span class="sect1"><a href="installation.win32.html">3. Windows</a></span></dt><dd><dl><dt><span class="sect2"><a href="installation.win32.html#installation.win32.source">3.1. Compiling from Source on Windows</a></span></dt><dt><span class="sect2"><a href="installation.win32.html#installation-linking-yaz-win32">3.2. How to make apps using YAZ on Windows</a></span></dt><dt><span class="sect2"><a href="installation.win32.html#installation.windows.libxml2">3.3. Compiling Libxml2 and Libxslt on windows</a></span></dt></dl></dd></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="installation-introduction"></a>1.�Introduction</h2></div></div></div><p>
+41c41
+<    </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="introduction.api.html">Prev</a>�</td><td width="20%" align="center">�</td><td width="40%" align="right">�<a accesskey="n" href="installation.unix.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.�The API�</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">�2.�UNIX/macOS</td></tr></table></div></body></html>
+---
+>    </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="introduction.api.html">Prev</a>�</td><td width="20%" align="center">�</td><td width="40%" align="right">�<a accesskey="n" href="installation.unix.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.�The API�</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">�2.�UNIX/MacOS</td></tr></table></div></body></html>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/installation.unix.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/installation.unix.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.�UNIX/macOS</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="installation.html" title="Chapter�2.�Compilation and Installation"><link rel="prev" href="installation.html" title="Chapter�2.�Compilation and Installation"><link rel="next" href="installation.win32.html" title="3.�Windows"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.�UNIX/macOS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="installation.html">Prev</a>�</td><th width="60%" align="center">Chapter�2.�Compilation and Installation</th><td width="20%" align="right">�<a accesskey="n" href="installation.win32.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="installation.unix"></a>2.�UNIX/macOS</h2></div></div></div><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.�UNIX/MacOS</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="installation.html" title="Chapter�2.�Compilation and Installation"><link rel="prev" href="installation.html" title="Chapter�2.�Compilation and Installation"><link rel="next" href="installation.win32.html" title="3.�Windows"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.�UNIX/MacOS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="installation.html">Prev</a>�</td><th width="60%" align="center">Chapter�2.�Compilation and Installation</th><td width="20%" align="right">�<a accesskey="n" href="installation.win32.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="installation.unix"></a>2.�UNIX/MacOS</h2></div></div></div><p>
+249,257c249,251
+<     </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="installation.source.macos"></a>2.2.�Compiling from source on macOS</h3></div></div></div><p>
+<        Install Apple's Xcode Command Line Tools package from <a class="ulink" href="https://developer.apple.com/" target="_top">Apple Developer</a>
+<        which provides necessary tools for building C/C++ programs on macOS.
+<        This is sufficient for compiling YAZ from a source distribution tarball
+<        as macOS already includes libxml and libxslt development libraries.
+<      </p><p>
+<        If you are compiling YAZ from a Git checkout, at the time of writing the latest
+<        version of XCLT is 15.4 and includes a very old GNU Bison which is insufficient
+<        to generate YAZ sources. You can use e.g. <a class="ulink" href="https://brew.sh" target="_top">Homebrew</a> to install a more recent version:
+---
+>     </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="installation.source.macos"></a>2.2.�Compiling from source on MacOS</h3></div></div></div><p>
+>        Compiling from source on MacOSX requires libxml2. This can be installed
+>        with Homebrew, for instance:
+259c253
+<          brew install bison
+---
+>          brew install libxml2
+261,299c255
+<        After installation make sure to put it on the path:
+<        </p><pre class="screen">
+<          export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+<        </pre><p>
+<        Note: XCLT 15.4 fails to make  <code class="code">gm4</code> available as <code class="code">m4</code> which can cause a silent Bison failure, one
+<        way to fix it is:
+<        </p><pre class="screen">
+<          sudo ln -s /Library/Developer/CommandLineTools/usr/bin/gm4 /Library/Developer/CommandLineTools/usr/bin/m4
+<        </pre><p>
+<        Additionally, you will need to install DocBook stylesheets to generate documentation:
+<        </p><pre class="screen">
+<          brew install docbook docbook-xsl
+<        </pre><p>
+<        per the caveats section (<code class="code">brew info docbook</code>), for the compilation to find them, add:
+<        </p><pre class="screen">
+<          export XML_CATALOG_FILES="/opt/homebrew/etc/xml/catalog"
+<        </pre><p>
+<        If you want to compile YAZ with ICU you must install it with Homebrew as macOS does not ship ICU headers:
+<        </p><pre class="screen">
+<          brew install icu4c
+<        </pre><p>
+<        and make sure to add compiler flags before the configure stage, per the caveats section (<code class="code">brew info icu4c</code>):
+<        </p><pre class="screen">
+<          export LDFLAGS="-L/opt/homebrew/opt/icu4c/lib"
+<          export CPPFLAGS="-I/opt/homebrew/opt/icu4c/include
+<          export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig""
+<        </pre><p>
+<        If you want to also compile with more recent version of libxml2 and libxslt,
+<        install them with Homebrew:
+<        </p><pre class="screen">
+<          brew install libxml2 libxslt
+<        </pre><p> 
+<        and again make sure to add compiler flags, per the caveats section (<code class="code">brew info libxml2</code>):
+<        </p><pre class="screen">
+<         export LDFLAGS="-L/opt/homebrew/opt/libxml2/lib -L/opt/homebrew/opt/libxslt/lib -L/opt/homebrew/opt/icu4c/lib"
+<         export CPPFLAGS="-I/opt/homebrew/opt/libxml2/include -I/opt/homebrew/opt/libxslt/include -I/opt/homebrew/opt/icu4c/include"
+<         export PKG_CONFIG_PATH="/opt/homebrew/opt/libxml2/lib/pkgconfig:/opt/homebrew/opt/libxslt/lib/pkgconfig:/opt/homebrew/opt/icu4c/lib/pkgconfig"
+<        </pre><p>
+<        Then configure and conpile with:
+---
+>      </p><p> Review the Caveats section (<code class="code">brew info libxml2</code>) for the <code class="code">LDFLAGS</code>, <code class="code">CPPFLAGS</code>, and <code class="code">PKG_CONFIG_PATH</code> environment variables before executing the <code class="code">./compile</code> command. For instance:
+300a257,259
+>          export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+>          export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+>          export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/installation.win32.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/installation.win32.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>3.�Windows</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="installation.html" title="Chapter�2.�Compilation and Installation"><link rel="prev" href="installation.unix.html" title="2.�UNIX/macOS"><link rel="next" href="zoom.html" title="Chapter�3.�ZOOM"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.�Windows</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="installation.unix.html">Prev</a>�</td><th width="60%" align="center">Chapter�2.�Compilation and Installation</th><td width="20%" align="right">�<a accesskey="n" href="zoom.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="installation.win32"></a>3.�Windows</h2></div></div></div><p>The easiest way to install YAZ on Windows is by downloading
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>3.�Windows</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="installation.html" title="Chapter�2.�Compilation and Installation"><link rel="prev" href="installation.unix.html" title="2.�UNIX/MacOS"><link rel="next" href="zoom.html" title="Chapter�3.�ZOOM"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.�Windows</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="installation.unix.html">Prev</a>�</td><th width="60%" align="center">Chapter�2.�Compilation and Installation</th><td width="20%" align="right">�<a accesskey="n" href="zoom.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="installation.win32"></a>3.�Windows</h2></div></div></div><p>The easiest way to install YAZ on Windows is by downloading
+198c198
+<     </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="installation.unix.html">Prev</a>�</td><td width="20%" align="center"><a accesskey="u" href="installation.html">Up</a></td><td width="40%" align="right">�<a accesskey="n" href="zoom.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.�UNIX/macOS�</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">�Chapter�3.�ZOOM</td></tr></table></div></body></html>
+---
+>     </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="installation.unix.html">Prev</a>�</td><td width="20%" align="center"><a accesskey="u" href="installation.html">Up</a></td><td width="40%" align="right">�<a accesskey="n" href="zoom.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.�UNIX/MacOS�</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">�Chapter�3.�ZOOM</td></tr></table></div></body></html>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/Makefile.in
+410c410
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu doc/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign doc/Makefile'; \
+412c412
+< 	  $(AUTOMAKE) --gnu doc/Makefile
+---
+> 	  $(AUTOMAKE) --foreign doc/Makefile
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz.7 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz.7
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ" "7" "06/21/2024" "YAZ 5.34.1" "Conventions and miscellaneous"
+---
+> .TH "YAZ" "7" "06/18/2024" "YAZ 5.34.1" "Conventions and miscellaneous"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-asncomp.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-asncomp.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-ASNCOMP" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-ASNCOMP" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-asncomp.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-asncomp.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-asncomp</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="zoomsh.html" title="zoomsh"><link rel="next" href="yaz-marcdump.html" title="yaz-marcdump"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-asncomp</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="zoomsh.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-marcdump.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-asncomp"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-asncomp &#8212; YAZ ASN.1 compiler</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-asncomp</code>  [<code class="option">-v</code>] [<code class="option">-c <em class="replaceable"><code>cfile</code></em></code>] [<code class="option">-h <em class="replaceable"><code>hfile</code></em></code>] [<code class="option">-p <em class="replaceable"><code>pfile</code></em></code>] [<code class="option">-d <em class="replaceable"><code>config</code></em></code>] [<code class="option">-I <em class="replaceable"><code>includeout</code></em></code>] [<code class="option">-i <em class="replaceable"><code>includedir</code></em></code>] [<code class="option">-m <em class="replaceable"><code>module</code></em></code>] [filename]</p></div></div><div class="refsect1"><a name="id8189"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-asncomp</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="zoomsh.html" title="zoomsh"><link rel="next" href="yaz-marcdump.html" title="yaz-marcdump"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-asncomp</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="zoomsh.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-marcdump.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-asncomp"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-asncomp &#8212; YAZ ASN.1 compiler</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-asncomp</code>  [<code class="option">-v</code>] [<code class="option">-c <em class="replaceable"><code>cfile</code></em></code>] [<code class="option">-h <em class="replaceable"><code>hfile</code></em></code>] [<code class="option">-p <em class="replaceable"><code>pfile</code></em></code>] [<code class="option">-d <em class="replaceable"><code>config</code></em></code>] [<code class="option">-I <em class="replaceable"><code>includeout</code></em></code>] [<code class="option">-i <em class="replaceable"><code>includedir</code></em></code>] [<code class="option">-m <em class="replaceable"><code>module</code></em></code>] [filename]</p></div></div><div class="refsect1"><a name="id8176"></a><h2>DESCRIPTION</h2><p>
+15c15
+<   </p></div><div class="refsect1"><a name="id8197"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">-v </code>
+---
+>   </p></div><div class="refsect1"><a name="id8184"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">-v </code>
+46c46
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id8247"></a><h2>DEFINITIONS FILE</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id8234"></a><h2>DEFINITIONS FILE</h2><p>
+102c102
+<   </p></div><div class="refsect1"><a name="id8354"></a><h2>FILES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8341"></a><h2>FILES</h2><p>
+106c106
+<   </p></div><div class="refsect1"><a name="id8360"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8347"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-client.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-client.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-CLIENT" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-CLIENT" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-client.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-client.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-client</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="reference.html" title="Reference"><link rel="next" href="yaz-ztest.html" title="yaz-ztest"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-client</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="reference.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-ztest.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-client"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-client &#8212; Z39.50/SRU client for implementors</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-client</code>  [<code class="option">-a <em class="replaceable"><code>apdulog</code></em></code>] [<code class="option">-b <em class="replaceable"><code>berdump</code></em></code>] [<code class="option">-c <em class="replaceable"><code>cclfile</code></em></code>] [<code class="option">-d <em class="replaceable"><code>dump</code></em></code>] [<code class="option">-f <em class="replaceable"><code>cmdfile</code></em></code>] [<code class="option">-k <em class="replaceable"><code>size</code></em></code>] [<code class="option">-m <em class="replaceable"><code>marclog</code></em></code>] [<code class="option">-p <em class="replaceable"><code>proxy-addr</code></em></code>] [<code class="option">-q <em class="replaceable"><code>cqlfile</code></em></code>] [<code class="option">-t <em class="replaceable"><code>dispcharset</code></em></code>] [<code class="option">-u <em class="replaceable"><code>auth</code></em></code>] [<code class="option">-v <em class="replaceable"><code>loglevel</code></em></code>] [<code class="option">-V</code>] [<code class="option">-x</code>] [server-addr]</p></div></div><div class="refsect1"><a name="id6819"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-client</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="reference.html" title="Reference"><link rel="next" href="yaz-ztest.html" title="yaz-ztest"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-client</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="reference.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-ztest.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-client"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-client &#8212; Z39.50/SRU client for implementors</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-client</code>  [<code class="option">-a <em class="replaceable"><code>apdulog</code></em></code>] [<code class="option">-b <em class="replaceable"><code>berdump</code></em></code>] [<code class="option">-c <em class="replaceable"><code>cclfile</code></em></code>] [<code class="option">-d <em class="replaceable"><code>dump</code></em></code>] [<code class="option">-f <em class="replaceable"><code>cmdfile</code></em></code>] [<code class="option">-k <em class="replaceable"><code>size</code></em></code>] [<code class="option">-m <em class="replaceable"><code>marclog</code></em></code>] [<code class="option">-p <em class="replaceable"><code>proxy-addr</code></em></code>] [<code class="option">-q <em class="replaceable"><code>cqlfile</code></em></code>] [<code class="option">-t <em class="replaceable"><code>dispcharset</code></em></code>] [<code class="option">-u <em class="replaceable"><code>auth</code></em></code>] [<code class="option">-v <em class="replaceable"><code>loglevel</code></em></code>] [<code class="option">-V</code>] [<code class="option">-x</code>] [server-addr]</p></div></div><div class="refsect1"><a name="id6806"></a><h2>DESCRIPTION</h2><p>
+26c26
+<   </p></div><div class="refsect1"><a name="id6843"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-a <em class="replaceable"><code>filename</code></em></span></dt><dd><p>
+---
+>   </p></div><div class="refsect1"><a name="id6830"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-a <em class="replaceable"><code>filename</code></em></span></dt><dd><p>
+85c85
+<        </p></dd></dl></div></div><div class="refsect1"><a name="id6934"></a><h2>COMMANDS</h2><p>
+---
+>        </p></dd></dl></div></div><div class="refsect1"><a name="id6921"></a><h2>COMMANDS</h2><p>
+536c536
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id7437"></a><h2>EXAMPLE</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id7424"></a><h2>EXAMPLE</h2><p>
+565c565
+<   </p></div><div class="refsect1"><a name="id7446"></a><h2>FILES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id7433"></a><h2>FILES</h2><p>
+571c571
+<   </p></div><div class="refsect1"><a name="id7454"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id7441"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-config.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-config.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-CONFIG" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-CONFIG" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-config.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-config.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-config</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-ztest.html" title="yaz-ztest"><link rel="next" href="yaz.html" title="yaz"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-config</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-ztest.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-config"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-config &#8212; Script to get information about YAZ.</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-config</code>  [<code class="option">--prefix[=<em class="replaceable"><code>DIR</code></em>]</code>] [<code class="option">--version</code>] [<code class="option">--libs</code>] [<code class="option">--lalibs</code>] [<code class="option">--cflags</code>] [<code class="option">--include</code>] [<code class="option">--comp</code>] [<code class="option">-V</code>] [libraries...]</p></div></div><div class="refsect1"><a name="id7917"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-config</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-ztest.html" title="yaz-ztest"><link rel="next" href="yaz.html" title="yaz"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-config</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-ztest.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-config"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-config &#8212; Script to get information about YAZ.</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-config</code>  [<code class="option">--prefix[=<em class="replaceable"><code>DIR</code></em>]</code>] [<code class="option">--version</code>] [<code class="option">--libs</code>] [<code class="option">--lalibs</code>] [<code class="option">--cflags</code>] [<code class="option">--include</code>] [<code class="option">--comp</code>] [<code class="option">-V</code>] [libraries...]</p></div></div><div class="refsect1"><a name="id7904"></a><h2>DESCRIPTION</h2><p>
+8c8
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id7927"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">--prefix[=<em class="replaceable"><code>DIR</code></em>]</span></dt><dd><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id7914"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">--prefix[=<em class="replaceable"><code>DIR</code></em>]</span></dt><dd><p>
+25c25
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id7963"></a><h2>FILES</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id7950"></a><h2>FILES</h2><p>
+31c31
+<   </p></div><div class="refsect1"><a name="id7971"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id7958"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-config.html" title="yaz-config"><link rel="next" href="zoomsh.html" title="zoomsh"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-config.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="zoomsh.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz &#8212; Z39.50 toolkit.</p></div><div class="refsect1"><a name="id7987"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-config.html" title="yaz-config"><link rel="next" href="zoomsh.html" title="zoomsh"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-config.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="zoomsh.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz &#8212; Z39.50 toolkit.</p></div><div class="refsect1"><a name="id7974"></a><h2>DESCRIPTION</h2><p>
+8c8
+<   </p></div><div class="refsect1"><a name="id7990"></a><h2>COPYRIGHT</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id7977"></a><h2>COPYRIGHT</h2><p>
+38c38
+<   </p></div><div class="refsect1"><a name="id8003"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id7990"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-iconv.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-iconv.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-ICONV" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-ICONV" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-iconv.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-iconv.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-iconv</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-marcdump.html" title="yaz-marcdump"><link rel="next" href="yaz-log.html" title="yaz-log"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-iconv</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-marcdump.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-log.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-iconv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-iconv &#8212; YAZ Character set conversion utility</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-iconv</code>  [<code class="option">-f <em class="replaceable"><code>from</code></em></code>] [<code class="option">-t <em class="replaceable"><code>to</code></em></code>] [<code class="option">-v</code>] [file...]</p></div></div><div class="refsect1"><a name="id8574"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-iconv</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-marcdump.html" title="yaz-marcdump"><link rel="next" href="yaz-log.html" title="yaz-log"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-iconv</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-marcdump.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-log.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-iconv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-iconv &#8212; YAZ Character set conversion utility</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-iconv</code>  [<code class="option">-f <em class="replaceable"><code>from</code></em></code>] [<code class="option">-t <em class="replaceable"><code>to</code></em></code>] [<code class="option">-v</code>] [file...]</p></div></div><div class="refsect1"><a name="id8561"></a><h2>DESCRIPTION</h2><p>
+11c11
+<   </p></div><div class="refsect1"><a name="id8586"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-f<em class="replaceable"><code>from</code></em>]</span></dt><dd><p>
+---
+>   </p></div><div class="refsect1"><a name="id8573"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-f<em class="replaceable"><code>from</code></em>]</span></dt><dd><p>
+21c21
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id8607"></a><h2>ENCODINGS</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id8594"></a><h2>ENCODINGS</h2><p>
+54c54
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id8658"></a><h2>EXAMPLES</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id8645"></a><h2>EXAMPLES</h2><p>
+60c60
+<   </p></div><div class="refsect1"><a name="id8662"></a><h2>FILES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8649"></a><h2>FILES</h2><p>
+64c64
+<   </p></div><div class="refsect1"><a name="id8670"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8657"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-icu.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-icu.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-ICU" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-ICU" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-icu.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-icu.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-icu</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-illclient.html" title="yaz-illclient"><link rel="next" href="yaz-url.html" title="yaz-url"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-icu</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-illclient.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-url.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-icu"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-icu &#8212; YAZ ICU utility</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-icu</code>  [-c <em class="replaceable"><code>config</code></em>] [-p <em class="replaceable"><code>opt</code></em>] [-s] [-x] [infile]</p></div></div><div class="refsect1"><a name="id8905"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-icu</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-illclient.html" title="yaz-illclient"><link rel="next" href="yaz-url.html" title="yaz-url"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-icu</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-illclient.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-url.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-icu"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-icu &#8212; YAZ ICU utility</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-icu</code>  [-c <em class="replaceable"><code>config</code></em>] [-p <em class="replaceable"><code>opt</code></em>] [-s] [-x] [infile]</p></div></div><div class="refsect1"><a name="id8892"></a><h2>DESCRIPTION</h2><p>
+13c13
+<   </p></div><div class="refsect1"><a name="id8915"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-c <em class="replaceable"><code>config</code></em></span></dt><dd><p>
+---
+>   </p></div><div class="refsect1"><a name="id8902"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-c <em class="replaceable"><code>config</code></em></span></dt><dd><p>
+30c30
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id8942"></a><h2>ICU chain configuration</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id8929"></a><h2>ICU chain configuration</h2><p>
+77c77
+<   </p></div><div class="refsect1"><a name="id9019"></a><h2>EXAMPLES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9006"></a><h2>EXAMPLES</h2><p>
+95c95
+<   </p></div><div class="refsect1"><a name="id9026"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9013"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-illclient.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-illclient.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-ILLCLIENT" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-ILLCLIENT" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-illclient.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-illclient.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-illclient</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-log.html" title="yaz-log"><link rel="next" href="yaz-icu.html" title="yaz-icu"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-illclient</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-log.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-icu.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-illclient"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-illclient &#8212; ILL client</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-illclient</code>  [<code class="option">-f <em class="replaceable"><code>filename</code></em></code>] [<code class="option">-v <em class="replaceable"><code>loglevel</code></em></code>] [<code class="option">-D</code> <em class="replaceable"><code>name=value</code></em>...] [<code class="option">-o</code>] [<code class="option">-u <em class="replaceable"><code>user</code></em></code>] [<code class="option">-p <em class="replaceable"><code>password</code></em></code>] [<code class="option">-V</code>] [server-addr]</p></div></div><div class="refsect1"><a name="id8833"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-illclient</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-log.html" title="yaz-log"><link rel="next" href="yaz-icu.html" title="yaz-icu"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-illclient</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-log.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-icu.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-illclient"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-illclient &#8212; ILL client</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-illclient</code>  [<code class="option">-f <em class="replaceable"><code>filename</code></em></code>] [<code class="option">-v <em class="replaceable"><code>loglevel</code></em></code>] [<code class="option">-D</code> <em class="replaceable"><code>name=value</code></em>...] [<code class="option">-o</code>] [<code class="option">-u <em class="replaceable"><code>user</code></em></code>] [<code class="option">-p <em class="replaceable"><code>password</code></em></code>] [<code class="option">-V</code>] [server-addr]</p></div></div><div class="refsect1"><a name="id8820"></a><h2>DESCRIPTION</h2><p>
+6c6
+<   </p></div><div class="refsect1"><a name="id8838"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-f <em class="replaceable"><code>filename</code></em>]</span></dt><dd><p>
+---
+>   </p></div><div class="refsect1"><a name="id8825"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-f <em class="replaceable"><code>filename</code></em>]</span></dt><dd><p>
+20c20
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id8874"></a><h2>EXAMPLES</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id8861"></a><h2>EXAMPLES</h2><p>
+22c22
+<   </p></div><div class="refsect1"><a name="id8877"></a><h2>FILES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8864"></a><h2>FILES</h2><p>
+24c24
+<   </p></div><div class="refsect1"><a name="id8880"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8867"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-json-parse.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-json-parse.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-JSON\-PARSE" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-JSON\-PARSE" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-json-parse.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-json-parse.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-json-parse</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="bib1.html" title="Bib-1 Attribute Set"><link rel="next" href="yaz-record-iconv.html" title="yaz-record-iconv"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-json-parse</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bib1.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-record-iconv.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-json-parse"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-json-parse &#8212; YAZ JSON parser</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-json-parse</code>  [-p]</p></div></div><div class="refsect1"><a name="id9192"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-json-parse</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="bib1.html" title="Bib-1 Attribute Set"><link rel="next" href="yaz-record-iconv.html" title="yaz-record-iconv"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-json-parse</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bib1.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-record-iconv.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-json-parse"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-json-parse &#8212; YAZ JSON parser</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-json-parse</code>  [-p]</p></div></div><div class="refsect1"><a name="id9179"></a><h2>DESCRIPTION</h2><p>
+9c9
+<   </p></div><div class="refsect1"><a name="id9198"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-p</span></dt><dd><p>
+---
+>   </p></div><div class="refsect1"><a name="id9185"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-p</span></dt><dd><p>
+13c13
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id9205"></a><h2>SEE ALSO</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id9192"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-log.7 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-log.7
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-LOG" "7" "06/21/2024" "YAZ 5.34.1" "Conventions and miscellaneous"
+---
+> .TH "YAZ\-LOG" "7" "06/18/2024" "YAZ 5.34.1" "Conventions and miscellaneous"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-log.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-log.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-log</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-iconv.html" title="yaz-iconv"><link rel="next" href="yaz-illclient.html" title="yaz-illclient"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-log</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-iconv.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-illclient.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-log"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-log &#8212; Log handling in all yaz-based programs</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-XXXX</code>  [<code class="option">-v <em class="replaceable"><code>loglevel,...</code></em></code>] [<code class="option">-l <em class="replaceable"><code>logfile</code></em></code>]</p></div></div><div class="refsect1"><a name="id8694"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-log</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-iconv.html" title="yaz-iconv"><link rel="next" href="yaz-illclient.html" title="yaz-illclient"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-log</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-iconv.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-illclient.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-log"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-log &#8212; Log handling in all yaz-based programs</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-XXXX</code>  [<code class="option">-v <em class="replaceable"><code>loglevel,...</code></em></code>] [<code class="option">-l <em class="replaceable"><code>logfile</code></em></code>]</p></div></div><div class="refsect1"><a name="id8681"></a><h2>DESCRIPTION</h2><p>
+6c6
+<   </p></div><div class="refsect1"><a name="id8698"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-l<em class="replaceable"><code> logfile</code></em></span></dt><dd><p>
+---
+>   </p></div><div class="refsect1"><a name="id8685"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-l<em class="replaceable"><code> logfile</code></em></span></dt><dd><p>
+29c29
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id8718"></a><h2>LOG LEVELS TO CONTROL LOGGING</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id8705"></a><h2>LOG LEVELS TO CONTROL LOGGING</h2><p>
+41c41
+<   </p></div><div class="refsect1"><a name="id8727"></a><h2>GENERAL LOG LEVELS IN YAZ ITSELF</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8714"></a><h2>GENERAL LOG LEVELS IN YAZ ITSELF</h2><p>
+76c76
+<   </p></div><div class="refsect1"><a name="id8749"></a><h2>LOG LEVELS FOR CLIENTS</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8736"></a><h2>LOG LEVELS FOR CLIENTS</h2><p>
+79c79
+<   </p></div><div class="refsect1"><a name="id8753"></a><h2>LOG LEVELS FOR SERVERS</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8740"></a><h2>LOG LEVELS FOR SERVERS</h2><p>
+94c94
+<   </p></div><div class="refsect1"><a name="id8764"></a><h2>LOGGING EXAMPLES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8751"></a><h2>LOGGING EXAMPLES</h2><p>
+143c143
+<   </p></div><div class="refsect1"><a name="id8770"></a><h2>LOG FILENAME EXAMPLES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8757"></a><h2>LOG FILENAME EXAMPLES</h2><p>
+151c151
+<   </p></div><div class="refsect1"><a name="id8776"></a><h2>FILES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8763"></a><h2>FILES</h2><p>
+154c154
+<   </p></div><div class="refsect1"><a name="id8783"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8770"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-marcdump.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-marcdump.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-MARCDUMP" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-MARCDUMP" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-marcdump.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-marcdump.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-marcdump</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-asncomp.html" title="yaz-asncomp"><link rel="next" href="yaz-iconv.html" title="yaz-iconv"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-marcdump</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-asncomp.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-iconv.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-marcdump"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-marcdump &#8212; MARC record dump utility</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-marcdump</code>  [<code class="option">-i <em class="replaceable"><code>format</code></em></code>] [<code class="option">-o <em class="replaceable"><code>format</code></em></code>] [<code class="option">-f <em class="replaceable"><code>from</code></em></code>] [<code class="option">-t <em class="replaceable"><code>to</code></em></code>] [<code class="option">-l <em class="replaceable"><code>spec</code></em></code>] [<code class="option">-c <em class="replaceable"><code>cfile</code></em></code>] [<code class="option">-s <em class="replaceable"><code>prefix</code></em></code>] [<code class="option">-C <em class="replaceable"><code>size</code></em></code>] [<code class="option">-O <em class="replaceable"><code>offset</code></em></code>] [<code class="option">-L <em class="replaceable"><code>limit</code></em></code>] [<code class="option">-n</code>] [<code class="option">-p</code>] [<code class="option">-r</code>] [<code class="option">-v</code>] [<code class="option">-V</code>] [file...]</p></div></div><div class="refsect1"><a name="id8423"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-marcdump</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-asncomp.html" title="yaz-asncomp"><link rel="next" href="yaz-iconv.html" title="yaz-iconv"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-marcdump</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-asncomp.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-iconv.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-marcdump"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-marcdump &#8212; MARC record dump utility</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-marcdump</code>  [<code class="option">-i <em class="replaceable"><code>format</code></em></code>] [<code class="option">-o <em class="replaceable"><code>format</code></em></code>] [<code class="option">-f <em class="replaceable"><code>from</code></em></code>] [<code class="option">-t <em class="replaceable"><code>to</code></em></code>] [<code class="option">-l <em class="replaceable"><code>spec</code></em></code>] [<code class="option">-c <em class="replaceable"><code>cfile</code></em></code>] [<code class="option">-s <em class="replaceable"><code>prefix</code></em></code>] [<code class="option">-C <em class="replaceable"><code>size</code></em></code>] [<code class="option">-O <em class="replaceable"><code>offset</code></em></code>] [<code class="option">-L <em class="replaceable"><code>limit</code></em></code>] [<code class="option">-n</code>] [<code class="option">-p</code>] [<code class="option">-r</code>] [<code class="option">-v</code>] [<code class="option">-V</code>] [file...]</p></div></div><div class="refsect1"><a name="id8410"></a><h2>DESCRIPTION</h2><p>
+25c25
+<   </p></div><div class="refsect1"><a name="id8438"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-i <em class="replaceable"><code>format</code></em></span></dt><dd><p>
+---
+>   </p></div><div class="refsect1"><a name="id8425"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-i <em class="replaceable"><code>format</code></em></span></dt><dd><p>
+85c85
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id8524"></a><h2>EXAMPLES</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id8511"></a><h2>EXAMPLES</h2><p>
+105c105
+<   </p></div><div class="refsect1"><a name="id8532"></a><h2>FILES</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8519"></a><h2>FILES</h2><p>
+109c109
+<   </p></div><div class="refsect1"><a name="id8540"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id8527"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-record-conv.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-record-conv.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-RECORD\-ICONV" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-RECORD\-ICONV" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-record-iconv.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-record-iconv.html
+3c3
+<    ] [<em class="replaceable"><code>config</code></em>] [<em class="replaceable"><code>fname</code></em>...]</p></div></div><div class="refsect1"><a name="id9233"></a><h2>DESCRIPTION</h2><p>
+---
+>    ] [<em class="replaceable"><code>config</code></em>] [<em class="replaceable"><code>fname</code></em>...]</p></div></div><div class="refsect1"><a name="id9220"></a><h2>DESCRIPTION</h2><p>
+6c6
+<   </p></div><div class="refsect1"><a name="id9237"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+---
+>   </p></div><div class="refsect1"><a name="id9224"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+18c18
+<    </dd></dl></div></div><div class="refsect1"><a name="id9254"></a><h2>EXAMPLES</h2><p>
+---
+>    </dd></dl></div></div><div class="refsect1"><a name="id9241"></a><h2>EXAMPLES</h2><p>
+43c43
+<  </p></div><div class="refsect1"><a name="id9260"></a><h2>FILES</h2><p>
+---
+>  </p></div><div class="refsect1"><a name="id9247"></a><h2>FILES</h2><p>
+45c45
+<   </p></div><div class="refsect1"><a name="id9264"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id9251"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-url.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-url.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-URL" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "YAZ\-URL" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-url.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-url.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-url</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-icu.html" title="yaz-icu"><link rel="next" href="bib1.html" title="Bib-1 Attribute Set"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-url</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-icu.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="bib1.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-url"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-url &#8212; YAZ URL fetch utility</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-url</code>  [-H <em class="replaceable"><code>name:value</code></em>] [-m <em class="replaceable"><code>method</code></em>] [-O <em class="replaceable"><code>fname</code></em>] [-p <em class="replaceable"><code>fname</code></em>] [-R <em class="replaceable"><code>num</code></em>] [-u <em class="replaceable"><code>user/password</code></em>] [-v] [-x <em class="replaceable"><code>proxy</code></em>] [url...]</p></div></div><div class="refsect1"><a name="id9067"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-url</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-icu.html" title="yaz-icu"><link rel="next" href="bib1.html" title="Bib-1 Attribute Set"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-url</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-icu.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="bib1.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-url"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-url &#8212; YAZ URL fetch utility</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">yaz-url</code>  [-H <em class="replaceable"><code>name:value</code></em>] [-m <em class="replaceable"><code>method</code></em>] [-O <em class="replaceable"><code>fname</code></em>] [-p <em class="replaceable"><code>fname</code></em>] [-R <em class="replaceable"><code>num</code></em>] [-u <em class="replaceable"><code>user/password</code></em>] [-v] [-x <em class="replaceable"><code>proxy</code></em>] [url...]</p></div></div><div class="refsect1"><a name="id9054"></a><h2>DESCRIPTION</h2><p>
+9c9
+<   </p></div><div class="refsect1"><a name="id9073"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-H <em class="replaceable"><code>name:value</code></em></span></dt><dd><p>
+---
+>   </p></div><div class="refsect1"><a name="id9060"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-H <em class="replaceable"><code>name:value</code></em></span></dt><dd><p>
+32c32
+<      </p></dd></dl></div></div><div class="refsect1"><a name="id9115"></a><h2>SEE ALSO</h2><p>
+---
+>      </p></dd></dl></div></div><div class="refsect1"><a name="id9102"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-ztest.8 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-ztest.8
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "YAZ\-ZTEST" "8" "06/21/2024" "YAZ 5.34.1" "System management commands"
+---
+> .TH "YAZ\-ZTEST" "8" "06/18/2024" "YAZ 5.34.1" "System management commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-ztest.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/yaz-ztest.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-ztest</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-client.html" title="yaz-client"><link rel="next" href="yaz-config.html" title="yaz-config"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-ztest</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-client.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-config.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-ztest"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-ztest &#8212; Z39.50/SRU Test Server</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">application</code>  [<code class="option">-install</code>] [<code class="option">-installa</code>] [<code class="option">-remove</code>] [<code class="option">-a <em class="replaceable"><code>file</code></em></code>] [<code class="option">-v <em class="replaceable"><code>level</code></em></code>] [<code class="option">-l <em class="replaceable"><code>file</code></em></code>] [<code class="option">-u <em class="replaceable"><code>uid</code></em></code>] [<code class="option">-c <em class="replaceable"><code>config</code></em></code>] [<code class="option">-f <em class="replaceable"><code>vconfig</code></em></code>] [<code class="option">-C <em class="replaceable"><code>fname</code></em></code>] [<code class="option">-t <em class="replaceable"><code>minutes</code></em></code>] [<code class="option">-k <em class="replaceable"><code>kilobytes</code></em></code>] [<code class="option">-K</code>] [<code class="option">-d <em class="replaceable"><code>daemon</code></em></code>] [<code class="option">-w <em class="replaceable"><code>dir</code></em></code>] [<code class="option">-p <em class="replaceable"><code>pidfile</code></em></code>] [<code class="option">-r <em class="replaceable"><code>kilobytes</code></em></code>] [<code class="option">-ziDSTV1</code>] [listener-spec...]</p></div></div><div class="refsect1"><a name="id7528"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>yaz-ztest</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz-client.html" title="yaz-client"><link rel="next" href="yaz-config.html" title="yaz-config"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">yaz-ztest</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz-client.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-config.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="yaz-ztest"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>yaz-ztest &#8212; Z39.50/SRU Test Server</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">application</code>  [<code class="option">-install</code>] [<code class="option">-installa</code>] [<code class="option">-remove</code>] [<code class="option">-a <em class="replaceable"><code>file</code></em></code>] [<code class="option">-v <em class="replaceable"><code>level</code></em></code>] [<code class="option">-l <em class="replaceable"><code>file</code></em></code>] [<code class="option">-u <em class="replaceable"><code>uid</code></em></code>] [<code class="option">-c <em class="replaceable"><code>config</code></em></code>] [<code class="option">-f <em class="replaceable"><code>vconfig</code></em></code>] [<code class="option">-C <em class="replaceable"><code>fname</code></em></code>] [<code class="option">-t <em class="replaceable"><code>minutes</code></em></code>] [<code class="option">-k <em class="replaceable"><code>kilobytes</code></em></code>] [<code class="option">-K</code>] [<code class="option">-d <em class="replaceable"><code>daemon</code></em></code>] [<code class="option">-w <em class="replaceable"><code>dir</code></em></code>] [<code class="option">-p <em class="replaceable"><code>pidfile</code></em></code>] [<code class="option">-r <em class="replaceable"><code>kilobytes</code></em></code>] [<code class="option">-ziDSTV1</code>] [listener-spec...]</p></div></div><div class="refsect1"><a name="id7515"></a><h2>DESCRIPTION</h2><p>
+19c19
+<   </p></div><div class="refsect1"><a name="id7540"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">-a </code>
+---
+>   </p></div><div class="refsect1"><a name="id7527"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">-a </code>
+116c116
+<   </p></dd></dl></div></div><div class="refsect1"><a name="id7708"></a><h2>TESTING</h2><p>
+---
+>   </p></dd></dl></div></div><div class="refsect1"><a name="id7695"></a><h2>TESTING</h2><p>
+167c167
+<    </p></div><div class="refsect1"><a name="id7744"></a><h2>GFS CONFIGURATION AND VIRTUAL HOSTS</h2><p>
+---
+>    </p></div><div class="refsect1"><a name="id7731"></a><h2>GFS CONFIGURATION AND VIRTUAL HOSTS</h2><p>
+327c327
+< </p></div><div class="refsect1"><a name="id7869"></a><h2>FILES</h2><p>
+---
+> </p></div><div class="refsect1"><a name="id7856"></a><h2>FILES</h2><p>
+331c331
+<   </p></div><div class="refsect1"><a name="id7875"></a><h2>SEE ALSO</h2><p>
+---
+>   </p></div><div class="refsect1"><a name="id7862"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/zoomsh.1 lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/zoomsh.1
+5c5
+< .\"      Date: 06/21/2024
+---
+> .\"      Date: 06/18/2024
+10c10
+< .TH "ZOOMSH" "1" "06/21/2024" "YAZ 5.34.1" "Commands"
+---
+> .TH "ZOOMSH" "1" "06/18/2024" "YAZ 5.34.1" "Commands"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/zoomsh.html lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/doc/zoomsh.html
+1c1
+< <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>zoomsh</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz.html" title="yaz"><link rel="next" href="yaz-asncomp.html" title="yaz-asncomp"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">zoomsh</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-asncomp.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="zoomsh"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>zoomsh &#8212; ZOOM shell</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">zoomsh</code>  [<code class="option">-a <em class="replaceable"><code>apdufile</code></em></code>] [<code class="option">-e</code>] [<code class="option">-v <em class="replaceable"><code>loglevel</code></em></code>] [commands...]</p></div></div><div class="refsect1"><a name="id8051"></a><h2>DESCRIPTION</h2><p>
+---
+> <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>zoomsh</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="YAZ User's Guide and Reference"><link rel="up" href="reference.html" title="Reference"><link rel="prev" href="yaz.html" title="yaz"><link rel="next" href="yaz-asncomp.html" title="yaz-asncomp"></head><body><link rel="stylesheet" type="text/css" href="common/style1.css"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">zoomsh</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="yaz.html">Prev</a>�</td><th width="60%" align="center">Reference</th><td width="20%" align="right">�<a accesskey="n" href="yaz-asncomp.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="zoomsh"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>zoomsh &#8212; ZOOM shell</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">zoomsh</code>  [<code class="option">-a <em class="replaceable"><code>apdufile</code></em></code>] [<code class="option">-e</code>] [<code class="option">-v <em class="replaceable"><code>loglevel</code></em></code>] [commands...]</p></div></div><div class="refsect1"><a name="id8038"></a><h2>DESCRIPTION</h2><p>
+8c8
+<    </p></div><div class="refsect1"><a name="id8057"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-a <em class="replaceable"><code>apdufile</code></em></span></dt><dd><p>
+---
+>    </p></div><div class="refsect1"><a name="id8044"></a><h2>OPTIONS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">-a <em class="replaceable"><code>apdufile</code></em></span></dt><dd><p>
+15c15
+<       </p></dd></dl></div></div><div class="refsect1"><a name="id8075"></a><h2>EXAMPLES</h2><p>
+---
+>       </p></dd></dl></div></div><div class="refsect1"><a name="id8062"></a><h2>EXAMPLES</h2><p>
+46c46
+<    </p></div><div class="refsect1"><a name="id8084"></a><h2>COMMANDS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">connect</code>
+---
+>    </p></div><div class="refsect1"><a name="id8071"></a><h2>COMMANDS</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">connect</code>
+77c77
+<       </p></dd></dl></div></div><div class="refsect1"><a name="id8138"></a><h2>SEE ALSO</h2><p>
+---
+>       </p></dd></dl></div></div><div class="refsect1"><a name="id8125"></a><h2>SEE ALSO</h2><p>
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/etc/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/etc/Makefile.in
+335c335
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu etc/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign etc/Makefile'; \
+337c337
+< 	  $(AUTOMAKE) --gnu etc/Makefile
+---
+> 	  $(AUTOMAKE) --foreign etc/Makefile
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/IDMETA lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/IDMETA
+1,2c1,2
+< DEBIAN_DIST="bullseye buster"
+< UBUNTU_DIST="jammy focal bionic xenial"
+---
+> DEBIAN_DIST="bullseye buster stretch"
+> UBUNTU_DIST="jammy focal bionic xenial trusty"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/LICENSE lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/LICENSE
+1,2c1
+< Copyright (c) 1995-2024 Index Data
+< 
+---
+> Copyright (c) 1995-2021, Index Data
+4d2
+< 
+10d7
+< 
+14d10
+< 
+19,28c15,25
+< THIS SOFTWARE IS PROVIDED BY INDEX DATA ``AS IS'' AND ANY EXPRESS OR
+< IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+< OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+< IN NO EVENT SHALL INDEX DATA BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL
+< SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+< PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+< OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+< WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+< OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+< ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+---
+> THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND ANY
+> EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+> WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+> DISCLAIMED. IN NO EVENT SHALL THE REGENTS AND CONTRIBUTORS BE LIABLE FOR ANY
+> DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+> (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+> LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+> ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+> (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+> THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+> 
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/Makefile.in
+201,202c201,202
+< 	$(top_srcdir)/win/version.nsi.in ChangeLog NEWS README.md \
+< 	config/compile config/config.guess config/config.sub \
+---
+> 	$(top_srcdir)/win/version.nsi.in NEWS README.md config/compile \
+> 	config/config.guess config/config.sub config/depcomp \
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/src/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/src/Makefile.in
+718c718
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign src/Makefile'; \
+720c720
+< 	  $(AUTOMAKE) --gnu src/Makefile
+---
+> 	  $(AUTOMAKE) --foreign src/Makefile
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/src/yaz/yaz-version.h lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/src/yaz/yaz-version.h
+45c45
+< #define YAZ_VERSION_SHA1 "3dc112d42667b857de0fc6c1e76525179db86a15"
+---
+> #define YAZ_VERSION_SHA1 "531f244ca057c05db3e2b7be3998f863cd8fa319"
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/test/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/test/Makefile.in
+831c831
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu test/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign test/Makefile'; \
+833c833
+< 	  $(AUTOMAKE) --gnu test/Makefile
+---
+> 	  $(AUTOMAKE) --foreign test/Makefile
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/util/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/util/Makefile.in
+433c433
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu util/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign util/Makefile'; \
+435c435
+< 	  $(AUTOMAKE) --gnu util/Makefile
+---
+> 	  $(AUTOMAKE) --foreign util/Makefile
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/zoom/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/zoom/Makefile.in
+439c439
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu zoom/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign zoom/Makefile'; \
+441c441
+< 	  $(AUTOMAKE) --gnu zoom/Makefile
+---
+> 	  $(AUTOMAKE) --foreign zoom/Makefile
+diff -r source-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/ztest/Makefile.in lookaside-yaz-5.34.1.tar.gz-extracted/yaz-5.34.1/ztest/Makefile.in
+356c356
+< 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu ztest/Makefile'; \
+---
+> 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign ztest/Makefile'; \
+358c358
+< 	  $(AUTOMAKE) --gnu ztest/Makefile
+---
+> 	  $(AUTOMAKE) --foreign ztest/Makefile

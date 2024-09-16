@@ -1,0 +1,10 @@
+Source package : rust-zincati
+File name       : zincati-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-zincati/zincati-0.0.27.crate/sha512/fb806ac4dc1b4541c0d3c3b9008ae1479bed84a6d38a733d231406d66c2b450bac090c3268c22c1e557d12017f07a77bda8cc87a7b89d5f5baaaa3cbc43deddd/zincati-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/zincati/0.0.27/download#/zincati-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-zincati-0.0.27.crate: gzip compressed data, was "zincati-0.0.27.crate", max compression, original size modulo 2^32 726528
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-zincati-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,10 @@
+Source package : rust-rusqlite0.28
+File name       : rusqlite-0.28.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-rusqlite0.28/rusqlite-0.28.0.crate/sha512/a38205b2437ffb50bf8a14304b4a30a62993957a348f03b37d09fabb9269fcbdb35dafab496f7cecdcefb7353720ffc0580822d9b231e0f75cee23b6f7344857/rusqlite-0.28.0.crate
+Source URL      : https://crates.io/api/v1/crates/rusqlite/0.28.0/download#/rusqlite-0.28.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-rusqlite-0.28.0.crate: gzip compressed data, was "rusqlite-0.28.0.crate", max compression, original size modulo 2^32 675840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-rusqlite-0.28.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

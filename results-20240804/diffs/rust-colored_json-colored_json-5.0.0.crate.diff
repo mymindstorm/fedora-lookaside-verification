@@ -1,0 +1,10 @@
+Source package : rust-colored_json
+File name       : colored_json-5.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-colored_json/colored_json-5.0.0.crate/sha512/09f248103d9462522a0f0e5b34bca894f04f124e7d005f8ce34d56a0c17ffef5237eae12423eb997c36f988177efc055a608afb1811e166e548494bbbd49f5a6/colored_json-5.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/colored_json/5.0.0/download#/colored_json-5.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-colored_json-5.0.0.crate: gzip compressed data, was "colored_json-5.0.0.crate", max compression, original size modulo 2^32 61440
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-colored_json-5.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

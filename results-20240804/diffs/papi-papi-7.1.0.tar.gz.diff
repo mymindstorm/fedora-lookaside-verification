@@ -1,0 +1,10 @@
+Source package : papi
+File name       : papi-7.1.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/papi/papi-7.1.0.tar.gz/sha512/6ffe5f2c90bf699dcb937961ee0483e7edbb1909451d4bfcfe1949ad389b4089bbd7573b4055164fede9944d678e582c23a0cb74741c480e72e5e01b2061d0b0/papi-7.1.0.tar.gz
+Source URL      : http://icl.cs.utk.edu/projects/papi/downloads/papi-7.1.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-papi-7.1.0.tar.gz: gzip compressed data, was "papi-7.1.0.tar", last modified: Wed Dec 20 19:09:44 2023, from Unix, original size modulo 2^32 34744320
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-papi-7.1.0.tar.gz: POSIX tar archive (GNU)
+
+
+No differences detected!

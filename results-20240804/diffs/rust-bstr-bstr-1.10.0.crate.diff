@@ -1,0 +1,10 @@
+Source package : rust-bstr
+File name       : bstr-1.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-bstr/bstr-1.10.0.crate/sha512/823abdbda9b13802facc7d6b1ed9ad809ed3b0b827d26e418348ffb8481b5f5735f129c5a9a8c7b2ab010d7f32ca57cba69a1ee10a64225c54c6ceacd22c05d2/bstr-1.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/bstr/1.10.0/download#/bstr-1.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-bstr-1.10.0.crate: gzip compressed data, was "bstr-1.10.0.crate", max compression, original size modulo 2^32 2190848
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-bstr-1.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

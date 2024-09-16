@@ -1,0 +1,10 @@
+Source package : rust-cbindgen
+File name       : cbindgen-0.26.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-cbindgen/cbindgen-0.26.0.crate/sha512/2de81f46c9c68c985241a349f13125876667d1460d3658ead8c4ee9788cd139c30dbc08bebddc172cf0bd4644f3f17c02cf66f2a3ef706c52366fdaf0f9d8059/cbindgen-0.26.0.crate
+Source URL      : https://crates.io/api/v1/crates/cbindgen/0.26.0/download#/cbindgen-0.26.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cbindgen-0.26.0.crate: gzip compressed data, was "cbindgen-0.26.0.crate", max compression, original size modulo 2^32 2290688
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cbindgen-0.26.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

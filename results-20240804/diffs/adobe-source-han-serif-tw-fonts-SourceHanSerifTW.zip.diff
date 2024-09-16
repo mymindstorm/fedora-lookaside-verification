@@ -1,0 +1,22 @@
+Source package : adobe-source-han-serif-tw-fonts
+File name       : SourceHanSerifTW.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/adobe-source-han-serif-tw-fonts/SourceHanSerifTW.zip/sha512/5fed5f44abf96850680316ddd9cca9c99cca1c544f368db4078bed2cce0bb123a93222fd5a82dad946a0492620f066d135238b01f1327a0e106d12b0623455a3/SourceHanSerifTW.zip
+Source URL      : https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifTW.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-SourceHanSerifTW.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-SourceHanSerifTW.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+
+
+diff -r source-SourceHanSerifTW.zip-extracted/LICENSE.txt lookaside-SourceHanSerifTW.zip-extracted/LICENSE.txt
+1,4d0
+< Copyright 2017-2022 Adobe (http://www.adobe.com/), with Reserved Font
+< Name 'Source'. Source is a trademark of Adobe in the United States
+< and/or other countries.
+< 
+Binary files source-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Bold.otf and lookaside-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Bold.otf differ
+Binary files source-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-ExtraLight.otf and lookaside-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-ExtraLight.otf differ
+Binary files source-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Heavy.otf and lookaside-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Heavy.otf differ
+Binary files source-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Light.otf and lookaside-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Light.otf differ
+Binary files source-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Medium.otf and lookaside-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Medium.otf differ
+Binary files source-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Regular.otf and lookaside-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-Regular.otf differ
+Binary files source-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-SemiBold.otf and lookaside-SourceHanSerifTW.zip-extracted/SourceHanSerifTW-SemiBold.otf differ

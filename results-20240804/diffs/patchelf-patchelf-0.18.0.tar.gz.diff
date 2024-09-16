@@ -1,0 +1,27 @@
+Source package : patchelf
+File name       : patchelf-0.18.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/patchelf/patchelf-0.18.0.tar.gz/sha512/ff08b24212d90a2d6e5987b181fffaa365efbfe2d4191462dd9d0f6655d78a719df1db0add192764677712e5a37a0efeaafdbaa904021c0d63cf5abfa37ab685/patchelf-0.18.0.tar.gz
+Source URL      : https://github.com/NixOS/patchelf/archive/0.18.0/patchelf-0.18.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-patchelf-0.18.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1955840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-patchelf-0.18.0.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 2457600
+
+
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: aclocal.m4
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: bootstrap.sh
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: bors.toml
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: BUGS
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: build-aux
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: configure
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: default.nix
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: flake.lock
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: flake.nix
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: .github
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: .gitignore
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: Makefile.in
+Only in source-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: patchelf.nix
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0: patchelf.spec
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0/src: Makefile.in
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0/tests: Makefile.in
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0/tests: many-syms.c
+Only in lookaside-patchelf-0.18.0.tar.gz-extracted/patchelf-0.18.0/tests: many-syms-main.c

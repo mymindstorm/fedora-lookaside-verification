@@ -1,0 +1,18 @@
+Source package : sugar-flipsticks
+File name       : FlipSticks-14.tar.bz2
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/sugar-flipsticks/FlipSticks-14.tar.bz2/sha512/14861d3aebb5c3a2f11787c5679cb56f9ff9cb47c099f2ba9f2baf60acb0dd73ab3bda08893944a08bc4accf980207468592219410fbe8c3667215ea1c43da18/FlipSticks-14.tar.bz2
+Source URL      : http://download.sugarlabs.org/sources/honey/FlipSticks/FlipSticks-14.tar.bz2
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-FlipSticks-14.tar.bz2: bzip2 compressed data, block size = 900k
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-FlipSticks-14.tar.bz2: bzip2 compressed data, block size = 900k
+
+
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14/lessons: es
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14: messenger.py
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14: model.py
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14: montage.py
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14: po
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14: screenflip.py
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14: setup.py
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14: theme.py
+Only in lookaside-FlipSticks-14.tar.bz2-extracted/FlipSticks-14: toolkit

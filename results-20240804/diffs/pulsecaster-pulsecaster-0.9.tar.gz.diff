@@ -1,0 +1,10 @@
+Source package : pulsecaster
+File name       : pulsecaster-0.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/pulsecaster/pulsecaster-0.9.tar.gz/sha512/eb1d178e7aa841acb2e7728f9d5db0146f573f6349c4c8cdb56a748112c0833060ed2bd3005ed9eeb20f3a5052d8e728cc8d7a157dd6636c86d7b2f9053dcc65/pulsecaster-0.9.tar.gz
+Source URL      : http://fedorahosted.org/released/pulsecaster/pulsecaster-0.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pulsecaster-0.9.tar.gz: HTML document, Unicode text, UTF-8 text, with very long lines (4106)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pulsecaster-0.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 484383090 gzip compressed data, reserved method, extra field, has comment, original size modulo 2^32 484383090
+
+
+Only in lookaside-pulsecaster-0.9.tar.gz-extracted: pulsecaster-0.9

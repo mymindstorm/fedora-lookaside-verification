@@ -1,0 +1,10 @@
+Source package : golang-github-moby-term
+File name       : term-1aeaba8785877a66f57739be9fccb6f5cfab429e.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-moby-term/term-1aeaba8785877a66f57739be9fccb6f5cfab429e.tar.gz/sha512/7756f7a9b2d87b0af5118d47591601f1821d32c840d8a947841b4e56ceb1ff96e5e23b7154df2cbfb4baa43c0dfa436f6b9c4d06d6d3ea35661b196ae0969d39/term-1aeaba8785877a66f57739be9fccb6f5cfab429e.tar.gz
+Source URL      : https://github.com/moby/term/archive/1aeaba8785877a66f57739be9fccb6f5cfab429e/term-1aeaba8785877a66f57739be9fccb6f5cfab429e.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-term-1aeaba8785877a66f57739be9fccb6f5cfab429e.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1247452902 gzip compressed data, unknown method, has CRC, was "", from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 1247452902
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-term-1aeaba8785877a66f57739be9fccb6f5cfab429e.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 81920
+
+
+No differences detected!

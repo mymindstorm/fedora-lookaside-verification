@@ -1,0 +1,10 @@
+Source package : rust-git-delta
+File name       : git-delta-0.17.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-git-delta/git-delta-0.17.0.crate/sha512/a23860dbf2a57cb6aa30513eafdae928fb13d0ec38b03730a9407884145d6ecdb98fa766c1826cd2b7e3f29a6ae9c93697c7eab0368d2bcdc3b57259071eef33/git-delta-0.17.0.crate
+Source URL      : https://crates.io/api/v1/crates/git-delta/0.17.0/download#/git-delta-0.17.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-git-delta-0.17.0.crate: gzip compressed data, was "git-delta-0.17.0.crate", max compression, original size modulo 2^32 4627456
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-git-delta-0.17.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

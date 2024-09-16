@@ -1,0 +1,72 @@
+Source package : ipcgull
+File name       : ipcgull-0.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ipcgull/ipcgull-0.1.tar.gz/sha512/f22095fd84ef27ff3b9bd36b12648454e75094e6fe5751b74fb0334671c04cbcb43cb65118fd7430c2997821928c35646226f1801745e05e0f7ec83e03822e35/ipcgull-0.1.tar.gz
+Source URL      : https://github.com/PixlOne/ipcgull/archive/v0.1/ipcgull-0.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ipcgull-0.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 194560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ipcgull-0.1.tar.gz: gzip compressed data, last modified: Fri Jun 23 11:35:05 2023, from Unix, original size modulo 2^32 185344
+
+
+diff -r source-ipcgull-0.1.tar.gz-extracted/ipcgull-0.1/CMakeLists.txt lookaside-ipcgull-0.1.tar.gz-extracted/ipcgull-0.1/CMakeLists.txt
+7a8,10
+> option(BUILD_SHARED "build shared library" ON)
+> option(BUILD_STATIC "build static library" OFF)
+> 
+9c12
+< if(${IPCGULL_STUB})
+---
+> if (${IPCGULL_STUB})
+11c14
+< else()
+---
+> else ()
+17c20,25
+< endif()
+---
+> endif ()
+> 
+> MESSAGE(STATUS "  Build shared library:          " ${BUILD_SHARED})
+> MESSAGE(STATUS "  Build static library:          " ${BUILD_STATIC})
+> 
+> set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+20,27c28,39
+< add_library(ipcgull
+<         src/function.cpp
+<         src/property.cpp
+<         src/signal.cpp
+<         src/interface.cpp
+<         src/node.cpp
+<         src/exception.cpp
+<         ${IPCGULL_BACKEND_SRC})
+---
+> 
+> set(ipcgull_src
+>     src/function.cpp
+>     src/property.cpp
+>     src/signal.cpp
+>     src/interface.cpp
+>     src/node.cpp
+>     src/exception.cpp
+>     ${IPCGULL_BACKEND_SRC}
+> )
+> 
+> add_library(ipcgull OBJECT ${ipcgull_src})
+30,31c42,51
+< if(${BUILD_TESTS})
+<     add_subdirectory(tests/server_test)
+---
+> if (BUILD_SHARED)
+>     add_library(ipcgull_shared SHARED $<TARGET_OBJECTS:ipcgull>)
+>     target_link_libraries(ipcgull_shared PUBLIC $<TARGET_PROPERTY:ipcgull,LINK_LIBRARIES>)
+>     set_target_properties(ipcgull_shared PROPERTIES OUTPUT_NAME ipcgull)
+> endif()
+> 
+> if (BUILD_STATIC)
+>     add_library(ipcgull_static STATIC $<TARGET_OBJECTS:ipcgull>)
+>     target_link_libraries(ipcgull_static PUBLIC $<TARGET_PROPERTY:ipcgull,LINK_LIBRARIES>)
+>     set_target_properties(ipcgull_static PROPERTIES OUTPUT_NAME ipcgull)
+32a53,56
+> 
+> if (${BUILD_TESTS})
+>     add_subdirectory(tests/server_test)
+> endif ()

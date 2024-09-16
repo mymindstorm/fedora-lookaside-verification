@@ -1,0 +1,68 @@
+Source package : credslayer
+File name       : credslayer-0.1.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/credslayer/credslayer-0.1.2.tar.gz/sha512/dbdbcc673e85374be56710f5ec62469feef43ef94caf4fd7b3877576de782d49b98a5f6b267440d2c36c4f1c56200ed3e470d89ac2183ec6bb2b3526821dc6b8/credslayer-0.1.2.tar.gz
+Source URL      : https://github.com/ShellCode33/CredSLayer/archive/v0.1.2/credslayer-0.1.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-credslayer-0.1.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3672334679 gzip compressed data, reserved method, has CRC, was "", has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3672334679
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-credslayer-0.1.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1146880
+
+
+diff -r source-credslayer-0.1.2.tar.gz-extracted/CredSLayer-0.1.2/credslayer/core/manager.py lookaside-credslayer-0.1.2.tar.gz-extracted/CredSLayer-0.1.2/credslayer/core/manager.py
+90c90
+< def _process_packets_from(packets_input: Capture, manager: SessionsManager, must_inspect_strings: bool = False):
+---
+> def _process_packets_from(packets_input: Capture, manager: SessionsManager, must_inspect_strings: bool):
+134,135c134
+< def process_pcap(filename: str, must_inspect_strings=False, tshark_filter=None, debug=False,
+<                  decode_as=None, creds_found_callback=None) -> SessionsManager:
+---
+> def process_pcap(filename: str, must_inspect_strings=False, tshark_filter=None, debug=False, decode_as=None) -> SessionsManager:
+158,160d156
+<     creds_found_callback : Callable[[Credentials], None]
+<         The function to call every time new credentials are found. Credentials are passed as parameter.
+< 
+169d164
+<     Session.creds_found_callback = creds_found_callback
+192,193c187
+< def active_processing(interface: str, must_inspect_strings=False, tshark_filter=None, debug=False, decode_as=None,
+<                       pcap_output=None, creds_found_callback=None):
+---
+> def active_processing(interface: str, must_inspect_strings=False, tshark_filter=None, debug=False, decode_as=None, pcap_output=None):
+218,220d211
+< 
+<     creds_found_callback : Callable[[Credentials], None]
+<         The function to call every time new credentials are found. Credentials are passed as parameter.
+226d216
+<     Session.creds_found_callback = creds_found_callback
+diff -r source-credslayer-0.1.2.tar.gz-extracted/CredSLayer-0.1.2/credslayer/core/session.py lookaside-credslayer-0.1.2.tar.gz-extracted/CredSLayer-0.1.2/credslayer/core/session.py
+70d69
+<     creds_found_callback = None
+142,145d140
+< 
+<         if Session.creds_found_callback:
+<             Session.creds_found_callback(self.credentials_being_built)
+< 
+diff -r source-credslayer-0.1.2.tar.gz-extracted/CredSLayer-0.1.2/credslayer/__init__.py lookaside-credslayer-0.1.2.tar.gz-extracted/CredSLayer-0.1.2/credslayer/__init__.py
+1,4d0
+< # coding: utf-8
+< from credslayer.core import manager
+< process_pcap = manager.process_pcap
+< active_processing = manager.active_processing
+diff -r source-credslayer-0.1.2.tar.gz-extracted/CredSLayer-0.1.2/docs/getting-started/usage-own-project.rst lookaside-credslayer-0.1.2.tar.gz-extracted/CredSLayer-0.1.2/docs/getting-started/usage-own-project.rst
+10c10
+<     from credslayer import process_pcap
+---
+>     from credslayer.manager import process_pcap
+18c18
+< If you want to perform a live capture and process credentials as they come, you can use a callback as follow :
+---
+> I you want to perform a live capture and process credentials as they come, you can use a callback as follow :
+22,23c22
+<     from credslayer import active_processing
+<     from credslayer.core.utils import Credentials
+---
+>     from credslayer.manager import active_processing
+29c28
+<         active_processing("wlp2s0", creds_found_callback=process_found_credentials)
+---
+>         active_processing("wlp2s0", callback=process_found_credentials)

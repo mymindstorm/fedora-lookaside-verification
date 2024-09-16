@@ -1,0 +1,10 @@
+Source package : rust-lv2-sys
+File name       : lv2-sys-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-lv2-sys/lv2-sys-2.0.0.crate/sha512/f9267bf0efb547e59c39f48b7180b86515bdf67e47226f36e08309ed5e4253afc4d6a608e8d3b48a10d450ebe4e48c37aa8b63477a6186a97ca5ef17c8f1959f/lv2-sys-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/lv2-sys/2.0.0/download#/lv2-sys-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-lv2-sys-2.0.0.crate: gzip compressed data, was "lv2-sys-2.0.0.crate", max compression, original size modulo 2^32 762368
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-lv2-sys-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

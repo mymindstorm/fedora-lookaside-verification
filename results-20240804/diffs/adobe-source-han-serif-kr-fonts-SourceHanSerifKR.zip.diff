@@ -1,0 +1,18 @@
+Source package : adobe-source-han-serif-kr-fonts
+File name       : SourceHanSerifKR.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/adobe-source-han-serif-kr-fonts/SourceHanSerifKR.zip/sha512/0562aaab11926a70672c0aba6dc0e212492067d02bea71c2508ff199c84a7b02e5e2dc87aaa8b2a966cdeb5ef30ecc8e8ebe0c2eea8e881b788adfaa00aa2e7c/SourceHanSerifKR.zip
+Source URL      : https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifKR.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-SourceHanSerifKR.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-SourceHanSerifKR.zip: Zip archive data, at least v1.0 to extract, compression method=store
+
+
+Only in source-SourceHanSerifKR.zip-extracted: LICENSE.txt
+Only in lookaside-SourceHanSerifKR.zip-extracted: SourceHanSerifKR
+Only in source-SourceHanSerifKR.zip-extracted: SourceHanSerifKR-Bold.otf
+Only in source-SourceHanSerifKR.zip-extracted: SourceHanSerifKR-ExtraLight.otf
+Only in source-SourceHanSerifKR.zip-extracted: SourceHanSerifKR-Heavy.otf
+Only in source-SourceHanSerifKR.zip-extracted: SourceHanSerifKR-Light.otf
+Only in source-SourceHanSerifKR.zip-extracted: SourceHanSerifKR-Medium.otf
+Only in source-SourceHanSerifKR.zip-extracted: SourceHanSerifKR-Regular.otf
+Only in source-SourceHanSerifKR.zip-extracted: SourceHanSerifKR-SemiBold.otf

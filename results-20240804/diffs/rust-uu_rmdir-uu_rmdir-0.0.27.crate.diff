@@ -1,0 +1,10 @@
+Source package : rust-uu_rmdir
+File name       : uu_rmdir-0.0.27.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-uu_rmdir/uu_rmdir-0.0.27.crate/sha512/3088622171db35757ce120ba8344ca05f20f9e756927bbf19de8e696d7f6d1c86b3b61793e9e500a6257948635195a2d76397d677234464c973b973f6c621772/uu_rmdir-0.0.27.crate
+Source URL      : https://crates.io/api/v1/crates/uu_rmdir/0.0.27/download#/uu_rmdir-0.0.27.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uu_rmdir-0.0.27.crate: gzip compressed data, was "uu_rmdir-0.0.27.crate", max compression, original size modulo 2^32 30720
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uu_rmdir-0.0.27.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

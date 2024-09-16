@@ -1,0 +1,13 @@
+Source package : libxc
+File name       : libxc-6.2.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/libxc/libxc-6.2.2.tar.gz/sha512/45333424a4569576ab1553128ea2b113df6e6a70740e941bbbca95aa5918d19723e8371c02b60ff7b17d0b7fa2d5cea6cb69cedd58a4700a6a4d42ed93487472/libxc-6.2.2.tar.gz
+Source URL      : https://gitlab.com/libxc/libxc/-/archive/6.2.2/libxc-6.2.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libxc-6.2.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 263403520 gzip compressed data, reserved method, ASCII, has CRC, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 263403520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libxc-6.2.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 263393280 gzip compressed data, unknown method, ASCII, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 263393280
+
+
+Only in source-libxc-6.2.2.tar.gz-extracted/libxc-6.2.2: appveyor.yml
+Only in source-libxc-6.2.2.tar.gz-extracted/libxc-6.2.2: .clang-format
+Only in source-libxc-6.2.2.tar.gz-extracted/libxc-6.2.2: .codecov.yml
+Only in source-libxc-6.2.2.tar.gz-extracted/libxc-6.2.2: .gitignore

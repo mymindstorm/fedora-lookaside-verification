@@ -1,0 +1,11 @@
+Source package : golang-gopkg-redis-6
+File name       : redis-6.15.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-gopkg-redis-6/redis-6.15.9.tar.gz/sha512/2a39dafcac2dbce58e92fb44a5719dc214e7029fb046826f44b6fac1b8a2d83469e2b2c283327fb4c3d25ec3329c2813b9945f26db7e7229bc60275671cd77e3/redis-6.15.9.tar.gz
+Source URL      : https://github.com/go-redis/redis/archive/v6.15.9/redis-6.15.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-redis-6.15.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 563200
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-redis-6.15.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 563200
+
+
+Only in source-redis-6.15.9.tar.gz-extracted: go-redis-6.15.9
+Only in lookaside-redis-6.15.9.tar.gz-extracted: redis-6.15.9

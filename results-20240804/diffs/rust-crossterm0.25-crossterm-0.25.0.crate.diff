@@ -1,0 +1,10 @@
+Source package : rust-crossterm0.25
+File name       : crossterm-0.25.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-crossterm0.25/crossterm-0.25.0.crate/sha512/fdf2b5b4bdcbc8c7dc4e8c5e0cdf68cacdb97886b52087dde1f1be9b869c00965c0cf9db64b700801b0d1274b913703ade66a92d47aa8da604121693b8701201/crossterm-0.25.0.crate
+Source URL      : https://crates.io/api/v1/crates/crossterm/0.25.0/download#/crossterm-0.25.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-crossterm-0.25.0.crate: gzip compressed data, was "crossterm-0.25.0.crate", max compression, original size modulo 2^32 487936
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-crossterm-0.25.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

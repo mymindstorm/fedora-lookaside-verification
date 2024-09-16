@@ -1,0 +1,10 @@
+Source package : rust-papergrid
+File name       : papergrid-0.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-papergrid/papergrid-0.10.0.crate/sha512/6351f17e31b327a44274056274a7a901c7d85b5656a5fde2a7d363c9923dd8d3b3af9c854b5a23bb9efdfcc9f674efbf581ca7207e0026018e9c839654309ab7/papergrid-0.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/papergrid/0.10.0/download#/papergrid-0.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-papergrid-0.10.0.crate: gzip compressed data, was "papergrid-0.10.0.crate", max compression, original size modulo 2^32 385024
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-papergrid-0.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

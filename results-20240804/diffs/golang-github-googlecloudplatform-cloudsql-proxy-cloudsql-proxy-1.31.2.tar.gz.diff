@@ -1,0 +1,11 @@
+Source package : golang-github-googlecloudplatform-cloudsql-proxy
+File name       : cloudsql-proxy-1.31.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/golang-github-googlecloudplatform-cloudsql-proxy/cloudsql-proxy-1.31.2.tar.gz/sha512/58c762e18040ebf951b1be961fdcd36a1062b89b2a2937e21a83e649523da658336e6c76378e86acce79ab6e3cf7c5d326d5bae2a99165ecdfd7c43d38bcbb81/cloudsql-proxy-1.31.2.tar.gz
+Source URL      : https://github.com/GoogleCloudPlatform/cloudsql-proxy/archive/v1.31.2/cloudsql-proxy-1.31.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cloudsql-proxy-1.31.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 532480
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cloudsql-proxy-1.31.2.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 532480
+
+
+Only in source-cloudsql-proxy-1.31.2.tar.gz-extracted: cloud-sql-proxy-1.31.2
+Only in lookaside-cloudsql-proxy-1.31.2.tar.gz-extracted: cloudsql-proxy-1.31.2

@@ -1,0 +1,57 @@
+Source package : python-uritemplate
+File name       : uritemplate-4.1.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-uritemplate/uritemplate-4.1.1.tar.gz/sha512/7682c7dcd9c8d4428b047e3adbc283b78f755face4d8dd1b0cd11df9583bd0435543640ba79229d436aeecad2b5b29684befdccc84ba71f72769ee130cb6576a/uritemplate-4.1.1.tar.gz
+Source URL      : https://github.com/sigmavirus24/uritemplate/archive/4.1.1/uritemplate-4.1.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-uritemplate-4.1.1.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 163840
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-uritemplate-4.1.1.tar.gz: gzip compressed data, was "uritemplate-4.1.1.tar", last modified: Wed Oct 13 11:15:03 2021, max compression, original size modulo 2^32 3606211094
+
+
+Only in lookaside-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1/docs: build
+Only in source-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1: .github
+Only in source-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1: .gitignore
+Only in source-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1: .mailmap
+Only in lookaside-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1: PKG-INFO
+Only in source-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1: .pre-commit-config.yaml
+diff -r source-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1/setup.cfg lookaside-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1/setup.cfg
+12,25c12,25
+< classifiers =
+<     Development Status :: 5 - Production/Stable
+<     Intended Audience :: Developers
+<     License :: OSI Approved
+<     License :: OSI Approved :: Apache Software License
+<     License :: OSI Approved :: BSD License
+<     Programming Language :: Python
+<     Programming Language :: Python :: 3
+<     Programming Language :: Python :: 3.6
+<     Programming Language :: Python :: 3.7
+<     Programming Language :: Python :: 3.8
+<     Programming Language :: Python :: 3.9
+<     Programming Language :: Python :: 3.10
+<     Programming Language :: Python :: Implementation :: CPython
+---
+> classifiers = 
+> 	Development Status :: 5 - Production/Stable
+> 	Intended Audience :: Developers
+> 	License :: OSI Approved
+> 	License :: OSI Approved :: Apache Software License
+> 	License :: OSI Approved :: BSD License
+> 	Programming Language :: Python
+> 	Programming Language :: Python :: 3
+> 	Programming Language :: Python :: 3.6
+> 	Programming Language :: Python :: 3.7
+> 	Programming Language :: Python :: 3.8
+> 	Programming Language :: Python :: 3.9
+> 	Programming Language :: Python :: 3.10
+> 	Programming Language :: Python :: Implementation :: CPython
+41a42,46
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 
+Only in lookaside-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1/tests: .test_uritemplate.py.swp
+Only in source-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1: tox.ini
+Only in source-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1: .travis.yml
+Only in source-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1/uritemplate: py.typed
+Only in lookaside-uritemplate-4.1.1.tar.gz-extracted/uritemplate-4.1.1: uritemplate.egg-info

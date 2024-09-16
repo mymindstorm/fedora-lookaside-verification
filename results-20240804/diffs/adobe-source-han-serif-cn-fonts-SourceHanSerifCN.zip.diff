@@ -1,0 +1,22 @@
+Source package : adobe-source-han-serif-cn-fonts
+File name       : SourceHanSerifCN.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/adobe-source-han-serif-cn-fonts/SourceHanSerifCN.zip/sha512/910e8f0bdcca1c874d04bc8df2297ffc6821e897824dd5f1889549ef6722b10323a58253042e6e71c05c653eb50a093c126765d2a0444e0851edabf58f07c486/SourceHanSerifCN.zip
+Source URL      : https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/SourceHanSerifCN.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-SourceHanSerifCN.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-SourceHanSerifCN.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+
+
+diff -r source-SourceHanSerifCN.zip-extracted/LICENSE.txt lookaside-SourceHanSerifCN.zip-extracted/LICENSE.txt
+1,4d0
+< Copyright 2017-2022 Adobe (http://www.adobe.com/), with Reserved Font
+< Name 'Source'. Source is a trademark of Adobe in the United States
+< and/or other countries.
+< 
+Binary files source-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Bold.otf and lookaside-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Bold.otf differ
+Binary files source-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-ExtraLight.otf and lookaside-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-ExtraLight.otf differ
+Binary files source-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Heavy.otf and lookaside-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Heavy.otf differ
+Binary files source-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Light.otf and lookaside-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Light.otf differ
+Binary files source-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Medium.otf and lookaside-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Medium.otf differ
+Binary files source-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Regular.otf and lookaside-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-Regular.otf differ
+Binary files source-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-SemiBold.otf and lookaside-SourceHanSerifCN.zip-extracted/SourceHanSerifCN-SemiBold.otf differ

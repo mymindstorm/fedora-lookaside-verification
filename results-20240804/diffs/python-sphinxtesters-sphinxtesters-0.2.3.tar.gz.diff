@@ -1,0 +1,14 @@
+Source package : python-sphinxtesters
+File name       : sphinxtesters-0.2.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-sphinxtesters/sphinxtesters-0.2.3.tar.gz/sha512/3ab987b80d052ff52f2402a6c5690ee41ed3be084b240c270f4c8b9897f034c20146e9205fd3299b719cb1187b71a3084d115b293cffc58180258c80c067d508/sphinxtesters-0.2.3.tar.gz
+Source URL      : https://github.com/matthew-brett/sphinxtesters/archive/0.2.3/sphinxtesters-0.2.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sphinxtesters-0.2.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3216926655 gzip compressed data, reserved method, ASCII, has CRC, extra field, has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3216926655
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sphinxtesters-0.2.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2079624113 gzip compressed data, reserved method, ASCII, has CRC, was "", has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 2079624113
+
+
+diff -r source-sphinxtesters-0.2.3.tar.gz-extracted/sphinxtesters-0.2.3/sphinxtesters/_version.py lookaside-sphinxtesters-0.2.3.tar.gz-extracted/sphinxtesters-0.2.3/sphinxtesters/_version.py
+26c26
+<     git_refnames = " (tag: 0.2.3)"
+---
+>     git_refnames = " (HEAD -> master, tag: 0.2.3)"

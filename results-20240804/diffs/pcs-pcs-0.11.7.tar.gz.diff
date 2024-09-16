@@ -1,0 +1,19 @@
+Source package : pcs
+File name       : pcs-0.11.7.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/pcs/pcs-0.11.7.tar.gz/sha512/29d61bb945b25ced67e3a05f742ab6f557da8c4d3e8ee04db8caa9a51bb1c64e64cd5382f801173d95e9d62c53a52ad86f823c475ba790cb86b777a1eff658cc/pcs-0.11.7.tar.gz
+Source URL      : https://github.com/ClusterLabs/pcs/archive/v0.11.7/pcs-0.11.7.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pcs-0.11.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 13056000
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pcs-0.11.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 13056000
+
+
+diff -r source-pcs-0.11.7.tar.gz-extracted/pcs-0.11.7/CHANGELOG.md lookaside-pcs-0.11.7.tar.gz-extracted/pcs-0.11.7/CHANGELOG.md
+3c3
+< ## [0.11.7] - 2024-01-11
+---
+> ## [0.11.7] - 2024-01-05
+diff -r source-pcs-0.11.7.tar.gz-extracted/pcs-0.11.7/.gitarchivever lookaside-pcs-0.11.7.tar.gz-extracted/pcs-0.11.7/.gitarchivever
+1c1
+< ref names: (tag: v0.11.7, refs/pull/768/head)
+---
+> ref names: (HEAD -> main, tag: v0.11.7)

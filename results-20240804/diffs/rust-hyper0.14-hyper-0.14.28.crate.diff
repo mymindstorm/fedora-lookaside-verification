@@ -1,0 +1,10 @@
+Source package : rust-hyper0.14
+File name       : hyper-0.14.28.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-hyper0.14/hyper-0.14.28.crate/sha512/deb26e3815e6315dd193c4db22efe1e73e44bc7c1d400bc7654e950bd074a200b7cbb730ca30faac0940c88529fea60d5737a4fc7ccd4fa24c2ecdb2a0b450a7/hyper-0.14.28.crate
+Source URL      : https://crates.io/api/v1/crates/hyper/0.14.28/download#/hyper-0.14.28.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-hyper-0.14.28.crate: gzip compressed data, was "hyper-0.14.28.crate", max compression, original size modulo 2^32 988672
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-hyper-0.14.28.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

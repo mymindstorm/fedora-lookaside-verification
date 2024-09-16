@@ -1,0 +1,10 @@
+Source package : rust-gdk
+File name       : gdk-0.18.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gdk/gdk-0.18.0.crate/sha512/cd69ad387f4a1368bc6c9018e158f84e16ec4b77ac4718fa235a45f306945f1976434d709c6bf3d8ca82cf723a8e014579b154448fbfc046add3da62703047a1/gdk-0.18.0.crate
+Source URL      : https://crates.io/api/v1/crates/gdk/0.18.0/download#/gdk-0.18.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gdk-0.18.0.crate: gzip compressed data, was "gdk-0.18.0.crate", max compression, original size modulo 2^32 786432
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gdk-0.18.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

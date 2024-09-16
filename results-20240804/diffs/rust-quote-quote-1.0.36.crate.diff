@@ -1,0 +1,10 @@
+Source package : rust-quote
+File name       : quote-1.0.36.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-quote/quote-1.0.36.crate/sha512/f1f002a912692f7ffd4912ca980ec57ff4aca3a7d9e2e42e9e3409e2105c9f59d86c05719f6af309bccaef2f8843b0848a6e3afda3356e045d8e7cc5956ae685/quote-1.0.36.crate
+Source URL      : https://crates.io/api/v1/crates/quote/1.0.36/download#/quote-1.0.36.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-quote-1.0.36.crate: gzip compressed data, was "quote-1.0.36.crate", max compression, original size modulo 2^32 3277185130
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-quote-1.0.36.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

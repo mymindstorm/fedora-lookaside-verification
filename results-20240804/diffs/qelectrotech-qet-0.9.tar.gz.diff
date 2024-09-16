@@ -1,0 +1,10 @@
+Source package : qelectrotech
+File name       : qet-0.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/qelectrotech/qet-0.9.tar.gz/sha512/5d9b908c73adc08673730b649e9235b97787e69bece7e16f78ac10efd2fca6282911a2423ac0c64e99e61426c846c6437d7b2a1ddaf3c43ac5bc88c5fcf564a0/qet-0.9.tar.gz
+Source URL      : https://git.tuxfamily.org/qet/qet.git/snapshot/qet-0.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-qet-0.9.tar.gz: HTML document, ASCII text
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-qet-0.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 1748286381 gzip compressed data, reserved method, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 1748286381
+
+
+Only in lookaside-qet-0.9.tar.gz-extracted: qet-0.9

@@ -1,0 +1,13 @@
+Source package : demorse
+File name       : demorse-1.2.tar.bz2
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/demorse/demorse-1.2.tar.bz2/md5/d4800b759ef4c8ffb6e73d173bcd563b/demorse-1.2.tar.bz2
+Source URL      : http://www.qsl.net/5b4az/pkg/morse/demorse/demorse-1.2.tar.bz2
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-demorse-1.2.tar.bz2: bzip2 compressed data, block size = 900k
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-demorse-1.2.tar.bz2: bzip2 compressed data, block size = 900k
+
+
+diff -r source-demorse-1.2.tar.bz2-extracted/demorse-1.2/decode.c lookaside-demorse-1.2.tar.bz2-extracted/demorse-1.2/decode.c
+223,224d222
+< 		break;
+< 

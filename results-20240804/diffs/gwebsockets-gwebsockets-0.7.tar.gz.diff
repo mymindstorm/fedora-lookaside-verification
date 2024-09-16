@@ -1,0 +1,14 @@
+Source package : gwebsockets
+File name       : gwebsockets-0.7.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/gwebsockets/gwebsockets-0.7.tar.gz/sha512/02fea8f1a3e0196e5415833aae98d6e0c79bf762ff2cd74b0903a985c2222a6cb6eff898cc24ca561d24d36187ecb94ec5e533c4fafd5440beb7e87567d81673/gwebsockets-0.7.tar.gz
+Source URL      : https://github.com/sugarlabs/gwebsockets/archive/v0.7.tar.gz#/gwebsockets-0.7.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gwebsockets-0.7.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 40960
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gwebsockets-0.7.tar.gz: gzip compressed data, was "dist/gwebsockets-0.7.tar", last modified: Thu Jan 30 01:03:48 2020, max compression, original size modulo 2^32 51200
+
+
+Only in source-gwebsockets-0.7.tar.gz-extracted/gwebsockets-0.7: .flake8
+Only in source-gwebsockets-0.7.tar.gz-extracted/gwebsockets-0.7: .gitignore
+Only in lookaside-gwebsockets-0.7.tar.gz-extracted/gwebsockets-0.7: gwebsockets.egg-info
+Only in lookaside-gwebsockets-0.7.tar.gz-extracted/gwebsockets-0.7: PKG-INFO
+Only in lookaside-gwebsockets-0.7.tar.gz-extracted/gwebsockets-0.7: setup.cfg

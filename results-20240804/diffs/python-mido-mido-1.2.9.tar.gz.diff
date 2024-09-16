@@ -1,0 +1,25 @@
+Source package : python-mido
+File name       : mido-1.2.9.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-mido/mido-1.2.9.tar.gz/sha512/024f1f23626749706e806995e77aa1b3bea3e366c658b6bf6e99cf7955a8fc1f2179d694687ec574f38fc5b970eb6c8a6ccc969ca7fd1057ec220d2e00ad5767/mido-1.2.9.tar.gz
+Source URL      : https://github.com/mido/mido/archive/1.2.9/mido-1.2.9.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-mido-1.2.9.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3140765476 gzip compressed data, unknown method, ASCII, has CRC, was "", has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 3140765476
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-mido-1.2.9.tar.gz: gzip compressed data, was "dist/mido-1.2.9.tar", last modified: Fri Oct  5 11:10:21 2018, max compression, original size modulo 2^32 450560
+
+
+Only in source-mido-1.2.9.tar.gz-extracted/mido-1.2.9: .gitignore
+Only in lookaside-mido-1.2.9.tar.gz-extracted/mido-1.2.9: mido.egg-info
+Only in lookaside-mido-1.2.9.tar.gz-extracted/mido-1.2.9: PKG-INFO
+diff -r source-mido-1.2.9.tar.gz-extracted/mido-1.2.9/setup.cfg lookaside-mido-1.2.9.tar.gz-extracted/mido-1.2.9/setup.cfg
+6d5
+< 
+8c7,12
+< norecursedirs= build dist examples
+---
+> norecursedirs = build dist examples
+> 
+> [egg_info]
+> tag_build = 
+> tag_date = 0
+> 
+Only in source-mido-1.2.9.tar.gz-extracted/mido-1.2.9: .travis.yml

@@ -1,0 +1,10 @@
+Source package : cpuid
+File name       : cpuid-20240409.src.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/cpuid/cpuid-20240409.src.tar.gz/sha512/04b3165d2441e4572754412eda330632bd6c0a2a16df4114231030cb991789ecf5507e1ea52f9ea1c84a43b2d190a95d07a6ee2788d8f8a2a6414da127751a36/cpuid-20240409.src.tar.gz
+Source URL      : http://www.etallen.com/cpuid/cpuid-20240409.src.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-cpuid-20240409.src.tar.gz: POSIX tar archive (GNU)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-cpuid-20240409.src.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 698654221 gzip compressed data, reserved method, ASCII, was "\267 \222Q\211"x\204\004", encrypted, original size modulo 2^32 698654221
+
+
+No differences detected!

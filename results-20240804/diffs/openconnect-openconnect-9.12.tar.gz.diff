@@ -1,0 +1,10 @@
+Source package : openconnect
+File name       : openconnect-9.12.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/openconnect/openconnect-9.12.tar.gz/sha512/5c622e8bdfac3d21b5881660444e5d2b84e9463a99493d42cbfb480c3aa3972076bdeeb618aca02abed68e31dbeadcb66fb1c370e62a20f20cd544753c7ac48e/openconnect-9.12.tar.gz
+Source URL      : https://ftp.infradead.org/pub/openconnect/openconnect-9.12.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-openconnect-9.12.tar.gz: XML 1.0 document, ASCII text
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-openconnect-9.12.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 11376640
+
+
+Only in lookaside-openconnect-9.12.tar.gz-extracted: openconnect-9.12

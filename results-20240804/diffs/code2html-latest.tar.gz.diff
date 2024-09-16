@@ -1,0 +1,10 @@
+Source package : code2html
+File name       : latest.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/code2html/latest.tar.gz/md5/368377696547026c79c51a274571dc39/latest.tar.gz
+Source URL      : http://www.palfrader.org/code2html/all/latest.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-latest.tar.gz: HTML document, ASCII text, with very long lines (849)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-latest.tar.gz: gzip compressed data, last modified: Sat Jan 12 21:46:26 2002, from Unix, original size modulo 2^32 235520
+
+
+Only in lookaside-latest.tar.gz-extracted: code2html-0.9.1

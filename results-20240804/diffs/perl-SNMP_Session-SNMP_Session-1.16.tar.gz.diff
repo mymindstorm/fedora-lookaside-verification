@@ -1,0 +1,11 @@
+Source package : perl-SNMP_Session
+File name       : SNMP_Session-1.16.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/perl-SNMP_Session/SNMP_Session-1.16.tar.gz/sha512/6beb1493b246a333bc3199455ac89b2566d4f080fe8871df4947a211a70ac802f3374ca29dc4b74e9184b099bd574ec91a9d912836d66be5b23170acff3f36eb/SNMP_Session-1.16.tar.gz
+Source URL      : https://github.com/sleinen/snmp-session/archive/v1.16/SNMP_Session-1.16.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-SNMP_Session-1.16.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 747520
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-SNMP_Session-1.16.tar.gz: gzip compressed data, was "SNMP_Session-1.16.tar", last modified: Sun Jun 11 12:27:56 2023, max compression, from Unix, original size modulo 2^32 747520
+
+
+Only in source-SNMP_Session-1.16.tar.gz-extracted: snmp-session-1.16
+Only in lookaside-SNMP_Session-1.16.tar.gz-extracted: SNMP_Session-1.16

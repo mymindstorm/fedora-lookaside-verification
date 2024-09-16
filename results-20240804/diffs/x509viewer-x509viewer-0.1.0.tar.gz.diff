@@ -1,0 +1,10 @@
+Source package : x509viewer
+File name       : x509viewer-0.1.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/x509viewer/x509viewer-0.1.0.tar.gz/sha512/8df36829b7ed85208c37e94183cc41ce5421d10c144ffe4ca8411f4f3552982ee4839ad7219d73807c4a1d0499dc6f3e56b737e07045a1efe6ad5169780f9cad/x509viewer-0.1.0.tar.gz
+Source URL      : https://ftp.robert-scheck.de/linux/x509viewer/x509viewer-0.1.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-x509viewer-0.1.0.tar.gz: HTML document, ASCII text, with very long lines (497)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-x509viewer-0.1.0.tar.gz: gzip compressed data, last modified: Sun Apr 30 13:15:48 2017, from Unix, original size modulo 2^32 4165125881 gzip compressed data, unknown method, was "", has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 4165125881
+
+
+Only in lookaside-x509viewer-0.1.0.tar.gz-extracted: x509viewer-0.1.0

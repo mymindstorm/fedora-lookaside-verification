@@ -1,0 +1,14 @@
+Source package : python-janus
+File name       : janus-1.0.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-janus/janus-1.0.0.tar.gz/sha512/98a626ac892d68f1b40f52ac2e50e3a5f239d8407b55cc7d73a9f482ebb143828914668c0dd3172c75788933ac643f9c706641aba4fb74870ab1c9e6f59dd353/janus-1.0.0.tar.gz
+Source URL      : https://github.com/aio-libs/janus/archive/v1.0.0/janus-1.0.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-janus-1.0.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 429997336 gzip compressed data, reserved method, ASCII, was "", has comment, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 429997336
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-janus-1.0.0.tar.gz: gzip compressed data, last modified: Fri Aug 12 11:21:11 2022, from Unix, original size modulo 2^32 103936
+
+
+diff -r source-janus-1.0.0.tar.gz-extracted/janus-1.0.0/setup.cfg lookaside-janus-1.0.0.tar.gz-extracted/janus-1.0.0/setup.cfg
+17c17
+< license_files = LICENSE.txt
+---
+> license_files = LICENSE

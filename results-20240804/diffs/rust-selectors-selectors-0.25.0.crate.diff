@@ -1,0 +1,10 @@
+Source package : rust-selectors
+File name       : selectors-0.25.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-selectors/selectors-0.25.0.crate/sha512/cdab3c87fed0ca7f20ebadc48cd495c5c9494a65e5b849bdc533ca2eb77d3a380e84cae68f04a1df81e0729779fcdb98a8f2300cfcb28338c9b3016e18f3feb3/selectors-0.25.0.crate
+Source URL      : https://crates.io/api/v1/crates/selectors/0.25.0/download#/selectors-0.25.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-selectors-0.25.0.crate: gzip compressed data, was "selectors-0.25.0.crate", max compression, original size modulo 2^32 268800
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-selectors-0.25.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

@@ -1,0 +1,15 @@
+Source package : spill
+File name       : spill-0.8.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/spill/spill-0.8.tar.gz/md5/b87465402413b6da4bdf2f6e4c23c008/spill-0.8.tar.gz
+Source URL      : https://github.com/rc0/spill/archive/0.8.tar.gz#/spill-0.8.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-spill-0.8.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 988583485 gzip compressed data, reserved method, has CRC, was "", has comment, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 988583485
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-spill-0.8.tar.gz: gzip compressed data, last modified: Mon Dec 21 22:54:21 2009, max compression, from Unix, original size modulo 2^32 102400
+
+
+Only in source-spill-0.8.tar.gz-extracted/spill-0.8: make_release
+diff -r source-spill-0.8.tar.gz-extracted/spill-0.8/version.h lookaside-spill-0.8.tar.gz-extracted/spill-0.8/version.h
+2c2
+< #define PROGRAM_VERSION "dev"
+---
+> #define PROGRAM_VERSION "0.8"

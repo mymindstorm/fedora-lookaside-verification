@@ -1,0 +1,10 @@
+Source package : rust-nparse
+File name       : nparse-0.0.10.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-nparse/nparse-0.0.10.crate/sha512/1ac7969235941a24f6a160785eae64d1f4181ff905d575de09b9a2077b0c11b4a3e0443c95ef8090349b86857ab8e5ca6a26ae207e95f28113f13eabe60ef3e6/nparse-0.0.10.crate
+Source URL      : https://crates.io/api/v1/crates/nparse/0.0.10/download#/nparse-0.0.10.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-nparse-0.0.10.crate: gzip compressed data, was "nparse-0.0.10.crate", max compression, original size modulo 2^32 39936
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-nparse-0.0.10.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

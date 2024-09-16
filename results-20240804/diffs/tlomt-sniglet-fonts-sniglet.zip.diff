@@ -1,0 +1,12 @@
+Source package : tlomt-sniglet-fonts
+File name       : sniglet.zip
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/tlomt-sniglet-fonts/sniglet.zip/md5/d5aea392a3fec57dd469cb2983a7cc0a/sniglet.zip
+Source URL      : https://s3.amazonaws.com/theleague-production/fonts/sniglet.zip
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-sniglet.zip: Zip archive data, at least v1.0 to extract, compression method=store
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-sniglet.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+
+
+Only in source-sniglet.zip-extracted: __MACOSX
+Only in source-sniglet.zip-extracted: Sniglet_Regular
+Only in lookaside-sniglet.zip-extracted: Sniglet.ttf

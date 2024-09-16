@@ -1,0 +1,10 @@
+Source package : warsow-data
+File name       : warsow-2.1.2.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/warsow-data/warsow-2.1.2.tar.gz/sha512/c26971882c6ddad7e2a2e65c61bc2a327b9690a18b8faeabb23931a3d21a5d34bfac0a27516dfd39898419daaf607f48053754024e6a0ed66cfdccda34134c15/warsow-2.1.2.tar.gz
+Source URL      : http://sebastian.network/warsow/warsow-2.1.2.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-warsow-2.1.2.tar.gz: HTML document, ASCII text, with no line terminators
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-warsow-2.1.2.tar.gz: gzip compressed data, last modified: Wed Dec 27 02:19:00 2017, from Unix, original size modulo 2^32 490394624 gzip compressed data, unknown method, ASCII, extra field, encrypted, from FAT filesystem (MS-DOS, OS/2, NT), original size modulo 2^32 490394624
+
+
+Only in lookaside-warsow-2.1.2.tar.gz-extracted: warsow-2.1.2

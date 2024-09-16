@@ -1,0 +1,10 @@
+Source package : calcurse
+File name       : calcurse-4.8.1.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/calcurse/calcurse-4.8.1.tar.gz/sha512/a0a0bcfceb28a4e363168711a3c2de8f6e94d7f12aa78ff40f157c247ea6a41646bd218a1defba2d128b131ed0ab71c4d417820a0af0adbaa215011b11f0a040/calcurse-4.8.1.tar.gz
+Source URL      : https://calcurse.org/files/calcurse-4.8.1.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-calcurse-4.8.1.tar.gz: tar archive
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-calcurse-4.8.1.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 3368960
+
+
+Only in lookaside-calcurse-4.8.1.tar.gz-extracted: calcurse-4.8.1

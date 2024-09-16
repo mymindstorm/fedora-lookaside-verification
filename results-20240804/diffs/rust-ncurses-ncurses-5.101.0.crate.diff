@@ -1,0 +1,10 @@
+Source package : rust-ncurses
+File name       : ncurses-5.101.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-ncurses/ncurses-5.101.0.crate/sha512/e73513a28706dce70296af28170e8c124b9ab105dcc6509f2d65114f0f8f948b775cb4b459293a399bbf748f06bb60e5906818d928b4f0078c96531d8ab050e7/ncurses-5.101.0.crate
+Source URL      : https://crates.io/api/v1/crates/ncurses/5.101.0/download#/ncurses-5.101.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ncurses-5.101.0.crate: gzip compressed data, was "ncurses-5.101.0.crate", max compression, original size modulo 2^32 144896
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ncurses-5.101.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

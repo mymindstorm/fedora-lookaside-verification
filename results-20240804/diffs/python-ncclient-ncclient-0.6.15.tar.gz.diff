@@ -1,0 +1,14 @@
+Source package : python-ncclient
+File name       : ncclient-0.6.15.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-ncclient/ncclient-0.6.15.tar.gz/sha512/721cba6efd7a23bd0eeab5eefe8a05b2a5b6a053650880d9790688967f4a69cf1adaa4c66ac8547f2a057b9724ef62d86c2904779a4a394798b9c03e0d2c44b8/ncclient-0.6.15.tar.gz
+Source URL      : https://github.com/ncclient/ncclient/archive/v0.6.15/ncclient-0.6.15.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ncclient-0.6.15.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 2349315487 gzip compressed data, reserved method, extra field, last modified: Sun Nov 14 15:57:24 2004, original size modulo 2^32 2349315487
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ncclient-0.6.15.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 829440
+
+
+diff -r source-ncclient-0.6.15.tar.gz-extracted/ncclient-0.6.15/ncclient/_version.py lookaside-ncclient-0.6.15.tar.gz-extracted/ncclient-0.6.15/ncclient/_version.py
+29c29
+<     git_refnames = " (tag: v0.6.15)"
+---
+>     git_refnames = " (HEAD -> master, tag: v0.6.15)"

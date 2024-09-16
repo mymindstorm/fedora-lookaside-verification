@@ -1,0 +1,19 @@
+Source package : python-feedparser
+File name       : feedparser-6.0.11.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-feedparser/feedparser-6.0.11.tar.gz/sha512/258e06d6077d92a75a899f0832c28587e52aff62b40b03af42effbeb9d5dc1d282f423fad762cf4ddeb854cf709346cf531e05b73aa753dbed97793981d20a97/feedparser-6.0.11.tar.gz
+Source URL      : https://files.pythonhosted.org/packages/source/f/feedparser/feedparser-6.0.11.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-feedparser-6.0.11.tar.gz: gzip compressed data, was "feedparser-6.0.11.tar", last modified: Sun Dec 10 16:03:18 2023, max compression, original size modulo 2^32 5826560
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-feedparser-6.0.11.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3215360
+
+
+Only in lookaside-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: changelog.d
+Only in lookaside-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: CONTRIBUTORS.rst
+Only in lookaside-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: dodo.py
+Only in source-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: feedparser.egg-info
+Only in lookaside-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: .gitignore
+Only in source-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: PKG-INFO
+Only in lookaside-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: requirements-dev.txt
+Only in source-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: setup.cfg
+Only in lookaside-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: tox.ini
+Only in lookaside-feedparser-6.0.11.tar.gz-extracted/feedparser-6.0.11: .travis.yml

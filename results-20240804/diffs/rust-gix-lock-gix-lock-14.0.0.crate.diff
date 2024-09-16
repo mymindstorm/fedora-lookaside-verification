@@ -1,0 +1,10 @@
+Source package : rust-gix-lock
+File name       : gix-lock-14.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-gix-lock/gix-lock-14.0.0.crate/sha512/46228f8ae0d931c6594f2ce08eb8aebcf77901dd9664d134ba5e5583855e40460f08061ab5d9287bdf17e452b821f0c336d49b7aa181b44dc091925d6982205e/gix-lock-14.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/gix-lock/14.0.0/download#/gix-lock-14.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-gix-lock-14.0.0.crate: gzip compressed data, was "gix-lock-14.0.0.crate", max compression, original size modulo 2^32 38400
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-gix-lock-14.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

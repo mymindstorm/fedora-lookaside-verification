@@ -1,0 +1,10 @@
+Source package : rust-version-track
+File name       : version-track-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-version-track/version-track-1.0.0.crate/sha512/a3b545f387b9de3c1dfa070f50c190ec1bf7348c7b917ae9deb791bda884201289ce25221fc5111b5ec048354357e3b73f3f39000e5c615484eafee518d171a2/version-track-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/version-track/1.0.0/download#/version-track-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-version-track-1.0.0.crate: gzip compressed data, was "version-track-1.0.0.crate", max compression, original size modulo 2^32 31744
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-version-track-1.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

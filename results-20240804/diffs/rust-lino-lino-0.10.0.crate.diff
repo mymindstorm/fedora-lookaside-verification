@@ -1,0 +1,10 @@
+Source package : rust-lino
+File name       : lino-0.10.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-lino/lino-0.10.0.crate/sha512/399a8ba70e39edb76ba0dd5c07d2527188137acf10cac19c1ad5353735107a37db7b0383d5e6fcea1e20d031fe9223f5e56c16d7b9f69f8b19195f2a4d47993f/lino-0.10.0.crate
+Source URL      : https://crates.io/api/v1/crates/lino/0.10.0/download#/lino-0.10.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-lino-0.10.0.crate: gzip compressed data, was "lino-0.10.0.crate", max compression, original size modulo 2^32 401920
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-lino-0.10.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

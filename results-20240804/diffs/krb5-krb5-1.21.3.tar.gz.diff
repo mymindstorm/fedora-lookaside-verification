@@ -1,0 +1,10 @@
+Source package : krb5
+File name       : krb5-1.21.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/krb5/krb5-1.21.3.tar.gz/sha512/87bc06607f4d95ff604169cea22180703a42d667af05f66f1569b8bd592670c42820b335e5c279e8b4f066d1e7da20f1948a1e4def7c5d295c170cbfc7f49c71/krb5-1.21.3.tar.gz
+Source URL      : https://web.mit.edu/kerberos/dist/krb5/1.21/krb5-1.21.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-krb5-1.21.3.tar.gz: POSIX tar archive (GNU)
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-krb5-1.21.3.tar.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 44687360
+
+
+No differences detected!

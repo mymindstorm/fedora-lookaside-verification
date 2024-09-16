@@ -1,0 +1,10 @@
+Source package : rust-reedline
+File name       : reedline-0.33.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-reedline/reedline-0.33.0.crate/sha512/6101b3236d476046c424f51c98f55d7fc7308644eab48e10a9aa7f715ba18f79391acd00fd2d053a8138e336e361bef3b9ea6568c7d146b7d82dca055a89805e/reedline-0.33.0.crate
+Source URL      : https://crates.io/api/v1/crates/reedline/0.33.0/download#/reedline-0.33.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-reedline-0.33.0.crate: gzip compressed data, was "reedline-0.33.0.crate", max compression, original size modulo 2^32 784896
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-reedline-0.33.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

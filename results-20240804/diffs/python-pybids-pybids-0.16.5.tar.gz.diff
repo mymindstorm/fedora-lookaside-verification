@@ -1,0 +1,14 @@
+Source package : python-pybids
+File name       : pybids-0.16.5.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-pybids/pybids-0.16.5.tar.gz/sha512/9d5e470167945f529cfb8e91b09b3f47084237ba4a1bdc5b4a18486e5377a4fe0806db340cb041f05e981b7466b02233a76305f2fe4b55d3cc2d5d49324cd07f/pybids-0.16.5.tar.gz
+Source URL      : https://github.com/bids-standard/pybids/archive/0.16.5/pybids-0.16.5.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-pybids-0.16.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 41328640
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-pybids-0.16.5.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 41328640
+
+
+diff -r source-pybids-0.16.5.tar.gz-extracted/pybids-0.16.5/bids/_version.py lookaside-pybids-0.16.5.tar.gz-extracted/pybids-0.16.5/bids/_version.py
+29c29
+<     git_refnames = " (tag: 0.16.5)"
+---
+>     git_refnames = " (HEAD -> master, tag: 0.16.5)"

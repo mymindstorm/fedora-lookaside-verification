@@ -1,0 +1,11 @@
+Source package : python-uri-template
+File name       : python-uri-template-1.2.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/python-uri-template/python-uri-template-1.2.0.tar.gz/sha512/ada48087349c27a3c30b2cd5ca808a8f0195b42b0659435e0a1b34b2a032469752f8f98b22ae06d5ab346fd877d4286255dedf82eeed2f8a7ee6e5bf73f3b90b/python-uri-template-1.2.0.tar.gz
+Source URL      : https://github.com/plinss/uri_template//archive/refs/tags/v1.2.0.tar.gz#/python-uri-template-1.2.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-python-uri-template-1.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 122880
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-python-uri-template-1.2.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 122880
+
+
+Only in source-python-uri-template-1.2.0.tar.gz-extracted: uri-template-1.2.0
+Only in lookaside-python-uri-template-1.2.0.tar.gz-extracted: uri_template-1.2.0

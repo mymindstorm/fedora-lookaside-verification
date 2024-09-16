@@ -1,0 +1,10 @@
+Source package : rust-lv2-core
+File name       : lv2-core-3.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-lv2-core/lv2-core-3.0.0.crate/sha512/53e67ca411e6f14fcde9dbffa8192127480ec3802a076f3d54227ac6aa7d852fe8fbc71a7a3a1b3aed505ed5ed262044b5f857b32b93f34599f39dc0f753bb7a/lv2-core-3.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/lv2-core/3.0.0/download#/lv2-core-3.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-lv2-core-3.0.0.crate: gzip compressed data, was "lv2-core-3.0.0.crate", max compression, original size modulo 2^32 86016
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-lv2-core-3.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

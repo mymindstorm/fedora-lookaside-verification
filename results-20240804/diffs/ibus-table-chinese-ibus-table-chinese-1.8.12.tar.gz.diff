@@ -1,0 +1,95 @@
+Source package : ibus-table-chinese
+File name       : ibus-table-chinese-1.8.12.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/ibus-table-chinese/ibus-table-chinese-1.8.12.tar.gz/sha512/248ec159540d46e6847925feee3b094d0e7abf045e34d337a9fe9fd5f4fbeac40e730fa7b130c0a4054664c653a56d1b6947237d68884c45db9f9cdc9e56be5d/ibus-table-chinese-1.8.12.tar.gz
+Source URL      : https://github.com/mike-fabian/ibus-table-chinese/archive/1.8.12.tar.gz#/ibus-table-chinese-1.8.12.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-ibus-table-chinese-1.8.12.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 3766650003
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-ibus-table-chinese-1.8.12.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 30412800
+
+
+Only in source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/icons: cangjie-big.svg
+Only in source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/icons: cantonese.svg
+Only in source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/icons: cantonyale.svg
+Only in source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/icons: quick-classic.svg
+Only in source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/icons: stroke5.svg
+Only in source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/icons: wu.svg
+Only in source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/icons: yong.svg
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-cangjie.appdata.xml lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-cangjie.appdata.xml
+22,25c22
+<   <icon type="remote" width="64" height="64">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cangjie-big.svg</icon>
+<   <icon type="remote" width="128" height="128">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cangjie-big.svg</icon>
+<   <icon type="remote" width="256" height="256">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cangjie-big.svg</icon>
+<   <icon type="remote">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cangjie-big.svg</icon>
+---
+>   <icon type="remote" width="47" height="48">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cangjie-big.png</icon>
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-cantonese.appdata.xml lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-cantonese.appdata.xml
+22,25c22
+<   <icon type="remote" width="64" height="64">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonese.svg</icon>
+<   <icon type="remote" width="128" height="128">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonese.svg</icon>
+<   <icon type="remote" width="256" height="256">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonese.svg</icon>
+<   <icon type="remote">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonese.svg</icon>
+---
+>   <icon type="remote" width="48" height="48">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonese.png</icon>
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-cantonyale.appdata.xml lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-cantonyale.appdata.xml
+22,25c22
+<   <icon type="remote" width="64" height="64">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonyale.svg</icon>
+<   <icon type="remote" width="128" height="128">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonyale.svg</icon>
+<   <icon type="remote" width="256" height="256">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonyale.svg</icon>
+<   <icon type="remote">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonyale.svg</icon>
+---
+>   <icon type="remote" width="48" height="48">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/cantonyale.png</icon>
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-quick.appdata.xml lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-quick.appdata.xml
+23,26c23
+<   <icon type="remote" width="64" height="64">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/quick-classic.svg</icon>
+<   <icon type="remote" width="128" height="128">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/quick-classic.svg</icon>
+<   <icon type="remote" width="256" height="256">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/quick-classic.svg</icon>
+<   <icon type="remote">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/quick-classic.svg</icon>
+---
+>   <icon type="remote" width="48" height="48">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/quick-classic.png</icon>
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-stroke5.appdata.xml lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-stroke5.appdata.xml
+23,26c23
+<   <icon type="remote" width="64" height="64">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/stroke5.svg</icon>
+<   <icon type="remote" width="128" height="128">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/stroke5.svg</icon>
+<   <icon type="remote" width="256" height="256">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/stroke5.svg</icon>
+<   <icon type="remote">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/stroke5.svg</icon>
+---
+>   <icon type="remote" width="48" height="48">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/stroke5.png</icon>
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-wu.appdata.xml lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-wu.appdata.xml
+21,24c21
+<   <icon type="remote" width="64" height="64">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/wu.svg</icon>
+<   <icon type="remote" width="128" height="128">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/wu.svg</icon>
+<   <icon type="remote" width="256" height="256">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/wu.svg</icon>
+<   <icon type="remote">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/wu.svg</icon>
+---
+>   <icon type="remote" width="48" height="48">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/wu.png</icon>
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-yong.appdata.xml lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/metainfo/ibus-table-chinese-yong.appdata.xml
+21,24c21
+<   <icon type="remote" width="64" height="64">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/yong.svg</icon>
+<   <icon type="remote" width="128" height="128">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/yong.svg</icon>
+<   <icon type="remote" width="256" height="256">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/yong.svg</icon>
+<   <icon type="remote">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/yong.svg</icon>
+---
+>   <icon type="remote" width="32" height="32">https://raw.githubusercontent.com/mike-fabian/ibus-table-chinese/main/icons/yong.png</icon>
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/RELEASE-NOTES.txt lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/RELEASE-NOTES.txt
+5d4
+< - Add .svg icon files for use in appdata.xml files
+diff -r source-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/tables/CMakeLists.txt lookaside-ibus-table-chinese-1.8.12.tar.gz-extracted/ibus-table-chinese-1.8.12/tables/CMakeLists.txt
+75,76c75
+< 	ENDIF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.png")
+< 	IF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.svg")
+---
+> 	ELSEIF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.svg")
+78,79c77
+< 	ENDIF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.svg")
+< 	IF(EXISTS "${CMAKE_SOUREC_DIR}/icons/${_tabName}.gif")
+---
+> 	ELSEIF(EXISTS "${CMAKE_SOUREC_DIR}/icons/${_tabName}.gif")
+81,82c79
+< 	ENDIF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.gif")
+< 	IF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.jpg")
+---
+> 	ELSEIF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.jpg")
+84c81
+< 	ENDIF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.jpg")
+---
+> 	ENDIF(EXISTS "${CMAKE_SOURCE_DIR}/icons/${_tabName}.png")

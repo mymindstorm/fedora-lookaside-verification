@@ -1,0 +1,10 @@
+Source package : rust-detone
+File name       : detone-1.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-detone/detone-1.0.0.crate/sha512/6dadf287fcd9744813caab2acd0769febe155900b28763c4aa2ae16a71b71c5170b3dde9ada1995257d589b73b135f99d2677b24fd715e411090be2aa97e252a/detone-1.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/detone/1.0.0/download#/detone-1.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-detone-1.0.0.crate: gzip compressed data, was "detone-1.0.0.crate", max compression, original size modulo 2^32 1850857286
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-detone-1.0.0.crate: POSIX tar archive
+
+
+No differences detected!

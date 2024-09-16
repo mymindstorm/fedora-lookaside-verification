@@ -1,0 +1,10 @@
+Source package : rust-dtparse
+File name       : dtparse-2.0.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-dtparse/dtparse-2.0.0.crate/sha512/6bdb3dfb0dd897c78fe16822c43b4bce6e17b3f9610736647632c2f62c67647ce42ce1c8b0e1bb28b9bfcf19d4bedb9f8b73a9f1bdf67661fed41e50833035b0/dtparse-2.0.0.crate
+Source URL      : https://crates.io/api/v1/crates/dtparse/2.0.0/download#/dtparse-2.0.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-dtparse-2.0.0.crate: gzip compressed data, was "dtparse-2.0.0.crate", max compression, original size modulo 2^32 188928
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-dtparse-2.0.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

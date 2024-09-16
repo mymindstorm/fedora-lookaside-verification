@@ -1,0 +1,10 @@
+Source package : libvterm
+File name       : libvterm-0.3.3.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/libvterm/libvterm-0.3.3.tar.gz/sha512/f5c6aa947a7f2d9b4082acac71d35993a62f84629dd642a96c2ef586fe0944d2e940a03f6c85266292dc67fecb1d2a490d7a6f9bb3646fe7a492311bd04aa19d/libvterm-0.3.3.tar.gz
+Source URL      : https://www.leonerd.org.uk/code/libvterm/libvterm-0.3.3.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-libvterm-0.3.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 389120
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-libvterm-0.3.3.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 389120
+
+
+Only in source-libvterm-0.3.3.tar.gz-extracted/libvterm-0.3.3/t: 69screen_sb_clear.test

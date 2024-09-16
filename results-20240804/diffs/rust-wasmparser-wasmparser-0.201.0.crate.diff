@@ -1,0 +1,10 @@
+Source package : rust-wasmparser
+File name       : wasmparser-0.201.0.crate
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/rust-wasmparser/wasmparser-0.201.0.crate/sha512/672e2255132717bee1535b1000b76a7906854d239fb67a8a1138bee1ce897e9320feb7479a789800ba18929ee4e8651006fd7db40e778bb2d9c918e32ee20ea7/wasmparser-0.201.0.crate
+Source URL      : https://crates.io/api/v1/crates/wasmparser/0.201.0/download#/wasmparser-0.201.0.crate
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-wasmparser-0.201.0.crate: gzip compressed data, was "wasmparser-0.201.0.crate", max compression, original size modulo 2^32 1075712
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-wasmparser-0.201.0.crate: POSIX tar archive (GNU)
+
+
+No differences detected!

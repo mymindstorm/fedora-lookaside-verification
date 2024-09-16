@@ -1,0 +1,14 @@
+Source package : snakemake
+File name       : snakemake-8.16.0.tar.gz
+Lookaside URL   : https://src.fedoraproject.org/repo/pkgs/snakemake/snakemake-8.16.0.tar.gz/sha512/29b6ba6da5dbbd347dee45114b949c976973555c9234f8a150dcd83e4af1638c1773590320bc44284cf20ea445efb377dcf9199921ed2b4d62bad3a60a41af3c/snakemake-8.16.0.tar.gz
+Source URL      : https://github.com/snakemake/snakemake/archive/v8.16.0/snakemake-8.16.0.tar.gz
+
+source file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/source-snakemake-8.16.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 21463040
+lookaside file type: /tmp/fedora-lookaside-verification--620412-UnEb0Nzwp0B1/lookaside-snakemake-8.16.0.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 21463040
+
+
+diff -r source-snakemake-8.16.0.tar.gz-extracted/snakemake-8.16.0/snakemake/_version.py lookaside-snakemake-8.16.0.tar.gz-extracted/snakemake-8.16.0/snakemake/_version.py
+28c28
+<     git_refnames = " (tag: v8.16.0)"
+---
+>     git_refnames = " (HEAD -> main, tag: v8.16.0)"
