@@ -96,7 +96,10 @@ export default async function getHashesFromLookaside(
               continue;
             }
 
-            const res = await axios.get(fileUrl, { responseType: "stream" });
+            const res = await axios.get(fileUrl, {
+              responseType: "stream",
+              headers: { "Accept-Encoding": "identity" },
+            });
             // WEIRDNESS: If you do this in one line (like in get_sources_json_from_specs.ts), node just exits without any errors
             const resStream = res.data;
             resStream.pipe(sha256);

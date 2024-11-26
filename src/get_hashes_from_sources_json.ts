@@ -82,6 +82,7 @@ export default async function getHashesFromSourcesJSON(
               httpsAgent: agent,
               headers: {
                 Accept: "application/octet-stream,*/*",
+                "Accept-Encoding": "identity",
               },
             });
 
