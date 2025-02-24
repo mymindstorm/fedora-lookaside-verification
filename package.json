@@ -20,6 +20,7 @@
     "typescript-eslint": "^8.0.0"
   },
   "dependencies": {
+    "@mymindstorm/rpm-extract": "file:../rpm-extract",
     "@types/decompress": "^4.2.7",
     "@types/node": "^22.1.0",
     "axios": "^1.7.3",

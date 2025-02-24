@@ -7,4 +7,5 @@ await esbuild.build({
   sourcemap: true,
   outdir: "dist",
   platform: "node",
+  loader: { ".node": "file" },
 });
